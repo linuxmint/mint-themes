@@ -1,0 +1,15 @@
+Source: mint-themes
+Section: universe/gnome
+Priority: optional
+Maintainer: Clement Lefebvre <root@linuxmint.com>
+Build-Depends: debhelper (>= 5)
+Standards-Version: 3.7.2
+
+Package: mint-themes
+Replaces: mint-clearloox-theme, mint-x-theme, mint-z-theme
+Conflicts: mint-clearloox-theme, mint-x-theme, mint-z-theme
+Depends: mint-x-icons
+Architecture: all
+Description: Mint themes
+ A collection of mint themes.
+
