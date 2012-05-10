@@ -1,3 +1,9 @@
+mint-themes (1.0.2) maya; urgency=low
+
+  * Fixed Expander spacing in Mint-X
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 10 May 2012 15:04:30 +0100
+
 mint-themes (1.0.1) maya; urgency=low
 
   * Changed gtk3 links color to #42adc0

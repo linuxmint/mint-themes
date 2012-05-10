@@ -33,7 +33,7 @@ style "default"
 	#GtkMenuBar::internal-padding  	                = 0
 	
 	GtkExpander::expander-size    	                = 14
-	GtkExpander::expander_spacing                   = 16
+	#GtkExpander::expander_spacing                   = 16
 
 	GtkToolbar::internal-padding  	                = 1
 
