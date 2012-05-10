@@ -1,3 +1,9 @@
+mint-themes (1.0.3) maya; urgency=low
+
+  * Light color for Gnome Fallback panel
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 10 May 2012 21:09:56 +0100
+
 mint-themes (1.0.2) maya; urgency=low
 
   * Fixed Expander spacing in Mint-X

@@ -4,10 +4,10 @@ PanelApplet,
 PanelToplevel {
 	padding: 0;
 	background-image: -gtk-gradient (linear, left top, left bottom,
-		from (shade (@dark_bg_color, 1.15)),
-		to (shade (@dark_bg_color, 0.95)));
+		from (shade (@bg_color, 1.15)),
+		to (shade (@bg_color, 0.95)));
 
-	color: @dark_fg_color;
+	color: @fg_color;
 }
 
 PanelApplet {
@@ -17,10 +17,10 @@ PanelApplet {
 PanelSeparator {
 	border-width: 0;
 	background-image: -gtk-gradient (linear, left top, left bottom,
-		from (shade (@dark_bg_color, 1.15)),
-		to (shade (@dark_bg_color, 0.95)));
+		from (shade (@bg_color, 1.15)),
+		to (shade (@bg_color, 0.95)));
 
-	color: @dark_fg_color;
+	color: @fg_color;
 }
 
 .gnome-panel-menu-bar,
@@ -29,15 +29,15 @@ PanelApplet > GtkMenuBar.menubar.menuitem,
 PanelMenuBar.menubar,
 PanelMenuBar.menubar.menuitem {
 	background-image: -gtk-gradient (linear, left top, left bottom,
-		from (shade (@dark_bg_color, 1.15)),
-		to (shade (@dark_bg_color, 0.95)));
+		from (shade (@bg_color, 1.15)),
+		to (shade (@bg_color, 0.95)));
 }
 
 PanelAppletFrame { 
-	background-color: @dark_bg_color;
+	background-color: @bg_color;
 	background-image: -gtk-gradient (linear, left top, left bottom,
-		from (shade (@dark_bg_color, 1.15)),
-		to (shade (@dark_bg_color, 0.95)));
+		from (shade (@bg_color, 1.15)),
+		to (shade (@bg_color, 0.95)));
 	border-width: 0;
 }
 
@@ -45,9 +45,9 @@ PanelApplet .button {
 	-GtkButton-inner-border: 2;
 
 	background-image: -gtk-gradient (linear, left top, left bottom,
-		from (shade (@dark_bg_color, 1.15)),
-		to (shade (@dark_bg_color, 0.95)));	
-	border-color: shade (@dark_bg_color, 0.9);
+		from (shade (@bg_color, 1.15)),
+		to (shade (@bg_color, 0.95)));	
+	border-color: shade (@bg_color, 0.9);
 	border-radius: 0;
 	border-width: 0 1px 0 1px;
 
@@ -62,9 +62,9 @@ PanelApplet .button {
 PanelApplet .button:prelight:active,
 PanelApplet .button:active {
 	background-image: -gtk-gradient (linear, left top, left bottom,
-		from (shade (@dark_bg_color, 0.7)),
-		to (shade (@dark_bg_color, 0.8))); 
-	border-color: shade (@dark_bg_color, 0.9);
+		from (shade (@bg_color, 0.7)),
+		to (shade (@bg_color, 0.8))); 
+	border-color: shade (@bg_color, 0.9);
 	border-radius: 0;
 	border-width: 0 1px 0 1px;
 
@@ -76,9 +76,9 @@ PanelApplet .button:active {
 
 PanelApplet .button:prelight {
 	background-image: -gtk-gradient (linear, left top, left bottom,
-		from (shade (@dark_bg_color, 1.2)),
-		to (shade (@dark_bg_color, 1.0))); 
-	border-color: shade (@dark_bg_color, 0.9);
+		from (shade (@bg_color, 1.2)),
+		to (shade (@bg_color, 1.0))); 
+	border-color: shade (@bg_color, 0.9);
 	border-radius: 0;
 	border-width: 0 1px 0 1px;
 
@@ -89,9 +89,9 @@ PanelApplet .button:prelight {
 }
 
 ClockBox {
-	text-shadow: 0 1 shade (@dark_bg_color, 1.08);
+	text-shadow: 0 1 shade (@bg_color, 1.08);
 }
 
 WnckPager, WnckTasklist {
-	background-color: @dark_bg_color;
+	background-color: @bg_color;
 }
