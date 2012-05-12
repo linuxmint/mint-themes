@@ -1,3 +1,9 @@
+mint-themes (1.0.4) maya; urgency=low
+
+  * Removed dark subtheme (affects eog, totem etc..)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sun, 13 May 2012 00:31:50 +0100
+
 mint-themes (1.0.3) maya; urgency=low
 
   * Light color for Gnome Fallback panel
