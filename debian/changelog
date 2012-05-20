@@ -1,3 +1,9 @@
+mint-themes (1.0.5) maya; urgency=low
+
+  * Improved support for Caja and Eom, and removed warnings in GTK3
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sun, 20 May 2012 02:26:09 +0100
+
 mint-themes (1.0.4) maya; urgency=low
 
   * Removed dark subtheme (affects eog, totem etc..)
