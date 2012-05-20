@@ -1,0 +1,91 @@
+### This file styles Caja. caja-e.rc is for Caja elementary. ###
+
+style "caja-window-base" { bg[NORMAL] = @base_color }
+
+style "caja-sidebar" = "murrine-sidebar" {
+	GtkTreeView::horizontal_separator = 15
+	GtkTreeView::vertical_separator = 2
+}
+
+style "caja-view" {
+	xthickness = 0
+	ythickness = 0
+}
+
+style "caja-handle" {
+	GtkPaned::handle-size = 1
+	
+	engine "pixmap" {
+		# for the thin gray line separating the sidepane and viewpane
+		image {
+			function	= HANDLE
+			recolorable	= TRUE
+			file		= "Handles/handle-caja.png"
+			stretch		= TRUE
+			border		= { 0, 0, 0, 0 }
+		}
+	}
+}
+
+style "caja-statusbar"
+{
+	bg[NORMAL] = @base_color
+	base[NORMAL] = @base_color
+	fg[NORMAL] = shade (1.2, @fg_color)
+
+	engine "murrine" {}
+}
+
+style "caja-location"
+{
+
+	xthickness = 0
+	ythickness = 0
+
+	bg[NORMAL] = @base_color
+
+	engine "pixmap" {
+		image
+		{
+		function        = FLAT_BOX
+		recolorable     = TRUE
+		file            = "Caja/extra-widget.png"
+		state           = NORMAL
+		stretch         = TRUE
+		border          = { 0, 0, 1, 0 }
+		}
+	}
+}
+
+style "caja-pathbar"
+{	
+	#bg[NORMAL] = @bg_color
+}
+
+############################################
+# NAUTILUS
+# Order of assignment is important
+#############################################
+
+widget_class "*CajaSidePane.*"                 style "caja-sidebar"
+widget_class "*Caja*Places*Sidebar*"           style "caja-sidebar"
+widget_class "*Caja*Side*.GtkWidget"           style "caja-sidebar"
+widget_class "*Caja*Side*Title*"               style "caja-sidebar"
+
+#widget "*CajaNavigationWindow"                 style "caja-window-base"
+
+widget_class "*Caja*Scrollbar"                 style "murrine-scrollbar"
+widget_class "*CajaSidePane.*Scrollbar"        style:highest "murrine-scrollbar"	
+widget_class "*Caja*Statusbar*"                style "caja-statusbar"
+
+widget "*Caja*Splitter"                        style "caja-handle"
+widget_class "*Caja*View*"                     style "caja-view"
+widget_class "*Caja*Notebook"                  style "murrine-notebook"
+
+widget_class "*Caja*<GtkTreeView>.<GtkButton>" style "murrine-treeview-header"
+widget_class "*Caja*<GtkCTree>.<GtkButton>"    style "murrine-treeview-header"
+widget_class "*Caja*<GtkList>.<GtkButton>"     style "murrine-treeview-header"
+widget_class "*Caja*<GtkCList>.<GtkButton>"    style "murrine-treeview-header"
+
+widget_class "*CajaPathBar*"                   style "caja-pathbar" 
+widget "*.caja-extra-view-widget"              style "caja-location"

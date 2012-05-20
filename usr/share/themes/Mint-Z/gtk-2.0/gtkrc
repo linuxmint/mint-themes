@@ -620,5 +620,7 @@ widget_class "*MozContainer*"		style "performance-fix" # Firefox (Not sure if th
 include "apps/chromium.rc"	# Chromium styling
 include "apps/terminal.rc"	# Terminal styling
 include "apps/gedit.rc"		# Gedit styling
+include "apps/pluma.rc"		# Pluma styling
 include "apps/pcmanfm.rc"	# PCManFM styling
 include "apps/nautilus-e.rc"	# Nautilus styling. Replace with nautilus-e.rc if you're using Nautilus-elementary or nautilus.rc if you're using normal Nautilus.
+include "apps/caja.rc"	# Caja styling. 

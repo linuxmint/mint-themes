@@ -393,10 +393,12 @@ widget_class "GtkWindow.GtkVBox.GtkHPaned.GtkVBox.GtkTable.GtkRadioButton"	style
 
 
 include "Apps/nautilus.rc"
+include "Apps/caja.rc"
 include "Apps/terminal.rc"
 include "Apps/rhythmbox.rc"
 include "Apps/deluge.rc"
 include "Apps/eog.rc"
+include "Apps/eom.rc"
 include "Apps/banshee.rc"
 include "Apps/gimp.rc"
 include "Apps/inkscape.rc"

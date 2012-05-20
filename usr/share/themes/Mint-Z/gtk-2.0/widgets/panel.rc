@@ -80,7 +80,7 @@ style "panel"
 	text[PRELIGHT]				= @fg_color
 	text[ACTIVE]				= @fg_color
 
-	bg_pixmap[NORMAL]			= "/Panel/panelbg.png" # Disable for normal panel backgrounds.
+	#bg_pixmap[NORMAL]			= "/Panel/panel-bg.png" # Disable for normal panel backgrounds.
 
 }
 
