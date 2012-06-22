@@ -1,3 +1,9 @@
+mint-themes (1.0.6) maya; urgency=low
+
+  * Added xfwm4 style to Mint-X theme
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 22 Jun 2012 11:42:18 +0100
+
 mint-themes (1.0.5) maya; urgency=low
 
   * Improved support for Caja and Eom, and removed warnings in GTK3
