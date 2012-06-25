@@ -1,3 +1,9 @@
+mint-themes (1.0.7) maya; urgency=low
+
+  * Removed gtk popup menu delay in Mint-X (caused problems with thunar context menus)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 25 Jun 2012 10:52:01 +0100
+
 mint-themes (1.0.6) maya; urgency=low
 
   * Added xfwm4 style to Mint-X theme
