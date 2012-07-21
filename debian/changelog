@@ -1,3 +1,9 @@
+mint-themes (1.0.8) maya; urgency=low
+
+  * Added support for Nemo
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 21 Jul 2012 23:26:54 +0100
+
 mint-themes (1.0.7) maya; urgency=low
 
   * Removed gtk popup menu delay in Mint-X (caused problems with thunar context menus)
