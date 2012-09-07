@@ -37,8 +37,8 @@ style "default"
 
 	GtkToolbar::internal-padding  	                = 1
 
-	GtkMenu::horizontal-padding 		        = 0
-	GtkMenu::vertical-padding  	                = 0
+	GtkMenu::horizontal-padding 		        = 2
+	GtkMenu::vertical-padding  	                = 2
 
 	GtkStatusbar::shadow_type    		        = GTK_SHADOW_NONE
 

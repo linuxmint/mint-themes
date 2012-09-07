@@ -270,7 +270,7 @@ style "murrine-menu" {
 
 	engine "murrine" {
 		border_shades = { 1.2, 1.0 }
-		roundness = 2 # Roundness of menu items.
+		roundness = 0 # Roundness of menu items.
 		textstyle = 0
 	}
 }
