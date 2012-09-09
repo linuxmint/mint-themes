@@ -78,8 +78,8 @@ style "murrine-default" {
 	GtkTreeView	::vertical-separator		= 1
 	GtkNotebook	::tab-overlap			= -1
 
-	GtkMenu		::horizontal-padding		= 0
-	GtkMenu		::vertical-padding		= 0
+	GtkMenu		::horizontal-padding		= 2
+	GtkMenu		::vertical-padding		= 2
 
 	WnckTasklist	::fade-overlay-rect		= 0
 	# The following line hints to gecko (and possibly other appliations)
