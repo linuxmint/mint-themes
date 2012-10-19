@@ -104,8 +104,8 @@ NautilusWindow * {
 
 /* desktop mode */
 .nautilus-desktop.nautilus-canvas-item {
-    color: #ffffff;
-    text-shadow: 1px 1px #000000;
+    color: #EEEEEE;
+	text-shadow: 1 1 alpha (#000000, 0.8);
 }
 
 .nautilus-desktop.nautilus-canvas-item:active {
