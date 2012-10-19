@@ -12,7 +12,7 @@ NemoWindow * {
 /* desktop mode */
 .nemo-desktop.nemo-canvas-item {
 	color: @bg_color;
-	text-shadow: 1 1 alpha (#000000, 0.8);
+	text-shadow: 1px 1px alpha (#000000, 0.8);
 }
 
 .nemo-desktop.nemo-canvas-item:active {
@@ -76,12 +76,12 @@ NemoSearchBar .entry {
 
 .nemo-cluebar-label {
 	font: bold;
-	text-shadow: 0 1 shade (@cluebar_color, 1.06);
+	text-shadow: 0 1px shade (@cluebar_color, 1.06);
 }
 
 .nemo-cluebar-label:backdrop {
 	color: mix (@fg_color, @cluebar_color, 0.2);
-	text-shadow: 0 1 shade (@cluebar_color, 1.02);
+	text-shadow: 0 1px shade (@cluebar_color, 1.02);
 }
 
 #nemo-search-button *:active,
@@ -110,12 +110,12 @@ NemoWindow .sidebar .view {
 	background-color: @bg_color;
 
 	color: @fg_color;
-	text-shadow: 0 1 shade (shade (@bg_color, 0.95), 1.04);  
+	text-shadow: 0 1px shade (shade (@bg_color, 0.95), 1.04);  
 }
 
 NemoWindow .sidebar row:selected {
 	color: @selected_fg_color;
-	text-shadow: 0 -1 shade (@selected_bg_color, 0.8); 
+	text-shadow: 0 -1px shade (@selected_bg_color, 0.8); 
 }
 
 NemoWindow .sidebar .frame {

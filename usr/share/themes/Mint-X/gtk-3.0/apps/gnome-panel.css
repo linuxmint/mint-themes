@@ -89,7 +89,7 @@ PanelApplet .button:prelight {
 }
 
 ClockBox {
-	text-shadow: 0 1 shade (@bg_color, 1.08);
+	text-shadow: 0 1px shade (@bg_color, 1.08);
 }
 
 WnckPager, WnckTasklist {
