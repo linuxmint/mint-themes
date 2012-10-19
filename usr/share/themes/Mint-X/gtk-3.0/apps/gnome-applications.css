@@ -180,8 +180,8 @@ NautilusWindow .pane-separator {
 TerminalScreen {
     -TerminalScreen-background-darkness: 0.9;
 
-    background-color: @theme_bg_color;
-    color: @theme_fg_color;
+    background-color: #3f3f3f;
+	color: #fff;
 }
 
 TerminalWindow GtkNotebook.notebook {
