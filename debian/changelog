@@ -1,3 +1,15 @@
+mint-themes (1.1.0) nadia; urgency=low
+
+  * GTK3 Improvements
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 20 Oct 2012 13:58:06 +0100
+
+mint-themes (1.0.9) nadia; urgency=low
+
+  * GTK 3.6 / Greybird-based
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 19 Oct 2012 19:48:50 +0100
+
 mint-themes (1.0.8) maya; urgency=low
 
   * Added support for Nemo
