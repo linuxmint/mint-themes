@@ -8,6 +8,6 @@ NemoWindow .sidebar .view {
 
 NemoWindow .sidebar row:selected {
 	color: @selected_fg_color;
-	text-shadow: 0 -1 shade (@selected_bg_color, 0.8); 
+	text-shadow: 0 -1px shade (@selected_bg_color, 0.8); 
 }
 
