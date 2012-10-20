@@ -1293,9 +1293,9 @@ GtkScale.trough.vertical:insensitive,
 
 .scrollbar.trough,
 .scrollbar.trough.vertical {
-    background-image: -gtk-gradient(linear, left top, right top,
-                                     from (shade(@theme_bg_color, 1.1)),
-                                     to (shade(@theme_bg_color, 1.3)));
+    background-image: -gtk-gradient(linear, left, right,
+                                     from (#e7e7e7),
+                                     to (#f7f7f7));
 
     border-width: 0;
     border-radius: 0
