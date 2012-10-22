@@ -1,3 +1,9 @@
+mint-themes (1.1.1) nadia; urgency=low
+
+  * Better column headers, treeview row colors, tooltips, and fix for nemo sidebar's context menu
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 22 Oct 2012 17:45:44 +0100
+
 mint-themes (1.1.0) nadia; urgency=low
 
   * GTK3 Improvements
