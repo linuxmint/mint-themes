@@ -1786,8 +1786,7 @@ GtkTextView {
 .tooltip {
 	border: 1px solid rgba(212,185,67,1.0);
 	border-radius: 4px;
-	padding: 2px 12px;
-	
+	padding: 2px 12px;	
 	background-image: -gtk-gradient(linear, left top, left bottom,
                                      from (rgba(254,245,198,0.9)),
                                      to (rgba(251,234,159,0.9)));		
@@ -1795,8 +1794,6 @@ GtkTextView {
 	font-size: 8.5pt;
 	font-weight: normal;
 	text-align: center;
-	
-    
 }
 
 .tooltip * {
