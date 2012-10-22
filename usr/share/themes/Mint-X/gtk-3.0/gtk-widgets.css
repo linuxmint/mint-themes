@@ -443,8 +443,9 @@ column-header .button:active {
 
 column-header .button {
     background-image: -gtk-gradient(linear, left top, left bottom,
-                                     from (shade(shade(@theme_bg_color, 1.14), 0.98)),
-                                     to (shade(shade(@theme_bg_color, 1.14), 1.35)));
+                                     from (#FFFFFF),
+                                     color-stop (0.5, #F4F4F4),
+                                     to (#D7D7D7));
 
     border-color: shade(@theme_bg_color, 0.97);
     border-bottom-color: shade(@theme_bg_color, 0.8);
