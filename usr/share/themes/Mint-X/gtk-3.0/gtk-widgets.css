@@ -1815,11 +1815,11 @@ GtkTreeView .entry {
 }
 
 GtkTreeView row:nth-child(even) {
-    background-color: shade(@theme_base_color, 0.9);
+    background-color: #F8F8F8;
 }
 
 GtkTreeView row:nth-child(odd) {
-    background-color: shade(@theme_base_color, 1.0);
+    background-color: #FFFFFF;
 }
 
 /************
