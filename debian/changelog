@@ -1,3 +1,9 @@
+mint-themes (1.1.2) precise; urgency=low
+
+  * Shade for Nemo's inactive pane
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sun, 28 Oct 2012 16:27:03 +0000
+
 mint-themes (1.1.1) nadia; urgency=low
 
   * Better column headers, treeview row colors, tooltips, and fix for nemo sidebar's context menu
