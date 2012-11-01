@@ -1294,7 +1294,7 @@ GtkScale.trough.vertical:insensitive,
 
 .scrollbar.trough,
 .scrollbar.trough.vertical {
-    background-image: -gtk-gradient(linear, left, right,
+    background-image: -gtk-gradient(linear, left top, right top,
                                      from (#e7e7e7),
                                      to (#f7f7f7));
 
@@ -1791,9 +1791,8 @@ GtkTextView {
                                      from (rgba(254,245,198,0.9)),
                                      to (rgba(251,234,159,0.9)));		
 	color: #000000;
-	font-size: 8.5pt;
-	font-weight: normal;
-	text-align: center;
+	font-size: 8.5;
+	font-weight: normal;	
 }
 
 .tooltip * {

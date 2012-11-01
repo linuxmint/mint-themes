@@ -1,3 +1,9 @@
+mint-themes (1.1.3) nadia; urgency=low
+
+  * Cleaned up warnings
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 01 Nov 2012 12:10:13 +0000
+
 mint-themes (1.1.2) nadia; urgency=low
 
   * Shade for Nemo's inactive pane
