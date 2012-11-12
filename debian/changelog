@@ -1,6 +1,7 @@
 mint-themes (1.1.4) nadia; urgency=low
 
   * Changed GTK3 base color from DCDCDC to D6D6D6 in accordance with GTK2 (fixes metacity color mismatch)
+  * Discontinued Mint-Z (GTK3.x integration requires too much maintenance to support more than one theme)
 
  -- Clement Lefebvre <root@linuxmint.com>  Mon, 12 Nov 2012 14:15:33 +0000
 
