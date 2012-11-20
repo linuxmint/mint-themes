@@ -10,15 +10,17 @@
    <stop stop-color="#292929" offset="1"/>
   </linearGradient>
  </defs>
- <g transform="translate(-342.5 -521.36)" style="enable-background:new" >
-  <g transform="matrix(.84337 0 0 .84337 -110.17 -503.56)">
+ <g transform="translate(-342.5 -521.36)">
+  <g transform="matrix(.80230 0 0 .80230 -87.624 -453.1)">
    <g transform="matrix(1.9969 0 0 1.9969 -397.05 877)">
     <g transform="translate(877.5 -102.84)">
-     <rect ry=".95632" stroke="#868686" stroke-width=".59377" fill="url(#b)" style="color:#000000" rx=".95632" transform="scale(1,-1)" width="11.282" height="11.262" y="-284.4" x="-409.59"/>
+     <rect ry="1.0053" stroke="#3465a4" stroke-width="1.2483" fill="url(#b)" style="color:#000000;enable-background:new" rx="1.0053" transform="scale(1,-1)" width="11.282" height="11.262" y="-284.4" x="-409.59"/>
     </g>
    </g>
-   <g transform="translate(344 988)" fill="none">
-	<g stroke-linejoin="round" stroke-linecap="round" >   
+  </g>
+  <g transform="matrix(.84337 0 0 .84337 -110.17 -503.56)">
+   <g style="enable-background:new" transform="translate(344 988)" fill="none">
+	<g stroke-linejoin="round" stroke-linecap="round">
      <path d="m198.5 240 5.25 5.25 13.986-14.431" stroke="url(#a)" stroke-width="7.1143"/>
      <path d="m198.5 240 5.25 5.25 13.912-14.32" stroke="#4787c8" stroke-width="3.5572"/>
     </g>

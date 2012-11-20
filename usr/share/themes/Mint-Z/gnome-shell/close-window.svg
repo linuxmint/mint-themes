@@ -10,26 +10,24 @@
    <stop stop-color="#e36260" offset="1"/>
   </linearGradient>
  </defs>
- <g>
-  <rect rx="2.081" ry="2.0502" height="14.771" width="15.122" stroke="#6f0000" stroke-linecap="round" y=".80747" x=".45723" stroke-width=".72156" fill="url(#a)"/>
-  <g opacity=".63514" stroke-opacity=".70556" fill-rule="evenodd" transform="matrix(1.0405 0 0 1.0251 .94741 -1.5277)" stroke="#000" stroke-width="1.6713">
-   <g transform="translate(-1.2664 2.471)">
-    <path d="m5.4243 5.3313 5.0911 5.09 0.19859 0.22522" fill="#fff"/>
-    <path d="m5.4243 5.3313 5.0911 5.09 0.19859 0.22522"/>
-   </g>
-   <g transform="translate(-1.2664 2.471)">
-    <path d="m5.4403 10.65 5.2477-5.2927"/>
-    <path d="m5.4403 10.65 5.2477-5.2927"/>
-   </g>
-  </g>
-  <g fill-rule="evenodd" transform="matrix(1.0405 0 0 1.0251 -.37031 -.13448)" stroke="#fff" stroke-width="1.6713">
+ <rect rx="2.081" ry="2.0502" height="14.771" width="15.122" stroke="#6f0000" stroke-linecap="round" y=".80747" x=".45723" stroke-width=".72156" fill="url(#a)"/>
+ <g opacity=".63514" stroke-opacity=".70556" fill-rule="evenodd" transform="matrix(1.0405 0 0 1.0251 .94741 -1.5277)" stroke="#000" stroke-width="1.6713">
+  <g transform="translate(-1.2664 2.471)">
    <path d="m5.4243 5.3313 5.0911 5.09 0.19859 0.22522" fill="#fff"/>
    <path d="m5.4243 5.3313 5.0911 5.09 0.19859 0.22522"/>
   </g>
-  <g fill="none" stroke="#fff" stroke-width="1.7261">
-   <path d="m5.2904 10.783 5.4606-5.4256"/>
-   <path d="m5.2904 10.783 5.4606-5.4256"/>
+  <g transform="translate(-1.2664 2.471)">
+   <path d="m5.4403 10.65 5.2477-5.2927"/>
+   <path d="m5.4403 10.65 5.2477-5.2927"/>
   </g>
-  <rect rx="1.9331" ry="1.8944" height="14.789" width="14.047" stroke="url(#b)" stroke-linecap="round" fill="none" y=".35540" x="1.0268" stroke-width=".47880"/>
  </g>
+ <g fill-rule="evenodd" transform="matrix(1.0405 0 0 1.0251 -.37031 -.13448)" stroke="#fff" stroke-width="1.6713">
+  <path d="m5.4243 5.3313 5.0911 5.09 0.19859 0.22522" fill="#fff"/>
+  <path d="m5.4243 5.3313 5.0911 5.09 0.19859 0.22522"/>
+ </g>
+ <g fill="none" stroke="#fff" stroke-width="1.7261">
+  <path d="m5.2904 10.783 5.4606-5.4256"/>
+  <path d="m5.2904 10.783 5.4606-5.4256"/>
+ </g>
+ <rect rx="1.9331" ry="1.8944" height="14.789" width="14.047" stroke="url(#b)" stroke-linecap="round" fill="none" y=".35540" x="1.0268" stroke-width=".47880"/>
 </svg>
