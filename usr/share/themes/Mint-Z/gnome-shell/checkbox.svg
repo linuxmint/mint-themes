@@ -20,7 +20,7 @@
   </g>
   <g transform="matrix(.84337 0 0 .84337 -110.17 -503.56)">
    <g style="enable-background:new" transform="translate(344 988)" fill="none">
-	<g stroke-linejoin="round" stroke-linecap="round">
+    <g stroke-linejoin="round" stroke-linecap="round">
      <path d="m198.5 240 5.25 5.25 13.986-14.431" stroke="url(#a)" stroke-width="7.1143"/>
      <path d="m198.5 240 5.25 5.25 13.912-14.32" stroke="#4787c8" stroke-width="3.5572"/>
     </g>
