@@ -6,6 +6,8 @@
    <stop stop-color="#646464" offset="1"/>
   </linearGradient>
  </defs>
- <path opacity=".8" d="m4 10h8l-4.1468 5-3.8532-5z" fill-rule="evenodd" fill="#fff"/>
- <path opacity=".4" d="m4 9h8l-4.1468 5-3.8532-5z" fill-rule="evenodd" fill="url(#a)"/>
+ <g fill-rule="evenodd">
+  <path opacity=".8" d="m4 10h8l-4.1468 5-3.8532-5z" fill="#fff"/>
+  <path opacity=".4" d="m4 9h8l-4.1468 5-3.8532-5z" fill="url(#a)"/>
+ </g>
 </svg>

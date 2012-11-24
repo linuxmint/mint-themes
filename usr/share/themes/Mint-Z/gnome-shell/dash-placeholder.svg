@@ -10,7 +10,7 @@
    <stop stop-opacity="0" offset="1"/>
   </radialGradient>
  </defs>
- <g transform="translate(-11 -473.998)" style="color:#000000" >
+ <g transform="translate(-11 -473.998)" style="color:#000000">
   <rect opacity=".49375" rx="0" ry="0" height="2" width="76" y="487" x="11" fill="url(#b)"/>
   <path opacity=".43125" d="m61 487.5c0 5.8-4.701 10.5-10.5 10.5s-10.5-4.7-10.5-10.5 4.701-10.5 10.5-10.5 10.5 4.701 10.5 10.5z" transform="matrix(1.2857 0 0 1.2857 -14.429 -139.29)" fill="url(#a)"/>
   <path d="m61 487.5c0 5.8-4.701 10.5-10.5 10.5s-10.5-4.7-10.5-10.5 4.701-10.5 10.5-10.5 10.5 4.701 10.5 10.5z" transform="matrix(.43590 0 0 .43590 28.487 275)" fill="#fff"/>
