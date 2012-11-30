@@ -1,3 +1,9 @@
+mint-themes (1.1.5) nadia; urgency=low
+
+  * Updated Xfwm4 style (used greybird)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 30 Nov 2012 12:19:06 +0000
+
 mint-themes (1.1.4) nadia; urgency=low
 
   * Changed GTK3 base color from DCDCDC to D6D6D6 in accordance with GTK2 (fixes metacity color mismatch)
