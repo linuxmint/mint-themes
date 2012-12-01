@@ -1,3 +1,16 @@
+mint-themes (1.1.7) nadia; urgency=low
+
+  * Darker green highlight in list and menu selections (more readable)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 01 Dec 2012 17:02:37 +0000
+
+mint-themes (1.1.6) nadia; urgency=low
+
+  * Green info-bar
+  * 2px border in gtk3 menus (prevent auto-selection of 1st item and consistent with gtk2)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 01 Dec 2012 13:12:21 +0000
+
 mint-themes (1.1.5) nadia; urgency=low
 
   * Updated Xfwm4 style (used greybird)
