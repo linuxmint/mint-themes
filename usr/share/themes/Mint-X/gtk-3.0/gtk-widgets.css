@@ -24,8 +24,8 @@
     -GtkExpander-expander-size: 12;
     -GtkHTML-link-color: @link_color;
     -GtkIMHtml-hyperlink-color: @link_color;
-    -GtkMenu-horizontal-padding: 0;
-    -GtkMenu-vertical-padding: 0;  
+    -GtkMenu-horizontal-padding: 1;
+    -GtkMenu-vertical-padding: 1;
     -GtkMenuBar-internal-padding: 0;
     -GtkMenuItem-arrow-scaling: 0.4;
     -GtkNotebook-initial-gap: 0;
