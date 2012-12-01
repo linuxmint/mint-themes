@@ -405,12 +405,13 @@ GtkSwitch.slider,
 row:selected,
 row:selected:focus {
     background-image: -gtk-gradient(linear, left top, left bottom,
-                                     from (shade(@theme_selected_bg_color, 1.2)),
-                                     to (shade(@theme_selected_bg_color, 1.0)));
+                                    color-stop(0, shade(@theme_selected_bg_color, 0.9)),
+                                    color-stop(0.3, shade(@theme_selected_bg_color, 0.8)),
+                                    color-stop(0.7, shade(@theme_selected_bg_color, 0.8)),
+                                    color-stop(1, shade(@theme_selected_bg_color, 0.75)));
 
     border-color: shade(@theme_selected_bg_color, 0.8);
     border-style: solid;
-    border-width: 1px 0;
     color: @theme_selected_fg_color;
 }
 
@@ -882,10 +883,12 @@ GtkComboBox .menu {
 .menubar.menuitem:hover,
 .menubar .menuitem:hover {
     background-image: -gtk-gradient(linear, left top, left bottom,
-                                     from (shade(@theme_selected_bg_color, 1.2)),
-                                     to (shade(@theme_selected_bg_color, 1.0)));
+                                    color-stop(0, shade(@theme_selected_bg_color, 0.9)),
+                                    color-stop(0.3, shade(@theme_selected_bg_color, 0.8)),
+                                    color-stop(0.7, shade(@theme_selected_bg_color, 0.8)),
+                                    color-stop(1, shade(@theme_selected_bg_color, 0.75)));
 
-    border-color: shade(@theme_selected_bg_color, 1.1);
+    border-color: shade(@theme_selected_bg_color, 0.7);
 }
 
 .menubar .menuitem *:hover {
@@ -915,11 +918,13 @@ GtkTreeMenu .menuitem * {
 .menu .menuitem:active,
 .menu .menuitem:hover {
     background-image: -gtk-gradient(linear, left top, left bottom,
-                                     from (shade(@theme_selected_bg_color, 1.2)),
-                                     to (shade(@theme_selected_bg_color, 1.0)));
+                                    color-stop(0, shade(@theme_selected_bg_color, 0.9)),
+                                    color-stop(0.3, shade(@theme_selected_bg_color, 0.8)),
+                                    color-stop(0.7, shade(@theme_selected_bg_color, 0.8)),
+                                    color-stop(1, shade(@theme_selected_bg_color, 0.75)));
 
     border-radius: 0;
-    border-color: shade(@theme_selected_bg_color, 0.8);
+    border-color: shade(@theme_selected_bg_color, 0.7);
 }
 
 .menu .menuitem:active,
