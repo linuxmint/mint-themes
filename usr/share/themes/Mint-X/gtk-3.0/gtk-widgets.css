@@ -237,8 +237,8 @@ GtkAssistant .sidebar {
  * button *
  **********/
 .button {
-    -GtkWidget-focus-padding: 1;
-    -GtkWidget-focus-line-width: 0;
+    -GtkWidget-focus-padding: 0;
+    -GtkWidget-focus-line-width: 2;
 
     padding: 2px;
 }
@@ -258,7 +258,8 @@ GtkSwitch.slider,
     color: @theme_fg_color;
 }
 
-.button:active {
+.button:active,
+.button:active:hover {
     background-image: -gtk-gradient(linear, left top, left bottom,
                                      from (shade(shade(@theme_bg_color, 0.85), 1.05)),
                                      to (shade(shade(@theme_bg_color, 0.85), 0.97)));
@@ -266,8 +267,7 @@ GtkSwitch.slider,
     border-color: shade(@theme_bg_color, 0.6);
 }
 
-.button:hover,
-.button:active:hover {
+.button:hover {
     background-image: -gtk-gradient(linear, left top, left bottom,
                                      from (shade(@theme_bg_color, 1.15)),
                                      to (shade(@theme_bg_color, 1.07)));
@@ -280,8 +280,8 @@ GtkSwitch.slider,
 
 .button:focus,
 .button:hover:focus,
-.button:active:focus {
-    border-color: shade(@theme_notext_selected_bg_color, 0.8);
+.button:active:focus {   
+    border-color: @theme_notext_selected_bg_color;
 }
 
 .button:insensitive {
