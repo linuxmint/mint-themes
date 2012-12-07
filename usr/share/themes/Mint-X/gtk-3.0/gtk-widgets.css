@@ -43,11 +43,11 @@
     -GtkScrollbar-slider-width: 14;
     -GtkScrollbar-slider-length: 18;
     -GtkScrolledWindow-scrollbar-spacing: 0;
-    -GtkScrolledWindow-scrollbars-within-bevel: 1;
+    -GtkScrolledWindow-scrollbars-within-bevel: 0;
     -GtkSeparatorMenuItem-horizontal-padding: 0;
     -GtkStatusbar-shadow-type: none;
     -GtkTextView-error-underline-color: @error_color;
-    -GtkToolbar-internal-padding: 0;
+    -GtkToolbar-internal-padding: 1;
     -GtkToolButton-icon-spacing: 6;
     -GtkToolItemGroup-expander-size: 11;
     -GtkTreeView-expander-size: 11;
