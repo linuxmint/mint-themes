@@ -86,8 +86,8 @@ style "default"
 		colorize_scrollbar  			= TRUE
 		contrast            			= 0.8
 		glazestyle          			= 3 
-		gradient_shades     			= {1.1,1.07,1.01,0.98} 
-		progressbarstyle    			= 1
+		gradient_shades     			= {1.15,1.15,0.95,0.95} 
+		progressbarstyle    			= 0
 		focus_color         			= shade (1.2, @selected_bg_color)
 		focusstyle                      = 3
 		glowstyle	    			    = 0
@@ -104,8 +104,8 @@ style "default"
 		reliefstyle	    			= 4 # 0 = flat, 1 = inset, 2 = shadow
 		rgba		    			= FALSE
 		roundness           			= 3
-		scrollbarstyle     			= 0 
-		sliderstyle         			= 1 # 0 = nothing added, 1 = handles
+		scrollbarstyle     			    = 0 
+		sliderstyle         			= 0 # 0 = nothing added, 1 = handles
 		separatorstyle	    			= 1
 		stepperstyle        			= 1 # 0 = standard, 1 = integrated stepper handles, 2 = unknown
 		toolbarstyle	   			= 1 # 0 = flat, 1 = glassy, 2 = gradient

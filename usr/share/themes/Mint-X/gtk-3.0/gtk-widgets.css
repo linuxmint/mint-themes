@@ -31,16 +31,17 @@
     -GtkNotebook-initial-gap: 0;
     -GtkNotebook-tab-overlap: -2;
     -GtkPaned-handle-size: 3;
-    -GtkProgressBar-min-horizontal-bar-height: 10;
-    -GtkProgressBar-min-vertical-bar-width: 10;
+    /*-GtkProgressBar-min-horizontal-bar-height: 10;
+    -GtkProgressBar-min-vertical-bar-width: 10;*/
     -GtkRange-slider-width: 9;
     -GtkRange-stepper-size: 0;
     -GtkRange-stepper-spacing: 0;
     -GtkRange-trough-border: 3;
     -GtkRange-trough-under-steppers: 1;
     -GtkScrollbar-activate-slider: 1;
-    -GtkScrollbar-min-slider-length: 50;
-    -GtkScrollbar-slider-width: 15;
+    -GtkScrollbar-min-slider-length: 30;
+    -GtkScrollbar-slider-width: 14;
+    -GtkScrollbar-slider-length: 18;
     -GtkScrolledWindow-scrollbar-spacing: 0;
     -GtkScrolledWindow-scrollbars-within-bevel: 1;
     -GtkSeparatorMenuItem-horizontal-padding: 0;
@@ -1080,7 +1081,7 @@ GtkProgressBar {
 
     border-style: solid;
     border-width: 1px;
-    border-color: shade(@theme_notext_selected_bg_color, 0.7);
+    border-color: shade(@theme_notext_selected_bg_color, 0.8);
 }
 
 .progressbar.vertical {
@@ -1090,7 +1091,7 @@ GtkProgressBar {
 
     border-style: solid;
     border-width: 1px;
-    border-color: shade(@theme_notext_selected_bg_color, 0.7);
+    border-color: shade(@theme_notext_selected_bg_color, 0.8);
 }
 
 .trough,
@@ -1238,8 +1239,8 @@ GtkScale.mark {
 
 GtkScale.trough {
     background-image: -gtk-gradient(linear, left top, left bottom,
-                                     from (shade(shade(@theme_bg_color, 0.8), 0.9)),
-                                     to (shade(shade(@theme_bg_color, 0.8), 1.1)));
+                                     from (shade(shade(@theme_bg_color, 0.98), 0.9)),
+                                     to (shade(shade(@theme_bg_color, 0.98), 1.1)));
 
     border-color: transparent;
     border-width: 5px 0;
@@ -1248,8 +1249,8 @@ GtkScale.trough {
 
 GtkScale.trough.vertical {
     background-image: -gtk-gradient(linear, left top, right top,
-                                     from (shade(shade(@theme_bg_color, 0.8), 0.9)),
-                                     to (shade(shade(@theme_bg_color, 0.8), 1.1)));
+                                     from (shade(shade(@theme_bg_color, 0.98), 0.9)),
+                                     to (shade(shade(@theme_bg_color, 0.98), 1.1)));
 
     border-color: transparent;
     border-width: 0 5px;
@@ -1259,8 +1260,8 @@ GtkScale.trough.vertical {
 .menubar .menuitem .scale.highlight.left,
 .scale.highlight.left {
     background-image: -gtk-gradient(linear, left top, left bottom,
-                                    from (shade(shade(@theme_notext_selected_bg_color, 0.9), 1.1)),
-                                    to (shade(shade(@theme_notext_selected_bg_color, 0.9), 0.9)));
+                                    from (shade(@theme_notext_selected_bg_color, 1.15)),
+                                    to (shade(@theme_notext_selected_bg_color, 0.95)));
 
     /* we will draw the border using box shadow for now */
     border-color: transparent;
@@ -1268,8 +1269,8 @@ GtkScale.trough.vertical {
 
 .scale.highlight.bottom {
     background-image: -gtk-gradient(linear, left top, right top,
-                                    from (shade(shade(@theme_notext_selected_bg_color, 0.9), 1.1)),
-                                    to (shade(shade(@theme_notext_selected_bg_color, 0.9), 0.9)));
+                                    from (shade(@theme_notext_selected_bg_color, 1.15)),
+                                    to (shade(@theme_notext_selected_bg_color, 0.95)));
 
     /* we will draw the border using box shadow for now */
     border-color: transparent;
