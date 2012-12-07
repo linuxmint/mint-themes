@@ -18,9 +18,6 @@
 @define-color theme_tooltip_bg_color @tooltip_bg_color;
 @define-color theme_tooltip_fg_color @tooltip_fg_color;
 
-/* color used by UI elements which don't contain text */
-@define-color theme_notext_selected_bg_color shade(@theme_selected_bg_color, 1.2);
-
 /* shadow effects */
 @define-color light_shadow #fff;
 @define-color dark_shadow #000;
