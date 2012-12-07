@@ -1,7 +1,7 @@
 style "treeview" = "default"
 {
-	base[SELECTED]					= shade (0.8, @selected_bg_color)
-	base[ACTIVE]					= shade (0.8, @selected_bg_color)
+	base[SELECTED]					= @selected_bg_color
+	base[ACTIVE]					= @selected_bg_color
 
 	xthickness					= 1
 	ythickness					= 1
