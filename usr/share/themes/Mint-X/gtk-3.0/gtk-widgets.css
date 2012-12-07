@@ -21,7 +21,7 @@
     -GtkCheckMenuItem-indicator-size: 12;
     -GtkEntry-inner-border: 1;
     -GtkEntry-progress-border: 2;
-    -GtkExpander-expander-size: 12;
+    -GtkExpander-expander-size: 14;
     -GtkHTML-link-color: @link_color;
     -GtkIMHtml-hyperlink-color: @link_color;
     -GtkMenu-horizontal-padding: 2;
