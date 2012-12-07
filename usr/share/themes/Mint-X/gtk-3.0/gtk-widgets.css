@@ -183,10 +183,10 @@ GtkScale.trough {
 .menubar .menuitem .scale.highlight.left,
 .scale.highlight.left,
 .scale.highlight.bottom {
-    box-shadow: inset 1px 0 shade(@theme_selected_bg_color, 0.7),
-                inset 0 1px shade(@theme_selected_bg_color, 0.7),
-                inset -1px 0 shade(@theme_selected_bg_color, 0.7),
-                inset 0 -1px shade(@theme_selected_bg_color, 0.7);
+    box-shadow: inset 1px 0 shade(@theme_notext_selected_bg_color, 0.7),
+                inset 0 1px shade(@theme_notext_selected_bg_color, 0.7),
+                inset -1px 0 shade(@theme_notext_selected_bg_color, 0.7),
+                inset 0 -1px shade(@theme_notext_selected_bg_color, 0.7);
 }
 
 GtkScale.slider:insensitive,
@@ -281,7 +281,7 @@ GtkSwitch.slider,
 .button:focus,
 .button:hover:focus,
 .button:active:focus {
-    border-color: shade(@theme_selected_bg_color, 0.8);
+    border-color: shade(@theme_notext_selected_bg_color, 0.8);
 }
 
 .button:insensitive {
@@ -301,8 +301,8 @@ GtkSwitch.slider,
 /* default button */
 .button.default {
     background-image: -gtk-gradient(linear, left top, left bottom,
-                                     from (shade(alpha(@theme_selected_bg_color, 0.7), 1.05)),
-                                     to (shade(alpha(@theme_selected_bg_color, 0.7), 0.97)));
+                                     from (shade(alpha(@theme_notext_selected_bg_color, 0.7), 1.05)),
+                                     to (shade(alpha(@theme_notext_selected_bg_color, 0.7), 0.97)));
 
     border-color: shade(@theme_selected_bg_color, 0.8);
 }
@@ -1075,22 +1075,22 @@ GtkProgressBar {
 .progressbar row:selected,
 .progressbar row:selected:focus {
     background-image: -gtk-gradient(linear, left top, left bottom,
-                                     from (shade(@theme_selected_bg_color, 1.15)),
-                                     to (shade(@theme_selected_bg_color, 0.95)));
+                                     from (shade(@theme_notext_selected_bg_color, 1.15)),
+                                     to (shade(@theme_notext_selected_bg_color, 0.95)));
 
     border-style: solid;
     border-width: 1px;
-    border-color: shade(@theme_selected_bg_color, 0.7);
+    border-color: shade(@theme_notext_selected_bg_color, 0.7);
 }
 
 .progressbar.vertical {
     background-image: -gtk-gradient(linear, left top, right top,
-                                     from (shade(@theme_selected_bg_color, 1.15)),
-                                     to (shade(@theme_selected_bg_color, 0.95)));
+                                     from (shade(@theme_notext_selected_bg_color, 1.15)),
+                                     to (shade(@theme_notext_selected_bg_color, 0.95)));
 
     border-style: solid;
     border-width: 1px;
-    border-color: shade(@theme_selected_bg_color, 0.7);
+    border-color: shade(@theme_notext_selected_bg_color, 0.7);
 }
 
 .trough,
@@ -1132,12 +1132,12 @@ GtkLevelBar.vertical {
 
 .level-bar.fill-block {
     background-image: -gtk-gradient(linear, left top, left bottom,
-                                     from (shade(@theme_selected_bg_color, 1.15)),
-                                     to (shade(@theme_selected_bg_color, 0.95)));
+                                     from (shade(@theme_notext_selected_bg_color, 1.15)),
+                                     to (shade(@theme_notext_selected_bg_color, 0.95)));
 
     border-width: 1px;
     border-style: solid;
-    border-color: shade(@theme_selected_bg_color, 0.7);
+    border-color: shade(@theme_notext_selected_bg_color, 0.7);
 }
 
 .level-bar.indicator-continuous.fill-block {
@@ -1222,8 +1222,8 @@ GtkScale.slider {
 
 GtkScale.slider:hover {
     background-image: -gtk-gradient(linear, left top, left bottom,
-                                     from (shade(mix(@theme_bg_color, shade(@theme_selected_bg_color, 0.9), 0.4), 1.2)),
-                                     to (shade(mix(@theme_bg_color, shade(@theme_selected_bg_color, 0.9), 0.4),0.97)));
+                                     from (shade(mix(@theme_bg_color, shade(@theme_notext_selected_bg_color, 0.9), 0.4), 1.2)),
+                                     to (shade(mix(@theme_bg_color, shade(@theme_notext_selected_bg_color, 0.9), 0.4),0.97)));
 }
 
 GtkScale.slider:insensitive {
@@ -1259,8 +1259,8 @@ GtkScale.trough.vertical {
 .menubar .menuitem .scale.highlight.left,
 .scale.highlight.left {
     background-image: -gtk-gradient(linear, left top, left bottom,
-                                    from (shade(shade(@theme_selected_bg_color, 0.9), 1.1)),
-                                    to (shade(shade(@theme_selected_bg_color, 0.9), 0.9)));
+                                    from (shade(shade(@theme_notext_selected_bg_color, 0.9), 1.1)),
+                                    to (shade(shade(@theme_notext_selected_bg_color, 0.9), 0.9)));
 
     /* we will draw the border using box shadow for now */
     border-color: transparent;
@@ -1268,8 +1268,8 @@ GtkScale.trough.vertical {
 
 .scale.highlight.bottom {
     background-image: -gtk-gradient(linear, left top, right top,
-                                    from (shade(shade(@theme_selected_bg_color, 0.9), 1.1)),
-                                    to (shade(shade(@theme_selected_bg_color, 0.9), 0.9)));
+                                    from (shade(shade(@theme_notext_selected_bg_color, 0.9), 1.1)),
+                                    to (shade(shade(@theme_notext_selected_bg_color, 0.9), 0.9)));
 
     /* we will draw the border using box shadow for now */
     border-color: transparent;
@@ -1300,7 +1300,7 @@ GtkScale.trough.vertical:insensitive,
 .scrollbar.trough,
 .scrollbar.trough.vertical {
     background-image: -gtk-gradient(linear, left top, right top,
-                                     from (shade(@theme_base_color, 0.91))),
+                                     from (shade(@theme_base_color, 0.91)),
                                      to (shade(@theme_base_color, 0.97)));
 
     border-width: 0;
@@ -1373,7 +1373,7 @@ OsThumb {
 
 OsThumb:selected,
 OsScrollbar:selected {
-    background-color: @theme_selected_bg_color;
+    background-color: @theme_notext_selected_bg_color;
 }
 
 OsThumb:active,
@@ -1436,7 +1436,7 @@ GtkComboBox .separator {
 .sidebar,
 .sidebar.view,
 .sidebar .view {
-    background-color: mix(shade(@theme_base_color, 0.9), shade(@theme_selected_bg_color, 1.35), 0.1);
+    background-color: mix(shade(@theme_base_color, 0.9), shade(@theme_notext_selected_bg_color, 1.35), 0.1);
 }
 
 .sidebar .frame {
@@ -1848,6 +1848,6 @@ GtkViewport.frame {
 
 .view:selected,
 .view:selected:focus {
-    background-color: @theme_selected_bg_color;
+    background-color: @theme_notext_selected_bg_color;
     color: @theme_selected_fg_color;
 }
