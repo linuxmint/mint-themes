@@ -264,9 +264,9 @@ class "GtkScrolledWindow"				style "wid"
 
 # General matching following, the order is choosen so that the right styles override each other
 #Notebook uniformity fixes
-widget_class "*<GtkNotebook>*<GtkEventBox>"		style "notebook-fix"
-widget_class "*<GtkNotebook>*<GtkDrawingArea>"		style "notebook-fix"
-widget_class "*<GtkNotebook>*<GtkLayout>"		style "notebook-fix"
+widget_class "*<GtkNotebook>*<GtkEventBox>"		    style "notebook"
+widget_class "*<GtkNotebook>*<GtkDrawingArea>"		style "notebook"
+widget_class "*<GtkNotebook>*<GtkLayout>"		    style "notebook"
 widget_class "*<GtkNotebook>*<GtkLabel>"        	style "notebook"
 
 widget_class "*<GtkButton>"      			style "button"
