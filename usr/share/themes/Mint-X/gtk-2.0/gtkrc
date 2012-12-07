@@ -1,6 +1,6 @@
 #Based on Clearlooks Revamp 0.45
 
-gtk_color_scheme = "base_color:#ffffff\nfg_color:#212121\ntooltip_fg_color:#EDEDED\nselected_bg_color:#accd8a\nselected_fg_color:#ffffff\ntext_color:#1A1A1A\nbg_color:#D6D6D6\ntooltip_bg_color:#FBEAA0\nmenu_fg_color:#212121\nmenu_bg_color:#FEFEFE\nfocus_color:#94b06f"
+gtk_color_scheme = "base_color:#ffffff\ntext_color:#2c2c2c\nbg_color:#D6D6D6\nfg_color:#2c2c2c\nselected_bg_color:#accd8a\nselected_fg_color:#2c2c2c\ntooltip_bg_color:#fbea9f\ntooltip_fg_color:#000000\nmenu_bg_color:#fcfcfc\nmenu_fg_color:#2c2c2c\nfocus_color:#accd8a\n"
 
 #gtk-menu-popup-delay    				= 1
 gtk-button-images					= 0
