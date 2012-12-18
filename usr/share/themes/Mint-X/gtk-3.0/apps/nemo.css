@@ -11,7 +11,6 @@ NemoWindow .sidebar .view:selected {
 }
 
 /* inactive pane */
-
 .nemo-inactive-pane .view {
-    background-color: shade(@theme_base_color, 0.9);
+    background-color: shade(@theme_base_color, 0.95);
 }
