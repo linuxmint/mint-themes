@@ -6,6 +6,9 @@ NemoWindow .sidebar .view {
 	/* text-shadow: 1px 1px alpha (#000000, 0.8); */
 }
 
+NemoWindow .sidebar .view:selected {
+	color: #EEEEEE;
+}
 
 /* inactive pane */
 
