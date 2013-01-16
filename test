@@ -1,5 +1,17 @@
 #!/bin/bash
 
-sudo rm -rf /usr/share/themes/Mint-*
-sudo cp -R usr /
+# Old way (brutal)
+#sudo rm -rf /usr/share/themes/Mint-*
+#sudo cp -R usr /
 
+# New way
+echo "Bind mounting the theme to /usr/share/themes/Mint-X..."
+
+sudo mount --bind usr/share/themes/Mint-X /usr/share/themes/Mint-X
+
+read -p "Theme active. Press any key to revert..."
+
+sudo umount /usr/share/themes/Mint-X
+
+echo "Theme deactivated. Reload applications to take effect."
+exit 0
