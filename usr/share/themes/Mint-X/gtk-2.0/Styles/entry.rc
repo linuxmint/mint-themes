@@ -3,11 +3,12 @@ style "entry" = "wider"
 	#GtkEntry::invisible_char = 0x2665
 
 	base[NORMAL] 					= @base_color
-	bg[INSENSITIVE] 				= @bg_color
+	bg[INSENSITIVE] 				= mix (0.6, @base_color, @bg_color)
 
 	engine "murrine" 
 	{
-		border_shades 				= {1.35, 0.98}
+	    roundness                   = 2
+		border_shades 				= {0.94, 0.94}
 	}
 }
 

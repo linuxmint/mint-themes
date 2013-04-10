@@ -28,10 +28,5 @@ style "deluge-preferences-info"
 	}
 }
 
-widget "main_window*torrent_info.*viewport?"	style "notebook-fix"
-widget"pref_dialog.*.notebook.*viewport?"	style "notebook-fix"
-widget"pref_dialog.*.notebook.*viewport??"	style "notebook-fix"
-widget"pref_dialog.*.notebook.*GtkViewport"	style "notebook-fix"
-
 widget"pref_dialog.*.notebook.*viewport5"	style:highest "deluge-preferences"
 widget"pref_dialog.*.notebook.*viewport12"	style "deluge-preferences-info"
