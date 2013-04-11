@@ -444,9 +444,9 @@ column-header .button:active {
 
 column-header .button {
     background-image: -gtk-gradient(linear, left top, left bottom,
-                                     from (#FFFFFF),
-                                     color-stop (0.5, #F4F4F4),
-                                     to (#D7D7D7));
+                                     from (@theme_base_color),
+                                     color-stop (0.5, shade(@theme_base_color, 0.96)),
+                                     to (@theme_bg_color));
 
     border-color: shade(@theme_bg_color, 0.97);
     border-bottom-color: shade(@theme_bg_color, 0.8);
@@ -1300,11 +1300,11 @@ GtkScale.trough.vertical:insensitive,
 .scrollbar.trough,
 .scrollbar.trough.vertical {
     background-image: -gtk-gradient(linear, left top, right top,
-                                     from (#e7e7e7),
-                                     to (#f7f7f7));
+                                     from (shade(@theme_base_color, 0.91)),
+                                     to (shade(@theme_base_color, 0.97)));
 
     border-width: 0;
-    border-radius: 0
+    border-radius: 0;
 }
 
 .scrollbar.trough.horizontal {
@@ -1789,14 +1789,14 @@ GtkTextView {
  * tooltip *
  ***********/
 .tooltip {
-	border: 1px solid rgba(212,185,67,1.0);
-	border-radius: 4px;
-	padding: 2px 12px;	
+	border: 1px solid shade(@theme_tooltip_bg_color, 0.65);
+	/*border-radius: 4px;*/
+	/*padding: 2;	*/
 	background-image: -gtk-gradient(linear, left top, left bottom,
-                                     from (rgba(254,245,198,0.9)),
-                                     to (rgba(251,234,159,0.9)));		
-	color: #000000;
-	font-size: 8.5;
+                                     from (shade(@theme_tooltip_bg_color, 1.1)),
+                                     to (@theme_tooltip_bg_color));		
+	color: @theme_tooltip_fg_color;
+	/*font-size: 8.5;*/
 	font-weight: normal;	
 }
 
@@ -1823,11 +1823,11 @@ GtkTreeView .entry {
 }
 
 GtkTreeView row:nth-child(even) {
-    background-color: #F8F8F8;
+    background-color: shade(@theme_base_color, 0.97);
 }
 
 GtkTreeView row:nth-child(odd) {
-    background-color: #FFFFFF;
+    background-color: @theme_base_color;
 }
 
 /************
