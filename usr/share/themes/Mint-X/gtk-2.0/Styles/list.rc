@@ -41,150 +41,18 @@ style "pixmap-treeview"
 		{
 			function			= FLAT_BOX
 			recolorable			= TRUE
+			state				= NORMAL
+			file				= "Null/null.png"
+			stretch				= TRUE
+		}
+		image
+		{
+			function			= FLAT_BOX
+			recolorable			= TRUE
 			state				= SELECTED
 			file				= "Treeview/row-selected.png"
 			border				= { 0, 2, 2, 2}
 			stretch				= TRUE
-		}
-		image
-		{
-			function			= FLAT_BOX
-			recolorable			= TRUE
-			state				= NORMAL
-			file				= "Treeview/row-start.png"
-			border				= { 10, 0, 0, 0}
-			stretch				= TRUE
-			detail				= "cell_odd_start"
-		}
-		image
-		{
-			function			= FLAT_BOX
-			recolorable			= TRUE
-			state				= NORMAL
-			file				= "Treeview/row.png"
-			border				= { 0, 0, 0, 0}
-			stretch				= TRUE
-			detail				= "cell_odd_middle"
-		}
-		image
-		{
-			function			= FLAT_BOX
-			recolorable			= TRUE
-			state				= NORMAL
-			file				= "Treeview/row-end.png"
-			border				= { 0, 10, 0, 0}
-			stretch				= TRUE
-			detail				= "cell_odd_end"
-		}
-		image
-		{
-			function			= FLAT_BOX
-			recolorable			= TRUE
-			state				= NORMAL
-			file				= "Treeview/row-start.png"
-			border				= { 10, 0, 0, 0}
-			stretch				= TRUE
-			detail				= "cell_even_start"
-		}
-		image
-		{
-			function			= FLAT_BOX
-			recolorable			= TRUE
-			state				= NORMAL
-			file				= "Treeview/row.png"
-			border				= { 0, 0, 0, 0}
-			stretch				= TRUE
-			detail				= "cell_even_middle"
-		}
-		image
-		{
-			function			= FLAT_BOX
-			recolorable			= TRUE
-			state				= NORMAL
-			file				= "Treeview/row-end.png"
-			border				= { 0, 10, 0, 0}
-			stretch				= TRUE
-			detail				= "cell_even_end"
-		}
-		image
-		{
-			function			= FLAT_BOX
-			recolorable			= TRUE
-			state				= NORMAL
-			file				= "Treeview/row-start.png"
-			border				= { 10, 0, 0, 0}
-			stretch				= TRUE
-			detail				= "cell_even_sorted_start"
-		}
-		image
-		{
-			function			= FLAT_BOX
-			recolorable			= TRUE
-			state				= NORMAL
-			file				= "Treeview/row-start.png"
-			border				= { 10, 0, 0, 0}
-			stretch				= TRUE
-			detail				= "cell_odd_sorted_start"
-		}
-		image
-		{
-			function			= FLAT_BOX
-			recolorable			= TRUE
-			state				= NORMAL
-			file				= "Treeview/row.png"
-			border				= { 0, 0, 0, 0}
-			stretch				= TRUE
-			detail				= "cell_even_sorted_middle"
-		}
-		image
-		{
-			function			= FLAT_BOX
-			recolorable			= TRUE
-			state				= NORMAL
-			file				= "Treeview/row.png"
-			border				= { 0, 0, 0, 0}
-			stretch				= TRUE
-			detail				= "cell_odd_sorted_middle"
-		}
-		image
-		{
-			function			= FLAT_BOX
-			recolorable			= TRUE
-			state				= NORMAL
-			file				= "Treeview/row-end.png"
-			border				= { 0, 10, 0, 0}
-			stretch				= TRUE
-			detail				= "cell_even_sorted_end"
-		}
-		image
-		{
-			function			= FLAT_BOX
-			recolorable			= TRUE
-			state				= NORMAL
-			file				= "Treeview/row-end.png"
-			border				= { 0, 10, 0, 0}
-			stretch				= TRUE
-			detail				= "cell_odd_sorted_end"
-		}
-		image
-		{
-			function			= FLAT_BOX
-			recolorable			= TRUE
-			state				= NORMAL
-			file				= "Treeview/row-single.png"
-			border				= { 10, 10, 0, 0}
-			stretch				= TRUE
-			detail				= "cell_even"
-		}
-		image
-		{
-			function			= FLAT_BOX
-			recolorable			= TRUE
-			state				= NORMAL
-			file				= "Treeview/row-single.png"
-			border				= { 10, 10, 0, 0}
-			stretch				= TRUE
-			detail				= "cell_odd"
 		}
 		image
 		{
