@@ -7,6 +7,10 @@ NemoWindow .sidebar .view {
 }
 
 
+NemoWindow .sidebar .view:hover {
+    background-color: shade(#3F3F3F , 1.4);
+}
+
 /* inactive pane */
 
 .nemo-inactive-pane .view {
