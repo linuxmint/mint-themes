@@ -87,7 +87,7 @@ style "default"
 		glazestyle          			= 3 
 		gradient_shades     			= {1.1,1.07,1.01,0.98} 
 		progressbarstyle    			= 1
-		focus_color         			= "#94b06f"
+		focus_color         			= shade (1.2, @selected_bg_color)
 		glowstyle	    			= 0
 		glow_shade          			= 1.3
 		highlight_shade     			= 1.07
@@ -162,7 +162,7 @@ style "toolbar"
 
 	bg[NORMAL] 					= @bg_color
 	fg[NORMAL] 					= @fg_color
-	fg[PRELIGHT] 					= "#000000"
+	fg[PRELIGHT] 				= @fg_color
 	fg[ACTIVE] 					= @fg_color
 
 	engine "pixmap" 
