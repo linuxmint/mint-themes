@@ -3,9 +3,12 @@
 NemoWindow .sidebar .view {
 	background-color: #3F3F3F;
 	color: #EEEEEE;
-	text-shadow: 1px 1px alpha (#000000, 0.8);
+	/* text-shadow: 1px 1px alpha (#000000, 0.8); */
 }
 
+NemoWindow .sidebar .view:selected {
+	color: #EEEEEE;
+}
 
 /* inactive pane */
 
