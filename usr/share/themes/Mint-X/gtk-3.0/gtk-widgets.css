@@ -876,7 +876,7 @@ GtkComboBox .menu {
  ***************/
 .menubar.menuitem,
 .menubar .menuitem {
-    border-width: 0;
+    border-width: 1px;
     padding: 3px 5px 3px 5px;
 }
 
