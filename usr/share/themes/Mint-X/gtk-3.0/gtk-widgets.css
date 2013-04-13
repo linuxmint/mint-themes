@@ -405,13 +405,17 @@ GtkSwitch.slider,
 row:selected,
 row:selected:focus {
     background-image: -gtk-gradient(linear, left top, left bottom,
-                                    color-stop(0, shade(@theme_selected_bg_color, 1.1)),
-                                    color-stop(0.3, shade(@theme_selected_bg_color, 1.0)),
-                                    color-stop(0.7, shade(@theme_selected_bg_color, 1.0)),
-                                    color-stop(1, shade(@theme_selected_bg_color, 0.95)));
-
-    border-color: shade(@theme_selected_bg_color, 0.8);
+                                    color-stop(0, shade(@theme_selected_bg_color, 0.976)),
+                                    color-stop(1, shade(@theme_selected_bg_color, 1.052)));
+                                    
+    border-bottom: 1px;
+    border-top: 1px;
+    border-bottom-color: @theme_base_color;
+    border-top-color: @theme_base_color;
     border-style: solid;
+    
+    box-shadow: inset 0px -1px shade(@theme_selected_bg_color, 0.913);
+    
     color: @theme_selected_fg_color;
 }
 
