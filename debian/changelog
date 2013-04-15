@@ -1,3 +1,9 @@
+mint-themes (1.1.8) olivia; urgency=low
+
+  * 1.1.8
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 15 Apr 2013 15:08:43 +0100
+
 mint-themes (1.1.7) nadia; urgency=low
 
   * Darker green highlight in list and menu selections (more readable)
