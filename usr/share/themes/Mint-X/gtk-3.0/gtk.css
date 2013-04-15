@@ -7,6 +7,7 @@
 @define-color selected_fg_color #fff;
 @define-color tooltip_bg_color #000;
 @define-color tooltip_fg_color #e1e1e1;
+@define-color focus_color #94b06f;
 
 /* colormap actually used by the theme, to be overridden in other css files */
 @define-color theme_bg_color @bg_color;
@@ -17,6 +18,7 @@
 @define-color theme_selected_fg_color @selected_fg_color;
 @define-color theme_tooltip_bg_color @tooltip_bg_color;
 @define-color theme_tooltip_fg_color @tooltip_fg_color;
+@define-color theme_focus_color @focus_color;
 
 /* shadow effects */
 @define-color light_shadow #fff;
