@@ -86,7 +86,7 @@ style "default"
 		contrast            			= 0.8
 		glazestyle          			= 3 
 		gradient_shades     			= {1.1,1.07,1.01,0.98} 
-		progressbarstyle    			= 1
+		progressbarstyle    			= 0
 		focus_color         			= shade (1.2, @selected_bg_color)
 		glowstyle	    			= 0
 		glow_shade          			= 1.3
