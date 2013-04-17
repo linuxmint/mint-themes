@@ -410,8 +410,8 @@ row:selected:focus {
                                     
     border-bottom: 1px;
     border-top: 1px;
-    border-bottom-color: @theme_base_color;
-    border-top-color: @theme_base_color;
+    border-bottom-color: transparent;
+    border-top-color: transparent;
     border-style: solid;
     
     box-shadow: inset 0px -1px shade(@theme_selected_bg_color, 0.913);
