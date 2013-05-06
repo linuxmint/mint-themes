@@ -28,6 +28,14 @@ style "default"
 	GtkScrolledWindow::scrollbar-spacing		= 0
 	GtkScrolledWindow::scrollbars-within-bevel	= 0
 
+	GtkWidget::link-color = "#42adc0"
+	GtkWidget::visited-link-color = "#42adc0"
+	GtkHTML::alink_color = "#42adc0"
+	GtkHTML::link_color = "#42adc0"
+	GtkHTML::vlink_color = "#42adc0"
+	GnomeHref::link_color = "#42adc0"
+	GtkIMHtml::hyperlink-color = "#42adc0"
+	GtkIMHtml::hyperlink-prelight-color = "#42adc0"
 
 	GtkMenuBar::internal-padding  	                = 0
 	#GtkMenuBar::internal-padding  	                = 0
