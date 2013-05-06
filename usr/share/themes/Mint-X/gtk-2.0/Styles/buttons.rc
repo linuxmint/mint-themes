@@ -116,15 +116,7 @@ style "check"
 			shadow				= IN
 			overlay_file			= "Radiocheck/check-i-shadow-in.png"
 			overlay_stretch			= FALSE
-		}
-		image
-		{
-			function			= FLAT_BOX
-			recolorable			= TRUE
-			file				= "Radiocheck/checkbg.png"
-			border				= { 5, 5, 5, 5}
-			stretch				= TRUE
-		}
+		}	
 		image
 		{
 			function			= FOCUS
@@ -227,15 +219,7 @@ style "radio"
 			shadow				= IN
 			overlay_file			= "Radiocheck/radio-i-shadow-in.png"
 			overlay_stretch			= FALSE
-		}
-		image
-		{
-			function			= FLAT_BOX
-			recolorable			= TRUE
-			file				= "Radiocheck/checkbg.png"
-			border				= { 5 ,5 , 5 ,5}
-			stretch				= TRUE
-		}
+		}		
 		image
 		{
 			function			= FOCUS
