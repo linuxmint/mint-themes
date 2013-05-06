@@ -1834,10 +1834,6 @@ GtkTreeView row:nth-child(odd) {
     background-color: @theme_base_color;
 }
 
-GtkTreeView row:hover {
-    background-color: shade(@theme_selected_bg_color, 1.2);
-}
-
 /************
  * viewport *
  ************/
