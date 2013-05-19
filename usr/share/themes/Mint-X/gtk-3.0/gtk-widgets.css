@@ -1496,6 +1496,27 @@ GtkComboBox .separator {
      transition: 750ms linear loop;
 }
 
+/******
+* osd *
+*******/
+GtkWindow.osd {
+    background-color: @osd_bg;
+    color: @osd_fg;
+}
+ 
+GtkOverlay.osd {
+    background-color: transparent;
+}
+ 
+/* used by gnome-settings-daemon's media-keys OSD */
+.osd.trough {
+    background-color: shade(@osd_bg, 0.8);
+}
+
+.osd.progressbar {
+    background-color: @osd_fg;
+} 
+
 /*************
  * statusbar *
  *************/
