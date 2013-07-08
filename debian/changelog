@@ -1,3 +1,9 @@
+mint-themes (1.2.4) olivia; urgency=low
+
+  * Added fix for whiskermenu (gtk2)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 08 Jul 2013 16:44:21 +0200
+
 mint-themes (1.2.3) olivia; urgency=low
 
   * 1.2.3
