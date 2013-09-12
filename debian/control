@@ -8,7 +8,7 @@ Standards-Version: 3.7.2
 Package: mint-themes
 Replaces: mint-clearloox-theme, mint-x-theme, mint-z-theme, libreoffice-style-human
 Conflicts: mint-clearloox-theme, mint-x-theme, mint-z-theme, libreoffice-style-human
-Depends: mint-x-icons
+Depends: mint-x-icons, mint-themes-gtk3
 Provides: libreoffice-style, libreoffice-style-default
 Architecture: all
 Description: Mint themes
