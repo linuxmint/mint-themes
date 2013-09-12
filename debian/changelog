@@ -1,3 +1,9 @@
+mint-themes (1.2.5) petra; urgency=low
+
+  * Moved gtk3 theme to mint-themes-gtk3
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 12 Sep 2013 11:20:13 +0100
+
 mint-themes (1.2.4) olivia; urgency=low
 
   * Added fix for whiskermenu (gtk2)
