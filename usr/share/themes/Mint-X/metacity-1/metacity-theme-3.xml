@@ -24,19 +24,11 @@
 
 <frame_geometry name="maximized" parent="normal" rounded_top_left="false" rounded_top_right="false" rounded_bottom_left="false" rounded_bottom_right="false">
 	<!-- strip frame spacing off the normal geometry when maximised -->
-	<distance name="left_width" value="0"/>
-	<distance name="right_width" value="0"/>
-	<distance name="bottom_height" value="0"/>
+	<distance name="left_width" value="1"/>
+	<distance name="right_width" value="1"/>
+	<distance name="bottom_height" value="1"/>
 	<distance name="left_titlebar_edge" value="1"/>
 	<distance name="right_titlebar_edge" value="1"/>
-</frame_geometry>
-
-<frame_geometry name="tiled_left" rounded_top_left="false" rounded_top_right="false" parent="maximized">
-	<distance name="right_width" value="0" />
-</frame_geometry>
-
-<frame_geometry name="tiled_right" rounded_top_left="false" rounded_top_right="false" parent="maximized">
-	<distance name="left_width" value="1" />
 </frame_geometry>
 
 <frame_geometry name="utility" title_scale="small" rounded_top_left="false" rounded_top_right="false" rounded_bottom_left="false" rounded_bottom_right="false">
@@ -89,14 +81,10 @@
 <draw_ops name="maxed_border">
 	<line color="shade/gtk:bg[NORMAL]/1.14" x1="0" y1="0" x2="width" y2="0"/>
 	<line color="shade/gtk:bg[NORMAL]/0.66" x1="0" y1="height-1" x2="width" y2="height-1"/>
+	<line color="shade/gtk:bg[NORMAL]/0.66" x1="0" y1="0" x2="0" y2="height-2" />
+	<line color="shade/gtk:bg[NORMAL]/0.66" x1="width-1" y1="0" x2="width-1" y2="height-2" />
 </draw_ops>
 
-<draw_ops name="border_left">
-	<line
-		x1="0" y1="0" 
-		x2="0" y2="height" 
-		color="shade/gtk:bg[NORMAL]/0.66" />
-</draw_ops>
 
 <!-- ::: TITLEBAR ::: -->
 
@@ -421,22 +409,20 @@
 	<button function="maximize" state="prelight" draw_ops="maximize_button_prelight"/>
 </frame_style>
 
-<frame_style name="normal_tiled_left" geometry="tiled_left" parent="normal_maximized">
+<frame_style name="normal_tiled_left" geometry="maximized" parent="normal_maximized">
 	<piece position="entire_background" draw_ops="titlebar_maximized"/>
 </frame_style >
 
-<frame_style name="focused_tiled_left" geometry="tiled_left" parent="focused_maximized">
+<frame_style name="focused_tiled_left" geometry="maximized" parent="focused_maximized">
 	<piece position="entire_background" draw_ops="titlebar_maximized"/>
 </frame_style >
 
-<frame_style name="normal_tiled_right" geometry="tiled_right" parent="normal_maximized">
+<frame_style name="normal_tiled_right" geometry="maximized" parent="normal_maximized">
 	<piece position="entire_background" draw_ops="titlebar_maximized"/>
-	<piece position="overlay" draw_ops="border_left" />
 </frame_style >
 
-<frame_style name="focused_tiled_right" geometry="tiled_right" parent="focused_maximized">
+<frame_style name="focused_tiled_right" geometry="maximized" parent="focused_maximized">
 	<piece position="entire_background" draw_ops="titlebar_maximized"/>
-	<piece position="overlay" draw_ops="border_left" />
 </frame_style >
 
 <frame_style name="utility_normal" geometry="utility" parent="normal">
