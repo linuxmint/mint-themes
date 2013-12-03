@@ -400,7 +400,7 @@ widget_class "GtkWindow.GtkVBox.GtkHandleBox"	style "synaptic-toolbar"
 widget_class "GtkWindow.GtkVBox.GtkHPaned.GtkVBox.GtkTable.GtkRadioButton"	style:highest "button"
 
 #fix for whiskermenu
-widget_class "GtkWindow.GtkFrame.GtkVBox.GtkHBox.GtkVBox.GtkRadioButton"	style:highest "button"
+widget "whiskermenu-window.*.GtkRadioButton"	style:highest "button"
 
 include "Apps/nautilus.rc"
 include "Apps/caja.rc"
