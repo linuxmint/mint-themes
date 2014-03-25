@@ -1,9 +1,0 @@
-style "mintmenu-style"
-{
-	bg_pixmap[NORMAL]      			= "Apps/MintMenu/bc.png"	
-  	bg_pixmap[PRELIGHT]    			= "Apps/MintMenu/bc-light.png"
-  	bg_pixmap[ACTIVE]     			= "Apps/MintMenu/bc-dark.png"
-}
-
-widget "mintmenu.*" 				style "mintmenu-style"
-

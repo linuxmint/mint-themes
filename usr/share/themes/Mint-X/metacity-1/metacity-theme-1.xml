@@ -10,9 +10,9 @@
 
 <!-- ::: GEOMETRY ::: -->
 <frame_geometry name="normal" rounded_top_left="true" rounded_top_right="true" rounded_bottom_left="false" rounded_bottom_right="false">
-	<distance name="left_width" value="3"/>
-	<distance name="right_width" value="3"/>
-	<distance name="bottom_height" value="3"/>
+	<distance name="left_width" value="1"/>
+	<distance name="right_width" value="1"/>
+	<distance name="bottom_height" value="1"/>
 	<distance name="left_titlebar_edge" value="6"/>
 	<distance name="right_titlebar_edge" value="6"/>
 	<aspect_ratio name="button" value="1.0"/>
@@ -107,8 +107,8 @@
 <!-- ::: TITLEBAR ::: -->
 
 <draw_ops name="titlebar_gradient">
-	<gradient type="vertical" x="0" y="1" width="width" height="22">
-		<color value="shade/gtk:bg[NORMAL]/1.06"/>
+	<gradient type="vertical" x="0" y="0" width="width" height="22">
+		<color value="shade/gtk:bg[NORMAL]/1.08"/>
 		<color value="shade/gtk:bg[NORMAL]/1.0"/>
 	</gradient>
 </draw_ops>
@@ -142,8 +142,7 @@
 </draw_ops>
 
 <draw_ops name="title_unfocused">
-	<title color="shade/gtk:bg[NORMAL]/1.15" x="4 `max` (width-title_width)/2+1" y="1 `max` ((height-title_height)/2)+1"/>
-	<title color="shade/gtk:bg[NORMAL]/0.70" x="3 `max` (width-title_width)/2" y="0 `max` ((height-title_height)/2)"/>
+	<title color="shade/gtk:bg[NORMAL]/0.80" x="3 `max` (width-title_width)/2" y="0 `max` ((height-title_height)/2)"/>
 </draw_ops>
 
 <!-- menu icon -->
