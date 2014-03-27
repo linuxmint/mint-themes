@@ -220,63 +220,79 @@
 <!-- menu icon -->
 
 <draw_ops name="menu_glyph_focused">
-	<rectangle
-		x="(width-width%3)/3" y="(height-height%3)/3"
-		width="width-2*(width-width%3)/3-1" height="height-2*(height-height%3)/3-1"
-		color="C_icon_focused"/>
-	<rectangle
-		x="(width-width%3)/3+1" y="(height-height%3)/3+1"
-		width="width-2*(width-width%3)/3-3" height="height-2*(height-height%3)/3-3"
+	<line
+		x1="(width-width%3)/3" y1="height/2+1"
+		x2="width/2" y2="height-(height-height%3)/3"
 		color="C_icon_focused"/>
 	<line
-		x1="(width-width%3)/3" y1="height/2"
-		x2="width-(width-width%3)/3-1" y2="height/2"
-		color="C_icon_focused"/>
+        x1="(width-width%3)/3" y1="height/2"
+        x2="width/2" y2="height-(height-height%3)/3-1"
+        color="C_icon_focused"/>
+    <line
+        x1="width-(width-width%3)/3" y1="height/2+1"
+        x2="width/2" y2="height-(height-height%3)/3"
+        color="C_icon_focused"/>
+    <line
+        x1="width-(width-width%3)/3" y1="height/2"
+        x2="width/2" y2="height-(height-height%3)/3-1"
+        color="C_icon_focused"/>
 </draw_ops>
 
 <draw_ops name="menu_glyph_unfocused">
-	<rectangle
-		x="(width-width%3)/3" y="(height-height%3)/3"
-		width="width-2*(width-width%3)/3-1" height="height-2*(height-height%3)/3-1"
-		color="C_icon_unfocused"/>
-	<rectangle
-		x="(width-width%3)/3+1" y="(height-height%3)/3+1"
-		width="width-2*(width-width%3)/3-3" height="height-2*(height-height%3)/3-3"
-		color="C_icon_unfocused"/>
 	<line
-		x1="(width-width%3)/3" y1="height/2"
-		x2="width-(width-width%3)/3-1" y2="height/2"
-		color="C_icon_unfocused"/>
+        x1="(width-width%3)/3" y1="height/2+1"
+        x2="width/2" y2="height-(height-height%3)/3"
+        color="C_icon_unfocused"/>
+    <line
+        x1="(width-width%3)/3" y1="height/2"
+        x2="width/2" y2="height-(height-height%3)/3-1"
+        color="C_icon_unfocused"/>
+    <line
+        x1="width-(width-width%3)/3" y1="height/2+1"
+        x2="width/2" y2="height-(height-height%3)/3"
+        color="C_icon_unfocused"/>
+    <line
+        x1="width-(width-width%3)/3" y1="height/2"
+        x2="width/2" y2="height-(height-height%3)/3-1"
+        color="C_icon_unfocused"/>
 </draw_ops>
 
 <draw_ops name="menu_glyph_prelight">
-	<rectangle
-		x="(width-width%3)/3" y="(height-height%3)/3"
-		width="width-2*(width-width%3)/3-1" height="height-2*(height-height%3)/3-1"
-		color="C_icon_prelight"/>
-	<rectangle
-		x="(width-width%3)/3+1" y="(height-height%3)/3+1"
-		width="width-2*(width-width%3)/3-3" height="height-2*(height-height%3)/3-3"
-		color="C_icon_prelight"/>
 	<line
-		x1="(width-width%3)/3" y1="height/2"
-		x2="width-(width-width%3)/3-1" y2="height/2"
-		color="C_icon_prelight"/>
+        x1="(width-width%3)/3" y1="height/2+1"
+        x2="width/2" y2="height-(height-height%3)/3"
+        color="C_icon_prelight"/>
+    <line
+        x1="(width-width%3)/3" y1="height/2"
+        x2="width/2" y2="height-(height-height%3)/3-1"
+        color="C_icon_prelight"/>
+    <line
+        x1="width-(width-width%3)/3" y1="height/2+1"
+        x2="width/2" y2="height-(height-height%3)/3"
+        color="C_icon_prelight"/>
+    <line
+        x1="width-(width-width%3)/3" y1="height/2"
+        x2="width/2" y2="height-(height-height%3)/3-1"
+        color="C_icon_prelight"/>
 </draw_ops>
 
 <draw_ops name="menu_shadow_focused">
-	<rectangle
-		x="(width-width%3)/3" y="(height-height%3)/3"
-		width="width-2*(width-width%3)/3-1" height="height-2*(height-height%3)/3-1"
-		color="C_icon_highlight"/>
-	<rectangle
-		x="(width-width%3)/3+1" y="(height-height%3)/3+1"
-		width="width-2*(width-width%3)/3-3" height="height-2*(height-height%3)/3-3"
-		color="C_icon_highlight"/>
-	<line
-		x1="(width-width%3)/3" y1="height/2"
-		x2="width-(width-width%3)/3-1" y2="height/2"
-		color="C_icon_highlight"/>
+    <line
+        x1="(width-width%3)/3" y1="height/2+1"
+        x2="width/2" y2="height-(height-height%3)/3"
+        color="C_icon_highlight"/>
+    <line
+        x1="(width-width%3)/3" y1="height/2"
+        x2="width/2" y2="height-(height-height%3)/3-1"
+        color="C_icon_highlight"/>
+    <line
+        x1="width-(width-width%3)/3" y1="height/2+1"
+        x2="width/2" y2="height-(height-height%3)/3"
+        color="C_icon_highlight"/>
+    <line
+        x1="width-(width-width%3)/3" y1="height/2"
+        x2="width/2" y2="height-(height-height%3)/3-1"
+        color="C_icon_highlight"/>
 </draw_ops>
 
 <draw_ops name="menu_focused">
