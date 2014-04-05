@@ -209,12 +209,36 @@
 <!-- ::: TITLES ::: -->
 
 <draw_ops name="title_focused">
-	<title color="C_title_focused_highlight" x="3 `max` (width-title_width)/2" y="1 `max` ((height-title_height)/2)+1"/>
-	<title color="C_title_focused" x="3 `max` (width-title_width)/2" y="0 `max` ((height-title_height)/2)"/>
+    <title version="< 3.1"
+        x="(0 `max` ((width - title_width) / 2))"
+        y="(0 `max` ((height - title_height) /2)) + 1"
+        color="C_title_focused_highlight" />
+    <title version="< 3.1"
+        x="(0 `max` ((width - title_width) / 2))"
+        y="(0 `max` ((height - title_height) /2))"
+        color="C_title_focused" />
+    <title version=">= 3.1"
+        x="(0 `max` ((frame_x_center - title_width / 2) `min` (width - title_width)))"
+        y="(0 `max` ((height - title_height) /2)) + 1"
+        ellipsize_width="width"
+        color="C_title_focused_highlight" />
+    <title version=">= 3.1"
+        x="(0 `max` ((frame_x_center - title_width / 2) `min` (width - title_width)))"
+        y="(0 `max` ((height - title_height) /2))"
+        ellipsize_width="width"
+        color="C_title_focused" />
 </draw_ops>
 
 <draw_ops name="title_unfocused">
-	<title color="C_title_unfocused" x="3 `max` (width-title_width)/2" y="0 `max` ((height-title_height)/2)"/>
+    <title version="< 3.1"
+        x="(0 `max` ((width - title_width) / 2))"
+        y="(0 `max` ((height - title_height) /2))"
+        color="C_title_unfocused" />
+    <title version=">= 3.1"
+        x="(0 `max` ((frame_x_center - title_width / 2) `min` (width - title_width)))"
+        y="(0 `max` ((height - title_height) /2))"
+        ellipsize_width="width"
+        color="C_title_unfocused" />
 </draw_ops>
 
 <!-- menu icon -->
