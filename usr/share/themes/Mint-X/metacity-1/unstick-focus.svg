@@ -12,7 +12,7 @@
    version="1.1"
    id="svg2"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="menu-focus-normal.svg">
+   sodipodi:docname="stick-focus.svg">
   <metadata
      id="metadata17">
     <rdf:RDF>
@@ -41,8 +41,8 @@
      inkscape:zoom="22.47619"
      inkscape:cx="4.652096"
      inkscape:cy="10.72746"
-     inkscape:window-x="2540"
-     inkscape:window-y="51"
+     inkscape:window-x="600"
+     inkscape:window-y="201"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg2"
      showguides="true"
@@ -89,15 +89,15 @@
     </linearGradient>
   </defs>
   <path
-     sodipodi:nodetypes="cccc"
+     sodipodi:nodetypes="ccccccccccccc"
      inkscape:connector-curvature="0"
-     id="path3766"
-     d="M 8,14 12.54661,8 3.4703391,8 z"
+     id="path4097"
+     d="m 3.4703391,7 0,8 L 5.5,15 l 0,-3 5,0 0,1.5 2.04661,0 0,-5 -2.04661,0 0,1.5 -5,0 0,-3 z"
      style="fill:#ffffff;fill-opacity:1;stroke:none" />
   <path
      style="fill:#666666;fill-opacity:1;stroke:none"
-     d="M 8,13 12.54661,7 3.4703391,7 z"
-     id="path3764"
+     d="m 3.4703391,6 0,8 L 5.5,14 l 0,-3 5,0 0,1.5 2.04661,0 0,-5 -2.04661,0 0,1.5 -5,0 0,-3 z"
+     id="path4036"
      inkscape:connector-curvature="0"
-     sodipodi:nodetypes="cccc" />
+     sodipodi:nodetypes="ccccccccccccc" />
 </svg>

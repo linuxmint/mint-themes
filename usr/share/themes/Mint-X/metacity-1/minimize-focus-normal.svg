@@ -12,7 +12,7 @@
    version="1.1"
    id="svg2"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="menu-focus-normal.svg">
+   sodipodi:docname="minimize-focus-normal.svg">
   <metadata
      id="metadata17">
     <rdf:RDF>
@@ -39,35 +39,16 @@
      id="namedview15"
      showgrid="true"
      inkscape:zoom="22.47619"
-     inkscape:cx="4.652096"
+     inkscape:cx="6.8728252"
      inkscape:cy="10.72746"
-     inkscape:window-x="2540"
-     inkscape:window-y="51"
+     inkscape:window-x="409"
+     inkscape:window-y="0"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg2"
-     showguides="true"
-     inkscape:guide-bbox="true"
-     inkscape:snap-global="true"
      inkscape:snap-bbox="true">
     <inkscape:grid
        type="xygrid"
-       id="grid2986" />
-    <sodipodi:guide
-       orientation="0,1"
-       position="3,15"
-       id="guide2986" />
-    <sodipodi:guide
-       orientation="0,1"
-       position="1,6"
-       id="guide2988" />
-    <sodipodi:guide
-       orientation="1,0"
-       position="12.54661,16"
-       id="guide2990" />
-    <sodipodi:guide
-       orientation="1,0"
-       position="3.4703391,14"
-       id="guide2992" />
+       id="grid3754" />
   </sodipodi:namedview>
   <defs
      id="defs4">
@@ -88,16 +69,18 @@
          id="stop9" />
     </linearGradient>
   </defs>
-  <path
-     sodipodi:nodetypes="cccc"
-     inkscape:connector-curvature="0"
-     id="path3766"
-     d="M 8,14 12.54661,8 3.4703391,8 z"
+  <rect
+     y="11"
+     x="3.5"
+     height="2"
+     width="9"
+     id="rect3757"
      style="fill:#ffffff;fill-opacity:1;stroke:none" />
-  <path
-     style="fill:#666666;fill-opacity:1;stroke:none"
-     d="M 8,13 12.54661,7 3.4703391,7 z"
-     id="path3764"
-     inkscape:connector-curvature="0"
-     sodipodi:nodetypes="cccc" />
+  <rect
+     style="fill:#999999;fill-opacity:1;stroke:none"
+     id="rect2987"
+     width="9"
+     height="2"
+     x="3.5"
+     y="10" />
 </svg>
