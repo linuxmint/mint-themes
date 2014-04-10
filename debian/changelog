@@ -1,3 +1,9 @@
+mint-themes (1.2.9) qiana; urgency=medium
+
+  * Revamp from Joseph
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 10 Apr 2014 11:08:26 +0100
+
 mint-themes (1.2.8) petra; urgency=low
 
   * Fixed category buttons in whiskermenu
