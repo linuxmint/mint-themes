@@ -58,8 +58,8 @@ style "default" {
     GtkRange::stepper_spacing = 0
     GtkRange::trough-under-steppers	= 0
     
-    GtkScale::slider-length	= 16
-    GtkScale::slider-width = 16
+    GtkScale::slider-length	= 13
+    GtkScale::slider-width = 18
     GtkScale::trough-side-details = 1
     
     GtkScrollbar::has-backward-stepper = 0  

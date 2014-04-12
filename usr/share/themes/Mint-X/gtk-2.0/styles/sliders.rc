@@ -10,12 +10,13 @@ style "scale"
     {
         focusstyle = 0
         glowstyle = 4
-        roundness = 7
         contrast = 1.10
         highlight_shade = 1.05
         lightborderstyle = 1
         border_shades = {1.0, 0.75}
+        sliderstyle = 1
         reliefstyle = 3
+        roundness = 2
         trough_shades = {0.9, 1.1}
         #trough_border_shades = {1.20, 1.20}
     }
