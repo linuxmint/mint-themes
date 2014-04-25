@@ -40,7 +40,7 @@ style "default" {
     GtkImage::x-ayatana-indicator-dynamic = 1
     
     GtkMenu::horizontal-padding	= 0
-    GtkMenu::vertical-padding = 0
+    GtkMenu::vertical-padding = 1
     GtkMenuBar::internal-padding = 0
     GtkMenuBar::window-dragging = 1
     GtkMenuItem::horizontal-padding	= 0
