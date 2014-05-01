@@ -15,9 +15,8 @@ style "scale"
         highlight_shade = 1.05
         lightborderstyle = 1
         border_shades = {1.0, 0.75}
-        sliderstyle = 1
         reliefstyle = 3
-        roundness = 2
+        roundness = 7
         trough_shades = {0.9, 1.1}
         #trough_border_shades = {1.20, 1.20}
     }
