@@ -135,6 +135,16 @@ style "scrollbar"
         {
             function = SLIDER
             recolorable = TRUE
+            state = INSENSITIVE
+            file = "images/scroll/slider-v-insensitive.svg"
+            border = {5, 5, 7, 7}
+            stretch = TRUE
+            orientation = VERTICAL
+        }
+        image
+        {
+            function = SLIDER
+            recolorable = TRUE
             state = NORMAL
             file = "images/scroll/slider-h.svg"
             border = {7, 7, 5, 5}
@@ -157,6 +167,16 @@ style "scrollbar"
             recolorable = TRUE
             state = ACTIVE
             file = "images/scroll/slider-h-hover.svg"
+            border = {7, 7, 5, 5}
+            stretch = TRUE
+            orientation = HORIZONTAL
+        }
+        image
+        {
+            function = SLIDER
+            recolorable = TRUE
+            state = INSENSITIVE
+            file = "images/scroll/slider-h-insensitive.svg"
             border = {7, 7, 5, 5}
             stretch = TRUE
             orientation = HORIZONTAL
