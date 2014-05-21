@@ -73,7 +73,7 @@ style "menu"
 
 style "menu-item" 
 {
-    xthickness = 2
+    xthickness = 4
     ythickness = 4
 
     bg[SELECTED] = shade (0.95, @selected_bg_color)
