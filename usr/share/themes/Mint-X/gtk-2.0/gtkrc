@@ -65,7 +65,7 @@ style "default" {
     GtkScrollbar::has-backward-stepper = 0  
     GtkScrollbar::has-forward-stepper = 0
     GtkScrollbar::min-slider-length	= 30
-    GtkScrollbar::slider-width = 14
+    GtkScrollbar::slider-width = 16
     GtkScrollbar::trough-border	= 0
     GtkScrollbar::activate-slider = 1
     

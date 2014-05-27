@@ -11,7 +11,7 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="45"
-   height="13"
+   height="15"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
@@ -378,7 +378,7 @@
        x2="12"
        y2="1029.8622"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.8010911,0,0,0.9548407,1024.6552,-989.85435)" />
+       gradientTransform="matrix(0.99030641,0,0,0.95233124,1022.4254,-987.26996)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient3830"
@@ -388,7 +388,7 @@
        x2="11.999999"
        y2="1029.8622"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.59868122,0,0,0.95234404,1025.9708,-987.28317)" />
+       gradientTransform="matrix(0.79360124,0,0,0.94883288,1023.6587,-983.66716)" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -398,15 +398,15 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="15.075517"
-     inkscape:cx="28.033669"
+     inkscape:cx="16.956105"
      inkscape:cy="6.1222255"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:window-width="1480"
      inkscape:window-height="906"
-     inkscape:window-x="209"
-     inkscape:window-y="122"
+     inkscape:window-x="266"
+     inkscape:window-y="87"
      inkscape:window-maximized="0"
      inkscape:snap-bbox="true"
      fit-margin-top="0"
@@ -439,16 +439,16 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(16,-1023.375)">
+     transform="translate(16,-1021.375)">
     <rect
-       style="fill:url(#linearGradient3833);fill-opacity:1;stroke:#999999;stroke-width:0.99999994;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:url(#linearGradient3833);fill-opacity:1;stroke:#999999;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect4020"
-       width="8.0000343"
-       height="42"
-       x="1025.8622"
-       y="-27.5"
-       rx="3.9999998"
-       ry="4"
+       width="9.8896179"
+       height="41.889618"
+       x="1023.9174"
+       y="-27.444809"
+       rx="6"
+       ry="6"
        transform="matrix(0,1,-1,0,0,0)" />
     <rect
        style="opacity:0;fill:none;stroke:url(#linearGradient4097);stroke-width:1.02888811;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;filter:url(#filter3868)"
@@ -461,14 +461,14 @@
        ry="4.1801486"
        transform="matrix(0,0.91926547,-0.90072965,0,935.89418,1026.4297)" />
     <rect
-       style="fill:none;stroke:url(#linearGradient3836);stroke-width:1.03299999;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:none;stroke:url(#linearGradient3836);stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="rect3828"
-       width="5.9670548"
-       height="39.966999"
-       x="1026.8787"
-       y="-26.4835"
-       rx="3"
-       ry="3"
+       width="7.9098229"
+       height="39.819645"
+       x="1024.8622"
+       y="-26.409822"
+       rx="5"
+       ry="5"
        transform="matrix(0,1,-1,0,0,0)" />
   </g>
 </svg>
