@@ -10,9 +10,9 @@
 
 <!-- ::: GEOMETRY ::: -->
 <frame_geometry name="normal" rounded_top_left="true" rounded_top_right="true" rounded_bottom_left="false" rounded_bottom_right="false">
-	<distance name="left_width" value="1"/>
-	<distance name="right_width" value="1"/>
-	<distance name="bottom_height" value="1"/>
+	<distance name="left_width" value="3"/>
+	<distance name="right_width" value="3"/>
+	<distance name="bottom_height" value="3"/>
 	<distance name="left_titlebar_edge" value="6"/>
 	<distance name="right_titlebar_edge" value="6"/>
 	<aspect_ratio name="button" value="1.0"/>
