@@ -1,3 +1,9 @@
+mint-themes (1.3.4) qiana; urgency=medium
+
+  * Increased window borders to make resizing windows easier in MATE
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 06 Jun 2014 16:02:07 +0100
+
 mint-themes (1.3.3) qiana; urgency=medium
 
   * Add a bit more horizontal padding in menus to better match gtk3 menus
