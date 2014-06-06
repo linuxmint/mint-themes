@@ -10,7 +10,7 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="13"
+   width="15"
    height="45"
    id="svg2"
    version="1.1"
@@ -330,9 +330,10 @@
        inkscape:collect="always"
        id="filter3868"
        x="-0.15096281"
-       width="1.3019256"
+       width="1.3019257"
        y="-0.036411878"
-       height="1.0728238">
+       height="1.0728238"
+       color-interpolation-filters="sRGB">
       <feGaussianBlur
          inkscape:collect="always"
          stdDeviation="0.64192029"
@@ -364,7 +365,7 @@
        id="linearGradient3869"
        x1="-13"
        y1="1032.8622"
-       x2="-5.9999998"
+       x2="-6"
        y2="1032.8622"
        gradientUnits="userSpaceOnUse"
        gradientTransform="matrix(1.1693124,0,0,1.0266829,2.6836053,-30.626259)" />
@@ -377,7 +378,7 @@
        x2="12"
        y2="1029.8622"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.80108768,0,0,0.95484117,1.2929306,46.507364)" />
+       gradientTransform="matrix(1.0013596,0,0,0.95484117,0.99116325,46.507364)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient3830"
@@ -387,7 +388,7 @@
        x2="11.999999"
        y2="1029.8622"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.59867569,0,0,0.9523441,2.6086083,49.079026)" />
+       gradientTransform="matrix(0.79933789,0,0,0.9523441,2.3043041,49.079026)" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -436,14 +437,14 @@
     <rect
        style="fill:url(#linearGradient3833);fill-opacity:1;stroke:#999999;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect4020"
-       width="8"
+       width="10"
        height="42.000019"
        x="2.5"
        y="1008.8622"
-       rx="4"
-       ry="4" />
+       rx="6"
+       ry="6" />
     <rect
-       style="fill:none;stroke:url(#linearGradient4097);stroke-width:1.02888811000000002;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;filter:url(#filter3868);opacity:0"
+       style="opacity:0;fill:none;stroke:url(#linearGradient4097);stroke-width:1.02888811;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;filter:url(#filter3868)"
        id="rect4020-6-5"
        width="10.20522"
        height="42.310608"
@@ -455,11 +456,11 @@
     <rect
        style="fill:none;stroke:url(#linearGradient3836);stroke-width:1.03299999;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="rect3828"
-       width="5.967"
+       width="7.967"
        height="39.967003"
        x="3.5165"
        y="1009.8787"
-       rx="3"
-       ry="3" />
+       rx="5"
+       ry="5" />
   </g>
 </svg>

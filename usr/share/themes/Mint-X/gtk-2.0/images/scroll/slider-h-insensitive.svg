@@ -11,11 +11,11 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="45"
-   height="13"
+   height="15"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="slider-h.svg">
+   sodipodi:docname="slider-h-insensitive.svg">
   <defs
      id="defs4">
     <linearGradient
@@ -378,7 +378,7 @@
        x2="12"
        y2="1029.8622"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.8010894,0,0,0.9548407,1024.6552,-989.8544)" />
+       gradientTransform="matrix(1.0013596,0,0,0.9548407,1022.3535,-989.8544)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient3830"
@@ -388,7 +388,7 @@
        x2="11.999999"
        y2="1029.8622"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.59867954,0,0,0.95234401,1025.9708,-987.28304)" />
+       gradientTransform="matrix(0.79933794,0,0,0.95234401,1023.6665,-987.28304)" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -431,7 +431,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -439,16 +439,16 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(16,-1023.375)">
+     transform="translate(16,-1021.375)">
     <rect
-       style="fill:url(#linearGradient3833);fill-opacity:1;stroke:#b0b0b0;stroke-width:0.99999987999999995;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:url(#linearGradient3833);fill-opacity:1;stroke:#b0b0b0;stroke-width:0.99999988;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect4020"
-       width="8.0000172"
+       width="10"
        height="42"
-       x="1025.8622"
+       x="1023.8622"
        y="-27.5"
-       rx="4"
-       ry="4"
+       rx="6"
+       ry="6"
        transform="matrix(0,1,-1,0,0,0)" />
     <rect
        style="opacity:0;fill:none;stroke:url(#linearGradient4097);stroke-width:1.02888811;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;filter:url(#filter3868)"
@@ -463,12 +463,12 @@
     <rect
        style="fill:none;stroke:url(#linearGradient3836);stroke-width:1.03300011;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="rect3828"
-       width="5.9670377"
+       width="7.9669995"
        height="39.967003"
-       x="1026.8787"
+       x="1024.8787"
        y="-26.4835"
-       rx="3"
-       ry="3"
+       rx="5"
+       ry="5"
        transform="matrix(0,1,-1,0,0,0)" />
   </g>
 </svg>
