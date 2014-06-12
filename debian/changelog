@@ -1,3 +1,9 @@
+mint-themes (1.3.5) qiana; urgency=medium
+
+  * Thicker borders in Xfce, to make windows easier to resize
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 12 Jun 2014 11:18:51 +0100
+
 mint-themes (1.3.4) qiana; urgency=medium
 
   * Increased window borders to make resizing windows easier in MATE
