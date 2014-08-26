@@ -7,11 +7,6 @@ style "sidebar"
     text[NORMAL] = "#ffffff"
 }
 
-style "sidebar-scrollbar"
-{
-    GtkScrollbar::slider-width = 10
-}
-
 style "thunar-location-buttons"
 {
     ThunarLocationButtons::spacing = 0
@@ -139,7 +134,6 @@ style "caja-notebook"
 # Caja
 
 widget_class "*CajaSidePane*" style "sidebar"
-widget "*CajaSidePane*Scrollbar" style "sidebar-scrollbar"
 widget_class "*CajaPathBar.*ToggleButton*" style:highest "pathbar-breadcrumbs"
 widget "*CajaNavigationWindow*GtkHPaned*" style "sidebar-handle"
 widget_class "*CajaNotebook" style "caja-notebook"
@@ -157,4 +151,3 @@ widget "*Thunar*GtkHPaned*" style "sidebar-handle"
 
 widget "*FileChooserDefault*.GtkHPaned*" style "sidebar-handle"
 #widget "*FileChooserDefault.GtkVBox.GtkHPaned.GtkVBox.GtkScrolledWindow.GtkTreeView" style "sidebar"
-widget "*FileChooser*.*.*.*Vbox.GtkS*Scroll*" style "sidebar-scrollbar"
