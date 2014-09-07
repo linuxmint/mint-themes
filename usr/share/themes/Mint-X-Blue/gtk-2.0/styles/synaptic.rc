@@ -1,0 +1,15 @@
+style "synaptic-toolbar"
+{
+    engine "pixmap"
+    {
+        image
+        {
+            function = BOX
+            file = "images/toolbars/toolbar.svg"
+            border = {0, 0, 0, 1}
+            stretch = TRUE
+        }
+    }
+}
+
+widget_class "GtkWindow.GtkVBox.GtkHandleBox" style "synaptic-toolbar"
