@@ -1,0 +1,62 @@
+style "panel"
+{
+    engine "murrine" {}
+}
+
+style "panel-buttons"
+{
+    xthickness = 1
+    ythickness = 1
+    
+    engine "pixmap" 
+    {
+        image
+        {
+            function = BOX
+            recolorable = TRUE
+            state = NORMAL
+            file = "images/panel/panel-normal.svg"
+            border = {4, 4, 4, 4}
+            stretch = TRUE
+        }
+        image
+        {
+            function = BOX
+            recolorable = TRUE
+            state = ACTIVE
+            file = "images/panel/panel-active.svg"
+            border = {4, 4, 4, 4}
+            stretch = TRUE
+        }
+    } 
+}
+
+class "PanelToplevel*" style "panel"
+class "*Tray*" style "panel"
+class "*tray*" style "panel"
+#class "PanelApp*" style "panel"
+
+widget_class "*MatePanelAppletFrameDbus*" style "panel"
+widget_class "*PanelToplevel*" style "panel"
+widget_class "*PanelFrame*" style "panel"
+widget_class "*PanelAppletFrame*" style "panel"
+widget_class "*PanelWidget*.*" style "panel"
+widget "*PanelWidget*" style "panel"
+widget "*fast-user-switch*" style "panel"
+widget "*CPUFreq*Applet*" style "panel"
+widget "*indicator-applet*"	style "panel"
+
+widget_class "*Tray*" style "panel"
+widget_class "*tray*" style "panel"
+widget_class "*computertemp*" style "panel"
+widget_class "*Applet*Tomboy*" style "panel"
+widget_class "*Applet*Netstatus*" style "panel"
+
+# Menubar
+widget "*PanelMenuBar*" style "panel"
+widget_class "*Panel*<GtkMenuBar>*" style "panel"
+widget "*PanelApplet*" style "panel"
+
+# Panel Buttons
+widget_class "*Panel*GtkToggleButton" style:highest "button"
+widget_class "*Panel*GtkButton" style:highest "button"
