@@ -6,3 +6,6 @@
 override_dh_auto_build:
 	# fix file permissions, just in case
 	find usr -type f -print -exec chmod 0644 '{}' \;
+
+override_dh_builddeb:
+	dh_builddeb -- -Zxz -z9
