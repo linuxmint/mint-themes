@@ -1,3 +1,14 @@
+mint-themes (1.3.6) rebecca; urgency=medium
+
+  * fix the width of the scrollbar in the caja sidebar
+  * add a blue version of the Mint-X gtk theme
+  * add an orange version of the theme
+  * add a pink version of the theme
+  * fix file permissions
+  * Added metacity theme thumbnail
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 30 Sep 2014 11:04:53 +0200
+
 mint-themes (1.3.5) qiana; urgency=medium
 
   * Thicker borders in Xfce, to make windows easier to resize
