@@ -1,0 +1,30 @@
+style "frame"
+{
+    xthickness = 1
+    ythickness = 1
+    
+    engine "pixmap"
+    {
+        image
+        {
+            function = SHADOW
+            recolorable = TRUE
+            file = "images/frames/frame.svg"
+            border = {1, 1, 1, 1}
+            stretch = TRUE
+            shadow = IN
+        }
+        image
+        {
+            function = SHADOW_GAP
+            file = "images/frames/frame.svg"
+            border = {1, 1, 1, 1}
+            stretch = TRUE
+            gap_start_file = "images/frames/frame-gap-start.svg"
+            gap_start_border = {1, 0, 0, 0}
+            gap_end_file = "images/frames/frame-gap-end.svg"
+            gap_end_border = {0, 1, 0, 0}
+            shadow = IN
+        }
+    }
+}

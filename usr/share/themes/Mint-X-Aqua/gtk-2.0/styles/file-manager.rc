@@ -1,0 +1,153 @@
+style "sidebar"
+{
+    #xthickness = 0
+    #ythickness = 0
+    
+    base[NORMAL] = "#505050"
+    text[NORMAL] = "#ffffff"
+}
+
+style "thunar-location-buttons"
+{
+    ThunarLocationButtons::spacing = 0
+}
+
+style "pathbar-breadcrumbs"
+{
+    xthickness = 1
+    ythickness = 0
+    
+    engine "pixmap"
+    {
+        image
+        {
+            function = BOX
+            state = PRELIGHT
+            shadow = OUT
+            recolorable = TRUE
+            file = "images/button/pathbar-button-hover.svg"
+            border = { 3, 3, 3, 4 }
+            stretch = TRUE
+        }
+        image
+        {
+            function = BOX
+            state = ACTIVE
+            file = "images/button/pathbar-button-active.svg"
+            border =  { 3, 3, 3, 4 }
+            stretch = TRUE
+        }
+        image    
+        {
+            function = BOX
+            shadow = IN
+            state = PRELIGHT
+            overlay_file = "images/button/pathbar-button-active-hover.svg"
+            overlay_border = { 3, 3, 3, 4 }
+            overlay_stretch = TRUE
+        }
+        image 
+        {
+            function = BOX
+            state = INSENSITIVE
+            file = "images/button/pathbar-button.svg"
+            border = { 3, 3, 3, 4 }
+            stretch = TRUE
+        }
+        image 
+        {
+            function = BOX
+            file = "images/button/pathbar-button.svg"        
+            border = { 3, 3, 3, 4 }
+        }
+    }
+}
+
+style "thunar-pathbar-breadcrumbs"
+{
+    xthickness = 1
+    ythickness = 4
+    
+    engine "pixmap"
+    {
+        image
+        {
+            function = BOX
+            state = PRELIGHT
+            shadow = OUT
+            recolorable = TRUE
+            file = "images/button/pathbar-button-hover.svg"
+            border = { 3, 3, 3, 4 }
+            stretch = TRUE
+        }
+        image
+        {
+            function = BOX
+            state = ACTIVE
+            file = "images/button/pathbar-button-active.svg"
+            border =  { 3, 3, 3, 4 }
+            stretch = TRUE
+        }
+        image    
+        {
+            function = BOX
+            shadow = IN
+            state = PRELIGHT
+            overlay_file = "images/button/pathbar-button-active-hover.svg"
+            overlay_border = { 3, 3, 3, 4 }
+            overlay_stretch = TRUE
+        }
+        image 
+        {
+            function = BOX
+            state = INSENSITIVE
+            file = "images/button/pathbar-button.svg"
+            border = { 3, 3, 3, 4 }
+            stretch = TRUE
+        }
+        image 
+        {
+            function = BOX
+            file = "images/button/pathbar-button.svg"        
+            border = { 3, 3, 3, 4 }
+        }
+    }
+}
+
+style "sidebar-handle"
+{
+    GtkPaned::handle-size = 4
+}
+
+style "caja-icon-view"
+{
+    xthickness = 0
+    ythickness = 0
+}
+
+style "caja-notebook"
+{
+    xthickness = 1
+    ythickness = 1
+}
+
+# Caja
+
+widget_class "*CajaSidePane*" style "sidebar"
+widget_class "*CajaPathBar.*ToggleButton*" style:highest "pathbar-breadcrumbs"
+widget "*CajaNavigationWindow*GtkHPaned*" style "sidebar-handle"
+widget_class "*CajaNotebook" style "caja-notebook"
+
+
+# Thunar
+
+class "*ThunarTreeView" style "sidebar"
+widget_class "*<ThunarShortcutsPane>*<ThunarShortcutsView>" style "sidebar"
+class "ThunarLocationButtons" style "thunar-location-buttons"
+widget_class "*ThunarLocationButton*Button*" style:highest "thunar-pathbar-breadcrumbs"
+widget "*Thunar*GtkHPaned*" style "sidebar-handle"
+
+# File Chooser
+
+widget "*FileChooserDefault*.GtkHPaned*" style "sidebar-handle"
+#widget "*FileChooserDefault.GtkVBox.GtkHPaned.GtkVBox.GtkScrolledWindow.GtkTreeView" style "sidebar"
