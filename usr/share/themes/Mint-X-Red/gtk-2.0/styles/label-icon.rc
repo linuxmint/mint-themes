@@ -1,0 +1,15 @@
+style "text"
+{
+    engine "murrine" 
+    {
+        textstyle = 0
+    }
+}
+
+style "inset-text"
+{
+    engine "murrine"
+    {
+        textstyle = 1
+    }
+}
