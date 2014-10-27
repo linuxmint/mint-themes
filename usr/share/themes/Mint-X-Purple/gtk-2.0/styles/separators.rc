@@ -1,0 +1,67 @@
+style "separator"
+{
+    GtkWidget::wide-separators = 1
+    GtkWidget::separator-height = 2
+    GtkWidget::separator-width = 2
+    
+    xthickness = 0
+    ythickness = 0
+    
+    engine "pixmap"
+    {
+        image
+        {
+            function = BOX
+            file = "images/separators/separator-vertical.svg"
+            border = {0, 0, 1, 1}
+            stretch = TRUE
+            orientation = VERTICAL
+        }
+        image
+        {
+            function = BOX
+            file = "images/separators/separator.svg"
+            border = {1, 1, 0, 0}
+            stretch = TRUE
+            orientation = HORIZONTAL
+        }
+    }
+}
+
+style "combobox-separator"
+{
+    GtkWidget::wide-separators = 0
+    
+    xthickness = 0
+    ythickness = 0
+}
+
+style "toolbar-separator"
+{
+    GtkWidget::wide-separators = 1
+    GtkWidget::separator-height = 2
+    GtkWidget::separator-width = 2
+    
+    xthickness = 0
+    ythickness = 0
+    
+    engine "pixmap"
+    {
+        image
+        {
+            function = BOX
+            file = "images/separators/toolbar-separator-vertical.svg"
+            border = {0, 0, 1, 1}
+            stretch = TRUE
+            orientation = VERTICAL
+        }
+        image
+        {
+            function = BOX
+            file = "images/separators/toolbar-separator.svg"
+            border = {1, 1, 0, 0}
+            stretch = TRUE
+            orientation = HORIZONTAL
+        }
+    }
+}
