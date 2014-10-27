@@ -1,0 +1,79 @@
+style "statusbar" 
+{
+    xthickness = 4
+    ythickness = 4
+}
+
+style "statusbar-frame-fix"
+{
+    engine "pixmap"
+    {
+        image
+        {
+            function = SHADOW
+        }
+    }
+}
+
+style "toolbar"
+{
+    xthickness = 3
+    ythickness = 3
+    
+    engine "pixmap"
+    {
+        image
+        {
+            function = BOX
+            file = "images/toolbars/toolbar.svg"
+            border = {0, 0, 0, 1}
+            stretch = TRUE
+            detail = "toolbar"
+            orientation = HORIZONTAL
+        }
+        image
+        {
+            function = BOX
+            file = "images/toolbars/toolbar-vertical.svg"
+            border = {0, 0, 0, 0}
+            stretch = TRUE
+            detail = "toolbar"
+            orientation = VERTICAL
+        }
+    }
+}
+
+style "notebook-toolbar"
+{
+    engine "pixmap"
+    {
+        image
+        {
+            function = BOX
+            file = "images/other/null.png"
+            border = {0, 0, 0, 0}
+            stretch = TRUE
+            detail = "toolbar"
+            orientation = HORIZONTAL
+        }
+    }
+}
+
+style "inline-toolbar"
+{
+    GtkToolbar::button-relief = GTK_RELIEF_NORMAL
+    
+    engine "pixmap"
+    {
+        image 
+        {
+            function = BOX
+            file = "images/toolbars/inline-toolbar.svg"
+            border = {2, 2, 1, 4}
+            stretch = TRUE
+            detail = "toolbar"
+            orientation = HORIZONTAL
+        }
+    }
+}
+
