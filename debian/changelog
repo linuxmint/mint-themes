@@ -1,3 +1,16 @@
+mint-themes (1.3.7) rebecca; urgency=medium
+
+  * Updated Debian files
+  * Deleted links
+  * Added an aqua colored theme
+  * Added a brown version of the theme
+  * Added a purple version of the theme
+  * Added a red version of the theme
+  * Added a sand colored theme
+  * Added a teal colored version of the theme
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 01 Nov 2014 14:28:20 +0100
+
 mint-themes (1.3.6) rebecca; urgency=medium
 
   * fix the width of the scrollbar in the caja sidebar
