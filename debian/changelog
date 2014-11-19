@@ -1,3 +1,9 @@
+mint-themes (1.4.0) rebecca; urgency=medium
+
+  * Updated LibreOffice icon theme (added sidebar icons)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 19 Nov 2014 12:24:10 +0100
+
 mint-themes (1.3.9) rebecca; urgency=medium
 
   * Added fix for eclipse toolbars
