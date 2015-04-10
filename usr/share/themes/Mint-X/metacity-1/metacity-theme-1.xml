@@ -65,51 +65,51 @@
 <!-- ::: CORNERS OUTLINE::: -->
 <draw_ops name="corners_outline">
 	<!-- top left Dark -->
-	<line color="shade/gtk:bg[NORMAL]/0.66" x1="1" y1="3" x2="1" y2="4"/>
-	<line color="shade/gtk:bg[NORMAL]/0.66" x1="2" y1="2" x2="2" y2="2"/>
-	<line color="shade/gtk:bg[NORMAL]/0.66" x1="3" y1="1" x2="3" y2="1"/>
-	<line color="shade/gtk:bg[NORMAL]/0.66" x1="4" y1="1" x2="4" y2="1"/>
+	<line color="shade/#D6D6D6/0.66" x1="1" y1="3" x2="1" y2="4"/>
+	<line color="shade/#D6D6D6/0.66" x1="2" y1="2" x2="2" y2="2"/>
+	<line color="shade/#D6D6D6/0.66" x1="3" y1="1" x2="3" y2="1"/>
+	<line color="shade/#D6D6D6/0.66" x1="4" y1="1" x2="4" y2="1"/>
 
 	<!-- top right Dark -->
-	<line color="shade/gtk:bg[NORMAL]/0.66" x1="width-2" y1="3" x2="width-2" y2="4"/>
-	<line color="shade/gtk:bg[NORMAL]/0.66" x1="width-3" y1="2" x2="width-3" y2="2"/>
-	<line color="shade/gtk:bg[NORMAL]/0.66" x1="width-4" y1="1" x2="width-4" y2="1"/>
-	<line color="shade/gtk:bg[NORMAL]/0.66" x1="width-5" y1="1" x2="width-5" y2="1"/>
+	<line color="shade/#D6D6D6/0.66" x1="width-2" y1="3" x2="width-2" y2="4"/>
+	<line color="shade/#D6D6D6/0.66" x1="width-3" y1="2" x2="width-3" y2="2"/>
+	<line color="shade/#D6D6D6/0.66" x1="width-4" y1="1" x2="width-4" y2="1"/>
+	<line color="shade/#D6D6D6/0.66" x1="width-5" y1="1" x2="width-5" y2="1"/>
 
 	<!-- top left White -->
-	<line color="shade/gtk:bg[NORMAL]/1.00" x1="2" y1="4" x2="2" y2="5"/>
-	<line color="shade/gtk:bg[NORMAL]/1.02" x1="3" y1="3" x2="3" y2="3"/>
-	<line color="shade/gtk:bg[NORMAL]/1.08" x1="4" y1="2" x2="4" y2="2"/>
-	<line color="shade/gtk:bg[NORMAL]/1.14" x1="5" y1="2" x2="5" y2="2"/>
+	<line color="shade/#D6D6D6/1.00" x1="2" y1="4" x2="2" y2="5"/>
+	<line color="shade/#D6D6D6/1.02" x1="3" y1="3" x2="3" y2="3"/>
+	<line color="shade/#D6D6D6/1.08" x1="4" y1="2" x2="4" y2="2"/>
+	<line color="shade/#D6D6D6/1.14" x1="5" y1="2" x2="5" y2="2"/>
 
 	<!-- top right White -->
-	<line color="shade/gtk:bg[NORMAL]/1.00" x1="width-3" y1="3" x2="width-3" y2="4"/>
-	<line color="shade/gtk:bg[NORMAL]/1.02" x1="width-4" y1="2" x2="width-4" y2="2"/>
-	<line color="shade/gtk:bg[NORMAL]/1.08" x1="width-5" y1="1" x2="width-5" y2="1"/>
-	<line color="shade/gtk:bg[NORMAL]/1.14" x1="width-6" y1="1" x2="width-6" y2="1"/>
+	<line color="shade/#D6D6D6/1.00" x1="width-3" y1="3" x2="width-3" y2="4"/>
+	<line color="shade/#D6D6D6/1.02" x1="width-4" y1="2" x2="width-4" y2="2"/>
+	<line color="shade/#D6D6D6/1.08" x1="width-5" y1="1" x2="width-5" y2="1"/>
+	<line color="shade/#D6D6D6/1.14" x1="width-6" y1="1" x2="width-6" y2="1"/>
 
 </draw_ops>
 
 <!-- ::: BORDER OUTLINE ::: -->
 <draw_ops name="border">
-	<line color="shade/gtk:bg[NORMAL]/0.66" x1="0" y1="0" x2="width" y2="0"/>
-	<line color="shade/gtk:bg[NORMAL]/1.18" x1="0" y1="1" x2="width" y2="1"/>
-	<line color="shade/gtk:bg[NORMAL]/0.66" x1="0" y1="0" x2="0" y2="height"/>
-	<line color="shade/gtk:bg[NORMAL]/0.66" x1="width-1" y1="0" x2="width-1" y2="height"/>
-	<line color="shade/gtk:bg[NORMAL]/0.66" x1="0" y1="height-1" x2="width" y2="height-1"/>
+	<line color="shade/#D6D6D6/0.66" x1="0" y1="0" x2="width" y2="0"/>
+	<line color="shade/#D6D6D6/1.18" x1="0" y1="1" x2="width" y2="1"/>
+	<line color="shade/#D6D6D6/0.66" x1="0" y1="0" x2="0" y2="height"/>
+	<line color="shade/#D6D6D6/0.66" x1="width-1" y1="0" x2="width-1" y2="height"/>
+	<line color="shade/#D6D6D6/0.66" x1="0" y1="height-1" x2="width" y2="height-1"/>
 </draw_ops>
 
 <draw_ops name="maxed_border">
-	<line color="shade/gtk:bg[NORMAL]/1.14" x1="0" y1="0" x2="width" y2="0"/>
-	<line color="shade/gtk:bg[NORMAL]/0.66" x1="0" y1="height-1" x2="width" y2="height-1"/>
+	<line color="shade/#D6D6D6/1.14" x1="0" y1="0" x2="width" y2="0"/>
+	<line color="shade/#D6D6D6/0.66" x1="0" y1="height-1" x2="width" y2="height-1"/>
 </draw_ops>
 
 <!-- ::: TITLEBAR ::: -->
 
 <draw_ops name="titlebar_gradient">
 	<gradient type="vertical" x="0" y="0" width="width" height="22">
-		<color value="shade/gtk:bg[NORMAL]/1.08"/>
-		<color value="shade/gtk:bg[NORMAL]/1.0"/>
+		<color value="shade/#D6D6D6/1.08"/>
+		<color value="shade/#D6D6D6/1.0"/>
 	</gradient>
 </draw_ops>
 
@@ -126,23 +126,23 @@
 
 <draw_ops name="titlebar_shaded">
 	<include name="border"/>
-	<line color="shade/gtk:bg[NORMAL]/0.66" x1="0" y1="height-1" x2="width" y2="height-1"/>
+	<line color="shade/#D6D6D6/0.66" x1="0" y1="height-1" x2="width" y2="height-1"/>
 </draw_ops>
 
 <draw_ops name="round_titlebar_shaded">
 	<include name="border"/>
 	<include name="corners_outline"/>
-	<line color="shade/gtk:bg[NORMAL]/0.66" x1="5" y1="height-1" x2="width-6" y2="height-1"/>
+	<line color="shade/#D6D6D6/0.66" x1="5" y1="height-1" x2="width-6" y2="height-1"/>
 </draw_ops>
 
 <!-- ::: TITLES ::: -->
 <draw_ops name="title">
-	<title color="shade/gtk:bg[NORMAL]/1.30" x="3 `max` (width-title_width)/2" y="1 `max` ((height-title_height)/2)+1"/>
-	<title color="shade/gtk:bg[NORMAL]/0.50" x="3 `max` (width-title_width)/2" y="0 `max` ((height-title_height)/2)"/>
+	<title color="shade/#D6D6D6/1.30" x="3 `max` (width-title_width)/2" y="1 `max` ((height-title_height)/2)+1"/>
+	<title color="shade/#D6D6D6/0.50" x="3 `max` (width-title_width)/2" y="0 `max` ((height-title_height)/2)"/>
 </draw_ops>
 
 <draw_ops name="title_unfocused">
-	<title color="shade/gtk:bg[NORMAL]/0.80" x="3 `max` (width-title_width)/2" y="0 `max` ((height-title_height)/2)"/>
+	<title color="shade/#D6D6D6/0.80" x="3 `max` (width-title_width)/2" y="0 `max` ((height-title_height)/2)"/>
 </draw_ops>
 
 <!-- menu icon -->
@@ -167,7 +167,7 @@
 		y="(height - object_height) / 2"
 		width="object_width"
 		height="object_height"
-		colorize="shade/gtk:bg[SELECTED]/0.85"/>
+		colorize="shade/#9AB87C/0.85"/>
 </draw_ops>
 <draw_ops name="menu_button_unfocused">
 	<image filename="menu-focus-none.svg"
@@ -202,7 +202,7 @@
 		y="(height - object_height) / 2"
 		width="object_width"
 		height="object_height"
-		colorize="shade/gtk:bg[SELECTED]/0.85"/>
+		colorize="shade/#9AB87C/0.85"/>
 </draw_ops>
 
 <draw_ops name="close_button_unfocused">
@@ -217,76 +217,76 @@
 
 <draw_ops name="maximize_button_normal">
 	<gradient type="vertical" x="(width - 8) / 2" y="(height - 2) / 2 + 1" width="8" height="2">
-		<color value="shade/gtk:bg[NORMAL]/0.74" />
-		<color value="shade/gtk:bg[NORMAL]/0.80" />
+		<color value="shade/#D6D6D6/0.74" />
+		<color value="shade/#D6D6D6/0.80" />
 	</gradient>	
 	<line 
-		color="shade/gtk:bg[NORMAL]/1.20" 
+		color="shade/#D6D6D6/1.20" 
 		x1="(width - 8) / 2" x2="(width - 8) / 2 + 7"  
 		y1="(height - 2) / 2 + 3" y2="(height - 2) / 2 + 3"/>
 	<gradient type="vertical" x="(width - 8) / 2 +3" y="(height - 2) / 2 -2" width="2" height="8">
-		<color value="shade/gtk:bg[NORMAL]/0.63" />
-		<color value="shade/gtk:bg[NORMAL]/0.93" />
+		<color value="shade/#D6D6D6/0.63" />
+		<color value="shade/#D6D6D6/0.93" />
 	</gradient>
 	<line 
-		color="shade/gtk:bg[NORMAL]/1.20" 
+		color="shade/#D6D6D6/1.20" 
 		x1="(width - 8) / 2 +3" x2="(width - 8) / 2 + 4"  
 		y1="(height - 2) / 2 + 6" y2="(height - 2) / 2 + 6"/>
 </draw_ops>
 
 <draw_ops name="maximize_button_prelight">
 	<gradient type="vertical" x="(width - 8) / 2" y="(height - 2) / 2 + 1" width="8" height="2">
-		<color value="shade/gtk:bg[NORMAL]/0.63" />
-		<color value="shade/gtk:bg[NORMAL]/0.67" />
+		<color value="shade/#D6D6D6/0.63" />
+		<color value="shade/#D6D6D6/0.67" />
 	</gradient>
 	<line 
-		color="shade/gtk:bg[NORMAL]/1.20" 
+		color="shade/#D6D6D6/1.20" 
 		x1="(width - 8) / 2" x2="(width - 8) / 2 + 7"  
 		y1="(height - 2) / 2 + 3" y2="(height - 2) / 2 + 3"/>
 	<gradient type="vertical" x="(width - 8) / 2 +3" y="(height - 2) / 2 -2" width="2" height="8">
-		<color value="shade/gtk:bg[NORMAL]/0.51" />
-		<color value="shade/gtk:bg[NORMAL]/0.80" />
+		<color value="shade/#D6D6D6/0.51" />
+		<color value="shade/#D6D6D6/0.80" />
 	</gradient>
 	<line 
-		color="shade/gtk:bg[NORMAL]/1.20" 
+		color="shade/#D6D6D6/1.20" 
 		x1="(width - 8) / 2 +3" x2="(width - 8) / 2 + 4"  
 		y1="(height - 2) / 2 + 6" y2="(height - 2) / 2 + 6"/>
 </draw_ops>
 
 <draw_ops name="maximize_button_pressed">
 	<gradient type="vertical" x="(width - 8) / 2" y="(height - 2) / 2 + 1" width="8" height="2">
-		<color value="shade/gtk:bg[NORMAL]/0.87" />
-		<color value="shade/gtk:bg[NORMAL]/0.92" />
+		<color value="shade/#D6D6D6/0.87" />
+		<color value="shade/#D6D6D6/0.92" />
 	</gradient>
 	<line 
-		color="shade/gtk:bg[NORMAL]/1.20" 
+		color="shade/#D6D6D6/1.20" 
 		x1="(width - 8) / 2" x2="(width - 8) / 2 + 7"  
 		y1="(height - 2) / 2 + 3" y2="(height - 2) / 2 + 3"/>
 	<gradient type="vertical" x="(width - 8) / 2 +3" y="(height - 2) / 2 -2" width="2" height="8">
-		<color value="shade/gtk:bg[NORMAL]/0.72" />
-		<color value="shade/gtk:bg[NORMAL]/1.05" />
+		<color value="shade/#D6D6D6/0.72" />
+		<color value="shade/#D6D6D6/1.05" />
 	</gradient>
 	<line 
-		color="shade/gtk:bg[NORMAL]/1.20" 
+		color="shade/#D6D6D6/1.20" 
 		x1="(width - 8) / 2 +3" x2="(width - 8) / 2 + 4"  
 		y1="(height - 2) / 2 + 6" y2="(height - 2) / 2 + 6"/>
 </draw_ops>
 
 <draw_ops name="maximize_button_unfocused">
 	<gradient type="vertical" x="(width - 8) / 2" y="(height - 2) / 2 + 1" width="8" height="2">
-		<color value="shade/gtk:bg[NORMAL]/0.80" />
-		<color value="shade/gtk:bg[NORMAL]/0.85" />
+		<color value="shade/#D6D6D6/0.80" />
+		<color value="shade/#D6D6D6/0.85" />
 	</gradient>
 	<line 
-		color="shade/gtk:bg[NORMAL]/1.10" 
+		color="shade/#D6D6D6/1.10" 
 		x1="(width - 8) / 2" x2="(width - 8) / 2 + 7"  
 		y1="(height - 2) / 2 + 3" y2="(height - 2) / 2 + 3"/>
 	<gradient type="vertical" x="(width - 8) / 2 +3" y="(height - 2) / 2 -2" width="2" height="8">
-		<color value="shade/gtk:bg[NORMAL]/0.70" />
-		<color value="shade/gtk:bg[NORMAL]/0.98" />
+		<color value="shade/#D6D6D6/0.70" />
+		<color value="shade/#D6D6D6/0.98" />
 	</gradient>
 	<line 
-		color="shade/gtk:bg[NORMAL]/1.10" 
+		color="shade/#D6D6D6/1.10" 
 		x1="(width - 8) / 2 +3" x2="(width - 8) / 2 + 4"  
 		y1="(height - 2) / 2 + 6" y2="(height - 2) / 2 + 6"/>
 </draw_ops>
@@ -295,11 +295,11 @@
 
 <draw_ops name="minimize_button_normal">
 	<gradient type="vertical" x="(width - 8) / 2" y="(height - 2) / 2 + 1" width="8" height="2">
-		<color value="shade/gtk:bg[NORMAL]/0.70" />
-		<color value="shade/gtk:bg[NORMAL]/0.80" />
+		<color value="shade/#D6D6D6/0.70" />
+		<color value="shade/#D6D6D6/0.80" />
 	</gradient>
 	<line 
-		color="shade/gtk:bg[NORMAL]/1.20" 
+		color="shade/#D6D6D6/1.20" 
 		x1="(width - 8) / 2" x2="(width - 8) / 2 + 7"  
 		y1="(height - 2) / 2 + 3" y2="(height - 2) / 2 + 3"/>
 </draw_ops>
@@ -307,33 +307,33 @@
 <draw_ops name="minimize_button_prelight">
 
 	<gradient type="vertical" x="(width - 8) / 2" y="(height - 2) / 2 + 1" width="8" height="2">
-		<color value="shade/gtk:bg[NORMAL]/0.60" />
-		<color value="shade/gtk:bg[NORMAL]/0.70" />
+		<color value="shade/#D6D6D6/0.60" />
+		<color value="shade/#D6D6D6/0.70" />
 	</gradient>
 	<line 
-		color="shade/gtk:bg[NORMAL]/1.20" 
+		color="shade/#D6D6D6/1.20" 
 		x1="(width - 8) / 2" x2="(width - 8) / 2 + 7"  
 		y1="(height - 2) / 2 + 3" y2="(height - 2) / 2 + 3"/>
 </draw_ops>
 
 <draw_ops name="minimize_button_pressed">
 	<gradient type="vertical" x="(width - 8) / 2" y="(height - 2) / 2 + 1" width="8" height="2">
-		<color value="shade/gtk:bg[NORMAL]/0.90" />
-		<color value="shade/gtk:bg[NORMAL]/1.00" />
+		<color value="shade/#D6D6D6/0.90" />
+		<color value="shade/#D6D6D6/1.00" />
 	</gradient>
 	<line 
-		color="shade/gtk:bg[NORMAL]/1.20" 
+		color="shade/#D6D6D6/1.20" 
 		x1="(width - 8) / 2" x2="(width - 8) / 2 + 7"  
 		y1="(height - 2) / 2 + 3" y2="(height - 2) / 2 + 3"/>
 </draw_ops>
 
 <draw_ops name="minimize_button_unfocused">
 	<gradient type="vertical" x="(width - 8) / 2" y="(height - 2) / 2 + 1" width="8" height="2">
-		<color value="shade/gtk:bg[NORMAL]/0.85" />
-		<color value="shade/gtk:bg[NORMAL]/0.90" />
+		<color value="shade/#D6D6D6/0.85" />
+		<color value="shade/#D6D6D6/0.90" />
 	</gradient>
 	<line 
-		color="shade/gtk:bg[NORMAL]/1.10" 
+		color="shade/#D6D6D6/1.10" 
 		x1="(width - 8) / 2" x2="(width - 8) / 2 + 7"  
 		y1="(height - 2) / 2 + 3" y2="(height - 2) / 2 + 3"/>
 </draw_ops>
