@@ -1,3 +1,13 @@
+mint-themes (1.4.1) rafaela; urgency=medium
+
+  [ Trevor Hobson ]
+  * Reduce file size of svg images
+
+  [ Clement Lefebvre ]
+  * Updated LibreOffice theme (compatible with LO 4.3 and 4.4)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 11 Jun 2015 01:42:26 +0200
+
 mint-themes (1.4.0) rebecca; urgency=medium
 
   * Updated LibreOffice icon theme (added sidebar icons)
