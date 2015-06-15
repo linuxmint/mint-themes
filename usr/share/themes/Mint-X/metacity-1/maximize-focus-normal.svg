@@ -11,7 +11,7 @@
    width="16"
    version="1.1"
    id="svg2"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.48.5 r10040"
    sodipodi:docname="maximize-focus-normal.svg">
   <metadata
      id="metadata17">
@@ -38,15 +38,15 @@
      inkscape:window-height="739"
      id="namedview15"
      showgrid="true"
-     inkscape:zoom="63.572265"
-     inkscape:cx="5.1279981"
-     inkscape:cy="10.216502"
-     inkscape:window-x="432"
-     inkscape:window-y="141"
+     inkscape:zoom="31.786133"
+     inkscape:cx="3.6307729"
+     inkscape:cy="10.07591"
+     inkscape:window-x="300"
+     inkscape:window-y="128"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg2"
      inkscape:snap-bbox="true"
-     inkscape:snap-global="false">
+     inkscape:snap-global="true">
     <inkscape:grid
        type="xygrid"
        id="grid3754" />
@@ -74,11 +74,11 @@
      sodipodi:nodetypes="ccccccccccccc"
      inkscape:connector-curvature="0"
      id="path2987"
-     d="m 7,7.5 2,0 0,3.1 3.5,0 0,1.8 -3.5,0 0,3.1 -2,0 0,-3.1 -3.5,0 0,-1.8 3.5,0 0,-3.1"
+     d="m 7,8 2,0 0,3 3,0 0,2 -3,0 0,3 -2,0 0,-3 -3,0 0.03146,-2 L 7,11 7,8"
      style="fill:#ffffff;fill-opacity:1;stroke:none" />
   <path
      style="fill:#999999;fill-opacity:1;stroke:none"
-     d="m 7,6.5 2,0 0,3.1 3.5,0 0,1.8 -3.5,0 0,3.1 -2,0 0,-3.1 -3.5,0 0,-1.8 3.5,0 0,-3.1"
+     d="m 7,7 2,0 0,3 3,0 0,2 -3,0 0,3 L 7,15 7,12 4,12 4.03146,10 7,10 7,7"
      id="path3777"
      inkscape:connector-curvature="0"
      sodipodi:nodetypes="ccccccccccccc" />
