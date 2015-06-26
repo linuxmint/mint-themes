@@ -1,3 +1,12 @@
+mint-themes (1.4.2) rafaela; urgency=medium
+
+  [ JosephMcc ]
+  * Add a metacity-2 theme for Mate 1.10
+  * re-work the window control icons a bit to improve sharpness and definition
+  * Add a grey version of the gtk2 theme
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 26 Jun 2015 09:34:30 +0200
+
 mint-themes (1.4.1) rafaela; urgency=medium
 
   [ Trevor Hobson ]
