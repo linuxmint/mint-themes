@@ -11,7 +11,7 @@
    width="16"
    version="1.1"
    id="svg2"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.48.5 r10040"
    sodipodi:docname="minimize-focus-normal.svg">
   <metadata
      id="metadata17">
@@ -21,7 +21,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -41,8 +41,8 @@
      inkscape:zoom="22.47619"
      inkscape:cx="6.8728252"
      inkscape:cy="10.72746"
-     inkscape:window-x="409"
-     inkscape:window-y="0"
+     inkscape:window-x="400"
+     inkscape:window-y="142"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg2"
      inkscape:snap-bbox="true">
@@ -70,17 +70,17 @@
     </linearGradient>
   </defs>
   <rect
-     y="11"
-     x="3.5"
+     y="12"
+     x="4"
      height="2"
-     width="9"
+     width="8"
      id="rect3757"
      style="fill:#ffffff;fill-opacity:1;stroke:none" />
   <rect
      style="fill:#999999;fill-opacity:1;stroke:none"
      id="rect2987"
-     width="9"
+     width="8"
      height="2"
-     x="3.5"
-     y="10" />
+     x="4"
+     y="11" />
 </svg>

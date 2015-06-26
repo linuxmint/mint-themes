@@ -11,8 +11,8 @@
    width="16"
    version="1.1"
    id="svg2"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="unshade-focus-none.svg">
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="stick-focus-none.svg">
   <metadata
      id="metadata17">
     <rdf:RDF>
@@ -21,7 +21,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -38,11 +38,11 @@
      inkscape:window-height="739"
      id="namedview15"
      showgrid="true"
-     inkscape:zoom="22.47619"
-     inkscape:cx="4.652096"
-     inkscape:cy="10.72746"
-     inkscape:window-x="504"
-     inkscape:window-y="193"
+     inkscape:zoom="44.95238"
+     inkscape:cx="8.3211366"
+     inkscape:cy="10.441672"
+     inkscape:window-x="869"
+     inkscape:window-y="161"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg2"
      showguides="true"
@@ -90,7 +90,7 @@
   </defs>
   <path
      style="fill:#b2b2b2;fill-opacity:1;stroke:none"
-     d="m 3.4703391,6 0,8 L 5.5,14 l 0,-3 7.04661,0 0,-2 L 5.5,9 5.5,6 z"
+     d="m 4,7 0,8 2,0 0,-3 6,0 0,-2 -6,0 0,-3 z"
      id="path4036"
      inkscape:connector-curvature="0"
      sodipodi:nodetypes="ccccccccc" />

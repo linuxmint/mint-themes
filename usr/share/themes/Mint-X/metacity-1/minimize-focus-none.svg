@@ -11,8 +11,8 @@
    width="16"
    version="1.1"
    id="svg2"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="minimize-focus.svg">
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="minimize-focus-none.svg">
   <metadata
      id="metadata17">
     <rdf:RDF>
@@ -21,7 +21,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -41,8 +41,8 @@
      inkscape:zoom="22.47619"
      inkscape:cx="6.8728252"
      inkscape:cy="10.72746"
-     inkscape:window-x="409"
-     inkscape:window-y="0"
+     inkscape:window-x="748"
+     inkscape:window-y="112"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg2"
      inkscape:snap-bbox="true">
@@ -72,8 +72,8 @@
   <rect
      style="fill:#b2b2b2;fill-opacity:1;stroke:none"
      id="rect2987"
-     width="9"
+     width="8"
      height="2"
-     x="3.5"
-     y="10" />
+     x="4"
+     y="11" />
 </svg>
