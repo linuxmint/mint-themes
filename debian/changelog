@@ -1,3 +1,9 @@
+mint-themes (1.4.3) rafaela; urgency=medium
+
+  * Fixed Grey theme not pointing to Grey icon theme
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 26 Jun 2015 09:47:59 +0200
+
 mint-themes (1.4.2) rafaela; urgency=medium
 
   [ JosephMcc ]
