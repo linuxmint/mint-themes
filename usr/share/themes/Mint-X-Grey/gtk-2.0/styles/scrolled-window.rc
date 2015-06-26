@@ -1,0 +1,16 @@
+style "scrolled-window"
+{
+    xthickness = 1
+    ythickness = 1
+    
+    engine "pixmap"
+    {
+        image
+        {
+            function = SHADOW
+            file = "images/frames/frame.svg"
+            border = {1, 1, 1, 1}
+            stretch = TRUE
+        }
+    }
+}
