@@ -68,7 +68,7 @@
 	<line color="shade/gtk:bg[NORMAL]/1.18" x1="5" y1="1" x2="width-6" y2="1"/>
 	<line color="shade/gtk:bg[NORMAL]/0.66" x1="0" y1="4" x2="0" y2="height-1"/>
 	<line color="shade/gtk:bg[NORMAL]/0.66" x1="width-1" y1="4" x2="width-1" y2="height-1"/>
-	<line color="shade/gtk:bg[NORMAL]/0.66" x1="0" y1="height" x2="width" y2="height"/>
+	<line color="shade/gtk:bg[NORMAL]/0.66" x1="0" y1="height-1" x2="width" y2="height-1"/>
 	<arc color="shade/gtk:bg[NORMAL]/0.66" x="0" y="0" width="9" height="9"  start_angle="270" extent_angle="90" />
 	<arc color="shade/gtk:bg[NORMAL]/0.66" x="width-10" y="0" width="9" height="9"  start_angle="0" extent_angle="90" />
 	<arc color="shade/gtk:bg[NORMAL]/1.18" x="1" y="1" width="7" height="7"  start_angle="270" extent_angle="90" />
@@ -83,7 +83,7 @@
 	<line color="shade/gtk:bg[NORMAL]/0.66" x1="4" y1="0" x2="width-5" y2="0"/>
 	<line color="shade/gtk:bg[NORMAL]/0.66" x1="0" y1="4" x2="0" y2="height-1"/>
 	<line color="shade/gtk:bg[NORMAL]/0.66" x1="width-1" y1="4" x2="width-1" y2="height-1"/>
-	<line color="shade/gtk:bg[NORMAL]/0.66" x1="0" y1="height" x2="width" y2="height"/>
+	<line color="shade/gtk:bg[NORMAL]/0.66" x1="0" y1="height-1" x2="width" y2="height-1"/>
 	<arc color="shade/gtk:bg[NORMAL]/0.66" x="0" y="0" width="9" height="9"  start_angle="270" extent_angle="90" />
 	<arc color="shade/gtk:bg[NORMAL]/0.66" x="width-10" y="0" width="9" height="9"  start_angle="0" extent_angle="90" />
 	
