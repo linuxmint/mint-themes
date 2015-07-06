@@ -1,3 +1,9 @@
+mint-themes (1.4.5) rafaela; urgency=medium
+
+  * Added themeing for Xfce alt-tab and notifications
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 06 Jul 2015 17:56:49 +0200
+
 mint-themes (1.4.4) rafaela; urgency=medium
 
   [ JosephMcc ]
