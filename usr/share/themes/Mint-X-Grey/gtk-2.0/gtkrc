@@ -482,6 +482,23 @@ style "xfwm-tabwin-button"
     font_name = "bold"
 }
 
+style "xfsm-logout"
+{
+	bg[NORMAL]      = @bg_color
+	bg[SELECTED]	= @selected_bg_color # Highlighting selection
+	fg[NORMAL]      = @fg_color
+	
+	engine "murrine" {
+		border_shades       = { 1.1, 0.98 }      # gradient to draw on border
+		contrast            = 0.8
+		focusstyle	    = 3
+		glowstyle           = 4                 # 0,1,2,3,4
+		gradient_shades     = {1.12,1.10,1.1,1.02}
+		highlight_shade     = 1.0
+		roundness	    = 3
+	}
+}
+
 ## Import external style files ##
 
 include "styles/bars.rc"
@@ -562,6 +579,7 @@ widget "gtk-tooltip*" style "tooltips"
 
 widget "xfwm4-tabwin*"          style "xfwm-tabwin"
 widget "xfwm4-tabwin*GtkButton*"        style "xfwm-tabwin-button"
+widget_class "*XfsmLogoutDialog*"	style "xfsm-logout"
 
 # Work around for http://bugzilla.gnome.org/show_bug.cgi?id=382646
 # Note that the work around assumes that the combobox is _not_ in
