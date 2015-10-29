@@ -4,7 +4,7 @@ style "entry"
     ythickness = 3
     
     bg[NORMAL] = shade (0.9, @bg_color)
-    bg[SELECTED] = mix (0.4, @selected_bg_color, @base_color)
+    bg[SELECTED] = @selected_bg_color
     fg[SELECTED] = @text_color
     base[NORMAL] = shade (0.98, @base_color)
     
