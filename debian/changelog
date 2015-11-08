@@ -1,3 +1,22 @@
+mint-themes (1.4.6) rosa; urgency=medium
+
+  [ Yan ]
+  * xfce logout improvements
+  * removed extra themes
+  * Pressed color is inherited from style
+  * xfwm compact theme added
+  * Pressed buttons have shade and close button is rounded
+  * Fill icons fixed (it was 17x18 size, now 16x16 as it should be)
+
+  [ Yan Pashkovsky ]
+  * 1000 new icons
+  * Chrome r-click menu unclickable items gray
+
+  [ Clement Lefebvre ]
+  * Moved images_human to libreoffice-style-mint
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sun, 08 Nov 2015 14:47:08 +0000
+
 mint-themes (1.4.5) rafaela; urgency=medium
 
   * Added themeing for Xfce alt-tab and notifications
