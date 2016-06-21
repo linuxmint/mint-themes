@@ -1,3 +1,9 @@
+mint-themes (1.4.7) sarah; urgency=medium
+
+  * Metacity: Round corners in border style
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 21 Jun 2016 17:43:13 +0100
+
 mint-themes (1.4.6) rosa; urgency=medium
 
   [ Yan ]
