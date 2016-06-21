@@ -44,7 +44,7 @@
 	<aspect_ratio name="button" value="1"/>
 </frame_geometry>
 
-<frame_geometry name="border" has_title="false">
+<frame_geometry name="border" has_title="false" rounded_top_left="4" rounded_top_right="4">
 	<distance name="left_width" value="2"/>
 	<distance name="right_width" value="2"/>
 	<distance name="bottom_height" value="2"/>
