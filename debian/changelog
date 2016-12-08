@@ -1,3 +1,9 @@
+mint-themes (1.4.8) serena; urgency=medium
+
+  * Fix mintmenu background picture
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 08 Dec 2016 09:58:27 +0000
+
 mint-themes (1.4.7) sarah; urgency=medium
 
   * Metacity: Round corners in border style
