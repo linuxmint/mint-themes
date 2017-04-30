@@ -44,15 +44,15 @@
 	<aspect_ratio name="button" value="1"/>
 </frame_geometry>
 
-<frame_geometry name="border" has_title="false" rounded_top_left="4" rounded_top_right="4">
-	<distance name="left_width" value="2"/>
-	<distance name="right_width" value="2"/>
-	<distance name="bottom_height" value="2"/>
+<frame_geometry name="border" has_title="false" rounded_top_left="false" rounded_top_right="false">
+	<distance name="left_width" value="0"/>
+	<distance name="right_width" value="0"/>
+	<distance name="bottom_height" value="0"/>
 	<distance name="left_titlebar_edge" value="0"/>
 	<distance name="right_titlebar_edge" value="0"/>
 	<distance name="button_width" value="0"/>
 	<distance name="button_height" value="0"/>
-	<distance name="title_vertical_pad" value="4"/>
+	<distance name="title_vertical_pad" value="0"/>
 	<border name="title_border" left="0" right="0" top="0" bottom="0"/>
 	<border name="button_border" left="0" right="0" top="0" bottom="0"/>
 </frame_geometry>
