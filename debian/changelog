@@ -1,3 +1,13 @@
+mint-themes (1.4.9) sonya; urgency=medium
+
+  [ Clement Lefebvre ]
+  * metacity-theme-2.xml: Fill the titlebar underneath the gradient
+
+  [ JosephMcc ]
+  * metacity-2: Don't use a border on BORDER type windows
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 01 May 2017 19:37:07 +0100
+
 mint-themes (1.4.8) serena; urgency=medium
 
   * Fix mintmenu background picture
