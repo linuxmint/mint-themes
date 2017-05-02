@@ -1,3 +1,10 @@
+mint-themes (1.5.0) sonya; urgency=medium
+
+  [ JosephMcc ]
+  * metacity-2: Bring back some styling for border type windows
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 02 May 2017 13:15:19 +0100
+
 mint-themes (1.4.9) sonya; urgency=medium
 
   [ Clement Lefebvre ]
