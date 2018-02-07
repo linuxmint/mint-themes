@@ -6,8 +6,8 @@ Build-Depends: debhelper (>= 9)
 Standards-Version: 3.9.5
 
 Package: mint-themes
-Replaces: mint-clearloox-theme, mint-x-theme, mint-z-theme
-Conflicts: mint-clearloox-theme, mint-x-theme, mint-z-theme
+Replaces: mint-clearloox-theme, mint-x-theme, mint-z-theme, mint-themes-gtk3
+Conflicts: mint-clearloox-theme, mint-x-theme, mint-z-theme, mint-themes-gtk3
 Depends: ${misc:Depends}, mint-x-icons, mint-themes-gtk3, libreoffice-style-mint
 Architecture: all
 Description: Mint themes
