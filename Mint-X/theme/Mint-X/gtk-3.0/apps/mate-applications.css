@@ -1,0 +1,149 @@
+@define-color caja_sidebar_bg #505050;
+@define-color caja_sidebar_fg #fff;
+@define-color caja_sidebar_selected_fg #fff;
+
+/****************
+ * Caja desktop *
+ ****************/
+
+.caja-canvas-item {
+    border-radius: 3px;
+}
+
+.caja-desktop.caja-canvas-item {
+    color: @desktop_item_fg;
+    text-shadow: 1px 1px @desktop_item_text_shadow;
+}
+
+.caja-desktop.caja-canvas-item:selected {
+    background-color: alpha(@theme_selected_bg_color, 0.8);
+    background-image: none;
+    color: @theme_selected_fg_color;
+    text-shadow: none;
+}
+
+/********
+ * Caja *
+ ********/
+
+/* caja sidebar */
+CajaWindow FMTreeView .view,
+CajaWindow CajaNotesViewer .view,
+CajaWindow CajaPlacesSidebar .view,
+CajaWindow CajaHistorySidebar .view,
+CajaWindow CajaInformationPanel GtkVBox,
+CajaWindow CajaEmblemSidebar GtkViewport {
+    background-color: @caja_sidebar_bg;
+    color: @caja_sidebar_fg;
+    border-width: 0px;
+}
+
+/****************
+ * Mate-Panel *
+ ****************/
+
+mintmenu:selected GtkBox {
+    background-color: @theme_selected_bg_color;
+}
+
+.mate-panel-menu-bar,
+.gnome-panel-menu-bar,
+.mate-panel-menu-bar .menubar,
+.gnome-panel-menu-bar .menubar,
+.mate-panel-menu-bar > .menuitem,
+.gnome-panel-menu-bar > .menuitem,
+PanelToplevel.background,
+#PanelPlug,
+#PanelApplet .button,
+#PanelApplet-window-menu-applet-button {
+    color: @theme_fg_color;
+    background-color: @theme_bg_color;
+    background-image: none;
+    border-image: none;
+}
+
+#PanelApplet .button {
+    margin: 2px;
+    padding: 3px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 3px;
+    background-color: transparent;
+    background-image: none;
+}
+
+#PanelApplet WnckTasklist .button.flat {
+    margin: 2px;
+    padding: 0px 3px 0px 3px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 3px;
+    border-color: transparent;
+    border-image: -gtk-scaled(url("../borders/button/button.png"), url("../borders/button/button@2.png")) 4 / 4px stretch;
+    box-shadow: inset 0 1px alpha(white, 0.5),
+                inset 1px 0 alpha(white, 0.3),
+                inset -1px 0 alpha(white, 0.3),
+                inset 0 -1px alpha(white, 0.05);
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                                      alpha(white, 0.5),
+                                      alpha(white, 0.01));
+}
+
+#PanelApplet WnckTasklist .button.flat:hover,
+#PanelApplet .button:hover {
+    margin: 2px;
+    padding: 0px 3px 0px 3px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 3px;
+    border-color: transparent;
+    border-image: -gtk-scaled(url("../borders/button/button.png"), url("../borders/button/button@2.png")) 4 / 4px stretch;
+    box-shadow: inset 0 1px alpha(white, 0.5),
+                inset 1px 0 alpha(white, 0.3),
+                inset -1px 0 alpha(white, 0.3),
+                inset 0 -1px alpha(white, 0.05);
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                                      alpha(white, 0.7),
+                                      alpha(white, 0.1));
+}
+
+#PanelApplet WnckTasklist .button.flat:checked:hover,
+#PanelApplet WnckTasklist .button.flat:checked,
+#PanelApplet WnckTasklist .button.flat:active:hover,
+#PanelApplet WnckTasklist .button.flat:active,
+#PanelApplet .button:checked,
+#PanelApplet .button:checked:hover,
+#PanelApplet .button:active,
+#PanelApplet .button:active:hover {
+    margin: 2px;
+    padding: 0px 3px 0px 3px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 3px;
+    border-color: transparent;
+    border-image: -gtk-scaled(url("../borders/button/button-active.png"), url("../borders/button/button-active@2.png")) 4 / 4px stretch;
+    box-shadow: inset 0 1px alpha(black, 0.1),
+                inset 1px 0 alpha(black, 0.08),
+                inset -1px 0 alpha(black, 0.08),
+                inset 0 -1px alpha(black, 0.06);
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                                      alpha(black, 0.2),
+                                      alpha(black, 0.2));
+}
+
+MatePanelAppletFrameDBus PanelSeparator,
+PanelSeparator {
+    border-width: 0;
+    background-image: url("../assets/separator-vertical.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    color: transparent;
+    text-shadow: none;
+}
+
+NaTrayApplet {
+    -NaTrayApplet-icon-padding: 1px;
+}

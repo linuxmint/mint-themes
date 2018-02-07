@@ -1,0 +1,189 @@
+/**********
+ * button *
+ **********/
+
+.button,
+.button.flat:hover,
+GtkComboBox .button,
+.header-bar GtkComboBox .button,
+.header-bar.titlebar GtkMenuButton.button.titlebutton:hover,
+.inline-toolbar GtkToolButton > .button,
+.mate-panel-menu-bar .button:hover {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                            @button_bg_a,
+                            @button_bg_b);
+}
+
+.button.flat,
+.button.flat:insensitive,
+.sidebar-button.button,
+.sidebar-button.button:insensitive,
+.header-bar .titlebutton.button,
+.titlebar .titlebutton.button,
+.titlebar .titlebutton.button:hover,
+.titlebar .titlebutton.button:active,
+.titlebar .titlebutton.button:checked,
+.header-bar.titlebar GtkMenuButton.button.titlebutton,
+.mate-panel-menu-bar .button {
+    background-color: transparent;
+    background-image: none;
+}
+
+.primary-toolbar .raised .button,
+.primary-toolbar .button.raised {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                            @button_raised_bg_a,
+                            @button_raised_bg_b);
+}
+
+.primary-toolbar .raised .button:hover,
+.primary-toolbar .button.raised:hover {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                            @button_hover_raised_bg_a,
+                            @button_hover_raised_bg_b);
+}
+
+.button:hover {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                            @button_hover_bg_a,
+                            @button_hover_bg_b);
+}
+
+.button:active,
+.button:checked,
+.header-bar.titlebar GtkMenuButton.button.titlebutton:active,
+.header-bar.titlebar GtkMenuButton.button.titlebutton:checked,
+.primary-toolbar .raised .button:active,
+.primary-toolbar .raised .button:checked,
+.primary-toolbar .button.raised:active,
+.primary-toolbar .button.raised:checked {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                            @button_active_bg_a,
+                            @button_active_bg_b 30%,
+                            @button_active_bg_c);
+}
+
+.button:active:hover,
+.button:checked:hover,
+.header-bar.titlebar GtkMenuButton.button.titlebutton:active:hover,
+.header-bar.titlebar GtkMenuButton.button.titlebutton:checked:hover,
+.primary-toolbar .raised .button:active:hover,
+.primary-toolbar .raised .button:checked:hover,
+.primary-toolbar .button.raised:active:hover,
+.primary-toolbar .button.raised:checked:hover {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                            @button_active_hover_bg_a,
+                            @button_active_hover_bg_b 30%,
+                            @button_active_hover_bg_c);
+}
+
+.button:insensitive,
+.primary-toolbar .raised .button:insensitive,
+.primary-toolbar .button.raised:insensitive {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                            @button_insensitive_bg_a,
+                            @button_insensitive_bg_b);
+}
+
+.button:insensitive:active,
+.button:insensitive:checked {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                            @button_insensitive_active_bg_a,
+                            @button_insensitive_active_bg_b);
+}
+
+/*****************
+ * column-header *
+ *****************/
+
+column-header .button,
+column-header.button {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                            @column_header_bg_a,
+                            @column_header_bg_b 50%,
+                            @column_header_bg_c);
+}
+
+/*********
+ * entry *
+ *********/
+
+.entry {
+    background-color: @theme_base_color;
+    background-image: linear-gradient(to bottom,
+                            @entry_bg_a,
+                            @entry_bg_b);
+}
+
+.entry:insensitive {
+    background-color: @theme_bg_color;
+    background-image: none;
+}
+
+/**********
+ * switch *
+ **********/
+
+GtkSwitch.trough {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                            @button_active_bg_a,
+                            @button_active_bg_b 30%,
+                            @button_active_bg_c);
+}
+
+GtkSwitch.trough:active {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                            shade(@theme_selected_bg_color, 0.85),
+                            shade(@theme_selected_bg_color, 1.05));
+}
+
+GtkSwitch.trough:insensitive {
+    background-color: @theme_bg_color;
+    background-image: none;
+}
+
+GtkSwitch.slider {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                                    @button_bg_a,
+                                    @button_bg_b);
+}
+
+GtkSwitch.slider:insensitive {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                            @button_insensitive_bg_a,
+                            @button_insensitive_bg_b);
+}
+
+/***********
+ * toolbar *
+ ***********/
+
+.primary-toolbar .toolbar,
+.primary-toolbar.toolbar,
+.header-bar {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                            @toolbar_bg_a,
+                            @toolbar_bg_b);
+}
+
+.inline-toolbar .toolbar,
+.inline-toolbar.toolbar {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                            @inline_toolbar_bg_a,
+                            @inline_toolbar_bg_b);
+}

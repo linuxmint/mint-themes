@@ -1,0 +1,113 @@
+/*************
+ * evolution *
+ *************/
+
+GtkHTML {
+    background-color: @theme_base_color;
+    color: @theme_fg_color;
+}
+
+GtkHTML:active {
+    background-color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
+}
+
+/*********
+ * Gedit *
+ *********/
+
+.gedit-headerbar-paned {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                            @toolbar_bg_a,
+                            @toolbar_bg_b);
+}
+/******************
+ * GtkFileChooser *
+ ******************/
+
+GtkFileChooser .search-bar {
+    border: none;
+    background-color: @theme_bg_color;
+    background-image: none;
+    box-shadow: none;
+}
+
+/*************
+ * Gucharmap *
+ *************/
+
+GucharmapChartable {
+    background-color: shade(@theme_base_color, 0.98);
+}
+
+GucharmapChartable:active,
+GucharmapChartable:focus,
+GucharmapChartable:selected {
+    background-color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
+}
+
+/*******
+ * Pix *
+ *******/
+
+GthGridView.cell {
+    background-color: shade(@theme_base_color, 0.95);
+}
+
+GthGridView.cell:selected,
+GthGridView.cell:selected:focus {
+    background-color: alpha(@theme_selected_bg_color, 0.5);
+}
+
+GthGridView:selected:focus {
+    color: @theme_fg_color;
+}
+
+/************
+ * terminal *
+ ************/
+
+TerminalScreen {
+    -TerminalScreen-background-darkness: 0.9;
+
+    background-color: #3f3f3f;
+	color: #fff;
+}
+
+/*TerminalWindow {
+    background-color: #333;
+}*/
+
+TerminalWindow GtkNotebook.notebook {
+    border-bottom-width: 0;
+    border-right-width: 0;
+    border-left-width: 0;
+}
+
+.nautilus-canvas-item {
+    border-radius: 3px;
+}
+.nautilus-desktop.nautilus-canvas-item {
+    color: @desktop_item_fg;
+	text-shadow: 1px 1px @desktop_item_text_shadow;
+}
+
+.nautilus-desktop.nautilus-canvas-item:active {
+    background-color: @desktop_item_selected_fg;
+    background-image: none;
+    color: @theme_fg_color;
+}
+
+.nautilus-desktop.nautilus-canvas-item:selected {
+    background-color: alpha(@theme_selected_bg_color, 0.8);
+    background-image: none;
+    color: @theme_selected_fg_color;
+}
+
+.nautilus-desktop.nautilus-canvas-item:active,
+.nautilus-desktop.nautilus-canvas-item:prelight,
+.nautilus-desktop.nautilus-canvas-item:selected {
+    text-shadow: none;
+}

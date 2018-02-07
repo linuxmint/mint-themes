@@ -8,7 +8,7 @@ def change_value (key, value, file):
         command = "sed -i '/%(key)s=/d' %(file)s" % {'key':key, 'file':file}
     os.system(command)
 
-ACCENT = "#9ab87c"
+ACCENTS = ["#9ab87c", "#accd8a"]
 
 colors = {}
 colors["Aqua"] = "#6cabcd"
@@ -34,11 +34,16 @@ for color in os.listdir("Mint-X/variations"):
     if os.path.isdir(path):
         theme = "usr/share/themes/Mint-X-%s" % color
         theme_index = os.path.join(theme, "index.theme")
-        gtkrc = os.path.join(theme, "gtk-2.0", "gtkrc")
         os.system("cp -R usr/share/themes/Mint-X %s" % theme)
         os.system("cp -R Mint-X/variations/%s/* %s/" % (color, theme))
         for key in ["Name", "GtkTheme", "IconTheme"]:
             change_value(key, "Mint-X-%s" % color, theme_index)
-        os.system("sed -i s'/%(accent)s/%(color_accent)s/' %(gtkrc)s" % {'accent': ACCENT, 'color_accent': colors[color], 'gtkrc': gtkrc})
+
+        gtkrc = os.path.join(theme, "gtk-2.0", "gtkrc")
+        settings_ini = os.path.join(theme, "gtk-3.0", "settings.ini")
+        gtk_main_css = os.path.join(theme, "gtk-3.0", "gtk-main.css")
+        for file in [gtkrc, settings_ini, gtk_main_css]:
+            for accent in ACCENTS:
+                os.system("sed -i s'/%(accent)s/%(color_accent)s/' %(file)s" % {'accent': accent, 'color_accent': colors[color], 'file': file})
 
 os.system("cp -R files/* ./")
