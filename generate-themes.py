@@ -27,15 +27,15 @@ if os.path.exists("usr"):
 
 os.system("mkdir -p usr/share/themes")
 
-os.system("cp -R Mint-X/theme/* usr/share/themes/")
+os.system("cp -R src/Mint-X/theme/* usr/share/themes/")
 
-for color in os.listdir("Mint-X/variations"):
-    path = os.path.join("Mint-X/variations", color)
+for color in os.listdir("src/Mint-X/variations"):
+    path = os.path.join("src/Mint-X/variations", color)
     if os.path.isdir(path):
         theme = "usr/share/themes/Mint-X-%s" % color
         theme_index = os.path.join(theme, "index.theme")
         os.system("cp -R usr/share/themes/Mint-X %s" % theme)
-        os.system("cp -R Mint-X/variations/%s/* %s/" % (color, theme))
+        os.system("cp -R src/Mint-X/variations/%s/* %s/" % (color, theme))
         for key in ["Name", "GtkTheme", "IconTheme"]:
             change_value(key, "Mint-X-%s" % color, theme_index)
 
