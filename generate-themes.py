@@ -8,6 +8,7 @@ def change_value (key, value, file):
         command = "sed -i '/%(key)s=/d' %(file)s" % {'key':key, 'file':file}
     os.system(command)
 
+# Mint-X
 ACCENTS = ["#9ab87c", "#accd8a"]
 
 colors = {}
@@ -46,4 +47,10 @@ for color in os.listdir("src/Mint-X/variations"):
             for accent in ACCENTS:
                 os.system("sed -i s'/%(accent)s/%(color_accent)s/' %(file)s" % {'accent': accent, 'color_accent': colors[color], 'file': file})
 
+# Mint-Y
+os.chdir("src/Mint-Y")
+os.system("./build-themes.py")
+os.chdir("../..")
+
+# Files
 os.system("cp -R files/* ./")
