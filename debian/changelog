@@ -1,3 +1,17 @@
+mint-themes (1.6.0) tara; urgency=medium
+
+  * Remove duplicated files, generate color variations during the build
+  * Add Mint-X GTK3
+  * Packaging: Conflict/replace mint-themes-gtk3
+  * Packaging: Remove dependency on mint-themes-gtk3
+  * Move Mint-X into src/ folder
+  * Add Mint-Y
+  * Add Linux Mint Cinnamon theme
+  * Add Cinnamon themes
+  * Couple of fixes for cinnamon-themes
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 08 Feb 2018 13:39:09 +0000
+
 mint-themes (1.5.0) sonya; urgency=medium
 
   [ JosephMcc ]
