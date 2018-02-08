@@ -71,11 +71,11 @@ for color in os.listdir("src/Mint-X/variations"):
 
         # Cinnamon colors
         file = os.path.join(theme, "cinnamon", "cinnamon.css")
-            if os.path.exists(file):
-                for accent in HEX_ACCENTS:
-                    os.system("sed -i s'/%(accent)s/%(color_accent)s/' %(file)s" % {'accent': accent, 'color_accent': hex_colors[color], 'file': file})
-                for accent in RGB_ACCENTS:
-                    os.system("sed -i s'/%(accent)s/%(color_accent)s/' %(file)s" % {'accent': accent, 'color_accent': rgb_colors[color], 'file': file})
+        if os.path.exists(file):
+            for accent in HEX_ACCENTS:
+                os.system("sed -i s'/%(accent)s/%(color_accent)s/' %(file)s" % {'accent': accent, 'color_accent': hex_colors[color], 'file': file})
+            for accent in RGB_ACCENTS:
+                os.system("sed -i s'/%(accent)s/%(color_accent)s/' %(file)s" % {'accent': accent, 'color_accent': rgb_colors[color], 'file': file})
 
 # Mint-Y
 os.chdir("src/Mint-Y")
