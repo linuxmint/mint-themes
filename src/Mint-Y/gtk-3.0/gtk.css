@@ -3673,6 +3673,10 @@ filechooser placessidebar.sidebar scrollbar, .nemo-window .sidebar scrollbar {
   background: rgba(0, 0, 0, 0.5);
   color: white; }
 
+.ubiquity-menubar {
+  background-color: #3f3f3f;
+  color: #eeeeee; }
+
 @define-color theme_fg_color #4a4a4a;
 @define-color theme_text_color #4a4a4a;
 @define-color theme_bg_color #F0F0F0;
