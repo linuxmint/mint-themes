@@ -1,3 +1,13 @@
+mint-themes (1.6.1) tara; urgency=medium
+
+  [ JosephMcc ]
+  * Update the .gitignore
+
+  [ Clement Lefebvre ]
+  * Mint-Y: Add style for ubiquity-menubar.
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 12 Feb 2018 18:08:51 +0000
+
 mint-themes (1.6.0) tara; urgency=medium
 
   * Remove duplicated files, generate color variations during the build
