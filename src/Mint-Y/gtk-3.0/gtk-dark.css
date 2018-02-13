@@ -3405,8 +3405,6 @@ SynapseGuiViewVirgilio *:selected {
   .floating-bar.left {
     border-radius: 0 2px 2px 0; }
   .floating-bar .button {
-    -GtkButton-image-spacing: 0;
-    -GtkButton-inner-border: 0;
     background-color: transparent;
     box-shadow: none;
     border: none; }
