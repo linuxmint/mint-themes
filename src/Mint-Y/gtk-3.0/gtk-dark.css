@@ -3644,27 +3644,39 @@ filechooser placessidebar.sidebar scrollbar, .nemo-window .sidebar scrollbar {
   border-bottom-width: 0;
   font-weight: bold; }
 
-.lightdm.menubar {
-  padding: 0; }
-  .lightdm.menubar > .menuitem {
-    padding: 0 5px 0 5px; }
-
-.lightdm.button,
-.lightdm.option-button,
-.lightdm.toggle-button {
-  border: 1px solid transparent;
+window.background.lightdm menubar > menuitem {
+  padding: 0 5px 0 5px; }
+window.background.lightdm button.flat.option-button, window.background.lightdm button.option-button.sidebar-button {
   background-color: transparent;
   color: #dadada; }
-  .lightdm.button:hover,
-  .lightdm.option-button:hover,
-  .lightdm.toggle-button:hover {
-    border-color: rgba(143, 168, 118, 0.4);
-    background-color: rgba(0, 0, 0, 0.3);
+  window.background.lightdm button.flat.option-button:hover, window.background.lightdm button.option-button.sidebar-button:hover {
+    border-color: rgba(41, 41, 41, 0.2);
+    background-color: rgba(0, 0, 0, 0.5); }
+  window.background.lightdm button.flat.option-button:active, window.background.lightdm button.option-button.sidebar-button:active {
+    border-color: #292929;
+    background-color: #8fa876;
     color: #ffffff; }
-
-.lightdm.entry {
+window.background.lightdm button, window.background.lightdm button.toggle-button {
+  border-color: transparent;
+  background-color: transparent;
+  color: #dadada; }
+  window.background.lightdm button:hover, window.background.lightdm button.toggle-button:hover {
+    border-color: rgba(41, 41, 41, 0.2);
+    background-color: rgba(0, 0, 0, 0.5); }
+  window.background.lightdm button:active, window.background.lightdm button.selected, window.background.lightdm button.toggle-button:active, window.background.lightdm button.toggle-button.selected {
+    border-color: rgba(41, 41, 41, 0.2);
+    background-color: #8fa876;
+    color: #ffffff; }
+window.background.lightdm entry,
+window.background.lightdm .lightdm-combo entry {
   background: rgba(0, 0, 0, 0.5);
   color: white; }
+window.background.lightdm entry:active {
+  -gtk-icon-source: -gtk-icontheme("process-working-symbolic");
+  animation: spinner 1s linear infinite; }
+window.background.lightdm .lightdm-combo {
+  border-radius: 0;
+  background-color: transparent; }
 
 @define-color theme_fg_color #DADADA;
 @define-color theme_text_color #DADADA;

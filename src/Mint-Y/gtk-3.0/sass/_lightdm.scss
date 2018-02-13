@@ -112,29 +112,62 @@
 // Lightdm
 //
 
-.lightdm.menubar {
-
-  padding: 0;
-
-  & > .menuitem { padding: 0 5px 0 5px; }
-}
-
-.lightdm.button,
-.lightdm.option-button,
-.lightdm.toggle-button {
-
-  border: 1px solid transparent;
-  background-color: transparent;
-  color: #dadada;
-
-  &:hover {
-    border-color: transparentize($selected_bg_color, 0.6);
-    background-color: transparentize(black, 0.7);
-    color: #ffffff;
+window.background.lightdm {
+  menubar {
+    > menuitem { padding : 0 5px 0 5px; }
   }
-}
 
-.lightdm.entry {
-  background: transparentize(black, 0.5);
-  color: white;
+  button {
+
+    &.flat.option-button {
+      background-color: transparent;
+      color: #dadada;
+
+      &:hover {
+        border-color: transparentize($borders_color, 0.8);
+        background-color: transparentize(black, 0.5);
+      }
+
+      &:active {
+        border-color: $borders_color;
+        background-color: $selected_bg_color;
+        color: $selected_fg_color;
+      }
+    }
+
+    &,
+    &.toggle-button {
+      border-color: transparent;
+      background-color: transparent;
+      color: #dadada;
+
+      &:hover {
+        border-color: transparentize($borders_color, 0.8);
+        background-color: transparentize(black, 0.5);
+      }
+
+      &:active,
+      &.selected {
+        border-color: transparentize($borders_color, 0.8);
+        background-color: $selected_bg_color;
+        color: $selected_fg_color;
+      }
+    }
+  }
+
+  entry,
+  .lightdm-combo entry {
+    background: transparentize(black, 0.5);
+    color: white;
+  }
+
+  entry:active { // for spinner
+    -gtk-icon-source: -gtk-icontheme('process-working-symbolic');
+    animation: spinner 1s linear infinite;
+  }
+
+  .lightdm-combo {
+    border-radius: 0;
+    background-color: transparent;
+  }
 }
