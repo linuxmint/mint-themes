@@ -1105,6 +1105,14 @@ StScrollBar {
   background-gradient-direction: vertical;
   background-gradient-start: #F04A50;
   background-gradient-end: #F04A50; }
+.window-list-preview {
+  color: #D3D3D3;
+  border: 1px solid #202020;
+  background-color: #2f2f2f;
+  border-radius: 3px;
+  padding: 6px 12px 12px 12px;
+  font: 1em;
+  text-shadow: #2f2f2f 0px 0px 2px; }
 
 .sound-button {
   width: 22px;
