@@ -1978,6 +1978,15 @@ StScrollBar StButton#vhandle:hover {
     border-image: url("panel-assets/attention-right.svg") 6;
 }
 
+.window-list-preview {
+    border-image: url("background-assets/bg-1.png") 6;
+    color: rgb(70, 70, 70);
+    padding: 6px 12px 12px 12px;
+    font-size: 1em;
+    font-weight: bold;
+    text-shadow: white 0px 0px 2px;
+}
+
 /* ===================================================================
  * Sound Applet (status/volume.js)
  * ===================================================================*/
