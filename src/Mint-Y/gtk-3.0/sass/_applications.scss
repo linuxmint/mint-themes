@@ -696,21 +696,24 @@ SynapseGuiViewVirgilio *:selected { background-color: $selected_bg_color; }
   color: $panel_fg;
   background-color: $panel_bg;
 
-  &, .menubar { background-color: $panel_bg; }
+  &, menubar { background-color: $panel_bg; }
 
-  & .menubar > .menuitem {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
+  menubar,
+  #PanelApplet label,
+  #PanelApplet image { color: $panel_fg; }
 
-  & GtkMenu .label {
+  menu > menuitem {
     color: $fg_color;
-    font-style: normal;
 
-    &:disabled { color: $insensitive_fg_color; }
+    &:hover { color: $selected_fg_color; }
   }
 
-  .button:not(#tasklist-button) { @extend %panelbutton; }
+  button:not(#tasklist-button) { @extend %panelbutton; }
+
+  button,
+  #tasklist-button {
+    label, image { color: inherit; }
+  }
 
   #tasklist-button {
     color: $panel_fg;
@@ -723,8 +726,9 @@ SynapseGuiViewVirgilio *:selected { background-color: $selected_bg_color; }
 
     &:checked,
     &:active {
-      color: $selected_fg_color;
       background-color: $selected_bg_color;
+
+      label { color: white; }
     }
   }
 
@@ -734,8 +738,8 @@ SynapseGuiViewVirgilio *:selected { background-color: $selected_bg_color; }
     padding-bottom: 4px;
   }
 
-  NaTrayApplet {
-    -NaTrayApplet-icon-padding: 2;
+  na-tray-applet {
+    -NaTrayApplet-icon-padding: 1px;
   }
 }
 
@@ -784,11 +788,14 @@ SynapseGuiViewVirgilio *:selected { background-color: $selected_bg_color; }
     border: none;
     background-color: lighten($panel_bg, 10%);
   }
+
   &:active, &:checked {
     color: $selected_fg_color;
     border: none;
     background-color: $selected_bg_color;
   }
+
+  label, image { color: inherit; }
 }
 
 //

@@ -3311,21 +3311,31 @@ SynapseGuiViewVirgilio *:selected {
 .mate-panel-menu-bar {
   color: #DADADA;
   background-color: #393939; }
-  .gnome-panel-menu-bar, .gnome-panel-menu-bar .menubar,
+  .gnome-panel-menu-bar, .gnome-panel-menu-bar menubar,
   .mate-panel-menu-bar,
-  .mate-panel-menu-bar .menubar {
+  .mate-panel-menu-bar menubar {
     background-color: #393939; }
-  .gnome-panel-menu-bar .menubar > .menuitem,
-  .mate-panel-menu-bar .menubar > .menuitem {
-    padding-top: 0;
-    padding-bottom: 0; }
-  .gnome-panel-menu-bar GtkMenu .label,
-  .mate-panel-menu-bar GtkMenu .label {
-    color: #4a4a4a;
-    font-style: normal; }
-    .gnome-panel-menu-bar GtkMenu .label:disabled,
-    .mate-panel-menu-bar GtkMenu .label:disabled {
-      color: rgba(74, 74, 74, 0.55); }
+  .gnome-panel-menu-bar menubar,
+  .gnome-panel-menu-bar #PanelApplet label,
+  .gnome-panel-menu-bar #PanelApplet image,
+  .mate-panel-menu-bar menubar,
+  .mate-panel-menu-bar #PanelApplet label,
+  .mate-panel-menu-bar #PanelApplet image {
+    color: #DADADA; }
+  .gnome-panel-menu-bar menu > menuitem,
+  .mate-panel-menu-bar menu > menuitem {
+    color: #4a4a4a; }
+    .gnome-panel-menu-bar menu > menuitem:hover,
+    .mate-panel-menu-bar menu > menuitem:hover {
+      color: #ffffff; }
+  .gnome-panel-menu-bar button label, .gnome-panel-menu-bar button image,
+  .gnome-panel-menu-bar #tasklist-button label,
+  .gnome-panel-menu-bar #tasklist-button image,
+  .mate-panel-menu-bar button label,
+  .mate-panel-menu-bar button image,
+  .mate-panel-menu-bar #tasklist-button label,
+  .mate-panel-menu-bar #tasklist-button image {
+    color: inherit; }
   .gnome-panel-menu-bar #tasklist-button,
   .mate-panel-menu-bar #tasklist-button {
     color: #DADADA;
@@ -3339,16 +3349,20 @@ SynapseGuiViewVirgilio *:selected {
     .gnome-panel-menu-bar #tasklist-button:checked, .gnome-panel-menu-bar #tasklist-button:active,
     .mate-panel-menu-bar #tasklist-button:checked,
     .mate-panel-menu-bar #tasklist-button:active {
-      color: #ffffff;
       background-color: #9ab87c; }
+      .gnome-panel-menu-bar #tasklist-button:checked label, .gnome-panel-menu-bar #tasklist-button:active label,
+      .mate-panel-menu-bar #tasklist-button:checked label,
+      .mate-panel-menu-bar #tasklist-button:active label {
+        color: white; }
   .gnome-panel-menu-bar PanelSeparator,
   .mate-panel-menu-bar PanelSeparator {
     color: rgba(6, 6, 6, 0.2);
     padding-top: 4px;
     padding-bottom: 4px; }
-  .gnome-panel-menu-bar NaTrayApplet,
-  .mate-panel-menu-bar NaTrayApplet {
-    -NaTrayApplet-icon-padding: 2; }
+  .gnome-panel-menu-bar na-tray-applet,
+  .mate-panel-menu-bar na-tray-applet {
+    -NaTrayApplet-icon-padding: 0;
+    -NaTrayApplet-icon-size: 16px; }
 
 .mintmenu:hover {
   background-color: #464646; }
@@ -3379,22 +3393,26 @@ SynapseGuiViewVirgilio *:selected {
       border: none;
       background-color: #272727; }
 
-.gnome-panel-menu-bar .button:not(#tasklist-button),
-.mate-panel-menu-bar .button:not(#tasklist-button) {
+.gnome-panel-menu-bar button:not(#tasklist-button),
+.mate-panel-menu-bar button:not(#tasklist-button) {
   color: #DADADA;
   border-radius: 0;
   border: none;
   background-color: rgba(57, 57, 57, 0); }
-  .gnome-panel-menu-bar .button:hover:not(#tasklist-button),
-  .mate-panel-menu-bar .button:hover:not(#tasklist-button) {
+  .gnome-panel-menu-bar button:hover:not(#tasklist-button),
+  .mate-panel-menu-bar button:hover:not(#tasklist-button) {
     border: none;
     background-color: #535353; }
-  .gnome-panel-menu-bar .button:active:not(#tasklist-button),
-  .mate-panel-menu-bar .button:active:not(#tasklist-button), .gnome-panel-menu-bar .button:checked:not(#tasklist-button),
-  .mate-panel-menu-bar .button:checked:not(#tasklist-button) {
+  .gnome-panel-menu-bar button:active:not(#tasklist-button),
+  .mate-panel-menu-bar button:active:not(#tasklist-button), .gnome-panel-menu-bar button:checked:not(#tasklist-button),
+  .mate-panel-menu-bar button:checked:not(#tasklist-button) {
     color: #ffffff;
     border: none;
     background-color: #9ab87c; }
+  .gnome-panel-menu-bar button:not(#tasklist-button) label,
+  .mate-panel-menu-bar button:not(#tasklist-button) label, .gnome-panel-menu-bar button:not(#tasklist-button) image,
+  .mate-panel-menu-bar button:not(#tasklist-button) image {
+    color: inherit; }
 
 .floating-bar {
   background-color: #9ab87c;
