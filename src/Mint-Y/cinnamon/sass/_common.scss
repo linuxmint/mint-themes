@@ -1465,14 +1465,15 @@ StScrollBar {
     background-gradient-start: $destructive_color;
     background-gradient-end: $destructive_color;
   }
+
   &-preview {
+    spacing: 6px;
     color: $fg_color;
     border: 1px solid $borders_color;
     background-color: $bg_color;
     border-radius: 3px;
     padding: 6px 12px 12px 12px;
     font: 1em;
-    text-shadow: $bg_color 0px 0px 2px;
   }
 }
 
