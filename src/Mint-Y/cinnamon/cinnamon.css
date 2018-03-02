@@ -1281,6 +1281,7 @@ StScrollBar {
   .panel-launchers .launcher {
     padding-left: 2px;
     padding-right: 2px;
+    padding-bottom: 2px;
     transition-duration: 200; }
     .panel-launchers .launcher:hover {
       background-color: #9ab87c; }
