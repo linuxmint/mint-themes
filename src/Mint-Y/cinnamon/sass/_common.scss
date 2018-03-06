@@ -5,9 +5,6 @@ $asset_path: if($variant == 'dark', dark-assets, light-assets);
 //
 $font-size: 9;
 $font-family: sans, Sans-Serif;
-$_bubble_bg_color: opacify($osd_bg_color,0.25);
-$_bubble_fg_color: $osd_fg_color;
-$_bubble_borders_color: transparentize($osd_fg_color,0.8);
 
 stage {
   font-family: $font-family;
@@ -17,13 +14,6 @@ stage {
 
 .label-shadow {
   color: rgba(0, 0, 0, 0);
-}
-
-%reset_style {
-  background-color: transparent !important;
-  // background-gradient-direction: none !important;
-  border: none !important;
-  border-radius: 0 !important;
 }
 
 //

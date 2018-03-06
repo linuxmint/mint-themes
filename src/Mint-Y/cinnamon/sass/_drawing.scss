@@ -14,7 +14,6 @@
 //
 // Entries drawing function
 //
-  //@extend %reset_style;
 
   @if $t==normal {
     color: $text_color;
@@ -65,7 +64,6 @@
 //
 // Button drawing function
 //
-  //@extend %reset_style;
 
   @if $t==normal {
   //

@@ -77,8 +77,8 @@ stage {
   transition-duration: 300ms;
   border-radius: 3px;
   color: #c3c3c3;
-  background-color: rgba(109, 109, 109, 0.35);
-  border: 1px solid rgba(22, 22, 22, 0.35);
+  background-color: rgba(109, 109, 109, 0.4);
+  border: 1px solid rgba(22, 22, 22, 0.4);
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05); }
   .notification StEntry:focus {
     color: #ffffff;
@@ -87,8 +87,8 @@ stage {
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05); }
   .notification StEntry:insensitive {
     color: rgba(195, 195, 195, 0.55);
-    background-color: rgba(109, 109, 109, 0.2);
-    border: 1px solid rgba(22, 22, 22, 0.35);
+    background-color: rgba(109, 109, 109, 0.25);
+    border: 1px solid rgba(22, 22, 22, 0.4);
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05); }
 
 StScrollView.vfade {
@@ -466,8 +466,8 @@ StScrollBar {
   spacing: 12px; }
 
 .window-caption {
-  background-color: rgba(53, 53, 53, 0.95);
-  border: 1px solid rgba(53, 53, 53, 0.95);
+  background-color: #353535;
+  border: 1px solid #353535;
   color: #c3c3c3;
   spacing: 25px;
   border-radius: 2px;
@@ -488,8 +488,8 @@ StScrollBar {
   padding: 5px 8px;
   -cinnamon-caption-spacing: 4px;
   color: #c3c3c3;
-  background-color: rgba(109, 109, 109, 0.35);
-  border: 1px solid rgba(22, 22, 22, 0.35);
+  background-color: rgba(109, 109, 109, 0.4);
+  border: 1px solid rgba(22, 22, 22, 0.4);
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05); }
   .expo-workspaces-name-entry:focus,
   .expo-workspaces-name-entry#selected:focus {
@@ -832,8 +832,8 @@ StScrollBar {
     selected-color: #ffffff;
     selection-background-color: #9ab87c;
     color: #c3c3c3;
-    background-color: rgba(109, 109, 109, 0.35);
-    border: 1px solid rgba(22, 22, 22, 0.35);
+    background-color: rgba(109, 109, 109, 0.4);
+    border: 1px solid rgba(22, 22, 22, 0.4);
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05); }
     .run-dialog-entry:focus {
       color: #4a4a4a;
@@ -901,7 +901,7 @@ StScrollBar {
     border-width: 0px; }
 
 #keyboard {
-  background-color: rgba(53, 53, 53, 0.95);
+  background-color: #353535;
   border-width: 0;
   border-top-width: 1px;
   border-color: rgba(0, 0, 0, 0.4); }
@@ -922,25 +922,25 @@ StScrollBar {
   box-shadow: none;
   color: #c3c3c3;
   border: 1px solid #d9d9d9;
-  background-color: rgba(109, 109, 109, 0.35); }
+  background-color: rgba(109, 109, 109, 0.4); }
   .keyboard-key:hover {
     color: #c3c3c3;
-    border: 1px solid rgba(2, 2, 2, 0.35);
-    background-color: rgba(127, 127, 127, 0.45); }
+    border: 1px solid rgba(2, 2, 2, 0.4);
+    background-color: rgba(127, 127, 127, 0.5); }
   .keyboard-key:active, .keyboard-key:checked {
     color: #ffffff;
     border: 1px solid #9ab87c;
     background-color: #9ab87c; }
   .keyboard-key:grayed {
     color: #606060;
-    border: 1px solid rgba(2, 2, 2, 0.35);
-    background-color: rgba(109, 109, 109, 0.2); }
+    border: 1px solid rgba(2, 2, 2, 0.4);
+    background-color: rgba(109, 109, 109, 0.25); }
 
 .keyboard-subkeys {
   color: #c3c3c3;
   padding: 5px;
   -arrow-border-radius: 2px;
-  -arrow-background-color: rgba(53, 53, 53, 0.95);
+  -arrow-background-color: #353535;
   -arrow-border-width: 1px;
   -arrow-border-color: rgba(0, 0, 0, 0.4);
   -arrow-base: 20px;
@@ -1177,8 +1177,8 @@ StScrollBar {
     height: 70px;
     padding: 15px;
     spacing: 0.5em;
-    background: rgba(40, 40, 40, 0.85);
-    border: 0px solid rgba(28, 28, 28, 0.95);
+    background: rgba(40, 40, 40, 0.9);
+    border: 0px solid #1c1c1c;
     border-bottom: 1px;
     color: #c3c3c3; }
     .sound-player-overlay StButton {
@@ -1192,8 +1192,8 @@ StScrollBar {
         icon-size: 16px; }
       .sound-player-overlay StButton:hover {
         color: #c3c3c3;
-        border: 1px solid rgba(2, 2, 2, 0.35);
-        background-color: rgba(127, 127, 127, 0.45); }
+        border: 1px solid rgba(2, 2, 2, 0.4);
+        background-color: rgba(127, 127, 127, 0.5); }
       .sound-player-overlay StButton:active {
         color: #ffffff;
         background-color: #9ab87c;
