@@ -3365,8 +3365,7 @@ SynapseGuiViewVirgilio *:selected {
     padding-bottom: 4px; }
   .gnome-panel-menu-bar na-tray-applet,
   .mate-panel-menu-bar na-tray-applet {
-    -NaTrayApplet-icon-padding: 0;
-    -NaTrayApplet-icon-size: 16px; }
+    -NaTrayApplet-icon-padding: 1px; }
 
 .mintmenu:hover {
   background-color: #464646; }
@@ -3484,7 +3483,8 @@ SwitchboardCategoryView iconview:selected:focus {
 
 .cs-header {
   padding: 6px;
-  background-color: #ededed; }
+  background-color: #ebebeb;
+  border-bottom: 1px solid #d9d9d9; }
 
 .xed-window .xed-panel.side notebook tab.top {
   padding: 8px 12px; }

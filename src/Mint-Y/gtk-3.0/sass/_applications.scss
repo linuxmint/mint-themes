@@ -893,7 +893,8 @@ SwitchboardCategoryView .view:selected:focus {
 //
 .cs-header {
   padding: 6px;
-  background-color: if($variant == 'light', darken($bg_color, 1%), darken($bg_color, 1%));
+  background-color: if($variant == 'light', darken($bg_color, 2%), darken($bg_color, 1%));
+  border-bottom: 1px solid $borders_color;
 }
 
 //
