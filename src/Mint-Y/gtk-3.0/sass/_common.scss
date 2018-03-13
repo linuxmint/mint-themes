@@ -2529,7 +2529,7 @@ filechooserbutton:drop(active) {
     border-right-style: none;
   }
 
-  list { background-color: transparent; }
+  list { background-color: $base_color; }
 
   paned & { &.left, &.right, &.left:dir(rtl), &:dir(rtl), &:dir(ltr), & { border-style: none; }}
 }

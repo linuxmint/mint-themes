@@ -2324,7 +2324,7 @@ filechooserbutton:drop(active) {
     border-left: 1px solid #292929;
     border-right-style: none; }
   .sidebar list {
-    background-color: transparent; }
+    background-color: #404040; }
   paned .sidebar.left, paned .sidebar.right, paned .sidebar.left:dir(rtl), paned .sidebar:dir(rtl), paned .sidebar:dir(ltr), paned .sidebar {
     border-style: none; }
 
