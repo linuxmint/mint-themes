@@ -2194,7 +2194,7 @@ list {
 row:not(:hover) {
   transition: all 150ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
 row.activatable.has-open-popup, row.activatable:hover {
-  background-color: rgba(255, 255, 255, 0.03); }
+  background-color: rgba(255, 255, 255, 0.05); }
 row.activatable:active {
   color: #DADADA; }
 row.activatable:disabled {

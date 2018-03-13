@@ -2347,7 +2347,7 @@ row {
 
   &.activatable {
     &.has-open-popup,
-    &:hover { background-color: if($variant == 'light', transparentize(black, 0.95), transparentize(white, 0.97)); }
+    &:hover { background-color: if($variant == 'light', transparentize(black, 0.97), transparentize(white, 0.95)); }
 
     &:active { color: $fg_color; }
     &:disabled {
