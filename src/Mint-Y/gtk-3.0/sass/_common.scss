@@ -2927,9 +2927,11 @@ colorchooser .popover.osd { border-radius: 3px; }
 // Shortcuts Help
 //
 button.circular,
-button.circular-button {
-  min-width: 16px;
+button.circular-button,
+.stack-switcher > button.circular {
+  min-width: 24px;
   min-height: 24px;
+  padding: 5px;
   border-radius: 50%;
   -gtk-outline-radius: 50%;
 

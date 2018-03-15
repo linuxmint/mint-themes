@@ -2585,13 +2585,16 @@ popover.background.touch-selection,
   font-family: Monospace; }
 
 button.circular,
-button.circular-button {
-  min-width: 16px;
+button.circular-button,
+.stack-switcher > button.circular {
+  min-width: 24px;
   min-height: 24px;
+  padding: 5px;
   border-radius: 50%;
   -gtk-outline-radius: 50%; }
   button.circular label,
-  button.circular-button label {
+  button.circular-button label,
+  .stack-switcher > button.circular label {
     padding: 0; }
 
 .keycap {
