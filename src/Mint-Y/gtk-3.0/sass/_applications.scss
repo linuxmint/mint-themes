@@ -127,7 +127,7 @@ TerminalWindow {
 filechooser {
   .csd.background, placessidebar list { background-color: transparent; }
 
-  placessidebar.sidebar {
+  placessidebar.sidebar list {
     background-color: $dark_sidebar_bg;
 
     row.sidebar-row {

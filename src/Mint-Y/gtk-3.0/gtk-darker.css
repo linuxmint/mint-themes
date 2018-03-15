@@ -2718,11 +2718,11 @@ textview text selection, flowbox flowboxchild:selected, entry selection:focus, e
 modelbutton.flat:active,
 modelbutton.flat:active arrow,
 modelbutton.flat:selected,
-modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:focus, row:selected, .nautilus-window placessidebar.sidebar row.sidebar-row.has-open-popup:selected, .nautilus-window placessidebar.sidebar row.sidebar-row:selected, .nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover, .nautilus-window placessidebar.sidebar row.sidebar-row:active:hover,
-filechooser placessidebar.sidebar row.sidebar-row.has-open-popup:selected,
-filechooser placessidebar.sidebar row.sidebar-row:selected,
-filechooser placessidebar.sidebar row.sidebar-row:selected:hover,
-filechooser placessidebar.sidebar row.sidebar-row:active:hover, .nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected {
+modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:focus, row:selected, .nautilus-window placessidebar.sidebar list row.sidebar-row.has-open-popup:selected, .nautilus-window placessidebar.sidebar list row.sidebar-row:selected, .nautilus-window placessidebar.sidebar list row.sidebar-row:selected:hover, .nautilus-window placessidebar.sidebar list row.sidebar-row:active:hover,
+filechooser placessidebar.sidebar list row.sidebar-row.has-open-popup:selected,
+filechooser placessidebar.sidebar list row.sidebar-row:selected,
+filechooser placessidebar.sidebar list row.sidebar-row:selected:hover,
+filechooser placessidebar.sidebar list row.sidebar-row:active:hover, .nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected {
   background-color: #9ab87c; }
   row:selected label, label:selected, .view:selected, iconview:selected, .view:selected:focus, iconview:selected:focus,
   .view text:selected,
@@ -2736,11 +2736,11 @@ filechooser placessidebar.sidebar row.sidebar-row:active:hover, .nemo-window .ne
   modelbutton.flat:active,
   modelbutton.flat:active arrow,
   modelbutton.flat:selected,
-  modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:focus, row:selected, .nautilus-window placessidebar.sidebar row.sidebar-row.has-open-popup:selected, .nautilus-window placessidebar.sidebar row.sidebar-row:selected, .nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover, .nautilus-window placessidebar.sidebar row.sidebar-row:active:hover,
-  filechooser placessidebar.sidebar row.sidebar-row.has-open-popup:selected,
-  filechooser placessidebar.sidebar row.sidebar-row:selected,
-  filechooser placessidebar.sidebar row.sidebar-row:selected:hover,
-  filechooser placessidebar.sidebar row.sidebar-row:active:hover, .nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected {
+  modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:focus, row:selected, .nautilus-window placessidebar.sidebar list row.sidebar-row.has-open-popup:selected, .nautilus-window placessidebar.sidebar list row.sidebar-row:selected, .nautilus-window placessidebar.sidebar list row.sidebar-row:selected:hover, .nautilus-window placessidebar.sidebar list row.sidebar-row:active:hover,
+  filechooser placessidebar.sidebar list row.sidebar-row.has-open-popup:selected,
+  filechooser placessidebar.sidebar list row.sidebar-row:selected,
+  filechooser placessidebar.sidebar list row.sidebar-row:selected:hover,
+  filechooser placessidebar.sidebar list row.sidebar-row:active:hover, .nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected {
     color: #ffffff; }
     row:selected label:disabled, label:disabled:selected, .view:disabled:selected, iconview:disabled:selected, iconview:disabled:selected:focus,
     .view text:disabled:selected,
@@ -2752,9 +2752,9 @@ filechooser placessidebar.sidebar row.sidebar-row:active:hover, .nemo-window .ne
     modelbutton.flat:disabled:active,
     modelbutton.flat:active arrow:disabled,
     modelbutton.flat:disabled:selected,
-    modelbutton.flat:selected arrow:disabled, treeview.view:disabled:selected:focus, row:disabled:selected, .nautilus-window placessidebar.sidebar row.sidebar-row:disabled:selected, .nautilus-window placessidebar.sidebar row.sidebar-row:disabled:active:hover,
-    filechooser placessidebar.sidebar row.sidebar-row:disabled:selected,
-    filechooser placessidebar.sidebar row.sidebar-row:disabled:active:hover, .nemo-window .nemo-window-pane widget.entry:disabled:selected {
+    modelbutton.flat:selected arrow:disabled, treeview.view:disabled:selected:focus, row:disabled:selected, .nautilus-window placessidebar.sidebar list row.sidebar-row:disabled:selected, .nautilus-window placessidebar.sidebar list row.sidebar-row:disabled:active:hover,
+    filechooser placessidebar.sidebar list row.sidebar-row:disabled:selected,
+    filechooser placessidebar.sidebar list row.sidebar-row:disabled:active:hover, .nemo-window .nemo-window-pane widget.entry:disabled:selected {
       color: #cddcbe; }
 
 GeditNotebook.notebook tab.reorderable-page.top:active, GeditNotebook.notebook tab.reorderable-page.top.active-page, GeditNotebook.notebook tab.reorderable-page.top.active-page:hover, GeditNotebook.notebook tab.top:active, GeditNotebook.notebook tab.top.active-page, GeditNotebook.notebook tab.top.active-page:hover,
@@ -2864,70 +2864,70 @@ popover.background label.nautilus-canvas-item.separator, headerbar .nautilus-can
 filechooser .csd.background,
 filechooser placessidebar list {
   background-color: transparent; }
-.nautilus-window placessidebar.sidebar,
-filechooser placessidebar.sidebar {
+.nautilus-window placessidebar.sidebar list,
+filechooser placessidebar.sidebar list {
   background-color: #454545; }
-  .nautilus-window placessidebar.sidebar row.sidebar-row,
-  filechooser placessidebar.sidebar row.sidebar-row {
+  .nautilus-window placessidebar.sidebar list row.sidebar-row,
+  filechooser placessidebar.sidebar list row.sidebar-row {
     border: none;
     color: #C3C3C3; }
-    .nautilus-window placessidebar.sidebar row.sidebar-row .sidebar-icon,
-    filechooser placessidebar.sidebar row.sidebar-row .sidebar-icon {
+    .nautilus-window placessidebar.sidebar list row.sidebar-row .sidebar-icon,
+    filechooser placessidebar.sidebar list row.sidebar-row .sidebar-icon {
       color: rgba(195, 195, 195, 0.6); }
-    .nautilus-window placessidebar.sidebar row.sidebar-row.has-open-popup, .nautilus-window placessidebar.sidebar row.sidebar-row:hover,
-    filechooser placessidebar.sidebar row.sidebar-row.has-open-popup,
-    filechooser placessidebar.sidebar row.sidebar-row:hover {
+    .nautilus-window placessidebar.sidebar list row.sidebar-row.has-open-popup, .nautilus-window placessidebar.sidebar list row.sidebar-row:hover,
+    filechooser placessidebar.sidebar list row.sidebar-row.has-open-popup,
+    filechooser placessidebar.sidebar list row.sidebar-row:hover {
       background-color: rgba(195, 195, 195, 0.15); }
-    .nautilus-window placessidebar.sidebar row.sidebar-row:disabled, .nautilus-window placessidebar.sidebar row.sidebar-row:disabled label, .nautilus-window placessidebar.sidebar row.sidebar-row:disabled image,
-    filechooser placessidebar.sidebar row.sidebar-row:disabled,
-    filechooser placessidebar.sidebar row.sidebar-row:disabled label,
-    filechooser placessidebar.sidebar row.sidebar-row:disabled image {
+    .nautilus-window placessidebar.sidebar list row.sidebar-row:disabled, .nautilus-window placessidebar.sidebar list row.sidebar-row:disabled label, .nautilus-window placessidebar.sidebar list row.sidebar-row:disabled image,
+    filechooser placessidebar.sidebar list row.sidebar-row:disabled,
+    filechooser placessidebar.sidebar list row.sidebar-row:disabled label,
+    filechooser placessidebar.sidebar list row.sidebar-row:disabled image {
       color: rgba(195, 195, 195, 0.4); }
-    .nautilus-window placessidebar.sidebar row.sidebar-row:selected.has-open-popup .sidebar-icon, .nautilus-window placessidebar.sidebar row.sidebar-row:selected .sidebar-icon, .nautilus-window placessidebar.sidebar row.sidebar-row:selected:hover .sidebar-icon, .nautilus-window placessidebar.sidebar row.sidebar-row:active:hover .sidebar-icon,
-    filechooser placessidebar.sidebar row.sidebar-row:selected.has-open-popup .sidebar-icon,
-    filechooser placessidebar.sidebar row.sidebar-row:selected .sidebar-icon,
-    filechooser placessidebar.sidebar row.sidebar-row:selected:hover .sidebar-icon,
-    filechooser placessidebar.sidebar row.sidebar-row:active:hover .sidebar-icon {
+    .nautilus-window placessidebar.sidebar list row.sidebar-row:selected.has-open-popup .sidebar-icon, .nautilus-window placessidebar.sidebar list row.sidebar-row:selected .sidebar-icon, .nautilus-window placessidebar.sidebar list row.sidebar-row:selected:hover .sidebar-icon, .nautilus-window placessidebar.sidebar list row.sidebar-row:active:hover .sidebar-icon,
+    filechooser placessidebar.sidebar list row.sidebar-row:selected.has-open-popup .sidebar-icon,
+    filechooser placessidebar.sidebar list row.sidebar-row:selected .sidebar-icon,
+    filechooser placessidebar.sidebar list row.sidebar-row:selected:hover .sidebar-icon,
+    filechooser placessidebar.sidebar list row.sidebar-row:active:hover .sidebar-icon {
       color: inherit; }
-    .nautilus-window placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button,
-    filechooser placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button {
+    .nautilus-window placessidebar.sidebar list row.sidebar-row:not(:selected) button.sidebar-button,
+    filechooser placessidebar.sidebar list row.sidebar-row:not(:selected) button.sidebar-button {
       color: #C3C3C3; }
-      .nautilus-window placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button:hover,
-      filechooser placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button:hover {
+      .nautilus-window placessidebar.sidebar list row.sidebar-row:not(:selected) button.sidebar-button:hover,
+      filechooser placessidebar.sidebar list row.sidebar-row:not(:selected) button.sidebar-button:hover {
         color: #C3C3C3;
         outline-color: rgba(195, 195, 195, 0.3);
         border-color: rgba(38, 38, 38, 0.4);
         background-color: rgba(143, 143, 143, 0.5); }
-      .nautilus-window placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button:active,
-      filechooser placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button:active {
+      .nautilus-window placessidebar.sidebar list row.sidebar-row:not(:selected) button.sidebar-button:active,
+      filechooser placessidebar.sidebar list row.sidebar-row:not(:selected) button.sidebar-button:active {
         color: #ffffff;
         outline-color: rgba(255, 255, 255, 0.3);
         border-color: #cfcfcf;
         background-color: #9ab87c; }
-      .nautilus-window placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button:not(:hover):not(:active) > image,
-      filechooser placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button:not(:hover):not(:active) > image {
+      .nautilus-window placessidebar.sidebar list row.sidebar-row:not(:selected) button.sidebar-button:not(:hover):not(:active) > image,
+      filechooser placessidebar.sidebar list row.sidebar-row:not(:selected) button.sidebar-button:not(:hover):not(:active) > image {
         opacity: 0.5; }
-    .nautilus-window placessidebar.sidebar row.sidebar-row.sidebar-new-bookmark-row,
-    filechooser placessidebar.sidebar row.sidebar-row.sidebar-new-bookmark-row {
+    .nautilus-window placessidebar.sidebar list row.sidebar-row.sidebar-new-bookmark-row,
+    filechooser placessidebar.sidebar list row.sidebar-row.sidebar-new-bookmark-row {
       color: #9ab87c; }
-      .nautilus-window placessidebar.sidebar row.sidebar-row.sidebar-new-bookmark-row .sidebar-icon,
-      filechooser placessidebar.sidebar row.sidebar-row.sidebar-new-bookmark-row .sidebar-icon {
+      .nautilus-window placessidebar.sidebar list row.sidebar-row.sidebar-new-bookmark-row .sidebar-icon,
+      filechooser placessidebar.sidebar list row.sidebar-row.sidebar-new-bookmark-row .sidebar-icon {
         color: inherit; }
-    .nautilus-window placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled), .nautilus-window placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled) label, .nautilus-window placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled) .sidebar-icon,
-    filechooser placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled),
-    filechooser placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled) label,
-    filechooser placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled) .sidebar-icon {
+    .nautilus-window placessidebar.sidebar list row.sidebar-row:drop(active):not(:disabled), .nautilus-window placessidebar.sidebar list row.sidebar-row:drop(active):not(:disabled) label, .nautilus-window placessidebar.sidebar list row.sidebar-row:drop(active):not(:disabled) .sidebar-icon,
+    filechooser placessidebar.sidebar list row.sidebar-row:drop(active):not(:disabled),
+    filechooser placessidebar.sidebar list row.sidebar-row:drop(active):not(:disabled) label,
+    filechooser placessidebar.sidebar list row.sidebar-row:drop(active):not(:disabled) .sidebar-icon {
       color: #f08437; }
-    .nautilus-window placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled):selected,
-    filechooser placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled):selected {
+    .nautilus-window placessidebar.sidebar list row.sidebar-row:drop(active):not(:disabled):selected,
+    filechooser placessidebar.sidebar list row.sidebar-row:drop(active):not(:disabled):selected {
       background-color: #f08437; }
-      .nautilus-window placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled):selected, .nautilus-window placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled):selected label, .nautilus-window placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled):selected .sidebar-icon,
-      filechooser placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled):selected,
-      filechooser placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled):selected label,
-      filechooser placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled):selected .sidebar-icon {
+      .nautilus-window placessidebar.sidebar list row.sidebar-row:drop(active):not(:disabled):selected, .nautilus-window placessidebar.sidebar list row.sidebar-row:drop(active):not(:disabled):selected label, .nautilus-window placessidebar.sidebar list row.sidebar-row:drop(active):not(:disabled):selected .sidebar-icon,
+      filechooser placessidebar.sidebar list row.sidebar-row:drop(active):not(:disabled):selected,
+      filechooser placessidebar.sidebar list row.sidebar-row:drop(active):not(:disabled):selected label,
+      filechooser placessidebar.sidebar list row.sidebar-row:drop(active):not(:disabled):selected .sidebar-icon {
         color: #ffffff; }
-  .nautilus-window placessidebar.sidebar separator,
-  filechooser placessidebar.sidebar separator {
+  .nautilus-window placessidebar.sidebar list separator,
+  filechooser placessidebar.sidebar list separator {
     background-color: transparent; }
 .nautilus-window.maximized placessidebar.sidebar,
 filechooser.maximized placessidebar.sidebar {
@@ -3502,27 +3502,27 @@ EvWindow .content-view iconview:focus:selected {
   background-color: #9ab87c;
   color: #ffffff; }
 
-.nautilus-window placessidebar.sidebar scrollbar,
-filechooser placessidebar.sidebar scrollbar, .nemo-window .sidebar scrollbar {
+.nautilus-window placessidebar.sidebar list scrollbar,
+filechooser placessidebar.sidebar list scrollbar, .nemo-window .sidebar scrollbar {
   border-color: #383838; }
-  .nautilus-window placessidebar.sidebar scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider,
-  filechooser placessidebar.sidebar scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider, .nemo-window .sidebar scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider {
+  .nautilus-window placessidebar.sidebar list scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider,
+  filechooser placessidebar.sidebar list scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider, .nemo-window .sidebar scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider {
     background-color: #e9e9e9;
     border: 1px solid rgba(0, 0, 0, 0.3); }
-  .nautilus-window placessidebar.sidebar scrollbar slider,
-  filechooser placessidebar.sidebar scrollbar slider, .nemo-window .sidebar scrollbar slider {
+  .nautilus-window placessidebar.sidebar list scrollbar slider,
+  filechooser placessidebar.sidebar list scrollbar slider, .nemo-window .sidebar scrollbar slider {
     background-color: rgba(233, 233, 233, 0.7); }
-    .nautilus-window placessidebar.sidebar scrollbar slider:hover,
-    filechooser placessidebar.sidebar scrollbar slider:hover, .nemo-window .sidebar scrollbar slider:hover {
+    .nautilus-window placessidebar.sidebar list scrollbar slider:hover,
+    filechooser placessidebar.sidebar list scrollbar slider:hover, .nemo-window .sidebar scrollbar slider:hover {
       background-color: #f6f6f6; }
-    .nautilus-window placessidebar.sidebar scrollbar slider:hover:active,
-    filechooser placessidebar.sidebar scrollbar slider:hover:active, .nemo-window .sidebar scrollbar slider:hover:active {
+    .nautilus-window placessidebar.sidebar list scrollbar slider:hover:active,
+    filechooser placessidebar.sidebar list scrollbar slider:hover:active, .nemo-window .sidebar scrollbar slider:hover:active {
       background-color: #9ab87c; }
-    .nautilus-window placessidebar.sidebar scrollbar slider:disabled,
-    filechooser placessidebar.sidebar scrollbar slider:disabled, .nemo-window .sidebar scrollbar slider:disabled {
+    .nautilus-window placessidebar.sidebar list scrollbar slider:disabled,
+    filechooser placessidebar.sidebar list scrollbar slider:disabled, .nemo-window .sidebar scrollbar slider:disabled {
       background-color: transparent; }
-  .nautilus-window placessidebar.sidebar scrollbar trough,
-  filechooser placessidebar.sidebar scrollbar trough, .nemo-window .sidebar scrollbar trough {
+  .nautilus-window placessidebar.sidebar list scrollbar trough,
+  filechooser placessidebar.sidebar list scrollbar trough, .nemo-window .sidebar scrollbar trough {
     background-color: #383838; }
 
 #panel_window {
