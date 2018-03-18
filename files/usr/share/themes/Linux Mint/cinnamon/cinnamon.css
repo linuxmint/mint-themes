@@ -1787,6 +1787,16 @@ StScrollBar StButton#vhandle:hover
     background-gradient-end: rgba(255,144,144,0.5);
 }
 
+.window-list-preview {
+    border: 1px solid rgba(50, 50, 50, 1);
+    border-radius: 4px;
+    background-color: rgba(63, 63, 63, 0.95);
+    color: #fff;
+    font-size: 9.5pt;
+    padding: 6px 12px 12px 12px;
+    spacing: 0.5em;
+}
+
 /* ===================================================================
  * Sound Applet (status/volume.js)
  * ===================================================================*/
