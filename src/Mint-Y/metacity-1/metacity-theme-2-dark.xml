@@ -62,7 +62,7 @@
 	<distance name="bottom_height" value="0" />
 	<distance name="left_titlebar_edge" value="2"/>
 	<distance name="right_titlebar_edge" value="2"/>
-	<distance name="title_vertical_pad" value="2"/> <!-- 
+	<distance name="title_vertical_pad" value="2"/> <!--
 							This needs to be 1 less then the
 							title_vertical_pad on normal state
 							or you'll have bigger buttons		-->
@@ -246,18 +246,161 @@
 	<image filename="min-icon.svg" colorize="C_icon_bg_active" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
 </draw_ops>
 
+<!--stick-->
+<draw_ops name="stick_focused">
+	<image filename="stick-icon.svg" colorize="C_icon_bg_focused" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+</draw_ops>
 
-<!--Todo-->
-<draw_ops name="menu_focused"></draw_ops>
-<draw_ops name="menu_focused_pressed"></draw_ops>
-<draw_ops name="menu_unfocused"></draw_ops>
-<draw_ops name="menu_unfocused_prelight"></draw_ops>
-<draw_ops name="menu_unfocused_pressed"></draw_ops>
-<draw_ops name="shade_focused"></draw_ops>
-<draw_ops name="shade_focused_pressed"></draw_ops>
-<draw_ops name="shade_unfocused"></draw_ops>
-<draw_ops name="shade_unfocused_prelight"></draw_ops>
-<draw_ops name="shade_unfocused_pressed"></draw_ops>
+<draw_ops name="stick_focused_pressed">
+	<image filename="button-bg.svg" colorize="C_button_bg_active" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+	<image filename="stick-icon.svg" colorize="C_icon_bg_active" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+</draw_ops>
+
+<draw_ops name="stick_focused_prelight">
+	<image filename="button-bg.svg" colorize="C_button_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+	<image filename="button-border.svg" colorize="C_button_border_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+	<image filename="stick-icon.svg" colorize="C_icon_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+</draw_ops>
+
+<draw_ops name="stick_unfocused">
+	<image filename="stick-icon.svg" colorize="C_icon_bg_unfocused" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+</draw_ops>
+
+<draw_ops name="stick_unfocused_prelight">
+	<image filename="button-bg.svg" colorize="C_button_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+	<image filename="button-border.svg" colorize="C_button_border_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+	<image filename="stick-icon.svg" colorize="C_icon_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+</draw_ops>
+
+<draw_ops name="stick_unfocused_pressed">
+	<image filename="button-bg.svg" colorize="C_button_bg_active" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+	<image filename="stick-icon.svg" colorize="C_icon_bg_active" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+</draw_ops>
+
+<!--unstick-->
+<draw_ops name="unstick_focused">
+	<image filename="unstick-icon.svg" colorize="C_icon_bg_focused" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+</draw_ops>
+
+<draw_ops name="unstick_focused_pressed">
+	<image filename="button-bg.svg" colorize="C_button_bg_active" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+	<image filename="unstick-icon.svg" colorize="C_icon_bg_active" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+</draw_ops>
+
+<draw_ops name="unstick_focused_prelight">
+	<image filename="button-bg.svg" colorize="C_button_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+	<image filename="button-border.svg" colorize="C_button_border_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+	<image filename="unstick-icon.svg" colorize="C_icon_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+</draw_ops>
+
+<draw_ops name="unstick_unfocused">
+	<image filename="unstick-icon.svg" colorize="C_icon_bg_unfocused" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+</draw_ops>
+
+<draw_ops name="unstick_unfocused_prelight">
+	<image filename="button-bg.svg" colorize="C_button_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+	<image filename="button-border.svg" colorize="C_button_border_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+	<image filename="unstick-icon.svg" colorize="C_icon_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+</draw_ops>
+
+<draw_ops name="unstick_unfocused_pressed">
+	<image filename="button-bg.svg" colorize="C_button_bg_active" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+	<image filename="unstick-icon.svg" colorize="C_icon_bg_active" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+</draw_ops>
+
+<!--shade-->
+<draw_ops name="shade_focused">
+	<image filename="shade-icon.svg" colorize="C_icon_bg_focused" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+</draw_ops>
+
+<draw_ops name="shade_focused_pressed">
+	<image filename="button-bg.svg" colorize="C_button_bg_active" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+	<image filename="shade-icon.svg" colorize="C_icon_bg_active" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+</draw_ops>
+
+<draw_ops name="shade_focused_prelight">
+	<image filename="button-bg.svg" colorize="C_button_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+	<image filename="button-border.svg" colorize="C_button_border_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+	<image filename="shade-icon.svg" colorize="C_icon_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+</draw_ops>
+
+<draw_ops name="shade_unfocused">
+	<image filename="shade-icon.svg" colorize="C_icon_bg_unfocused" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+</draw_ops>
+
+<draw_ops name="shade_unfocused_prelight">
+	<image filename="button-bg.svg" colorize="C_button_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+	<image filename="button-border.svg" colorize="C_button_border_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+	<image filename="shade-icon.svg" colorize="C_icon_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+</draw_ops>
+
+<draw_ops name="shade_unfocused_pressed">
+	<image filename="button-bg.svg" colorize="C_button_bg_active" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+	<image filename="shade-icon.svg" colorize="C_icon_bg_active" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+</draw_ops>
+
+<!--unshade-->
+<draw_ops name="unshade_focused">
+	<image filename="unshade-icon.svg" colorize="C_icon_bg_focused" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+</draw_ops>
+
+<draw_ops name="unshade_focused_pressed">
+	<image filename="button-bg.svg" colorize="C_button_bg_active" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+	<image filename="unshade-icon.svg" colorize="C_icon_bg_active" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+</draw_ops>
+
+<draw_ops name="unshade_focused_prelight">
+	<image filename="button-bg.svg" colorize="C_button_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+	<image filename="button-border.svg" colorize="C_button_border_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+	<image filename="unshade-icon.svg" colorize="C_icon_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+</draw_ops>
+
+<draw_ops name="unshade_unfocused">
+	<image filename="unshade-icon.svg" colorize="C_icon_bg_unfocused" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+</draw_ops>
+
+<draw_ops name="unshade_unfocused_prelight">
+	<image filename="button-bg.svg" colorize="C_button_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+	<image filename="button-border.svg" colorize="C_button_border_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+	<image filename="unshade-icon.svg" colorize="C_icon_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+</draw_ops>
+
+<draw_ops name="unshade_unfocused_pressed">
+	<image filename="button-bg.svg" colorize="C_button_bg_active" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+	<image filename="unshade-icon.svg" colorize="C_icon_bg_active" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+</draw_ops>
+
+<!--menu-->
+<draw_ops name="menu_focused">
+	<image filename="menu-icon.svg" colorize="C_icon_bg_focused" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+</draw_ops>
+
+<draw_ops name="menu_focused_pressed">
+	<image filename="button-bg.svg" colorize="C_button_bg_active" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+	<image filename="menu-icon.svg" colorize="C_icon_bg_active" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+</draw_ops>
+
+<draw_ops name="menu_focused_prelight">
+	<image filename="button-bg.svg" colorize="C_button_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+	<image filename="button-border.svg" colorize="C_button_border_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+	<image filename="menu-icon.svg" colorize="C_icon_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+</draw_ops>
+
+<draw_ops name="menu_unfocused">
+	<image filename="menu-icon.svg" colorize="C_icon_bg_unfocused" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+</draw_ops>
+
+<draw_ops name="menu_unfocused_prelight">
+	<image filename="button-bg.svg" colorize="C_button_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+	<image filename="button-border.svg" colorize="C_button_border_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+	<image filename="menu-icon.svg" colorize="C_icon_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+</draw_ops>
+
+<draw_ops name="menu_unfocused_pressed">
+	<image filename="button-bg.svg" colorize="C_button_bg_active" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+	<image filename="menu-icon.svg" colorize="C_icon_bg_active" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+</draw_ops>
+
 
 <!-- frame styles -->
 
@@ -276,18 +419,23 @@
 	<button function="minimize" state="prelight" draw_ops="minimize_focused_prelight" />
 	<button function="menu" state="normal" draw_ops="menu_focused" />
 	<button function="menu" state="pressed" draw_ops="menu_focused_pressed" />
+	<button function="menu" state="prelight" draw_ops="menu_focused_prelight" />
 	<button function="shade" state="normal" draw_ops="shade_focused" />
 	<button function="shade" state="pressed" draw_ops="shade_focused_pressed" />
-	<button function="unshade" state="normal" draw_ops="shade_focused" />
-	<button function="unshade" state="pressed" draw_ops="shade_focused_pressed" />
+	<button function="shade" state="prelight" draw_ops="shade_focused_prelight" />
+	<button function="unshade" state="normal" draw_ops="unshade_focused" />
+	<button function="unshade" state="pressed" draw_ops="unshade_focused_pressed" />
+	<button function="unshade" state="prelight" draw_ops="unshade_focused_prelight" />
 	<button function="above" state="normal"><draw_ops></draw_ops></button>
 	<button function="above" state="pressed"><draw_ops></draw_ops></button>
 	<button function="unabove" state="normal"><draw_ops></draw_ops></button>
 	<button function="unabove" state="pressed"><draw_ops></draw_ops></button>
-	<button function="stick" state="normal"><draw_ops></draw_ops></button>
-	<button function="stick" state="pressed"><draw_ops></draw_ops></button>
-	<button function="unstick" state="normal"><draw_ops></draw_ops></button>
-	<button function="unstick" state="pressed"><draw_ops></draw_ops></button>
+	<button function="stick" state="normal" draw_ops="stick_focused" />
+	<button function="stick" state="pressed" draw_ops="stick_focused_pressed" />
+	<button function="stick" state="prelight" draw_ops="stick_focused_prelight" />
+	<button function="unstick" state="normal" draw_ops="unstick_focused" />
+	<button function="unstick" state="pressed" draw_ops="unstick_focused_pressed" />
+	<button function="unstick" state="prelight" draw_ops="unstick_focused_prelight" />
 </frame_style>
 
 <frame_style name="normal_unfocused" geometry="normal_unfocused">
@@ -309,17 +457,19 @@
 	<button function="shade" state="normal" draw_ops="shade_unfocused" />
 	<button function="shade" state="prelight" draw_ops="shade_unfocused_prelight" />
 	<button function="shade" state="pressed" draw_ops="shade_unfocused_pressed" />
-	<button function="unshade" state="normal" draw_ops="shade_unfocused" />
-	<button function="unshade" state="prelight" draw_ops="shade_unfocused_prelight" />
-	<button function="unshade" state="pressed" draw_ops="shade_unfocused_pressed" />
+	<button function="unshade" state="normal" draw_ops="unshade_unfocused" />
+	<button function="unshade" state="prelight" draw_ops="unshade_unfocused_prelight" />
+	<button function="unshade" state="pressed" draw_ops="unshade_unfocused_pressed" />
 	<button function="above" state="normal"><draw_ops></draw_ops></button>
 	<button function="above" state="pressed"><draw_ops></draw_ops></button>
 	<button function="unabove" state="normal"><draw_ops></draw_ops></button>
 	<button function="unabove" state="pressed"><draw_ops></draw_ops></button>
-	<button function="stick" state="normal"><draw_ops></draw_ops></button>
-	<button function="stick" state="pressed"><draw_ops></draw_ops></button>
-	<button function="unstick" state="normal"><draw_ops></draw_ops></button>
-	<button function="unstick" state="pressed"><draw_ops></draw_ops></button>
+	<button function="stick" state="normal" draw_ops="stick_unfocused" />
+	<button function="stick" state="prelight" draw_ops="stick_unfocused_prelight" />
+	<button function="stick" state="pressed" draw_ops="stick_unfocused_pressed" />
+	<button function="unstick" state="normal" draw_ops="unstick_unfocused" />
+	<button function="unstick" state="prelight" draw_ops="unstick_unfocused_prelight" />
+	<button function="unstick" state="pressed" draw_ops="unstick_unfocused_pressed" />
 </frame_style>
 
 <frame_style name="normal_max_focused" geometry="max">
@@ -337,18 +487,23 @@
 	<button function="minimize" state="prelight" draw_ops="minimize_focused_prelight" />
 	<button function="menu" state="normal" draw_ops="menu_focused" />
 	<button function="menu" state="pressed" draw_ops="menu_focused_pressed" />
+	<button function="menu" state="prelight" draw_ops="menu_focused_prelight" />
 	<button function="shade" state="normal" draw_ops="shade_focused" />
 	<button function="shade" state="pressed" draw_ops="shade_focused_pressed" />
-	<button function="unshade" state="normal" draw_ops="shade_focused" />
-	<button function="unshade" state="pressed" draw_ops="shade_focused_pressed" />
+	<button function="shade" state="prelight" draw_ops="shade_focused_prelight" />
+	<button function="unshade" state="normal" draw_ops="unshade_focused" />
+	<button function="unshade" state="pressed" draw_ops="unshade_focused_pressed" />
+	<button function="unshade" state="prelight" draw_ops="unshade_focused_prelight" />
 	<button function="above" state="normal"><draw_ops></draw_ops></button>
 	<button function="above" state="pressed"><draw_ops></draw_ops></button>
 	<button function="unabove" state="normal"><draw_ops></draw_ops></button>
 	<button function="unabove" state="pressed"><draw_ops></draw_ops></button>
-	<button function="stick" state="normal"><draw_ops></draw_ops></button>
-	<button function="stick" state="pressed"><draw_ops></draw_ops></button>
-	<button function="unstick" state="normal"><draw_ops></draw_ops></button>
-	<button function="unstick" state="pressed"><draw_ops></draw_ops></button>
+	<button function="stick" state="normal" draw_ops="stick_focused" />
+	<button function="stick" state="pressed" draw_ops="stick_focused_pressed" />
+	<button function="stick" state="prelight" draw_ops="stick_focused_prelight" />
+	<button function="unstick" state="normal" draw_ops="unstick_focused" />
+	<button function="unstick" state="pressed" draw_ops="unstick_focused_pressed" />
+	<button function="unstick" state="prelight" draw_ops="unstick_focused_prelight" />
 </frame_style>
 
 <frame_style name="normal_max_unfocused" geometry="max">
@@ -370,17 +525,19 @@
 	<button function="shade" state="normal" draw_ops="shade_unfocused" />
 	<button function="shade" state="prelight" draw_ops="shade_unfocused_prelight" />
 	<button function="shade" state="pressed" draw_ops="shade_unfocused_pressed" />
-	<button function="unshade" state="normal" draw_ops="shade_unfocused" />
-	<button function="unshade" state="prelight" draw_ops="shade_unfocused_prelight" />
-	<button function="unshade" state="pressed" draw_ops="shade_unfocused_pressed" />
+	<button function="unshade" state="normal" draw_ops="unshade_unfocused" />
+	<button function="unshade" state="prelight" draw_ops="unshade_unfocused_prelight" />
+	<button function="unshade" state="pressed" draw_ops="unshade_unfocused_pressed" />
 	<button function="above" state="normal"><draw_ops></draw_ops></button>
 	<button function="above" state="pressed"><draw_ops></draw_ops></button>
 	<button function="unabove" state="normal"><draw_ops></draw_ops></button>
 	<button function="unabove" state="pressed"><draw_ops></draw_ops></button>
-	<button function="stick" state="normal"><draw_ops></draw_ops></button>
-	<button function="stick" state="pressed"><draw_ops></draw_ops></button>
-	<button function="unstick" state="normal"><draw_ops></draw_ops></button>
-	<button function="unstick" state="pressed"><draw_ops></draw_ops></button>
+	<button function="stick" state="normal" draw_ops="stick_unfocused" />
+	<button function="stick" state="prelight" draw_ops="stick_unfocused_prelight" />
+	<button function="stick" state="pressed" draw_ops="stick_unfocused_pressed" />
+	<button function="unstick" state="normal" draw_ops="unstick_unfocused" />
+	<button function="unstick" state="prelight" draw_ops="unstick_unfocused_prelight" />
+	<button function="unstick" state="pressed" draw_ops="unstick_unfocused_pressed" />
 </frame_style>
 
 <frame_style name="normal_max_shaded_focused" geometry="max">
@@ -398,18 +555,23 @@
 	<button function="minimize" state="prelight" draw_ops="minimize_focused_prelight" />
 	<button function="menu" state="normal" draw_ops="menu_focused" />
 	<button function="menu" state="pressed" draw_ops="menu_focused_pressed" />
+	<button function="menu" state="prelight" draw_ops="menu_focused_prelight" />
 	<button function="shade" state="normal" draw_ops="shade_focused" />
 	<button function="shade" state="pressed" draw_ops="shade_focused_pressed" />
-	<button function="unshade" state="normal" draw_ops="shade_focused" />
-	<button function="unshade" state="pressed" draw_ops="shade_focused_pressed" />
+	<button function="shade" state="prelight" draw_ops="shade_focused_prelight" />
+	<button function="unshade" state="normal" draw_ops="unshade_focused" />
+	<button function="unshade" state="pressed" draw_ops="unshade_focused_pressed" />
+	<button function="unshade" state="prelight" draw_ops="unshade_focused_prelight" />
 	<button function="above" state="normal"><draw_ops></draw_ops></button>
 	<button function="above" state="pressed"><draw_ops></draw_ops></button>
 	<button function="unabove" state="normal"><draw_ops></draw_ops></button>
 	<button function="unabove" state="pressed"><draw_ops></draw_ops></button>
-	<button function="stick" state="normal"><draw_ops></draw_ops></button>
-	<button function="stick" state="pressed"><draw_ops></draw_ops></button>
-	<button function="unstick" state="normal"><draw_ops></draw_ops></button>
-	<button function="unstick" state="pressed"><draw_ops></draw_ops></button>
+	<button function="stick" state="normal" draw_ops="stick_focused" />
+	<button function="stick" state="pressed" draw_ops="stick_focused_pressed" />
+	<button function="stick" state="prelight" draw_ops="stick_focused_prelight" />
+	<button function="unstick" state="normal" draw_ops="unstick_focused" />
+	<button function="unstick" state="pressed" draw_ops="unstick_focused_pressed" />
+	<button function="unstick" state="prelight" draw_ops="unstick_focused_prelight" />
 </frame_style>
 
 <frame_style name="normal_max_shaded_unfocused" geometry="max">
@@ -431,17 +593,19 @@
 	<button function="shade" state="normal" draw_ops="shade_unfocused" />
 	<button function="shade" state="prelight" draw_ops="shade_unfocused_prelight" />
 	<button function="shade" state="pressed" draw_ops="shade_unfocused_pressed" />
-	<button function="unshade" state="normal" draw_ops="shade_unfocused" />
-	<button function="unshade" state="prelight" draw_ops="shade_unfocused_prelight" />
-	<button function="unshade" state="pressed" draw_ops="shade_unfocused_pressed" />
+	<button function="unshade" state="normal" draw_ops="unshade_unfocused" />
+	<button function="unshade" state="prelight" draw_ops="unshade_unfocused_prelight" />
+	<button function="unshade" state="pressed" draw_ops="unshade_unfocused_pressed" />
 	<button function="above" state="normal"><draw_ops></draw_ops></button>
 	<button function="above" state="pressed"><draw_ops></draw_ops></button>
 	<button function="unabove" state="normal"><draw_ops></draw_ops></button>
 	<button function="unabove" state="pressed"><draw_ops></draw_ops></button>
-	<button function="stick" state="normal"><draw_ops></draw_ops></button>
-	<button function="stick" state="pressed"><draw_ops></draw_ops></button>
-	<button function="unstick" state="normal"><draw_ops></draw_ops></button>
-	<button function="unstick" state="pressed"><draw_ops></draw_ops></button>
+	<button function="stick" state="normal" draw_ops="stick_unfocused" />
+	<button function="stick" state="prelight" draw_ops="stick_unfocused_prelight" />
+	<button function="stick" state="pressed" draw_ops="stick_unfocused_pressed" />
+	<button function="unstick" state="normal" draw_ops="unstick_unfocused" />
+	<button function="unstick" state="prelight" draw_ops="unstick_unfocused_prelight" />
+	<button function="unstick" state="pressed" draw_ops="unstick_unfocused_pressed" />
 </frame_style>
 
 <frame_style name="dialog_focused" geometry="normal">
@@ -459,18 +623,23 @@
 	<button function="minimize" state="prelight" draw_ops="minimize_focused_prelight" />
 	<button function="menu" state="normal" draw_ops="menu_focused" />
 	<button function="menu" state="pressed" draw_ops="menu_focused_pressed" />
+	<button function="menu" state="prelight" draw_ops="menu_focused_prelight" />
 	<button function="shade" state="normal" draw_ops="shade_focused" />
 	<button function="shade" state="pressed" draw_ops="shade_focused_pressed" />
-	<button function="unshade" state="normal" draw_ops="shade_focused" />
-	<button function="unshade" state="pressed" draw_ops="shade_focused_pressed" />
+	<button function="shade" state="prelight" draw_ops="shade_focused_prelight" />
+	<button function="unshade" state="normal" draw_ops="unshade_focused" />
+	<button function="unshade" state="pressed" draw_ops="unshade_focused_pressed" />
+	<button function="unshade" state="prelight" draw_ops="unshade_focused_prelight" />
 	<button function="above" state="normal"><draw_ops></draw_ops></button>
 	<button function="above" state="pressed"><draw_ops></draw_ops></button>
 	<button function="unabove" state="normal"><draw_ops></draw_ops></button>
 	<button function="unabove" state="pressed"><draw_ops></draw_ops></button>
-	<button function="stick" state="normal"><draw_ops></draw_ops></button>
-	<button function="stick" state="pressed"><draw_ops></draw_ops></button>
-	<button function="unstick" state="normal"><draw_ops></draw_ops></button>
-	<button function="unstick" state="pressed"><draw_ops></draw_ops></button>
+	<button function="stick" state="normal" draw_ops="stick_focused" />
+	<button function="stick" state="pressed" draw_ops="stick_focused_pressed" />
+	<button function="stick" state="prelight" draw_ops="stick_focused_prelight" />
+	<button function="unstick" state="normal" draw_ops="unstick_focused" />
+	<button function="unstick" state="pressed" draw_ops="unstick_focused_pressed" />
+	<button function="unstick" state="prelight" draw_ops="unstick_focused_prelight" />
 </frame_style>
 
 <frame_style name="dialog_unfocused" geometry="normal">
@@ -489,18 +658,22 @@
 	<button function="menu" state="normal" draw_ops="menu_unfocused" />
 	<button function="menu" state="prelight" draw_ops="menu_unfocused_prelight" />
 	<button function="menu" state="pressed" draw_ops="menu_unfocused_pressed" />
-	<button function="shade" state="normal"><draw_ops></draw_ops></button>
-	<button function="shade" state="pressed"><draw_ops></draw_ops></button>
-	<button function="unshade" state="normal"><draw_ops></draw_ops></button>
-	<button function="unshade" state="pressed"><draw_ops></draw_ops></button>
+	<button function="shade" state="normal" draw_ops="shade_unfocused" />
+	<button function="shade" state="prelight" draw_ops="shade_unfocused_prelight" />
+	<button function="shade" state="pressed" draw_ops="shade_unfocused_pressed" />
+	<button function="unshade" state="normal" draw_ops="unshade_unfocused" />
+	<button function="unshade" state="prelight" draw_ops="unshade_unfocused_prelight" />
+	<button function="unshade" state="pressed" draw_ops="unshade_unfocused_pressed" />
 	<button function="above" state="normal"><draw_ops></draw_ops></button>
 	<button function="above" state="pressed"><draw_ops></draw_ops></button>
 	<button function="unabove" state="normal"><draw_ops></draw_ops></button>
 	<button function="unabove" state="pressed"><draw_ops></draw_ops></button>
-	<button function="stick" state="normal"><draw_ops></draw_ops></button>
-	<button function="stick" state="pressed"><draw_ops></draw_ops></button>
-	<button function="unstick" state="normal"><draw_ops></draw_ops></button>
-	<button function="unstick" state="pressed"><draw_ops></draw_ops></button>
+	<button function="stick" state="normal" draw_ops="stick_unfocused" />
+	<button function="stick" state="prelight" draw_ops="stick_unfocused_prelight" />
+	<button function="stick" state="pressed" draw_ops="stick_unfocused_pressed" />
+	<button function="unstick" state="normal" draw_ops="unstick_unfocused" />
+	<button function="unstick" state="prelight" draw_ops="unstick_unfocused_prelight" />
+	<button function="unstick" state="pressed" draw_ops="unstick_unfocused_pressed" />
 </frame_style>
 
 <frame_style name="modal_dialog_focused" geometry="modal">
@@ -518,17 +691,23 @@
 	<button function="minimize" state="prelight" draw_ops="minimize_focused_prelight" />
 	<button function="menu" state="normal" draw_ops="menu_focused" />
 	<button function="menu" state="pressed" draw_ops="menu_focused_pressed" />
+	<button function="menu" state="prelight" draw_ops="menu_focused_prelight" />
 	<button function="shade" state="normal" draw_ops="shade_focused" />
 	<button function="shade" state="pressed" draw_ops="shade_focused_pressed" />
-	<button function="unshade" state="normal" draw_ops="shade_focused" />
-	<button function="unshade" state="pressed" draw_ops="shade_focused_pressed" />
+	<button function="shade" state="prelight" draw_ops="shade_focused_prelight" />
+	<button function="unshade" state="normal" draw_ops="unshade_focused" />
+	<button function="unshade" state="pressed" draw_ops="unshade_focused_pressed" />
+	<button function="unshade" state="prelight" draw_ops="unshade_focused_prelight" />
 	<button function="above" state="normal"><draw_ops></draw_ops></button>
 	<button function="above" state="pressed"><draw_ops></draw_ops></button>
 	<button function="unabove" state="normal"><draw_ops></draw_ops></button>
 	<button function="unabove" state="pressed"><draw_ops></draw_ops></button>
-	<button function="stick" state="normal"><draw_ops></draw_ops></button>
-	<button function="stick" state="pressed"><draw_ops></draw_ops></button>
-	<button function="unstick" state="normal"><draw_ops></draw_ops></button><button function="unstick" state="pressed"><draw_ops></draw_ops></button>
+	<button function="stick" state="normal" draw_ops="stick_focused" />
+	<button function="stick" state="pressed" draw_ops="stick_focused_pressed" />
+	<button function="stick" state="prelight" draw_ops="stick_focused_prelight" />
+	<button function="unstick" state="normal" draw_ops="unstick_focused" />
+	<button function="unstick" state="pressed" draw_ops="unstick_focused_pressed" />
+	<button function="unstick" state="prelight" draw_ops="unstick_focused_prelight" />
 </frame_style>
 
 <frame_style name="modal_dialog_unfocused" geometry="modal">
@@ -550,17 +729,19 @@
 	<button function="shade" state="normal" draw_ops="shade_unfocused" />
 	<button function="shade" state="prelight" draw_ops="shade_unfocused_prelight" />
 	<button function="shade" state="pressed" draw_ops="shade_unfocused_pressed" />
-	<button function="unshade" state="normal" draw_ops="shade_unfocused" />
-	<button function="unshade" state="prelight" draw_ops="shade_unfocused_prelight" />
-	<button function="unshade" state="pressed" draw_ops="shade_unfocused_pressed" />
+	<button function="unshade" state="normal" draw_ops="unshade_unfocused" />
+	<button function="unshade" state="prelight" draw_ops="unshade_unfocused_prelight" />
+	<button function="unshade" state="pressed" draw_ops="unshade_unfocused_pressed" />
 	<button function="above" state="normal"><draw_ops></draw_ops></button>
 	<button function="above" state="pressed"><draw_ops></draw_ops></button>
 	<button function="unabove" state="normal"><draw_ops></draw_ops></button>
 	<button function="unabove" state="pressed"><draw_ops></draw_ops></button>
-	<button function="stick" state="normal"><draw_ops></draw_ops></button>
-	<button function="stick" state="pressed"><draw_ops></draw_ops></button>
-	<button function="unstick" state="normal"><draw_ops></draw_ops></button>
-	<button function="unstick" state="pressed"><draw_ops></draw_ops></button>
+	<button function="stick" state="normal" draw_ops="stick_unfocused" />
+	<button function="stick" state="prelight" draw_ops="stick_unfocused_prelight" />
+	<button function="stick" state="pressed" draw_ops="stick_unfocused_pressed" />
+	<button function="unstick" state="normal" draw_ops="unstick_unfocused" />
+	<button function="unstick" state="prelight" draw_ops="unstick_unfocused_prelight" />
+	<button function="unstick" state="pressed" draw_ops="unstick_unfocused_pressed" />
 </frame_style>
 
 <frame_style name="utility_focused" geometry="small">
@@ -578,18 +759,23 @@
 	<button function="minimize" state="prelight" draw_ops="minimize_focused_prelight" />
 	<button function="menu" state="normal" draw_ops="menu_focused" />
 	<button function="menu" state="pressed" draw_ops="menu_focused_pressed" />
+	<button function="menu" state="prelight" draw_ops="menu_focused_prelight" />
 	<button function="shade" state="normal" draw_ops="shade_focused" />
 	<button function="shade" state="pressed" draw_ops="shade_focused_pressed" />
-	<button function="unshade" state="normal" draw_ops="shade_focused" />
-	<button function="unshade" state="pressed" draw_ops="shade_focused_pressed" />
+	<button function="shade" state="prelight" draw_ops="shade_focused_prelight" />
+	<button function="unshade" state="normal" draw_ops="unshade_focused" />
+	<button function="unshade" state="pressed" draw_ops="unshade_focused_pressed" />
+	<button function="unshade" state="prelight" draw_ops="unshade_focused_prelight" />
 	<button function="above" state="normal"><draw_ops></draw_ops></button>
 	<button function="above" state="pressed"><draw_ops></draw_ops></button>
 	<button function="unabove" state="normal"><draw_ops></draw_ops></button>
 	<button function="unabove" state="pressed"><draw_ops></draw_ops></button>
-	<button function="stick" state="normal"><draw_ops></draw_ops></button>
-	<button function="stick" state="pressed"><draw_ops></draw_ops></button>
-	<button function="unstick" state="normal"><draw_ops></draw_ops></button>
-	<button function="unstick" state="pressed"><draw_ops></draw_ops></button>
+	<button function="stick" state="normal" draw_ops="stick_focused" />
+	<button function="stick" state="pressed" draw_ops="stick_focused_pressed" />
+	<button function="stick" state="prelight" draw_ops="stick_focused_prelight" />
+	<button function="unstick" state="normal" draw_ops="unstick_focused" />
+	<button function="unstick" state="pressed" draw_ops="unstick_focused_pressed" />
+	<button function="unstick" state="prelight" draw_ops="unstick_focused_prelight" />
 </frame_style>
 
 <frame_style name="utility_unfocused" geometry="small_unfocused">
@@ -611,17 +797,19 @@
 	<button function="shade" state="normal" draw_ops="shade_unfocused" />
 	<button function="shade" state="prelight" draw_ops="shade_unfocused_prelight" />
 	<button function="shade" state="pressed" draw_ops="shade_unfocused_pressed" />
-	<button function="unshade" state="normal" draw_ops="shade_unfocused" />
-	<button function="unshade" state="prelight" draw_ops="shade_unfocused_prelight" />
-	<button function="unshade" state="pressed" draw_ops="shade_unfocused_pressed" />
+	<button function="unshade" state="normal" draw_ops="unshade_unfocused" />
+	<button function="unshade" state="prelight" draw_ops="unshade_unfocused_prelight" />
+	<button function="unshade" state="pressed" draw_ops="unshade_unfocused_pressed" />
 	<button function="above" state="normal"><draw_ops></draw_ops></button>
 	<button function="above" state="pressed"><draw_ops></draw_ops></button>
 	<button function="unabove" state="normal"><draw_ops></draw_ops></button>
 	<button function="unabove" state="pressed"><draw_ops></draw_ops></button>
-	<button function="stick" state="normal"><draw_ops></draw_ops></button>
-	<button function="stick" state="pressed"><draw_ops></draw_ops></button>
-	<button function="unstick" state="normal"><draw_ops></draw_ops></button>
-	<button function="unstick" state="pressed"><draw_ops></draw_ops></button>
+	<button function="stick" state="normal" draw_ops="stick_unfocused" />
+	<button function="stick" state="prelight" draw_ops="stick_unfocused_prelight" />
+	<button function="stick" state="pressed" draw_ops="stick_unfocused_pressed" />
+	<button function="unstick" state="normal" draw_ops="unstick_unfocused" />
+	<button function="unstick" state="prelight" draw_ops="unstick_unfocused_prelight" />
+	<button function="unstick" state="pressed" draw_ops="unstick_unfocused_pressed" />
 </frame_style>
 
 <frame_style name="border_focused" geometry="borderless">
