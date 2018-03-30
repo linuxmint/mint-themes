@@ -8,28 +8,26 @@
 
 /* sidebar */
 
-NemoWindow .sidebar .view {
-    -GtkWidget-focus-padding: 0;
-    -GtkTreeView-vertical-separator: 0;
+.nemo-window .sidebar .view {
     background-color: @nemo_sidebar_bg;
     color: @nemo_sidebar_fg;
     text-shadow: none;
-    icon-shadow: none;
+    -gtk-icon-shadow: none;
 }
 
-NemoWindow .sidebar .view:selected {
+.nemo-window .sidebar .view:selected {
     border-color: @nemo_sidebar_bg;
     color: @nemo_sidebar_selected_fg;
     text-shadow: 1px 1px alpha(black, 0.2);
-    icon-shadow: 1px 1px alpha(black, 0.2);
+    -gtk-icon-shadow: 1px 1px alpha(black, 0.2);
 }
 
-NemoWindow .sidebar .expander:selected {
+.nemo-window .sidebar .expander:selected {
     border-color: @nemo_sidebar_selected_fg;
     color: @nemo_sidebar_selected_fg;
 }
 
-NemoPlacesTreeView {
+.nemo-window .places-treeview {
     -NemoPlacesTreeView-disk-full-bg-color: shade(@theme_base_color, 0.85);
     -NemoPlacesTreeView-disk-full-fg-color: shade(@theme_selected_bg_color, 0.9);
     -NemoPlacesTreeView-disk-full-bar-width: 2px;
@@ -37,25 +35,21 @@ NemoPlacesTreeView {
     -NemoPlacesTreeView-disk-full-bottom-padding: 2px;
 }
 
-NemoPlacesTreeView:selected {
+.nemo-window .places-treeview:selected {
     -NemoPlacesTreeView-disk-full-bg-color: shade(@theme_selected_fg_color, 1.1);
     -NemoPlacesTreeView-disk-full-fg-color: @theme_selected_bg_color;
 }
 
-NemoWindow .sidebar .scrollbar {
+.nemo-window .sidebar .scrollbar {
     -GtkRange-slider-width: 10;
 }
 
-NemoWindow .sidebar .scrollbar.overlay-indicator:not(.dragging):not(.hovering) .slider {
+.nemo-window .sidebar scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider {
     background-color: @theme_bg_color;
 }
 
-NemoWindow .sidebar .frame {
+.nemo-window .sidebar separator {
     border: none;
-}
-
-NemoWindow > GtkGrid > .pane-separator {
-    background-color: transparent;
 }
 
 .nemo-canvas-item {
@@ -74,20 +68,6 @@ NemoWindow > GtkGrid > .pane-separator {
     text-shadow: none;
 }
 
-/* notebook */
-
-NemoView.frame,
-NemoNotebook.notebook {
-    border: solid;
-    border-width: 1px 0 0 1px;
-    border-color: shade(@theme_bg_color, 0.8);
-}
-
-NemoNotebook.notebook tab,
-NemoNotebook.notebook tab:active {
-    padding: 2px;
-}
-
 /* inactive pane */
 
 .nemo-inactive-pane .view {
@@ -103,46 +83,25 @@ NemoNotebook.notebook tab:active {
 
 /* small buttons on the nemo status bar */
 
-NemoWindow .toolbar .button.image-button {
+.nemo-window widget .toolbar button {
     padding: 0 5px;
 }
 
-NemoWindow .toolbar GtkStatusbar {
-}
-
-/* the fix above for the statusbar buttons also affects the primary toolbar so we need to reset the
-    padding for those buttons */
-
-NemoWindow .primary-toolbar.toolbar .button.image-button {
-    padding: 0 7px;
-}
-
-NemoWindow .primary-toolbar.toolbar .entry {
-    padding: 3px;
+.nemo-window widget .toolbar {
+    padding: 0 6px 0 6px;
 }
 
 /*********************
  * Cinnamon Settings *
  *********************/
 
-.section-bg {
-    background-color: @notebook_bg;
-    box-shadow: inset 0 3px white,
-                inset -2px 0 @border,
-                inset 0 -2px @border,
-                inset 0 2px shade(@border, 1.15),
-                inset 2px 0 @border,
-                inset -1px 0 shade(@theme_bg_color, 0.93),
-                inset 1px 0 shade(@theme_bg_color, 0.93),
-                inset 0 1px @theme_bg_color,
-                inset 0 -1px shade(@theme_bg_color, 0.85);
-}
-
 .cs-header {
+    padding: 6px;
     background-color: transparent;
     background-image: linear-gradient(to bottom,
                             @toolbar_bg_a,
                             @toolbar_bg_b);
+    border-bottom: 1px solid @border;
 }
 
 .cs-category-view,
