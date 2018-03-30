@@ -414,7 +414,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 /* ===================================================================
- * Overview
+ * Overview (workspace.js)
  * ===================================================================*/
 #overview {
     spacing: 12px;
@@ -615,14 +615,14 @@ StScrollBar StButton#vhandle:hover {
 }
 
 /* ===================================================================
- * Clock Desklet (desklet.js)
+ * Clock Desklet (clock@cinnamon.org/desklet.js)
  * ===================================================================*/
 .clock-desklet-label {
     color: rgb(70, 70, 70);
 }
 
 /* ===================================================================
- * Looking Glass
+ * Looking Glass (lookingGlass.js)
  * ===================================================================*/
 #LookingGlassDialog {
     border-image: url("background-assets/bg-1.png") 6;
@@ -635,7 +635,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 /* ===================================================================
- * Date applet
+ * Date applet (calendar@cinnamon.org/calendar.js)
  * ===================================================================*/
 .calendar {
     padding: .4em 1.75em .8em 1.75em;
@@ -746,7 +746,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 /* ===================================================================
- * Notifications
+ * Notifications (messageTray.js)
  * ===================================================================*/
 #notification {
     font-size: 8.5pt;
@@ -833,7 +833,6 @@ StScrollBar StButton#vhandle:hover {
     color: #2b2b2b;
     border-image: url("misc-assets/entry.png") 6;
     border-radius: 4px;
-    selected-color: #2b2b2b;
     caret-color: #2b2b2b;
     caret-size: 1px;
     width: 250px;
@@ -857,8 +856,14 @@ StScrollBar StButton#vhandle:hover {
     transition-duration: 150;
 }
 
+/* For the links inside notifications.
+   These URLs are already underlined with Pango markup. */
+#notification .url-highlighter {
+    link-color: #50a200;
+}
+
 /* ===================================================================
- * Alt Tab
+ * Alt Tab (appSwitcher/classicSwitcher.js)
  * ===================================================================*/
 #altTabPopup {
     padding: 8px;
@@ -948,7 +953,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 /* ===================================================================
- * Modal dialogs
+ * Modal dialogs (modalDialog.js)
  * ===================================================================*/
 .modal-dialog {
     font-size: 10pt;
@@ -1003,7 +1008,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 /* ===================================================================
- * Run dialog
+ * Run dialog (runDialog.js)
  * ===================================================================*/
 .run-dialog-label {
     font-size: 0pt;
@@ -1025,7 +1030,6 @@ StScrollBar StButton#vhandle:hover {
     color: #2b2b2b;
     border-image: url("misc-assets/entry.png") 6;
     border-radius: 4px;
-    selected-color: #2b2b2b;
     caret-color: #2b2b2b;
     caret-size: 1px;
     width: 250px;
@@ -1065,7 +1069,10 @@ StScrollBar StButton#vhandle:hover {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* CinnamonMountOperation Dialogs */
+/* =============================================================================
+ * CinnamonMountOperation Dialogs (cinnamonMountOperation.js)
+ * ============================================================================= */
+
 .cinnamon-mount-operation-icon {
     icon-size: 48px;
 }
@@ -1150,7 +1157,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 /* ===================================================================
- * Magnifier
+ * Magnifier (magnifier.js)
  * ===================================================================*/
 .magnifier-zoom-region {
     border: 2px solid rgba(128, 0, 0, 1);
@@ -1161,7 +1168,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 /* ===================================================================
- * On screen keyboard
+ * On screen keyboard (keyboard.js)
  * ===================================================================*/
 #keyboard {
     border-image: url("background-assets/keyboard-bg.png") 4;
@@ -1217,7 +1224,7 @@ StScrollBar StButton#vhandle:hover {
  * ###################################################################*/
 
 /* ===================================================================
- * Menu (menu.js)
+ * Menu applet (menu@cinnamon.org/applet.js)
  * ===================================================================*/
 
 /* Main menu title */
@@ -1362,12 +1369,11 @@ StScrollBar StButton#vhandle:hover {
     color: #2b2b2b;
 }
 
-/* Context menu (at the moment only for favorites) */
 .menu-context-menu {
 }
 
 /* ===================================================================
- * Window list (windowList.js)
+ * Window list applet (window-list@cinnamon.org/applet.js)
  * ===================================================================*/
 .window-list-box {
     spacing: 3px;
@@ -1481,6 +1487,29 @@ StScrollBar StButton#vhandle:hover {
     border-image: url("panel-assets/attention-right.svg") 6;
 }
 
+.window-list-item-box .progress {
+    margin: 1px 0 0 0;
+    border-radius: 3px 3px 0 0;
+    background-gradient-direction: vertical;
+    background-gradient-start: rgba(172, 205, 138, 0.5);
+    background-gradient-end: rgba(172, 205, 138, 0.9);
+}
+
+.panel-top .window-list-item-box .progress {
+    margin: 0 0 1px 0;
+    border-radius: 0 0 3px 3px;
+}
+
+.panel-left .window-list-item-box .progress {
+    margin: 0 1px 0 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.panel-right .window-list-item-box .progress {
+    margin: 0 0 0 1px;
+    border-radius: 3px 0 0 3px;
+}
+
 .window-list-preview {
     border-image: url("background-assets/bg-1.png") 6;
     color: rgb(70, 70, 70);
@@ -1491,7 +1520,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 /* ===================================================================
- * Sound Applet (status/volume.js)
+ * Sound applet (sound@cinnamon.org/applet.js)
  * ===================================================================*/
 .sound-player StButton {
     width: 22px;
@@ -1569,7 +1598,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 /* ===================================================================
- * Workspace Switcher applet (workspaceSwitcher.js)
+ * Workspace Switcher applet (workspace-switcher@cinnamon.org/applet.js)
  * ===================================================================*/
 #workspaceSwitcher {
     spacing: 200px;
@@ -1662,7 +1691,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 /* ===================================================================
- * Panel Launchers Applet (panelLaunchers.js)
+ * Panel Launchers applet (panel-launchers@cinnamon.org/applet.js)
  * ===================================================================*/
 #panel-launchers-box {
     padding-left: 0px;
@@ -1721,7 +1750,6 @@ StScrollBar StButton#vhandle:hover {
     color: #2b2b2b;
     border-image: url("misc-assets/entry.png") 6;
     border-radius: 4px;
-    selected-color: #2b2b2b;
     caret-color: #2b2b2b;
     caret-size: 1px;
     width: 250px;
@@ -1820,7 +1848,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 /* ===================================================================
- * Workspace OSD
+ * Workspace OSD (windowManager.js)
  * ===================================================================*/
 .workspace-osd {
     border-image: url("background-assets/bg-1.png") 6;
@@ -1861,7 +1889,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 /* ===================================================================
- * Notification Applet
+ * Notification applet (notifications@cinnamon.org/applet.js)
  * ===================================================================*/
 .notification-applet-padding {
     padding: .5em 1em;
@@ -1923,7 +1951,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 /* ===================================================================
- * User Applet
+ * User applet (user@cinnamon.org/applet.js)
  * ===================================================================*/
 .user-icon {
     background-color: rgb(236, 236, 236);
@@ -1939,7 +1967,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 /* ===================================================================
- * About Dialog (applet.js and desklet.js)
+ * About Dialog (modalDialog.js)
  * ===================================================================*/
 .about-content {
     width: 500px;
@@ -2002,7 +2030,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 /* ===================================================================
- * Snap/Tile Chrome
+ * Snap/Tile Chrome (windowManager.js)
  * ===================================================================*/
 .tile-preview,
 .tile-hud {
