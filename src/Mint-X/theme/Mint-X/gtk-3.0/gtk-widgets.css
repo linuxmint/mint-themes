@@ -676,7 +676,7 @@ entry selection {
 }
 
 entry image {
-    color: lighten(@theme_fg_color, 5%);
+    color: shade(@theme_fg_color, 1.05);
 }
 
 entry image:hover {
@@ -869,7 +869,7 @@ actionbar > revealer > box {
     color: @theme_fg_color;
 }
 
-.gtkstyle-fallback:prelight {
+.gtkstyle-fallback:hover {
     background-color: shade(@theme_bg_color, 1.1);
     color: @theme_fg_color;
 }
@@ -1355,7 +1355,7 @@ menu menuitem label:dir(ltr),
 }
 
 menuitem accelerator {
-    color: gtkalpha(currentcolor, 0.70);
+    color: alpha(currentcolor, 0.70);
 }
 
 menuitem check,
@@ -2242,7 +2242,6 @@ GtkTreeView.separator {
 
 GtkComboBox .separator {
     /* always disable separators */
-    -GtkWidget-wide-separators: 1;
     -GtkWidget-horizontal-separator: 0;
     -GtkWidget-vertical-separator: 0;
 }
@@ -2250,7 +2249,6 @@ GtkComboBox .separator {
 
 .menuitem.separator,
 GtkMenuButton .menuitem.separator {
-    -GtkWidget-wide-separators: 0;
     color: alpha(black, 0.08);
 }
 
@@ -2449,7 +2447,7 @@ spinbutton.vertical entry {
 
 spinbutton.vertical button:disabled,
 spinbutton.vertical entry:disabled {
-    box-shadwow: none;
+    box-shadow: none;
     border-color: shade(@border, 1.1);
 }
 

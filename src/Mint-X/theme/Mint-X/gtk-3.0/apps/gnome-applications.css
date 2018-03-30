@@ -107,7 +107,7 @@ TerminalWindow GtkNotebook.notebook {
 }
 
 .nautilus-desktop.nautilus-canvas-item:active,
-.nautilus-desktop.nautilus-canvas-item:prelight,
+.nautilus-desktop.nautilus-canvas-item:hover,
 .nautilus-desktop.nautilus-canvas-item:selected {
     text-shadow: none;
 }

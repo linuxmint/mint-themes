@@ -17,9 +17,9 @@ toolbar.inline-toolbar toolbutton > button.flat,
 }
 
 button.flat,
-button.flat:insensitive,
+button.flat:disabled,
 .sidebar-button.button,
-.sidebar-button.button:insensitive,
+.sidebar-button.button:disabled,
 headerbar button.titlebutton,
 headerbar button.titlebutton:hover,
 headerbar button.titlebutton:active,
@@ -83,17 +83,17 @@ button:checked:hover,
                             @button_active_hover_bg_c);
 }
 
-button:insensitive,
-.primary-toolbar .raised button:insensitive,
-.primary-toolbar button.raised:insensitive {
+button:disabled,
+.primary-toolbar .raised button:disabled,
+.primary-toolbar button.raised:disabled {
     background-color: transparent;
     background-image: linear-gradient(to bottom,
                             @button_insensitive_bg_a,
                             @button_insensitive_bg_b);
 }
 
-button:insensitive:active,
-button:insensitive:checked {
+button:disabled:active,
+button:disabled:checked {
     background-color: transparent;
     background-image: linear-gradient(to bottom,
                             @button_insensitive_active_bg_a,
@@ -123,7 +123,7 @@ entry {
                             @entry_bg_b);
 }
 
-entry:insensitive {
+entry:disabled {
     background-color: @theme_bg_color;
     background-image: none;
 }
