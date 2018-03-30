@@ -741,7 +741,25 @@ entry:active {
  * expander *
  ************/
 
-.expander {
+expander arrow {
+    min-width: 16px;
+    min-height: 16px;
+    -gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
+}
+
+expander arrow:dir(rtl) {
+    -gtk-icon-source: -gtk-icontheme("pan-end-symbolic-rtl");
+}
+
+expander arrow:hover {
+    color: @theme_fg_color;
+}
+
+expander arrow:checked {
+    -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
+}
+
+/*.expander {
     color: @theme_fg_color;
 }
 
@@ -776,7 +794,7 @@ GsmFailWhaleDialog .button:active {
     border-image: none;
     border-color: @border;
     border-width: 1px;
-}
+}*/
 
 /****************
  * floating bar *
