@@ -325,35 +325,34 @@ GtkCalendar.highlight {
 }*/
 
 check,
-radio {
+.check,
+radio
+.radio {
     min-width: 16px;
     min-height: 16px;
     margin: 0 4px;
-}
-
-/*.menuitem.check,
-.menuitem.radio,
-.menuitem.check:hover,
-.menuitem.radio:hover,
-.menuitem.check:disabled,
-.menuitem.radio:disabled {
-    border-style: none;
-    background-color: transparent;
-    background-image: none;
-}
-
-GtkCheckButton:hover,
-GtkCheckButton:active:hover,
-GtkCheckButton:selected,
-GtkCheckButton:selected:focus {
     background-color: transparent;
 }
 
-GtkCheckButton.text-button,
-GtkRadioButton.text-button {
-    padding: 2px 2px;
-}*/
+checkbutton.text-button,
+radiobutton.text-button {
+    padding: 2px 0;
+}
 
+checkbutton label,
+radiobutton label {
+    padding-bottom: 1px;
+}
+
+checkbutton label:not(:only-child):first-child,
+radiobutton label:not(:only-child):first-child {
+    margin-left: 4px;
+}
+checkbutton label:not(:only-child):last-child,
+radiobutton label:not(:only-child):last-child {
+    margin-right: 4px
+}
+S
 /*****************
  * Color Chooser *
  *****************/

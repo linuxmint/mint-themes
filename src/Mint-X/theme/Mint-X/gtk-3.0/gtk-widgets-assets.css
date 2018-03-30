@@ -105,7 +105,8 @@ radio row:selected:focus:indeterminate:disabled {
 }
 
 menuitem check,
-menuitem check:hover {
+menuitem check:hover,
+menuitem check:disabled {
     -gtk-icon-source: url("assets/null.png");
 }
 
@@ -140,7 +141,8 @@ menuitem radio:indeterminate:hover {
 }
 
 menuitem radio,
-menuitem radio:hover {
+menuitem radio:hover,
+menuitem radio:disabled {
     -gtk-icon-source: url("assets/null.png");
 }
 
@@ -151,12 +153,12 @@ menuitem radio:checked {
 
 menuitem radio:active:hover,
 menuitem radio:checked:hover {
-    background-image: -gtk-scaled(url("assets/menuitem-radio-checked-selected.png"), url("assets/menuitem-radio-checked-selected@2.png"));
+    -gtk-icon-source: -gtk-scaled(url("assets/menuitem-radio-checked-selected.png"), url("assets/menuitem-radio-checked-selected@2.png"));
 }
 
 menuitem radio:active:disabled,
 menuitem radio:checked:disabled {
-    background-image: -gtk-scaled(url("assets/menuitem-radio-checked-insensitive.png"), url("assets/menuitem-radio-checked-insensitive@2.png"));
+    -gtk-icon-source: -gtk-scaled(url("assets/menuitem-radio-checked-insensitive.png"), url("assets/menuitem-radio-checked-insensitive@2.png"));
 }
 
 /******************
