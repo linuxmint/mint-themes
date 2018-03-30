@@ -171,4 +171,6 @@ paned.horizontal > separator.wide {
 
 paned.vertical > separator.wide {
     background-image: -gtk-scaled(url("assets/pane-separator-grip.png"), url("assets/pane-separator-grip@2.png"));
+    background-repeat: no-repeat;
+    background-position: center;
 }
