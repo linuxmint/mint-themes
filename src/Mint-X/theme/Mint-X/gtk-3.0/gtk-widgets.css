@@ -2256,6 +2256,7 @@ toolbar separator {
 
 .sidebar {
     background-color: @theme_base_color;
+    border-style: none;
 }
 
 .sidebar:dir(ltr),
@@ -2332,6 +2333,15 @@ placessidebar row button.sidebar-button {
     margin-top: 2px;
     margin-bottom: 2px;
     padding: 0;
+}
+
+paned .sidebar,
+paned .sidebar:dir(ltr),
+paned .sidebar:dir(rtl),
+paned .sidebar.left,
+paned .sidebar.right,
+paned .sidebar.left:dir(rtl) {
+    border-style: none;
 }
 
 /**************
