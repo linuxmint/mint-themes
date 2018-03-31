@@ -251,6 +251,12 @@ button:disabled {
     -gtk-icon-shadow: none;
 }
 
+button.font separator,
+button.file separator {
+    background-color: transparent;
+    border: none;
+}
+
 /***********
 * calendar *
 ************/
