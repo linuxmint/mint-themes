@@ -4,8 +4,8 @@
 
 button,
 button.flat:hover,
-/*GtkComboBox .button,
-.header-bar.titlebar GtkMenuButton.button.titlebutton:hover,*/
+/*GtkComboBox .button,*/
+headerbar button.titlebutton.appmenu:hover,
 toolbar.inline-toolbar toolbutton > button.flat,
 .inline-toolbar toolbutton > button,
 .inline-toolbar toolbutton > button.flat,
@@ -55,8 +55,8 @@ button:hover {
 
 button:active,
 button:checked,
-/*.header-bar.titlebar GtkMenuButton.button.titlebutton:active,
-.header-bar.titlebar GtkMenuButton.button.titlebutton:checked,*/
+headerbar button.titlebutton.appmenu:active,
+headerbar button.titlebutton.appmenu:checked,
 .primary-toolbar .raised button:active,
 .primary-toolbar .raised button:checked,
 .primary-toolbar button.raised:active,
@@ -70,8 +70,8 @@ button:checked,
 
 button:active:hover,
 button:checked:hover,
-/*.header-bar.titlebar GtkMenuButton.button.titlebutton:active:hover,
-.header-bar.titlebar GtkMenuButton.button.titlebutton:checked:hover,*/
+headerbar button.titlebutton.appmenu:active:hover,
+headerbar button.titlebutton.appmenu:checked:hover,
 .primary-toolbar .raised button:active:hover,
 .primary-toolbar .raised button:checked:hover,
 .primary-toolbar button.raised:active:hover,

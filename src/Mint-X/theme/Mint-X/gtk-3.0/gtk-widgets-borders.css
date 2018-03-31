@@ -103,6 +103,7 @@ headerbar button.titlebutton.appmenu,
 headerbar button,
 headerbar button.flat:hover,
 headerbar button.toggle:hover,
+headerbar button.titlebutton.appmenu:hover,
 .primary-toolbar button,
 .primary-toolbar button:hover,
 .primary-toolbar button.flat:hover {
@@ -125,6 +126,8 @@ headerbar button.flat:active,
 headerbar button.flat:checked,
 headerbar button.toogle:active,
 headerbar button.toggle:checked,
+headerbar button.titlebutton.appmenu:active,
+headerbar button.titlebutton.appmenu:hover,
 .primary-toolbar button:active,
 .primary-toolbar button:checked,
 .primary-toolbar button.flat:active,
@@ -152,7 +155,7 @@ headerbar button:disabled,
 }
 
 headerbar button.flat:disabled,
-.header-bar.titlebar GtkMenuButton.button.titlebutton:disabled,
+headerbar button.titlebutton.appmenu:disabled,
 .primary-toolbar button.flat:disabled {
     box-shadow: none;
 }
