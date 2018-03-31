@@ -1382,6 +1382,40 @@ menu > arrow:disabled,
     color: @insensitive_fg_color;
 }
 
+/***************
+ * modelbutton *
+ ***************/
+
+modelbutton.flat {
+    min-height: 24px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 3px;
+}
+
+modelbutton.flat:hover {
+    background-color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
+}
+
+modelbutton.flat check:last-child,
+modelbutton.flat radio:last-child {
+    margin-left: 8px;
+}
+
+modelbutton.flat check:first-child,
+modelbutton.flat radio:first-child {
+    margin-right: 8px;
+}
+
+modelbutton.flat arrow.left {
+    -gtk-icon-source: -gtk-icontheme("pan-start-symbolic");
+}
+
+modelbutton.flat arrow.right {
+    -gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
+}
+
 /************
  * notebook *
  ************/
@@ -1680,7 +1714,8 @@ paned.vertical > separator {
  * popovers *
  ************/
 
- popover.background {
+.popover,
+popover.background {
     padding: 2px;
     border-radius: 5px;
     border: 1px solid @border;
@@ -1724,7 +1759,7 @@ paned.vertical > separator {
     background-color: transparent;
 }
 
-.popover .button.flat,
+/*.popover .button.flat,
 .popover .button.flat:checked {
     border: 1px solid transparent;
     border-image: none;
@@ -1745,7 +1780,7 @@ paned.vertical > separator {
     background-image: none;
     color: @theme_selected_fg_color;
     box-shadow: none;
-}
+}*/
 
 /***************
  * progressbar *
