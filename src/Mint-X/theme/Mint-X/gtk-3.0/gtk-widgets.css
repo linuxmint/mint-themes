@@ -1223,6 +1223,10 @@ menu,
     color: @insensitive_fg_color;
 }
 
+.popup decoration {
+    border-radius: 0;
+}
+
 /***********
  * menubar *
  ***********/
