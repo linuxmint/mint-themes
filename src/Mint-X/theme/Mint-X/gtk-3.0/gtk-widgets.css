@@ -459,42 +459,6 @@ combobox arrow {
     min-width: 16px;
 }
 
-/*GtkComboBox {
-    -GtkComboBox-arrow-scaling: 0.5;
-    -GtkComboBox-shadow-type: none;
-}
-
-GtkComboBox:disabled {
-    color: @insensitive_fg_color;
-    text-shadow: none;
-    -gtk-icon-shadow: none;
-}
-
-GtkComboBox.combobox-entry .entry:first-child,
-GtkComboBox.combobox-entry .button:first-child {
-    border-right-width: 0;
-    border-radius: 3px 0 0 3px;
-    border-image-width: 3px 0 4px 3px;
-}
-GtkComboBox.combobox-entry .entry:last-child,
-GtkComboBox.combobox-entry .button:last-child {
-    border-left-width: 0;
-    border-radius: 0 3px 3px 0;
-    border-image-width: 3px 3px 4px 0;
-}
-
-GtkComboBox.combobox-entry .button {
-    padding: 4px 5px;
-}
-
-GtkComboBox.combobox-entry .button:first-child {
-    box-shadow: inset -1px 0 @border;
-}
-
-GtkComboBox.combobox-entry .button:last-child {
-    box-shadow: inset 1px 0 @border;
-}*/
-
 /****************
  * content view *
  ****************/
@@ -521,23 +485,6 @@ GtkComboBox.combobox-entry .button:last-child {
     border-radius: 0;
     background-color: alpha(@theme_selected_bg_color, 0.3);
 }
-
-/*EggListBox.content-view:hover,
-.content-view.cell:hover {
-    background-color: transparent;
-}
-
-EggListBox.content-view:selected,
-EggListBox.content-view:active,
-.content-view.cell:selected,
-.content-view.cell:active {
-    background-color: @theme_selected_bg_color;
-    background-image: none;
-}
-
-GdMainIconView.content-view {
-    -GdMainIconView-icon-size: 40;
-}*/
 
 /*******
  * csd *
@@ -1836,8 +1783,8 @@ progressbar.vertical trough {
                                       @progressbar_trough_b);
 }
 
-GtkTreeview.view.progressbar,
-GtkTreeView.view.progressbar:selected {
+treeview.view.progressbar,
+treeview.view.progressbar:selected {
     color: @theme_selected_fg_color;
     border: 1px solid @progressbar_border;
     border-radius: 3px;
@@ -1847,8 +1794,8 @@ GtkTreeView.view.progressbar:selected {
     box-shadow: 0 1px alpha(white, 0.15);
 }
 
-GtkTreeView.view.trough,
-GtkTreeView.view.trough:selected {
+treeview.view.trough,
+treeview.view.trough:selected {
     color: @theme_fg_color;
     padding: 0;
     border: 1px solid @border;
@@ -2253,10 +2200,6 @@ separator.vertical {
     border-right-color: alpha(white, 0.35);
 }
 
-GtkTreeView.separator {
-    color: @border;
-}
-
 GtkComboBox .separator {
     /* always disable separators */
     -GtkWidget-horizontal-separator: 0;
@@ -2554,15 +2497,6 @@ GtkSwitch.slider {
 .view.image:hover {
 }
 
-/************
- * textview *
- ************/
-
-GtkTextView {
-    background-color: @theme_base_color;
-    color: @theme_text_color;
-}
-
 /***********
  * toolbar *
  ***********/
@@ -2655,34 +2589,36 @@ tooltip * {
  * treeview *
  ************/
 
-/*GtkTreeView {
-    -GtkWidget-focus-padding: 0;
-    -GtkWidget-focus-line-width: 0;
+treeview.view {
+    -GtkTreeView-horizontal-separator: 2;
+    -GtkTreeView-vertical-separator: 0;
+    -GtkTreeView-grid-line-width: 1;
+    -GtkTreeView-grid-line-pattern: '';
+    -GtkTreeView-tree-line-width: 1;
+    -GtkTreeView-tree-line-pattern: '';
+    -GtkTreeView-expander-size: 12;
+
+    border-left-color: @border;
+    border-top-color: @border;
 }
 
-GtkTreeView.dnd {
-    border: 1px solid shade(@theme_selected_bg_color, 1.2);
-    border-radius: 3px;
+treeview.view.separator {
+    color: @border;
 }
-
-GtkTreeView:selected:focus {
-}
-
-GtkTreeView row:nth-child(even),
-GtkTreeView row:nth-child(odd) {
-    background-color: @theme_base_color;
-}*/
 
 /************
  * viewport *
  ************/
 
-/*GtkViewport {
+viewport {
     background-color: transparent;
-}*/
+}
 
 .view,
-textview {
+.view text,
+iconview,
+iconview text,
+textview text {
     background-color: @theme_base_color;
     color: @theme_text_color;
 }
