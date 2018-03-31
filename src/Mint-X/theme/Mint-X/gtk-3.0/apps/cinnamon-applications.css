@@ -41,7 +41,7 @@
 }
 
 .nemo-window .sidebar .scrollbar {
-    -GtkRange-slider-width: 10;
+    min-width: 10px;
 }
 
 .nemo-window .sidebar scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider {

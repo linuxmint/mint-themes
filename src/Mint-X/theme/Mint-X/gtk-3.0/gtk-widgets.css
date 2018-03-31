@@ -29,7 +29,6 @@
     /*-GtkPaned-handle-size: 5;*/
 
     -GtkScrolledWindow-scrollbar-spacing: 0;
-    -GtkScrolledWindow-scrollbars-within-bevel: 1;
 
     -GtkTextView-error-underline-color: @error_color;
 
@@ -54,11 +53,11 @@
     color: @theme_fg_color;
 }
 
-*:selected,
+/**:selected,
 *:selected:focus {
     background-color: @theme_selected_bg_color;
     color: @theme_selected_fg_color;
-}
+}*/
 
 *:disabled {
     color: @insensitive_fg_color;
@@ -291,27 +290,6 @@ GtkCalendar.highlight {
     color: @theme_selected_fg_color;
 }
 
-/****************
- * cell and row *
- ****************/
-
-.cell {
-    padding: 2px;
-}
-
-.cell:selected,
-.cell:selected:focus {
-    border-style: solid;
-    border-width: 1px 0 1px 0;
-    border-radius: 0;
-    border-color: shade(@border, 0.9);
-    background-color: transparent;
-    background-image: linear-gradient(to bottom,
-                            @theme_selected_bg_color,
-                            shade(@theme_selected_bg_color, 0.85));
-    color: @theme_selected_fg_color;
-}
-
 /*******************
  * check and radio *
  *******************/
@@ -330,7 +308,7 @@ radio
 .radio {
     min-width: 16px;
     min-height: 16px;
-    margin: 0 4px;
+    margin: 0;
     background-color: transparent;
 }
 
@@ -344,15 +322,14 @@ radiobutton label {
     padding-bottom: 1px;
 }
 
+checkbutton label:not(:only-child):last-child,
+radiobutton label:not(:only-child):last-child,
 checkbutton label:not(:only-child):first-child,
 radiobutton label:not(:only-child):first-child {
     margin-left: 4px;
+    margin-right: 4px;
 }
-checkbutton label:not(:only-child):last-child,
-radiobutton label:not(:only-child):last-child {
-    margin-right: 4px
-}
-S
+
 /*****************
  * Color Chooser *
  *****************/
@@ -780,8 +757,6 @@ GsmFailWhaleDialog .button:active {
 }
 
 .floating-bar .button {
-    -GtkButton-image-spacing: 0;
-    -GtkButton-inner-border: 0;
     border: 1px solid @border;
     background-color: transparent;
     background-image: none;
@@ -2480,8 +2455,6 @@ spinner:checked:disabled {
  *************/
 
 statusbar {
-    -GtkStatusbar-shadow-type: none;
-
     padding: 1px;
     color: @theme_fg_color;
 }
@@ -2491,9 +2464,10 @@ statusbar {
  **********/
 
 switch {
-    -GtkSwitch-slider-width: 40px;
     font-weight: bold;
     font-size: smaller;
+    min-width: 52px;
+    min-height: 24px;
 }
 
 switch {
@@ -2639,6 +2613,19 @@ treeview.view {
 
     border-left-color: @border;
     border-top-color: @border;
+    padding: 1px;
+}
+
+treeview.view:selected {
+    border-style: solid;
+    border-width: 1px 0 1px 0;
+    border-radius: 0;
+    border-color: shade(@border, 0.9);
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                                      @theme_selected_bg_color,
+                                      shade(@theme_selected_bg_color, 0.85));
+    color: @theme_selected_fg_color;
 }
 
 treeview.view.separator {
