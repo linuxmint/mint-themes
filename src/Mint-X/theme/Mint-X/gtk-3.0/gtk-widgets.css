@@ -424,27 +424,12 @@ combobox arrow {
  * content view *
  ****************/
 
-.content-view.view {
+.content-view {
     background-color: @theme_base_color;
 }
 
-.content-view.view:disabled {
-}
-
-.content-view.view:selected {
-    background-color: @theme_selected_bg_color;
-    background-image: none;
-}
-
-.content-view.cell {
-    background-color: transparent;
-    background-image: none;
-}
-
-.content-view.view.rubberband {
-    border: 1px solid @theme_selected_bg_color;
-    border-radius: 0;
-    background-color: alpha(@theme_selected_bg_color, 0.3);
+.content-view:hover {
+    -gtk-icon-effect: highlight;
 }
 
 /*******
@@ -1051,8 +1036,10 @@ row:selected label:disabled {
     border: 1px solid shade(@theme_selected_bg_color, 1.12);
 }
 
+rubberband,
 .view.rubberband,
-.rubberband {
+.rubberband
+.content-view rubberband {
     border: 1px solid @theme_selected_bg_color;
     border-radius: 0;
     background-color: alpha(@theme_selected_bg_color, 0.3);
