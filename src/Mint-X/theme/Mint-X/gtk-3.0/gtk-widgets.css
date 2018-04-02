@@ -314,80 +314,83 @@ radiobutton label:not(:only-child):first-child {
  * Color Chooser *
  *****************/
 
-GtkColorSwatch {
+colorswatch {
     border: 1px solid alpha(@theme_fg_color, 0.75);
     border-radius: 0;
     box-shadow: none;
 }
 
-GtkColorSwatch.overlay {
+colorswatch overlay {
     border: none;
     background-color: transparent;
     background-image: none;
 }
 
-GtkColorSwatch:hover,
-GtkColorSwatch:selected:hover {
+colorswatch:hover,
+colorswatch:selected:hover {
     background-color: transparent;
     background-image: none;
 }
 
-GtkColorSwatch.color-dark {
+colorswatch.dark overlay{
     color: @theme_selected_fg_color;
 }
 
-GtkColorSwatch.color-light {
+colorswatch.light overlay{
     color: @theme_fg_color;
 }
 
-GtkColorSwatch.color-dark:hover {
+colorswatch.dark overlay:hover {
     background-image: linear-gradient(to bottom,
                                       alpha(white, 0) 40%,
                                       alpha(white, 0.3)
                                       );
 }
 
-GtkColorSwatch.color-light:hover {
+colorswatch.light overlay:hover {
     background-image: linear-gradient(to top,
                                       alpha(black, 0) 40%,
                                       alpha(black, 0.1)
                                       );
 }
 
-GtkColorSwatch.top {
+colorswatch.top {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
 }
 
-GtkColorSwatch.bottom {
+colorswatch.bottom {
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
 }
 
-GtkColorSwatch.left,
-GtkColorSwatch:first-child,
-GtkColorSwatch:first-child .overlay {
+colorswatch.left,
+colorswatch:first-child,
+colorswatch:first-child  overlay {
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
 }
 
-GtkColorSwatch.right,
-GtkColorSwatch:last-child,
-GtkColorSwatch:last-child .overlay {
+colorswatch.right,
+colorswatch:last-child,
+colorswatch:last-child  overlay {
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
 }
 
-GtkColorSwatch:only-child {
+colorswatch:only-child {
     border-radius: 3px;
 }
 
-GtkColorSwatch#add-color-button {
+colorswatch#add-color-button {
     background-color: mix(@border, @theme_bg_color, 0.3);
 }
 
-GtkColorEditor GtkColorSwatch {
-    border-radius: 3px;
+colorswatch#add-color-button overlay:hover {
+    background-image: linear-gradient(to bottom,
+                                      alpha(white, 0) 40%,
+                                      alpha(white, 0.3)
+                                      );
 }
 
 /*****************
