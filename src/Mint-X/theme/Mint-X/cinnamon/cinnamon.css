@@ -162,7 +162,7 @@ StScrollBar StButton#vhandle:hover {
     border-image: url("misc-assets/entry.png") 6;
     border-radius: 4px;
     width: 250px;
-    height: 16px;
+    min-height: 16px;
     selected-color: #fff;
     caret-color: #2b2b2b;
     caret-size: 1px;
@@ -176,7 +176,7 @@ StScrollBar StButton#vhandle:hover {
     border-image: url("misc-assets/entry-focus.png") 6;
     border-radius: 4px;
     width: 250px;
-    height: 16px;
+    min-height: 16px;
     selected-color: #fff;
     caret-color: #2b2b2b;
     caret-size: 1px;
