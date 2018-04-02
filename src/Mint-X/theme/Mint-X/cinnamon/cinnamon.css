@@ -1526,7 +1526,7 @@ StScrollBar StButton#vhandle:hover {
     width: 22px;
     height: 22px;
     padding: 5px;
-    color: #bbb;
+    color: #464646;
 }
 
 .sound-player StButton:small {
@@ -1535,7 +1535,6 @@ StScrollBar StButton#vhandle:hover {
     width: 16px;
     height: 16px;
     padding: 1px;
-    color: rgb(90, 90, 90);
 }
 
 .sound-player StButton StIcon {
@@ -1548,7 +1547,7 @@ StScrollBar StButton#vhandle:hover {
 
 .sound-player StButton:hover,
 .sound-player StButton:active {
-    color: #fff;
+    color: rgba(70, 70, 70, 0.4);
 }
 
 .sound-player StButton:small:hover {
@@ -1577,16 +1576,24 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .sound-player > StBoxLayout {
-    padding: 5px;
+    padding: 0 16px 8px;
+}
+
+.sound-player > StBoxLayout:first-child {
+    border: 1px solid #c2c2c2;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
 }
 
 .sound-player-overlay {
+    border-top: 1px solid #c2c2c2;
     width: 300px;
     height: 70px;
-    padding: 15px;
+    padding: 16px;
     spacing: 0.5em;
-    background: rgba(0, 0, 0, 0.8);
-    color: #FFF;
+    color: #464646;
+    background: #ececec;
 }
 
 .sound-player-overlay StBoxLayout {
