@@ -49,18 +49,27 @@ actionbar {
  * assistant *
  *************/
 
-assistant .sidebar .highlight {
-    background-color: transparent;
+assistant .sidebar {
+    border-top: 1px solid @border;
+    background-color: @theme_base_color;
     color: @theme_fg_color;
-    font-weight: bold;
 }
 
-assistant .sidebar {
-    padding: 12px;
-    border: 1px solid @border;
-    border-radius: 2px;
-    background-color: @theme_base_color;
-    color: mix(@theme_fg_color, @theme_bg_color, 0.4);
+assistant .sidebar:dir(ltr) {
+    border-right: 1px solid @border;
+}
+
+assistant .sidebar:dir(rtl) {
+    border-left: 1px solid @border;
+}
+
+assistant .sidebar label {
+    padding: 6px 12px;
+}
+
+assistant .sidebar label.highlight {
+    background-color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
 }
 
 /**********
