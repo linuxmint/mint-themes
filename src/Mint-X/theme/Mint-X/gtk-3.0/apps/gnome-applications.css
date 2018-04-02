@@ -17,23 +17,6 @@ filechooser #pathbarbox {
     border-bottom: 1px solid @border;
 }
 
-/*******
- * Pix *
- *******/
-
-GthGridView.cell {
-    background-color: shade(@theme_base_color, 0.95);
-}
-
-GthGridView.cell:selected,
-GthGridView.cell:selected:focus {
-    background-color: alpha(@theme_selected_bg_color, 0.5);
-}
-
-GthGridView:selected:focus {
-    color: @theme_fg_color;
-}
-
 /************
  * terminal *
  ************/
