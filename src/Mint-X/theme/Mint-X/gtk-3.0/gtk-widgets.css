@@ -222,7 +222,8 @@ button,
 }
 
 .primary-toolbar button.image-button:disabled,
-.primary-toolbar button.image-button:disabled label {
+.primary-toolbar button.image-button:disabled label,
+.primary-toolbar button.image-button:disabled image {
     color: @insensitive_fg_color;
     -gtk-icon-shadow: none;
 }
@@ -1113,6 +1114,11 @@ row:selected,
 row:selected:hover {
     background-color: @theme_selected_bg_color;
     color: @theme_selected_fg_color;
+}
+
+row:selected label:disabled {
+    color: mix(@theme_selected_fg_color, @theme_selected_bg_color, 0.3);
+    text-shadow: none;
 }
 
 /*.list-row:hover {
@@ -2678,5 +2684,5 @@ textview text selection:focus {
 .view:disabled,
 textview:disabled {
     background-color: shade(@theme_base_color, 0.95);
-    color: shade(@insensitive_fg_color, 1.3);
+    color: @insensitive_fg_color;
 }
