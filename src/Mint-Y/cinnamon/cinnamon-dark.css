@@ -1112,7 +1112,7 @@ StScrollBar {
   background-color: #2f2f2f;
   border-radius: 3px;
   padding: 6px 12px 12px 12px;
-  font: 1em; }
+  font-size: 1em; }
 
 .sound-button {
   width: 22px;
