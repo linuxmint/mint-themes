@@ -5,59 +5,23 @@
 * {
     padding: 0;
 
-    /*-GtkArrow-arrow-scaling: 0.7;
-
-    -GtkButton-child-displacement-x: 0;
-    -GtkButton-child-displacement-y: 0;
-    -GtkButton-image-spacing: 6;
-
-    -GtkCheckButton-indicator-size: 16;
-    -GtkCheckMenuItem-indicator-size: 12;*/
-
     -GtkDialog-button-spacing: 6;
     -GtkDialog-content-area-border: 6;
     -GtkDialog-action-area-border: 6;
-
-    /*-GtkExpander-expander-size: 14;*/
-
-    /*-GtkHTML-link-color: @link_color;
-    -GtkIMHtml-hyperlink-color: @link_color;*/
-
-    /*-GtkMenu-horizontal-padding: 0;
-    -GtkMenu-vertical-padding: 0;*/
-
-    /*-GtkPaned-handle-size: 5;*/
 
     -GtkScrolledWindow-scrollbar-spacing: 0;
 
     -GtkTextView-error-underline-color: @error_color;
 
     -GtkToolButton-icon-spacing: 6;
-    /*-GtkToolItemGroup-expander-size: 11;*/
 
-    /*-GtkTreeView-expander-size: 11;
-    -GtkTreeView-horizontal-separator: 2;
-    -GtkTreeView-vertical-separator: 0;
-
-    -GtkWidget-focus-line-width: 0;
-    -GtkWidget-separator-height: 1;
-    -GtkWidget-separator-width: 1;
-    -GtkWindow-resize-grip-width: 0;
-    -GtkWindow-resize-grip-height: 0
-
-    -WnckTasklist-fade-overlay-rect: 0;*/
+    -WnckTasklist-fade-overlay-rect: 0;
 }
 
 .background {
     background-color: @theme_bg_color;
     color: @theme_fg_color;
 }
-
-/**:selected,
-*:selected:focus {
-    background-color: @theme_selected_bg_color;
-    color: @theme_selected_fg_color;
-}*/
 
 *:disabled {
     color: @insensitive_fg_color;
@@ -309,14 +273,6 @@ calendar.button.highlight {
  * check and radio *
  *******************/
 
-/*.check,
-.radio,
-.check:disabled,
-.radio:disabled {
-    border: none;
-    background-color: transparent;
-}*/
-
 check,
 .check,
 radio
@@ -428,6 +384,7 @@ GtkColorEditor GtkColorSwatch {
 /*****************
  * column-header *
  *****************/
+
 treeview .view header button {
     padding: 4px 6px;
     color: @theme_fg_color;
@@ -573,14 +530,6 @@ combobox arrow {
     border-radius: 0;
 }*/
 
-/****************
- * drawing area *
- ****************/
-
-GtkDrawingArea {
-    background-color: transparent;
-}
-
 /***********
  * Dialogs *
  ***********/
@@ -661,17 +610,7 @@ entry progress:focus {
                                       @border 5px,
                                       transparent 5px);
 }
-/*
-entry:selected,
-entry:selected:focus {
-    background-color: @theme_selected_bg_color;
-    color: @theme_selected_fg_color;
-}*/
 
-/*
-entry:active {
-}
-*/
 .cursor-handle.top,
 .cursor-handle.bottom {
 }
@@ -697,43 +636,6 @@ expander arrow:hover {
 expander arrow:checked {
     -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
 }
-
-/*.expander {
-    color: @theme_fg_color;
-}
-
-.expander:active {
-    color: @theme_fg_color;
-}
-
-.expander:hover {
-    color: @theme_fg_color;
-}
-
-.expander row:selected,
-.expander row:selected:focus {
-    border-color: @theme_selected_fg_color;
-    color: @theme_selected_fg_color;
-}
-
-.expander row:selected:hover,
-.expander row:selected:focus:hover {
-    border-color: @theme_selected_fg_color;
-    color: @theme_selected_fg_color;
-}
-
-GsmFailWhaleDialog {
-    background-color: @theme_bg_color;
-    background-image: none;
-    color: @theme_fg_color;
-}
-
-GsmFailWhaleDialog .button,
-GsmFailWhaleDialog .button:active {
-    border-image: none;
-    border-color: @border;
-    border-width: 1px;
-}*/
 
 /****************
  * floating bar *
@@ -1129,18 +1031,6 @@ row:selected label:disabled {
     text-shadow: none;
 }
 
-/*.list-row:hover {
-    background-color: shade(@theme_base_color, 0.95);
-    background-image: none;
-}
-
-.list-row:selected,
-.list-row.activatable:selected:hover {
-    background-color: @theme_selected_bg_color;
-    background-image: none;
-    color: @theme_selected_fg_color;
-}*/
-
 /*****************
  * miscellaneous *
  *****************/
@@ -1159,16 +1049,6 @@ row:selected label:disabled {
 /********
  * menu *
  ********/
-
-/*GtkTreeMenu.menu {
-    border: 1px solid @border;
-    border-radius: 0;
-    background-color: @menu_bg;
-}
-
-GtkMenuButton .menu {
-    text-shadow: none;
-}*/
 
 .context-menu {
     font: initial;
@@ -1718,20 +1598,6 @@ popover.background {
     box-shadow: 0 1px 3px 2px alpha(black, 0.2);
  }
 
-/*.popover {
-    margin: 10px;
-    padding: 2px;
-    border: 1px solid @border;
-    border-radius: 5px;
-    background-color: @menu_bg;
-    box-shadow: 0 1px 3px 2px alpha(black, 0.2);
-}
-
-.popover.osd {
-    background-image: none;
-    background-color: red;
-}*/
-
 .popover > .list,
 .popover > .view,
 .popover > .toolbar .popover.osd > .toolbar,
@@ -1753,29 +1619,6 @@ popover.background {
     border-style: none;
     background-color: transparent;
 }
-
-/*.popover .button.flat,
-.popover .button.flat:checked {
-    border: 1px solid transparent;
-    border-image: none;
-    background-color: transparent;
-    background-image:none;
-    color: @menu_fg;
-    text-shadow: none;
-    -gtk-icon-shadow: none;
-    box-shadow: none;
-}
-
-.popover .button.flat:hover,
-.popover .button.flat:active,
-.popover .button.flat:active:hover,
-.popover .button.flat:checked:hover {
-    border: 1px solid @border;
-    background-color: @theme_selected_bg_color;
-    background-image: none;
-    color: @theme_selected_fg_color;
-    box-shadow: none;
-}*/
 
 /***************
  * progressbar *
@@ -2218,9 +2061,6 @@ undershoot.right {
 **************/
 
 separator {
-/*    -GtkWidget-wide-separators: 1;
-    -GtkWidget-separator-width: 2;
-    -GtkWidget-separator-height: 2;*/
     min-height: 0;
     min-width: 0;
     border: 1px solid transparent;
@@ -2573,11 +2413,6 @@ headerbar {
 .header-bar:disabled {
     text-shadow: none;
 }
-
-/*.primary-toolbar .separator,
-.primary-toolbar.toolbar .separator {
-    -GtkWidget-window-dragging: true;
-}*/
 
 .primary-toolbar .entry.progressbar,
 .primary-toolbar.toolbar .entry.progressbar {
