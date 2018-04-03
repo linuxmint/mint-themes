@@ -843,54 +843,41 @@ GtkGrid:disabled {
  * infobar *
  ***********/
 
-.info,
-.question,
-.warning,
-.error {
+infobar {
     border: none;
 }
 
-.info {
+infobar.info {
     background-color: @info_color;
 
 }
 
-.info GtkLabel {
+infobar.info label {
     color: #ffffff;
 }
 
-.question {
+infobar.question {
     background-color: @question_color;
 }
 
-.question GtkLabel {
+infobar.question label {
     color: #004166;
 }
 
-.warning {
+infobar.warning {
     background-color: @warning_color;
 }
 
-.warning GtkLabel {
+infobar.warning label {
     color: #664e00;
 }
 
-.error {
+infobar.error {
     background-color: @error_color;
 }
 
-.error GtkLabel {
+infobar.error label {
     color: @theme_selected_fg_color;
-}
-
-GtkInfoBar .entry,
-GtkInfoBar .menu {
-    color: @text_color;
-}
-
-.info GtkButton GtkLabel,
-.error GtkButton GtkLabel {
-    color: @theme_fg_color;
 }
 
 /*************
