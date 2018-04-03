@@ -2325,14 +2325,10 @@ GtkSwitch.slider {
  * toolbar *
  ***********/
 
-.toolbar {
+toolbar {
     padding: 6px;
     border-style: none;
     background-color: @theme_bg_color;
-}
-
-.toolbar.menubar {
-    -GtkToolbar-button-relief: normal;
 }
 
 .primary-toolbar,
