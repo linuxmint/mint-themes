@@ -200,9 +200,6 @@ StScrollBar StButton#vhandle:hover
     color: #9f9f9f;
 }
 
-.popup-image-menu-item {
-}
-
 .popup-combobox-item {
     spacing: 1em;
 }
