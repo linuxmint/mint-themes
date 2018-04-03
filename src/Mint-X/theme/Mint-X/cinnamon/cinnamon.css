@@ -434,24 +434,6 @@ StScrollBar StButton#vhandle:hover {
     spacing: 25px;
 }
 
-.workspace-controls {
-    visible-height: 35px; /* Amount visible before hovering */
-}
-
-.workspace-thumbnails-background {
-    border: 1px solid rgba(128, 128, 128, 0.4);
-    border-right: 0px;
-    border-radius: 0px 0px 0px 0px;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 8px;
-}
-
-.workspace-thumbnails-background:rtl {
-    border-right: 1px;
-    border-left: 0px;
-    border-radius: 0px 0px 0px 0px;
-}
-
 .workspace-thumbnails {
     spacing: 26px;
     padding-left: 0.9em;
@@ -481,11 +463,6 @@ StScrollBar StButton#vhandle:hover {
 .workspace-close-button:hover {
     background-image: url("control-assets/close-hover.svg");
     transition-duration: 150;
-}
-
-.workspace-thumbnail-indicator {
-    outline: 2px solid white;
-    border: 1px solid #888;
 }
 
 .window-caption {
@@ -518,25 +495,6 @@ StScrollBar StButton#vhandle:hover {
     background-image: url("misc-assets/trash.png");
     height: 150px;
     width: 226px;
-}
-
-.icon-grid {
-    spacing: 36px;
-    -cinnamon-grid-item-size: 118px;
-}
-
-.icon-grid .overview-icon {
-    icon-size: 96px;
-}
-
-.overview-icon {
-    border-radius: 0px;
-    padding: 3px;
-    border: 1px rgba(0, 0, 0, 0);
-    font-size: 7.5pt;
-    color: white;
-    transition-duration: 100;
-    text-align: center;
 }
 
 .expo-background {
@@ -1248,18 +1206,6 @@ StScrollBar StButton#vhandle:hover {
     border-image: url("misc-assets/hover-2.png") 6;
 }
 
-.menu-places-box {
-    padding: 8px;
-    border: 0px solid #666;
-}
-
-.menu-places-button {
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-}
-
 .menu-categories-box {
     padding-top: 10px;
     padding-left: 30px;
@@ -1607,10 +1553,6 @@ StScrollBar StButton#vhandle:hover {
 /* ===================================================================
  * Workspace Switcher applet (workspace-switcher@cinnamon.org/applet.js)
  * ===================================================================*/
-#workspaceSwitcher {
-    spacing: 200px;
-}
-
 .workspace-button {
     width: 20px;
     height: 6px;
