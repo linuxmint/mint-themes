@@ -711,13 +711,23 @@ actionbar > revealer > box {
  * Header Bars *
  ***************/
 
-.titlebar,
-headerbar
-/*.titlebar*/ {
-    padding: 6px 8px 6px 8px;
+window > .titlebar:not(headerbar),
+window > .titlebar:not(headerbar):backdrop,
+window.csd > .titlebar:not(headerbar),
+window.csd > .titlebar:not(headerbar):backdrop {
+    padding: 0;
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+headerbar,
+.titlebar:not(headerbar) {
+    min-height: 42px;
+    padding: 0 7px;
     border-style: solid;
     border-width: 0 0 1px 0;
-    border-radius: 6px 6px 0 0;
+    border-radius: 0;
     border-color: @border;
     background-color: transparent;
     background-image: linear-gradient(to bottom,
@@ -728,13 +738,51 @@ headerbar
                 inset 0 1px alpha(white, 0.8);
 }
 
-.titlebar:backdrop,
-headerbar:backdrop {
+headerbar:backdrop,
+.titlebar:not(headerbar):backdrop {
     background-image: linear-gradient(to bottom,
                                       @theme_bg_color,
                                       @theme_bg_color 50%,
                                       shade(@theme_bg_color, 0.95));
     box-shadow: none;
+}
+
+/* Fix split headerbar */
+separator:first-child + headerbar,
+separator:first-child + headerbar:backdrop,
+headerbar:first-child,
+headerbar:first-child:backdrop {
+    border-top-left-radius: 6px;
+}
+
+.maximized separator:first-child + headerbar,
+.tiled separator:first-child + headerbar,
+.maximized separator:first-child + headerbar:backdrop,
+.tiled separator:first-child + headerbar:backdrop,
+.maximized headerbar:first-child,
+.tiled headerbar:first-child,
+.maximized headerbar:first-child:backdrop,
+.tiled headerbar:first-child:backdrop {
+    border-radius: 0;
+}
+
+headerbar:last-child,
+headerbar:last-child:backdrop {
+    border-top-right-radius: 6px;
+}
+
+.maximized headerbar:last-child,
+.tiled headerbar:last-child,
+.maximized headerbar:last-child:backdrop,
+.tiled headerbar:last-child:backdrop {
+    border-radius: 0;
+}
+
+headerbar entry,
+headerbar button,
+headerbar separator {
+    margin-top: 6px;
+    margin-bottom: 6px;
 }
 
 /* Make sure the headerbars are rounded to match our window decorations */
@@ -2332,8 +2380,7 @@ toolbar {
 }
 
 .primary-toolbar,
-.primary-toolbar.toolbar,
-headerbar {
+.primary-toolbar.toolbar {
     -GtkWidget-window-dragging: true;
     padding: 6px;
     padding-top: 4px;
