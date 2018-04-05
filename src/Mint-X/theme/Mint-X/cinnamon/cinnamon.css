@@ -162,7 +162,7 @@ StScrollBar StButton#vhandle:hover {
     border-image: url("misc-assets/entry.png") 6;
     border-radius: 4px;
     width: 250px;
-    height: 16px;
+    min-height: 16px;
     selected-color: #fff;
     caret-color: #2b2b2b;
     caret-size: 1px;
@@ -176,7 +176,7 @@ StScrollBar StButton#vhandle:hover {
     border-image: url("misc-assets/entry-focus.png") 6;
     border-radius: 4px;
     width: 250px;
-    height: 16px;
+    min-height: 16px;
     selected-color: #fff;
     caret-color: #2b2b2b;
     caret-size: 1px;
@@ -434,24 +434,6 @@ StScrollBar StButton#vhandle:hover {
     spacing: 25px;
 }
 
-.workspace-controls {
-    visible-height: 35px; /* Amount visible before hovering */
-}
-
-.workspace-thumbnails-background {
-    border: 1px solid rgba(128, 128, 128, 0.4);
-    border-right: 0px;
-    border-radius: 0px 0px 0px 0px;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 8px;
-}
-
-.workspace-thumbnails-background:rtl {
-    border-right: 1px;
-    border-left: 0px;
-    border-radius: 0px 0px 0px 0px;
-}
-
 .workspace-thumbnails {
     spacing: 26px;
     padding-left: 0.9em;
@@ -481,11 +463,6 @@ StScrollBar StButton#vhandle:hover {
 .workspace-close-button:hover {
     background-image: url("control-assets/close-hover.svg");
     transition-duration: 150;
-}
-
-.workspace-thumbnail-indicator {
-    outline: 2px solid white;
-    border: 1px solid #888;
 }
 
 .window-caption {
@@ -518,25 +495,6 @@ StScrollBar StButton#vhandle:hover {
     background-image: url("misc-assets/trash.png");
     height: 150px;
     width: 226px;
-}
-
-.icon-grid {
-    spacing: 36px;
-    -cinnamon-grid-item-size: 118px;
-}
-
-.icon-grid .overview-icon {
-    icon-size: 96px;
-}
-
-.overview-icon {
-    border-radius: 0px;
-    padding: 3px;
-    border: 1px rgba(0, 0, 0, 0);
-    font-size: 7.5pt;
-    color: white;
-    transition-duration: 100;
-    text-align: center;
 }
 
 .expo-background {
@@ -1248,18 +1206,6 @@ StScrollBar StButton#vhandle:hover {
     border-image: url("misc-assets/hover-2.png") 6;
 }
 
-.menu-places-box {
-    padding: 8px;
-    border: 0px solid #666;
-}
-
-.menu-places-button {
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-}
-
 .menu-categories-box {
     padding-top: 10px;
     padding-left: 30px;
@@ -1526,7 +1472,7 @@ StScrollBar StButton#vhandle:hover {
     width: 22px;
     height: 22px;
     padding: 5px;
-    color: #bbb;
+    color: #464646;
 }
 
 .sound-player StButton:small {
@@ -1535,7 +1481,6 @@ StScrollBar StButton#vhandle:hover {
     width: 16px;
     height: 16px;
     padding: 1px;
-    color: rgb(90, 90, 90);
 }
 
 .sound-player StButton StIcon {
@@ -1548,7 +1493,7 @@ StScrollBar StButton#vhandle:hover {
 
 .sound-player StButton:hover,
 .sound-player StButton:active {
-    color: #fff;
+    color: rgba(70, 70, 70, 0.4);
 }
 
 .sound-player StButton:small:hover {
@@ -1577,16 +1522,24 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .sound-player > StBoxLayout {
-    padding: 5px;
+    padding: 0 16px 8px;
+}
+
+.sound-player > StBoxLayout:first-child {
+    border: 1px solid #c2c2c2;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
 }
 
 .sound-player-overlay {
+    border-top: 1px solid #c2c2c2;
     width: 300px;
     height: 70px;
-    padding: 15px;
+    padding: 16px;
     spacing: 0.5em;
-    background: rgba(0, 0, 0, 0.8);
-    color: #FFF;
+    color: #464646;
+    background: #ececec;
 }
 
 .sound-player-overlay StBoxLayout {
@@ -1600,10 +1553,6 @@ StScrollBar StButton#vhandle:hover {
 /* ===================================================================
  * Workspace Switcher applet (workspace-switcher@cinnamon.org/applet.js)
  * ===================================================================*/
-#workspaceSwitcher {
-    spacing: 200px;
-}
-
 .workspace-button {
     width: 20px;
     height: 6px;
@@ -1693,10 +1642,6 @@ StScrollBar StButton#vhandle:hover {
 /* ===================================================================
  * Panel Launchers applet (panel-launchers@cinnamon.org/applet.js)
  * ===================================================================*/
-#panel-launchers-box {
-    padding-left: 0px;
-}
-
 .panel-launchers {
     spacing: 0;
 }
@@ -1728,50 +1673,6 @@ StScrollBar StButton#vhandle:hover {
 
 .panel-right .panel-launchers .launcher:hover {
     border-image: url("panel-assets/hover-1-right.svg") 6;
-}
-
-.panel-launcher-add-dialog-content-box {
-    padding: 6px;
-    spacing: 20px;
-}
-
-.panel-launcher-add-dialog-content-box-left {
-    padding: 6px;
-    spacing: 20px;
-}
-
-.panel-launcher-add-dialog-content-box-right {
-    padding: 6px;
-    spacing: 10px;
-}
-
-.panel-launcher-add-dialog-entry {
-    padding: 4px 12px;
-    color: #2b2b2b;
-    border-image: url("misc-assets/entry.png") 6;
-    border-radius: 4px;
-    caret-color: #2b2b2b;
-    caret-size: 1px;
-    width: 250px;
-    height: 16px;
-    transition-duration: 300;
-    selected-color: #fff;
-    selection-background-color: #accd8a;
-}
-
-.panel-launcher-add-dialog-entry:focus,
-.panel-launcher-add-dialog-entry:hover {
-    padding: 4px 12px;
-    color: #2b2b2b;
-    border-image: url("misc-assets/entry-focus.png") 6;
-    border-radius: 4px;
-    width: 250px;
-    height: 16px;
-    selected-color: #fff;
-    caret-color: #2b2b2b;
-    caret-size: 1px;
-    selection-background-color: #accd8a;
-    transition-duration: 150;
 }
 
 /* ===================================================================
