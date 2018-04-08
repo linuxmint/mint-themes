@@ -1453,7 +1453,8 @@ notebook {
     background-color: #ffffff; }
   notebook > header {
     padding: 2px;
-    background-color: #F0F0F0; }
+    background-color: #F0F0F0;
+    /* button in headers */ }
     notebook > header.top {
       box-shadow: inset 0 -1px #d9d9d9; }
     notebook > header.bottom {
@@ -1562,6 +1563,8 @@ notebook {
           color: #ff4d4d; }
         notebook > header > tabs > tab button.flat:active, notebook > header > tabs > tab button.sidebar-button:active, notebook > header > tabs > tab button.flat:active:hover, notebook > header > tabs > tab button.sidebar-button:active:hover {
           color: #9ab87c; }
+    notebook > header button.flat, notebook > header button.sidebar-button {
+      padding: 0; }
 
 scrollbar {
   background-color: #fcfcfc;

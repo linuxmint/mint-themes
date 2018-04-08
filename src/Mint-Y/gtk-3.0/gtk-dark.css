@@ -1454,7 +1454,8 @@ notebook {
     background-color: #404040; }
   notebook > header {
     padding: 2px;
-    background-color: #383838; }
+    background-color: #383838;
+    /* button in headers */ }
     notebook > header.top {
       box-shadow: inset 0 -1px #292929; }
     notebook > header.bottom {
@@ -1563,6 +1564,8 @@ notebook {
           color: #ff4d4d; }
         notebook > header > tabs > tab button.flat:active, notebook > header > tabs > tab button.sidebar-button:active, notebook > header > tabs > tab button.flat:active:hover, notebook > header > tabs > tab button.sidebar-button:active:hover {
           color: #8fa876; }
+    notebook > header button.flat, notebook > header button.sidebar-button {
+      padding: 0; }
 
 scrollbar {
   background-color: #3d3d3d;

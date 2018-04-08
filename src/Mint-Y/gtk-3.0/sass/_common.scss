@@ -1687,7 +1687,7 @@ notebook {
     &.right {  box-shadow: inset  1px 0   $borders_color; }
     &.left {   box-shadow: inset -1px 0   $borders_color; }
 
-  @each $_pos, $_bpos in (top, bottom), (bottom, top), (right, left), (left, right) {
+    @each $_pos, $_bpos in (top, bottom), (bottom, top), (right, left), (left, right) {
       // sizing and borders
       &.#{$_pos} {
         padding-#{$_bpos}: 0;
@@ -1783,6 +1783,9 @@ notebook {
         }
       }
     }
+
+    /* button in headers */
+    button.flat { padding: 0; }
   }
 }
 
