@@ -2193,6 +2193,21 @@ paned .sidebar.left:dir(rtl) {
     border-style: none;
 }
 
+/********************
+ * Shortcuts window *
+ ********************/
+
+.keycap {
+    min-width: 16px;
+    min-height: 20px;
+    padding: 3px 6px 4px 6px;
+    color: @theme_fg_color;
+    background-color: shade(@theme_bg_color, 1.1);
+    border: 1px solid @border;
+    border-radius: 3px;
+    box-shadow: inset 0 -2px 0 alpha(black, 0.1);
+}
+
 /**************
  * spinbutton *
  **************/
