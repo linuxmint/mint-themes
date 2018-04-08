@@ -1568,7 +1568,7 @@ notebook {
         notebook > header > tabs > tab button.flat:active, notebook > header > tabs > tab button.sidebar-button:active, notebook > header > tabs > tab button.flat:active:hover, notebook > header > tabs > tab button.sidebar-button:active:hover {
           color: #9ab87c; }
     notebook > header button.flat, notebook > header button.sidebar-button {
-      padding: 0; }
+      padding: 2px; }
 
 scrollbar {
   background-color: #fcfcfc;
