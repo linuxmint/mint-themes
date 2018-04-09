@@ -70,7 +70,7 @@
     border-color: $header_entry_border;
     background-color: $header_entry_bg;
 
-    &.image, &.image:hover { color: inherit; }
+    image, image:hover { color: inherit; }
   }
 
   @if $t==header-focus {
@@ -98,7 +98,7 @@
     border-color: $osd_entry_border;
     background-color: $osd_entry_bg;
 
-    &.image, &.image:hover { color: inherit; }
+    image, image:hover { color: inherit; }
   }
 
   @else if $t==osd-focus {
@@ -167,7 +167,7 @@
     border-color: transparentize($button_border, 0.45);
     background-color: transparentize($button_bg, 0.45);
 
-    > GtkLabel { color: inherit; }
+    label { color: inherit; }
   }
 
   @else if $t==insensitive-active {
@@ -180,7 +180,7 @@
 
     opacity: 0.6;
 
-    > GtkLabel { color: inherit; }
+    label { color: inherit; }
   }
 
   @if $t==header-normal {
@@ -222,7 +222,7 @@
     background-color: transparentize($header_bg, 1);
     border-color: transparentize($header_bg, 1);
 
-    > GtkLabel { color: inherit; }
+    label { color: inherit; }
   }
 
   @else if $t==header-insensitive-active {

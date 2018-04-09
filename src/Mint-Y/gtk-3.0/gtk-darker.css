@@ -204,7 +204,7 @@ entry {
     color: #C3C3C3;
     border-color: rgba(38, 38, 38, 0.4);
     background-color: rgba(125, 125, 125, 0.4); }
-    .osd entry.image, .osd entry.image:hover {
+    .osd entry image, .osd entry image:hover {
       color: inherit; }
     .osd entry:focus {
       color: #ffffff;
@@ -289,14 +289,14 @@ button {
     color: rgba(74, 74, 74, 0.55);
     border-color: rgba(207, 207, 207, 0.55);
     background-color: rgba(245, 245, 245, 0.55); }
-    button:disabled > GtkLabel {
+    button:disabled label {
       color: inherit; }
     button:disabled:active, button:disabled:checked {
       color: rgba(255, 255, 255, 0.8);
       border-color: rgba(154, 184, 124, 0.75);
       background-color: rgba(154, 184, 124, 0.75);
       opacity: 0.6; }
-      button:disabled:active > GtkLabel, button:disabled:checked > GtkLabel {
+      button:disabled:active label, button:disabled:checked label {
         color: inherit; }
   button.image-button, headerbar button.titlebutton,
   .titlebar button.titlebutton {
@@ -426,7 +426,7 @@ button {
       color: rgba(74, 74, 74, 0.55);
       border-color: rgba(207, 207, 207, 0.55);
       background-color: rgba(245, 245, 245, 0.55); }
-      button.suggested-action:disabled > GtkLabel {
+      button.suggested-action:disabled label {
         color: inherit; }
   button.destructive-action {
     background-clip: border-box;
@@ -461,7 +461,7 @@ button {
       color: rgba(74, 74, 74, 0.55);
       border-color: rgba(207, 207, 207, 0.55);
       background-color: rgba(245, 245, 245, 0.55); }
-      button.destructive-action:disabled > GtkLabel {
+      button.destructive-action:disabled label {
         color: inherit; }
   .stack-switcher > button {
     outline-offset: -3px; }
@@ -516,14 +516,14 @@ button {
     color: rgba(74, 74, 74, 0.55);
     border-color: rgba(207, 207, 207, 0.55);
     background-color: rgba(245, 245, 245, 0.55); }
-    .inline-toolbar toolbutton > button:disabled > GtkLabel {
+    .inline-toolbar toolbutton > button:disabled label {
       color: inherit; }
   .inline-toolbar toolbutton > button:disabled:active, .inline-toolbar toolbutton > button:disabled:checked {
     color: rgba(255, 255, 255, 0.8);
     border-color: rgba(154, 184, 124, 0.75);
     background-color: rgba(154, 184, 124, 0.75);
     opacity: 0.6; }
-    .inline-toolbar toolbutton > button:disabled:active > GtkLabel, .inline-toolbar toolbutton > button:disabled:checked > GtkLabel {
+    .inline-toolbar toolbutton > button:disabled:active label, .inline-toolbar toolbutton > button:disabled:checked label {
       color: inherit; }
 
 toolbar.inline-toolbar toolbutton > button.flat, .inline-toolbar toolbutton > button.flat, toolbar.inline-toolbar toolbutton > button.sidebar-button, .inline-toolbar toolbutton > button.sidebar-button, .linked:not(.vertical) > entry, .linked:not(.vertical) > entry:focus, .inline-toolbar button, .inline-toolbar button:backdrop, .linked:not(.vertical) > button, .linked:not(.vertical) > button:hover, .linked:not(.vertical) > button:active, .linked:not(.vertical) > button:checked, spinbutton:not(.vertical) button, spinbutton:not(.vertical) entry, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:disabled, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:disabled,
@@ -917,7 +917,7 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
   color: #ded6d6;
   border-color: rgba(16, 16, 16, 0.4);
   background-color: rgba(103, 103, 103, 0.4); }
-  .primary-toolbar entry.image, headerbar entry.image, .primary-toolbar entry.image:hover, headerbar entry.image:hover {
+  .primary-toolbar entry image, headerbar entry image, .primary-toolbar entry image:hover, headerbar entry image:hover {
     color: inherit; }
   .primary-toolbar entry:backdrop, headerbar entry:backdrop {
     opacity: 0.85; }
@@ -981,7 +981,7 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
     color: rgba(222, 214, 214, 0.55);
     background-color: rgba(47, 47, 47, 0);
     border-color: rgba(47, 47, 47, 0); }
-    .primary-toolbar button:disabled > GtkLabel, headerbar button:disabled > GtkLabel {
+    .primary-toolbar button:disabled label, headerbar button:disabled label {
       color: inherit; }
   .primary-toolbar button:disabled:active, headerbar button:disabled:active, .primary-toolbar button:disabled:checked, headerbar button:disabled:checked {
     color: rgba(255, 255, 255, 0.75);
@@ -1060,7 +1060,7 @@ headerbar .linked:not(.vertical).path-bar > button {
     color: rgba(222, 214, 214, 0.55);
     background-color: rgba(47, 47, 47, 0);
     border-color: rgba(47, 47, 47, 0); }
-    .primary-toolbar button.suggested-action.flat:disabled > GtkLabel, headerbar button.suggested-action.flat:disabled > GtkLabel, .primary-toolbar button.suggested-action.sidebar-button:disabled > GtkLabel, headerbar button.suggested-action.sidebar-button:disabled > GtkLabel, .primary-toolbar button.suggested-action:disabled > GtkLabel, headerbar button.suggested-action:disabled > GtkLabel {
+    .primary-toolbar button.suggested-action.flat:disabled label, headerbar button.suggested-action.flat:disabled label, .primary-toolbar button.suggested-action.sidebar-button:disabled label, headerbar button.suggested-action.sidebar-button:disabled label, .primary-toolbar button.suggested-action:disabled label, headerbar button.suggested-action:disabled label {
       color: inherit; }
 .primary-toolbar button.suggested-action:backdrop, headerbar button.suggested-action:backdrop,
 .primary-toolbar button.suggested-action:backdrop,
@@ -1094,7 +1094,7 @@ headerbar button.suggested-action:backdrop {
     color: rgba(222, 214, 214, 0.55);
     background-color: rgba(47, 47, 47, 0);
     border-color: rgba(47, 47, 47, 0); }
-    .primary-toolbar button.destructive-action.flat:disabled > GtkLabel, headerbar button.destructive-action.flat:disabled > GtkLabel, .primary-toolbar button.destructive-action.sidebar-button:disabled > GtkLabel, headerbar button.destructive-action.sidebar-button:disabled > GtkLabel, .primary-toolbar button.destructive-action:disabled > GtkLabel, headerbar button.destructive-action:disabled > GtkLabel {
+    .primary-toolbar button.destructive-action.flat:disabled label, headerbar button.destructive-action.flat:disabled label, .primary-toolbar button.destructive-action.sidebar-button:disabled label, headerbar button.destructive-action.sidebar-button:disabled label, .primary-toolbar button.destructive-action:disabled label, headerbar button.destructive-action:disabled label {
       color: inherit; }
 .primary-toolbar button.destructive-action:backdrop, headerbar button.destructive-action:backdrop,
 .primary-toolbar button.destructive-action:backdrop,
@@ -1122,7 +1122,7 @@ headerbar button.destructive-action:backdrop {
   color: #ded6d6;
   border-color: rgba(16, 16, 16, 0.4);
   background-color: rgba(103, 103, 103, 0.4); }
-  .primary-toolbar combobox > .linked > button.combo.image, headerbar combobox > .linked > button.combo.image, .primary-toolbar combobox > .linked > button.combo.image:hover, headerbar combobox > .linked > button.combo.image:hover {
+  .primary-toolbar combobox > .linked > button.combo image, headerbar combobox > .linked > button.combo image, .primary-toolbar combobox > .linked > button.combo image:hover, headerbar combobox > .linked > button.combo image:hover {
     color: inherit; }
   .primary-toolbar combobox > .linked > button.combo:hover, headerbar combobox > .linked > button.combo:hover {
     color: #ded6d6;
@@ -1303,6 +1303,9 @@ menubar,
     .menubar > menuitem:disabled {
       color: rgba(222, 214, 214, 0.4);
       border-color: transparent; }
+    menubar > menuitem > label:disabled,
+    .menubar > menuitem > label:disabled {
+      color: rgba(222, 214, 214, 0.55); }
 
 menu,
 .menu {
@@ -3455,7 +3458,7 @@ MarlinViewWindow FMListView, MarlinViewWindow FMColumnView {
   color: #ded6d6;
   border-color: rgba(16, 16, 16, 0.4);
   background-color: rgba(103, 103, 103, 0.4); }
-  .marlin-pathbar.pathbar.image, .marlin-pathbar.pathbar.image:hover {
+  .marlin-pathbar.pathbar image, .marlin-pathbar.pathbar image:hover {
     color: inherit; }
   .marlin-pathbar.pathbar:focus {
     color: #ded6d6;
@@ -3583,7 +3586,7 @@ filechooser placessidebar.sidebar list scrollbar, .nemo-window .sidebar scrollba
     color: rgba(74, 74, 74, 0.55);
     border-color: rgba(207, 207, 207, 0.55);
     background-color: rgba(245, 245, 245, 0.55); }
-    #content_frame button:disabled > GtkLabel {
+    #content_frame button:disabled label {
       color: inherit; }
 
 #buttonbox_frame {

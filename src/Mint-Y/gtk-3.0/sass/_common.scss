@@ -1510,6 +1510,8 @@ menubar,
       color: transparentize($header_fg, 0.6);
       border-color: transparent;
     }
+
+    > label:disabled { color: transparentize($header_fg, 0.45); }
   }
 }
 
