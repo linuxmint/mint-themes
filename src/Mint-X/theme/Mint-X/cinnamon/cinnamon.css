@@ -939,8 +939,6 @@ StScrollBar StButton#vhandle:hover {
 
 .modal-dialog-button:focus {
     border-image: url("button-assets/button-focus.png") 4;
-    margin-left: 10px;
-    margin-right: 10px;
     padding: 3px 31px 4px;
 }
 
@@ -951,8 +949,6 @@ StScrollBar StButton#vhandle:hover {
 
 .modal-dialog-button:focus:hover {
     border-image: url("button-assets/button-focus-hover.png") 4;
-    margin-left: 10px;
-    margin-right: 10px;
     padding: 3px 31px 4px;
 }
 
