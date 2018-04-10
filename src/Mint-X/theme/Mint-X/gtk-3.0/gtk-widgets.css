@@ -1960,7 +1960,6 @@ scrollbar.horizontal button.up {
 }
 
 scrollbar.overlay-indicator:not(.dragging):not(.hovering) button {
-    background-color: transparent;
     color: transparent;
     border-color: transparent;
     border-image: none;

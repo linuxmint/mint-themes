@@ -9,7 +9,7 @@ headerbar button.titlebutton.appmenu:hover,
 toolbar.inline-toolbar toolbutton > button.flat,
 .inline-toolbar toolbutton > button,
 .inline-toolbar toolbutton > button.flat,
-.mate-panel-menu-bar .button:hover {
+.mate-panel-menu-bar button:hover {
     background-color: transparent;
     background-image: linear-gradient(to bottom,
                             @button_bg_a,
@@ -18,14 +18,14 @@ toolbar.inline-toolbar toolbutton > button.flat,
 
 button.flat,
 button.flat:disabled,
-.sidebar-button.button,
-.sidebar-button.button:disabled,
+button.sidebar-button,
+button.sidebar-button:disabled,
 headerbar button.titlebutton,
 headerbar button.titlebutton:hover,
 headerbar button.titlebutton:active,
 headerbar button.titlebutton:checked,
 .header-bar.titlebar GtkMenuButton.button.titlebutton,
-.mate-panel-menu-bar .button {
+.mate-panel-menu-bar button {
     background-color: transparent;
     background-image: none;
 }
