@@ -887,6 +887,11 @@ GtkGrid:disabled {
     color: alpha(@theme_selected_fg_color, 0.6);
 }
 
+label selection { background-color: red; }
+label:selected {
+    background-color: red;
+}
+
 /***********
  * infobar *
  ***********/
@@ -2503,6 +2508,68 @@ viewport {
     background-color: transparent;
 }
 
+.view:selected,
+iconview:selected,
+.view:selected:focus,
+iconview:selected:focus,
+.view text:selected,
+iconview text:selected,
+textview text:selected,
+.view text:selected:focus,
+iconview text:selected:focus,
+textview text:selected:focus,
+.view text selection:focus,
+iconview text selection:focus,
+.view text selection, iconview
+text selection,
+textview text selection:focus,
+textview text selection,
+entry selection:focus,
+entry selection {
+    background-color: @theme_selected_bg_color;
+}
+
+row:selected label,
+label:selected,
+.view:selected,
+iconview:selected,
+.view:selected:focus,
+iconview:selected:focus,
+.view text:selected,
+iconview text:selected,
+textview text:selected,
+.view text:selected:focus,
+iconview text:selected:focus,
+textview text:selected:focus,
+.view text selection:focus,
+iconview text selection:focus,
+.view text selection,
+iconview text selection,
+textview text selection:focus,
+textview text selection,
+entry selection:focus,
+entry selection {
+    color: @theme_selected_fg_color;
+}
+
+label:disabled:selected,
+.view:disabled:selected,
+iconview:disabled:selected,
+iconview:disabled:selected:focus,
+.view text:disabled:selected,
+iconview text:disabled:selected,
+textview text:disabled:selected,
+iconview text:disabled:selected:focus,
+textview text:disabled:selected:focus,
+iconview text selection:disabled:focus,
+.view text selection:disabled,
+iconview text selection:disabled,
+textview text selection:disabled,
+label:disabled selection,
+entry selection:disabled {
+    color: @insensitive_fg_color;
+}
+
 .view,
 .view text,
 iconview,
@@ -2512,18 +2579,7 @@ textview text {
     color: @theme_text_color;
 }
 
-.view:selected,
-textview:selected,
-textview text selection,
-.view:selected:focus,
-textview:selected:focus,
-textview text selection:focus {
-    background-color: @theme_selected_bg_color;
-    color: @theme_selected_fg_color;
-}
-
 .view:disabled,
 textview:disabled {
     background-color: shade(@theme_base_color, 0.95);
-    color: @insensitive_fg_color;
 }

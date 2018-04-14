@@ -14,6 +14,7 @@
  ******************/
 
 filechooser #pathbarbox {
+    background-color: @theme_bg_color;
     border-bottom: 1px solid @border;
 }
 
