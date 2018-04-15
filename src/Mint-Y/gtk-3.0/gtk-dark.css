@@ -2975,7 +2975,10 @@ NautilusListView .view, NautilusListView iconview {
   box-shadow: inset 1px 0 #8fa876, inset -1px 0 #8fa876, inset 0 1px #8fa876, inset 0 -1px #8fa876; }
 .nemo-window .places-treeview {
   -NemoPlacesTreeView-disk-full-bg-color: #C3C3C3;
-  -NemoPlacesTreeView-disk-full-fg-color: #76905b; }
+  -NemoPlacesTreeView-disk-full-fg-color: #76905b;
+  -GtkTreeView-vertical-separator: 7; }
+  .nemo-window .places-treeview .view.cell:hover, .nemo-window .places-treeview iconview.cell:hover {
+    background-color: rgba(195, 195, 195, 0.15); }
 .nemo-window .nemo-places-sidebar.frame {
   border-width: 0; }
 .nemo-window .sidebar {
