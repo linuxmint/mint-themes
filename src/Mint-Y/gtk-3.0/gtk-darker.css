@@ -3015,21 +3015,6 @@ NautilusListView .view, NautilusListView iconview {
   background-color: #454545;
   color: #C3C3C3; }
 
-CajaWindow EelEditableLabel.entry {
-  transition: none; }
-CajaWindow FMTreeView .view, CajaWindow FMTreeView iconview,
-CajaWindow CajaNotesViewer .view,
-CajaWindow CajaNotesViewer iconview,
-CajaWindow CajaPlacesSidebar .view,
-CajaWindow CajaPlacesSidebar iconview,
-CajaWindow CajaHistorySidebar .view,
-CajaWindow CajaHistorySidebar iconview,
-CajaWindow CajaInformationPanel GtkBox,
-CajaWindow CajaEmblemSidebar GtkViewport {
-  background-color: #454545;
-  color: #C3C3C3;
-  border-width: 0px; }
-
 .gedit-headerbar-paned {
   color: #252525; }
 
@@ -3403,18 +3388,20 @@ SynapseGuiViewVirgilio *:selected {
 
 .xfce4-panel.panel {
   background-color: #393939; }
-  .xfce4-panel.panel .button.flat {
+  .xfce4-panel.panel button.flat, .xfce4-panel.panel button.sidebar-button {
     color: #DADADA;
     background-color: rgba(57, 57, 57, 0);
     border-radius: 0;
     border: none; }
-    .xfce4-panel.panel .button.flat:hover {
+    .xfce4-panel.panel button.flat:hover, .xfce4-panel.panel button.sidebar-button:hover {
       border: none;
-      background-color: #535353; }
-    .xfce4-panel.panel .button.flat:active, .xfce4-panel.panel .button.flat:checked {
+      background-color: #9ab87c; }
+    .xfce4-panel.panel button.flat:active, .xfce4-panel.panel button.sidebar-button:active, .xfce4-panel.panel button.flat:checked, .xfce4-panel.panel button.sidebar-button:checked {
       color: #9ab87c;
       border: none;
-      background-color: #272727; }
+      background-color: #9ab87c; }
+  .xfce4-panel.panel label {
+    color: #DADADA; }
 
 .gnome-panel-menu-bar button:not(#tasklist-button),
 .mate-panel-menu-bar button:not(#tasklist-button) {
