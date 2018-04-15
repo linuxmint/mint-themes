@@ -3013,6 +3013,12 @@ NautilusListView .view, NautilusListView iconview {
   .titlebar .nemo-window widget .toolbar button.titlebutton {
     padding: 0; }
 
+.caja-navigation-window .caja-side-pane .view, .caja-navigation-window .caja-side-pane iconview,
+.caja-navigation-window .caja-side-pane textview text,
+.caja-navigation-window .caja-side-pane notebook {
+  background-color: #454545;
+  color: #C3C3C3; }
+
 CajaWindow EelEditableLabel.entry {
   transition: none; }
 CajaWindow FMTreeView .view, CajaWindow FMTreeView iconview,

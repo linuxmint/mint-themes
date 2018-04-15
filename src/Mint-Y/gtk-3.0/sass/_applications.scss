@@ -285,19 +285,17 @@ NautilusListView .view { border-bottom: 1px solid $borders_color; }
 //
 // Caja
 //
-CajaWindow {
 
-  EelEditableLabel.entry { transition: none; } // Workaround for invisible text in rename entry
+.caja-navigation-window {
 
-  FMTreeView .view,
-  CajaNotesViewer .view,
-  CajaPlacesSidebar .view,
-  CajaHistorySidebar .view,
-  CajaInformationPanel GtkBox,
-  CajaEmblemSidebar GtkViewport {
-    background-color: $dark_sidebar_bg;
-    color: $dark_sidebar_fg;
-    border-width: 0px;
+  .caja-side-pane {
+
+    .view,
+    textview text,
+    notebook {
+      background-color: $dark_sidebar_bg;
+      color: $dark_sidebar_fg;
+    }
   }
 }
 
