@@ -2966,40 +2966,46 @@ NautilusQueryEditor .search-bar.toolbar {
 NautilusListView .view, NautilusListView iconview {
   border-bottom: 1px solid #292929; }
 
-.nemo-window .nemo-window-pane widget.entry {
-  border: 1px solid;
-  border-radius: 3px;
-  color: #DADADA;
-  border-color: #292929;
-  background-color: #404040;
-  box-shadow: inset 1px 0 #8fa876, inset -1px 0 #8fa876, inset 0 1px #8fa876, inset 0 -1px #8fa876; }
-.nemo-window .places-treeview {
-  -NemoPlacesTreeView-disk-full-bg-color: #C3C3C3;
-  -NemoPlacesTreeView-disk-full-fg-color: #76905b;
-  -GtkTreeView-vertical-separator: 7; }
-  .nemo-window .places-treeview .view.cell:hover, .nemo-window .places-treeview iconview.cell:hover {
-    background-color: rgba(195, 195, 195, 0.15); }
-.nemo-window .nemo-places-sidebar.frame {
-  border-width: 0; }
-.nemo-window .sidebar {
-  color: #C3C3C3;
-  background-color: #353535; }
-  .nemo-window .sidebar .view, .nemo-window .sidebar iconview, .nemo-window .sidebar row {
-    background-color: transparent;
-    color: #C3C3C3; }
-    .nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar row.cell:selected {
-      background-color: #8fa876;
-      color: #ffffff; }
-    .nemo-window .sidebar .view.expander, .nemo-window .sidebar iconview.expander, .nemo-window .sidebar row.expander {
-      color: #7c7c7c; }
-      .nemo-window .sidebar .view.expander:hover, .nemo-window .sidebar iconview.expander:hover, .nemo-window .sidebar row.expander:hover {
-        color: #C3C3C3; }
-  .nemo-window .sidebar separator {
-    background-color: transparent; }
-.nemo-window widget .toolbar .image-button, .nemo-window widget .toolbar headerbar button.titlebutton, headerbar .nemo-window widget .toolbar button.titlebutton,
-.nemo-window widget .toolbar .titlebar button.titlebutton,
-.titlebar .nemo-window widget .toolbar button.titlebutton {
-  padding: 0; }
+.nemo-window {
+  /* This is to keep the separator next to the sidebar dark so we don't see a gap
+     between it and the trash bar */ }
+  .nemo-window .nemo-window-pane widget.entry {
+    border: 1px solid;
+    border-radius: 3px;
+    color: #DADADA;
+    border-color: #292929;
+    background-color: #404040;
+    box-shadow: inset 1px 0 #8fa876, inset -1px 0 #8fa876, inset 0 1px #8fa876, inset 0 -1px #8fa876; }
+  .nemo-window .nemo-inactive-pane .view, .nemo-window .nemo-inactive-pane iconview {
+    background-color: #333333; }
+  .nemo-window .places-treeview {
+    -NemoPlacesTreeView-disk-full-bg-color: #C3C3C3;
+    -NemoPlacesTreeView-disk-full-fg-color: #76905b;
+    -GtkTreeView-vertical-separator: 7; }
+    .nemo-window .places-treeview .view.cell:hover, .nemo-window .places-treeview iconview.cell:hover {
+      background-color: rgba(195, 195, 195, 0.15); }
+  .nemo-window .nemo-places-sidebar.frame {
+    border-width: 0; }
+  .nemo-window .sidebar {
+    color: #C3C3C3;
+    background-color: #353535; }
+    .nemo-window .sidebar .view, .nemo-window .sidebar iconview, .nemo-window .sidebar row {
+      background-color: transparent;
+      color: #C3C3C3; }
+      .nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar row.cell:selected {
+        background-color: #8fa876;
+        color: #ffffff; }
+      .nemo-window .sidebar .view.expander, .nemo-window .sidebar iconview.expander, .nemo-window .sidebar row.expander {
+        color: #7c7c7c; }
+        .nemo-window .sidebar .view.expander:hover, .nemo-window .sidebar iconview.expander:hover, .nemo-window .sidebar row.expander:hover {
+          color: #C3C3C3; }
+  .nemo-window grid > paned > separator {
+    background-image: none;
+    background-color: #353535; }
+  .nemo-window widget .toolbar .image-button, .nemo-window widget .toolbar headerbar button.titlebutton, headerbar .nemo-window widget .toolbar button.titlebutton,
+  .nemo-window widget .toolbar .titlebar button.titlebutton,
+  .titlebar .nemo-window widget .toolbar button.titlebutton {
+    padding: 0; }
 
 CajaWindow EelEditableLabel.entry {
   transition: none; }
