@@ -767,6 +767,7 @@ SynapseGuiViewVirgilio *:selected { background-color: $selected_bg_color; }
 // Xfce Panel
 .xfce4-panel.panel {
   background-color: #393939;
+  color: $panel_fg;
 
   button.flat {
     color: $panel_fg;
@@ -776,16 +777,14 @@ SynapseGuiViewVirgilio *:selected { background-color: $selected_bg_color; }
 
     &:hover {
       border: none;
-      background-color: $selected_bg_color;
+      background-color: lighten($panel_bg, 10%);
     }
     &:active, &:checked {
-      color: $selected_bg_color;
+      color: $selected_fg_color;
       border: none;
       background-color: $selected_bg_color;
     }
   }
-
-  label { color: $panel_fg; }
 }
 
 %panelbutton {

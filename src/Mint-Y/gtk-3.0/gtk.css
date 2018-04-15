@@ -3391,7 +3391,8 @@ SynapseGuiViewVirgilio *:selected {
     background-color: rgba(154, 184, 124, 0.2); }
 
 .xfce4-panel.panel {
-  background-color: #393939; }
+  background-color: #393939;
+  color: #DADADA; }
   .xfce4-panel.panel button.flat, .xfce4-panel.panel button.sidebar-button {
     color: #DADADA;
     background-color: rgba(57, 57, 57, 0);
@@ -3399,13 +3400,11 @@ SynapseGuiViewVirgilio *:selected {
     border: none; }
     .xfce4-panel.panel button.flat:hover, .xfce4-panel.panel button.sidebar-button:hover {
       border: none;
-      background-color: #9ab87c; }
+      background-color: #535353; }
     .xfce4-panel.panel button.flat:active, .xfce4-panel.panel button.sidebar-button:active, .xfce4-panel.panel button.flat:checked, .xfce4-panel.panel button.sidebar-button:checked {
-      color: #9ab87c;
+      color: #ffffff;
       border: none;
       background-color: #9ab87c; }
-  .xfce4-panel.panel label {
-    color: #DADADA; }
 
 .gnome-panel-menu-bar button:not(#tasklist-button),
 .mate-panel-menu-bar button:not(#tasklist-button) {
