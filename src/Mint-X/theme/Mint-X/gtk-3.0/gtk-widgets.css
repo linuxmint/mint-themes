@@ -811,8 +811,7 @@ headerbar separator {
 }
 
 .titlebar .title,
-headerbar .title
-/*.titlebar .title*/ {
+headerbar .title {
     color: shade(@theme_bg_color, 0.5);
     font-weight: bold;
     padding: 0 12px;
@@ -820,19 +819,14 @@ headerbar .title
 }
 
 .titlebar .subtitle,
-headerbar .subtitle
-/*.titlebar .subtitle*/ {
+headerbar .subtitle {
     color: shade(@theme_bg_color, 0.5);
     font-size: smaller;
     padding: 0 12px;
 }
 
 .titlebar .title:backdrop,
-.titlebar .subtitle:backdrop
-/*.header-bar .title:backdrop,
-.titlebar .title:backdrop,
-.header-bar .subtitle:backdrop,
-.titlebar .subtitle:backdrop*/ {
+.titlebar .subtitle:backdrop {
     color: shade(@theme_bg_color, 0.8);
     text-shadow: none;
 }
@@ -848,12 +842,12 @@ headerbar .subtitle
  * iconview *
  ************/
 
-GtkIconView.cell {
+iconview.cell {
     padding: 0;
 }
 
-GtkIconView.cell:selected,
-GtkIconView.cell:selected:focus {
+iconview.cell:selected,
+iconview.cell:selected:focus {
     border: 1px solid @border;
     border-radius: 3px;
     background-image: linear-gradient(to bottom,
@@ -864,18 +858,6 @@ GtkIconView.cell:selected:focus {
 /*******************
  * image and label *
  *******************/
-GtkImage,
-GtkImage:active,
-GtkImage:disabled,
-GtkLabel,
-GtkLabel:active,
-GtkLabel:disabled,
-GtkBox,
-GtkBox:disabled,
-GtkGrid,
-GtkGrid:disabled {
-    background-color: transparent;
-}
 
 .view.dim-label,
 .dim-label {
@@ -885,11 +867,6 @@ GtkGrid:disabled {
 .dim-label:selected,
 .dim-label:selected:focus {
     color: alpha(@theme_selected_fg_color, 0.6);
-}
-
-label selection { background-color: red; }
-label:selected {
-    background-color: red;
 }
 
 /***********
@@ -2364,9 +2341,6 @@ switch:disabled:checked {
     text-shadow: none;
 }
 
-GtkSwitch.slider {
-}
-
 /*******************
  * symbolic images *
  *******************/
@@ -2520,8 +2494,8 @@ iconview text:selected:focus,
 textview text:selected:focus,
 .view text selection:focus,
 iconview text selection:focus,
-.view text selection, iconview
-text selection,
+.view text selection,
+iconview text selection,
 textview text selection:focus,
 textview text selection,
 entry selection:focus,
@@ -2531,6 +2505,7 @@ entry selection {
 
 row:selected label,
 label:selected,
+label selection,
 .view:selected,
 iconview:selected,
 .view:selected:focus,
