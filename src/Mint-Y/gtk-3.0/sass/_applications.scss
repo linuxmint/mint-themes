@@ -273,10 +273,7 @@ NautilusListView .view { border-bottom: 1px solid $borders_color; }
 
   /* This is to keep the separator next to the sidebar dark so we don't see a gap
      between it and the trash bar */
-  grid > paned > separator {
-    background-image: none;
-    background-color: $dark_sidebar_bg;
-  }
+  grid > paned > separator { background-image: _solid($dark_sidebar_bg); }
 
   // Fix padding of the statusbar buttons
   & widget .toolbar .image-button { padding: 0; }

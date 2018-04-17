@@ -3002,8 +3002,7 @@ NautilusListView .view, NautilusListView iconview {
         .nemo-window .sidebar .view.expander:hover, .nemo-window .sidebar iconview.expander:hover, .nemo-window .sidebar row.expander:hover {
           color: #C3C3C3; }
   .nemo-window grid > paned > separator {
-    background-image: none;
-    background-color: #454545; }
+    background-image: linear-gradient(to bottom, #454545, #454545); }
   .nemo-window widget .toolbar .image-button, .nemo-window widget .toolbar headerbar button.titlebutton, headerbar .nemo-window widget .toolbar button.titlebutton,
   .nemo-window widget .toolbar .titlebar button.titlebutton,
   .titlebar .nemo-window widget .toolbar button.titlebutton {
