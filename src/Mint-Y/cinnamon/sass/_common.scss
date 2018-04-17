@@ -4,7 +4,7 @@ $asset_path: if($variant == 'dark', dark-assets, light-assets);
 // Globals
 //
 $font-size: 9;
-$font-family: sans, Sans-Serif;
+$font-family: Noto Sans, Sans-Serif;
 
 stage {
   font-family: $font-family;
