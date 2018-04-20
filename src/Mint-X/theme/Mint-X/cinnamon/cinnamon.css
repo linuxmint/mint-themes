@@ -1476,7 +1476,6 @@ StScrollBar StButton#vhandle:hover {
     border-radius: 3px;
     width: 16px;
     height: 16px;
-    padding: 1px;
 }
 
 .sound-player StButton StIcon {
@@ -1484,7 +1483,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .sound-player StButton:small StIcon {
-    icon-size: 1em;
+    icon-size: 1.2em;
 }
 
 .sound-player StButton:hover,
