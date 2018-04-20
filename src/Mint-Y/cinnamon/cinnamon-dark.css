@@ -1166,8 +1166,7 @@ StScrollBar {
     spacing: 0.5em; }
     .sound-player > StBoxLayout:first-child StButton:small {
       width: 16px;
-      height: 8px;
-      padding: 1px; }
+      height: 8px; }
       .sound-player > StBoxLayout:first-child StButton:small StIcon {
         icon-size: 12px; }
   .sound-player-generic-coverart {
@@ -1202,7 +1201,7 @@ StScrollBar {
     .sound-player-overlay StBoxLayout {
       padding-top: 2px; }
     .sound-player-overlay > StBoxLayout {
-      spacing: 5px; }
+      spacing: 0 16px 8px; }
   .sound-player .slider {
     height: 0.5em;
     padding: 0;

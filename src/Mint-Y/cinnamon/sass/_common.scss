@@ -1536,7 +1536,6 @@ StScrollBar {
     StButton:small {
       width: 16px;
       height: 8px;
-      padding: 1px;
 
       StIcon { icon-size: 12px; }
     }
@@ -1575,7 +1574,7 @@ StScrollBar {
     }
 
     >StBoxLayout {
-      spacing: 5px;
+      spacing: 0 16px 8px;
     }
   }
 
