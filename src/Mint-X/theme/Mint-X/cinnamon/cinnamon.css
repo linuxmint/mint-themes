@@ -1430,26 +1430,19 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .window-list-item-box .progress {
-    margin: 1px 0 0 0;
-    border-radius: 3px 3px 0 0;
-    background-gradient-direction: vertical;
-    background-gradient-start: rgba(172, 205, 138, 0.5);
-    background-gradient-end: rgba(172, 205, 138, 0.9);
+    border-image: url("panel-assets/progress.svg") 6;
 }
 
 .panel-top .window-list-item-box .progress {
-    margin: 0 0 1px 0;
-    border-radius: 0 0 3px 3px;
+    border-image: url("panel-assets/progress-top.svg") 6;
 }
 
 .panel-left .window-list-item-box .progress {
-    margin: 0 1px 0 0;
-    border-radius: 0 3px 3px 0;
+    border-image: url("panel-assets/progress-left.svg") 6;
 }
 
 .panel-right .window-list-item-box .progress {
-    margin: 0 0 0 1px;
-    border-radius: 3px 0 0 3px;
+    border-image: url("panel-assets/progress-right.svg") 6;
 }
 
 .window-list-preview {
