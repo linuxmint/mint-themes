@@ -15,7 +15,7 @@
    viewBox="0 0 16 16"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
    sodipodi:docname="hover-3-left.svg">
   <defs
      id="defs4">
@@ -69,9 +69,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="11.2"
-     inkscape:cx="0.11669064"
-     inkscape:cy="8.1181056"
+     inkscape:zoom="63.356768"
+     inkscape:cx="9.8238663"
+     inkscape:cy="8.7309716"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -81,7 +81,7 @@
      inkscape:window-width="1063"
      inkscape:window-height="689"
      inkscape:window-x="40"
-     inkscape:window-y="122"
+     inkscape:window-y="57"
      inkscape:window-maximized="0">
     <inkscape:grid
        type="xygrid"
@@ -95,7 +95,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -106,7 +106,7 @@
      transform="translate(0,-1036.3622)">
     <g
        id="g5602"
-       transform="matrix(0,-1,1,0,-1041.4336,1052.3622)">
+       transform="matrix(0,-1,-1,0,1052.3622,1052.3622)">
       <rect
          ry="3.6024806"
          rx="2.8014491"

@@ -15,7 +15,7 @@
    viewBox="0 0 16 16"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
    sodipodi:docname="pressed-top.svg">
   <defs
      id="defs4">
@@ -40,7 +40,7 @@
        x2="8"
        y2="1052.3622"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(3.3059939e-5,-5.0001468)" />
+       gradientTransform="translate(3.3059939e-5,-2088.7246)" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -50,7 +50,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="11.2"
-     inkscape:cx="5.8190208"
+     inkscape:cx="-9.9845506"
      inkscape:cy="7.5046445"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -75,7 +75,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -90,8 +90,9 @@
        width="14.941061"
        height="18.012402"
        x="0.52946943"
-       y="1032.8917"
+       y="-1050.8328"
        rx="2.8014491"
-       ry="3.6024806" />
+       ry="3.6024806"
+       transform="scale(1,-1)" />
   </g>
 </svg>

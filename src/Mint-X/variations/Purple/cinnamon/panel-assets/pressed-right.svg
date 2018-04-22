@@ -15,7 +15,7 @@
    viewBox="0 0 16 16"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
    sodipodi:docname="pressed-right.svg">
   <defs
      id="defs4">
@@ -40,7 +40,7 @@
        x2="8"
        y2="1052.3622"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(-1052.3622,-1036.4336)" />
+       gradientTransform="translate(-1052.3622,-1036.3623)" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -50,19 +50,19 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="11.2"
-     inkscape:cx="-1.4275337"
-     inkscape:cy="8.1193264"
+     inkscape:cx="-2.9204831"
+     inkscape:cy="8.1149865"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
      units="px"
      inkscape:snap-bbox="true"
      inkscape:bbox-nodes="true"
-     inkscape:window-width="1063"
-     inkscape:window-height="689"
-     inkscape:window-x="42"
-     inkscape:window-y="45"
-     inkscape:window-maximized="0">
+     inkscape:window-width="1280"
+     inkscape:window-height="746"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1">
     <inkscape:grid
        type="xygrid"
        id="grid3336" />
@@ -75,7 +75,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -90,9 +90,9 @@
        width="14.941061"
        height="18.012402"
        x="-1051.8328"
-       y="1.4581289"
+       y="1.5294695"
        rx="2.8014491"
        ry="3.6024806"
-       transform="matrix(0,-1,1,0,0,0)" />
+       transform="rotate(-90)" />
   </g>
 </svg>
