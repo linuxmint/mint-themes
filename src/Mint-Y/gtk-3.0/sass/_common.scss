@@ -1194,6 +1194,35 @@ headerbar {
     }
   }
 
+  // special case widgets like the linked entry and button in mintinstall toolbar
+  .linked:not(.vertical) entry {
+    box-shadow: none;
+
+    &:focus {
+      @include entry(header-normal);
+      background-clip: padding-box;
+    }
+
+    & + button:last-child {
+      @include button(header-hover);
+
+        &:hover { background-color: lighten($header_button_bg, 15%); }
+        &:active, &:checked { @include button(header-active); }
+        &:disabled {
+          color: transparentize($header_fg, 0.4);
+          background-color: transparentize($header_button_bg, 0.2);
+          border-color: $header_button_border;
+
+          &:checked {
+            background-color: transparentize($selected_bg_color, 0.35);
+            color: transparentize($selected_fg_color, 0.25);
+          }
+        }
+
+        &, &:hover, &:active, &:checked, &:disabled { @extend %linked; }
+    }
+  }
+
   // Headerbar Suggested and Destructive Action buttons
   @each $b_type, $b_color in (suggested-action, $suggested_color),
                              (destructive-action, $destructive_color) {

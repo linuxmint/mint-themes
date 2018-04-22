@@ -536,7 +536,7 @@ headerbar .linked:not(.vertical).path-bar > button:active,
 .primary-toolbar .linked:not(.vertical).path-bar > button:checked,
 headerbar .linked:not(.vertical).path-bar > button:checked,
 .primary-toolbar .linked:not(.vertical).path-bar > button:disabled,
-headerbar .linked:not(.vertical).path-bar > button:disabled, .linked:not(.vertical) > combobox > box > button.combo:dir(ltr), .linked:not(.vertical) > combobox > box > button.combo:dir(rtl) {
+headerbar .linked:not(.vertical).path-bar > button:disabled, .primary-toolbar .linked:not(.vertical) entry + button:last-child, headerbar .linked:not(.vertical) entry + button:last-child, .primary-toolbar .linked:not(.vertical) entry + button:last-child:hover, headerbar .linked:not(.vertical) entry + button:last-child:hover, .primary-toolbar .linked:not(.vertical) entry + button:last-child:active, headerbar .linked:not(.vertical) entry + button:last-child:active, .primary-toolbar .linked:not(.vertical) entry + button:last-child:checked, headerbar .linked:not(.vertical) entry + button:last-child:checked, .primary-toolbar .linked:not(.vertical) entry + button:last-child:disabled, headerbar .linked:not(.vertical) entry + button:last-child:disabled, .linked:not(.vertical) > combobox > box > button.combo:dir(ltr), .linked:not(.vertical) > combobox > box > button.combo:dir(rtl) {
   border-radius: 0;
   border-right-style: none; }
 
@@ -546,7 +546,7 @@ headerbar .linked:not(.vertical).path-bar > button:first-child,
 headerbar .linked:not(.vertical).path-bar > button:first-child:hover,
 headerbar .linked:not(.vertical).path-bar > button:first-child:active,
 headerbar .linked:not(.vertical).path-bar > button:first-child:checked,
-headerbar .linked:not(.vertical).path-bar > button:first-child:disabled {
+headerbar .linked:not(.vertical).path-bar > button:first-child:disabled, .primary-toolbar .linked:not(.vertical) entry + button:first-child:last-child, headerbar .linked:not(.vertical) entry + button:first-child:last-child, headerbar .linked:not(.vertical) entry + button:first-child:last-child:hover, headerbar .linked:not(.vertical) entry + button:first-child:last-child:active, headerbar .linked:not(.vertical) entry + button:first-child:last-child:checked, headerbar .linked:not(.vertical) entry + button:first-child:last-child:disabled {
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px; }
 .linked:not(.vertical) > entry:last-child, .inline-toolbar button:last-child, .linked:not(.vertical) > button:last-child, toolbar.inline-toolbar toolbutton:last-child > button.flat, .inline-toolbar toolbutton:last-child > button.flat, toolbar.inline-toolbar toolbutton:last-child > button.sidebar-button, .inline-toolbar toolbutton:last-child > button.sidebar-button, spinbutton:not(.vertical) button:last-child, spinbutton:not(.vertical) entry:last-child, .linked:not(.vertical) > combobox:last-child > box > button.combo, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child:hover, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child:active, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child:checked, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:last-child:disabled,
@@ -555,7 +555,7 @@ headerbar .linked:not(.vertical).path-bar > button:last-child,
 headerbar .linked:not(.vertical).path-bar > button:last-child:hover,
 headerbar .linked:not(.vertical).path-bar > button:last-child:active,
 headerbar .linked:not(.vertical).path-bar > button:last-child:checked,
-headerbar .linked:not(.vertical).path-bar > button:last-child:disabled {
+headerbar .linked:not(.vertical).path-bar > button:last-child:disabled, .primary-toolbar .linked:not(.vertical) entry + button:last-child, headerbar .linked:not(.vertical) entry + button:last-child, .primary-toolbar .linked:not(.vertical) entry + button:last-child:hover, headerbar .linked:not(.vertical) entry + button:last-child:hover, .primary-toolbar .linked:not(.vertical) entry + button:last-child:active, headerbar .linked:not(.vertical) entry + button:last-child:active, .primary-toolbar .linked:not(.vertical) entry + button:last-child:checked, headerbar .linked:not(.vertical) entry + button:last-child:checked, .primary-toolbar .linked:not(.vertical) entry + button:last-child:disabled, headerbar .linked:not(.vertical) entry + button:last-child:disabled {
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
   border-right-style: solid; }
@@ -565,7 +565,7 @@ headerbar .linked:not(.vertical).path-bar > button:only-child,
 headerbar .linked:not(.vertical).path-bar > button:only-child:hover,
 headerbar .linked:not(.vertical).path-bar > button:only-child:active,
 headerbar .linked:not(.vertical).path-bar > button:only-child:checked,
-headerbar .linked:not(.vertical).path-bar > button:only-child:disabled {
+headerbar .linked:not(.vertical).path-bar > button:only-child:disabled, .primary-toolbar .linked:not(.vertical) entry + button:only-child:last-child, headerbar .linked:not(.vertical) entry + button:only-child:last-child, headerbar .linked:not(.vertical) entry + button:only-child:last-child:hover, headerbar .linked:not(.vertical) entry + button:only-child:last-child:active, headerbar .linked:not(.vertical) entry + button:only-child:last-child:checked, headerbar .linked:not(.vertical) entry + button:only-child:last-child:disabled {
   border-radius: 3px;
   border-style: solid; }
 
@@ -1032,6 +1032,34 @@ headerbar .linked:not(.vertical).path-bar > button {
   .primary-toolbar .linked:not(.vertical).path-bar > button:disabled,
   headerbar .linked:not(.vertical).path-bar > button:disabled {
     color: rgba(81, 67, 67, 0.5); }
+.primary-toolbar .linked:not(.vertical) entry, headerbar .linked:not(.vertical) entry {
+  box-shadow: none; }
+  .primary-toolbar .linked:not(.vertical) entry:focus, headerbar .linked:not(.vertical) entry:focus {
+    color: rgba(81, 67, 67, 0.9);
+    border-color: rgba(81, 67, 67, 0.2);
+    background-color: rgba(255, 255, 255, 0.9);
+    background-clip: padding-box; }
+    .primary-toolbar .linked:not(.vertical) entry:focus image, headerbar .linked:not(.vertical) entry:focus image, .primary-toolbar .linked:not(.vertical) entry:focus image:hover, headerbar .linked:not(.vertical) entry:focus image:hover {
+      color: inherit; }
+  .primary-toolbar .linked:not(.vertical) entry + button:last-child, headerbar .linked:not(.vertical) entry + button:last-child {
+    color: rgba(81, 67, 67, 0.9);
+    outline-color: rgba(81, 67, 67, 0.2);
+    border-color: rgba(81, 67, 67, 0.2);
+    background-color: rgba(245, 245, 245, 0.9); }
+    .primary-toolbar .linked:not(.vertical) entry + button:last-child:hover, headerbar .linked:not(.vertical) entry + button:last-child:hover {
+      background-color: rgba(255, 255, 255, 0.9); }
+    .primary-toolbar .linked:not(.vertical) entry + button:last-child:active, headerbar .linked:not(.vertical) entry + button:last-child:active, .primary-toolbar .linked:not(.vertical) entry + button:last-child:checked, headerbar .linked:not(.vertical) entry + button:last-child:checked {
+      color: #ffffff;
+      outline-color: rgba(255, 255, 255, 0.3);
+      border-color: rgba(81, 67, 67, 0.2);
+      background-color: #9ab87c; }
+    .primary-toolbar .linked:not(.vertical) entry + button:last-child:disabled, headerbar .linked:not(.vertical) entry + button:last-child:disabled {
+      color: rgba(81, 67, 67, 0.5);
+      background-color: rgba(245, 245, 245, 0.7);
+      border-color: rgba(81, 67, 67, 0.2); }
+      .primary-toolbar .linked:not(.vertical) entry + button:last-child:disabled:checked, headerbar .linked:not(.vertical) entry + button:last-child:disabled:checked {
+        background-color: rgba(154, 184, 124, 0.65);
+        color: rgba(255, 255, 255, 0.75); }
 .primary-toolbar button.suggested-action, headerbar button.suggested-action {
   background-clip: border-box;
   color: #ffffff;
