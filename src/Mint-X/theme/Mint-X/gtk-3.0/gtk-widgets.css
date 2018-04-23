@@ -910,6 +910,20 @@ infobar.error label {
     color: @theme_selected_fg_color;
 }
 
+infobar.info button label,
+infobar.question button label,
+infobar.warning button label,
+infobor.error button label {
+    color: @button_fg;
+}
+
+infobar.info button:disabled label,
+infobar.question button:disabled label,
+infobar.warning button:disabled label,
+infobor.error button:disabled label {
+    color: @insensitive_fg_color;
+}
+
 /*************
  * level bar *
  *************/
