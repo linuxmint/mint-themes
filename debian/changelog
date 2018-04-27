@@ -1,3 +1,122 @@
+mint-themes (1.6.2) tara; urgency=medium
+
+  [ JosephMcc ]
+  * Remove an accidentally included folder from Mint-Y
+  * Mint-Y: Add some theming for slick greeter
+  * Mint-Y: Quiet a couple warnings in the gtk3 theme from unused properties
+
+  [ Simon Brown ]
+  * mint-y: add window-list-preview (#109)
+  * mint-x: add window-list-preview (#108)
+
+  [ JosephMcc ]
+  * Mint-Y-Cinnamon: Small cleanup for the window list preview
+  * Mint-Y-Cinnamon: Clean up panel launcher placement
+  * Mint-Y: Make a few improvements for mate-panel
+  * Mint-Y-Cinnamon: Clean up a bunch of unused variables
+  * Mint-Y-Gtk3: Improve the styling of the list box header in Mint settings windows
+  * Mint-Y-Gtk3: Improve the hover effect on listbox rows
+  * Mint-Y-Gtk3: Fix the background color of the stacksidebar listbox
+  * Mint-Y-Gtk3: Fix the color of the sidebar in GtkFileChooser
+  * Mint-Y-Gtk3: Make sure circular buttons are actually circular
+
+  [ itzexor ]
+  * Linux Mint: add window-list-preview class (#110)
+
+  [ JosephMcc ]
+  * Mint-X-Gtk3: Start updating for gtk3.22
+  * Mint-X-Gtk3: Fix theming of wide paned vertical separators
+
+  [ Odyseus ]
+  * [Mint-X/Cinnamon] Cleanup and fixes (#112)
+
+  [ JosephMcc ]
+  * Mint-X-Gtk3: Clean up the styling of cinnamon-apps a bit
+  * Mint-X-Gtk3: Quiet the remaining warnings
+  * Mint-X-Gtk3: Improve check and radio items a bit
+  * Mint-X-Gtk3: Add some basic theming for GtkExpander
+  * Mint-X-Gtk3: Clean up treeviews a bit
+  * Mint-X-Gtk3: Fix a weird border on menus
+  * Mint-X-Gtk3: Fix the style of popover menu items
+  * Mint-X-Gtk3: Do some more small cleanups
+  * Mint-X-Gtk3: Fix a double border on paned sidebars
+  * Mint-X-Gtk3: Add theming for terminal and xed
+  * Mint-X-Gtk3: Hide separator in file and font buttons
+  * Mint-X-Gtk3: Fix styling of the appmenu button
+  * Mint-X-Gtk3: Remove unused pix theming
+  * Mint-X-Gtk3: Add styling for nemo rename entries
+  * Mint-X-Gtk3: Improve some insensitive icon and label colors
+  * Mint-X-Gtk3: Fix theming for GtkCalendar
+  * Mint-X-Gtk3: Clean up some commented out garbage
+  * Mint-X-Gtk3: Fix GtkAssistant styling
+
+  [ Simon Brown ]
+  * Mint-Y: correct font to font-size in window list preview (#114)
+
+  [ JosephMcc ]
+  * Mint-X-Gtk3: Fix the styling for GtkColorChooser
+  * Mint-X-Gtk3: Update some theming for content views
+
+  [ Odyseus ]
+  * Clean up unused styles
+  * Fixes
+  * Remove unused style and unused images
+  * Styling homogenization
+
+  [ JosephMcc ]
+  * Mint-X-Gtk3: Add assets for header/titlebar window controls
+  * Mint-X-Gtk3: Update theming for lightdm
+  * Mint-X-Gtk3: Remove unused asset images
+  * Mint-X-Gtk3: Update infobar styling
+  * Mint-X-Gtk3: Fix toolbar padding
+
+  [ Odyseus ]
+  * [Mint-X/Cinnamon] Cleanup and fixes (#113)
+
+  [ JosephMcc ]
+  * Mint-X-Gtk3: Fix some header/titlebar padding issues
+  * Mint-X-Gtk3: Add support for GtkShortcutsWindow
+  * Mint-Y-Gtk3: Fix oversized tabs in places like gnome terminal notebooks
+  * Mint-Y-Gtk3: Add back just a bit of padding to buttons in terminal headers
+  * Mint-Y-Gtk3: Fix disabled colors in dark header/toolbars
+
+  [ Odyseus ]
+  * [Mint-X/Cinnamon] Fix modal dialogs button shifting when buttons are focused (#116)
+
+  [ JosephMcc ]
+  * Mint-X-Gtk3: Fix a few random selectors
+  * Mint-X-Gtk3: Add some catch all selectors for selected items
+  * Mint-Y-Gtk3: Adapt to the changes in the nemo sidebar
+  * Mint-Y-Gtk3: Couple of nemo improvements
+  * Mint-Y-Gtk3: Use a dark sidebar in caja
+  * Mint-Y-Gtk3: Update some xfce4 panel theming
+  * Mint-Y: More Xfce4 panel fixes
+
+  [ NikoKrause ]
+  * Mint-Y: Add sticky/shade/menu icons (#111)
+
+  [ JosephMcc ]
+  * Mint-Y-Cinnamon: Use Noto Sans as the base font
+  * Mint-X-Gtk3: Clean up a couple of errors and unused selectors
+  * Mint-Y-Gtk3: Fix the Nemo sidebar separator
+
+  [ Clement Lefebvre ]
+  * Cinnamon: Sound applet player buttons
+  * Cinnamon: Also modify Mint-X (missing in previous commit)
+  * Cinnamon: window-list modifications in LM theme
+
+  [ JosephMcc ]
+  * Mint-Y-Gtk3: Improve the styling of the linked entry in mintinstall
+
+  [ NikoKrause ]
+  * Mint-X*: Improve assets and progress colors (#118)
+
+  [ JosephMcc ]
+  * Mint-X-Gtk3: Fix the color of buttons inside of infobars
+  * All-Gtk3: Add proper support for GtkTreeview dnd
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 27 Apr 2018 13:29:37 +0100
+
 mint-themes (1.6.1) tara; urgency=medium
 
   [ JosephMcc ]
