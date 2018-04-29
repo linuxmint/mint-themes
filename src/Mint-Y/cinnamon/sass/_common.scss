@@ -301,14 +301,14 @@ StScrollBar {
   .popup-menu-item {
     padding: .4em 1.75em;
     spacing: 1em;
-    border: 1px solid transparent;
+    // border: 1px solid transparent;
     border-left-width: 0;
     border-right-width: 0;
 
     &:active {
-      color: $fg_color;
-      border-color: transparentize($fg_color, 0.89);
-      background-color: transparentize($fg_color, 0.92);
+      color: $selected_fg_color;
+      // border-color: transparentize($fg_color, 0.89);
+      background-color: $selected_bg_color;
     }
     &:insensitive {
       color: transparentize($fg_color, 0.5);
@@ -1233,7 +1233,7 @@ StScrollBar {
     border: 1px solid rgba(0,0,0,0);
 
     &:hover {
-      background-color: if($variant =='light', darken($bg_color, 2%), lighten($button_bg, 5%));
+      background-color: $selected_bg_color;
     }
   }
 
@@ -1261,7 +1261,9 @@ StScrollBar {
 
     &-selected {
       padding: 7px;
-      @extend %button:hover;
+      color: $selected_fg_color;
+      background-color: $selected_bg_color;
+      border: 1px solid $borders_color;
 
       &:highlighted { font-weight: bold; }
     }
@@ -1276,7 +1278,9 @@ StScrollBar {
 
     &-selected {
       padding: 7px;
-      @extend %button:hover;
+      color: $selected_fg_color;
+      background-color: $selected_bg_color;
+      border: 1px solid $borders_color;
     }
     &-hover {
       background-color: red;

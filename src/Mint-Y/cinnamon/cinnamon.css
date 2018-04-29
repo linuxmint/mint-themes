@@ -14,19 +14,19 @@ stage {
   background-color: whitesmoke;
   border: 1px solid #d9d9d9;
   box-shadow: inset 0 2px 4px rgba(245, 245, 245, 0.05); }
-  .popup-menu #notification .notification-button, .popup-menu #notification .notification-icon-button, .notification-button, .notification-icon-button, .modal-dialog-button-box .modal-dialog-button, .sound-button, .popup-menu #notification .notification-button:focus, .popup-menu #notification .notification-icon-button:focus, .notification-button:focus, .notification-icon-button:focus, .modal-dialog-button-box .modal-dialog-button:focus, .sound-button:focus, .popup-menu #notification .notification-button:hover, .popup-menu #notification .notification-icon-button:hover, .notification-button:hover, .notification-icon-button:hover, .modal-dialog-button-box .modal-dialog-button:hover, .menu-application-button-selected, .menu-category-button-selected, .sound-button:hover, .popup-menu #notification .notification-button:hover:focus, .popup-menu #notification .notification-icon-button:hover:focus, .notification-button:hover:focus, .notification-icon-button:hover:focus, .modal-dialog-button-box .modal-dialog-button:hover:focus, .menu-application-button-selected:focus, .menu-category-button-selected:focus, .sound-button:hover:focus, .popup-menu #notification .notification-button:active, .popup-menu #notification .notification-icon-button:active, .notification-button:active, .notification-icon-button:active, .modal-dialog-button-box .modal-dialog-button:active, .sound-button:active, .popup-menu #notification .notification-button:active:focus, .popup-menu #notification .notification-icon-button:active:focus, .notification-button:active:focus, .notification-icon-button:active:focus, .modal-dialog-button-box .modal-dialog-button:active:focus, .sound-button:active:focus, .popup-menu #notification .notification-button:insensitive, .popup-menu #notification .notification-icon-button:insensitive, .notification-button:insensitive, .notification-icon-button:insensitive, .modal-dialog-button-box .modal-dialog-button:insensitive, .sound-button:insensitive {
+  .popup-menu #notification .notification-button, .popup-menu #notification .notification-icon-button, .notification-button, .notification-icon-button, .modal-dialog-button-box .modal-dialog-button, .sound-button, .popup-menu #notification .notification-button:focus, .popup-menu #notification .notification-icon-button:focus, .notification-button:focus, .notification-icon-button:focus, .modal-dialog-button-box .modal-dialog-button:focus, .sound-button:focus, .popup-menu #notification .notification-button:hover, .popup-menu #notification .notification-icon-button:hover, .notification-button:hover, .notification-icon-button:hover, .modal-dialog-button-box .modal-dialog-button:hover, .sound-button:hover, .popup-menu #notification .notification-button:hover:focus, .popup-menu #notification .notification-icon-button:hover:focus, .notification-button:hover:focus, .notification-icon-button:hover:focus, .modal-dialog-button-box .modal-dialog-button:hover:focus, .sound-button:hover:focus, .popup-menu #notification .notification-button:active, .popup-menu #notification .notification-icon-button:active, .notification-button:active, .notification-icon-button:active, .modal-dialog-button-box .modal-dialog-button:active, .sound-button:active, .popup-menu #notification .notification-button:active:focus, .popup-menu #notification .notification-icon-button:active:focus, .notification-button:active:focus, .notification-icon-button:active:focus, .modal-dialog-button-box .modal-dialog-button:active:focus, .sound-button:active:focus, .popup-menu #notification .notification-button:insensitive, .popup-menu #notification .notification-icon-button:insensitive, .notification-button:insensitive, .notification-icon-button:insensitive, .modal-dialog-button-box .modal-dialog-button:insensitive, .sound-button:insensitive {
     border-radius: 2px; }
   .popup-menu #notification .notification-button:focus, .popup-menu #notification .notification-icon-button:focus, .notification-button:focus, .notification-icon-button:focus, .modal-dialog-button-box .modal-dialog-button:focus, .sound-button:focus {
     color: #4a4a4a;
     background-color: whitesmoke;
     border: 1px solid #9ab87c;
     box-shadow: inset 0 2px 4px rgba(245, 245, 245, 0.05); }
-  .popup-menu #notification .notification-button:hover, .popup-menu #notification .notification-icon-button:hover, .notification-button:hover, .notification-icon-button:hover, .modal-dialog-button-box .modal-dialog-button:hover, .menu-application-button-selected, .menu-category-button-selected, .sound-button:hover {
+  .popup-menu #notification .notification-button:hover, .popup-menu #notification .notification-icon-button:hover, .notification-button:hover, .notification-icon-button:hover, .modal-dialog-button-box .modal-dialog-button:hover, .sound-button:hover {
     color: #4a4a4a;
     background-color: white;
     border: 1px solid #d9d9d9;
     box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.05); }
-  .popup-menu #notification .notification-button:hover:focus, .popup-menu #notification .notification-icon-button:hover:focus, .notification-button:hover:focus, .notification-icon-button:hover:focus, .modal-dialog-button-box .modal-dialog-button:hover:focus, .menu-application-button-selected:focus, .menu-category-button-selected:focus, .sound-button:hover:focus {
+  .popup-menu #notification .notification-button:hover:focus, .popup-menu #notification .notification-icon-button:hover:focus, .notification-button:hover:focus, .notification-icon-button:hover:focus, .modal-dialog-button-box .modal-dialog-button:hover:focus, .sound-button:hover:focus {
     color: #4a4a4a;
     background-color: white;
     border: 1px solid #9ab87c;
@@ -236,13 +236,11 @@ StScrollBar {
   .menu .popup-menu-item {
     padding: .4em 1.75em;
     spacing: 1em;
-    border: 1px solid transparent;
     border-left-width: 0;
     border-right-width: 0; }
     .menu .popup-menu-item:active {
-      color: #4a4a4a;
-      border-color: rgba(74, 74, 74, 0.11);
-      background-color: rgba(74, 74, 74, 0.08); }
+      color: #ffffff;
+      background-color: #9ab87c; }
     .menu .popup-menu-item:insensitive {
       color: rgba(74, 74, 74, 0.5);
       background: none; }
@@ -956,7 +954,7 @@ StScrollBar {
   padding: 10px;
   border: 1px solid transparent; }
   .menu-favorites-button:hover {
-    background-color: #ebebeb; }
+    background-color: #9ab87c; }
 .menu-places-box {
   padding: 10px;
   border: 0px solid red; }
@@ -972,7 +970,10 @@ StScrollBar {
   .menu-application-button:highlighted {
     font-weight: bold; }
   .menu-application-button-selected {
-    padding: 7px; }
+    padding: 7px;
+    color: #ffffff;
+    background-color: #9ab87c;
+    border: 1px solid #d9d9d9; }
     .menu-application-button-selected:highlighted {
       font-weight: bold; }
   .menu-application-button-label:ltr {
@@ -983,7 +984,10 @@ StScrollBar {
   padding: 7px;
   border: 1px solid transparent; }
   .menu-category-button-selected {
-    padding: 7px; }
+    padding: 7px;
+    color: #ffffff;
+    background-color: #9ab87c;
+    border: 1px solid #d9d9d9; }
   .menu-category-button-hover {
     background-color: red;
     border-radius: 2px; }
