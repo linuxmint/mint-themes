@@ -125,10 +125,10 @@ StScrollBar {
 .slider {
   -slider-height: 0.3em;
   -slider-background-color: #202020;
-  -slider-border-color: transparent;
+  -slider-border-color: rgba(47, 47, 47, 0.3);
   -slider-active-background-color: #8fa876;
-  -slider-active-border-color: transparent;
-  -slider-border-width: 0;
+  -slider-active-border-color: rgba(47, 47, 47, 0.3);
+  -slider-border-width: 1px;
   -slider-handle-radius: 0.5em;
   height: 1em;
   min-width: 15em;
@@ -1163,60 +1163,69 @@ StScrollBar {
 .sound-playback-control {
   padding: 5px 10px 10px 10px; }
 
-.sound-player {
-  padding: 0 4px; }
-  .sound-player > StBoxLayout:first-child {
-    padding: 5px 10px 12px 10px;
-    spacing: 0.5em; }
-    .sound-player > StBoxLayout:first-child StButton:small {
-      width: 16px;
-      height: 8px; }
-      .sound-player > StBoxLayout:first-child StButton:small StIcon {
-        icon-size: 12px; }
-  .sound-player-generic-coverart {
-    background: rgba(0, 0, 0, 0.2); }
-  .sound-player-overlay {
-    width: 290px;
-    height: 70px;
-    padding: 15px;
-    spacing: 0.5em;
-    background: rgba(40, 40, 40, 0.9);
-    border: 0px solid #1c1c1c;
-    border-bottom: 1px;
-    color: #c3c3c3; }
-    .sound-player-overlay StButton {
-      width: 22px;
-      height: 13px;
-      padding: 5px;
-      color: #c3c3c3;
-      border-radius: 2px;
-      border: 1px solid rgba(53, 53, 53, 0); }
-      .sound-player-overlay StButton StIcon {
-        icon-size: 16px; }
-      .sound-player-overlay StButton:hover {
-        color: #c3c3c3;
-        border: 1px solid rgba(2, 2, 2, 0.4);
-        background-color: rgba(127, 127, 127, 0.5); }
-      .sound-player-overlay StButton:active {
-        color: #ffffff;
-        background-color: #8fa876;
-        border: 1px solid #8fa876;
-        box-shadow: inset 0 2px 4px #8fa876; }
-    .sound-player-overlay StBoxLayout {
-      padding-top: 2px; }
-    .sound-player-overlay > StBoxLayout {
-      spacing: 0 16px 8px; }
-  .sound-player .slider {
-    height: 0.5em;
-    padding: 0;
-    border: none;
-    -slider-height: 0.5em;
-    -slider-background-color: #222222;
-    -slider-border-color: transparent;
-    -slider-active-background-color: #8fa876;
-    -slider-active-border-color: transparent;
-    -slider-border-width: 0px;
-    -slider-handle-radius: 0px; }
+.sound-player > StBoxLayout:first-child {
+  padding: 5px 10px 12px 10px;
+  spacing: 0.5em; }
+  .sound-player > StBoxLayout:first-child StButton:small {
+    width: 20px;
+    height: 20px;
+    border: 1px solid transparent; }
+    .sound-player > StBoxLayout:first-child StButton:small StIcon {
+      icon-size: 12px; }
+    .sound-player > StBoxLayout:first-child StButton:small:hover {
+      color: #D3D3D3;
+      background-color: #525252;
+      border: 1px solid #202020;
+      box-shadow: inset 0 2px 4px rgba(82, 82, 82, 0.05); }
+    .sound-player > StBoxLayout:first-child StButton:small:active {
+      color: #ffffff;
+      background-color: #8fa876;
+      border: 1px solid #8fa876;
+      box-shadow: inset 0 2px 4px #8fa876; }
+.sound-player-generic-coverart {
+  background: rgba(0, 0, 0, 0.2); }
+.sound-player-overlay {
+  width: 290px;
+  height: 70px;
+  padding: 15px;
+  spacing: 0.5em;
+  background: rgba(47, 47, 47, 0.9);
+  border-top: 1px solid #202020;
+  color: #D3D3D3; }
+  .sound-player-overlay StButton {
+    width: 22px;
+    height: 13px;
+    padding: 5px;
+    color: #D3D3D3;
+    border-radius: 2px;
+    border: 1px solid transparent; }
+    .sound-player-overlay StButton StIcon {
+      icon-size: 16px; }
+    .sound-player-overlay StButton:hover {
+      color: #D3D3D3;
+      background-color: #525252;
+      border: 1px solid #202020;
+      box-shadow: inset 0 2px 4px rgba(82, 82, 82, 0.05); }
+    .sound-player-overlay StButton:active {
+      color: #ffffff;
+      background-color: #8fa876;
+      border: 1px solid #8fa876;
+      box-shadow: inset 0 2px 4px #8fa876; }
+  .sound-player-overlay StBoxLayout {
+    padding-top: 2px; }
+  .sound-player-overlay > StBoxLayout {
+    spacing: 5px; }
+.sound-player .slider {
+  height: 0.5em;
+  padding: 0;
+  border: none;
+  -slider-height: 0.5em;
+  -slider-background-color: #222222;
+  -slider-border-color: transparent;
+  -slider-active-background-color: #8fa876;
+  -slider-active-border-color: transparent;
+  -slider-border-width: 0px;
+  -slider-handle-radius: 0px; }
 
 #workspaceSwitcher {
   spacing: 0px;
