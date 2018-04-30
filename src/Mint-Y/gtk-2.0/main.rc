@@ -714,9 +714,10 @@ style "menu_item"
   bg[SELECTED] = @selected_fg_color
 
 	fg[NORMAL] = @fg_color
-	fg[SELECTED] = @fg_color
+	fg[SELECTED] = @selected_fg_color
+  fg[PRELIGHT] = @selected_fg_color
 
-  text[PRELIGHT] = @fg_color
+  text[PRELIGHT] = @selected_fg_color
 
   engine "pixmap" {
 
