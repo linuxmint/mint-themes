@@ -1,3 +1,13 @@
+mint-themes (1.6.3) tara; urgency=medium
+
+  [ JosephMcc ]
+  * Mint-Y-Cinnamon: Use the selected bg color in menus
+  * Mint-Y-Cinnamon: Fix the styling of the sound applet
+  * Mint-Y-Gtk2: Use selected_bg_color in menus
+  * Mint-Y-Cinnamon: Fix the size of the main menu applet entry
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sun, 06 May 2018 17:40:05 +0100
+
 mint-themes (1.6.2) tara; urgency=medium
 
   [ JosephMcc ]
