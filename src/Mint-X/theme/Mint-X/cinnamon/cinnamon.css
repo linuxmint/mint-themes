@@ -1910,6 +1910,11 @@ StScrollBar StButton#vhandle:hover {
     background-color: rgba(70, 70, 70, 0.4);
 }
 
+.osd-window .level-bar {
+    border-radius: 0.3em;
+    background-color: rgb(172, 205, 138);
+}
+
 /* ===================================================================
  * Snap/Tile Chrome (windowManager.js)
  * ===================================================================*/
