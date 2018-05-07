@@ -1474,14 +1474,6 @@ StScrollBar StButton#vhandle:hover {
     color: rgb(200, 200, 200);
 }
 
-.sound-player StButton StIcon {
-    icon-size: 1.5em;
-}
-
-.sound-player StButton:small StIcon {
-    icon-size: 1.2em;
-}
-
 .sound-player StButton:hover,
 .sound-player StButton:active {
     color: #fff;
