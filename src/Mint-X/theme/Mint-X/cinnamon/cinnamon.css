@@ -1613,7 +1613,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .workspace-graph .workspace:active .windows {
-    -active-window-background: rgba(170, 205, 138, 1.0);
+    -active-window-background: rgba(172, 205, 138, 1.0);
     -active-window-border: rgba(0, 0, 0, 0.9);
     -inactive-window-background: rgba(170, 170, 170, 1.0);
     -inactive-window-border: rgba(0, 0, 0, 0.7);
