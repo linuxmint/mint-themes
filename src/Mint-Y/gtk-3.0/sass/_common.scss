@@ -2754,6 +2754,10 @@ infobar {
     }
 
     *:link { @extend %link_selected; }
+
+    &:disabled {
+      label, image { color: transparentize($selected_fg_color, 0.5); }
+    }
   }
 
   &.warning { background-color: $warning_color; }

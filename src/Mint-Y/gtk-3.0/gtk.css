@@ -2479,6 +2479,8 @@ infobar {
     infobar.info selection, infobar.question selection, infobar.warning selection, infobar.error selection {
       color: #9ab87c;
       background-color: #ffffff; }
+    infobar.info:disabled label, infobar.info:disabled image, infobar.question:disabled label, infobar.question:disabled image, infobar.warning:disabled label, infobar.warning:disabled image, infobar.error:disabled label, infobar.error:disabled image {
+      color: rgba(255, 255, 255, 0.5); }
   infobar.warning {
     background-color: #f27835; }
   infobar.error {
