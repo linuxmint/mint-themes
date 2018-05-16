@@ -38,6 +38,15 @@ CajaWindow CajaEmblemSidebar GtkViewport {
     border-width: 0px;
 }
 
+/***********
+* Terminal *
+************/
+vte-terminal {
+    -TerminalScreen-background-darkness: 0.9;
+    background-color: #3f3f3f;
+    color: #fff;
+}
+
 /****************
  * Mate-Panel *
  ****************/

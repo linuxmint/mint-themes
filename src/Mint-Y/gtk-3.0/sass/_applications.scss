@@ -91,6 +91,15 @@ TerminalWindow {
 }
 
 //
+// MATE Terminal
+//
+vte-terminal {
+  -TerminalScreen-background-darkness: 0.9;
+  background-color: #3f3f3f;
+  color: #fff;
+}
+
+//
 // Nautilus
 //
 .nautilus-canvas-item {

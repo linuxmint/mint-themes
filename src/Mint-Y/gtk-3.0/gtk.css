@@ -2877,6 +2877,11 @@ TerminalWindow .notebook .active-page .button:hover, TerminalWindow .notebook .p
 TerminalWindow .notebook .active-page .button:active, TerminalWindow .notebook .prelight-page .button:active {
   color: #9ab87c; }
 
+vte-terminal {
+  -TerminalScreen-background-darkness: 0.9;
+  background-color: #3f3f3f;
+  color: #fff; }
+
 .nautilus-canvas-item {
   border-radius: 2px; }
 
