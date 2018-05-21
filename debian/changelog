@@ -1,3 +1,10 @@
+mint-themes (1.6.5) tara; urgency=medium
+
+  [ NikoKrause ]
+  * improve window-list progress (#121)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 21 May 2018 12:56:26 +0100
+
 mint-themes (1.6.4) tara; urgency=medium
 
   [ JosephMcc ]
