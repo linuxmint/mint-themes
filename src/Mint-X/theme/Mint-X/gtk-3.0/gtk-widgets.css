@@ -1292,6 +1292,11 @@ notebook.frame > header {
     margin: -1px;
 }
 
+notebook.frame > header > tabs {
+    margin: 0px;
+    margin-right: -2px;
+}
+
 notebook.frame > header.top {
     margin-bottom: 0;
     padding-left: 0;
@@ -1321,7 +1326,7 @@ notebook > stack:not(:only-child) { /* the :not(:only-child) is for "hidden" not
 }
 
 notebook > header {
-    padding: 2px;
+    padding: 0px;
     background-color: @theme_bg_color;
 }
 
@@ -1349,7 +1354,8 @@ notebook > header.top > tabs > tab {
     padding: 2px 10px;
     min-width: 20px;
     min-height: 20px;
-    margin-left: 3px;
+    margin-left: 0px;
+    margin-right: 2px;
     border: 1px solid @border;
     border-radius: 4px 4px 0 0;
     color: @theme_fg_color;
@@ -1363,12 +1369,13 @@ notebook > header.bottom > tabs > tab {
     padding: 2px 10px;
     min-width: 20px;
     min-height: 20px;
-    margin-left: 3px;
+    margin-left: 0px;
+    margin-right: 2px;
     border: 1px solid @border;
-    border-radius: 0 0 4px 4px;
+    border-radius: 4px 4px 0 0;
     color: @theme_fg_color;
     background-color: transparent;
-    background-image: linear-gradient(to top,
+    background-image: linear-gradient(to bottom,
                                       @notebook_tab_bg_a,
                                       @notebook_tab_bg_b);
 }
@@ -1377,9 +1384,10 @@ notebook > header.left > tabs > tab {
     padding: 2px 10px;
     min-width: 20px;
     min-height: 20px;
-    margin-top: 3px;
+    margin-left: 0px;
+    margin-right: 2px;
     border: 1px solid @border;
-    border-radius: 4px 0 0 4px;
+    border-radius: 4px 4px 0 0;
     color: @theme_fg_color;
     background-color: transparent;
     background-image: linear-gradient(to bottom,
@@ -1391,9 +1399,10 @@ notebook > header.right > tabs > tab {
     padding: 2px 10px;
     min-width: 20px;
     min-height: 20px;
-    margin-top: 3px;
+    margin-left: 0px;
+    margin-right: 2px;
     border: 1px solid @border;
-    border-radius: 0 4px 4px 0;
+    border-radius: 4px 4px 0 0;
     color: @theme_fg_color;
     background-color: transparent;
     background-image: linear-gradient(to bottom,
@@ -1522,52 +1531,20 @@ GtkOverlay.osd {
  ******************/
 
 paned > separator {
-    min-width: 1px;
-    min-height: 1px;
-    -gtk-icon-source: none;
     border-style: none;
+    border-image: none;
+    border-width: 0px;
+    border-radius: 0;
     background-color: transparent;
-    background-image: linear-gradient(to bottom, @border, @border);
-    background-size: 1px 1px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: -gtk-scaled(url("assets/pane-separator-grip-vertical.png"), url("assets/pane-separator-grip-vertical@2.png"));
 }
 
-paned > separator.wide {
-    min-width: 5px;
-    min-height: 5px;
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
-}
-
-paned.horizontal > separator.wide {
-    background-size: 2px 24px;
-}
-
-paned.vertical > separator.wide {
-    background-size: 24px 2px;
-}
-
-paned.horizontal > separator {
-    background-repeat: repeat-y;
-}
-
-paned.horizontal > separator:dir(ltr) {
-    margin: 0 -8px 0 0;
-    padding: 0 8px 0 0;
-    background-position: left;
-}
-
-paned.horizontal > separator:dir(rtl) {
-    margin: 0 0 0 -8px;
-    padding: 0 0 0 8px;
-    background-position: right;
-}
-
-paned.vertical > separator {
-    margin: 0 0 -8px 0;
-    padding: 0 0 8px 0;
-    background-repeat: repeat-x;
-    background-position: top;
+paned > separator.vertical {
+    background-image: -gtk-scaled(url("assets/pane-separator-grip.png"), url("assets/pane-separator-grip@2.png"));
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /************
