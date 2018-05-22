@@ -38,6 +38,14 @@ CajaWindow CajaEmblemSidebar GtkViewport {
     border-width: 0px;
 }
 
+.caja-side-pane notebook treeview.view,
+.caja-side-pane notebook textview.view text,
+.caja-side-pane notebook viewport.frame,
+.caja-side-pane notebook widget .vertical {
+    background-color: shade (@caja_sidebar_bg, 1.0);
+    color: @caja_sidebar_fg;
+}
+
 /***********
 * Terminal *
 ************/
@@ -45,6 +53,60 @@ vte-terminal {
     -TerminalScreen-background-darkness: 0.9;
     background-color: #3f3f3f;
     color: #fff;
+}
+
+/**************
+* Mate-Terminal *
+***************/
+
+window.background.mate-terminal > box.vertical > notebook:not(.frame) > stack > box,
+window.background.csd.mate-terminal > box.vertical > notebook:not(.frame) > stack > box,
+window.background.ssd.mate-terminal > box.vertical > notebook:not(.frame) > stack > box,
+window.background.solid-csd.mate-terminal > box.vertical > notebook:not(.frame) > stack > box {
+    border-style: solid;
+    border-width: 0px 1px 1px 1px;
+    border-color: shade(@border, 1.0);
+    margin-right: 0px;
+}
+
+.mate-terminal notebook > header {
+    padding: 0px;
+    margin-right: -2px;
+}
+
+.mate-terminal notebook > header > tabs > tab:checked {
+    background-color: @theme_base_color;
+}
+
+/****************
+ * Pluma *
+ ****************/
+
+.pluma-window notebook > header {
+    padding: 2px;
+    margin-left: -2px;
+    margin-right: -2px;
+    margin-bottom: -3px;
+    padding-bottom: 0;
+}
+
+.pluma-window notebook > header.top > tabs > tab:checked {
+    border-bottom: transparent;
+    background-color: @theme_base_color;
+}
+
+/****************
+ *  pavu-control  *
+ ****************/
+
+window.background > box.vertical > notebook:not(.frame) > stack > box,
+window.background.csd > box.vertical > notebook:not(.frame) > stack > box,
+window.background.ssd > box.vertical > notebook:not(.frame) > stack > box,
+window.background.solid-csd > box.vertical > notebook:not(.frame) > stack > box {
+    border-style: solid;
+    border-width: 0px 1px 1px 1px;
+    border-color: shade(@border, 1.0);
+    margin-right: 0px;
 }
 
 /****************
