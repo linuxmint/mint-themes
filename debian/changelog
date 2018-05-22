@@ -1,3 +1,10 @@
+mint-themes (1.6.6) tara; urgency=medium
+
+  [ mdinslage ]
+  * Mint-X: align tabs, app specific tab coloring,  restore caja sidebar color,  improve pane separator. (#123)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 22 May 2018 13:30:20 +0100
+
 mint-themes (1.6.5) tara; urgency=medium
 
   [ NikoKrause ]
