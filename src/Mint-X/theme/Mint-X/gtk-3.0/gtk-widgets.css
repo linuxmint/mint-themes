@@ -1404,6 +1404,7 @@ notebook > header.right > tabs > tab {
     margin-right: 2px;
     border: 1px solid @border;
     border-radius: 0 4px 4px 0;
+    color: @theme_fg_color;
     background-color: transparent;
     background-image: linear-gradient(to bottom,
                                       @notebook_tab_bg_a,
