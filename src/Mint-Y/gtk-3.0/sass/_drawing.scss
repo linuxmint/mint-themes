@@ -354,7 +354,7 @@
   $_undershoot_color_light: transparentize(white, 0.8);
 
   $_gradient_dir: left;
-  $_dash_bg_size: 10px 1px;
+  $_dash_bg_size: 10px 0px;
   $_gradient_repeat: repeat-x;
   $_bg_pos: center $p;
 
@@ -362,7 +362,7 @@
 
   @if ($p == left) or ($p == right) {
     $_gradient_dir: top;
-    $_dash_bg_size: 1px 10px;
+    $_dash_bg_size: 0px 10px;
     $_gradient_repeat: repeat-y;
     $_bg_pos: $p center;
   }
