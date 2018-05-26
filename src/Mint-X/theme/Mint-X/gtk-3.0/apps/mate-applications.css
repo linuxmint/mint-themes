@@ -46,6 +46,17 @@ CajaWindow CajaEmblemSidebar GtkViewport {
     color: @caja_sidebar_fg;
 }
 
+.caja-navigation-window notebook > header {
+    padding: 0px;
+    margin-right: -2px;
+    margin-bottom: -1px;
+}
+
+.caja-navigation-window notebook > header > tabs > tab:checked {
+    background-color: @theme_base_color;
+    margin-bottom: 1px;
+}
+
 /***********
 * Terminal *
 ************/
