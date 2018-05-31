@@ -2444,28 +2444,21 @@ toolbar.vertical.inline-toolbar:last-child {
  * tooltip *
  ***********/
 
+.tooltip.background,
 tooltip.background {
-    /*padding: 3px;*/
     border: 1px solid @border;
-    /*border-radius: 4px;*/
     background-color: @theme_tooltip_bg_color;
     background-clip: padding-box;
-    /*color: @theme_tooltip_fg_color;
-    box-shadow: none;*/
 }
 
+.tooltip,
 tooltip {
     padding: 3px;
     border-radius: 4px;
     box-shadow: none;
 }
 
-/*tooltip decoration {
-    background-color: transparent;
-}*/
-
 tooltip * {
-    /*padding: 3px;*/
     background-color: transparent;
     color: @theme_tooltip_fg_color;
 }

@@ -2518,18 +2518,23 @@ row:selected button:disabled, infobar.info button:disabled, infobar.question but
     background-color: rgba(255, 255, 255, 0.5);
     border-color: rgba(255, 255, 255, 0.4); }
 
-tooltip {
+tooltip,
+.tooltip {
   color: #4a4a4a;
   border-radius: 2px;
   border: 1px solid #d0d0d0; }
-  tooltip.background {
+  tooltip.background,
+  .tooltip.background {
     background-color: #fbeaa0;
     background-clip: padding-box; }
-    tooltip.background label {
+    tooltip.background label,
+    .tooltip.background label {
       padding: 4px; }
-  tooltip decoration {
+  tooltip decoration,
+  .tooltip decoration {
     background-color: transparent; }
-  tooltip * {
+  tooltip *,
+  .tooltip * {
     background-color: transparent;
     color: #4a4a4a; }
 
