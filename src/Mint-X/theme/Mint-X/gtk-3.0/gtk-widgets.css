@@ -2501,6 +2501,7 @@ treeview.view:selected {
 }
 
 treeview.view.separator {
+    min-height: 2px;
     color: @border;
 }
 
