@@ -1,3 +1,19 @@
+mint-themes (1.6.7) tara; urgency=medium
+
+  [ JosephMcc ]
+  * Mint-X-Gtk3: Color non-empty levelbar blocks
+  * Mint-X-Gtk3: Fix a few issues from bf251054cc15383573c42c0bb29294b675713750
+  * Mint-X-Gtk3: Fix weirdness when hovering treeviews
+  * Gtk3: Add theming for Marco tooltips
+
+  [ Clement Lefebvre ]
+  * Mint-X: Fix rubberband style
+
+  [ mdinslage ]
+  * Cleanup caja tabs (#125)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 01 Jun 2018 11:49:50 +0100
+
 mint-themes (1.6.6) tara; urgency=medium
 
   [ mdinslage ]
