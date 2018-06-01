@@ -113,6 +113,27 @@
     color: @theme_selected_fg_color;
 }
 
+.nemo-window .nemo-window-pane notebook > header {
+    padding: 0px;
+    margin-right: -2px;
+    margin-bottom: -1px;
+}
+
+.nemo-window .nemo-window-pane notebook > header > tabs > tab:checked {
+    background-color: @theme_base_color;
+    margin-bottom: 1px;
+}
+
+.nemo-window .nemo-window-pane > notebook box.vertical > overlay > scrolledwindow.view,
+.nemo-window .nemo-window-pane > notebook box.vertical > overlay > scrolledwindow > treeview.view {
+    background-color: @theme_base_color;
+    border: 1px solid @border;
+}
+
+.nemo-window toolbar.primary-toolbar {
+    margin-bottom: -1px;
+}
+
 /*********************
  * Cinnamon Settings *
  *********************/
