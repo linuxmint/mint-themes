@@ -1540,52 +1540,13 @@ GtkOverlay.osd {
  ******************/
 
 paned > separator {
-    min-width: 1px;
-    min-height: 1px;
-    -gtk-icon-source: none;
     border-style: none;
     background-color: transparent;
-    background-image: linear-gradient(to bottom, @border, @border);
-    background-size: 1px 1px;
 }
 
 paned > separator.wide {
-    min-width: 5px;
-    min-height: 5px;
-    margin: 0;
-    padding: 0;
+    border-style: none;
     background-color: transparent;
-}
-
-paned.horizontal > separator.wide {
-    background-size: 2px 24px;
-}
-
-paned.vertical > separator.wide {
-    background-size: 24px 2px;
-}
-
-paned.horizontal > separator {
-    background-repeat: repeat-y;
-}
-
-paned.horizontal > separator:dir(ltr) {
-    margin: 0 -8px 0 0;
-    padding: 0 8px 0 0;
-    background-position: left;
-}
-
-paned.horizontal > separator:dir(rtl) {
-    margin: 0 0 0 -8px;
-    padding: 0 0 0 8px;
-    background-position: right;
-}
-
-paned.vertical > separator {
-    margin: 0 0 -8px 0;
-    padding: 0 0 8px 0;
-    background-repeat: repeat-x;
-    background-position: top;
 }
 
 /************
