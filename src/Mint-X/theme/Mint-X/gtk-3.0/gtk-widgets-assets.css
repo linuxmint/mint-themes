@@ -159,7 +159,19 @@ menuitem radio:checked:disabled {
  * pane separator *
  ******************/
 
-paned.horizontal > separator.wide {
+paned > separator {
+    background-image: -gtk-scaled(url("assets/pane-separator-grip-vertical.png"), url("assets/pane-separator-grip-vertical@2.png"));
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+paned.vertical > separator {
+    background-image: -gtk-scaled(url("assets/pane-separator-grip.png"), url("assets/pane-separator-grip@2.png"));
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+paned > separator.wide {
     background-image: -gtk-scaled(url("assets/pane-separator-grip-vertical.png"), url("assets/pane-separator-grip-vertical@2.png"));
     background-repeat: no-repeat;
     background-position: center;
