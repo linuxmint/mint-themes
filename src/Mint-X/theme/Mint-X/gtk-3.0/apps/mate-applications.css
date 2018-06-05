@@ -97,7 +97,7 @@ window.background.solid-csd.mate-terminal > box.vertical > notebook:not(.frame) 
     padding: 2px;
     margin-left: -2px;
     margin-right: -2px;
-    margin-bottom: -3px;
+    margin-bottom: -1px;
     padding-bottom: 0;
 }
 
