@@ -1522,10 +1522,6 @@ notebook > header > tabs > tab button.sidebar-button:active:hover {
 
 /* closable page */
 
-paned.horizontal > notebook > stack > box {
-    border-style: solid;
-    border-color: @border;
-    border-width: 0px 1px 1px 1px;
 }
 
 paned.horizontal > notebook > header > tabs {
