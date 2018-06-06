@@ -1102,6 +1102,7 @@ menubar,
 .menubar {
     -GtkWidget-window-dragging: true;
     border: none;
+    background-color: @theme_bg_color;
 }
 
 /***************
