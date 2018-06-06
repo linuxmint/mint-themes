@@ -1,3 +1,15 @@
+mint-themes (1.6.8) tara; urgency=medium
+
+  [ mdinslage ]
+  * restore top scroll indicator in pluma (#128)
+  * Mint-X-Gtk3: more tab alignment fixes (#129)
+
+  [ JosephMcc ]
+  * Mint-Y-Gtk3: Fix selected item colors in the nemo inactive view
+  * Mint-X-Gtk3: Fix transparent background in mate-terminal
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 06 Jun 2018 14:08:06 +0100
+
 mint-themes (1.6.7) tara; urgency=medium
 
   [ JosephMcc ]
