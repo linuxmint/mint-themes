@@ -1522,14 +1522,12 @@ notebook > header > tabs > tab button.sidebar-button:active:hover {
 
 /* closable page */
 
+paned.horizontal > notebook > header > tabs {
+    margin-right: -2px;
 }
 
-paned.horizontal > notebook > header > tabs {
-	margin-right: -2px;
-} 
-
 paned.horizontal > notebook > header > tabs:dir(rtl) {
-	margin-left: -2px;
+    margin-left: -2px;
     padding-right: 2px;
 }
 
