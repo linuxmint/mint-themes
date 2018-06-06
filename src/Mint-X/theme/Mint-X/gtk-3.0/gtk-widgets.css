@@ -1299,15 +1299,21 @@ notebook.frame > header {
     margin: -1px;
 }
 
-/*notebook.frame > header > tabs {
+notebook.frame > header.top > tabs {
     margin: 0px;
     margin-right: -2px;
-}*/
+}
 
 notebook.frame > header.top {
     margin-bottom: 0;
     padding-left: 0;
     padding-right: 0;
+}
+
+notebook.frame > header.top:dir(rtl) {
+    margin-bottom: 0;
+    padding-left: 0px;
+    padding-right: 2px;
 }
 
 notebook.frame > header.bottom {
@@ -1512,6 +1518,19 @@ notebook > header > tabs > tab button.sidebar-button:active:hover {
     background-color: shade(@theme_bg_color, 0.85);
     background-image: none;
     box-shadow: none;
+}
+
+/* closable page */
+
+}
+
+paned.horizontal > notebook > header > tabs {
+	margin-right: -2px;
+} 
+
+paned.horizontal > notebook > header > tabs:dir(rtl) {
+	margin-left: -2px;
+    padding-right: 2px;
 }
 
 /******
