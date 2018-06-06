@@ -245,7 +245,11 @@ NautilusListView .view { border-bottom: 1px solid $borders_color; }
     &:selected { &:focus, & { @extend %selected_items; }}
   }
 
-  .nemo-inactive-pane .view { background-color: darken($base_color, 5%); }
+  .nemo-inactive-pane .view {
+    background-color: darken($base_color, 5%);
+
+    &:selected { &:focus, & { @extend %selected_items; }}
+  }
 
   .places-treeview {
     -NemoPlacesTreeView-disk-full-bg-color: $dark_sidebar_fg;
