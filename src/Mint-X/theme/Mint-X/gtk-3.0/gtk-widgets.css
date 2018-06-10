@@ -1545,11 +1545,13 @@ GtkOverlay.osd {
     background-color: transparent;
 }
 
-.osd.trough {
+.osd.trough,
+.osd .trough {
     background-color: alpha(@osd_bg, 0.6);
 }
 
-.osd.progressbar {
+.osd.progressbar,
+.osd .progressbar {
     background-color: @osd_fg;
 }
 

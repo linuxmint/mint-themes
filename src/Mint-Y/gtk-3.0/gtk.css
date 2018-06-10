@@ -2104,6 +2104,11 @@ progressbar {
     row:selected progressbar trough, infobar progressbar trough {
       background-color: rgba(0, 0, 0, 0.2); }
 
+.osd .progressbar {
+  background-color: #9ab87c; }
+.osd .trough {
+  background-color: white; }
+
 levelbar block {
   min-width: 32px;
   min-height: 1px; }

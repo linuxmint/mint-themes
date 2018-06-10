@@ -2264,6 +2264,12 @@ progressbar {
   }
 }
 
+// Needed by the Mate osd when Marco with compositing is enabled
+.osd {
+  .progressbar { background-color: $selected_bg_color; }
+  .trough { background-color: lighten($osd_bg_color, 75%); }
+}
+
 //
 // Level Bar
 //
