@@ -2585,6 +2585,7 @@ textview text selection,
 entry selection:focus,
 entry selection {
     color: @theme_selected_fg_color;
+    background-color: @theme_selected_bg_color;
 }
 
 label:disabled:selected,
