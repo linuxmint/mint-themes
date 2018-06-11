@@ -101,7 +101,7 @@
 
 <draw_ops name="titlebar_gradient">
 	<rectangle color="gtk:bg[NORMAL]" x="0" y="0" width="width" height="height" filled="true"/>
-	<gradient type="vertical" x="0" y="0" width="width" height="22">
+	<gradient type="vertical" x="0" y="0" width="width" height="top_height+1">
 		<color value="shade/gtk:bg[NORMAL]/1.08"/>
 		<color value="shade/gtk:bg[NORMAL]/1.0"/>
 	</gradient>
