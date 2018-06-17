@@ -1,3 +1,13 @@
+mint-themes (1.6.9) tara; urgency=medium
+
+  [ JosephMcc ]
+  * Gtk3: Add theming for Mate osd window when marco with compositing is enabled
+  * Mint-X-Gtk3: Fix the color of some more selected labels
+  * Mint-X-metacity: Fix black border on focused titlebars under hidpi (#130)
+  * Mint-X-Gtk3: Fix a couple of issues with slick-greeter
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sun, 17 Jun 2018 11:05:35 +0200
+
 mint-themes (1.6.8) tara; urgency=medium
 
   [ mdinslage ]
