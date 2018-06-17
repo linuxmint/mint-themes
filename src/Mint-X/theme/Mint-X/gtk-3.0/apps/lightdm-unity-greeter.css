@@ -81,12 +81,18 @@ window.background.lightdm entry {
     text-shadow: none;
 }
 
+window.background.lightdm entry image {
+    color: white;
+}
+
 window.background.lightdm entry,
 window.background.lightdm entry:hover,
 window.background.lightdm entry:active,
 window.background.lightdm entry:active:focus {
     background-image: none;
     border-image: none;
+
+    caret-color: white;
 }
 
 window.background.lightdm entry:focus {
