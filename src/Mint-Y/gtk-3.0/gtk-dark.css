@@ -3437,15 +3437,19 @@ SynapseGuiViewVirgilio *:selected {
   .xfce4-panel.panel button.flat, .xfce4-panel.panel button.sidebar-button {
     color: #DADADA;
     background-color: rgba(41, 41, 41, 0);
-    border-radius: 0;
-    border: none; }
+    border-color: rgba(41, 41, 41, 0); }
     .xfce4-panel.panel button.flat:hover, .xfce4-panel.panel button.sidebar-button:hover {
-      border: none;
       background-color: #434343; }
     .xfce4-panel.panel button.flat:active, .xfce4-panel.panel button.sidebar-button:active, .xfce4-panel.panel button.flat:checked, .xfce4-panel.panel button.sidebar-button:checked {
       color: #ffffff;
-      border: none;
       background-color: #8fa876; }
+
+#xfce4-power-manager-plugin {
+  padding-top: 3px;
+  padding-bottom: 3px; }
+
+#pulseaudio-button * {
+  -gtk-icon-transform: scale(0.8); }
 
 .gnome-panel-menu-bar button:not(#tasklist-button),
 .mate-panel-menu-bar button:not(#tasklist-button) {
