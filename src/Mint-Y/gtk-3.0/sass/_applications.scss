@@ -782,25 +782,19 @@ SynapseGuiViewVirgilio *:selected { background-color: $selected_bg_color; }
   button.flat {
     color: $panel_fg;
     background-color: transparentize($panel_bg, 1);
-    border-color: transparentize($panel_bg, 1);
+    border-radius: 0;
+    border: none;
 
     &:hover {
+      border: none;
       background-color: lighten($panel_bg, 10%);
     }
     &:active, &:checked {
       color: $selected_fg_color;
+      border: none;
       background-color: $selected_bg_color;
     }
   }
-}
-
-#xfce4-power-manager-plugin {
-  padding-top: 3px;
-  padding-bottom: 3px;
-}
-
-#pulseaudio-button * {
-  -gtk-icon-transform: scale(.8);
 }
 
 %panelbutton {
