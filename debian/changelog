@@ -1,3 +1,9 @@
+mint-themes (1.7.1) tara; urgency=medium
+
+  * Revert "Mint-Y: Fix xfce4-pulseaudio and xfce4-power-manager applets"
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 19 Jun 2018 17:19:25 +0200
+
 mint-themes (1.7.0) tara; urgency=medium
 
   * Packaging: Add ruby-sass to build-deps
