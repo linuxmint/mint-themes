@@ -853,6 +853,7 @@ toolbar {
   }
 }
 
+.primary-toolbar toolbar,
 .primary-toolbar:not(.libreoffice-toolbar) {  // LO messes up the toolbar styling, so exclude LO toolbars
   color: $header_fg;
   background-color: opacify($header_bg, 1);
@@ -867,6 +868,7 @@ toolbar {
   separator { @extend %header_separator; }
 }
 
+.primary-toolbar toolbar,
 .primary-toolbar { @extend %header_widgets; }
 
 .inline-toolbar {
@@ -1950,7 +1952,7 @@ switch {
 
   headerbar switch#{$k},
   .primary-toolbar switch#{$k},
-  .primary-toolbar .toolbar switch#{$k} {
+  .primary-toolbar toolbar switch#{$k} {
     background-image: -gtk-scaled(url("assets/switch#{$l}-header#{$darker_asset_suffix}.png"),url("assets/switch#{$l}-header#{$darker_asset_suffix}@2.png"));
   }
 }
