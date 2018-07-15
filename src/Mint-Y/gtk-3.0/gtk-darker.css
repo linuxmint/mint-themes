@@ -3145,6 +3145,8 @@ NautilusListView .view, NautilusListView iconview {
   .nemo-window .sidebar {
     color: #C3C3C3;
     background-color: #454545; }
+    .nemo-window .sidebar .frame {
+      border: none; }
     .nemo-window .sidebar .view, .nemo-window .sidebar iconview, .nemo-window .sidebar row {
       background-color: transparent;
       color: #C3C3C3; }

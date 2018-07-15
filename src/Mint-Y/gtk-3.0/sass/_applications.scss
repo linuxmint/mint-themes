@@ -265,6 +265,8 @@ NautilusListView .view { border-bottom: 1px solid $borders_color; }
     color: $dark_sidebar_fg;
     background-color: $dark_sidebar_bg;
 
+    .frame { border: none; }
+
     .view, row {
       background-color: transparent;
       color: $dark_sidebar_fg;

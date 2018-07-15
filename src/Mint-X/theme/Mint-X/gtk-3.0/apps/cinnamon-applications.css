@@ -48,7 +48,8 @@
     background-color: @theme_bg_color;
 }
 
-.nemo-window .sidebar separator {
+.nemo-window .sidebar separator,
+.nemo-window .sidebar .frame {
     border: none;
 }
 
