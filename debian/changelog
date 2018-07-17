@@ -1,3 +1,12 @@
+mint-themes (1.7.2) tara; urgency=medium
+
+  [ JosephMcc ]
+  * Mint-X-Gtk3: Restore the 18.3 styling of mate-panel taskbar
+  * Mint-Y-Gtk3: Fix atril toolbar in the darker variation
+  * Gtk3: Remove a white border from the nemo sidebar
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 17 Jul 2018 09:29:15 +0200
+
 mint-themes (1.7.1) tara; urgency=medium
 
   * Revert "Mint-Y: Fix xfce4-pulseaudio and xfce4-power-manager applets"
