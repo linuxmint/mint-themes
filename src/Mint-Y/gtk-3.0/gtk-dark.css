@@ -2541,25 +2541,20 @@ paned > separator {
     background-image: linear-gradient(to bottom, #292929, #292929), linear-gradient(to bottom, #292929, #292929);
     background-size: 1px 1px, 1px 1px; }
 paned.horizontal > separator {
-  background-repeat: repeat-y; }
-  paned.horizontal > separator:dir(ltr) {
-    margin: 0 -8px 0 0;
-    padding: 0 8px 0 0;
-    background-position: left; }
-  paned.horizontal > separator:dir(rtl) {
-    margin: 0 0 0 -8px;
-    padding: 0 0 0 8px;
-    background-position: right; }
+  background-repeat: repeat-y;
+  margin: 0 -3px 0 -3px;
+  padding: 0 3px 0 3px;
+  background-position: center; }
   paned.horizontal > separator.wide {
     margin: 0;
     padding: 0;
     background-repeat: repeat-y, repeat-y;
     background-position: left, right; }
 paned.vertical > separator {
-  margin: 0 0 -8px 0;
-  padding: 0 0 8px 0;
+  margin: -3px 0 -3px 0;
+  padding: 3px 0 3px 0;
   background-repeat: repeat-x;
-  background-position: top; }
+  background-position: center; }
   paned.vertical > separator.wide {
     margin: 0;
     padding: 0;

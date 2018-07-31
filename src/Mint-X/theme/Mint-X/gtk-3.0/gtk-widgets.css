@@ -1586,26 +1586,17 @@ paned.vertical > separator.wide {
 }
 
 paned.horizontal > separator {
+    margin: 0 -3px 0 -3px;
+    padding: 0 3px 0 3px;
     background-repeat: repeat-y;
-}
-
-paned.horizontal > separator:dir(ltr) {
-    margin: 0 -8px 0 0;
-    padding: 0 8px 0 0;
-    background-position: left;
-}
-
-paned.horizontal > separator:dir(rtl) {
-    margin: 0 0 0 -8px;
-    padding: 0 0 0 8px;
-    background-position: right;
+    background-position: center;
 }
 
 paned.vertical > separator {
-    margin: 0 0 -8px 0;
-    padding: 0 0 8px 0;
+    margin: -3px 0 -3px 0;
+    padding: 3px 0 3px 0;
     background-repeat: repeat-x;
-    background-position: top;
+    background-position: center;
 }
 
 /************
