@@ -1450,7 +1450,7 @@ menu,
   .menu separator, .csd
   .menu separator {
     margin: 2px 0;
-    background-color: #ffffff; }
+    background-color: #DFDFDF; }
   menu .separator:not(label), .csd menu .separator:not(label),
   .menu .separator:not(label), .csd
   .menu .separator:not(label) {

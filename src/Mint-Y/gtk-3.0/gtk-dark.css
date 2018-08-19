@@ -1447,7 +1447,7 @@ menu,
   .menu separator, .csd
   .menu separator {
     margin: 2px 0;
-    background-color: #383838; }
+    background-color: #292929; }
   menu .separator:not(label), .csd menu .separator:not(label),
   .menu .separator:not(label), .csd
   .menu .separator:not(label) {
