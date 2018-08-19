@@ -42,7 +42,7 @@ $header_bg_backdrop: if($darker == 'true' or $variant == 'dark', lighten($header
 
 $header_border: if($variant == 'light' and $darker=='false', darken($header_bg, 7%), darken($header_bg, 4%));
 
-$header_fg: if($variant == 'light', saturate(transparentize($fg_color, 0.1), 10%), saturate(transparentize($fg_color, 0.0), 10%));
+$header_fg: if($variant == 'light', #454545, saturate(transparentize($fg_color, 0.0), 10%));
 $header_fg: if($darker == 'true', saturate(transparentize(#DADADA, 0.0), 10%), $header_fg);
 
 $dark_sidebar_bg: if($variant == 'light', #454545, #353535);
@@ -80,6 +80,11 @@ $button_border: $borders_color;
 
 $header_button_bg: if($darker == 'true' or $variant == 'dark', transparentize(lighten($header_bg, 22%), 0.6), transparentize($button_bg, 0.1));
 $header_button_border: if($darker == 'true' or $variant == 'dark', transparentize(darken($header_bg, 12%), 0.6), transparentize($header_fg, 0.7));
+
+// WM Colors
+
+$titlebar_fg: if($variant == 'light', #454545, $fg_color);
+$titlebar_fg: if($darker == 'true', $fg_color, $titlebar_fg);
 
 //WM Buttons
 

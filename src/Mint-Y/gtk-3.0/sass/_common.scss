@@ -920,6 +920,7 @@ headerbar,
   &:backdrop { color: transparentize($header_fg, 0.3); }
 
   .title {
+    font-weight: bold;
     padding-left: 12px;
     padding-right: 12px;
   }

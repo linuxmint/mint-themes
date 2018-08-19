@@ -10,7 +10,7 @@
 
 <!-- meaningfull constants -->
 
-<constant name="C_title_focused" value="rgba(120,120,120,1.0)" />
+<constant name="C_title_focused" value="rgba(69,69,69,1.0)" />
 <constant name="C_title_unfocused" value="rgba(157,157,157,1.0)" />
 
 <constant name="C_wm_bg_focused" value="rgba(217,217,217,1.0)" />

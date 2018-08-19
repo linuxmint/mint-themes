@@ -820,6 +820,7 @@ headerbar,
     color: rgba(222, 214, 214, 0.7); }
   headerbar .title,
   .titlebar:not(headerbar) .title {
+    font-weight: bold;
     padding-left: 12px;
     padding-right: 12px; }
   headerbar .subtitle,
@@ -3883,7 +3884,7 @@ window.background.lightdm .lightdm-combo {
 @define-color success_color #73d216;
 @define-color placeholder_text_color #A8A8A8;
 @define-color content_view_bg #ffffff;
-@define-color wm_title alpha(#ded6d6, 0.8);
+@define-color wm_title #202020;
 @define-color wm_unfocused_title alpha(#ded6d6, 0.5);
 @define-color wm_bg #2f2f2f;
 @define-color wm_bg_unfocused #333333;
