@@ -3024,9 +3024,6 @@ filechooser placessidebar.sidebar list {
   filechooser placessidebar.sidebar list row.sidebar-row {
     border: none;
     color: #C3C3C3; }
-    .nautilus-window placessidebar.sidebar list row.sidebar-row .sidebar-icon,
-    filechooser placessidebar.sidebar list row.sidebar-row .sidebar-icon {
-      color: rgba(195, 195, 195, 0.6); }
     .nautilus-window placessidebar.sidebar list row.sidebar-row.has-open-popup, .nautilus-window placessidebar.sidebar list row.sidebar-row:hover,
     filechooser placessidebar.sidebar list row.sidebar-row.has-open-popup,
     filechooser placessidebar.sidebar list row.sidebar-row:hover {
