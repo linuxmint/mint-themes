@@ -76,9 +76,8 @@ label:disabled {
   color: rgba(32, 32, 32, 0.55); }
 
 .dim-label, label.separator, popover label.separator,
-popover.background label.separator, headerbar .subtitle,
-.titlebar:not(headerbar) .subtitle {
-  opacity: 0.55; }
+popover.background label.separator {
+  color: rgba(32, 32, 32, 0.55); }
 
 assistant .sidebar {
   background-color: #ffffff;
@@ -827,7 +826,8 @@ headerbar,
   .titlebar:not(headerbar) .subtitle {
     font-size: smaller;
     padding-left: 12px;
-    padding-right: 12px; }
+    padding-right: 12px;
+    color: #202020; }
   headerbar.selection-mode,
   .selection-mode.titlebar:not(headerbar) {
     color: #ffffff;
@@ -3001,13 +3001,10 @@ vte-terminal {
     color: #ffffff; }
 
 .nautilus-canvas-item.dim-label, label.nautilus-canvas-item.separator,
-popover.background label.nautilus-canvas-item.separator, headerbar .nautilus-canvas-item.subtitle,
-.titlebar:not(headerbar) .nautilus-canvas-item.subtitle,
+popover.background label.nautilus-canvas-item.separator,
 .nautilus-list-dim-label {
   color: #888888; }
-  .nautilus-canvas-item.dim-label:selected, label.nautilus-canvas-item.separator:selected, headerbar .nautilus-canvas-item.subtitle:selected,
-  .titlebar:not(headerbar) .nautilus-canvas-item.subtitle:selected, .nautilus-canvas-item.dim-label:selected:focus, label.nautilus-canvas-item.separator:selected:focus, headerbar .nautilus-canvas-item.subtitle:selected:focus,
-  .titlebar:not(headerbar) .nautilus-canvas-item.subtitle:selected:focus,
+  .nautilus-canvas-item.dim-label:selected, label.nautilus-canvas-item.separator:selected, .nautilus-canvas-item.dim-label:selected:focus, label.nautilus-canvas-item.separator:selected:focus,
   .nautilus-list-dim-label:selected,
   .nautilus-list-dim-label:selected:focus {
     color: #ebf1e5; }

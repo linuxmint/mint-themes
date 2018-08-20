@@ -133,7 +133,7 @@ label {
 }
 
 .dim-label {
-  opacity: 0.55;
+  color: $insensitive_fg_color;
 }
 
 assistant {
@@ -929,7 +929,7 @@ headerbar,
     font-size: smaller;
     padding-left: 12px;
     padding-right: 12px;
-    @extend .dim-label;
+    color: $fg_color;
   }
 
   // Selectionmode
