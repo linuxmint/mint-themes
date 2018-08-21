@@ -807,13 +807,13 @@ headerbar,
   border-width: 0 0 1px;
   border-style: solid;
   border-radius: 0;
-  border-color: #c7c7c7;
+  border-color: #bdbdbd;
   color: #454545;
   background-color: #d9d9d9; }
   .csd headerbar, .csd
   .titlebar:not(headerbar) {
     background-color: #d9d9d9;
-    border-color: #c7c7c7; }
+    border-color: #BDBDBD; }
   headerbar:backdrop,
   .titlebar:backdrop:not(headerbar) {
     color: rgba(69, 69, 69, 0.7); }
@@ -899,7 +899,7 @@ headerbar,
   .maximized headerbar, .maximized
   .titlebar:not(headerbar) {
     background-color: #d9d9d9;
-    border-color: #c7c7c7; }
+    border-color: #bdbdbd; }
   headerbar.default-decoration, .csd headerbar.default-decoration, headerbar.default-decoration:backdrop, .csd headerbar.default-decoration:backdrop,
   .default-decoration.titlebar:not(headerbar), .csd
   .default-decoration.titlebar:not(headerbar),
@@ -937,7 +937,7 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
   border: none;
   box-shadow: none; }
 .titlebar:not(headerbar) > separator {
-  background-image: linear-gradient(to bottom, #c7c7c7, #c7c7c7); }
+  background-image: linear-gradient(to bottom, #BDBDBD, #BDBDBD); }
 
 .primary-toolbar toolbar separator, .primary-toolbar .inline-toolbar separator,
 .primary-toolbar:not(.libreoffice-toolbar) separator {
@@ -2955,7 +2955,7 @@ PantheonTerminalPantheonTerminalWindow .notebook tab.top {
   border-top-width: 3px; }
 TerminalWindow .notebook.header.top,
 PantheonTerminalPantheonTerminalWindow .notebook.header.top {
-  box-shadow: inset 0 1px #c7c7c7, inset 0 -1px #BDBDBD; }
+  box-shadow: inset 0 1px #bdbdbd, inset 0 -1px #BDBDBD; }
 
 GtkHTML {
   background-color: #ffffff;
@@ -3165,7 +3165,7 @@ NautilusListView .view, NautilusListView iconview {
   color: #C3C3C3; }
 
 .gedit-headerbar-paned {
-  color: #c7c7c7; }
+  color: #BDBDBD; }
 
 .gedit-side-panel-paned > separator {
   background-image: linear-gradient(to bottom, #454545, #454545); }
