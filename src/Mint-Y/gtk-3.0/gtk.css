@@ -809,14 +809,16 @@ headerbar,
   border-radius: 0;
   border-color: #bdbdbd;
   color: #454545;
-  background-color: #d9d9d9; }
+  background-color: #d9d9d9;
+  box-shadow: inset 0 1px #EEEEEE; }
   .csd headerbar, .csd
   .titlebar:not(headerbar) {
     background-color: #d9d9d9;
     border-color: #BDBDBD; }
   headerbar:backdrop,
   .titlebar:backdrop:not(headerbar) {
-    color: rgba(69, 69, 69, 0.7); }
+    color: rgba(69, 69, 69, 0.7);
+    box-shadow: none; }
   headerbar .title,
   .titlebar:not(headerbar) .title {
     font-weight: bold;
@@ -827,7 +829,7 @@ headerbar,
     font-size: smaller;
     padding-left: 12px;
     padding-right: 12px;
-    color: #202020; }
+    color: #454545; }
   headerbar.selection-mode,
   .selection-mode.titlebar:not(headerbar) {
     color: #ffffff;
@@ -2761,10 +2763,10 @@ button.circular-button,
 decoration {
   border-radius: 4px 4px 0 0;
   border-width: 0px;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.15), 0 8px 8px 0 rgba(0, 0, 0, 0.25);
   margin: 10px; }
   decoration:backdrop {
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 8px 8px 0 transparent, 0 5px 5px 0 rgba(0, 0, 0, 0.2); }
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 8px 8px 0 transparent, 0 5px 5px 0 rgba(0, 0, 0, 0.25); }
   .fullscreen decoration, .tiled decoration {
     border-radius: 0; }
   .popup decoration {
@@ -2772,15 +2774,15 @@ decoration {
     border-radius: 0; }
   .ssd decoration {
     border-radius: 4px 4px 0 0;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1); }
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15); }
     .ssd decoration.maximized {
       border-radius: 0; }
   .csd.popup decoration {
     border-radius: 2px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.1); }
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.15); }
   tooltip.csd decoration {
     border-radius: 2px;
-    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.1); }
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.15); }
   message-dialog.csd decoration {
     border-radius: 3px; }
   .solid-csd decoration {
@@ -2966,6 +2968,9 @@ GtkHTML {
 
 SushiFontWidget {
   padding: 6px 12px; }
+
+#gnome-system-monitor headerbar {
+  box-shadow: none; }
 
 vte-terminal.terminal-screen {
   -TerminalScreen-background-darkness: 0.9;

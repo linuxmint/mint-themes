@@ -55,6 +55,15 @@ SushiFontWidget {
 }
 
 //
+// GNOME System Monitor
+//
+#gnome-system-monitor headerbar {
+  // we have to do this because the headerbar is moved into the toolbar
+  // position in DE's like Cinnamon
+  box-shadow: none;
+}
+
+//
 // GNOME Terminal
 //
 vte-terminal.terminal-screen {
