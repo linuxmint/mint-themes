@@ -778,7 +778,7 @@ toolbar, .inline-toolbar {
   box-shadow: none;
   border-width: 0 0 1px 0;
   border-style: solid;
-  border-image: linear-gradient(to bottom, #bdbdbd, #BDBDBD) 1 0 1 0; }
+  border-image: linear-gradient(to bottom, #d9d9d9, #bababa) 1 0 1 0; }
 
 .inline-toolbar {
   background-color: #e8e8e8;
