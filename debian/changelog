@@ -1,3 +1,10 @@
+mint-themes (1.7.3) tara; urgency=medium
+
+  [ JosephMcc ]
+  * Gtk3: Properly place the "grab" area for pane separators
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 20 Sep 2018 10:33:17 +0100
+
 mint-themes (1.7.2) tara; urgency=medium
 
   [ JosephMcc ]
