@@ -1209,7 +1209,11 @@ StScrollBar StButton#vhandle:hover {
     padding-bottom: 10px;
 }
 
-.menu-applications-box {
+.menu-applications-outer-box {
+    padding: 0px 10px;
+}
+
+.menu-applications-inner-box {
     padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
