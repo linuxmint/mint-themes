@@ -1460,6 +1460,36 @@ StScrollBar StButton#vhandle:hover {
 }
 
 /* ===================================================================
+ * Grouped window list (grouped-window-list@cinnamon.org)
+ * ===================================================================*/
+
+.grouped-window-list-thumbnail-label {
+    padding-left: 4px;
+}
+.grouped-window-list-number-label {
+    z-index: 99;
+    color: white;
+    text-shadow: black 1px 0px 2px;
+}
+.grouped-window-list-button-label {
+    padding-left: 4px;
+}
+.grouped-window-list-thumbnail-alert {
+    background: rgba(255,52,52,0.3);
+}
+.grouped-window-list-thumbnail-icon {
+}
+.window-list-item-box:closed {
+    background-gradient-direction: vertical !important;
+    background-gradient-start: rgba(0,0,0,0.0) !important;
+    background-gradient-end: rgba(0,0,0,0.0) !important;
+    border-radius: 0px 0px 0px 0px !important;
+    border-image: none !important;
+    border-color: rgba(0,0,0,0.0) !important;
+    box-shadow: inset 0px 0px 0px 0px rgba(0,0,0,0.0) !important;
+}
+
+/* ===================================================================
  * Sound applet (sound@cinnamon.org/applet.js)
  * ===================================================================*/
 .sound-player StButton {
