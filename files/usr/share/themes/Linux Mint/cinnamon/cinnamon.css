@@ -404,18 +404,6 @@ StScrollBar StButton#vhandle:hover {
     spacing: 12px;
 }
 
-.window-caption {
-    background-color: black;
-    color: white;
-    spacing: 25px;
-}
-
-.window-caption#selected {
-    background-color: white;
-    color: black;
-    spacing: 25px;
-}
-
 .workspace-thumbnails {
     spacing: 14px;
 }
@@ -440,25 +428,42 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .window-caption {
+    color: white;
     background-gradient-direction: vertical;
-    background-gradient-start: rgba(90, 90, 90, 1);
-    background-gradient-end: rgba(70, 70, 70, 1);
+    background-gradient-start: rgba(80, 80, 80, .8);
+    background-gradient-end: rgba(60, 60, 60, .8);
+    border: 1px solid rgba(0, 0, 0, 0);
     box-shadow: inset 0px 1px 0px 0px rgba(100, 100, 100, 1);
     border-radius: 4px;
     font-size: 9pt;
-    padding: 2px 8px;
-    -cinnamon-caption-spacing: 4px;
+    padding: 6px 8px;
+    spacing: 8px;
+    -cinnamon-caption-spacing: 8px;
+}
+
+.window-caption:focus {
+    background-gradient-start: rgba(90, 90, 90, .8);
+    background-gradient-end: rgba(70, 70, 70, .8);
+    border: 1px solid rgba(120, 120, 120, 1);
+}
+
+.window-border {
+    border: 3px rgba(120, 120, 120, 1);
+    border-radius: 4px;
+    background-color: rgba(255,255,255,.05);
+    /* Cover rounded corners and some bad adjustment gaps */
+    box-shadow: 0 0 0 1px rgba(120, 120, 120, 1) inset;
 }
 
 .window-close {
     background-image: url("close-window.svg");
-    height: 34px;
-    width: 34px;
-    -cinnamon-close-overlap: 20px;
+    height: 28px;
+    width: 28px;
+    -cinnamon-close-overlap: 13px;
 }
 
-.window-close:rtl {
-    -st-background-image-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+.window-close:hover {
+    background-image: url("close-window-hover.svg");
 }
 
 .window-close-area {
@@ -489,6 +494,11 @@ StScrollBar StButton#vhandle:hover {
 .expo-workspace-thumbnail-frame#active {
     border: 2px, rgba(32, 32, 32, 0.9);
     background-color: rgba(32, 32, 32, 0.9);
+}
+
+.overview-empty-placeholder {
+    color: #ffffff;
+    font-size: 2em;
 }
 
 /* ===================================================================
