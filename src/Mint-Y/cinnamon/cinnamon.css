@@ -467,16 +467,22 @@ StScrollBar {
   background-color: #353535;
   border: 1px solid #353535;
   color: #c3c3c3;
-  spacing: 25px;
+  spacing: 8px;
   border-radius: 2px;
   font-size: 9pt;
   padding: 5px 8px;
-  -cinnamon-caption-spacing: 4px; }
-  .window-caption#selected {
+  -cinnamon-caption-spacing: 8px; }
+  .window-caption:focus {
     background-color: #9ab87c;
     color: #ffffff;
-    border: 1px solid #9ab87c;
-    spacing: 25px; }
+    border: 1px solid #9ab87c; }
+
+.window-border {
+  border: 3px #9ab87c;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.05);
+  /* Cover rounded corners and some bad adjustment gaps */
+  box-shadow: 0 0 0 1px #9ab87c inset; }
 
 .expo-workspaces-name-entry,
 .expo-workspaces-name-entry#selected {
@@ -535,7 +541,7 @@ StScrollBar {
   background-size: 26px;
   height: 26px;
   width: 26px;
-  -cinnamon-close-overlap: 10px; }
+  -cinnamon-close-overlap: 12px; }
   .workspace-close-button:hover,
   .window-close:hover {
     background-image: url("common-assets/misc/close-hover.svg");
