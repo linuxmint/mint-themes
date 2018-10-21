@@ -332,7 +332,7 @@ StScrollBar {
 #panel {
   font-weight: bold;
   /* sets the height of horizontal panels */
-  height: 27px;
+  height: 40px;
   /* sets the width of vertical panels */
   width: 32px; }
   #panelLeft {
@@ -483,6 +483,10 @@ StScrollBar {
   background-color: rgba(255, 255, 255, 0.05);
   /* Cover rounded corners and some bad adjustment gaps */
   box-shadow: 0 0 0 1px #9ab87c inset; }
+
+.overview-empty-placeholder {
+  color: #ffffff;
+  font-size: 2em; }
 
 .expo-workspaces-name-entry,
 .expo-workspaces-name-entry#selected {
