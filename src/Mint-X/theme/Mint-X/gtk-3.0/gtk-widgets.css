@@ -838,6 +838,26 @@ headerbar .subtitle {
     border-radius: 0;
 }
 
+.titlebar.default-decoration,
+.csd .titlebar.default-decoration,
+.titlebar.default-decoration:backdrop,
+.csd .titlebar.default-decoration:backdrop {
+    background-image: linear-gradient(to bottom,
+                                      shade(@theme_bg_color, 1.08),
+                                      @theme_bg_color);
+    min-height: 28px;
+    padding: 0 6px;
+    border-bottom-width: 0;
+}
+
+.titlebar.default-decoration button.titlebutton {
+    padding-top: 0;
+    padding-bottom: 0;
+    min-width: 0;
+    min-height: 0;
+    margin: 0;
+}
+
 /************
  * iconview *
  ************/
