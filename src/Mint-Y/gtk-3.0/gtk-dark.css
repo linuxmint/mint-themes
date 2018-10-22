@@ -2791,7 +2791,10 @@ decoration {
 headerbar.default-decoration button.titlebutton,
 .titlebar.default-decoration button.titlebutton {
   padding-top: 0px;
-  padding-bottom: 0px; }
+  padding-bottom: 0px;
+  min-width: 0;
+  min-height: 0;
+  margin: 0; }
 headerbar button.titlebutton,
 .titlebar button.titlebutton {
   padding: 6px 1px;
