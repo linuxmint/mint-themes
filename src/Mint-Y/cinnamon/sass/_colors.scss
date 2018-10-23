@@ -2,9 +2,9 @@
 // it gets @if ed depending on $variant
 
 $base_color: if($variant =='light', #ffffff, #404040);
-$text_color: if($variant == 'light', #4a4a4a, #D3D3D3);
+$text_color: if($variant == 'light', #202020, #D3D3D3);
 $bg_color: if($variant =='light', #F0F0F0, #2f2f2f);
-$fg_color: if($variant =='light', #4a4a4a, #D3D3D3);
+$fg_color: if($variant =='light', #202020, #f0f0f0);
 
 $selected_fg_color: #ffffff;
 $selected_bg_color: if($variant == 'light', #9ab87c, #8fa876);
@@ -36,7 +36,7 @@ $osd_entry_border: transparentize(darken($osd_bg_color, 12%), 0.6);
 $osd_insensitive_fg_color: mix($osd_fg_color, opacify($osd_bg_color, 1), 30%);
 
 $panel_bg: #2f2f2f;
-$panel_fg: #c3c3c3;
+$panel_fg: #f0f0f0;
 
 $entry_bg: if($variant=='light', $base_color, lighten($base_color, 0%));
 $entry_border: if($variant == 'light', #cfd6e6, darken($borders_color, 0%));
