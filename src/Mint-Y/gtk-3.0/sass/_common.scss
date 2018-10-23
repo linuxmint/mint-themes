@@ -1011,7 +1011,7 @@ headerbar,
   &.default-decoration:backdrop,
   .csd &.default-decoration:backdrop {
     min-height: 28px;
-    padding: 0 3px;
+    padding: 0 7px;
     background-color: opacify($header_bg, 1);
     border-bottom-width: 0;
 
@@ -3062,7 +3062,7 @@ headerbar,
   &.default-decoration button.titlebutton { // no vertical padding for ssd buttons
     padding-top: 0px;                       // already handled by the titlebar-padding
     padding-bottom: 0px;
-    min-width: 0;
+    min-width: 22px;
     min-height: 0;
     margin: 0;
   }

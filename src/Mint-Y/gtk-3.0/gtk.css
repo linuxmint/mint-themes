@@ -908,7 +908,7 @@ headerbar,
   .default-decoration.titlebar:backdrop:not(headerbar), .csd
   .default-decoration.titlebar:backdrop:not(headerbar) {
     min-height: 28px;
-    padding: 0 3px;
+    padding: 0 7px;
     background-color: #d9d9d9;
     border-bottom-width: 0; }
     .maximized headerbar.default-decoration, .maximized .csd headerbar.default-decoration, .maximized headerbar.default-decoration:backdrop, .maximized .csd headerbar.default-decoration:backdrop, .maximized
@@ -2763,10 +2763,10 @@ button.circular-button,
 decoration {
   border-radius: 4px 4px 0 0;
   border-width: 0px;
-  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.15), 0 8px 8px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 1px 1px red, 0 8px 8px 0 red;
   margin: 10px; }
   decoration:backdrop {
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 8px 8px 0 transparent, 0 5px 5px 0 rgba(0, 0, 0, 0.25); }
+    box-shadow: 0 0 0 1px red, 0 8px 8px 0 transparent, 0 5px 5px 0 red; }
   .fullscreen decoration, .tiled decoration {
     border-radius: 0; }
   .popup decoration {
@@ -2774,15 +2774,15 @@ decoration {
     border-radius: 0; }
   .ssd decoration {
     border-radius: 4px 4px 0 0;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15); }
+    box-shadow: 0 0 0 1px red; }
     .ssd decoration.maximized {
       border-radius: 0; }
   .csd.popup decoration {
     border-radius: 2px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.15); }
+    box-shadow: 0 3px 6px red, 0 0 0 1px red; }
   tooltip.csd decoration {
     border-radius: 2px;
-    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.15); }
+    box-shadow: 0 1px 3px 1px red; }
   message-dialog.csd decoration {
     border-radius: 3px; }
   .solid-csd decoration {
@@ -2795,7 +2795,7 @@ headerbar.default-decoration button.titlebutton,
 .titlebar.default-decoration button.titlebutton {
   padding-top: 0px;
   padding-bottom: 0px;
-  min-width: 0;
+  min-width: 22px;
   min-height: 0;
   margin: 0; }
 headerbar button.titlebutton,
