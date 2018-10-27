@@ -1128,6 +1128,49 @@ StScrollBar {
   padding: 6px 12px 12px 12px;
   font-size: 1em; }
 
+.grouped-window-list-item-label {
+  font-weight: bold;
+  width: 15em;
+  min-width: 5px; }
+.grouped-window-list-item-box {
+  font-weight: bold;
+  background-image: none;
+  padding-top: 0;
+  padding-left: 8px;
+  padding-right: 8px;
+  transition-duration: 100;
+  color: rgba(255, 255, 255, 0.6); }
+  .grouped-window-list-item-box.top, .grouped-window-list-item-box.bottom {
+    border-bottom-width: 2px; }
+    .grouped-window-list-item-box.top StLabel, .grouped-window-list-item-box.bottom StLabel {
+      padding-left: 2px; }
+  .grouped-window-list-item-box.right {
+    padding-left: 0px;
+    padding-right: 0px;
+    border-right-width: 2px; }
+    .grouped-window-list-item-box.right StBin {
+      padding-right: 0; }
+  .grouped-window-list-item-box.left {
+    padding-left: 0px;
+    padding-right: 0px;
+    border-left-width: 2px; }
+    .grouped-window-list-item-box.left StBin {
+      padding-left: 1px; }
+  .grouped-window-list-item-box:hover, .grouped-window-list-item-box:focus {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1); }
+  .grouped-window-list-item-box:focus:hover {
+    color: #ffffff;
+    background-color: selected_fg_color; }
+  .grouped-window-list-item-box:active, .grouped-window-list-item-box:checked {
+    color: #ffffff;
+    border-color: #8fa876; }
+  .grouped-window-list-item-box .progress {
+    background-color: rgba(143, 168, 118, 0.8); }
+.grouped-window-list-item-demands-attention {
+  background-gradient-direction: vertical;
+  background-gradient-start: #F04A50;
+  background-gradient-end: #F04A50; }
 .grouped-window-list-thumbnail-label {
   padding-left: 4px; }
 .grouped-window-list-number-label {
@@ -1137,6 +1180,32 @@ StScrollBar {
   padding-left: 4px; }
 .grouped-window-list-thumbnail-alert {
   background: rgba(255, 52, 52, 0.3); }
+.grouped-window-list-thumbnail-menu {
+  color: #D3D3D3;
+  border: 1px solid #202020;
+  background-color: #2f2f2f;
+  border-radius: 3px;
+  padding: 20px; }
+  .grouped-window-list-thumbnail-menu > StBoxLayout {
+    padding: 4px; }
+  .grouped-window-list-thumbnail-menu .item-box {
+    padding: 8px;
+    border-radius: 2px; }
+    .grouped-window-list-thumbnail-menu .item-box:outlined {
+      padding: 8px;
+      border: 1px solid #8fa876; }
+    .grouped-window-list-thumbnail-menu .item-box:selected {
+      color: #ffffff;
+      background-color: #8fa876;
+      border: 0px solid #8fa876; }
+  .grouped-window-list-thumbnail-menu .thumbnail {
+    width: 256px; }
+  .grouped-window-list-thumbnail-menu .thumbnail-box {
+    padding: 2px;
+    spacing: 4px; }
+  .grouped-window-list-thumbnail-menu .separator {
+    width: 1px;
+    background: rgba(255, 255, 255, 0.2); }
 
 .sound-button {
   width: 22px;

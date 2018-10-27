@@ -1491,6 +1491,72 @@ StScrollBar {
 
 .grouped-window-list {
 
+  &-item-label {
+    font-weight: bold;
+    width: 15em;
+    min-width: 5px;
+  }
+
+  &-item-box {
+    font-weight: bold;
+    background-image: none;
+    padding-top: 0;
+    padding-left: 8px;
+    padding-right: 8px;
+    transition-duration: 100;
+    color: transparentize($selected_fg_color, 0.4);
+
+    &.top,
+    &.bottom {
+      border-bottom-width: 2px;
+
+      & StLabel { padding-left: 2px; }
+    }
+
+    &.right {
+      padding-left: 0px;
+      padding-right: 0px;
+      border-right-width: 2px;
+
+      & StBin { padding-right: 0; }
+    }
+
+    &.left {
+      padding-left: 0px;
+      padding-right: 0px;
+      border-left-width: 2px;
+
+      & StBin { padding-left: 1px; }
+    }
+
+    &:hover,
+    &:focus {
+      color: $selected_fg_color;
+      background-color: transparentize($selected_fg_color, 0.9);
+    }
+
+    &:focus:hover {
+      color: $selected_fg_color;
+      background-color: selected_fg_color;
+    }
+
+    &:active,
+    &:checked {
+      color: $selected_fg_color;
+      border-color: $selected_bg_color;
+    }
+
+    & .progress {
+      background-color: transparentize($selected_bg_color, 0.2);
+    }
+  }
+
+  &-item-demands-attention {
+    background-gradient-direction: vertical;
+    background-gradient-start: $destructive_color;
+    background-gradient-end: $destructive_color;
+  }
+
   &-thumbnail-label {
     padding-left: 4px;
   }
@@ -1508,7 +1574,43 @@ StScrollBar {
     background: rgba(255,52,52,0.3);
   }
 
-  &-thumbnail-icon {
+  &-thumbnail-menu {
+    color: $fg_color;
+    border: 1px solid $borders_color;
+    background-color: $bg_color;
+    border-radius: 3px;
+    padding: 20px;
+
+    > StBoxLayout {
+      padding: 4px;
+    }
+
+    .item-box {
+      padding: 8px;
+      border-radius: 2px;
+
+      &:outlined {
+        padding: 8px;
+        border: 1px solid $selected_bg_color;
+      }
+
+      &:selected {
+        color: $selected_fg_color;
+        background-color: $selected_bg_color;
+        border: 0px solid $selected_bg_color;
+      }
+    }
+
+    .thumbnail { width: 256px; }
+
+    .thumbnail-box {
+      padding: 2px;
+      spacing: 4px;
+    }
+    .separator {
+      width: 1px;
+      background: rgba(255,255,255,0.2);
+    }
   }
 }
 
