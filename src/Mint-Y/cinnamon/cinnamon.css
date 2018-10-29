@@ -1158,10 +1158,10 @@ StScrollBar {
       padding-left: 1px; }
   .grouped-window-list-item-box:hover, .grouped-window-list-item-box:focus {
     color: #ffffff;
-    background-color: rgba(255, 255, 255, 0.1); }
+    background-color: rgba(255, 255, 255, 0.3); }
   .grouped-window-list-item-box:focus:hover {
     color: #ffffff;
-    background-color: selected_fg_color; }
+    background-color: #ffffff; }
   .grouped-window-list-item-box:active, .grouped-window-list-item-box:checked {
     color: #ffffff;
     border-color: #9ab87c; }
@@ -1181,7 +1181,7 @@ StScrollBar {
 .grouped-window-list-thumbnail-alert {
   background: rgba(255, 52, 52, 0.3); }
 .grouped-window-list-thumbnail-menu {
-  color: #4a4a4a;
+  color: #202020;
   border: 1px solid #d9d9d9;
   background-color: #F0F0F0;
   border-radius: 3px;
