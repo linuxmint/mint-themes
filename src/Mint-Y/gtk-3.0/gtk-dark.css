@@ -2540,9 +2540,7 @@ paned > separator {
   paned > separator.wide {
     min-width: 5px;
     min-height: 5px;
-    background-color: #383838;
-    background-image: linear-gradient(to bottom, #292929, #292929), linear-gradient(to bottom, #292929, #292929);
-    background-size: 1px 1px, 1px 1px; }
+    background-color: transparent; }
 paned.horizontal > separator {
   background-repeat: repeat-y;
   margin: 0 -3px 0 -3px;
@@ -2551,8 +2549,10 @@ paned.horizontal > separator {
   paned.horizontal > separator.wide {
     margin: 0;
     padding: 0;
-    background-repeat: repeat-y, repeat-y;
-    background-position: left, right; }
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: -gtk-scaled(url("assets/pane-separator-vertical.png"), url("assets/pane-separator-vertical@2.png"));
+    background-size: 2px 24px; }
 paned.vertical > separator {
   margin: -3px 0 -3px 0;
   padding: 3px 0 3px 0;
@@ -2561,8 +2561,10 @@ paned.vertical > separator {
   paned.vertical > separator.wide {
     margin: 0;
     padding: 0;
-    background-repeat: repeat-x, repeat-x;
-    background-position: bottom, top; }
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: -gtk-scaled(url("assets/pane-separator.png"), url("assets/pane-separator@2.png"));
+    background-size: 24px 2px; }
 
 infobar {
   border-style: none; }

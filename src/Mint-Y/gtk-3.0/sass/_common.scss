@@ -2701,9 +2701,7 @@ paned {
     &.wide {
       min-width: 5px;
       min-height: 5px;
-      background-color: $bg_color;
-      background-image: _solid($borders_color), _solid($borders_color);
-      background-size: 1px 1px, 1px 1px;
+      background-color: transparent;
     }
   }
 
@@ -2716,8 +2714,10 @@ paned {
     &.wide {
       margin: 0;
       padding: 0;
-      background-repeat: repeat-y, repeat-y;
-      background-position: left, right;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: -gtk-scaled(url("assets/pane-separator-vertical.png"), url("assets/pane-separator-vertical@2.png"));
+      background-size: 2px 24px;
     }
   }
 
@@ -2730,8 +2730,10 @@ paned {
     &.wide {
       margin: 0;
       padding: 0;
-      background-repeat: repeat-x, repeat-x;
-      background-position: bottom, top;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: -gtk-scaled(url("assets/pane-separator.png"), url("assets/pane-separator@2.png"));
+      background-size: 24px 2px;
     }
   }
 }
