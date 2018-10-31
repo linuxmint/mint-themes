@@ -1535,11 +1535,6 @@ StScrollBar {
       background-color: transparentize(white, 0.7);
     }
 
-    &:focus:hover {
-      color: $selected_fg_color;
-      background-color: $selected_fg_color;
-    }
-
     &:active,
     &:checked {
       color: $selected_fg_color;

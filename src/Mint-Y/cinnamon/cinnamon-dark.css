@@ -1159,9 +1159,6 @@ StScrollBar {
   .grouped-window-list-item-box:hover, .grouped-window-list-item-box:focus {
     color: #ffffff;
     background-color: rgba(255, 255, 255, 0.3); }
-  .grouped-window-list-item-box:focus:hover {
-    color: #ffffff;
-    background-color: #ffffff; }
   .grouped-window-list-item-box:active, .grouped-window-list-item-box:checked {
     color: #ffffff;
     border-color: #8fa876; }
