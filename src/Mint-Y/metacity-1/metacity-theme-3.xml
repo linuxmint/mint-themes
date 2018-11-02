@@ -10,34 +10,40 @@
 
 <!-- meaningfull constants -->
 
-<constant name="C_title_focused" value="rgba(69,69,69,1.0)" />
-<constant name="C_title_unfocused" value="rgba(157,157,157,1.0)" />
+<constant name="C_title_focused" value="rgba(238,238,238,0.91)" />
+<constant name="C_title_unfocused" value="rgba(200,200,200,1.0)" />
 
-<constant name="C_wm_bg_focused" value="rgba(217,217,217,1.0)" />
-<constant name="C_wm_bg_unfocused" value="rgba(217,217,217,1.0)" />
+<constant name="C_wm_bg_focused" value="rgba(51,51,51,1.0)" />
+<constant name="C_wm_bg_unfocused" value="rgba(45,45,45,1.0)" />
 
-<constant name="C_wm_border" value="rgba(208,208,208,1.0)" />
+<constant name="C_wm_border" value="rgba(47,47,47,1.0)" />
 
-<constant name="C_wm_highlight" value="rgba(238,238,238,1.0)" />
+<constant name="C_wm_highlight" value="rgba(65,65,65,1.0)" />
+
+<constant name="C_wm_bg_focused_gradient1" value="rgba(63,62,55,1.0)" />
+<constant name="C_wm_bg_focused_gradient2" value="rgba(47,47,47,1.0)" />
+
+<constant name="C_wm_bg_unfocused_gradient1" value="rgba(60,60,60,1.0)" />
+<constant name="C_wm_bg_unfocused_gradient2" value="rgba(46,46,46,1.0)" />
 
 <!-- window button colors -->
 
 <!-- close -->
-<constant name="C_button_close_bg_focused" value="gtk:custom(selected_bg_color,#9ab87c)" />
+<constant name="C_button_close_bg_focused" value="gtk:custom(selected_bg_color,#B1C1A1)" />
 <constant name="C_button_close_bg_hover" value="shade/gtk:custom(selected_bg_color,#9ab87c)/1.14" />
 <constant name="C_button_close_bg_active" value="shade/gtk:custom(selected_bg_color,#9ab87c)/0.8" />
 
-<constant name="C_icon_close_bg" value="#F8F8F8" />
+<constant name="C_icon_close_bg" value="#2f2f2f" />
 
 <!-- minimize, maximize -->
-<constant name="C_button_bg_hover" value="#fdfdfd" />
-<constant name="C_button_bg_active" value="#909090" />
+<constant name="C_button_bg_hover" value="#4C4C4C" />
+<constant name="C_button_bg_active" value="#949494" />
 
-<constant name="C_button_border_hover" value="#D1D1D1" />
+<constant name="C_button_border_hover" value="#262626" />
 
 <constant name="C_icon_bg_focused" value="#909090" />
-<constant name="C_icon_bg_unfocused" value="#B6B6B6" />
-<constant name="C_icon_bg_hover" value="#7A7A7A" />
+<constant name="C_icon_bg_unfocused" value="#666666" />
+<constant name="C_icon_bg_hover" value="#C4C4C4" />
 <constant name="C_icon_bg_active" value="#ffffff" />
 
 <!-- geometries -->
@@ -52,7 +58,7 @@
 	<border name="title_border" left="10" right="10" top="3" bottom="3"/>
 	<border name="button_border" left="0" right="0" top="0" bottom="0"/>
   <distance name="button_width" value="30"/>
-  <distance name="button_height" value="16"/>
+  <distance name="button_height" value="24"/>
 </frame_geometry>
 
 <frame_geometry name="normal_unfocused" title_scale="medium" rounded_top_left="1" rounded_top_right="1" parent="normal">
@@ -61,8 +67,8 @@
 <frame_geometry name="max" title_scale="medium" parent="normal" rounded_top_left="false" rounded_top_right="false">
 	<distance name="left_width" value="0" />
 	<distance name="right_width" value="0" />
-	<distance name="left_titlebar_edge" value="0"/>
-	<distance name="right_titlebar_edge" value="0"/>
+	<distance name="left_titlebar_edge" value="2"/>
+	<distance name="right_titlebar_edge" value="2"/>
 	<distance name="title_vertical_pad" value="2"/> <!--
 							This needs to be 1 less then the
 							title_vertical_pad on normal state
@@ -125,19 +131,31 @@
 	<!-- title -->
 
 <draw_ops name="title_focused">
-
+	<gradient type="vertical" x="0" y="0" width="width" height="height">
+		<color value="C_wm_bg_focused_gradient1"/>
+		<color value="C_wm_bg_focused_gradient2"/>
+	</gradient>
 	<title version="< 3.1"
-               x="(0 `max` ((width - title_width) / 2))"
-               y="(0 `max` ((height - title_height) / 2)) + 1"
-               color="C_title_focused" />
+		x="(0 `max` ((width - title_width) / 2))"
+		y="(0 `max` ((height - title_height) / 2)) + 1"
+		color="C_title_focused"
+    />
 	<title version=">= 3.1"
-               x="(0 `max` ((frame_x_center - title_width / 2) `min` (width - title_width)))"
-               y="(0 `max` ((height - title_height) / 2)) + 1"
-               ellipsize_width="width"
-               color="C_title_focused" />
+    	x="(0 `max` ((frame_x_center - title_width / 2) `min` (width - title_width)))"
+    	y="(0 `max` ((height - title_height) / 2)) + 1"
+    	ellipsize_width="width"
+    	color="C_title_focused"
+    />
+
+
 </draw_ops>
 
+
 <draw_ops name="title_unfocused">
+	<gradient type="vertical" x="0" y="0" width="width" height="height">
+		<color value="C_wm_bg_unfocused_gradient1"/>
+		<color value="C_wm_bg_unfocused_gradient2"/>
+	</gradient>
 	<title version="< 3.1"
                x="(0 `max` ((width - title_width) / 2))"
                y="(0 `max` ((height - title_height) / 2)) + 1"
@@ -160,24 +178,46 @@
 </draw_ops>
 
 <draw_ops name="titlebar_focused">
-	<rectangle color="C_wm_bg_focused" x="0" y="0" width="width" height="height" filled="true" />
-	<rectangle color="C_wm_highlight" x="0" y="0" width="width" height="1" filled="true" />
+	<gradient type="vertical" x="0" y="0" width="width" height="height">
+		<color value="C_wm_bg_focused_gradient1"/>
+		<color value="C_wm_bg_focused_gradient2"/>
+	</gradient>
 </draw_ops>
 
 <draw_ops name="titlebar_unfocused">
-	<rectangle color="C_wm_bg_unfocused" x="0" y="0" width="width" height="height" filled="true" />
-	<rectangle color="C_wm_highlight" x="0" y="0" width="width" height="1" filled="true" />
+	<gradient type="vertical" x="0" y="0" width="width" height="height">
+		<color value="C_wm_bg_unfocused_gradient1"/>
+		<color value="C_wm_bg_unfocused_gradient2"/>
+	</gradient>
 </draw_ops>
 
 <draw_ops name="titlebar_max">
-
+	<gradient type="vertical" x="0" y="0" width="width" height="height">
+		<color value="C_wm_bg_focused_gradient1"/>
+		<color value="C_wm_bg_focused_gradient2"/>
+	</gradient>
 </draw_ops>
 
-<draw_ops name="titlebar_small_focused">
+<draw_ops name="titlebar_max_unfocused">
+	<gradient type="vertical" x="0" y="0" width="width" height="height">
+		<color value="C_wm_bg_unfocused_gradient1"/>
+		<color value="C_wm_bg_unfocused_gradient2"/>
+	</gradient>
+</draw_ops>
 
+
+<draw_ops name="titlebar_small_focused">
+	<gradient type="vertical" x="0" y="0" width="width" height="height">
+		<color value="C_wm_bg_focused_gradient1"/>
+		<color value="C_wm_bg_focused_gradient2"/>
+	</gradient>
 </draw_ops>
 
 <draw_ops name="titlebar_small_unfocused">
+	<gradient type="vertical" x="0" y="0" width="width" height="height">
+		<color value="C_wm_bg_unfocused_gradient1"/>
+		<color value="C_wm_bg_unfocused_gradient2"/>
+	</gradient>
 
 </draw_ops>
 
@@ -187,16 +227,6 @@
 
 <draw_ops name="border_unfocused">
 	<rectangle color="C_wm_bg_unfocused" x="0" y="0" width="width" height="height" filled="false" />
-</draw_ops>
-
-<draw_ops name="border_tiled_right">
-	<line x1="0" y1="0" x2="0" y2="height" color="C_wm_border" />
-	<line x1="1" y1="height-1" x2="width" y2="height-1" color="C_wm_border" />
-</draw_ops>
-
-<draw_ops name="border_tiled_left">
-	<line x1="width-1" y1="0" x2="width-1" y2="height" color="C_wm_border" />
-	<line x1="1" y1="height-1" x2="width" y2="height-1" color="C_wm_border" />
 </draw_ops>
 
 <draw_ops name="border_max">
@@ -561,7 +591,7 @@
 <frame_style name="normal_max_unfocused" geometry="max">
 	<piece position="entire_background" draw_ops="entire_background_unfocused" />
 	<piece position="overlay" draw_ops="border_max" />
-	<piece position="titlebar" draw_ops="titlebar_max" />
+	<piece position="titlebar" draw_ops="titlebar_max_unfocused" />
 	<piece position="title" draw_ops="title_unfocused" />
 	<button function="close" state="normal" draw_ops="close_unfocused"/>
 	<button function="close" state="prelight" draw_ops="close_unfocused_prelight"/>
@@ -990,7 +1020,6 @@
 
 <frame_style name="tiled_left_focused" geometry="tiled_left">
 	<piece position="entire_background" draw_ops="entire_background_focused" />
-	<piece position="overlay" draw_ops="border_tiled_left" />
 	<piece position="titlebar" draw_ops="titlebar_focused" />
 	<piece position="title" draw_ops="title_focused" />
 	<button function="close" state="normal" draw_ops="close_focused" />
@@ -1025,7 +1054,6 @@
 
 <frame_style name="tiled_left_unfocused" geometry="tiled_left">
 	<piece position="entire_background" draw_ops="entire_background_unfocused" />
-	<piece position="overlay" draw_ops="border_tiled_left" />
 	<piece position="titlebar" draw_ops="titlebar_unfocused" />
 	<piece position="title" draw_ops="title_unfocused" />
 	<button function="close" state="normal" draw_ops="close_unfocused"/>
@@ -1060,7 +1088,6 @@
 
 <frame_style name="tiled_right_focused" geometry="tiled_right">
 	<piece position="entire_background" draw_ops="entire_background_focused" />
-	<piece position="overlay" draw_ops="border_tiled_right" />
 	<piece position="titlebar" draw_ops="titlebar_focused" />
 	<piece position="title" draw_ops="title_focused" />
 	<button function="close" state="normal" draw_ops="close_focused" />
@@ -1095,7 +1122,6 @@
 
 <frame_style name="tiled_right_unfocused" geometry="tiled_right">
 	<piece position="entire_background" draw_ops="entire_background_unfocused" />
-	<piece position="overlay" draw_ops="border_tiled_right" />
 	<piece position="titlebar" draw_ops="titlebar_unfocused" />
 	<piece position="title" draw_ops="title_unfocused" />
 	<button function="close" state="normal" draw_ops="close_unfocused"/>
