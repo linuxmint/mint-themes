@@ -307,6 +307,18 @@ NautilusListView .view { border-bottom: 1px solid $borders_color; }
 
 .caja-navigation-window {
 
+  /* This seems to be needed to get proper highlighting in the caja view
+   * when split panes are used. Without it the inactive pane isn't displayed
+   * properly
+   */
+  .view .cell:selected {
+    &, &:focus {
+      background-image: _solid($selected_bg_color);
+
+      @extend %selected_items;
+    }
+  }
+
   .caja-side-pane {
 
     .view,
