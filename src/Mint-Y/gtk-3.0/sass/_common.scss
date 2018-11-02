@@ -2547,7 +2547,12 @@ calendar {
 // FileChooser
 //
 filechooser {
-  #pathbarbox { border-bottom: 1px solid transparentize($borders_color, 0.5); }
+  #pathbarbox {
+    background-color: $filechooser_bg;
+    border-bottom: 1px solid $borders_color;
+  }
+
+  actionbar { background-color: $bg_color; }
 }
 
 filechooserbutton:drop(active) {

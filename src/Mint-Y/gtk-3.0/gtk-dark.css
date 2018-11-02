@@ -2448,7 +2448,10 @@ calendar {
     border-bottom-left-radius: 3px; }
 
 filechooser #pathbarbox {
-  border-bottom: 1px solid rgba(41, 41, 41, 0.5); }
+  background-color: #2f2f2f;
+  border-bottom: 1px solid #292929; }
+filechooser actionbar {
+  background-color: #383838; }
 
 filechooserbutton:drop(active) {
   box-shadow: none;
