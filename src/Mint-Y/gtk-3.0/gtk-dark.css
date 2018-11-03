@@ -2764,6 +2764,10 @@ button.circular-button,
   border-radius: 2.5px;
   box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.15); }
 
+*:drop(active):focus,
+*:drop(active) {
+  box-shadow: inset 0 0 0 1px #8fa876; }
+
 decoration {
   border-radius: 3px 3px 0 0;
   border-width: 0px;
