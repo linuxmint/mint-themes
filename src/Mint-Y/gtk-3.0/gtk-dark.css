@@ -2450,6 +2450,8 @@ calendar {
 filechooser #pathbarbox {
   background-color: #2f2f2f;
   border-bottom: 1px solid #292929; }
+filechooser .search-bar {
+  background-color: #2f2f2f; }
 filechooser actionbar {
   background-color: #383838; }
 

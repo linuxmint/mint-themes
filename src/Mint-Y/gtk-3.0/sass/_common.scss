@@ -2552,6 +2552,8 @@ filechooser {
     border-bottom: 1px solid $borders_color;
   }
 
+  .search-bar { background-color: $filechooser_bg; }
+
   actionbar { background-color: $bg_color; }
 }
 
