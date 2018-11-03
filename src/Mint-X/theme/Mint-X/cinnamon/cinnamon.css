@@ -1192,10 +1192,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .menu-favorites-button {
-    padding-top: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 10px;
+    padding: .9em 1em;
     border-radius: 2px;
 }
 

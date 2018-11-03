@@ -218,38 +218,38 @@ StScrollBar {
     border-radius: 0 3px 3px 0; }
   .menu.right {
     border-radius: 3px 0 0 3px; }
-  .menu-arrow {
-    icon-size: 16px; }
-  .menu .popup-sub-menu {
-    background-color: #ffffff;
-    box-shadow: none; }
-    .menu .popup-sub-menu .popup-menu-item:ltr {
-      padding-right: 1.75em; }
-    .menu .popup-sub-menu .popup-menu-item:rtl {
-      padding-left: 1.75em; }
-    .menu .popup-sub-menu StScrollBar {
-      padding: 4px; }
-      .menu .popup-sub-menu StScrollBar StBin#trough, .menu .popup-sub-menu StScrollBar StBin#vhandle {
-        border-width: 0; }
-  .menu .popup-menu-content {
-    padding: 1em 0em 1em 0em; }
-  .menu .popup-menu-item {
-    padding: .4em 1.75em;
-    spacing: 1em;
-    border-left-width: 0;
-    border-right-width: 0; }
-    .menu .popup-menu-item:active {
-      color: #ffffff;
-      background-color: #9ab87c; }
-    .menu .popup-menu-item:insensitive {
-      color: rgba(32, 32, 32, 0.5);
-      background: none; }
-  .menu .popup-inactive-menu-item {
-    color: #202020; }
-    .menu .popup-inactive-menu-item:insensitive {
-      color: rgba(32, 32, 32, 0.55); }
-  .menu-icon {
-    icon-size: 16px; }
+
+.popup-sub-menu {
+  background-color: #ffffff;
+  box-shadow: none; }
+  .popup-sub-menu .popup-menu-item:ltr {
+    padding-right: 1.75em; }
+  .popup-sub-menu .popup-menu-item:rtl {
+    padding-left: 1.75em; }
+  .popup-sub-menu StScrollBar {
+    padding: 4px; }
+    .popup-sub-menu StScrollBar StBin#trough, .popup-sub-menu StScrollBar StBin#vhandle {
+      border-width: 0; }
+
+.popup-menu-content {
+  padding: 1em 0em 1em 0em; }
+
+.popup-menu-item {
+  padding: .4em 1.75em;
+  spacing: 1em;
+  border-left-width: 0;
+  border-right-width: 0; }
+  .popup-menu-item:active {
+    color: #ffffff;
+    background-color: #9ab87c; }
+  .popup-menu-item:insensitive {
+    color: rgba(32, 32, 32, 0.5);
+    background: none; }
+
+.popup-inactive-menu-item {
+  color: #202020; }
+  .popup-inactive-menu-item:insensitive {
+    color: rgba(32, 32, 32, 0.55); }
 
 /* This is for popup menus in Cinnamon versions < 3.2 */
 .popup-menu {
@@ -961,8 +961,9 @@ StScrollBar {
   background-color: #ffffff;
   border: 1px solid #d9d9d9; }
 .menu-favorites-button {
-  padding: 10px;
-  border: 1px solid transparent; }
+  padding: .9em 1em;
+  border: 1px solid transparent;
+  border-radius: 2px; }
   .menu-favorites-button:hover {
     background-color: #9ab87c; }
 .menu-places-box {
