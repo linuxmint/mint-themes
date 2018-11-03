@@ -1028,7 +1028,7 @@ StScrollBar {
 
 #menu-search-entry {
   width: 250px;
-  height: 16px;
+  min-height: 16px;
   font-weight: normal;
   caret-color: #202020; }
 
