@@ -114,13 +114,6 @@ StScrollBar {
     StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
       background-color: #9ab87c; }
 
-.separator {
-  -gradient-height: 1px;
-  -gradient-start: transparent;
-  -gradient-end: transparent;
-  -margin-horizontal: 1.5em;
-  height: 1em; }
-
 .popup-slider-menu-item,
 .slider {
   -slider-height: 0.3em;
@@ -310,12 +303,14 @@ StScrollBar {
 .popup-combobox-item {
   spacing: 1em; }
 
-.popup-separator-menu-item {
-  -gradient-height: 1px;
-  -gradient-start: #cfcfcf;
-  -gradient-end: #cfcfcf;
-  -margin-horizontal: 0;
-  height: 1px; }
+.separator {
+  height: 1px;
+  width: 1px;
+  margin: .4em;
+  background-color: #cfcfcf; }
+  .separator.popup-menu-item {
+    margin-left: 1.75em;
+    margin-right: 1.75em; }
 
 .popup-alternating-menu-item:alternate {
   font-weight: normal; }

@@ -123,14 +123,6 @@ StScrollBar {
   }
 }
 
-.separator {
-  -gradient-height: 1px;
-  -gradient-start: rgba(0,0,0,0);
-  -gradient-end: rgba(0,0,0,0);
-  -margin-horizontal: 1.5em;
-  height: 1em;
-}
-
 //
 // Slider
 //
@@ -392,12 +384,16 @@ StScrollBar {
 
 .popup-combobox-item { spacing: 1em; }
 
-.popup-separator-menu-item {
-  -gradient-height: 1px;
-  -gradient-start: $separator_color;
-  -gradient-end: $separator_color;
-  -margin-horizontal: 0;
-  height: 1px;
+.separator {
+    height: 1px;
+    width: 1px;
+    margin: .4em;
+    background-color: $separator_color;
+
+    &.popup-menu-item {
+        margin-left: 1.75em;
+        margin-right: 1.75em;
+    }
 }
 
 .popup-alternating-menu-item:alternate {
