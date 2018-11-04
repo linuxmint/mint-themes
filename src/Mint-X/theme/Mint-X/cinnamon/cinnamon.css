@@ -247,12 +247,18 @@ StScrollBar StButton#vhandle:hover {
     spacing: 1em;
 }
 
-.popup-separator-menu-item {
-    -gradient-height: 1px;
-    -gradient-start: rgb(210, 210, 210);
-    -gradient-end: rgb(210, 210, 210);
-    -margin-horizontal: 0;
+.separator,
+.popup-menu-item.separator {
     height: 1px;
+    width: 1px; /* Vertical separators */
+    background-color: rgb(210, 210, 210);
+    margin: .4em;
+}
+
+.popup-menu-item.separator {
+    /* Align with the rest of menu items */
+    margin-left: 1.75em;
+    margin-right: 1.75em;
 }
 
 .popup-alternating-menu-item:alternate {
@@ -1850,6 +1856,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .applet-separator-line {
+    background: transparent;
 }
 
 .applet-box {
