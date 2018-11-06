@@ -1173,7 +1173,11 @@ StScrollBar {
   padding-left: 4px; }
 .grouped-window-list-number-label {
   z-index: 99;
-  text-shadow: black 1px 0px 2px; }
+  color: #d0d0d0; }
+.grouped-window-list-badge {
+  border-radius: 256px;
+  background-color: #4a4a4a;
+  border: 1px solid #2f2f2f; }
 .grouped-window-list-button-label {
   padding-left: 4px; }
 .grouped-window-list-thumbnail-alert {

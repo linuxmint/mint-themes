@@ -1556,7 +1556,13 @@ StScrollBar {
 
   &-number-label {
     z-index: 99;
-    text-shadow: black 1px 0px 2px;
+    color: $tooltip_border_color;
+  }
+
+  &-badge {
+    border-radius: 256px;
+    background-color: $tooltip_fg_color;
+    border: 1px solid $panel_bg;
   }
 
   &-button-label {

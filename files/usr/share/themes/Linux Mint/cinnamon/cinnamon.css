@@ -1505,7 +1505,12 @@ StScrollBar StButton#vhandle:hover {
 .grouped-window-list-number-label {
     z-index: 99;
     color: white;
-    text-shadow: black 1px 0px 2px;
+}
+.grouped-window-list-badge {
+    border-radius: 256px;
+    background-color: rgb(100, 100, 100);
+    border: 1px solid rgba(85, 85, 85, 1.0);
+    box-shadow: inset 0px 0px 0px 1px rgba(100, 100, 100, 0.5);
 }
 .grouped-window-list-button-label {
     padding-left: 4px;
