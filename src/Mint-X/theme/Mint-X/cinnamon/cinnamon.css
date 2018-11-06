@@ -1470,18 +1470,12 @@ StScrollBar StButton#vhandle:hover {
 .grouped-window-list-badge {
     border-radius: 256px;
     background-color: white;
-    border: 1px solid #949494;
 }
 .grouped-window-list-button-label {
     padding-left: 4px;
 }
 .grouped-window-list-thumbnail-alert {
     background: rgba(255,52,52,0.3);
-}
-
-.grouped-window-list-item-label {
-    width: 15em;
-    min-width: 5px;
 }
 
 .grouped-window-list-item-box {
