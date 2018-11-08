@@ -101,17 +101,22 @@ for color in hex_colors.keys():
             gtkrc = os.path.join(theme, "gtk-2.0", "*rc")
             gtkrc_toolbar = os.path.join(theme, "gtk-2.0", "menubar-toolbar", "*rc")
             gtk_main_css = os.path.join(theme, "gtk-3.0", "gtk.css")
-            for file in [gtkrc, gtkrc_toolbar, gtk_main_css]:
-                for accent in HEX_ACCENTS:
-                    os.system("sed -i s'/%(accent)s/%(color_accent)s/' %(file)s" % {'accent': accent, 'color_accent': hex_colors[color], 'file': file})
+            cinnamon_css = os.path.join(theme, "cinnamon", "cinnamon.css")
+            for file in [gtkrc, gtkrc_toolbar, gtk_main_css, cinnamon_css]:
+                if os.path.exists(file):
+                    for accent in HEX_ACCENTS:
+                        os.system("sed -i s'/%(accent)s/%(color_accent)s/' %(file)s" % {'accent': accent, 'color_accent': hex_colors[color], 'file': file})
+                    for accent in RGB_ACCENTS:
+                        os.system("sed -i s'/%(accent)s/%(color_accent)s/' %(file)s" % {'accent': accent, 'color_accent': rgb_colors[color], 'file': file})
 
-            # Cinnamon colors
-            file = os.path.join(theme, "cinnamon", "cinnamon.css")
-            if os.path.exists(file):
-                for accent in HEX_ACCENTS:
-                    os.system("sed -i s'/%(accent)s/%(color_accent)s/' %(file)s" % {'accent': accent, 'color_accent': hex_colors[color], 'file': file})
-                for accent in RGB_ACCENTS:
-                    os.system("sed -i s'/%(accent)s/%(color_accent)s/' %(file)s" % {'accent': accent, 'color_accent': rgb_colors[color], 'file': file})
+            # Assets
+            os.system("rm -rf %s/gtk-3.0/assets" % theme)
+            os.system("rm -rf %s/gtk-2.0/assets" % theme)
+            if variant == "-Dark":
+                os.system("cp -R %s/gtk-2.0/assets-dark %s/gtk-2.0/assets" % (path, theme))
+            else:
+                os.system("cp -R %s/gtk-2.0/assets %s/gtk-2.0/assets" % (path, theme))
+            os.system("cp -R %s/gtk-3.0/assets %s/gtk-3.0/assets" % (path, theme))
 
 
 # Files
