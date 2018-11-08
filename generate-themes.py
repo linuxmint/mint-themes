@@ -82,5 +82,37 @@ os.chdir("src/Mint-Y")
 os.system("./build-themes.py")
 os.chdir("../..")
 
+# Mint-Y color variations
+for color in hex_colors.keys():
+    for variant in ["", "-Dark", "-Darker"]:
+        original_name = "Mint-Y%s" % variant
+        path = os.path.join("src/Mint-Y/variations/%s" % color)
+        if os.path.isdir(path):
+            # Light theme
+            theme = "usr/share/themes/%s-%s" % (original_name, color)
+            theme_index = os.path.join(theme, "index.theme")
+            os.system("cp -R usr/share/themes/%s %s" % (original_name, theme))
+
+            # Theme name
+            for key in ["Name", "GtkTheme", "IconTheme"]:
+                change_value(key, "%s-%s" % (original_name, color), theme_index)
+
+            # Accent color
+            gtkrc = os.path.join(theme, "gtk-2.0", "*rc")
+            gtkrc_toolbar = os.path.join(theme, "gtk-2.0", "menubar-toolbar", "*rc")
+            gtk_main_css = os.path.join(theme, "gtk-3.0", "gtk.css")
+            for file in [gtkrc, gtkrc_toolbar, gtk_main_css]:
+                for accent in HEX_ACCENTS:
+                    os.system("sed -i s'/%(accent)s/%(color_accent)s/' %(file)s" % {'accent': accent, 'color_accent': hex_colors[color], 'file': file})
+
+            # Cinnamon colors
+            file = os.path.join(theme, "cinnamon", "cinnamon.css")
+            if os.path.exists(file):
+                for accent in HEX_ACCENTS:
+                    os.system("sed -i s'/%(accent)s/%(color_accent)s/' %(file)s" % {'accent': accent, 'color_accent': hex_colors[color], 'file': file})
+                for accent in RGB_ACCENTS:
+                    os.system("sed -i s'/%(accent)s/%(color_accent)s/' %(file)s" % {'accent': accent, 'color_accent': rgb_colors[color], 'file': file})
+
+
 # Files
 os.system("cp -R files/* ./")
