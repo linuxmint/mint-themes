@@ -88,14 +88,20 @@ for color in hex_colors.keys():
         original_name = "Mint-Y%s" % variant
         path = os.path.join("src/Mint-Y/variations/%s" % color)
         if os.path.isdir(path):
-            # Light theme
+            # Copy theme
             theme = "usr/share/themes/%s-%s" % (original_name, color)
             theme_index = os.path.join(theme, "index.theme")
             os.system("cp -R usr/share/themes/%s %s" % (original_name, theme))
 
+            # Remove common parts
+            os.system("rm -rf %s/metacity-1" % theme)
+
             # Theme name
-            for key in ["Name", "GtkTheme", "IconTheme"]:
+            for key in ["Name", "GtkTheme"]:
                 change_value(key, "%s-%s" % (original_name, color), theme_index)
+
+            for key in ["IconTheme"]:
+                change_value(key, "Mint-Y-%s" % color, theme_index)
 
             # Accent color
             gtkrc = os.path.join(theme, "gtk-2.0", "*rc")
