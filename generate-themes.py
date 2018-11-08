@@ -124,6 +124,8 @@ for color in hex_colors.keys():
                     for accent in RGB_ACCENTS:
                         os.system("sed -i s'/%(accent)s/%(color_accent)s/gI' %(file)s" % {'accent': accent, 'color_accent': rgb_colors[color], 'file': file})
 
+            # Remove metacity-theme-3.xml (it doesn't need to be derived since it's using GTK colors, and Cinnamon doesn't want to list it)
+            os.system("rm -f %s" % metacity3_xml)
 
             directories = []
             directories.append(os.path.join(theme, "cinnamon/common-assets"))
