@@ -84,10 +84,6 @@ if __name__ == '__main__':
             os.system("cp gtk-3.0/gtk-darker.css %s" % os.path.join(version_folder, "gtk.css"))
             os.system("cp gtk-3.0/gtk-dark.css %s" % version_folder)
             os.system("cp gtk-3.0/thumbnail.png %s" % version_folder)
-            # XFWM
-            os.system("rm -rf %s" % os.path.join(dest_folder, "xfwm4"))
-            os.system("cp -R xfwm4-dark %s" % dest_folder)
-            os.system("mv %s %s" % (os.path.join(dest_folder, "xfwm4-dark"), os.path.join(dest_folder, "xfwm4")))
 
         elif variation == "Mint-Y-Dark":
             print("    Building Mint-Y-Dark")
