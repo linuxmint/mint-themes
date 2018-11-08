@@ -8,12 +8,6 @@ def change_value (key, value, file):
         command = "sed -i '/%(key)s=/d' %(file)s" % {'key':key, 'file':file}
     os.system(command)
 
-def colorize_directory (path, variation):
-    for accent in HEX_ACCENTS:
-        os.system("find %s -name '*.*' -type f -exec sed -i 's/%s/%s/g' {}  \\;" % (path, accent, hex_colors[variation]))
-    for accent in RGB_ACCENTS:
-        os.system("find %s -name '*.*' -type f -exec sed -i 's/%s/%s/g' {}  \\;" % (path, accent, rgb_colors[variation]))
-
 HEX_ACCENTS = ["#9ab87c", "#8fa876", "#779559", "#9abe76", "#9ab87d", "#88a66a", "#81a65b"]
 hex_colors = {}
 hex_colors["Aqua"] = "#6cabcd"
