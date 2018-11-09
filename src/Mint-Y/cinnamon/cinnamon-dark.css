@@ -1400,10 +1400,11 @@ StScrollBar {
     background-image: url("common-assets/misc/overview-hover.png"); }
 
 .applet-separator {
-  padding: 1px 4px; }
-.applet-separator-line {
-  width: 1px;
-  background: rgba(255, 255, 255, 0.12); }
+  padding: 4px 4px; }
+.applet-separator-line,
+.applet-separator-line-vertical {
+  width: 2px;
+  background: rgba(32, 32, 32, 1); }
 .applet-box {
   padding-left: 3px;
   padding-right: 3px;
