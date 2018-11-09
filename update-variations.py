@@ -8,31 +8,33 @@ def change_value (key, value, file):
         command = "sed -i '/%(key)s=/d' %(file)s" % {'key':key, 'file':file}
     os.system(command)
 
-HEX_ACCENTS = ["#9ab87c", "#8fa876", "#779559", "#9abe76", "#9ab87d", "#88a66a", "#81a65b"]
-hex_colors = {}
-hex_colors["Aqua"] = "#6cabcd"
-hex_colors["Blue"] = "#5b73c4"
-hex_colors["Brown"] = "#aa876a"
-hex_colors["Grey"] = "#9d9d9d"
-hex_colors["Orange"] = "#db9d61"
-hex_colors["Pink"] = "#c76199"
-hex_colors["Purple"] = "#8c6ec9"
-hex_colors["Red"] = "#c15b58"
-hex_colors["Sand"] = "#c8ac69"
-hex_colors["Teal"] = "#5aaa9a"
+# Mint-Y
+Y_HEX_ACCENT1 = ["#9ab87c", "779559", "9abe76"]
+Y_HEX_ACCENT2 = ["#8fa876"]
 
-RGB_ACCENTS = ["172, 205, 138"]
-rgb_colors = {}
-rgb_colors["Aqua"] = "108, 171, 205"
-rgb_colors["Blue"] = "91, 115, 196"
-rgb_colors["Brown"] = "170, 135, 106"
-rgb_colors["Grey"] = "157,157,157"
-rgb_colors["Orange"] = "219, 157, 97"
-rgb_colors["Pink"] = "199, 97, 153"
-rgb_colors["Purple"] = "140, 110, 201"
-rgb_colors["Red"] = "193, 91, 88"
-rgb_colors["Sand"] = "200, 172, 105"
-rgb_colors["Teal"] = "90, 170, 154"
+y_hex_colors1 = {}
+y_hex_colors1["Aqua"] = "#6cabcd"
+y_hex_colors1["Blue"] = "#5b73c4"
+y_hex_colors1["Brown"] = "#aa876a"
+y_hex_colors1["Grey"] = "#9d9d9d"
+y_hex_colors1["Orange"] = "#db9d61"
+y_hex_colors1["Pink"] = "#c76199"
+y_hex_colors1["Purple"] = "#8c6ec9"
+y_hex_colors1["Red"] = "#c15b58"
+y_hex_colors1["Sand"] = "#c8ac69"
+y_hex_colors1["Teal"] = "#5aaa9a"
+
+y_hex_colors2 = {}
+y_hex_colors2["Aqua"] = "#6aa0bd"
+y_hex_colors2["Blue"] = "#596eb5"
+y_hex_colors2["Brown"] = "#9c7e65"
+y_hex_colors2["Grey"] = "#8f8f8f"
+y_hex_colors2["Orange"] = "#cc9560"
+y_hex_colors2["Pink"] = "#b85f90"
+y_hex_colors2["Purple"] = "#866cba"
+y_hex_colors2["Red"] = "#b35a57"
+y_hex_colors2["Sand"] = "#b89f65"
+y_hex_colors2["Teal"] = "#579c8e"
 
 # Mint-Y variations
 os.system("rm -rf src/Mint-Y/variations")
@@ -40,7 +42,7 @@ os.system("mkdir -p src/Mint-Y/variations")
 
 curdir = os.getcwd()
 
-for color in rgb_colors.keys():
+for color in y_hex_colors1.keys():
 
     variation = "src/Mint-Y/variations/%s" % color
     print("updating %s" % variation)
@@ -71,8 +73,10 @@ for color in rgb_colors.keys():
     # Colorize assets svg
     for asset in assets:
         asset_path = "%s/%s" % (variation, asset)
-        for accent in HEX_ACCENTS:
-            os.system("sed -i s'/%(accent)s/%(color_accent)s/' %(file)s" % {'accent': accent, 'color_accent': hex_colors[color], 'file': asset_path})
+        for accent in Y_HEX_ACCENT1:
+            os.system("sed -i s'/%(accent)s/%(color_accent)s/' %(file)s" % {'accent': accent, 'color_accent': y_hex_colors1[color], 'file': asset_path})
+        for accent in Y_HEX_ACCENT2:
+            os.system("sed -i s'/%(accent)s/%(color_accent)s/' %(file)s" % {'accent': accent, 'color_accent': y_hex_colors2[color], 'file': asset_path})
 
     # Render assets
     os.chdir(variation)

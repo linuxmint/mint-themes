@@ -16,8 +16,6 @@ rgb_colors = {}
 IGNORED_COLORS = []
 IGNORED_COLORS.append("73d216") # success color (always green)
 IGNORED_COLORS.append("6db442") # suggested color (always green)
-IGNORED_COLORS.append("9abe76") # appears in assets.svg (gtk3) but not in any generated assets
-IGNORED_COLORS.append("779559") # appears in assets.svg (gtk3) but not in any generated assets
 
 def hex_to_rgb(color):
     return tuple(int(color[i:i+2], 16) for i in (0, 2 ,4))

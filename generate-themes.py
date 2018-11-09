@@ -91,7 +91,7 @@ for color in os.listdir("src/Mint-X/variations"):
 
 
 # Mint-Y
-Y_HEX_ACCENT1 = ["#9ab87c"]
+Y_HEX_ACCENT1 = ["#9ab87c", "779559", "9abe76"]
 Y_HEX_ACCENT2 = ["#8fa876"]
 
 y_hex_colors1 = {}
