@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+import sys
 import os
 import re
 import colorsys
@@ -42,32 +42,39 @@ def parse_dir(path):
             if extension in [".css", ".scss", ".xml", ".svg", ".rc", ".xpm"]:
                 parse_file(p)
 
-# Cinnamon
-parse_dir("src/Mint-Y/cinnamon/sass")
-parse_dir("src/Mint-Y/cinnamon/common-assets")
-parse_dir("src/Mint-Y/cinnamon/dark-assets")
-parse_dir("src/Mint-Y/cinnamon/light-assets")
 
-# GTK2
-parse_dir("src/Mint-Y/gtk-2.0/menubar-toolbar")
-parse_file("src/Mint-Y/gtk-2.0/apps.rc")
-parse_file("src/Mint-Y/gtk-2.0/gtkrc")
-parse_file("src/Mint-Y/gtk-2.0/gtkrc-dark")
-parse_file("src/Mint-Y/gtk-2.0/gtkrc-darker")
-parse_file("src/Mint-Y/gtk-2.0/main.rc")
-parse_file("src/Mint-Y/gtk-2.0/panel.rc")
-parse_file("src/Mint-Y/gtk-2.0/assets.svg")
-parse_file("src/Mint-Y/gtk-2.0/assets-dark.svg")
+if len(sys.argv) < 2:
 
-# GTK3
-parse_dir("src/Mint-Y/gtk-3.0/sass")
-parse_file("src/Mint-Y/gtk-3.0/assets.svg")
+    # Cinnamon
+    parse_dir("src/Mint-Y/cinnamon/sass")
+    parse_dir("src/Mint-Y/cinnamon/common-assets")
+    parse_dir("src/Mint-Y/cinnamon/dark-assets")
+    parse_dir("src/Mint-Y/cinnamon/light-assets")
 
-# Metacity
-parse_dir("src/Mint-Y/metacity-1")
+    # GTK2
+    parse_dir("src/Mint-Y/gtk-2.0/menubar-toolbar")
+    parse_file("src/Mint-Y/gtk-2.0/apps.rc")
+    parse_file("src/Mint-Y/gtk-2.0/gtkrc")
+    parse_file("src/Mint-Y/gtk-2.0/gtkrc-dark")
+    parse_file("src/Mint-Y/gtk-2.0/gtkrc-darker")
+    parse_file("src/Mint-Y/gtk-2.0/main.rc")
+    parse_file("src/Mint-Y/gtk-2.0/panel.rc")
+    parse_file("src/Mint-Y/gtk-2.0/assets.svg")
+    parse_file("src/Mint-Y/gtk-2.0/assets-dark.svg")
 
-# Xfwm4 (ignore this one... loads of very similar colors in there)
-# parse_dir("src/Mint-Y/xfwm4")
+    # GTK3
+    parse_dir("src/Mint-Y/gtk-3.0/sass")
+    parse_file("src/Mint-Y/gtk-3.0/assets.svg")
+
+    # Metacity
+    parse_dir("src/Mint-Y/metacity-1")
+
+    # Xfwm4 (ignore this one... loads of very similar colors in there)
+    # parse_dir("src/Mint-Y/xfwm4")
+
+else:
+    # parse a different directory
+    parse_dir(sys.argv[1])
 
 for color in rgb_colors:
     hue, saturation, value = rgb_to_hsv(color)
