@@ -10,8 +10,8 @@ RGB_COLOR_REGEX = r'rgba?\((\d+),\s*(\d+),\s*(\d+)(?:,\s*(\d+(?:\.\d+)?))?\)'
 MIN_HUE = 57
 MAX_HUE = 180
 
-hex_colors = []
-rgb_colors = []
+hex_colors = {}
+rgb_colors = {}
 
 def hex_to_rgb(color):
     return tuple(int(color[i:i+2], 16) for i in (0, 2 ,4))
@@ -26,13 +26,17 @@ def rgb_to_hsv(color):
 def parse_file(path):
     with open(path) as file:
         for color in re.findall(RGB_COLOR_REGEX, file.read()):
-            if color not in rgb_colors:
-                rgb_colors.append(color)
+            if color not in rgb_colors.keys():
+                rgb_colors[color] = 1
+            else:
+                rgb_colors[color] += 1
     with open(path) as file:
         for color in re.findall(HEX_COLOR_REGEX, file.read()):
             color = color.lower()
-            if color not in hex_colors:
-                hex_colors.append(color)
+            if color not in hex_colors.keys():
+                hex_colors[color] = 1
+            else:
+                hex_colors[color] += 1
 
 def parse_dir(path):
     for root,d_names,f_names in os.walk(path):
@@ -76,14 +80,16 @@ else:
     # parse a different directory
     parse_dir(sys.argv[1])
 
-for color in rgb_colors:
+for color in rgb_colors.keys():
+    occurences = rgb_colors[color]
     hue, saturation, value = rgb_to_hsv(color)
     if hue > MIN_HUE and hue < MAX_HUE:
-        print (color, hue, saturation, value)
+        print (color, hue, saturation, value, "(appears %d times)" % occurences)
 
-for color in sorted(hex_colors):
+for color in sorted(hex_colors.keys()):
+    occurences = hex_colors[color]
     rgb = hex_to_rgb(color)
     hue, saturation, value = rgb_to_hsv(rgb)
     if hue > MIN_HUE and hue < MAX_HUE:
-        print (color, rgb, hue, saturation, value)
+        print (color, rgb, hue, saturation, value, "(appears %d times)" % occurences)
 
