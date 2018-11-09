@@ -13,6 +13,9 @@ MAX_HUE = 180
 hex_colors = {}
 rgb_colors = {}
 
+IGNORED_COLORS = []
+IGNORED_COLORS.append("73d216") # success color (always green)
+
 def hex_to_rgb(color):
     return tuple(int(color[i:i+2], 16) for i in (0, 2 ,4))
 
@@ -33,10 +36,11 @@ def parse_file(path):
     with open(path) as file:
         for color in re.findall(HEX_COLOR_REGEX, file.read()):
             color = color.lower()
-            if color not in hex_colors.keys():
-                hex_colors[color] = 1
-            else:
-                hex_colors[color] += 1
+            if color not in IGNORED_COLORS:
+                if color not in hex_colors.keys():
+                    hex_colors[color] = 1
+                else:
+                    hex_colors[color] += 1
 
 def parse_dir(path):
     for root,d_names,f_names in os.walk(path):
