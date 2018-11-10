@@ -70,13 +70,13 @@ for color in y_hex_colors1.keys():
     for asset in assets:
         os.system("cp -R src/Mint-Y/%s %s/%s" % (asset, variation, asset))
 
-    # Colorize assets svg
+    # Update assets svg
     for asset in assets:
         asset_path = "%s/%s" % (variation, asset)
         for accent in Y_HEX_ACCENT1:
-            os.system("sed -i s'/%(accent)s/%(color_accent)s/' %(file)s" % {'accent': accent, 'color_accent': y_hex_colors1[color], 'file': asset_path})
+            os.system("sed -i s'/%(accent)s/%(color_accent)s/gI' %(file)s" % {'accent': accent, 'color_accent': y_hex_colors1[color], 'file': asset_path})
         for accent in Y_HEX_ACCENT2:
-            os.system("sed -i s'/%(accent)s/%(color_accent)s/' %(file)s" % {'accent': accent, 'color_accent': y_hex_colors2[color], 'file': asset_path})
+            os.system("sed -i s'/%(accent)s/%(color_accent)s/gI' %(file)s" % {'accent': accent, 'color_accent': y_hex_colors2[color], 'file': asset_path})
 
     # Render assets
     os.chdir(variation)
@@ -89,3 +89,11 @@ for color in y_hex_colors1.keys():
     os.system("rm -rf assets/*")
     os.system("./render-assets.sh")
     os.chdir(curdir)
+
+    # Colorize GTK2 toolbar-menubar (these assets aren't generated)
+    for variant in ["", "-Dark", "-Darker"]:
+        path = "files/usr/share/themes/Mint-Y%s-%s/gtk-2.0/menubar-toolbar" % (variant, color)
+        if os.path.exists(path):
+            for filename in os.listdir(path):
+                p = os.path.join(path, filename)
+                os.system("./colorize.py %s %s" % (p, color))
