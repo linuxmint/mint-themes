@@ -118,9 +118,11 @@ y_hex_colors2["Red"] = "#b35a57"
 y_hex_colors2["Sand"] = "#b89f65"
 y_hex_colors2["Teal"] = "#579c8e"
 
+curdir = os.getcwd()
+
 os.chdir("src/Mint-Y")
 os.system("./build-themes.py")
-os.chdir("../..")
+os.chdir(curdir)
 
 # Mint-Y color variations
 for color in y_hex_colors1.keys():
@@ -128,6 +130,8 @@ for color in y_hex_colors1.keys():
         original_name = "Mint-Y%s" % variant
         path = os.path.join("src/Mint-Y/variations/%s" % color)
         if os.path.isdir(path):
+            print("Derivating %s-%s" % (original_name, color))
+
             # Copy theme
             theme = "usr/share/themes/%s-%s" % (original_name, color)
             theme_index = os.path.join(theme, "index.theme")
@@ -142,16 +146,34 @@ for color in y_hex_colors1.keys():
 
             for key in ["MetacityTheme"]:
                 metacity_variant = original_name.replace("Darker", "Dark")
-                change_value(key, "%s-%s" % (original_name, color), theme_index)
+                change_value(key, "%s-%s" % (metacity_variant, color), theme_index)
+
+            # Regenerate GTK3 sass
+            os.system("cp -R src/Mint-Y/gtk-3.0/sass %s/gtk-3.0/" % theme)
+            os.system("cp -R src/Mint-Y/gtk-3.0/parse-sass.sh %s/gtk-3.0/" % theme)
+            y_colorize_directory("%s/gtk-3.0/sass" % theme, color)
+            os.chdir("%s/gtk-3.0" % theme)
+            if (variant == "-Dark"):
+                os.system("cp sass/gtk-dark.scss sass/gtk.scss")
+            elif (variant == "-Darker"):
+                os.system("cp sass/gtk-darker.scss sass/gtk.scss")
+            os.system("rm sass/gtk-dark.scss sass/gtk-darker.scss")
+            os.system("./parse-sass.sh")
+            os.system("rm parse-sass.sh")
+            os.system("rm -rf sass")
+            os.chdir(curdir)
 
             # Accent color
-            gtkrc = os.path.join(theme, "gtk-2.0", "*rc")
-            gtkrc_toolbar = os.path.join(theme, "gtk-2.0", "menubar-toolbar", "gtkrc")
-            gtk_main_css = os.path.join(theme, "gtk-3.0", "gtk.css")
-            cinnamon_css = os.path.join(theme, "cinnamon", "cinnamon.css")
-            metacity2_xml = os.path.join(theme, "metacity-1", "metacity-theme-2.xml")
-            metacity3_xml = os.path.join(theme, "metacity-1", "metacity-theme-3.xml")
-            for file in [gtkrc, gtkrc_toolbar, gtk_main_css, cinnamon_css, metacity2_xml, metacity3_xml]:
+            files = []
+            files.append(os.path.join(theme, "gtk-2.0", "gtkrc"))
+            files.append(os.path.join(theme, "gtk-2.0", "main.rc"))
+            files.append(os.path.join(theme, "gtk-2.0", "panel.rc"))
+            files.append(os.path.join(theme, "gtk-2.0", "apps.rc"))
+            files.append(os.path.join(theme, "gtk-2.0", "menubar-toolbar", "gtkrc"))
+            files.append(os.path.join(theme, "cinnamon", "cinnamon.css"))
+            files.append(os.path.join(theme, "metacity-1", "metacity-theme-2.xml"))
+            files.append(os.path.join(theme, "metacity-1", "metacity-theme-3.xml"))
+            for file in files:
                 if os.path.exists(file):
                     for accent in Y_HEX_ACCENT1:
                         os.system("sed -i s'/%(accent)s/%(color_accent)s/gI' %(file)s" % {'accent': accent, 'color_accent': y_hex_colors1[color], 'file': file})
@@ -159,11 +181,12 @@ for color in y_hex_colors1.keys():
                         os.system("sed -i s'/%(accent)s/%(color_accent)s/gI' %(file)s" % {'accent': accent, 'color_accent': y_hex_colors2[color], 'file': file})
 
             # Remove metacity-theme-3.xml (it doesn't need to be derived since it's using GTK colors, and Cinnamon doesn't want to list it)
-            os.system("rm -f %s" % metacity3_xml)
+            os.system("rm -f %s" % os.path.join(theme, "metacity-1", "metacity-theme-3.xml"))
 
             directories = []
             directories.append(os.path.join(theme, "cinnamon/common-assets"))
             directories.append(os.path.join(theme, "cinnamon/light-assets"))
+            directories.append(os.path.join(theme, "cinnamon/dark-assets"))
             for directory in directories:
                 if os.path.exists(directory):
                     y_colorize_directory(directory, color)
