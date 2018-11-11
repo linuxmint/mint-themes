@@ -185,12 +185,16 @@ for color in y_hex_colors1.keys():
             os.chdir("%s/gtk-3.0" % theme)
             if (variant == "-Dark"):
                 os.system("cp sass/gtk-dark.scss sass/gtk.scss")
+                os.system("rm sass/gtk-dark.scss sass/gtk-darker.scss")
             elif (variant == "-Darker"):
                 os.system("cp sass/gtk-darker.scss sass/gtk.scss")
-            os.system("rm sass/gtk-dark.scss sass/gtk-darker.scss")
+                os.system("rm sass/gtk-darker.scss")
+            else:
+                os.system("rm sass/gtk-dark.scss sass/gtk-darker.scss")
+
             os.system("./parse-sass.sh")
             os.system("rm parse-sass.sh")
-            os.system("rm -rf sass")
+            os.system("rm -rf sass .sass-cache")
             os.chdir(curdir)
 
             # Accent color
