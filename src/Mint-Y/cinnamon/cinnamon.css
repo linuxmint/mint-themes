@@ -1401,9 +1401,14 @@ StScrollBar {
 
 .applet-separator {
   padding: 1px 4px; }
+  .applet-separator.vertical {
+    padding: 4px 1px; }
 .applet-separator-line {
   width: 1px;
   background: rgba(255, 255, 255, 0.12); }
+  .applet-separator-line-vertical {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.12); }
 .applet-box {
   padding-left: 3px;
   padding-right: 3px;
