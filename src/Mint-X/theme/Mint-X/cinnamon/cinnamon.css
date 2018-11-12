@@ -1484,7 +1484,7 @@ StScrollBar StButton#vhandle:hover {
     padding-top: 1px;
     padding-left: 4px;
     padding-right: 4px;
-    border-image: url("panel-assets/hover-3.svg") 6;
+    border-image: none;
 }
 
 .panel-top .grouped-window-list-item-box {
@@ -1529,16 +1529,6 @@ StScrollBar StButton#vhandle:hover {
     font-weight: bold;
     color: #fff;
     border-image: url("panel-assets/pressed.svg") 6;
-}
-
-.grouped-window-list-item-box:closed {
-    background-gradient-direction: vertical;
-    background-gradient-start: rgba(0,0,0,0.0);
-    background-gradient-end: rgba(0,0,0,0.0);
-    border-radius: 0px 0px 0px 0px;
-    border-image: none;
-    border-color: rgba(0,0,0,0.0);
-    box-shadow: inset 0px 0px 0px 0px rgba(0,0,0,0.0);
 }
 
 .panel-top .grouped-window-list-item-box:active,
