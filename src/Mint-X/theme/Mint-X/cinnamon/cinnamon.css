@@ -1599,9 +1599,10 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .grouped-window-list-thumbnail-menu .item-box {
-    padding: 8px;
+    padding: 10px;
     border: 1px solid rgba(0, 0, 0, 0);
     border-radius: 0px;
+    spacing: 4px;
 }
 
 .grouped-window-list-thumbnail-menu .item-box:outlined {
@@ -1612,11 +1613,6 @@ StScrollBar StButton#vhandle:hover {
 .grouped-window-list-thumbnail-menu .item-box:selected {
     border-image: url("misc-assets/hover-2.png") 6;
     color: #fff;
-}
-
-.grouped-window-list-thumbnail-menu .thumbnail-box {
-    padding: 2px;
-    spacing: 4px;
 }
 
 .grouped-window-list-thumbnail-menu .thumbnail {
