@@ -1173,7 +1173,10 @@ StScrollBar {
   padding-left: 4px; }
 .grouped-window-list-number-label {
   z-index: 99;
-  text-shadow: black 1px 0px 2px; }
+  color: #d0d0d0; }
+.grouped-window-list-badge {
+  border-radius: 256px;
+  background-color: #4a4a4a; }
 .grouped-window-list-button-label {
   padding-left: 4px; }
 .grouped-window-list-thumbnail-alert {
@@ -1187,8 +1190,9 @@ StScrollBar {
   .grouped-window-list-thumbnail-menu > StBoxLayout {
     padding: 4px; }
   .grouped-window-list-thumbnail-menu .item-box {
-    padding: 8px;
-    border-radius: 2px; }
+    padding: 10px;
+    border-radius: 2px;
+    spacing: 4px; }
     .grouped-window-list-thumbnail-menu .item-box:outlined {
       padding: 8px;
       border: 1px solid #8fa876; }
@@ -1198,9 +1202,6 @@ StScrollBar {
       border: 0px solid #8fa876; }
   .grouped-window-list-thumbnail-menu .thumbnail {
     width: 256px; }
-  .grouped-window-list-thumbnail-menu .thumbnail-box {
-    padding: 2px;
-    spacing: 4px; }
   .grouped-window-list-thumbnail-menu .separator {
     width: 1px;
     background: rgba(255, 255, 255, 0.2); }

@@ -1556,7 +1556,12 @@ StScrollBar {
 
   &-number-label {
     z-index: 99;
-    text-shadow: black 1px 0px 2px;
+    color: $tooltip_border_color;
+  }
+
+  &-badge {
+    border-radius: 256px;
+    background-color: $tooltip_fg_color;
   }
 
   &-button-label {
@@ -1579,8 +1584,9 @@ StScrollBar {
     }
 
     .item-box {
-      padding: 8px;
+      padding: 10px;
       border-radius: 2px;
+      spacing: 4px;
 
       &:outlined {
         padding: 8px;
@@ -1596,10 +1602,6 @@ StScrollBar {
 
     .thumbnail { width: 256px; }
 
-    .thumbnail-box {
-      padding: 2px;
-      spacing: 4px;
-    }
     .separator {
       width: 1px;
       background: rgba(255,255,255,0.2);

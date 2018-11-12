@@ -1465,8 +1465,11 @@ StScrollBar StButton#vhandle:hover {
 }
 .grouped-window-list-number-label {
     z-index: 99;
-    color: white;
-    text-shadow: black 1px 0px 2px;
+    color: rgb(70, 70, 70);
+}
+.grouped-window-list-badge {
+    border-radius: 256px;
+    background-color: white;
 }
 .grouped-window-list-button-label {
     padding-left: 4px;
@@ -1475,18 +1478,13 @@ StScrollBar StButton#vhandle:hover {
     background: rgba(255,52,52,0.3);
 }
 
-.grouped-window-list-item-label {
-    width: 15em;
-    min-width: 5px;
-}
-
 .grouped-window-list-item-box {
     font-weight: bold;
     color: rgb(62, 62, 62);
     padding-top: 1px;
     padding-left: 4px;
     padding-right: 4px;
-    border-image: url("panel-assets/hover-3.svg") 6;
+    border-image: none;
 }
 
 .panel-top .grouped-window-list-item-box {
@@ -1531,16 +1529,6 @@ StScrollBar StButton#vhandle:hover {
     font-weight: bold;
     color: #fff;
     border-image: url("panel-assets/pressed.svg") 6;
-}
-
-.grouped-window-list-item-box:closed {
-    background-gradient-direction: vertical;
-    background-gradient-start: rgba(0,0,0,0.0);
-    background-gradient-end: rgba(0,0,0,0.0);
-    border-radius: 0px 0px 0px 0px;
-    border-image: none;
-    border-color: rgba(0,0,0,0.0);
-    box-shadow: inset 0px 0px 0px 0px rgba(0,0,0,0.0);
 }
 
 .panel-top .grouped-window-list-item-box:active,
@@ -1611,9 +1599,10 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .grouped-window-list-thumbnail-menu .item-box {
-    padding: 8px;
+    padding: 10px;
     border: 1px solid rgba(0, 0, 0, 0);
     border-radius: 0px;
+    spacing: 4px;
 }
 
 .grouped-window-list-thumbnail-menu .item-box:outlined {
@@ -1624,11 +1613,6 @@ StScrollBar StButton#vhandle:hover {
 .grouped-window-list-thumbnail-menu .item-box:selected {
     border-image: url("misc-assets/hover-2.png") 6;
     color: #fff;
-}
-
-.grouped-window-list-thumbnail-menu .thumbnail-box {
-    padding: 2px;
-    spacing: 4px;
 }
 
 .grouped-window-list-thumbnail-menu .thumbnail {
