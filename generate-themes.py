@@ -197,6 +197,21 @@ for color in y_hex_colors1.keys():
             os.system("rm -rf sass .sass-cache")
             os.chdir(curdir)
 
+            # Regenerate Cinnamon sass
+            if (variant != "-Darker"):
+                # Darker variants have no cinnamon style
+                os.system("cp -R src/Mint-Y/cinnamon/sass %s/cinnamon/" % theme)
+                os.system("cp -R src/Mint-Y/cinnamon/parse-sass.sh %s/cinnamon/" % theme)
+                y_colorize_directory("%s/cinnamon/sass" % theme, color)
+                os.chdir("%s/cinnamon" % theme)
+                if (variant == "-Dark"):
+                    os.system("cp sass/cinnamon-dark.scss sass/cinnamon.scss")
+                os.system("rm sass/cinnamon-dark.scss")
+                os.system("./parse-sass.sh")
+                os.system("rm parse-sass.sh")
+                os.system("rm -rf sass .sass-cache")
+                os.chdir(curdir)
+
             # Accent color
             files = []
             files.append(os.path.join(theme, "gtk-2.0", "gtkrc"))
@@ -204,7 +219,6 @@ for color in y_hex_colors1.keys():
             files.append(os.path.join(theme, "gtk-2.0", "panel.rc"))
             files.append(os.path.join(theme, "gtk-2.0", "apps.rc"))
             files.append(os.path.join(theme, "gtk-2.0", "menubar-toolbar", "gtkrc"))
-            files.append(os.path.join(theme, "cinnamon", "cinnamon.css"))
             files.append(os.path.join(theme, "metacity-1", "metacity-theme-2.xml"))
             files.append(os.path.join(theme, "metacity-1", "metacity-theme-3.xml"))
             for file in files:
