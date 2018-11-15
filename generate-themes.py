@@ -23,6 +23,14 @@ def y_colorize_directory (path, variation):
         os.system("find %s -name '*.*' -type f -exec sed -i 's/%s/%s/gI' {}  \\;" % (path, accent, y_hex_colors3[variation]))
     for accent in Y_HEX_ACCENT4:
         os.system("find %s -name '*.*' -type f -exec sed -i 's/%s/%s/gI' {}  \\;" % (path, accent, y_hex_colors4[variation]))
+    for accent in Y_RGB_ACCENT1:
+        os.system("find %s -name '*.*' -type f -exec sed -i 's/%s/%s/gI' {}  \\;" % (path, accent, y_rgb_colors1[variation]))
+    for accent in Y_RGB_ACCENT2:
+        os.system("find %s -name '*.*' -type f -exec sed -i 's/%s/%s/gI' {}  \\;" % (path, accent, y_rgb_colors2[variation]))
+    for accent in Y_RGB_ACCENT3:
+        os.system("find %s -name '*.*' -type f -exec sed -i 's/%s/%s/gI' {}  \\;" % (path, accent, y_rgb_colors3[variation]))
+    for accent in Y_RGB_ACCENT4:
+        os.system("find %s -name '*.*' -type f -exec sed -i 's/%s/%s/gI' {}  \\;" % (path, accent, y_rgb_colors4[variation]))
 
 # Mint-X
 X_HEX_ACCENTS = ["#9ab87c", "#accd8a"]
@@ -100,6 +108,11 @@ Y_HEX_ACCENT2 = ["#8fa876"]
 Y_HEX_ACCENT3 = ["#afca95"]  # PRELIGHT/HOVER
 Y_HEX_ACCENT4 = ["#779559"]  # PRESSED
 
+Y_RGB_ACCENT1 = ["154, 184, 124"]  # BASE
+Y_RGB_ACCENT2 = ["143, 168, 118"]
+Y_RGB_ACCENT3 = ["175, 202, 149"]  # PRELIGHT/HOVER
+Y_RGB_ACCENT4 = ["119, 149, 89"]  # PRESSED
+
 y_hex_colors1 = {}
 y_hex_colors1["Aqua"] = "#6cabcd"
 y_hex_colors1["Blue"] = "#5b73c4"
@@ -147,6 +160,54 @@ y_hex_colors4["Purple"] = "#6a5497"
 y_hex_colors4["Red"] = "#9a4a47"
 y_hex_colors4["Sand"] = "#947f51"
 y_hex_colors4["Teal"] = "#4e8378"
+
+y_rgb_colors1 = {}
+y_rgb_colors1["Aqua"] = "108, 171, 205"
+y_rgb_colors1["Blue"] = "91, 115, 196"
+y_rgb_colors1["Brown"] = "170, 135, 106"
+y_rgb_colors1["Grey"] = "157, 157, 157"
+y_rgb_colors1["Orange"] = "219, 157, 97"
+y_rgb_colors1["Pink"] = "199, 97, 153"
+y_rgb_colors1["Purple"] = "140, 110, 201"
+y_rgb_colors1["Red"] = "193, 91, 88"
+y_rgb_colors1["Sand"] = "200, 172, 105"
+y_rgb_colors1["Teal"] = "90, 170, 154"
+
+y_rgb_colors2 = {}
+y_rgb_colors2["Aqua"] = "106, 160, 189"
+y_rgb_colors2["Blue"] = "89, 110, 181"
+y_rgb_colors2["Brown"] = "156, 126, 101"
+y_rgb_colors2["Grey"] = "143, 143, 143"
+y_rgb_colors2["Orange"] = "204, 149, 96"
+y_rgb_colors2["Pink"] = "184, 95, 144"
+y_rgb_colors2["Purple"] = "134, 108, 186"
+y_rgb_colors2["Red"] = "179, 90, 87"
+y_rgb_colors2["Sand"] = "184, 159, 101"
+y_rgb_colors2["Teal"] = "87, 156, 142"
+
+y_rgb_colors3 = {}
+y_rgb_colors3["Aqua"] = "130, 179, 206"
+y_rgb_colors3["Blue"] = "110, 130, 198"
+y_rgb_colors3["Brown"] = "173, 144, 120"
+y_rgb_colors3["Grey"] = "163, 163, 163"
+y_rgb_colors3["Orange"] = "220, 170, 122"
+y_rgb_colors3["Pink"] = "201, 117, 163"
+y_rgb_colors3["Purple"] = "155, 132, 203"
+y_rgb_colors3["Red"] = "209, 113, 111"
+y_rgb_colors3["Sand"] = "201, 178, 124"
+y_rgb_colors3["Teal"] = "109, 187, 171"
+
+y_rgb_colors4 = {}
+y_rgb_colors4["Aqua"] = "82, 129, 154"
+y_rgb_colors4["Blue"] = "75, 90, 141"
+y_rgb_colors4["Brown"] = "121, 101, 85"
+y_rgb_colors4["Grey"] = "114, 114, 114"
+y_rgb_colors4["Orange"] = "169, 119, 71"
+y_rgb_colors4["Pink"] = "146, 77, 115"
+y_rgb_colors4["Purple"] = "106, 84, 151"
+y_rgb_colors4["Red"] = "154, 74, 71"
+y_rgb_colors4["Sand"] = "148, 127, 81"
+y_rgb_colors4["Teal"] = "78, 131, 120"
 
 curdir = os.getcwd()
 
@@ -217,6 +278,14 @@ for color in y_hex_colors1.keys():
                         os.system("sed -i s'/%(accent)s/%(color_accent)s/gI' %(file)s" % {'accent': accent, 'color_accent': y_hex_colors3[color], 'file': file})
                     for accent in Y_HEX_ACCENT4:
                         os.system("sed -i s'/%(accent)s/%(color_accent)s/gI' %(file)s" % {'accent': accent, 'color_accent': y_hex_colors4[color], 'file': file})
+                    for accent in Y_RGB_ACCENT1:
+                        os.system("sed -i s'/%(accent)s/%(color_accent)s/gI' %(file)s" % {'accent': accent, 'color_accent': y_rgb_colors1[color], 'file': file})
+                    for accent in Y_RGB_ACCENT2:
+                        os.system("sed -i s'/%(accent)s/%(color_accent)s/gI' %(file)s" % {'accent': accent, 'color_accent': y_rgb_colors2[color], 'file': file})
+                    for accent in Y_RGB_ACCENT3:
+                        os.system("sed -i s'/%(accent)s/%(color_accent)s/gI' %(file)s" % {'accent': accent, 'color_accent': y_rgb_colors3[color], 'file': file})
+                    for accent in Y_RGB_ACCENT4:
+                        os.system("sed -i s'/%(accent)s/%(color_accent)s/gI' %(file)s" % {'accent': accent, 'color_accent': y_rgb_colors4[color], 'file': file})
 
             # Remove metacity-theme-3.xml (it doesn't need to be derived since it's using GTK colors, and Cinnamon doesn't want to list it)
             os.system("rm -f %s" % os.path.join(theme, "metacity-1", "metacity-theme-3.xml"))
