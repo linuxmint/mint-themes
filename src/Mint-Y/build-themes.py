@@ -22,6 +22,7 @@ print("Updating Gtk2 assets")
 os.chdir("gtk-2.0/")
 os.system("./render-assets.sh")
 os.system("./render-dark-assets.sh")
+os.system("./render-menu-toolbar-assets.sh")
 print("Gtk2 assets updated")
 
 os.chdir(curdir)
