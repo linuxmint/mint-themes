@@ -1,3 +1,114 @@
+mint-themes (1.7.4) tessa; urgency=medium
+
+  [ Germán Franco ]
+  * Update old class name (#147)
+
+  [ Germán ]
+  * Mint-X: Style new overview classes
+  * Linux Mint: Style new overview classes
+  * Mint-Y: Style new overview classes
+
+  [ JosephMcc ]
+  * MintY-Gtk3: Set some darker initial foreground colors
+  * Mint-Y: Darken window titles in the light variation
+  * MintY-Gtk3: Bring back menu separators
+  * Mint-Y-Gtk3: Darken .dim-labels
+  * Mint-Y-Gtk3: Match the filechooser sidebar to the nemo sidebar colors
+  * Mint-Y-Gtk3: Darken the border on primary-toolbars
+  * Mint-Y-Gtk3: Darken header bar borders
+  * Mint-Y-Gtk3: More headerbar styling improvements
+  * Mint-Y-Gtk3: Fix the primary-toolbar border again
+  * Mint-Y-Cinnamon: Bump panel height to 40px
+  * Mint-Y-Gtk3: Use narrower titlebars
+  * Mint-X-Gtk3: Improve the titlebar styling
+  * Mint-X-Gtk3: Special case some headerbars
+  * Mint-Y-Gtk3: A few more improvements for muffin window decorations
+
+  [ Jason Hicks ]
+  * Add support for the grouped window list applet
+
+  [ JosephMcc ]
+  * Mint-Y-Gtk3: Rengerate some css files
+  * Mint-Y-Cinnamon: Improve contrast in panels and menus
+  * Mint-X-Gtk3: Don't use pure white for file manager sidebar foregrounds
+
+  [ Jason Hicks ]
+  * Give the grouped window list applet unique class names
+
+  [ JosephMcc ]
+  * Mint-Y-Cinnamon: Make the focused window in the grouped list more obvious
+  * Mint-Y-Cinnamon: Add menu separators
+  * Mint-Y-Gtk3: Fix the styling of GtkPaned wide separators
+  * Mint-Y-Cinnamon: Fix flashing white when hovering in the grouped window list
+
+  [ Germán Franco ]
+  * git: Ignore sass cache files by extension (#158)
+
+  [ JosephMcc ]
+  * Mint-Y-Gtk3: Improve the filechooser dialog styling
+  * Mint-Y-Gtk3: Fix selected colors in the caja inactive treeview pane
+  * Mint-Y-Gtk3: Improve the filechooser theming a bit more
+  * Mint-Y-Cinnamon: Fix the menu search entry to work with larger text
+  * Gtk3: Fix support for drag and drop indication
+
+  [ Germán Franco ]
+  * Style menu favorites buttons as squares (#157)
+
+  [ Clement Lefebvre ]
+  * Mint-X: Fix missing Cinnamon assets in Grey variation
+  * Start implementation of Mint-Y color variations
+  * Colors: Overwrite assets
+  * Remove metacity color variations
+  * Mint-Y: Remove xfce notify theme
+  * Mint-Y: Remove XFWM4 from Darker variant
+  * Colors: Start adding overrides
+  * Don't list Metacity color deviations in Cinnamon
+  * Fix all GTK thumbnails and some Cinnamon thumbs
+  * Add a script to extract all the green colors used in Mint-Y
+  * Rename list-colors.py -> list-green-colors.py and let it accept a path
+  * list-green-colors: Count occurences
+  * Fix typo in color code
+  * list-green-colors: Ignore success-color
+  * list-green-colors: Ignore more dummy colors
+  * Update generate-themes with new Mint-Y colors
+  * Add a colorize script (to change the hue of a png)
+  * Update assets
+  * Update assets
+  * Update thumbnails
+  * Fix a couple of issues and regenerate assets
+  * Fix typo and regen assets
+
+  [ NikoKrause ]
+  * Mint-Y-colors: Add close buttons for XFCE (xfwm4) (#164)
+
+  [ JosephMcc ]
+  * Mint-Y: Fix the thumbnails for the darker variations
+  * Mint-Y-Cinnamon: Fix the styling of vertical applet separators
+
+  [ NikoKrause ]
+  * Mint-Y: Improve close-prelight button in gtk-3
+  * render-assets-script: fix dpi for Mint19 inkscape
+  * Mint-Y-variations: update scripts
+  * Mint-Y-variations: updated gtk-3 assets
+  * Mint-Y-variations: updated gtk-2 menu-toolbar assets
+
+  [ JosephMcc ]
+  * Mint-Y: Make sure we update the dark version within the -Darker variations
+
+  [ Clement Lefebvre ]
+  * Add mint-y palette
+
+  [ Jason Hicks ]
+  * Add support for GWL number badges (#161)
+
+  [ Clement Lefebvre ]
+  * Fix Cinnamon tiling color in color variations
+
+  [ NikoKrause ]
+  * Mint-Y-colors: add missing xfwm4 close buttons (#168)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 27 Nov 2018 17:22:14 +0000
+
 mint-themes (1.7.3) tara; urgency=medium
 
   [ JosephMcc ]
