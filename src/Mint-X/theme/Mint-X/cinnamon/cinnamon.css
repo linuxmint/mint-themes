@@ -1531,30 +1531,21 @@ StScrollBar StButton#vhandle:hover {
     border-image: url("panel-assets/pressed.svg") 6;
 }
 
-.panel-top .grouped-window-list-item-box:active,
-.panel-top .grouped-window-list-item-box:checked,
 .panel-top .grouped-window-list-item-box:focus,
-.panel-top .grouped-window-list-item-box:checked:hover,
 .panel-top .grouped-window-list-item-box:focus:hover,
-.panel-top .grouped-window-list-item-box:active:hover {
+.panel-top .grouped-window-list-item-box:focus:active:hover {
     border-image: url("panel-assets/pressed-top.svg") 6;
 }
 
-.panel-left .grouped-window-list-item-box:active,
-.panel-left .grouped-window-list-item-box:checked,
 .panel-left .grouped-window-list-item-box:focus,
-.panel-left .grouped-window-list-item-box:checked:hover,
 .panel-left .grouped-window-list-item-box:focus:hover,
-.panel-left .grouped-window-list-item-box:active:hover {
+.panel-left .grouped-window-list-item-box:focus:active:hover {
     border-image: url("panel-assets/pressed-left.svg") 6;
 }
 
-.panel-right .grouped-window-list-item-box:active,
-.panel-right .grouped-window-list-item-box:checked,
 .panel-right .grouped-window-list-item-box:focus,
-.panel-right .grouped-window-list-item-box:checked:hover,
 .panel-right .grouped-window-list-item-box:focus:hover,
-.panel-right .grouped-window-list-item-box:active:hover {
+.panel-right .grouped-window-list-item-box:focus:active:hover {
     border-image: url("panel-assets/pressed-right.svg") 6;
 }
 
