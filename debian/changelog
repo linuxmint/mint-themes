@@ -1,3 +1,10 @@
+mint-themes (1.7.5) tessa; urgency=medium
+
+  [ Jason Hicks ]
+  * Mint-X: Fix GWL styling in top/left/right panel orientations (#173)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 11 Dec 2018 11:13:05 +0000
+
 mint-themes (1.7.4) tessa; urgency=medium
 
   [ Germán Franco ]
