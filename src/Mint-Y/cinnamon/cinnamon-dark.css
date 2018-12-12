@@ -1411,12 +1411,13 @@ StScrollBar {
     height: 1px;
     background: rgba(255, 255, 255, 0.12); }
 .applet-box {
-  padding-left: 3px;
-  padding-right: 3px;
+  padding-left: 4px;
+  padding-right: 4px;
   spacing: 4px;
   color: #f0f0f0;
   text-shadow: none;
-  transition-duration: 100; }
+  transition-duration: 100;
+  text-align: center; }
   .applet-box StLabel {
     padding-top: 2px; }
   .applet-box.vertical {

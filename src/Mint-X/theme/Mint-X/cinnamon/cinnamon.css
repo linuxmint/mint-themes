@@ -1834,6 +1834,7 @@ StScrollBar StButton#vhandle:hover {
     padding-right: 4px;
     padding-top: 1px;
     spacing: 3px;
+    text-align: center;
 }
 
 .applet-box.vertical {

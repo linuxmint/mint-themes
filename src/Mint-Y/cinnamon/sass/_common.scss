@@ -1883,12 +1883,13 @@ StScrollBar {
   }
 
   &-box {
-    padding-left: 3px;
-    padding-right: 3px;
+    padding-left: 4px;
+    padding-right: 4px;
     spacing: 4px;
     color: $panel_fg;
     text-shadow: none;
     transition-duration: 100;
+    text-align: center;
 
     & StLabel { padding-top: 2px; }
 
