@@ -1904,7 +1904,7 @@ StScrollBar StButton#vhandle:hover {
     border-image: url("misc-assets/expo-name-entry.png") 6;
     padding: 8px 12px;
     border-radius: 2px;
-    height: 15px;
+    height: 1.5em;
     color: rgba(255, 255, 255, 0.7);
     text-align: center;
     font-weight: bold;
