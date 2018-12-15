@@ -1,3 +1,11 @@
+mint-themes (1.7.7) tessa; urgency=medium
+
+  [ Steve M ]
+  * Mint-themes fix expo workspace entry not expanding to fit scaled fonts (#175)
+  * Mint-Y & Mint-X Fix Attached Dialog Titlebar (#174)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 15 Dec 2018 12:13:23 +0000
+
 mint-themes (1.7.6) tessa; urgency=medium
 
   * Cinnamon: Increase padding and center align text in applets
