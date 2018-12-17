@@ -1,3 +1,9 @@
+mint-themes (1.7.8) tessa; urgency=medium
+
+  * Mint-Y-Grey*: Fix red GTK2 menubar bg
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 17 Dec 2018 12:24:38 +0000
+
 mint-themes (1.7.7) tessa; urgency=medium
 
   [ Steve M ]
