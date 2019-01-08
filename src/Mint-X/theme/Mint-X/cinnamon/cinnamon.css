@@ -1479,6 +1479,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .grouped-window-list-item-box {
+    text-align: left;
     font-weight: bold;
     color: rgb(62, 62, 62);
     padding-top: 1px;
