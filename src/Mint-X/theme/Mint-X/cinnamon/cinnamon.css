@@ -1708,6 +1708,7 @@ StScrollBar StButton#vhandle:hover {
 
 .workspace-button.vertical {
     padding: 0px;
+    height: 1.5em;
 }
 
 .workspace-button:hover {
