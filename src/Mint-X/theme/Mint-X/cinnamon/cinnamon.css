@@ -1584,7 +1584,7 @@ StScrollBar StButton#vhandle:hover {
 .grouped-window-list-thumbnail-menu {
     border-image: url("background-assets/bg-1.png") 6;
     color: rgb(70, 70, 70);
-    padding: 20px;
+    padding: 0px;
     font-size: 9pt;
     font-weight: bold;
 }
