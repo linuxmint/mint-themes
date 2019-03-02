@@ -1185,8 +1185,7 @@ StScrollBar {
   color: #202020;
   border: 1px solid #d9d9d9;
   background-color: #F0F0F0;
-  border-radius: 3px;
-  padding: 20px; }
+  border-radius: 3px; }
   .grouped-window-list-thumbnail-menu > StBoxLayout {
     padding: 4px; }
   .grouped-window-list-thumbnail-menu .item-box {
