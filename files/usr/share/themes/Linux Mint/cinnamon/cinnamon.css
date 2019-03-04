@@ -1627,10 +1627,10 @@ StScrollBar StButton#vhandle:hover {
     background-gradient-start: rgba(70, 70, 70, 1);
     background-gradient-end: rgba(50, 50, 50, 1);
     border-radius: 8px;
-    padding: 20px;
+    padding: 0px;
     font-size: 9pt;
     color: white;
-    box-shadow: 0px 0px 12px 6px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 .grouped-window-list-thumbnail-menu .item-box {
