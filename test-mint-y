@@ -1,0 +1,15 @@
+#!/bin/bash
+
+CURDIR=`pwd`
+
+cd src/Mint-Y
+./build-themes.py
+
+cd $CURDIR
+
+sudo rm -rf /usr/share/themes/Mint-Y
+sudo cp -R usr/share/themes/Mint-Y /usr/share/themes/Mint-Y
+
+# Force refresh
+gsettings set org.cinnamon.desktop.interface gtk-theme 'Mint-Y-Blue'
+gsettings set org.cinnamon.desktop.interface gtk-theme 'Mint-Y'
