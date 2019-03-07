@@ -3,7 +3,8 @@
  * ... contains a few cinnamon specific styles (rare occurences)
  * ###################################################################*/
 stage {
-    font-family: Noto Sans, sans-serif;
+    font-family: Ubuntu, sans-serif;
+    font-size: 10pt;
 }
 
 .cinnamon-link {

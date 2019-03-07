@@ -1,6 +1,6 @@
 stage {
-  font-family: Noto Sans, Sans-Serif;
-  font-size: 9pt;
+  font-family: Ubuntu, Sans-Serif;
+  font-size: 10pt;
   color: #f0f0f0; }
 
 .label-shadow {
@@ -1133,6 +1133,7 @@ StScrollBar {
   width: 15em;
   min-width: 5px; }
 .grouped-window-list-item-box {
+  text-align: left;
   font-weight: bold;
   background-image: none;
   padding-top: 0;

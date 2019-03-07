@@ -3,8 +3,8 @@ $asset_path: if($variant == 'dark', dark-assets, light-assets);
 //
 // Globals
 //
-$font-size: 9;
-$font-family: Noto Sans, Sans-Serif;
+$font-size: 10;
+$font-family: Ubuntu, Sans-Serif;
 
 stage {
   font-family: $font-family;
