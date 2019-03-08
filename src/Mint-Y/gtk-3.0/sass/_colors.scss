@@ -5,7 +5,7 @@
 $base_color: if($variant =='light', #ffffff, #404040);
 $text_color: if($variant == 'light', #303030, #DADADA);
 $bg_color: if($variant =='light', #F0F0F0, #383838);
-$fg_color: if($variant =='light', #202020, #DADADA);
+$fg_color: if($variant =='light', #303030, #DADADA);
 
 
 $selected_fg_color: #ffffff;
@@ -63,10 +63,10 @@ $header_bg_backdrop: if($darker == 'true' or $variant == 'dark', lighten($header
 $header_border: if($variant == 'light' and $darker== 'false', #BDBDBD, darken($header_bg, 4%));
 $header_highlight: if($variant == 'light' and $darker == 'false', #EEEEEE, #373737);
 
-$header_fg: if($variant == 'light', #454545, saturate(transparentize($fg_color, 0.0), 10%));
+$header_fg: if($variant == 'light', #404040, saturate(transparentize($fg_color, 0.0), 10%));
 $header_fg: if($darker == 'true', saturate(transparentize(#DADADA, 0.0), 10%), $header_fg);
 
-$dark_sidebar_bg: if($variant == 'light', #454545, #353535);
+$dark_sidebar_bg: if($variant == 'light', #404040, #353535);
 $dark_sidebar_fg: #dbdbdb;
 $dark_sidebar_border: if($variant == 'light', $dark_sidebar_bg, darken($dark_sidebar_bg, 5%));
 
@@ -106,7 +106,7 @@ $header_button_border: if($darker == 'true' or $variant == 'dark', transparentiz
 
 // WM Colors
 
-$titlebar_fg: if($variant == 'light', #454545, $fg_color);
+$titlebar_fg: if($variant == 'light', #404040, $fg_color);
 $titlebar_fg: if($darker == 'true', $fg_color, $titlebar_fg);
 
 //WM Buttons
