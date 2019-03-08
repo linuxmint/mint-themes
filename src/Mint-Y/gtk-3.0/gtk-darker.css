@@ -653,17 +653,17 @@ modelbutton.flat arrow.right {
   -gtk-icon-source: -gtk-icontheme("pan-end-symbolic"); }
 
 *:link, button:link, button:visited {
-  color: #81a65b; }
+  color: #5294E2; }
   *:link:visited, button:visited {
-    color: #678648; }
+    color: #5294E2; }
     *:selected *:link:visited, *:selected button:visited:link, *:selected button:visited {
       color: #d7e3cb; }
   *:link:hover, button:hover:link, button:hover:visited {
-    color: #9ab87c; }
+    color: #7eafe9; }
     *:selected *:link:hover, *:selected button:hover:link, *:selected button:hover:visited {
       color: #f5f8f2; }
   *:link:active, button:active:link, button:active:visited {
-    color: #81a65b; }
+    color: #5294E2; }
     *:selected *:link:active, *:selected button:active:link, *:selected button:active:visited {
       color: #ebf1e5; }
   infobar.info *:link, infobar.info button:link, infobar.info button:visited, infobar.question *:link, infobar.question button:link, infobar.question button:visited, infobar.warning *:link, infobar.warning button:link, infobar.warning button:visited, infobar.error *:link, infobar.error button:link, infobar.error button:visited, *:link:selected, button:selected:link, button:selected:visited, headerbar.selection-mode .subtitle:link,

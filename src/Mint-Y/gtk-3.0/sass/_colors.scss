@@ -29,10 +29,8 @@ $menu_borders_color: if($darker == 'true', darken($menu_bg_color, 6%), $menu_bor
 $menu_arrow_border_color: mix($fg_color, $base_color, 10%);
 $menu_arrow_border_color: if($darker == 'true', #4f4f4f, $menu_arrow_border_color);
 
-$link_color: if($variant == 'light', darken($selected_bg_color,10%),
-                                     lighten($selected_bg_color,20%));
-$link_visited_color: if($variant == 'light', darken($selected_bg_color,20%),
-                                     lighten($selected_bg_color,10%));
+$link_color: #5294E2;
+$link_visited_color: #5294E2;
 
 $selection_mode_bg: $selected_bg_color;
 $selection_mode_fg: $selected_fg_color;
