@@ -31,9 +31,9 @@
 
 <!-- minimize, maximize -->
 <constant name="C_button_bg_hover" value="#ffffff" />
-<constant name="C_button_bg_active" value="#404040" />
+<constant name="C_button_bg_active" value="#909090" />
 
-<constant name="C_button_border_hover" value="#ffffff" />
+<constant name="C_button_border_hover" value="#D1D1D1" />
 
 <constant name="C_icon_bg_focused" value="#404040" />
 <constant name="C_icon_bg_unfocused" value="#B6B6B6" />
