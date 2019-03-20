@@ -1458,7 +1458,7 @@ treeview.view {
 
   &.progressbar, &.progressbar:focus { // progress bar in treeviews
     color: $selected_fg_color;
-    border-radius: 3px;
+    border-radius: 2px;
     background-color: $selected_bg_color;
 
     &:selected, &:selected:focus {
@@ -1469,14 +1469,14 @@ treeview.view {
   }
   &.trough { // progress bar trough in treeviews
     color: $fg_color;
-    background-color: $button_border;
-    border-radius: 3px;
-    border-width: 0;
+    background-color: $trough_color_treeview;
+    border-radius: 2px;
+    border: 1px solid $button_border;
 
     &:selected, &:selected:focus {
       color: $selected_fg_color;
       background-color: transparentize(black, 0.8);
-      border-radius: 3px;
+      border-radius: 2px;
       border-width: 0;
     }
   }
@@ -2255,7 +2255,7 @@ progressbar {
   // Moving bit
   progress {
     background-color: $selected_bg_color;
-    border-radius: 3px;
+    border-radius: 0px;
     box-shadow: none; //needed for clipping
 
     row:selected &,
@@ -2264,9 +2264,9 @@ progressbar {
 
   // Trough
   trough {
-    border: none;
-    border-radius: 3px;
-    background-color: if($variant == 'light', $button_border, darken($bg_color, 5%));
+    border: 1px solid $button_border;
+    border-radius: 2px;
+    background-color: $trough_color;
 
     row:selected &,
     infobar & { background-color: transparentize(black, 0.8); }

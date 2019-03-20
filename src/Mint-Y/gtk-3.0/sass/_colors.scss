@@ -102,6 +102,9 @@ $button_border: $borders_color;
 $header_button_bg: if($darker == 'true' or $variant == 'dark', transparentize(lighten($header_bg, 22%), 0.6), transparentize($button_bg, 0.1));
 $header_button_border: if($darker == 'true' or $variant == 'dark', transparentize(darken($header_bg, 12%), 0.6), transparentize($header_fg, 0.7));
 
+$trough_color_treeview: if($variant == 'light', #d9d9d9, darken($bg_color, 5%));
+$trough_color: if($variant == 'light', #ffffff, darken($bg_color, 5%));
+
 // WM Colors
 
 $titlebar_fg: if($variant == 'light', #404040, $fg_color);
