@@ -9,7 +9,7 @@ def change_value (key, value, file):
     os.system(command)
 
 # Mint-Y
-Y_HEX_ACCENT1 = ["#9ab87c"]  # BASE
+Y_HEX_ACCENT1 = ["#92b372"]  # BASE
 Y_HEX_ACCENT2 = ["#8fa876"]
 Y_HEX_ACCENT3 = ["#afca95"]  # PRELIGHT/HOVER
 Y_HEX_ACCENT4 = ["#779559"]  # PRESSED
