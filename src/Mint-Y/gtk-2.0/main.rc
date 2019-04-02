@@ -713,7 +713,7 @@ style "menu_item"
   # See https://bugs.freedesktop.org/show_bug.cgi?id=38038
   bg[SELECTED] = @selected_fg_color
 
-	fg[NORMAL] = @menu_fg
+	fg[NORMAL] = @fg_color
 	fg[SELECTED] = @selected_fg_color
   fg[PRELIGHT] = @selected_fg_color
 

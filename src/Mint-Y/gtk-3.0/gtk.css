@@ -1441,13 +1441,12 @@ menu,
   margin: 4px;
   padding: 0;
   border-radius: 0;
-  color: #303030;
   background-color: #ffffff;
   border: 1px solid #BDBDBD; }
   .csd menu, .csd
   .menu {
     padding: 4px 0px;
-    border-radius: 0px;
+    border-radius: 2px;
     border: none; }
   menu separator, .csd menu separator,
   .menu separator, .csd
@@ -1458,9 +1457,6 @@ menu,
   .menu .separator:not(label), .csd
   .menu .separator:not(label) {
     color: #ffffff; }
-  menu label:disabled,
-  .menu label:disabled {
-    color: rgba(48, 48, 48, 0.55); }
   menu menuitem,
   .menu menuitem {
     min-height: 16px;

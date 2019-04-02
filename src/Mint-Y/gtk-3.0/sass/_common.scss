@@ -1554,33 +1554,29 @@ menubar,
 
 menu,
 .menu {
+  $_menu_bg: if($variant=='light', $base_color, $bg_color);
   margin: 4px;
   padding: 0;
   border-radius: 0;
-  color: $menu_fg_color;
-  background-color: $menu_bg_color;
-  border: 1px solid $menu_borders_color;
+  background-color: $_menu_bg;
+  border: 1px solid $borders_color;
 
   .csd & {
     padding: 4px 0px;
-    border-radius: 0px;
+    border-radius: 2px;
     border: none;
   }
 
   separator,
   .csd & separator {
     margin: 2px 0;
-    background-color: $menu_separator_color;
+    background-color: $separator_color;
   }
 
   // Firefox workaround
   .separator:not(label),
-  .csd & .separator:not(label) { color: $menu_bg_color; }
+  .csd & .separator:not(label) { color: $_menu_bg; }
   // Firefox workaround end
-
-  label:disabled {
-    color: $menu_insensitive_fg_color;
-  }
 
   menuitem {
     min-height: 16px;
@@ -1592,7 +1588,7 @@ menu,
       background-color: $selected_bg_color;
     }
     &:disabled {
-      color: $menu_insensitive_fg_color;
+      color: $insensitive_fg_color;
     }
 
     //submenu indicators
@@ -1627,20 +1623,20 @@ menu,
     min-width: 16px;
     min-height: 16px;
     padding: 4px;
-    background-color: $menu_bg_color;
+    background-color: $_menu_bg;
     border-radius: 0;
 
     &.top {
       margin-top: -6px;
-      border-bottom: 1px solid $menu_arrow_border_color;
+      border-bottom: 1px solid mix($fg_color, $base_color, 10%);
       -gtk-icon-source: -gtk-icontheme('pan-up-symbolic');
     }
     &.bottom {
       margin-bottom: -6px;
-      border-top: 1px solid $menu_arrow_border_color;
+      border-top: 1px solid mix($fg_color, $base_color, 10%);
       -gtk-icon-source: -gtk-icontheme('pan-down-symbolic');
     }
-    &:hover { background-color: $menu_arrow_border_color; }
+    &:hover { background-color: mix($fg_color, $base_color, 10%); }
     &:disabled {
       color: transparent;
       background-color: transparent;
