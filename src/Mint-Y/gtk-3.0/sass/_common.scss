@@ -917,7 +917,7 @@ headerbar,
   }
 
   &:backdrop {
-    color: transparentize($header_fg, 0.3);
+    color: transparentize($header_fg, 0.4);
     box-shadow: none;
   }
 
@@ -931,7 +931,6 @@ headerbar,
     font-size: smaller;
     padding-left: 12px;
     padding-right: 12px;
-    color: $header_fg;
   }
 
   // Selectionmode
