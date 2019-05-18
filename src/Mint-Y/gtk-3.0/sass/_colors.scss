@@ -33,6 +33,8 @@ $drop_target_color: #f08437;
 $insensitive_fg_color: if($variant == 'light', transparentize($fg_color, 0.45), transparentize($fg_color, 0.45));
 $insensitive_bg_color: if($variant == 'light', mix($bg_color, $base_color, 40%), lighten($bg_color, 2%));
 
+$dim_label_fg_color: transparentize($fg_color, 0.35);
+
 $header_bg: red;
 @if $variant=='light' { $header_bg: #d9d9d9; }
 @if $variant=='dark' or $darker=='true' { $header_bg: #2f2f2f; }
