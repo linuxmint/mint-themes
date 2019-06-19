@@ -817,13 +817,14 @@ StScrollBar {
 .datemenu-date-label {
   padding: .4em 1.75em;
   font-weight: bold;
+  font-size: 1.15em;
   text-align: center;
   color: $fg_color;
   border-radius: 2px;
 }
 
 .calendar-day-base {
-  font-size: 85%;
+  font-size: 1em;
   text-align: center;
   width: 25px;
   height: 25px;
@@ -835,7 +836,7 @@ StScrollBar {
 .calendar-day-heading {
   color: transparentize($fg_color, 0.15);
   margin-top: 1em;
-  font-size: 80%;
+  font-size: 1.05em;
 }
 
 .calendar-day {
@@ -874,7 +875,7 @@ StScrollBar {
 
 .calendar-week-number {
   color: transparentize($fg_color, 0.15);
-  font-size: 80%;
+  font-size: 1.05em;
 }
 
 //
