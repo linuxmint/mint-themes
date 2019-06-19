@@ -585,7 +585,7 @@ StScrollBar StButton#vhandle:hover {
 
 .calendar-month-label {
     color: #cccccc;
-    font-size: 7.5pt;
+    font-size: 1em;
     padding-bottom: 8px;
     padding-top: 8px;
     font-weight: bold;
@@ -641,7 +641,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .calendar-day-base {
-    font-size: 7.5pt;
+    font-size: 1em;
     text-align: center;
     width: 2.4em;
     height: 2.4em;
@@ -663,6 +663,7 @@ StScrollBar StButton#vhandle:hover {
 .calendar-week-number {
     color: #cccccc;
     font-weight: bold;
+    font-size: 0.85em;
 }
 
 /* Hack used in lieu of border-collapse - see calendar.js */
