@@ -643,11 +643,11 @@ StScrollBar {
 .calendar-day-base {
   font-size: 1em;
   text-align: center;
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   padding: 0.1em;
   margin: 2px;
-  border-radius: 12.5px; }
+  border-radius: 15px; }
 
 .calendar-day-heading {
   color: rgba(32, 32, 32, 0.85);
@@ -684,7 +684,7 @@ StScrollBar {
 
 .calendar-week-number {
   color: rgba(32, 32, 32, 0.85);
-  font-size: 1.05em; }
+  font-size: 0.8em; }
 
 #notification {
   border: 1px solid #d9d9d9;
