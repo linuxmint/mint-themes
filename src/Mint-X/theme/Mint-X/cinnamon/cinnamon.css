@@ -760,12 +760,13 @@ StScrollBar StButton#vhandle:hover {
 .notification-button {
     border-image: url("button-assets/button.png") 4;
     border-radius: 18px;
-    font-size: 11pt;
-    padding: 4px 42px 5px;
+    min-width: 5em;
+    font-size: 10pt;
+    padding: 5px;
 }
 
 .notification-button:focus {
-    padding: 3px 41px 4px;
+    padding: 4px;
 }
 
 #notification .cinnamon-link {
