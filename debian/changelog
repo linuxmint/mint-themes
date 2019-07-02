@@ -1,3 +1,44 @@
+mint-themes (1.7.9) tina; urgency=medium
+
+  [ Steve M ]
+  * Mint X & Y - Keyboard applet & workspace-switcher simple fixes for vertical panels (#181)
+
+  [ brownsr ]
+  * Mint-X: adjust for grouped-window-list-thumbnail-menu becoming active
+
+  [ Steve M ]
+  * Mint X & Y - GWL - fix justification of label inherited from applet-box (#180)
+
+  [ Simon Brown ]
+  * mint-Y: brighten tree view text 4 tints.  Improves contrast (#183)
+  * Mint-Y: adjust for grouped-window-list-thumbnail-menu becoming active (#188)
+  * Linux Mint: Update GWL borders (#190)
+
+  [ Clement Lefebvre ]
+  * Add a test script
+  * Cinnamon: Switch fonts to Ubuntu 10
+  * Mint-Y-Darker: Switch menus to dark
+  * Mint-Y: Switch GTK2 menus to dark
+  * Mint-Y: Contrast improvements
+  * Fix white pixel in src/Mint-Y/metacity-1/thumbnail-dark.png
+  * Mint-Y: Don't use accent color for links
+  * Mint-Y: Fix active metacity button style
+  * Mint-Y: Increase contrast in progressbars
+  * Mint-Y: Give accent color slightly more saturation and less value
+
+  [ JosephMcc ]
+  * Mint-Y-Darker: Go back to using light colored menus (#208)
+  * Mint-Y: Use a lighter color for window titles in unfocused windows
+  * Mint-Y-Gtk3: Darken the dim-label color just a bit
+  * Mint-Y-Cinnamon: Use larger fonts in the Cinnamon calendar applet
+  * Linux Mint: Use larger fonts in the calendar applet
+  * Mint-Y-Cinnamon: Tweak the calendar applet a bit more
+
+  [ steve ]
+  * Mint-X - fix notification buttons on multi button notifications
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 02 Jul 2019 17:47:17 +0200
+
 mint-themes (1.7.8) tessa; urgency=medium
 
   * Mint-Y-Grey*: Fix red GTK2 menubar bg
