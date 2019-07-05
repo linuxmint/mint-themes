@@ -2983,7 +2983,7 @@ SushiFontWidget {
   box-shadow: none; }
 
 vte-terminal.terminal-screen {
-  -TerminalScreen-background-darkness: 0.9;
+  -TerminalScreen-background-darkness: 0.97;
   background-color: #3f3f3f;
   color: #fff; }
 
@@ -3004,7 +3004,7 @@ TerminalWindow .notebook .active-page .button:active, TerminalWindow .notebook .
   color: #8fa876; }
 
 vte-terminal {
-  -TerminalScreen-background-darkness: 0.9;
+  -TerminalScreen-background-darkness: 0.97;
   background-color: #3f3f3f;
   color: #fff; }
 
