@@ -1,3 +1,9 @@
+mint-themes (1.8.0) tina; urgency=medium
+
+  * Mint-Y: Darken terminal opacity 90% -> 97%
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 05 Jul 2019 19:10:24 +0200
+
 mint-themes (1.7.9) tina; urgency=medium
 
   [ Steve M ]
