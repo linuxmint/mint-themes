@@ -1,3 +1,9 @@
+mint-themes (1.8.1) tina; urgency=medium
+
+  * Mint-Y-Dark(Cinnamon): Adjust accent color
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 11 Jul 2019 16:50:38 +0200
+
 mint-themes (1.8.0) tina; urgency=medium
 
   * Mint-Y: Darken terminal opacity 90% -> 97%
