@@ -1,3 +1,9 @@
+mint-themes (1.8.2) tina; urgency=medium
+
+  * Increase panel font size to 10pt in Mint-X and Linux Mint
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 07 Aug 2019 10:49:04 +0200
+
 mint-themes (1.8.1) tina; urgency=medium
 
   * Mint-Y-Dark(Cinnamon): Adjust accent color
