@@ -997,6 +997,11 @@ StScrollBar StButton#vhandle:hover {
     background-color: rgba(190, 190, 190, 0.2);
 }
 
+.osd-window .level-bar {
+    border-radius: 0.3em;
+    background-color: white;
+}
+
 /* ===================================================================
  * Run dialog (runDialog.js)
  * ===================================================================*/
