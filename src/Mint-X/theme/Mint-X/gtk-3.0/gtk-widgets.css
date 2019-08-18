@@ -34,6 +34,10 @@
     -gtk-icon-effect: dim;
 }
 
+.monospace {
+    font-family: Monospace;
+}
+
 /**************
  * action bar *
  **************/
