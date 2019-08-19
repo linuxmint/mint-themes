@@ -563,34 +563,6 @@ StScrollBar {
   height: 120px;
   width: 400px; }
 
-.about-content {
-  width: 550px; }
-.about-title {
-  font-size: 1.2em;
-  font-weight: bold; }
-.about-uuid {
-  font-size: 0.9em;
-  color: #888; }
-.about-icon {
-  padding-right: 12px; }
-.about-scrollBox {
-  height: 100px;
-  border: 1px solid #202020;
-  border-radius: 2px;
-  background-color: #404040;
-  padding: 4px;
-  padding-right: 0;
-  border-radius: 0; }
-  .about-scrollBox-innerBox {
-    padding: 1.2em;
-    spacing: 1.2em; }
-.about-description {
-  padding-top: 4px;
-  padding-bottom: 4px; }
-.about-version {
-  font-size: 1.0em;
-  color: #888; }
-
 .calendar {
   padding: .4em 1.75em;
   spacing-rows: 0px;

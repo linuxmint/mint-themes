@@ -2013,45 +2013,6 @@ StScrollBar StButton#vhandle:hover {
 }
 
 /* ===================================================================
- * About Dialog (modalDialog.js)
- * ===================================================================*/
-.about-content {
-    width: 500px;
-}
-
-.about-title {
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-.about-uuid {
-    font-size: .8em;
-}
-
-.about-icon {
-    padding-right: 20px;
-}
-
-.about-scrollBox {
-    height: 100px;
-    border: solid 1px grey;
-    border-radius: 4px;
-}
-
-.about-scrollBox-innerBox {
-    padding: 0.5em;
-    spacing: 1.2em;
-}
-
-.about-description {
-    padding-top: 4px;
-    padding-bottom: 8px;
-}
-
-.about-version {
-}
-
-/* ===================================================================
  * OSD Popups
  * ===================================================================*/
 .info-osd {
