@@ -482,13 +482,13 @@ button {
     .stack-switcher > button.needs-attention:active > label, .stack-switcher > button.needs-attention:active > image, .stack-switcher > button.needs-attention:checked > label, .stack-switcher > button.needs-attention:checked > image {
       animation: none;
       background-image: none; }
-  .stack-switcher > button.needs-attention > label, .stack-switcher > button.needs-attention > image, button stacksidebar row.needs-attention > label, stacksidebar button row.needs-attention > label {
+  .stack-switcher > button.needs-attention > label, .stack-switcher > button.needs-attention > image {
     animation: needs_attention 150ms ease-in;
     background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to(#92b372), to(transparent));
     background-size: 6px 6px, 6px 6px;
     background-repeat: no-repeat;
     background-position: right 3px, right 4px; }
-    .stack-switcher > button.needs-attention > label:dir(rtl), .stack-switcher > button.needs-attention > image:dir(rtl), button stacksidebar row.needs-attention > label:dir(rtl), stacksidebar button row.needs-attention > label:dir(rtl) {
+    .stack-switcher > button.needs-attention > label:dir(rtl), .stack-switcher > button.needs-attention > image:dir(rtl) {
       background-position: left 3px, left 4px; }
   button.font separator, button.file separator {
     background-color: transparent; }
@@ -2480,8 +2480,16 @@ stacksidebar row {
   stacksidebar row > label {
     padding-left: 6px;
     padding-right: 6px; }
-  stacksidebar row.needs-attention > label {
-    background-size: 6px 6px, 0 0; }
+  stacksidebar row.needs-attention {
+    background-image: radial-gradient(circle closest-side at 5% 25%, #92b372 0%, #92b372 100%, transparent 100%);
+    background-size: 70px;
+    background-position: 4px;
+    background-repeat: no-repeat; }
+  stacksidebar row.activatable:selected.needs-attention {
+    background-image: radial-gradient(circle closest-side at 5% 25%, #ffffff 0%, #ffffff 100%, transparent 100%);
+    background-size: 70px;
+    background-position: 4px;
+    background-repeat: no-repeat; }
 
 placessidebar > viewport.frame {
   border-style: none; }
