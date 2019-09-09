@@ -2482,7 +2482,7 @@ stacksidebar row {
     background-position: 4px;
     background-repeat: no-repeat; }
   stacksidebar row.activatable:selected.needs-attention {
-    background-image: radial-gradient(circle closest-side at 5% 25%, #F04A50 0%, #F04A50 100%, transparent 100%);
+    background-image: radial-gradient(circle closest-side at 5% 25%, #ffffff 0%, #ffffff 100%, transparent 100%);
     background-size: 70px;
     background-position: 4px;
     background-repeat: no-repeat; }
