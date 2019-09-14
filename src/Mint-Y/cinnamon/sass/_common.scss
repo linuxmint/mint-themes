@@ -829,7 +829,6 @@ StScrollBar {
   width: 2.2em;
   height: 2.2em;
   padding: 0.1em;
-  margin: 2px;
   border-radius: 999px;
 }
 
@@ -876,7 +875,7 @@ StScrollBar {
 .calendar-week-number {
   color: transparentize($fg_color, 0.15);
   font-size: 0.8em;
-  margin-top: 1.2em;
+  margin-top: 0.8em;
 }
 
 //
