@@ -615,11 +615,10 @@ StScrollBar {
 .calendar-day-base {
   font-size: 1em;
   text-align: center;
-  width: 30px;
-  height: 30px;
+  width: 2.2em;
+  height: 2.2em;
   padding: 0.1em;
-  margin: 2px;
-  border-radius: 15px; }
+  border-radius: 999px; }
 
 .calendar-day-heading {
   color: rgba(240, 240, 240, 0.85);
@@ -656,7 +655,8 @@ StScrollBar {
 
 .calendar-week-number {
   color: rgba(240, 240, 240, 0.85);
-  font-size: 0.8em; }
+  font-size: 0.8em;
+  margin-top: 0.8em; }
 
 #notification {
   border: 1px solid #202020;

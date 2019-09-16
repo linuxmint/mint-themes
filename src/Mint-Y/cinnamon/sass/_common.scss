@@ -717,49 +717,6 @@ StScrollBar {
 }
 
 //
-// About Dialog (applet.js and desklet.js)
-//
-.about {
-  &-content {
-    width: 550px;
-  }
-  &-title {
-    font-size: 1.2em;
-    font-weight: bold;
-  }
-  &-uuid {
-    font-size: 0.9em;
-    color: #888;
-  }
-  &-icon {
-    padding-right: 12px;
-  }
-  &-scrollBox {
-    height: 100px;
-    border: 1px solid $borders_color;
-    border-radius: 2px;
-    background-color: $base_color;
-    padding: 4px;
-    padding-right: 0;
-    border-radius: 0;
-
-    &-innerBox {
-      padding: 1.2em;
-      spacing: 1.2em;
-    }
-  }
-  &-description {
-    padding-top: 4px;
-    padding-bottom: 4px;
-  }
-  &-version {
-    font-size: 1.0em;
-    color: #888;
-  }
-}
-
-
-//
 // Calendar
 //
 .calendar {
@@ -826,11 +783,10 @@ StScrollBar {
 .calendar-day-base {
   font-size: 1em;
   text-align: center;
-  width: 30px;
-  height: 30px;
+  width: 2.2em;
+  height: 2.2em;
   padding: 0.1em;
-  margin: 2px;
-  border-radius: 15px;
+  border-radius: 999px;
 }
 
 .calendar-day-heading {
@@ -876,6 +832,7 @@ StScrollBar {
 .calendar-week-number {
   color: transparentize($fg_color, 0.15);
   font-size: 0.8em;
+  margin-top: 0.8em;
 }
 
 //
