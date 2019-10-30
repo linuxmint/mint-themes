@@ -800,22 +800,12 @@ SynapseGuiViewVirgilio *:selected { background-color: $selected_bg_color; }
   background-color: #393939;
   color: $panel_fg;
 
-  button.flat {
-    color: $panel_fg;
-    background-color: transparentize($panel_bg, 1);
-    border-radius: 0;
-    border: none;
-
-    &:hover {
-      border: none;
-      background-color: lighten($panel_bg, 10%);
-    }
-    &:active, &:checked {
-      color: $selected_fg_color;
-      border: none;
-      background-color: $selected_bg_color;
-    }
+  button {
+    @extend %panelbutton;
   }
+
+  frame > border { border: 0; }
+  label { font-weight: normal; }
 }
 
 %panelbutton {
@@ -1001,5 +991,30 @@ EvWindow .content-view .view:focus:selected {
   }
   trough {
     background-color: darken($dark_sidebar_bg, 5%);
+  }
+}
+
+//
+// Thunar
+//
+.thunar {
+  .sidebar .view {
+    background-color: $bg_color;
+
+    &:selected, &:active {
+      background: $selected_bg_color;
+      color: $selected_fg_color;
+    }
+  }
+
+  toolbar.horizontal button image {
+    -gtk-icon-transform: scale(0.9);
+  }
+
+  @if $variant=='light' and $darker=='false' {
+      toolbar {
+        color: $header_fg;
+        background-color: $header_bg;
+      }
   }
 }

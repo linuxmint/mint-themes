@@ -3567,38 +3567,30 @@ SynapseGuiViewVirgilio *:selected {
 .xfce4-panel.panel {
   background-color: #393939;
   color: #DADADA; }
-  .xfce4-panel.panel button.flat, .xfce4-panel.panel button.sidebar-button {
-    color: #DADADA;
-    background-color: rgba(52, 52, 52, 0);
-    border-radius: 0;
-    border: none; }
-    .xfce4-panel.panel button.flat:hover, .xfce4-panel.panel button.sidebar-button:hover {
-      border: none;
-      background-color: #4e4e4e; }
-    .xfce4-panel.panel button.flat:active, .xfce4-panel.panel button.sidebar-button:active, .xfce4-panel.panel button.flat:checked, .xfce4-panel.panel button.sidebar-button:checked {
-      color: #ffffff;
-      border: none;
-      background-color: #92b372; }
+  .xfce4-panel.panel frame > border {
+    border: 0; }
+  .xfce4-panel.panel label {
+    font-weight: normal; }
 
 .gnome-panel-menu-bar button:not(#tasklist-button),
-.mate-panel-menu-bar button:not(#tasklist-button) {
+.mate-panel-menu-bar button:not(#tasklist-button), .xfce4-panel.panel button {
   color: #DADADA;
   border-radius: 0;
   border: none;
   background-color: rgba(52, 52, 52, 0); }
   .gnome-panel-menu-bar button:hover:not(#tasklist-button),
-  .mate-panel-menu-bar button:hover:not(#tasklist-button) {
+  .mate-panel-menu-bar button:hover:not(#tasklist-button), .xfce4-panel.panel button:hover {
     border: none;
     background-color: #4e4e4e; }
   .gnome-panel-menu-bar button:active:not(#tasklist-button),
-  .mate-panel-menu-bar button:active:not(#tasklist-button), .gnome-panel-menu-bar button:checked:not(#tasklist-button),
-  .mate-panel-menu-bar button:checked:not(#tasklist-button) {
+  .mate-panel-menu-bar button:active:not(#tasklist-button), .xfce4-panel.panel button:active, .gnome-panel-menu-bar button:checked:not(#tasklist-button),
+  .mate-panel-menu-bar button:checked:not(#tasklist-button), .xfce4-panel.panel button:checked {
     color: #ffffff;
     border: none;
     background-color: #92b372; }
   .gnome-panel-menu-bar button:not(#tasklist-button) label,
-  .mate-panel-menu-bar button:not(#tasklist-button) label, .gnome-panel-menu-bar button:not(#tasklist-button) image,
-  .mate-panel-menu-bar button:not(#tasklist-button) image {
+  .mate-panel-menu-bar button:not(#tasklist-button) label, .xfce4-panel.panel button label, .gnome-panel-menu-bar button:not(#tasklist-button) image,
+  .mate-panel-menu-bar button:not(#tasklist-button) image, .xfce4-panel.panel button image {
     color: inherit; }
 
 .floating-bar {
@@ -3712,6 +3704,14 @@ filechooser placessidebar.sidebar list scrollbar, .nemo-window .sidebar scrollba
   .nautilus-window placessidebar.sidebar list scrollbar trough,
   filechooser placessidebar.sidebar list scrollbar trough, .nemo-window .sidebar scrollbar trough {
     background-color: #333333; }
+
+.thunar .sidebar .view, .thunar .sidebar iconview {
+  background-color: #F0F0F0; }
+  .thunar .sidebar .view:selected, .thunar .sidebar iconview:selected, .thunar .sidebar .view:active, .thunar .sidebar iconview:active {
+    background: #92b372;
+    color: #ffffff; }
+.thunar toolbar.horizontal button image, .thunar .horizontal.inline-toolbar button image {
+  -gtk-icon-transform: scale(0.9); }
 
 #panel_window {
   background-color: #343434;
