@@ -2,7 +2,7 @@
 static char *hide_prelight[] = {
 /* columns rows colors chars-per-pixel */
 "24 24 12 1 ",
-"  c gray48",
+"  c #404040",
 ". c LightGray",
 "X c gray84",
 "o c gray85",

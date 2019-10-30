@@ -2,7 +2,7 @@
 static char *hide_active[] = {
 /* columns rows colors chars-per-pixel */
 "24 24 3 1 ",
-"  c #808080",
+"  c #404040",
 ". c gray85",
 "X c #EEEEEE",
 /* pixels */
