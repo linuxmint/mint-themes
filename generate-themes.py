@@ -180,20 +180,18 @@ for color in y_hex_colors1.keys():
 
             # Regenerate GTK3 sass
             os.system("cp -R src/Mint-Y/gtk-3.0/sass %s/gtk-3.0/" % theme)
-            os.system("cp -R src/Mint-Y/gtk-3.0/parse-sass.sh %s/gtk-3.0/" % theme)
             y_colorize_directory("%s/gtk-3.0/sass" % theme, color)
             os.chdir("%s/gtk-3.0" % theme)
             if (variant == "-Dark"):
                 os.system("cp sass/gtk-dark.scss sass/gtk.scss")
-                os.system("rm sass/gtk-dark.scss sass/gtk-darker.scss")
+                os.system("sassc ./sass/gtk.scss gtk.css")
             elif (variant == "-Darker"):
                 os.system("cp sass/gtk-darker.scss sass/gtk.scss")
-                os.system("rm sass/gtk-darker.scss")
+                os.system("sassc ./sass/gtk.scss gtk.css")
             else:
                 os.system("rm sass/gtk-dark.scss sass/gtk-darker.scss")
+                os.system("sassc ./sass/gtk.scss gtk.css")
 
-            os.system("./parse-sass.sh")
-            os.system("rm parse-sass.sh")
             os.system("rm -rf sass .sass-cache")
             os.chdir(curdir)
 
@@ -201,14 +199,11 @@ for color in y_hex_colors1.keys():
             if (variant != "-Darker"):
                 # Darker variants have no cinnamon style
                 os.system("cp -R src/Mint-Y/cinnamon/sass %s/cinnamon/" % theme)
-                os.system("cp -R src/Mint-Y/cinnamon/parse-sass.sh %s/cinnamon/" % theme)
                 y_colorize_directory("%s/cinnamon/sass" % theme, color)
                 os.chdir("%s/cinnamon" % theme)
                 if (variant == "-Dark"):
                     os.system("cp sass/cinnamon-dark.scss sass/cinnamon.scss")
-                os.system("rm sass/cinnamon-dark.scss")
-                os.system("./parse-sass.sh")
-                os.system("rm parse-sass.sh")
+                os.system("sassc ./sass/cinnamon.scss cinnamon.css")
                 os.system("rm -rf sass .sass-cache")
                 os.chdir(curdir)
 

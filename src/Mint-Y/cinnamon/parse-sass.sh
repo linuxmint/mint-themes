@@ -1,3 +1,4 @@
 #! /bin/bash
 
-sass --sourcemap=none --update ./sass:.
+sassc ./sass/cinnamon.scss cinnamon.css
+sassc ./sass/cinnamon-dark.scss cinnamon-dark.css
