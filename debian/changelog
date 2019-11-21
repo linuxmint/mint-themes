@@ -1,3 +1,32 @@
+mint-themes (1.8.3) tricia; urgency=medium
+
+  [ JosephMcc ]
+  * Linux Mint Cinnamon: Add styling for the media key osd level bar
+
+  [ Steve M ]
+  * Mint-X - fix theme not complying with apps request to set a monospace font (#227)
+
+  [ Stephen Collins ]
+  * Remove about dialog styling from the cinnamon css (#222)
+
+  [ JosephMcc ]
+  * Gtk3: Add support for GtkStackSidebar needs attention
+
+  [ Clement Lefebvre ]
+  * Use destructive/error color in stacksidebar needs-attention
+  * Use selected_fg_color in stacksidebar needs-attention when it's selected
+
+  [ Steve M ]
+  * Mint-Y - Improve Cinnamon calendar menu's response to text scaling changes (#231)
+
+  [ Clement Lefebvre ]
+  * Mint-Y: Fixes for Xfce 4.14
+  * Mint-X: Xfce 4.14 fixes
+  * Mint-Y: Darken xfwm4 titlebar text
+  * Mint-Y: Darken xfwm4 buttons
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 21 Nov 2019 16:54:45 +0000
+
 mint-themes (1.8.2) tina; urgency=medium
 
   * Increase panel font size to 10pt in Mint-X and Linux Mint
