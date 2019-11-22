@@ -2,7 +2,7 @@ Source: mint-themes
 Section: gnome
 Priority: optional
 Maintainer: Clement Lefebvre <root@linuxmint.com>
-Build-Depends: debhelper (>= 9), ruby-sass
+Build-Depends: debhelper (>= 9), sassc
 Standards-Version: 3.9.5
 
 Package: mint-themes

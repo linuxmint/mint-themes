@@ -12,7 +12,9 @@ curdir = os.getcwd()
 
 print("Updating Gtk3 assets")
 os.chdir("gtk-3.0/")
-os.system("./parse-sass.sh")
+os.system("sassc ./sass/gtk.scss gtk.css")
+os.system("sassc ./sass/gtk-dark.scss gtk-dark.css")
+os.system("sassc ./sass/gtk-darker.scss gtk-darker.css")
 os.system("./render-assets.sh")
 print("Gtk3 assets updated")
 
@@ -28,7 +30,8 @@ os.chdir(curdir)
 
 print("Updating Cinnamon assets")
 os.chdir("cinnamon/")
-os.system("./parse-sass.sh")
+os.system("sassc ./sass/cinnamon.scss cinnamon.css")
+os.system("sassc ./sass/cinnamon-dark.scss cinnamon-dark.css")
 print("Cinnamon assets updated")
 
 os.chdir(curdir)
