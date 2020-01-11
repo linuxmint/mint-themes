@@ -1,6 +1,4 @@
 stage {
-  font-family: Ubuntu, Sans-Serif;
-  font-size: 10pt;
   color: #202020; }
 
 .label-shadow {
@@ -93,6 +91,7 @@ stage {
 
 StScrollView.vfade {
   -st-vfade-offset: 68px; }
+
 StScrollView.hfade {
   -st-hfade-offset: 68px; }
 
@@ -140,16 +139,21 @@ StScrollBar {
   spacing: .2em;
   min-height: 30px;
   padding-top: 2px; }
+
 .check-box StLabel {
   font-weight: normal; }
+
 .check-box StBin {
   width: 16px;
   height: 16px;
   background-image: url("light-assets/checkbox/checkbox-unchecked.svg"); }
+
 .check-box:focus StBin {
   background-image: url("light-assets/checkbox/checkbox-unchecked-focused.svg"); }
+
 .check-box:checked StBin {
   background-image: url("light-assets/checkbox/checkbox-checked.svg"); }
+
 .check-box:focus:checked StBin {
   background-image: url("light-assets/checkbox/checkbox-checked-focused.svg"); }
 
@@ -157,18 +161,23 @@ StScrollBar {
   spacing: .2em;
   height: 26px;
   padding-top: 2px; }
+
 .radiobutton StLabel {
   padding-top: 4px;
   font-size: 0.9em;
   box-shadow: none; }
+
 .radiobutton StBin {
   width: 16px;
   height: 16px;
   background-image: url("light-assets/checkbox/checkbox-unchecked.svg"); }
+
 .radiobutton:focus StBin {
   background-image: url("light-assets/checkbox/checkbox-unchecked-focused.svg"); }
+
 .radiobutton:checked StBin {
   background-image: url("light-assets/checkbox/checkbox-checked.svg"); }
+
 .radiobutton:focus:checked StBin {
   background-image: url("light-assets/checkbox/checkbox-checked-focused.svg"); }
 
@@ -393,16 +402,20 @@ StScrollBar {
       padding-right: 0px; }
     .panelLeft.vertical:rtl {
       padding-left: 0px; }
+
 .panelRight:dnd {
   background-gradient-direction: vertical;
   background-gradient-start: rgba(0, 0, 255, 0.05);
   background-gradient-end: rgba(0, 0, 255, 0.2); }
+
 .panelRight:ltr {
   padding-left: 4px;
   spacing: 0px; }
+
 .panelRight:rtl {
   padding-right: 4px;
   spacing: 0px; }
+
 .panelRight.vertical {
   padding: 0px; }
   .panelRight.vertical:ltr {
@@ -411,6 +424,7 @@ StScrollBar {
   .panelRight.vertical:rtl {
     padding-right: 0px;
     spacing: 0px; }
+
 .panelCenter {
   spacing: 4px; }
   .panelCenter.vertical {
@@ -420,30 +434,38 @@ StScrollBar {
     background-gradient-direction: vertical;
     background-gradient-start: rgba(0, 255, 0, 0.05);
     background-gradient-end: rgba(0, 255, 0, 0.2); }
+
 .panel-top, .panel-bottom, .panel-left, .panel-right {
   color: #ffffff;
   border: none;
   background-color: rgba(47, 47, 47, 0.99);
   font-size: 1em;
   padding: 0px; }
+
 .panel-top {
   box-shadow: 0 1px #202020; }
+
 .panel-bottom {
   box-shadow: 0 -1px #202020; }
+
 .panel-left {
   box-shadow: 1px 0 #202020; }
+
 .panel-right {
   box-shadow: -1px 0 #202020; }
+
 .panel-dummy {
   background-color: rgba(252, 65, 56, 0.5); }
   .panel-dummy:entered {
     background-color: rgba(252, 65, 56, 0.6); }
+
 .panel-status-button {
   border-width: 0;
   -natural-hpadding: 3px;
   -minimum-hpadding: 3px;
   font-weight: bold;
   color: white; }
+
 .panel-button {
   -natural-hpadding: 6px;
   -minimum-hpadding: 2px;
@@ -468,7 +490,7 @@ StScrollBar {
   color: #c3c3c3;
   spacing: 8px;
   border-radius: 2px;
-  font-size: 9pt;
+  font-size: 0.9em;
   padding: 5px 8px;
   -cinnamon-caption-spacing: 8px; }
   .window-caption:focus {
@@ -491,7 +513,7 @@ StScrollBar {
 .expo-workspaces-name-entry#selected {
   height: 1.5em;
   border-radius: 2px;
-  font-size: 9pt;
+  font-size: 1em;
   padding: 5px 8px;
   -cinnamon-caption-spacing: 4px;
   color: #c3c3c3;
@@ -524,6 +546,7 @@ StScrollBar {
   spacing: 26px; }
   .workspace-thumbnails-background, .workspace-thumbnails-background:rtl {
     padding: 8px; }
+
 .workspace-add-button {
   background-image: url("common-assets/misc/add-workspace.svg");
   height: 200px;
@@ -535,6 +558,7 @@ StScrollBar {
   .workspace-add-button:active {
     background-image: url("common-assets/misc/add-workspace-active.svg");
     transition-duration: 100; }
+
 .workspace-overview-background-shade {
   background-color: rgba(0, 0, 0, 0.5); }
 
@@ -692,8 +716,10 @@ StScrollBar {
 .notification-with-image {
   min-height: 159px;
   color: #202020; }
+
 .notification-button, .notification-icon-button {
   padding: 5px; }
+
 .notification-icon-button > StIcon {
   icon-size: 32px; }
 
@@ -803,7 +829,7 @@ StScrollBar {
   .run-dialog-completion-box {
     padding-top: 5px;
     padding-left: 15px;
-    font-size: 10px; }
+    font-size: 1em; }
   .run-dialog-entry {
     width: 21em;
     padding: 7px;
@@ -896,7 +922,7 @@ StScrollBar {
 .keyboard-key {
   min-height: 2em;
   min-width: 2em;
-  font-size: 14pt;
+  font-size: 1.4em;
   font-weight: bold;
   border-radius: 3px;
   box-shadow: none;
@@ -932,21 +958,27 @@ StScrollBar {
   transition-duration: 300;
   background-color: #ffffff;
   border: 1px solid #d9d9d9; }
+
 .menu-favorites-button {
   padding: .9em 1em;
   border: 1px solid transparent;
   border-radius: 2px; }
   .menu-favorites-button:hover {
     background-color: #92b372; }
+
 .menu-places-box {
   padding: 10px;
   border: 0px solid red; }
+
 .menu-places-button {
   padding: 10px; }
+
 .menu-categories-box {
   padding: 10px 30px 10px 30px; }
+
 .menu-applications-inner-box, .menu-applications-outer-box {
   padding: 10px 10px 0 10px; }
+
 .menu-application-button {
   padding: 7px;
   border: 1px solid transparent; }
@@ -963,6 +995,7 @@ StScrollBar {
     padding-left: 5px; }
   .menu-application-button-label:rtl {
     padding-right: 5px; }
+
 .menu-category-button {
   padding: 7px;
   border: 1px solid transparent; }
@@ -982,6 +1015,7 @@ StScrollBar {
     padding-left: 5px; }
   .menu-category-button-label:rtl {
     padding-right: 5px; }
+
 .menu-selected-app-box {
   padding-right: 30px;
   padding-left: 28px;
@@ -990,12 +1024,16 @@ StScrollBar {
   .menu-selected-app-box:rtl {
     padding-top: 10px;
     height: 30px; }
+
 .menu-selected-app-title {
   font-weight: bold; }
+
 .menu-selected-app-description {
   max-width: 150px; }
+
 .menu-search-box:ltr {
   padding-left: 30px; }
+
 .menu-search-box-rtl {
   padding-right: 30px; }
 
@@ -1052,10 +1090,12 @@ StScrollBar {
     padding-bottom: 10px; }
   .window-list-box:highlight {
     background-color: rgba(252, 65, 56, 0.5); }
+
 .window-list-item-label {
   font-weight: bold;
   width: 15em;
   min-width: 5px; }
+
 .window-list-item-box {
   font-weight: bold;
   background-image: none;
@@ -1088,10 +1128,12 @@ StScrollBar {
     border-color: #92b372; }
   .window-list-item-box .progress {
     background-color: rgba(146, 179, 114, 0.8); }
+
 .window-list-item-demands-attention {
   background-gradient-direction: vertical;
   background-gradient-start: #F04A50;
   background-gradient-end: #F04A50; }
+
 .window-list-preview {
   spacing: 6px;
   color: #202020;
@@ -1105,6 +1147,7 @@ StScrollBar {
   font-weight: bold;
   width: 15em;
   min-width: 5px; }
+
 .grouped-window-list-item-box {
   text-align: left;
   font-weight: bold;
@@ -1138,22 +1181,29 @@ StScrollBar {
     border-color: #92b372; }
   .grouped-window-list-item-box .progress {
     background-color: rgba(146, 179, 114, 0.8); }
+
 .grouped-window-list-item-demands-attention {
   background-gradient-direction: vertical;
   background-gradient-start: #F04A50;
   background-gradient-end: #F04A50; }
+
 .grouped-window-list-thumbnail-label {
   padding-left: 4px; }
+
 .grouped-window-list-number-label {
   z-index: 99;
   color: #d0d0d0; }
+
 .grouped-window-list-badge {
   border-radius: 256px;
   background-color: #4a4a4a; }
+
 .grouped-window-list-button-label {
   padding-left: 4px; }
+
 .grouped-window-list-thumbnail-alert {
   background: rgba(255, 52, 52, 0.3); }
+
 .grouped-window-list-thumbnail-menu {
   color: #202020;
   border: 1px solid #d9d9d9;
@@ -1191,6 +1241,7 @@ StScrollBar {
 
 .sound-track-infos {
   padding: 5px; }
+
 .sound-track-info {
   padding-top: 2px;
   padding-bottom: 2px; }
@@ -1199,6 +1250,7 @@ StScrollBar {
   .sound-track-info StLabel {
     padding-left: 5px;
     padding-right: 5px; }
+
 .sound-track-box {
   padding-left: 15px;
   padding-right: 15px;
@@ -1243,8 +1295,10 @@ StScrollBar {
       background-color: #92b372;
       border: 1px solid #92b372;
       box-shadow: inset 0 2px 4px #92b372; }
+
 .sound-player-generic-coverart {
   background: rgba(0, 0, 0, 0.2); }
+
 .sound-player-overlay {
   width: 290px;
   height: 70px;
@@ -1276,6 +1330,7 @@ StScrollBar {
     padding-top: 2px; }
   .sound-player-overlay > StBoxLayout {
     spacing: 5px; }
+
 .sound-player .slider {
   height: 0.5em;
   padding: 0;
@@ -1296,7 +1351,8 @@ StScrollBar {
 .workspace-switcher {
   padding-left: 3px;
   padding-right: 3px; }
-  .panel-left .workspace-switcher, .panel-right .workspace-switcher {
+  .panel-left .workspace-switcher,
+  .panel-right .workspace-switcher {
     padding: 0; }
 
 .workspace-button {
@@ -1377,12 +1433,14 @@ StScrollBar {
   padding: 1px 4px; }
   .applet-separator.vertical {
     padding: 4px 1px; }
+
 .applet-separator-line {
   width: 1px;
   background: rgba(255, 255, 255, 0.12); }
   .applet-separator-line-vertical {
     height: 1px;
     background: rgba(255, 255, 255, 0.12); }
+
 .applet-box {
   padding-left: 4px;
   padding-right: 4px;
@@ -1409,16 +1467,22 @@ StScrollBar {
     background-image: none;
     border-image: none;
     background-color: rgba(252, 65, 56, 0.5); }
+
 .applet-label {
   font-weight: bold;
   color: #f0f0f0; }
-  .applet-label:hover, .applet-label:checked, .applet-box:hover > .applet-label, .applet-box:checked > .applet-label {
+  .applet-label:hover, .applet-label:checked,
+  .applet-box:hover > .applet-label,
+  .applet-box:checked > .applet-label {
     color: #ffffff;
     text-shadow: none; }
+
 .applet-icon {
   color: #ffffff;
   icon-size: 22px; }
-  .applet-icon:hover, .applet-icon:checked, .applet-box:hover > .applet-icon, .applet-box:checked > .applet-icon {
+  .applet-icon:hover, .applet-icon:checked,
+  .applet-box:hover > .applet-icon,
+  .applet-box:checked > .applet-icon {
     color: #ffffff;
     text-shadow: none; }
 
@@ -1487,7 +1551,7 @@ StScrollBar {
   color: #c3c3c3;
   text-shadow: black 5px 5px 5px;
   font-weight: bold;
-  font-size: 48pt; }
+  font-size: 4em; }
 
 .notification-applet-padding {
   padding: .5em 1em; }

@@ -1,14 +1,6 @@
 $asset_path: if($variant == 'dark', dark-assets, light-assets);
 
-//
-// Globals
-//
-$font-size: 10;
-$font-family: Ubuntu, Sans-Serif;
-
 stage {
-  font-family: $font-family;
-  @include fontsize($font-size);
   color: $fg_color;
 }
 
@@ -592,7 +584,7 @@ StScrollBar {
   color: $osd_fg_color;
   spacing: 8px;
   border-radius: 2px;
-  font-size: 9pt;
+  font-size: 0.9em;
   padding: 5px 8px;
   -cinnamon-caption-spacing: 8px;
 
@@ -620,7 +612,7 @@ StScrollBar {
 .expo-workspaces-name-entry#selected {
   height: 1.5em;
   border-radius: 2px;
-  font-size: 9pt;
+  font-size: 1em;
   padding: 5px 8px;
   -cinnamon-caption-spacing: 4px;
   @include entry(osd);
@@ -1045,7 +1037,7 @@ StScrollBar {
   &-completion-box {
     padding-top: 5px;
     padding-left: 15px;
-    font-size: 10px;
+    font-size: 1em;
   }
   &-entry {
     width: 21em;
@@ -1154,7 +1146,7 @@ StScrollBar {
 .keyboard-key {
   min-height: 2em;
   min-width: 2em;
-  font-size: 14pt;
+  font-size: 1.4em;
   font-weight: bold;
   border-radius: 3px;
   box-shadow: none;
@@ -1995,7 +1987,7 @@ StScrollBar {
   color: $osd_fg_color;
   text-shadow: black 5px 5px 5px;
   font-weight: bold;
-  font-size: 48pt;
+  font-size: 4em;
 }
 
 //
