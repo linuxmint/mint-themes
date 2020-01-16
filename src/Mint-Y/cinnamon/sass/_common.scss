@@ -1309,6 +1309,14 @@ StScrollBar {
   background-color: $bg_color;
 }
 
+.restart-osd {
+  font-size: 1.6em;
+}
+
+.workspace-osd {
+  font-size: 4em;
+}
+
 .osd-window {
   text-align: center;
   font-weight: bold;
@@ -1976,18 +1984,6 @@ StScrollBar {
   color: $fg_color;
   padding: 12px;
   padding-bottom: 16px;
-}
-
-//
-// Workspace OSD
-//
-/*FIXME*/
-.workspace-osd {
-  /*color: red;*/
-  color: $osd_fg_color;
-  text-shadow: black 5px 5px 5px;
-  font-weight: bold;
-  font-size: 4em;
 }
 
 //

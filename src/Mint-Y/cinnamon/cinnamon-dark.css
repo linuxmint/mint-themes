@@ -1058,6 +1058,12 @@ StScrollBar {
   border-radius: 5px;
   background-color: #2f2f2f; }
 
+.restart-osd {
+  font-size: 1.6em; }
+
+.workspace-osd {
+  font-size: 4em; }
+
 .osd-window {
   text-align: center;
   font-weight: bold;
@@ -1544,14 +1550,6 @@ StScrollBar {
   color: #f0f0f0;
   padding: 12px;
   padding-bottom: 16px; }
-
-/*FIXME*/
-.workspace-osd {
-  /*color: red;*/
-  color: #c3c3c3;
-  text-shadow: black 5px 5px 5px;
-  font-weight: bold;
-  font-size: 4em; }
 
 .notification-applet-padding {
   padding: .5em 1em; }
