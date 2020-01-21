@@ -1880,13 +1880,6 @@ StScrollBar StButton#vhandle:hover {
 /* ===================================================================
  * Workspace OSD (windowManager.js)
  * ===================================================================*/
-.workspace-osd {
-    border-image: url("background-assets/bg-1.png") 6;
-    padding: 9px 15px;
-    color: rgb(70, 70, 70);
-    font-weight: bold;
-    font-size: 4em;
-}
 
 .expo-workspaces-name-entry {
     border-image: url("misc-assets/expo-name-entry.png") 6;
@@ -2005,6 +1998,18 @@ StScrollBar StButton#vhandle:hover {
     padding: 12px;
     color: rgb(70, 70, 70);
     text-align: center;
+}
+
+.restart-osd {
+    font-size: 1.6em;
+}
+
+.workspace-osd {
+    border-image: url("background-assets/bg-1.png") 6;
+    padding: 9px 15px;
+    color: rgb(70, 70, 70);
+    font-weight: bold;
+    font-size: 4em;
 }
 
 .osd-window {
