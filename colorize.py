@@ -5,16 +5,16 @@ from PIL import Image
 import numpy as np
 
 HUE = {}
-HUE["Aqua"] = 201
-HUE["Blue"] = 226
-HUE["Brown"] = 27
+HUE["Aqua"] = 180
+HUE["Blue"] = 200
+HUE["Brown"] = 29
 HUE["Grey"] = 0
-HUE["Orange"] = 30
-HUE["Pink"] = 327
-HUE["Purple"] = 260
-HUE["Red"] = 2
-HUE["Sand"] = 42
-HUE["Teal"] = 168
+HUE["Orange"] = 23
+HUE["Pink"] = 340
+HUE["Purple"] = 300
+HUE["Red"] = 0
+HUE["Sand"] = 41
+HUE["Teal"] = 180
 
 def rgb_to_hsv(rgb):
     # Translated from source of colorsys.rgb_to_hsv
