@@ -13,7 +13,7 @@
    height="16"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
    sodipodi:docname="checkbox-checked.svg"
    inkscape:export-filename="/home/steffen/.local/share/themes/Vertex-git/gtk-3.0/assets/dark/checkbox-checked.png"
    inkscape:export-xdpi="90"
@@ -69,9 +69,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="16.000001"
-     inkscape:cx="8.5280933"
-     inkscape:cy="10.041908"
+     inkscape:zoom="32.000002"
+     inkscape:cx="6.8001576"
+     inkscape:cy="7.951922"
      inkscape:document-units="px"
      inkscape:current-layer="checkbox-checked-dark"
      showgrid="true"
@@ -80,10 +80,10 @@
      inkscape:guide-bbox="true"
      inkscape:showpageshadow="false"
      showborder="true"
-     inkscape:window-width="929"
-     inkscape:window-height="614"
-     inkscape:window-x="2655"
-     inkscape:window-y="220"
+     inkscape:window-width="1297"
+     inkscape:window-height="718"
+     inkscape:window-x="432"
+     inkscape:window-y="88"
      inkscape:window-maximized="0"
      inkscape:snap-global="true"
      inkscape:bbox-paths="true"
@@ -157,14 +157,14 @@
               <g
                  id="g5400-6">
                 <rect
-                   rx="1.9999943"
-                   y="31.362196"
-                   x="18.000006"
-                   height="13.99999"
-                   width="13.999989"
+                   rx="1.8571391"
+                   y="31.862192"
+                   x="18.5"
+                   height="13"
+                   width="13"
                    id="rect5147-9-1-5-7-6-7"
-                   style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#92b372;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
-                   ry="1.9999917" />
+                   style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#92b372;fill-opacity:1;stroke:#cfcfcf;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
+                   ry="1.8571364" />
               </g>
             </g>
           </g>
