@@ -8,15 +8,15 @@ def change_value (key, value, file):
         command = "sed -i '/%(key)s=/d' %(file)s" % {'key':key, 'file':file}
     os.system(command)
 
-# Mint-Y
+# Mint-Y old green
 Y_HEX_ACCENT1 = ["#92b372"]  # BASE
 Y_HEX_ACCENT2 = ["#8fa876"]  # BASE-DARK
 Y_HEX_ACCENT3 = ["#afca95"]  # PRELIGHT/HOVER
 Y_HEX_ACCENT4 = ["#779559"]  # PRESSED
-
+# Mint-Y new colors
 y_hex_colors1 = {}
 y_hex_colors1["Aqua"] = "#0BB2B4"
-y_hex_colors1["Blue"] = "#0F97D9"
+y_hex_colors1["Blue"] = "#0D91D3"
 y_hex_colors1["Brown"] = "#7F542B"
 y_hex_colors1["Grey"] = "#767676"
 y_hex_colors1["Orange"] = "#EF6410"
@@ -28,7 +28,7 @@ y_hex_colors1["Teal"] = "#008080"
 
 y_hex_colors2 = {}
 y_hex_colors2["Aqua"] = "#0BA0A1"
-y_hex_colors2["Blue"] = "#0D89C3"
+y_hex_colors2["Blue"] = "#0C81BC"
 y_hex_colors2["Brown"] = "#7F542B"
 y_hex_colors2["Grey"] = "#767676"
 y_hex_colors2["Orange"] = "#DF5807"
@@ -40,7 +40,7 @@ y_hex_colors2["Teal"] = "#007474"
 
 y_hex_colors3 = {}
 y_hex_colors3["Aqua"] = "#5DCCCD"
-y_hex_colors3["Blue"] = "#5FBAE6"
+y_hex_colors3["Blue"] = "#5EB6E2"
 y_hex_colors3["Brown"] = "#AA8D72"
 y_hex_colors3["Grey"] = "#A4A4A4"
 y_hex_colors3["Orange"] = "#F49860"
@@ -52,7 +52,7 @@ y_hex_colors3["Teal"] = "#55AAAA"
 
 y_hex_colors4 = {}
 y_hex_colors4["Aqua"] = "#087778"
-y_hex_colors4["Blue"] = "#0A6591"
+y_hex_colors4["Blue"] = "#09618D"
 y_hex_colors4["Brown"] = "#55381D"
 y_hex_colors4["Grey"] = "#4F4F4F"
 y_hex_colors4["Orange"] = "#9F430B"
@@ -119,11 +119,3 @@ for color in y_hex_colors1.keys():
     os.system("rm -rf assets/*")
     os.system("./render-assets.sh")
     os.chdir(curdir)
-
-    # Colorize GTK2 toolbar-menubar (these assets aren't generated)
-    for variant in ["", "-Dark", "-Darker"]:
-        path = "usr/share/themes/Mint-Y%s-%s/gtk-2.0/menubar-toolbar" % (variant, color)
-        if os.path.exists(path):
-            for filename in os.listdir(path):
-                p = os.path.join(path, filename)
-                os.system("./colorize.py %s %s" % (p, color))

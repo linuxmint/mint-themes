@@ -1,0 +1,24 @@
+style "handlebox"
+{
+    engine "pixmap"
+    {
+        image
+        {
+            function = BOX
+            file = "images/other/null.png"
+            border = {4, 4, 4, 4}
+            stretch = TRUE
+            detail = "handlebox_bin"
+            shadow = IN
+        }
+        image
+        {
+            function = BOX
+            file = "images/other/null.png"
+            border = {4, 4, 4, 4}
+            stretch = TRUE
+            detail = "handlebox_bin"
+            shadow = OUT
+        }
+    }
+}

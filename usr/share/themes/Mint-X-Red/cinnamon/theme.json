@@ -1,0 +1,10 @@
+{ 
+   "cinnamon-theme": {
+   "name": "Mint-X-Red", 
+   "author": "zagortenay333", 
+   "version": "1.0",
+   "type":   "custom",
+   "thumbnail": "thumbnail.png", 
+   "url": "" 
+    }
+}

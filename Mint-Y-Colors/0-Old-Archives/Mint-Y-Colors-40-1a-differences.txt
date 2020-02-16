@@ -1,0 +1,12 @@
+ORIGIN			CHANGED IN Mint-Y-Variations-Pal-1a-10.txt
+
+#DF2121	Red		(idem)
+#EF6410	Orange	(idem)
+#18A6A6	Aqua 	#0BB2B4
+#1E78D2	Blue 	#0D91D3
+#951595	Purple 	#B41AB4
+#767676	Grey	(idem)
+#E2346F	Pink 	#E54980
+#107070	Teal 	#008080
+#867646	Sand 	#927D4E
+#62370E	Brown 	#7F542B

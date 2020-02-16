@@ -1,0 +1,21 @@
+style "entry" 
+{
+    xthickness = 3
+    ythickness = 3
+    
+    bg[NORMAL] = shade (0.9, @bg_color)
+    bg[SELECTED] = mix (0.4, @selected_bg_color, @base_color)
+    fg[SELECTED] = @text_color
+    base[NORMAL] = shade (0.98, @base_color)
+    
+    engine "murrine" 
+    {
+        #border_shades = {1.0, 0.8}
+        contrast = 0.6
+        focus_color = shade(0.8, @selected_bg_color)
+        lightborder_shade = 1.05
+        lightborderstyle = 0 
+        focusstyle = 0 
+        roundness = 3
+    }
+}

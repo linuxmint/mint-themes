@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Mint-Y-Darker-Brown
+Comment=A flat theme with transparent elements and dark menu and titlebars
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Mint-Y-Darker-Brown
+MetacityTheme=Mint-Y-Dark-Brown
+IconTheme=Mint-Y-Brown
+CursorTheme=DMZ-Black
+ButtonLayout=menu:minimize,maximize,close

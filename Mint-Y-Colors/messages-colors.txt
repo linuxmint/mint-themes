@@ -1,0 +1,15 @@
+$link_color: #0040FF;
+$link_visited_color: #C000C0;
+//___
+$selection_mode_bg: $selected_bg_color;
+$selection_mode_fg: $selected_fg_color;
+$warning_color: #FF6000;
+$warning_fg_color: white;
+$error_color: #FF3535;
+$error_fg_color: white;
+$success_color: #5FA818;
+$destructive_color: #FF3535;
+$suggested_color: #5FA818;
+$question_color: #4C72E5;
+//___
+$drop_target_color: #FF7A29;

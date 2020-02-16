@@ -1,0 +1,40 @@
+style "gedit-frame" 
+{
+    engine "pixmap"
+    {
+        image
+        {
+            function = SHADOW
+        }
+    }
+}
+
+style "gedit-notebook"
+{
+    xthickness = 1
+    ythickness = 1
+}
+
+style "eclipse-toolbar-fix"
+{
+	engine "pixmap"
+	{
+	    image
+	    {
+	        function	= BOX
+	        file	= "images/other/null.png"
+	        stretch	= TRUE
+        }
+ 	}
+}
+
+# Removes the ugly frame around statusbar buttons
+widget_class "*Pluma*.<GtkFrame>*" style "gedit-frame"
+widget_class "*Gedit*.<GtkFrame>*" style "gedit-frame"
+
+# Removes double borders around notebooks
+widget_class "*Pluma*.<GtkNotebook>" style "gedit-notebook"
+widget_class "*Gedit*.<GtkNotebook>" style "gedit-notebook"
+
+widget "*swt-toolbar-flat" style "eclipse-toolbar-fix"
+

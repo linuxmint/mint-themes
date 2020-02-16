@@ -1,0 +1,133 @@
+window.background.lightdm menubar > menuitem {
+    padding: 0 5px 0 5px;
+}
+
+window.background.lightdm menu {
+    background-image: none;
+    background-color: alpha (black, 0.6);
+    border-color: alpha (white, 0.2);
+    padding: 1px;
+    color: white;
+}
+
+/*window.background.lightdm .csd menu {
+    border: none;
+}
+
+window.background.lightdm .csd.popup decoration {
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+}*/
+
+window.background .lightdm-combo menu {
+    background-color: shade (@dark_bg_color, 1.08);
+    border-radius: 0px;
+    padding: 0px;
+    color: white;
+}
+
+window.background.lightdm menu menuitem *,
+window.background.lightdm menu menuitem.check:active,
+window.background.lightdm menu menuitem.radio:active {
+    color: white;
+}
+
+window.background.lightdm menubar {
+    background-image: none;
+    background-color: alpha (black, 0.5);
+}
+
+window.background.lightdm button {
+    border: 1px solid;
+    background-image: none;
+    background-color: alpha (black, 0.3);
+    border-color: alpha (white, 0.6);
+    border-radius: 5px;
+    padding: 7px;
+
+    color: white;
+    text-shadow: none;
+}
+
+window.background.lightdm button,
+window.background.lightdm button:hover,
+window.background.lightdm button:active,
+window.background.lightdm button:active:focus {
+    background-image: none;
+    border-image: none;
+}
+
+window.background.lightdm button:focus {
+    border-color: alpha (white, 0.9);
+    border-width: 1px;
+    border-style: solid;
+
+    color: white;
+}
+
+window.background .lightdm-combo.combobox-entry button,
+window.background .lightdm-combo .cell,
+window.background .lightdm-combo button,
+window.background .lightdm-combo entry,
+window.background.lightdm entry {
+    background-image: none;
+    background-color: alpha (black, 0.3);
+    border-color: alpha (white, 0.6);
+    border-radius: 5px;
+    padding: 7px;
+
+    color: white;
+    text-shadow: none;
+}
+
+window.background.lightdm entry image {
+    color: white;
+}
+
+window.background.lightdm entry,
+window.background.lightdm entry:hover,
+window.background.lightdm entry:active,
+window.background.lightdm entry:active:focus {
+    background-image: none;
+    border-image: none;
+
+    caret-color: white;
+}
+
+window.background.lightdm entry:focus {
+    border-color: alpha (white, 0.9);
+    border-width: 1px;
+    border-style: solid;
+
+    color: white;
+}
+
+window.background.lightdm entry:selected {
+    background-color: alpha (white, 0.2);
+}
+
+@keyframes dashentry_spinner {
+    to { -gtk-icon-transform: rotate(1turn); }
+}
+
+window.background.lightdm entry:active {
+    -gtk-icon-source: -gtk-icontheme("process-working-symbolic");
+    animation: dashentry_spinner 1s infinite linear;
+}
+
+window.background.lightdm button.flat.option-button {
+    padding: 2px;
+    background: none;
+    border-color: transparent;
+}
+
+window.background.lightdm button.toggle-button {
+    background: none;
+    border-color: transparent;
+}
+
+window.background.lightdm button.toggle-button.selected {
+    background-color: alpha (black, 0.3);
+    border-width: 1px;
+}

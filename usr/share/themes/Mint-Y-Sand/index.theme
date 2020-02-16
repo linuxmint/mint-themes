@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Mint-Y-Sand
+Comment=A flat theme with transparent elements
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Mint-Y-Sand
+MetacityTheme=Mint-Y-Sand
+IconTheme=Mint-Y-Sand
+CursorTheme=DMZ-Black
+ButtonLayout=menu:minimize,maximize,close

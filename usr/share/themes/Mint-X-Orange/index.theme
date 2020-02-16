@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Mint-X-Orange
+Comment=A Linux Mint theme with brushed metal in mintMenu, based on Clearlooks Revamp, Elementary and Faenza.
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Mint-X-Orange
+MetacityTheme=Mint-X
+IconTheme=Mint-X-Orange
+CursorTheme=default

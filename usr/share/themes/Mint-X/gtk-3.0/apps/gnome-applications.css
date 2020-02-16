@@ -1,0 +1,75 @@
+
+/*********
+ * Gedit *
+ *********/
+
+.gedit-headerbar-paned {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                            @toolbar_bg_a,
+                            @toolbar_bg_b);
+}
+/******************
+ * GtkFileChooser *
+ ******************/
+
+filechooser #pathbarbox {
+    background-color: @theme_bg_color;
+    border-bottom: 1px solid @border;
+}
+
+/************
+ * terminal *
+ ************/
+
+vte-terminal.terminal-screen {
+    -TerminalScreen-background-darkness: 0.9;
+    background-color: #3f3f3f;
+	color: #fff;
+}
+
+.nautilus-canvas-item {
+    border-radius: 3px;
+}
+.nautilus-desktop.nautilus-canvas-item {
+    color: @desktop_item_fg;
+	text-shadow: 1px 1px @desktop_item_text_shadow;
+}
+
+.nautilus-desktop.nautilus-canvas-item:active {
+    background-color: @desktop_item_selected_fg;
+    background-image: none;
+    color: @theme_fg_color;
+}
+
+.nautilus-desktop.nautilus-canvas-item:selected {
+    background-color: alpha(@theme_selected_bg_color, 0.8);
+    background-image: none;
+    color: @theme_selected_fg_color;
+}
+
+.nautilus-desktop.nautilus-canvas-item:active,
+.nautilus-desktop.nautilus-canvas-item:hover,
+.nautilus-desktop.nautilus-canvas-item:selected {
+    text-shadow: none;
+}
+
+/*******
+ * Xed *
+ *******/
+
+.xed-window .xed-searchbar {
+    border-top: 1px solid @border;
+}
+
+.xed-window statusbar button {
+    padding: 1px 3px;
+}
+
+.xed-goto-line-box {
+    background-color: shade(@theme_bg_color, 1.02);
+    padding: 6px;
+    border-radius: 0 0 2px 2px;
+    border-width: 0 1px 1px 1px;
+    border-style: solid;
+}

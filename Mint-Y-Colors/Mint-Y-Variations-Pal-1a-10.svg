@@ -16,7 +16,7 @@
    id="svg8"
    inkscape:version="0.92.4 (unknown)"
    sodipodi:docname="Mint-Y-Variations-Pal-1a-10.svg"
-   inkscape:export-filename="/home/sebastien/Sources/Mint-Y-NEW/mint-themes-2020-01-23-v4/Mint-Y-Variations-Pal-1a-10.png"
+   inkscape:export-filename="/home/sebastien/Sources/Mint-Y-NEW/mint-themes/Mint-Y-Colors/Mint-Y-Variations-Pal-1a-10.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96">
   <defs
@@ -29,7 +29,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.45768229"
-     inkscape:cx="379.24324"
+     inkscape:cx="-3.1180701"
      inkscape:cy="768"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -60,7 +60,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -213,9 +213,10 @@
          rx="1.1814873e-16" />
     </g>
     <g
-       id="g128">
+       id="g128"
+       style="fill:#0d91d3;fill-opacity:1">
       <rect
-         style="opacity:1;fill:#0f97d9;fill-opacity:1;stroke:none;stroke-width:0.5411461;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         style="opacity:1;fill:#0d91d3;fill-opacity:1;stroke:none;stroke-width:0.5411461;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="rect909"
          width="23.8125"
          height="17.991667"
@@ -229,9 +230,9 @@
          height="17.991667"
          width="23.8125"
          id="rect914"
-         style="opacity:1;fill:#0f97d9;fill-opacity:1;stroke:none;stroke-width:0.5411461;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+         style="opacity:1;fill:#0d91d3;fill-opacity:1;stroke:none;stroke-width:0.5411461;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       <rect
-         style="opacity:1;fill:#0f97d9;fill-opacity:1;stroke:none;stroke-width:0.5411461;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         style="opacity:1;fill:#0d91d3;fill-opacity:1;stroke:none;stroke-width:0.5411461;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="rect936"
          width="23.8125"
          height="17.991667"
@@ -594,7 +595,7 @@
        y="14.425081"
        rx="1.1814873e-16" />
     <rect
-       style="opacity:1;fill:#0d89c3;fill-opacity:1;stroke:none;stroke-width:0.5411461;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:1;fill:#0c81bc;fill-opacity:1;stroke:none;stroke-width:0.5411461;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect1239"
        width="23.8125"
        height="17.991667"

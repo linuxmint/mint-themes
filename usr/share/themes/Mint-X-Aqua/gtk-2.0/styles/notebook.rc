@@ -1,0 +1,183 @@
+style "notebook-close" { stock["gtk-close"] = {{ "images/other/close.png", *, *, * }} } # Close icon on tabs
+
+style "notebook"
+{
+    GtkWidget::interior-focus = 1
+    
+    xthickness = 3
+    ythickness = 3
+    
+    # A color is set here to fix the background of boxes in mate-system-monitor on the resources
+    # tab. However this causes tabs in libre office to be surrrounded by this color. Probably needs
+    # a proper app specific fix for system-monitor
+    #bg[NORMAL] = shade (1.1, @bg_color) 
+
+    engine "pixmap" 
+    {
+        image 
+        {
+            function = EXTENSION
+            recolorable = TRUE
+            state = ACTIVE
+            file = "images/notebook/tab-bottom.svg"
+            border = {5, 5, 5, 5}
+            stretch = TRUE
+            gap_side = TOP
+        }
+        image 
+        {
+            function = EXTENSION
+            recolorable = TRUE
+            state = ACTIVE
+            file = "images/notebook/tab-top.svg"
+            border = {5, 5, 5, 5}
+            stretch        = TRUE
+            gap_side = BOTTOM
+        }
+        image 
+        {
+            function = EXTENSION
+            recolorable = TRUE
+            state = ACTIVE
+            file = "images/notebook/tab-left.svg"
+            border = {5, 5, 5, 5}
+            stretch = TRUE
+            gap_side = RIGHT
+        }
+        image 
+        {
+            function = EXTENSION
+            recolorable = TRUE
+            state = ACTIVE
+            file = "images/notebook/tab-right.svg"
+            border = {5, 5, 5, 5}
+            stretch = TRUE
+            gap_side = LEFT
+        }        
+        image 
+        {
+            function = EXTENSION
+            recolorable = TRUE
+            file = "images/notebook/tab-top-active.svg"
+            border = {5, 5, 5, 5}
+            stretch = TRUE
+            gap_side = BOTTOM
+        }
+        image 
+        {
+            function = EXTENSION
+            recolorable = TRUE
+            file = "images/notebook/tab-bottom-active.svg"
+            border = {5, 5, 5, 5}
+            stretch = TRUE
+            gap_side = TOP
+        }
+        image 
+        {
+            function = EXTENSION
+            recolorable = TRUE
+            file = "images/notebook/tab-left-active.svg"
+            border = {5, 5, 5, 5}
+            stretch = TRUE
+            gap_side = RIGHT
+        }
+        image 
+        {
+            function = EXTENSION
+            recolorable = TRUE
+            file = "images/notebook/tab-right-active.svg"
+            border = { 5, 5, 5, 5 }
+            stretch = TRUE
+            gap_side = LEFT
+        }
+
+        # How to draw boxes with a gap on one side (ie the page of a notebook)
+
+        image 
+        {
+            function = BOX_GAP
+            recolorable = TRUE
+            file = "images/notebook/notebook.svg" 
+            border = {3, 3, 3, 3}
+            stretch = TRUE
+            gap_file = "images/notebook/gap-top.svg"
+            gap_border = {10, 10, 10, 10}
+            gap_start_file = "images/notebook/gap-top-left.svg"
+            gap_start_border = { 10, 10, 10, 10 }
+            gap_end_file = "images/notebook/gap-top-right.svg"
+            gap_end_border = {10, 10, 10, 10}
+            gap_side = TOP
+        }
+        image 
+        {
+            function = BOX_GAP
+            recolorable = TRUE
+            file = "images/notebook/notebook.svg"
+            border = {3, 3, 3, 3}
+            stretch = TRUE
+            gap_file = "images/notebook/gap-bottom.svg"
+            gap_border = {10, 10, 10, 10}
+            gap_start_file = "images/notebook/gap-bottom-left.svg"
+            gap_start_border = {10, 10, 10, 10}
+            gap_end_file = "images/notebook/gap-bottom-right.svg"
+            gap_end_border = {10, 10, 10, 10}
+            gap_side = BOTTOM
+        }
+        image 
+        {
+            function = BOX_GAP
+            recolorable = TRUE
+            file = "images/notebook/notebook.svg"
+            border = {3, 3, 3, 3}
+            stretch = TRUE
+            gap_file = "images/notebook/gap-left.svg"
+            gap_border = {10, 10, 10, 10}
+            gap_start_file = "images/notebook/gap-top-left.svg"
+            gap_start_border = {10, 10, 10, 10}
+            gap_end_file = "images/notebook/gap-bottom-left.svg"
+            gap_end_border = {10, 10, 10, 10}
+            gap_side = LEFT
+        }
+        image 
+        {
+            function = BOX_GAP
+            recolorable = TRUE
+            file = "images/notebook/notebook.svg" 
+            border = {3, 3, 3, 3}
+            stretch = TRUE
+            gap_file = "images/notebook/gap-right.svg"
+            gap_border = {10, 10, 10, 10}
+            gap_start_file = "images/notebook/gap-top-right.svg"
+            gap_start_border = {10, 10, 10, 10}
+            gap_end_file = "images/notebook/gap-bottom-right.svg"
+            gap_end_border = {10, 10, 10, 10}
+            gap_side = RIGHT
+        }
+
+        # How to draw the box of a notebook when it isnt attached to a tab
+
+        image 
+        {
+            function = BOX
+            recolorable = TRUE
+            file = "images/notebook/notebook.svg"
+            border = {3, 3, 3, 3}
+            stretch = TRUE
+        }
+        
+        # Remove focus lines from tabs
+        
+        image
+        {
+            function = FOCUS
+            file = "images/other/null.png"
+            border = {1, 1, 1, 1}
+            stretch = TRUE
+        }
+    }
+}
+
+style "notebook-fill"
+{
+    bg[NORMAL] = shade (1.1, @bg_color)
+}
