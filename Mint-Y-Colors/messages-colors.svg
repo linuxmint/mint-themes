@@ -26,7 +26,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.75666667"
-     inkscape:cx="600"
+     inkscape:cx="589.46222"
      inkscape:cy="450"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -55,6 +55,15 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,38.200016)">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.9483943;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect876"
+       width="1200"
+       height="900"
+       x="0"
+       y="-38.200012"
+       rx="1.5995795e-15"
+       sodipodi:insensitive="true" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:16px;line-height:2;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
