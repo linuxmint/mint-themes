@@ -1,5 +1,5 @@
 *early-pre-beta-release (Not complete yet!)*
-## Mint-Y new colors: Pure. Vitaminized. And readable.
+# Mint-Y new colors: Pure. Vitaminized. And readable.
 
 I started working on this fork on 2020-02-11. It is a work-in-progress. I will probably send pull requests to linuxmint/mint-themes from here.
 
