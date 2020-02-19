@@ -250,4 +250,4 @@ for color in y_hex_colors1.keys():
 
 
 # Files
-os.system("cp -R usr/share/themes/* ~/.themes/")
+os.system("cp -R files/* ./")
