@@ -1,20 +1,16 @@
-*early-pre-beta-release (Not complete yet!)*
+*early-pre-beta-release...*
 # Mint-Y new colors: Pure. Vitaminized. And readable.
 
 I started working on this fork on 2020-02-11. It is a work-in-progress. I will probably send pull requests to linuxmint/mint-themes from here.
 
-All the new Mint-Y colors are here except the Mint green. We will talk about Mint green later.
+NOTE: I had done some minor edits in the scripts, and i did run **update-variations.py** and **generate-themes.py**. Si i did make this **set of coloured themes**. And i installed it. And i am currently enjoying it and working with it. And i had uploaded these thousands new files. But i had to go backward, and replace these newly generated themes with the old ones, because otherwise, making comparisons between my fork and linuxmint/mint-themes was impossible. So now, if you want to see and test these new colors, you will have to build the themes on your side, or just ask me for an individual transfer...
 
-**Ready to install and test:**
-
-`cp -R usr/share/themes/* ~/.themes/` (this is early-pre-beta-release!)
-
-**If you want to build your own version, do as follow:**
+**If you want to build this theme, do as follow:**
 
   * Install **Optipng** and **Sassc**.
   * Take the time to explore and understand the mint-themes directory and sub-directories, and then make your changes.
   * Run **update-variations.py** first, and then **generate-themes.py**.
-  * Move files/usr/share/themes/ or usr/share/themes/ to /usr/share/themes/ if not already done automatically. As superuser. You could prefer to put your new themes in ~/.themes/ first, for (less dangerous) testing purposes. This ~/.themes/ overrides the other one, on your user account only.
+  * Move files/usr/share/themes/ or usr/share/themes/ to /usr/share/themes/ if not already done automatically. As superuser. Alternately, you could prefer to put your new themes in ~/.themes/ first, for (less dangerous) testing purposes. This ~/.themes/ overrides the other one, on your user account only.
   * Change your theme from your Preferences.
 
 **Known issues:**
