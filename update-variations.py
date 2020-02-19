@@ -126,4 +126,4 @@ for color in y_hex_colors1.keys():
         if os.path.exists(path):
             for filename in os.listdir(path):
                 p = os.path.join(path, filename)
-                os.system("./colorize.py %s %s" % (p, color)) 
+                os.system("./colorize.py %s %s" % (p, color))
