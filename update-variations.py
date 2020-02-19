@@ -119,3 +119,11 @@ for color in y_hex_colors1.keys():
     os.system("rm -rf assets/*")
     os.system("./render-assets.sh")
     os.chdir(curdir)
+
+    # Colorize GTK2 toolbar-menubar (these assets aren't generated)
+    for variant in ["", "-Dark", "-Darker"]:
+        path = "files/usr/share/themes/Mint-Y%s-%s/gtk-2.0/menubar-toolbar" % (variant, color)
+        if os.path.exists(path):
+            for filename in os.listdir(path):
+                p = os.path.join(path, filename)
+                os.system("./colorize.py %s %s" % (p, color)) 
