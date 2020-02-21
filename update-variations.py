@@ -17,6 +17,7 @@ def usage ():
 def update_color (color):
     variation = "src/Mint-Y/variations/%s" % color
     print("updating %s" % variation)
+    os.system("rm -rf %s" % variation)
     os.system("mkdir -p %s/gtk-2.0" % variation)
     os.system("mkdir -p %s/gtk-3.0" % variation)
 
@@ -135,9 +136,6 @@ y_hex_colors4["Sand"] = "#947f51"
 y_hex_colors4["Teal"] = "#4e8378"
 
 # Mint-Y variations
-os.system("rm -rf src/Mint-Y/variations")
-os.system("mkdir -p src/Mint-Y/variations")
-
 curdir = os.getcwd()
 
 if color_variation == "All":
