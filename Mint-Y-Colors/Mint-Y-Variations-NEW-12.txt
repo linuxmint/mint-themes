@@ -1,0 +1,58 @@
+# These are proposed new accent colors coming from Mint-Y-Variations-NEW-12.svg.
+# This would replace the Mint-Y accent colors in update-variations.py and
+# generate-themes.py.
+
+
+# Mint-Y old green
+Y_HEX_ACCENT1 = ["#92b372"]  # BASE
+Y_HEX_ACCENT2 = ["#8fa876"]  # BASE-DARK
+Y_HEX_ACCENT3 = ["#afca95"]  # PRELIGHT/HOVER
+Y_HEX_ACCENT4 = ["#779559"]  # PRESSED
+# Mint-Y new colors
+y_hex_colors1 = {}
+y_hex_colors1["Aqua"] = "#0CA3C1"
+y_hex_colors1["Blue"] = "#0F7FF0"
+y_hex_colors1["Brown"] = "#7F542B"
+y_hex_colors1["Grey"] = "#767676"
+y_hex_colors1["Orange"] = "#EF6410"
+y_hex_colors1["Pink"] = "#E54980"
+y_hex_colors1["Purple"] = "#B41AB4"
+y_hex_colors1["Red"] = "#DF2121"
+y_hex_colors1["Sand"] = "#B88E3D"
+y_hex_colors1["Teal"] = "#009873"
+
+y_hex_colors2 = {}
+y_hex_colors2["Aqua"] = "#0B92AD"
+y_hex_colors2["Blue"] = "#0E73D8"
+y_hex_colors2["Brown"] = "#7F542B"
+y_hex_colors2["Grey"] = "#767676"
+y_hex_colors2["Orange"] = "#DF5807"
+y_hex_colors2["Pink"] = "#D93D74"
+y_hex_colors2["Purple"] = "#9E22A0"
+y_hex_colors2["Red"] = "#CA1E1E"
+y_hex_colors2["Sand"] = "#A58037"
+y_hex_colors2["Teal"] = "#008867"
+
+y_hex_colors3 = {}
+y_hex_colors3["Aqua"] = "#5DC2D6"
+y_hex_colors3["Blue"] = "#5FAAF5"
+y_hex_colors3["Brown"] = "#AA8D72"
+y_hex_colors3["Grey"] = "#A4A4A4"
+y_hex_colors3["Orange"] = "#F49860"
+y_hex_colors3["Pink"] = "#EE86AA"
+y_hex_colors3["Purple"] = "#CD66CD"
+y_hex_colors3["Red"] = "#EA6B6B"
+y_hex_colors3["Sand"] = "#D0B47E"
+y_hex_colors3["Teal"] = "#55BAA2"
+
+y_hex_colors4 = {}
+y_hex_colors4["Aqua"] = "#086D81"
+y_hex_colors4["Blue"] = "#0A55A0"
+y_hex_colors4["Brown"] = "#55381D"
+y_hex_colors4["Grey"] = "#4F4F4F"
+y_hex_colors4["Orange"] = "#9F430B"
+y_hex_colors4["Pink"] = "#993155"
+y_hex_colors4["Purple"] = "#781178"
+y_hex_colors4["Red"] = "#951616"
+y_hex_colors4["Sand"] = "#7B5F29"
+y_hex_colors4["Teal"] = "#00654D"
