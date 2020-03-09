@@ -11,7 +11,7 @@ Y_HEX_ACCENT4 = ["#779559"]  # PRESSED
 # Mint-Y new colors
 y_hex_colors1 = {}
 y_hex_colors1["Aqua"] = "#0CA3C1"
-y_hex_colors1["Blue"] = "#0F7FF0"
+y_hex_colors1["Blue"] = "#0E73D7"
 y_hex_colors1["Brown"] = "#7F542B"
 y_hex_colors1["Grey"] = "#767676"
 y_hex_colors1["Orange"] = "#EF6410"
@@ -23,7 +23,7 @@ y_hex_colors1["Teal"] = "#009873"
 
 y_hex_colors2 = {}
 y_hex_colors2["Aqua"] = "#0B92AD"
-y_hex_colors2["Blue"] = "#0E73D8"
+y_hex_colors2["Blue"] = "#0D67C1"
 y_hex_colors2["Brown"] = "#7F542B"
 y_hex_colors2["Grey"] = "#767676"
 y_hex_colors2["Orange"] = "#DF5807"
@@ -35,7 +35,7 @@ y_hex_colors2["Teal"] = "#008867"
 
 y_hex_colors3 = {}
 y_hex_colors3["Aqua"] = "#5DC2D6"
-y_hex_colors3["Blue"] = "#5FAAF5"
+y_hex_colors3["Blue"] = "#5EA2E4"
 y_hex_colors3["Brown"] = "#AA8D72"
 y_hex_colors3["Grey"] = "#A4A4A4"
 y_hex_colors3["Orange"] = "#F49860"
@@ -47,7 +47,7 @@ y_hex_colors3["Teal"] = "#55BAA2"
 
 y_hex_colors4 = {}
 y_hex_colors4["Aqua"] = "#086D81"
-y_hex_colors4["Blue"] = "#0A55A0"
+y_hex_colors4["Blue"] = "#094D8F"
 y_hex_colors4["Brown"] = "#55381D"
 y_hex_colors4["Grey"] = "#4F4F4F"
 y_hex_colors4["Orange"] = "#9F430B"

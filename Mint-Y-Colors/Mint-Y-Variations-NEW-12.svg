@@ -29,10 +29,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.44335938"
-     inkscape:cx="-145.76209"
+     inkscape:cx="-65.198836"
      inkscape:cy="768"
      inkscape:document-units="px"
-     inkscape:current-layer="layer4"
+     inkscape:current-layer="layer1"
      showgrid="false"
      showguides="true"
      units="px"
@@ -154,9 +154,9 @@
     </g>
     <g
        id="g128"
-       style="fill:#0f7ff0;fill-opacity:1">
+       style="fill:#0e73d7;fill-opacity:1">
       <rect
-         style="opacity:1;fill:#0f7ff0;fill-opacity:1;stroke:none;stroke-width:0.5411461;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         style="opacity:1;fill:#0e73d7;fill-opacity:1;stroke:none;stroke-width:0.5411461;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="rect909"
          width="23.8125"
          height="17.991667"
@@ -170,9 +170,9 @@
          height="17.991667"
          width="23.8125"
          id="rect914"
-         style="opacity:1;fill:#0f7ff0;fill-opacity:1;stroke:none;stroke-width:0.5411461;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+         style="opacity:1;fill:#0e73d7;fill-opacity:1;stroke:none;stroke-width:0.5411461;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       <rect
-         style="opacity:1;fill:#0f7ff0;fill-opacity:1;stroke:none;stroke-width:0.5411461;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         style="opacity:1;fill:#0e73d7;fill-opacity:1;stroke:none;stroke-width:0.5411461;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="rect936"
          width="23.8125"
          height="17.991667"
@@ -467,7 +467,7 @@
        y="14.425081"
        rx="1.1814873e-16" />
     <rect
-       style="opacity:1;fill:#0e73d8;fill-opacity:1;stroke:none;stroke-width:0.5411461;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:1;fill:#0d67c1;fill-opacity:1;stroke:none;stroke-width:0.5411461;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect1239"
        width="23.8125"
        height="17.991667"

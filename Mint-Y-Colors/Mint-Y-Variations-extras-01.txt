@@ -1,0 +1,72 @@
+# These are alternate choices of new accent colors coming from Mint-Y-Variations-extras-01.svg.
+# These could replace some of the Mint-Y accent colors in update-variations.py and
+# generate-themes.py.
+
+y_hex_colors1 = {}
+y_hex_colors1["Aqua"] = "#00A8AA" # Aqua 0
+y_hex_colors1["Aqua"] = "#0CA3C1" # Aqua 1
+y_hex_colors1["Aqua"] = "#0D91D3" # Aqua 2
+y_hex_colors1["Blue"] = "#0F7FF0" # Blue 1
+y_hex_colors1["Blue"] = "#0E73D7" # Blue 1.5
+y_hex_colors1["Blue"] = "#0F5AF0" # Blue 2
+y_hex_colors1["Brown"] = ""
+y_hex_colors1["Grey"] = ""
+y_hex_colors1["Orange"] = ""
+y_hex_colors1["Pink"] = ""
+y_hex_colors1["Purple"] = ""
+y_hex_colors1["Red"] = ""
+y_hex_colors1["Sand"] = "#BF8B26" # Sand 1
+y_hex_colors1["Sand"] = "#B88E3D" # Sand 2
+y_hex_colors1["Teal"] = ""
+
+y_hex_colors2 = {}
+y_hex_colors2["Aqua"] = "#00989A" # Aqua 0
+y_hex_colors2["Aqua"] = "#0B92AD" # Aqua 1
+y_hex_colors2["Aqua"] = "#0C83BE" # Aqua 2
+y_hex_colors2["Blue"] = "#0E73D8" # Blue 1
+y_hex_colors2["Blue"] = "#0D67C1" # Blue 1.5
+y_hex_colors2["Blue"] = "#0E51D8" # Blue 2
+y_hex_colors2["Brown"] = ""
+y_hex_colors2["Grey"] = ""
+y_hex_colors2["Orange"] = ""
+y_hex_colors2["Pink"] = ""
+y_hex_colors2["Purple"] = ""
+y_hex_colors2["Red"] = ""
+y_hex_colors2["Sand"] = "#AC7D22" # Sand 1
+y_hex_colors2["Sand"] = "#A58037" # Sand 2
+y_hex_colors2["Teal"] = ""
+
+y_hex_colors3 = {}
+y_hex_colors3["Aqua"] = "#55C5C6" # Aqua 0
+y_hex_colors3["Aqua"] = "#5DC2D6" # Aqua 1
+y_hex_colors3["Aqua"] = "#5EB6E2" # Aqua 2
+y_hex_colors3["Blue"] = "#5FAAF5" # Blue 1
+y_hex_colors3["Blue"] = "#5EA2E4" # Blue 1.5
+y_hex_colors3["Blue"] = "#5F91F5" # Blue 2
+y_hex_colors3["Brown"] = ""
+y_hex_colors3["Grey"] = ""
+y_hex_colors3["Orange"] = ""
+y_hex_colors3["Pink"] = ""
+y_hex_colors3["Purple"] = ""
+y_hex_colors3["Red"] = ""
+y_hex_colors3["Sand"] = "#D4B26E" # Sand 1
+y_hex_colors3["Sand"] = "#D0B47E" # Sand 2
+y_hex_colors3["Teal"] = ""
+
+y_hex_colors4 = {}
+y_hex_colors4["Aqua"] = "#007071" # Aqua 0
+y_hex_colors4["Aqua"] = "#086D81" # Aqua 1
+y_hex_colors4["Aqua"] = "#09618D" # Aqua 2
+y_hex_colors4["Blue"] = "#0A55A0" # Blue 1
+y_hex_colors4["Blue"] = "#094D8F" # Blue 1.5
+y_hex_colors4["Blue"] = "#0A3CA0" # Blue 2
+y_hex_colors4["Brown"] = ""
+y_hex_colors4["Grey"] = ""
+y_hex_colors4["Orange"] = ""
+y_hex_colors4["Pink"] = ""
+y_hex_colors4["Purple"] = ""
+y_hex_colors4["Red"] = ""
+y_hex_colors4["Sand"] = "#7F5D19" # Sand 1
+y_hex_colors4["Sand"] = "#7B5F29" # Sand 2
+y_hex_colors4["Teal"] = ""
+
