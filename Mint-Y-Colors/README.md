@@ -6,4 +6,4 @@ This directory contains the proposed new accent colors to be discussed and expor
 
 Here in this directory you can find SVG files for previews, and text files containing #hex color values to be copy-pasted or imported into CSS, SVG, scripts and programs.
 
-![Mint-Y-Variations-NEW preview](Mint-Y-Variations-NEW-12.svg)
+![Mint-Y-Variations-NEW preview](Mint-Y-Variations-NEW-14.svg)
