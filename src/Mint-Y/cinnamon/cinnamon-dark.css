@@ -1226,9 +1226,7 @@ StScrollBar {
       padding: 8px;
       border: 1px solid #92b372; }
     .grouped-window-list-thumbnail-menu .item-box:selected {
-      color: #ffffff;
-      background-color: #92b372;
-      border: 0px solid #92b372; }
+      border: 1px solid #92b372; }
   .grouped-window-list-thumbnail-menu .thumbnail {
     width: 256px; }
   .grouped-window-list-thumbnail-menu .separator {

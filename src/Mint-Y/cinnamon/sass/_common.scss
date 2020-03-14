@@ -1552,9 +1552,7 @@ StScrollBar {
       }
 
       &:selected {
-        color: $selected_fg_color;
-        background-color: $selected_bg_color;
-        border: 0px solid $selected_bg_color;
+        border: 1px solid $selected_bg_color;
       }
     }
 
