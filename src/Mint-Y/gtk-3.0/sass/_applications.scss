@@ -115,6 +115,7 @@ vte-terminal {
   border-radius: 2px;
 }
 
+%nautilus_canvas_item,
 .nautilus-desktop.nautilus-canvas-item {
   color: $selected_fg_color;
   text-shadow: 1px 1px transparentize(black, 0.4);
@@ -239,7 +240,7 @@ NautilusListView .view { border-bottom: 1px solid $borders_color; }
 //
 // Nemo
 //
-.nemo-desktop.nemo-canvas-item { @extend .nautilus-desktop.nautilus-canvas-item; }
+.nemo-desktop.nemo-canvas-item { @extend %nautilus_canvas_item; }
 
 .nemo-window {
 
