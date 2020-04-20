@@ -128,7 +128,7 @@ label {
   &:disabled {
     color: $insensitive_fg_color;
 
-    selection { @extend %selected_items:disabled; }
+    selection { @extend %selected_items_disabled; }
   }
 }
 
@@ -345,6 +345,7 @@ button {
 
   separator { margin: 4px 1px; }
 
+  @at-root %button_basic_flat,
   &.flat {
     @include button(undecorated);
     // to avoid adiacent buttons borders clashing when transitioning, the transition on the normal state is set
@@ -380,6 +381,7 @@ button {
   &:active:hover, &:checked { color: $selected_fg_color; }
   //Webkitgtk workaround end
 
+  @at-root %button_basic_flat,
   &.flat:disabled { @include button(undecorated); }
 
   &:disabled {
@@ -423,6 +425,7 @@ button {
     &.popup { padding-right: 8px; padding-left: 8px; }
   }
 
+  @at-root %button_basic_drop_active,
   &:drop(active) {
     color: $drop_target_color;
     border-color: $drop_target_color;
@@ -595,9 +598,9 @@ button {
 // More inline toolbar buttons
 toolbar.inline-toolbar toolbutton {
   & > button.flat { @extend %linked_middle; }
-  &:first-child > button.flat { @extend %linked:first-child; }
-  &:last-child > button.flat { @extend %linked:last-child; }
-  &:only-child > button.flat { @extend %linked:only-child; }
+  &:first-child > button.flat { @extend %linked_left; }
+  &:last-child > button.flat { @extend %linked_right; }
+  &:only-child > button.flat { @extend %linked_only_child; }
 }
 
 %linked_middle {
@@ -605,21 +608,32 @@ toolbar.inline-toolbar toolbutton {
   border-right-style: none;
 }
 
+%linked_left {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+%linked_right {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-right-style: solid;
+}
+
+%linked_only_child {
+  border-radius: 3px;
+  border-style: solid;
+}
+
 %linked {
   @extend %linked_middle;
-  &:first-child {
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
-  }
-  &:last-child {
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-    border-right-style: solid;
-  }
-  &:only-child {
-    border-radius: 3px;
-    border-style: solid;
-  }
+
+  &:first-child { @extend %linked_left; }
+  &:last-child { @extend %linked_right; }
+  &:only-child { @extend %linked_only_child; }
 }
 
 %linked_vertical_middle {
@@ -627,21 +641,28 @@ toolbar.inline-toolbar toolbutton {
   border-bottom-style: none;
 }
 
-%linked_vertical{
+%linked_vertical_top {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+%linked_vertical_bottom {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+}
+
+%linked_vertical_only_child {
+  border-radius: 3px;
+  border-style: solid;
+}
+
+%linked_vertical {
   @extend %linked_vertical_middle;
-  &:first-child {
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-  }
-  &:last-child {
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-    border-bottom-style: solid;
-  }
-  &:only-child {
-    border-radius: 3px;
-    border-style: solid;
-  }
+
+  &:first-child { @extend %linked_vertical_top; }
+  &:last-child { @extend %linked_vertical_bottom; }
+  &:only-child { @extend %linked_vertical_only_child; }
 }
 
 %undecorated_button {
@@ -683,6 +704,7 @@ modelbutton.flat arrow {
 //
 // Links
 //
+%link,
 *:link {
   color: $link_color;
 
@@ -708,7 +730,8 @@ modelbutton.flat arrow {
 
 button:link, button:visited {
   @extend %undecorated_button;
-  @extend *:link;
+  @extend %link;
+
   &:hover, &:active, &:checked {
     @extend %undecorated_button;
   }
@@ -792,7 +815,7 @@ combobox {
     min-width: 16px;
   }
 
-  &:drop(active) button.combo { @extend button:drop(active); }
+  &:drop(active) button.combo { @extend %button_basic_drop_active; }
 
   .linked:not(.vertical) > & > box > button.combo {
     // the combobox is a composite widget so the way we do button linking doesn't
@@ -801,14 +824,14 @@ combobox {
     &:dir(rtl) { @extend %linked_middle; }
   }
 
-  .linked:not(.vertical) > &:first-child > box > button.combo { @extend %linked:first-child; }
-  .linked:not(.vertical) > &:last-child > box > button.combo { @extend %linked:last-child; }
-  .linked:not(.vertical) > &:only-child > box > button.combo { @extend %linked:only-child; }
+  .linked:not(.vertical) > &:first-child > box > button.combo { @extend %linked_left; }
+  .linked:not(.vertical) > &:last-child > box > button.combo { @extend %linked_right; }
+  .linked:not(.vertical) > &:only-child > box > button.combo { @extend %linked_only_child; }
 
   .linked.vertical > & > box > button.combo { @extend %linked_vertical_middle; }
-  .linked.vertical > &:first-child > box > button.combo { @extend %linked_vertical:first-child; }
-  .linked.vertical > &:last-child > box > button.combo { @extend %linked_vertical:last-child; }
-  .linked.vertical > &:only-child > box > button.combo { @extend %linked_vertical:only-child; }
+  .linked.vertical > &:first-child > box > button.combo { @extend %linked_vertical_top; }
+  .linked.vertical > &:last-child > box > button.combo { @extend %linked_vertical_bottom; }
+  .linked.vertical > &:only-child > box > button.combo { @extend %linked_vertical_only_child; }
 }
 
 toolbar {
@@ -945,7 +968,7 @@ headerbar,
       color: transparentize($selected_fg_color, 0.4);
     }
 
-    .subtitle:link { @extend *:link:selected;  }
+    .subtitle:link { @extend %link_selected; }
 
     button {
       color: $selected_fg_color;
@@ -1149,13 +1172,13 @@ headerbar {
       color: $selection_mode_fg;
       background-color: transparentize($selection_mode_fg, 1);
     }
-    &:hover { @extend %normal_selected_button; }
-    &:active, &:checked { @extend %selected-button:active; }
+    &:hover { @extend %selected_button_normal; }
+    &:active, &:checked { @extend %selected_button_active; }
 
     &:disabled {
-      @extend %selected-button.flat:disabled;
+      @extend %selected_button_flat_disabled;
 
-      &:checked, &:active { @extend %selected-button:disabled:checked; }
+      &:checked, &:active { @extend %selected_button_disabled_checked; }
     }
   }
 
@@ -1663,7 +1686,11 @@ popover.background {
   .csd &, & { border: 1px solid darken($borders_color, 5%); }
 
   & separator { background-color: $_popover_bg; }
-  label.separator { @extend label.separator; } // Noice
+  label.separator {
+    @extend .dim-label;
+
+    color: $fg_color;
+  }
 
   > list,
   > .view,
@@ -2389,7 +2416,7 @@ row {
   &:selected {
     @extend %selected_items;
 
-    button { @extend %selected-button; }
+    button { @extend %selected_button; }
   }
 
   &.activatable {
@@ -2646,7 +2673,7 @@ placessidebar {
       margin-top: 2px;
       margin-bottom: 2px;
       padding: 0;
-      @extend button.flat;
+      @extend %button_basic_flat;
       border-radius: 100%;
       -gtk-outline-radius: 100%;
 
@@ -2766,7 +2793,7 @@ infobar {
     color: $selected_fg_color;
     caret-color: currentColor;
 
-    button { @extend %selected-button }
+    button { @extend %selected_button }
 
     selection {
       color: $selected_bg_color;
@@ -2788,9 +2815,9 @@ infobar {
 //
 // Buttons on selected backgrounds
 //
-%selected-button {
+%selected_button {
 
-  @at-root %normal_selected_button, & {
+  @at-root %selected_button_normal, & {
     color: $selected_fg_color;
     background-color: transparentize($selected_fg_color, 1);
     border-color: transparentize($selected_fg_color, 0.5);
@@ -2801,6 +2828,7 @@ infobar {
     color: $selected_fg_color;
     background-color: transparentize($selected_fg_color, 1);
 
+    @at-root %selected_button_flat_disabled,
     &:disabled {
       &, label { color: transparentize($selected_fg_color, 0.6); }
     }
@@ -2810,6 +2838,7 @@ infobar {
     background-color: transparentize($selected_fg_color, 0.8);
     border-color: transparentize($selected_fg_color, 0.2);
   }
+  @at-root %selected_button_active,
   &:active, &:active:hover, &:checked {
     color: $selected_bg_color;
     background-color: $selected_fg_color;
@@ -2820,6 +2849,7 @@ infobar {
     background-color: transparentize($selected_fg_color, 1);
     border-color: transparentize($selected_fg_color, 0.6);
 
+    @at-root %selected_button_disabled_checked,
     &:active, &:checked {
       color: $selected_bg_color;
       background-color: transparentize($selected_fg_color, 0.5);
@@ -3141,6 +3171,7 @@ headerbar,
   @at-root %nobg_selected_items, & {
     color: $selected_fg_color;
 
+    @at-root %selected_items_disabled,
     &:disabled { color: mix($selected_fg_color, $selected_bg_color, 50%); }
   }
 }
