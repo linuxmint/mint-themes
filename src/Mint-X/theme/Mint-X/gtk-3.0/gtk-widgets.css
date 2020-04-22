@@ -23,6 +23,12 @@
     color: @theme_fg_color;
 }
 
+*:selected,
+*:selected:focus {
+    background-color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
+}
+
 *:disabled {
     color: @insensitive_fg_color;
     text-shadow: 0 1px alpha(white, 0.4);
