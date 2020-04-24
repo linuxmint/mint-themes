@@ -1,3 +1,53 @@
+mint-themes (1.8.4) ulyana; urgency=medium
+
+  [ JosephMcc ]
+  * Covert to use sassc (#235)
+  * Mint-Y-Cinnamon: Don't hardcode font sizes
+  * Fix an error from the port to sassc
+  * Mint-Y-Cinnamon: Update theming for the workspace and restart osd
+  * Mint-X-Cinnamon: Remove hard coded font sizing
+  * Mint-X-Cinnamon: Update theming for restart and workspace osd
+  * Mint-X-Gtk3: Fix wrong colored headerbars
+  * Mint-X-gtk3: Fix theming for GtkFlowBox and GtkFlowBoxChild
+  * Mint-Y-Cinnamon: Improve the checkbox colors
+
+  [ Clement Lefebvre ]
+  * update-variations: Accept a color as argument
+  * Update variations: Fix re-creating dirs
+
+  [ JosephMcc ]
+  * Mint-Y-Gtk3: Fix the drag and drop target color
+
+  [ Sébastien Bouchard ]
+  * Mint-Y-Colors: new directory with files (#244)
+
+  [ JosephMcc ]
+  * Mint-Y-Grey: Fix the hover color of the window close button
+
+  [ Clement Lefebvre ]
+  * update-variations: Don't modify GTK2 menubars
+
+  [ JosephMcc ]
+  * Mint-Y-Cinnamon: Tweak the look of GWL thumbnails
+
+  [ Clement Lefebvre ]
+  * Update Pink Color (#243)
+  * Factorize color codes into a single constants.py file
+  * Fix pink GTK2 dark menubars
+  * Update Aqua color (#252)
+  * Update Blue color (#255)
+  * Update Sand color (#256)
+  * Update Teal color (#257)
+  * Update Red color (#258)
+  * Update Purple Color (#261)
+  * Update Grey color (#262)
+  * Update Orange color (#263)
+
+  [ JosephMcc ]
+  * Mint-Y: Update the theme for newer libsass
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 24 Apr 2020 10:56:04 +0100
+
 mint-themes (1.8.3) tricia; urgency=medium
 
   [ JosephMcc ]
