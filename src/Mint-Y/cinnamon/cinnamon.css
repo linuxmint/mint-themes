@@ -1020,10 +1020,10 @@ StScrollBar {
   padding-right: 30px;
   padding-left: 28px;
   text-align: right;
-  height: 30px; }
+  height: 2.2em; }
   .menu-selected-app-box:rtl {
     padding-top: 10px;
-    height: 30px; }
+    height: 2.2em; }
 
 .menu-selected-app-title {
   font-weight: bold; }
