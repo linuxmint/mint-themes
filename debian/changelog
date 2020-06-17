@@ -1,3 +1,21 @@
+mint-themes (1.8.5) ulyana; urgency=medium
+
+  * Mint-X: Fix infobar colors
+  * Revert "Update Orange color (#263)"
+  * Revert "Update Grey color (#262)"
+  * Revert "Update Purple Color (#261)"
+  * Revert "Update Red color (#258)"
+  * Revert "Update Teal color (#257)"
+  * Revert "Update Sand color (#256)"
+  * Revert "Update Blue color (#255)"
+  * Revert "Update Aqua color (#252)"
+  * Revert "Fix pink GTK2 dark menubars"
+  * Revert "Factorize color codes into a single constants.py file"
+  * Revert "Update Pink Color (#243)"
+  * Factorize color codes into a single constants.py file
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 06 Jun 2020 10:56:20 +0100
+
 mint-themes (1.8.4) ulyana; urgency=medium
 
   [ JosephMcc ]

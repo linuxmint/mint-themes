@@ -1,3 +1,2 @@
-# Mint-Y2: new colors and more
-#### All my work is happening on this branch:
-#### https://github.com/SebastJava/mint-themes/tree/Y-colors
+### Automated color updates
+Some parts had to be done by hand. Colorize.py got discarded because it only changed hues, not saturation and lightness. Now everything is 100% automated, the right way. I am not pretending to be a professional programmer. I just looked at the scripts already existing here in linuxmint/mint-themes, and carefully added some additional lines...
