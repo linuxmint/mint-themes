@@ -78,8 +78,8 @@ os.chdir(curdir)
 
 # Mint-Y color variations
 for color in y_hex_colors1.keys():
-    for variant in ["-Base", "-Darkest", "-Darker"]:
-        original_name = "Mint-Y2%s" % variant
+    for variant in ["", "-Dark", "-Darker"]:
+        original_name = "Mint-Y%s" % variant
         path = os.path.join("src/Mint-Y/variations/%s" % color)
         if os.path.isdir(path):
             print("Derivating %s-%s" % (original_name, color))
@@ -104,7 +104,7 @@ for color in y_hex_colors1.keys():
             os.system("cp -R src/Mint-Y/gtk-3.0/sass %s/gtk-3.0/" % theme)
             y_colorize_directory("%s/gtk-3.0/sass" % theme, color)
             os.chdir("%s/gtk-3.0" % theme)
-            if (variant == "-Darkest"):
+            if (variant == "-Dark"):
                 os.system("cp sass/gtk-dark.scss sass/gtk.scss")
                 os.system("sassc ./sass/gtk.scss gtk.css")
             elif (variant == "-Darker"):
@@ -124,7 +124,7 @@ for color in y_hex_colors1.keys():
                 os.system("cp -R src/Mint-Y/cinnamon/sass %s/cinnamon/" % theme)
                 y_colorize_directory("%s/cinnamon/sass" % theme, color)
                 os.chdir("%s/cinnamon" % theme)
-                if (variant == "-Darkest"):
+                if (variant == "-Dark"):
                     os.system("cp sass/cinnamon-dark.scss sass/cinnamon.scss")
                 os.system("sassc ./sass/cinnamon.scss cinnamon.css")
                 os.system("rm -rf sass .sass-cache")
@@ -169,13 +169,13 @@ for color in y_hex_colors1.keys():
             os.system("rm -rf %s/gtk-3.0/thumbnail.png" % theme)
             os.system("rm -rf %s/xfwm4" % theme)
 
-            if variant == "-Darkest":
+            if variant == "-Dark":
                 os.system("cp -R %s/cinnamon/mint-y-dark-thumbnail.png %s/cinnamon/thumbnail.png" % (path, theme))
                 os.system("cp -R %s/gtk-2.0/assets-dark %s/gtk-2.0/assets" % (path, theme))
                 os.system("cp -R %s/gtk-3.0/thumbnail-dark.png %s/gtk-3.0/thumbnail.png" % (path, theme))
                 os.system("cp -R %s/xfwm4-src/xfwm4-dark %s/xfwm4" % (path, theme))
             else:
-                if variant == "-Base":
+                if variant == "":
                     os.system("cp -R %s/cinnamon/mint-y-thumbnail.png %s/cinnamon/thumbnail.png" % (path, theme))
                 os.system("cp -R %s/gtk-2.0/assets %s/gtk-2.0/assets" % (path, theme))
                 os.system("cp -R %s/gtk-3.0/thumbnail.png %s/gtk-3.0/thumbnail.png" % (path, theme))
