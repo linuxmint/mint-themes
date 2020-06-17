@@ -84,3 +84,5 @@ titlebutton-min-dark
 titlebutton-min-backdrop-dark
 titlebutton-min-hover-dark
 titlebutton-min-active-dark
+thumbnail
+thumbnail-dark

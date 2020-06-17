@@ -1,3 +1,4 @@
+![auto branch icon](https://github.com/SebastJava/mint-themes/blob/auto/auto-branch-icon.svg)
 # Automated color updates
 This branch is only for adding automated color updates, making Mint-Y build now 100% automated. Before, some parts had to be done by hand.  
 
