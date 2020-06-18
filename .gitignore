@@ -5,4 +5,4 @@ src/Mint-Y/cinnamon/sass-cache
 *.scssc
 
 usr/*
-src/Mint-Y/variations/*
+# src/Mint-Y/variations/*
