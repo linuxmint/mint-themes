@@ -23,9 +23,15 @@ filechooser #pathbarbox {
  ************/
 
 vte-terminal.terminal-screen {
-    -TerminalScreen-background-darkness: 0.9;
+    -TerminalScreen-background-darkness: 1.0;
     background-color: #3f3f3f;
-	color: #fff;
+    color: #fff;
+}
+
+vte-terminal {
+    -TerminalScreen-background-darkness: 1.0;
+    background-color: #3f3f3f;
+    color: #fff;
 }
 
 .nautilus-canvas-item {
