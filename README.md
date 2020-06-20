@@ -1,9 +1,9 @@
 ![auto branch icon](https://github.com/SebastJava/mint-themes/blob/auto/0-auto-branch-icon.svg)
 # Automated color updates (wip)
 This branch is only for adding automated color updates, making Mint-Y build now 100% automated. Before, these parts had to be done by hand and are now automated, just like the rest:
-  * gtk-2.0/menubar-toolbar
-  * gtk-3.0/thumbnails
-  * cinnamon/thumbnails
+  * gtk-2.0/menubar-toolbar/
+  * gtk-3.0/thumbnails/
+  * cinnamon/thumbnails/
   * xfwm4/ (3 colored assets)
 
 ### Deleted files
