@@ -80,8 +80,11 @@ def update_color (color):
     os.chdir("../gtk-3.0/")
     os.system("rm -rf assets/*")
     os.system("./render-assets.sh")
-    # No "rm -rf assets/*" in xfwm4: render-assets.sh deletes the color ones only.
-    os.chdir("../xfwm4-src/")
+    os.chdir("../xfwm4-src/xfwm4/")
+    os.system("rm -rf close-active.xpm close-prelight.xpm close-pressed.xpm")
+    os.chdir("../xfwm4-dark/")
+    os.system("rm -rf close-active.xpm close-prelight.xpm close-pressed.xpm")
+    os.chdir("..")
     os.system("./render-assets.sh")
     os.chdir(curdir)
 
