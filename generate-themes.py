@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 import os
+import sys
 
 from constants import X_HEX_ACCENTS, X_RGB_ACCENTS, x_hex_colors, x_rgb_colors
 from constants import Y_HEX_ACCENT1, Y_HEX_ACCENT2, Y_HEX_ACCENT3, Y_HEX_ACCENT4
@@ -162,6 +163,18 @@ for color in y_hex_colors1.keys():
                     y_colorize_directory(directory, color)
 
             # Assets
+            directories = []
+            directories.append(os.path.join(path, "cinnamon"))
+            directories.append(os.path.join(path, "gtk-2.0"))
+            directories.append(os.path.join(path, "gtk-3.0"))
+            directories.append(os.path.join(path, "xfwm4-src"))
+            for directory in directories:
+                if not os.path.exists(directory):
+                    print("")
+                    print("There are missing directories in %s..." % path)
+                    print("Please run './update-variations.py All' or './update-variations.py COLOR' before this './generate-themes.py'...")
+                    sys.exit(1)
+
             os.system("rm -rf %s/cinnamon/thumbnail.png" % theme)
             os.system("rm -rf %s/gtk-2.0/assets" % theme)
             os.system("rm -rf %s/gtk-2.0/menubar-toolbar/*.png" % theme)
