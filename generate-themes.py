@@ -196,3 +196,6 @@ for color in y_hex_colors1.keys():
             os.system("cp -R %s/gtk-2.0/menubar-toolbar/*.png %s/gtk-2.0/menubar-toolbar" % (path, theme))
             os.system("cp -R %s/gtk-3.0/assets %s/gtk-3.0/assets" % (path, theme))
 
+print ("")
+print ("Done. Are there any missing colors?")
+print ("If so then run './update-variations.py All' and then './generate-themes.py' again.")
