@@ -32,5 +32,5 @@ If you want to create your own theme, here is what to do. Be aware you must have
   2. Edit the colors in `constants.py` and/or any of the src/Mint-Y/ files.
   3. On the first time, you must run ~/mint-themes$ `./update-variations.py All` from your terminal. Later, you can replace `All` with one specific color name like `Blue` for quick testing.
   4. Next, run ~/mint-themes$ `./generate-themes.py` from your terminal.
-  5. And finally, copy all the files from ~/mint-themes/usr/share/themes/ into usr/share/themes/ (root, system-wide) or ~/.themes (user session only).
+  5. And finally, copy all the files from ~/mint-themes/usr/share/themes/ into usr/share/themes/
   6. Change your theme in the system preferences.
