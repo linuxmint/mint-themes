@@ -13,13 +13,15 @@ def change_value (key, value, file):
     os.system(command)
 
 def usage ():
-    print ("Usage: update-variations.py color")
-    print ("color can be 'Aqua', 'Blue', 'Brown', 'Grey', 'Orange', 'Pink', 'Purple', 'Red', 'Sand', 'Teal' or 'All'.")
+    print ("Usage: update-variations.py COLOR")
+    print ("COLOR can be 'All' or one of these:")
+    for color in y_hex_colors1.keys():
+        print ("    %s" % color)
     sys.exit(1)
 
 def update_color (color):
     variation = "src/Mint-Y/variations/%s" % color
-    print("updating %s" % variation)
+    print("\n\n\nUpdating %s" % variation)
     os.system("rm -rf %s" % variation)
     os.system("mkdir -p %s/cinnamon" % variation)
     os.system("mkdir -p %s/gtk-2.0" % variation)
@@ -92,7 +94,7 @@ if len(sys.argv) < 2:
     usage()
 else:
     color_variation = sys.argv[1]
-    if not color_variation in ["Aqua", "Blue", "Brown", "Grey", "Orange", "Pink", "Purple", "Red", "Sand", "Teal", "All"]:
+    if not color_variation in y_hex_colors1.keys() and color_variation != "All":
         usage()
 
 # Mint-Y variations
