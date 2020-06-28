@@ -1,3 +1,4 @@
+
 $asset_path: if($variant == 'dark', dark-assets, light-assets);
 
 stage {
@@ -372,17 +373,25 @@ StScrollBar {
   -boxpointer-gap: 2px;
 }
 
-/*Don't know what this does*/
+/*Scale view context menu*/
 .popup-combo-menu {
-  background-color: rgba(0,0,0,0.4);
-  padding: 1em 0em;
-  color: red;
-  border: 1px solid rgba(0,0,0,0.6);
+  color: $fg_color;
+  border: 1px solid $borders_color;
   border-radius: 3px;
+  background-color: $base_color;
+  box-shadow: none;
+  padding: 1em 0em 1em 0em; }
 }
+
 .popup-image-menu-item {}
 
-.popup-combobox-item { spacing: 1em; }
+.popup-combobox-item {
+  spacing: 1em;
+  padding: .4em 1.75em;
+  border: 1px solid transparent;
+  border-left-width: 0;
+  border-right-width: 0;
+}
 
 .popup-separator-menu-item {
   -gradient-height: 1px;
