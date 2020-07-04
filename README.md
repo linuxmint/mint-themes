@@ -30,7 +30,10 @@ There are a few `render-assets.sh` scripts scattered around the `src/Mint-Y` dir
 If you want to create your own theme, here is what to do. Be aware you must have some basic knowledge of the Linux desktop and terminal. There is no warranty, this is at your own risk.
   1. `git clone` this repository. Install the required software and packages listed above.
   2. Edit the colors in `constants.py` and/or any of the src/Mint-Y/ files.
-  3. On the first time, you must run ~/mint-themes$ `./update-variations.py All` from your terminal. Later, you can replace `All` with one specific color name like `Blue` for quick testing.
-  4. Next, run ~/mint-themes$ `./generate-themes.py` from your terminal.
+  3. On the first time, you must run `~/mint-themes$ ./update-variations.py All` from your terminal. Later, you can replace `All` with one specific color name like `Blue` for quick testing.
+  4. Next, run `~/mint-themes$ ./generate-themes.py` from your terminal.
   5. And finally, copy all the files from ~/mint-themes/usr/share/themes/ into usr/share/themes/
   6. Change your theme in the system preferences.
+
+### Quick and easy alternative:
+Are you on Cinnamon? Then you can replace steps 3 to 6 by running `test-Mint-Yz` instead.
