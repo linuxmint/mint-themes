@@ -20,6 +20,7 @@ If you want to build your own theme, you will need to install those packages:
   * Inkscape, preferably version 1.0 or higher  
   * optipng  
   * imagemagick
+  * sassc
 
 ### Compatibility issues
 There are a few `render-assets.sh` scripts scattered around the `src/Mint-Y` directory and its sub-directories. They contain some `--export-filename` or `--export-png` Inkscape commands. Check that you have the required command for your version of Inkscape, or just replace as required:  
