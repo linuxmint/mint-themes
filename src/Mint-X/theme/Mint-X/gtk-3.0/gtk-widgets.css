@@ -2131,6 +2131,13 @@ GtkComboBox .separator {
     -GtkWidget-vertical-separator: 0;
 }
 
+menu separator,
+.csd menu separator,
+.menu separator,
+.csd .menu separator {
+    border: none;
+    background-color: alpha(black, 0.1);
+}
 
 .menuitem.separator,
 GtkMenuButton .menuitem.separator {
