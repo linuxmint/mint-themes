@@ -2,8 +2,8 @@
 # Automated color updates
 This branch is only for improving automated color updates, the new colors themselves are onto another branch. With this auto branch here, building Mint-Y-Colors is now 100% automated. Before, the following parts had to be done by hand and are now automated, just like the rest:  
   * gtk-2.0/menubar-toolbar/  
-  * gtk-3.0/thumbnails/  
-  * cinnamon/thumbnails/  
+  * gtk-3.0/thumbnail 
+  * cinnamon/thumbnail
   * xfwm4/ (3 colored assets)
 
 ### Deleted files
