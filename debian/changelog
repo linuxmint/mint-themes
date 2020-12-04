@@ -1,3 +1,20 @@
+mint-themes (1.8.7) ulyssa; urgency=medium
+
+  [ steve ]
+  * Mint-Y - fix scale view context menu
+  * Mint-X - fix scale view context menu background colour
+
+  [ JosephMcc ]
+  * Mint-Y-Cinnamon: Fix syntax error from previous commit #284
+  * Mint-Y-Cinnamon: Remove padding from applet labels
+  * Mint-Y-Metacity: Increase vertical "hit" area for titlebar buttons
+  * Mint-X-Gtk: Restyle the menu separators a bit
+
+  [ fredcw ]
+  * Mint-Y themes: use em's instead of px's (#274)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 04 Dec 2020 10:22:52 +0000
+
 mint-themes (1.8.6) ulyana; urgency=medium
 
   * Terminal: Make background fully opaque
