@@ -2705,12 +2705,12 @@ row:selected button:disabled, infobar.info button:disabled, infobar.question but
 
 tooltip,
 .tooltip {
-  color: #4a4a4a;
+  color: #dbdbdb;
   border-radius: 2px;
-  border: 1px solid #d0d0d0; }
+  border: 1px solid #292929; }
   tooltip.background,
   .tooltip.background {
-    background-color: #fbeaa0;
+    background-color: #383838;
     background-clip: padding-box; }
     tooltip.background label,
     .tooltip.background label {
@@ -2721,7 +2721,7 @@ tooltip,
   tooltip *,
   .tooltip * {
     background-color: transparent;
-    color: #4a4a4a; }
+    color: #dbdbdb; }
 
 colorswatch, colorswatch:drop(active) {
   border-style: none; }
