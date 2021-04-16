@@ -1,5 +1,7 @@
 #! /bin/bash
 
+# WARNING: "--export-filename" is for Inkscape >= 1.0
+
 INKSCAPE="/usr/bin/inkscape"
 
 SRC_FILE="assets.svg"
