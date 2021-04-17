@@ -23,7 +23,7 @@ else
 fi
 done
 
-cp $ASSETS_DIR/menubar_button.png menubar-toolbar/menubar_button-dark.png
-cp $ASSETS_DIR/toolbar-entry-border-active-bg.png menubar-toolbar/toolbar-entry-border-active-bg-dark.png
+cp -f $ASSETS_DIR/menubar_button.png menubar-toolbar/menubar_button-dark.png
+cp -f $ASSETS_DIR/toolbar-entry-border-active-bg.png menubar-toolbar/toolbar-entry-border-active-bg-dark.png
 
 exit 0
