@@ -6,8 +6,8 @@ INKSCAPE="/usr/bin/inkscape"
 
 SRC_FILE="assets.svg"
 DARK_SRC_FILE="assets-dark.svg"
-ASSETS_DIR="xfwm4"
-DARK_ASSETS_DIR="xfwm4-dark"
+ASSETS_DIR="../xfwm4"
+DARK_ASSETS_DIR="../xfwm4-dark"
 INDEX="assets.txt"
 
 for i in `cat $INDEX`
