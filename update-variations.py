@@ -24,8 +24,7 @@ def update_color (color):
     os.system("mkdir -p %s/gtk-2.0" % variation)
     os.system("mkdir -p %s/gtk-3.0" % variation)
     os.system("mkdir -p %s/cinnamon" % variation)
-    os.system("mkdir -p %s/xfwm4" % variation)
-    os.system("mkdir -p %s/xfwm4-dark" % variation)
+    os.system("mkdir -p %s/xfwm4-src" % variation)
 
     # Copy assets files
     assets = []

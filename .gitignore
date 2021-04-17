@@ -3,3 +3,7 @@ src/Mint-Y/cinnamon/sass-cache
 
 # SASS cache files
 *.scssc
+
+__pycache__/
+usr/
+src/Mint-Y/variations/
