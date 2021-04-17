@@ -34,7 +34,6 @@ else
 fi
 done
 
-cp $ASSETS_DIR/thumbnail.png thumbnail.png
-cp $ASSETS_DIR/thumbnail-dark.png thumbnail-dark.png
+mv -f $ASSETS_DIR/thumbnail* ./
 
 exit 0
