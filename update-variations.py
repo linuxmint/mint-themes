@@ -23,22 +23,34 @@ def update_color (color):
     os.system("rm -rf %s" % variation)
     os.system("mkdir -p %s/gtk-2.0" % variation)
     os.system("mkdir -p %s/gtk-3.0" % variation)
+    os.system("mkdir -p %s/cinnamon" % variation)
+    os.system("mkdir -p %s/xfwm4" % variation)
+    os.system("mkdir -p %s/xfwm4-dark" % variation)
 
     # Copy assets files
     assets = []
     assets.append("gtk-2.0/assets.svg")
     assets.append("gtk-2.0/assets-dark.svg")
     assets.append("gtk-3.0/assets.svg")
+    assets.append("cinnamon/mint-y-thumbnails-src.svg")
+    assets.append("xfwm4-src/assets.svg")
+    assets.append("xfwm4-src/assets-dark.svg")
 
     files = []
     files.append("gtk-2.0/assets")
     files.append("gtk-2.0/assets-dark")
     files.append("gtk-2.0/assets.txt")
+    files.append("gtk-2.0/menubar-toolbar")
     files.append("gtk-2.0/render-assets.sh")
     files.append("gtk-2.0/render-dark-assets.sh")
     files.append("gtk-3.0/assets")
     files.append("gtk-3.0/assets.txt")
     files.append("gtk-3.0/render-assets.sh")
+    files.append("cinnamon/render-cin-thumbnails.sh")
+    files.append("xfwm4")
+    files.append("xfwm4-dark")
+    files.append("xfwm4-src/assets.txt")
+    files.append("xfwm4-src/render-assets.sh")
 
     for file in files:
         os.system("cp -R src/Mint-Y/%s %s/%s" % (file, variation, file))
@@ -67,6 +79,14 @@ def update_color (color):
     os.chdir("../gtk-3.0/")
     os.system("rm -rf assets/*")
     os.system("./render-assets.sh")
+    os.chdir("../cinnamon/")
+    os.system("./render-cin-thumbnails.sh")
+    os.chdir("../xfwm4/")
+    os.system("rm -rf close-active.xpm close-prelight.xpm close-pressed.xpm")
+    os.chdir("../xfwm4-dark/")
+    os.system("rm -rf close-active.xpm close-prelight.xpm close-pressed.xpm")
+    os.chdir("../xfwm4-src/")
+    os.system("./render-assets.sh")
     os.chdir(curdir)
 
 if len(sys.argv) < 2:
@@ -74,12 +94,15 @@ if len(sys.argv) < 2:
 else:
     color_variation = sys.argv[1]
     if not color_variation in ["Aqua", "Blue", "Brown", "Grey", "Orange", "Pink", "Purple", "Red", "Sand", "Teal", "All"]:
+
         usage()
 
 # Mint-Y variations
 curdir = os.getcwd()
 
 if color_variation == "All":
+    if os.path.exists("src/Mint-Y/variations"):
+        os.system("rm -rf src/Mint-Y/variations/")
     for color in y_hex_colors1.keys():
         update_color(color)
 else:
