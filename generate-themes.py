@@ -162,22 +162,29 @@ for color in y_hex_colors1.keys():
                 if os.path.exists(directory):
                     y_colorize_directory(directory, color)
 
-            # Assets (No need for "rm -rf", just do "cp -rf")
+            # Assets
+            os.system("rm -rf %s/cinnamon/thumbnail.png" % theme)
+            os.system("rm -rf %s/gtk-2.0/assets" % theme)
+            os.system("rm -rf %s/gtk-2.0/menubar-toolbar/*.png" % theme)
+            os.system("rm -rf %s/gtk-3.0/assets" % theme)
+            os.system("rm -rf %s/gtk-3.0/thumbnail.png" % theme)
+            os.system("rm -rf %s/xfwm4" % theme)
+
             if variant == "":
-                os.system("cp -rf %s/cinnamon/mint-y-thumbnail.png %s/cinnamon/thumbnail.png" % (path, theme))
-                os.system("cp -rf %s/gtk-2.0/assets %s/gtk-2.0/assets" % (path, theme))
-                os.system("cp -rf %s/gtk-3.0/thumbnail.png %s/gtk-3.0/thumbnail.png" % (path, theme))
-                os.system("cp -rf %s/xfwm4 %s/xfwm4" % (path, theme))
+                os.system("cp -R %s/cinnamon/mint-y-thumbnail.png %s/cinnamon/thumbnail.png" % (path, theme))
+                os.system("cp -R %s/gtk-2.0/assets %s/gtk-2.0/assets" % (path, theme))
+                os.system("cp -R %s/gtk-3.0/thumbnail.png %s/gtk-3.0/thumbnail.png" % (path, theme))
+                os.system("cp -R %s/xfwm4 %s/xfwm4" % (path, theme))
             if variant == "-Dark":
-                os.system("cp -rf %s/cinnamon/mint-y-dark-thumbnail.png %s/cinnamon/thumbnail.png" % (path, theme))
-                os.system("cp -rf %s/gtk-2.0/assets-dark %s/gtk-2.0/assets" % (path, theme))
-                os.system("cp -rf %s/gtk-3.0/thumbnail-dark.png %s/gtk-3.0/thumbnail.png" % (path, theme))
-                os.system("cp -rf %s/xfwm4-dark %s/xfwm4" % (path, theme))
+                os.system("cp -R %s/cinnamon/mint-y-dark-thumbnail.png %s/cinnamon/thumbnail.png" % (path, theme))
+                os.system("cp -R %s/gtk-2.0/assets-dark %s/gtk-2.0/assets" % (path, theme))
+                os.system("cp -R %s/gtk-3.0/thumbnail-dark.png %s/gtk-3.0/thumbnail.png" % (path, theme))
+                os.system("cp -R %s/xfwm4-dark %s/xfwm4" % (path, theme))
             if variant == "-Darker":
-                os.system("cp -rf %s/gtk-2.0/assets %s/gtk-2.0/assets" % (path, theme))
-                os.system("cp -rf %s/gtk-3.0/thumbnail.png %s/gtk-3.0/thumbnail.png" % (path, theme))
-            os.system("cp -rf %s/gtk-3.0/assets %s/gtk-3.0/assets" % (path, theme))
-            os.system("cp -rf %s/gtk-2.0/menubar-toolbar/*.png %s/gtk-2.0/menubar-toolbar" % (path, theme))
+                os.system("cp -R %s/gtk-2.0/assets %s/gtk-2.0/assets" % (path, theme))
+                os.system("cp -R %s/gtk-3.0/thumbnail.png %s/gtk-3.0/thumbnail.png" % (path, theme))
+            os.system("cp -R %s/gtk-3.0/assets %s/gtk-3.0/assets" % (path, theme))
+            os.system("cp -R %s/gtk-2.0/menubar-toolbar/*.png %s/gtk-2.0/menubar-toolbar" % (path, theme))
 
 # This "cp -R files/* ./" is no longer needed because everything will be auto-generated.
 # os.system("cp -R files/* ./")
