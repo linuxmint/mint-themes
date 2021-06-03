@@ -1,0 +1,238 @@
+/* Based on _Adwaita-base.scss from libhandy */
+
+// HdyComboRow
+
+popover.combo {
+  padding: 0;
+
+  list {
+    background-color: transparent;
+
+    > row {
+      padding: 0 10px;
+      min-height: 50px;
+
+      &:first-child { @extend %linked_vertical_top; }
+      &:last-child { @extend %linked_vertical_bottom; }
+    }
+  }
+
+  overshoot.top { @extend %linked_vertical_top; }
+  overshoot.bottom { @extend %linked_vertical_bottom; }
+
+  scrollbar.vertical {
+    //background-color: $_popover_bg;
+
+    &:dir(ltr) { @extend %linked_right; }
+    &:dir(rtl) { @extend %linked_left; }
+  }
+}
+
+// HdyExpanderRow
+
+row.expander {
+  padding: 0px;
+
+  &:checked image.expander-row-arrow:not(:disabled) {
+    color: $selected_bg_color;
+  }
+
+  image.expander-row-arrow:disabled {
+    color: $insensitive_fg_color;
+  }
+}
+
+// HdyKeypad
+
+keypad {
+  .digit {
+    font-size: 200%;
+    font-weight: bold;
+  }
+
+  .letters {
+    font-size: 70%;
+  }
+
+  .symbol {
+    font-size: 160%;
+  }
+}
+
+// HdyViewSwitcher
+
+viewswitcher {
+  &, & button {
+    margin: 0;
+    padding: 0;
+  }
+
+  button {
+    border-radius: 0;
+    border-top: 0;
+    border-bottom: 0;
+
+    &:not(:checked):not(:hover) {
+      background: transparent;
+      border-color: transparent;
+    }
+
+    &:checked, &:active {
+      border-color: $selected_bg_color;
+    }
+
+    // View switcher button
+    > stack > box {
+      &.narrow {
+        font-size: 0.75rem;
+        padding-top: 7px;
+        padding-bottom: 5px;
+
+        image,
+        label {
+          padding-left: 8px;
+          padding-right: 8px;
+        }
+      }
+
+      &.wide {
+        padding: 8px 10px;
+
+        label {
+          &:dir(ltr) {
+            padding-right: 7px;
+          }
+
+          &:dir(rtl) {
+            padding-left: 7px;
+          }
+        }
+      }
+    }
+
+    &.needs-attention {
+      > stack > box label {
+        background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to($selected_bg_color), to(transparent));
+        background-size: 6px 6px;
+        background-repeat: no-repeat;
+        background-position: right 0px;
+
+        &:dir(rtl) {
+          background-position: left 0px;
+        }
+      }
+
+      &:active > stack > box label {
+        background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to($selected_fg_color), to(transparent));
+      }
+    }
+  }
+}
+
+// HdyViewSwitcherBar
+
+viewswitcherbar actionbar > revealer > box {
+  padding: 0;
+}
+
+// Content list
+
+list.content {
+  &,
+  list {
+    background-color: transparent;
+  }
+
+  // Nested rows background
+  list.nested > row:not(:active) {
+    &:not(:hover):not(:selected),
+    &:hover:not(.activatable):not(:selected) {
+      background-color: mix($bg_color, $base_color);
+    }
+
+    &:hover.activatable:not(:selected) {
+      background-color: if($variant != 'dark', mix($base_color, black, 95%), mix($base_color, white, 97%));
+    }
+  }
+
+  > row {
+    // Regular rows and expander header rows background
+    &:not(.expander):not(:active):not(:hover):not(:selected),
+    &:not(.expander):not(:active):hover:not(.activatable):not(:selected),
+    &.expander row.header:not(:active):not(:hover):not(:selected),
+    &.expander row.header:not(:active):hover:not(.activatable):not(:selected) {
+      background-color: $base_color;
+    }
+
+    &:not(.expander):not(:active):hover.activatable:not(:selected),
+    &.expander row.header:not(:active):hover.activatable:not(:selected) {
+      background-color: if($variant != 'dark', mix($base_color, black, 95%), mix($base_color, white, 97%));
+    }
+
+    &,
+    list > row {
+      border-color: $borders_color;
+      border-style: solid;
+      transition: 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    // Top border
+    &:not(:last-child) {
+      border-width: 1px 1px 0px 1px;
+    }
+
+    // Rounded top
+    &:first-child,
+    &.expander:first-child row.header,
+    &.expander:checked,
+    &.expander:checked row.header,
+    &.expander:checked + row,
+    &.expander:checked + row.expander row.header {
+      @extend %linked_vertical_top;
+    }
+
+    // Bottom border
+    &:last-child,
+    &.checked-expander-row-previous-sibling,
+    &.expander:checked {
+      border-width: 1px;
+    }
+
+    // Rounded bottom
+    &:last-child,
+    &.checked-expander-row-previous-sibling,
+    &.expander:checked,
+    &.expander:not(:checked):last-child row.header,
+    &.expander:not(:checked).checked-expander-row-previous-sibling row.header,
+    &.expander.empty:checked row.header,
+    &.expander list.nested > row:last-child {
+      @extend %linked_vertical_bottom;
+    }
+
+    // Add space around expanded rows
+    &.expander:checked:not(:first-child),
+    &.expander:checked + row {
+      margin-top: 5px;
+    }
+  }
+}
+
+// Unified window
+
+window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):not(.tiled-bottom):not(.tiled-left):not(.tiled-right):not(.maximized) {
+  &,
+  > decoration,
+  > decoration-overlay {
+    border-radius: 3px;
+  }
+}
+
+// HdyWindowHandle separator
+
+.windowhandle separator.sidebar {
+  &:dir(ltr), &.left, &.left:dir(rtl),
+  &:dir(rtl), &.right {
+    background-color: $header_border;
+    margin: 0;
+  }
+}
