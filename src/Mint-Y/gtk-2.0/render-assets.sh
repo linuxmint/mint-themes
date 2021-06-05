@@ -1,5 +1,7 @@
 #! /bin/bash
 
+# WARNING: "--export-filename" is for Inkscape >= 1.0
+
 INKSCAPE="/usr/bin/inkscape"
 OPTIPNG="/usr/bin/optipng"
 
@@ -8,7 +10,7 @@ ASSETS_DIR="assets"
 INDEX="assets.txt"
 
 for i in `cat $INDEX`
-do 
+do
 if [ -f $ASSETS_DIR/$i.png ]; then
     echo $ASSETS_DIR/$i.png exists.
 else
@@ -16,8 +18,12 @@ else
     echo Rendering $ASSETS_DIR/$i.png
     $INKSCAPE --export-id=$i \
               --export-id-only \
-              --export-png=$ASSETS_DIR/$i.png $SRC_FILE >/dev/null \
-    && $OPTIPNG -o7 --quiet $ASSETS_DIR/$i.png 
+              --export-filename=$ASSETS_DIR/$i.png $SRC_FILE >/dev/null \
+    && $OPTIPNG -o7 --quiet $ASSETS_DIR/$i.png
 fi
 done
+
+cp -f $ASSETS_DIR/menubar_button.png menubar-toolbar/menubar_button.png
+cp -f $ASSETS_DIR/toolbar-entry-border-active-bg.png menubar-toolbar/toolbar-entry-border-active-bg.png
+
 exit 0
