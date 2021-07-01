@@ -3,3 +3,17 @@ src/Mint-Y/cinnamon/sass-cache
 
 # SASS cache files
 *.scssc
+
+__pycache__/*
+
+# This is needed, otherwise you get thousands of changed files,
+# and GitHub compare would be impossible without ignoring these:
+src/Mint-Y/variations/*
+usr/*
+
+debian/mint-yz-theme/*
+debian/.debhelper/*
+debian/files
+debian/mint-yz-theme.debhelper.log
+debian/mint-yz-theme.substvars
+

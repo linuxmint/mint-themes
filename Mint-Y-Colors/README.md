@@ -1,9 +1,23 @@
-# Mint-Y-Colors
+### message-colors.svg use:
 
-**Pure. Energized. And readable.**
+Copy-Paste those lines from the **svg file:**
 
-This directory contains the proposed new accent colors to be discussed and exported, for all Mint-Y variations. Any other Mint-Y color related work could also be placed here.
+    $link_color: #(LATESTCOLOR);
+    $link_visited_color: #(LATESTCOLOR);
+    //___
+    $selection_mode_bg: $selected_bg_color;
+    $selection_mode_fg: $selected_fg_color;
+    $warning_color: #(LATESTCOLOR);
+    $warning_fg_color: white;
+    $error_color: #(LATESTCOLOR);
+    $error_fg_color: white;
+    $success_color: #(LATESTCOLOR);
+    $destructive_color: #(LATESTCOLOR);
+    $suggested_color: #(LATESTCOLOR);
+    $question_color: #(LATESTCOLOR);
+    //___
+    $drop_target_color: #(LATESTCOLOR);
 
-Here in this directory you can find SVG files for previews, and text files containing #hex color values to be copy-pasted or imported into CSS, SVG, scripts and programs.
+These lines replaces the corresponding ones in:
 
-![Mint-Y-Variations-NEW-1a-11 preview](Mint-Y-Variations-NEW-1a-11-notext.svg)
+    ~/mint-themes/src/Mint-Y/gtk-3.0/sass/_colors.scss

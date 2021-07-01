@@ -1,0 +1,18 @@
+Old Mint-Y colors
+(source: https://github.com/linuxmint/mint-themes/blob/master/constants.py)
+Third column = color contrast (WCAG contrast checker) 
+
+Mint = "#92b372"   CC = 2.4
+Aqua = "#6cabcd"   CC = 2.5
+Blue = "#5b73c4"   CC = 4.5
+Brown = "#aa876a"  CC = 3.3
+Grey = "#9d9d9d"   CC = 2.7
+Orange = "#db9d61" CC = 2.3
+Pink = "#c76199"   CC = 3.8
+Purple = "#8c6ec9" CC = 4.0
+Red = "#c15b58"    CC = 4.3
+Sand = "#c8ac69"   CC = 2.2
+Teal = "#5aaa9a"   CC = 2.7
+
+(xx)
+
