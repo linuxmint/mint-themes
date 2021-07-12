@@ -29,7 +29,7 @@
      inkscape:current-layer="layer1"
      inkscape:document-units="px"
      inkscape:cy="450.5"
-     inkscape:cx="1151.5"
+     inkscape:cx="1152"
      inkscape:zoom="1"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
@@ -63,12 +63,12 @@
        height="900"
        width="1200"
        id="rect876"
-       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.9483943;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="fill:#ffffff;stroke-width:4.9483943" />
     <text
        id="text9"
        y="97.956238"
        x="260"
-       style="font-style:normal;font-weight:normal;font-size:16px;line-height:2;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       style="font-size:16px;line-height:2;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000"
        xml:space="preserve"><tspan
          style="line-height:50px"
          y="97.956238"
@@ -157,9 +157,9 @@
        height="40"
        width="150"
        id="rect35"
-       style="fill:#55c1ec;fill-opacity:1;stroke-width:0.82903504" />
+       style="fill:#55c1ec;stroke-width:0.82903504" />
     <rect
-       style="fill:#6db442;fill-opacity:1;stroke-width:0.82903504"
+       style="fill:#6db442;stroke-width:0.82903504"
        id="use892"
        width="150"
        height="40"
@@ -168,7 +168,7 @@
        inkscape:tile-x0="50"
        inkscape:tile-y0="678" />
     <rect
-       style="fill:#f04a50;fill-opacity:1;stroke-width:0.82903504"
+       style="fill:#f04a50;stroke-width:0.82903504"
        id="use894"
        width="150"
        height="40"
@@ -177,7 +177,7 @@
        inkscape:tile-x0="50"
        inkscape:tile-y0="678" />
     <rect
-       style="fill:#73d216;fill-opacity:1;stroke-width:0.82903504"
+       style="fill:#73d216;stroke-width:0.82903504"
        id="use896"
        width="150"
        height="40"
@@ -186,7 +186,7 @@
        inkscape:tile-x0="50"
        inkscape:tile-y0="678" />
     <rect
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.01520348;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.01520348"
        id="use898"
        width="148.9848"
        height="38.984795"
@@ -195,7 +195,7 @@
        inkscape:tile-x0="50"
        inkscape:tile-y0="678" />
     <rect
-       style="fill:#fc4138;fill-opacity:1;stroke-width:0.82903504"
+       style="fill:#fc4138;stroke-width:0.82903504"
        id="use900"
        width="150"
        height="40"
@@ -204,7 +204,7 @@
        inkscape:tile-x0="50"
        inkscape:tile-y0="678" />
     <rect
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.01520348;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.01520348"
        id="use902"
        width="148.9848"
        height="38.984795"
@@ -213,7 +213,7 @@
        inkscape:tile-x0="50"
        inkscape:tile-y0="678" />
     <rect
-       style="fill:#f27835;fill-opacity:1;stroke-width:0.82903504"
+       style="fill:#f27835;stroke-width:0.82903504"
        id="use904"
        width="150"
        height="40"
@@ -222,7 +222,7 @@
        inkscape:tile-x0="50"
        inkscape:tile-y0="678" />
     <rect
-       style="fill:#808080;fill-opacity:1;stroke-width:0.82903504"
+       style="fill:#808080;stroke-width:0.82903504"
        id="use906"
        width="150"
        height="40"
@@ -231,7 +231,7 @@
        inkscape:tile-x0="50"
        inkscape:tile-y0="678" />
     <rect
-       style="fill:#808080;fill-opacity:1;stroke-width:0.82903504"
+       style="fill:#808080;stroke-width:0.82903504"
        id="use908"
        width="150"
        height="40"
@@ -240,7 +240,7 @@
        inkscape:tile-x0="50"
        inkscape:tile-y0="678" />
     <rect
-       style="fill:#808080;fill-opacity:1;stroke-width:0.82903504"
+       style="fill:#808080;stroke-width:0.82903504"
        id="use910"
        width="150"
        height="40"
@@ -249,7 +249,7 @@
        inkscape:tile-x0="50"
        inkscape:tile-y0="678" />
     <rect
-       style="fill:#5294e2;fill-opacity:1;stroke-width:0.82903504"
+       style="fill:#5294e2;stroke-width:0.82903504"
        id="use912"
        width="150"
        height="40"
@@ -265,10 +265,10 @@
        height="40"
        width="150"
        id="rect936"
-       style="fill:#5294e2;fill-opacity:1;stroke-width:0.82903504" />
+       style="fill:#5294e2;stroke-width:0.82903504" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:16px;line-height:2;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       style="font-size:16px;line-height:2;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000"
        x="810"
        y="97.956238"
        id="text964"><tspan
@@ -321,7 +321,7 @@
          x="810"
          y="547.95624"
          id="tspan956"
-         style="line-height:50px">$success_color: #29BF69;</tspan><tspan
+         style="line-height:50px">$success_color: #29BF68;</tspan><tspan
          sodipodi:role="line"
          x="810"
          y="597.95624"
@@ -331,7 +331,7 @@
          x="810"
          y="647.95624"
          id="tspan960"
-         style="line-height:50px">$suggested_color: #29BF69;</tspan><tspan
+         style="line-height:50px">$suggested_color: #29BF68;</tspan><tspan
          sodipodi:role="line"
          x="810"
          y="697.95624"
@@ -348,7 +348,7 @@
          y="797.95624"
          style="line-height:50px">$drop_target_color: #FF780A;</tspan></text>
     <rect
-       style="fill:#00ade5;fill-opacity:1;stroke-width:0.82903504"
+       style="fill:#00ade5;stroke-width:0.82903504"
        id="rect966"
        width="150"
        height="40"
@@ -368,7 +368,7 @@
        height="40"
        width="150"
        id="rect968"
-       style="fill:#29bf69;fill-opacity:1;stroke-width:0.82903504" />
+       style="fill:#29bf68;stroke-width:0.82903504" />
     <rect
        inkscape:tile-y0="678"
        inkscape:tile-x0="50"
@@ -377,7 +377,7 @@
        height="40"
        width="150"
        id="rect970"
-       style="fill:#f92031;fill-opacity:1;stroke-width:0.82903504" />
+       style="fill:#f92031;stroke-width:0.82903504" />
     <rect
        inkscape:tile-y0="678"
        inkscape:tile-x0="50"
@@ -386,7 +386,7 @@
        height="40"
        width="150"
        id="rect972"
-       style="fill:#29bf69;fill-opacity:1;stroke-width:0.82903504" />
+       style="fill:#29bf68;stroke-width:0.82903504" />
     <rect
        inkscape:tile-y0="678"
        inkscape:tile-x0="50"
@@ -395,7 +395,7 @@
        height="38.984795"
        width="148.9848"
        id="rect974"
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.01520348;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.01520348" />
     <rect
        inkscape:tile-y0="678"
        inkscape:tile-x0="50"
@@ -404,7 +404,7 @@
        height="40"
        width="150"
        id="rect976"
-       style="fill:#f92031;fill-opacity:1;stroke-width:0.82903504" />
+       style="fill:#f92031;stroke-width:0.82903504" />
     <rect
        inkscape:tile-y0="678"
        inkscape:tile-x0="50"
@@ -413,7 +413,7 @@
        height="38.984795"
        width="148.9848"
        id="rect978"
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.01520348;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.01520348" />
     <rect
        inkscape:tile-y0="678"
        inkscape:tile-x0="50"
@@ -422,7 +422,7 @@
        height="40"
        width="150"
        id="rect980"
-       style="fill:#ff780a;fill-opacity:1;stroke-width:0.829035" />
+       style="fill:#ff780a;stroke-width:0.829035" />
     <rect
        inkscape:tile-y0="678"
        inkscape:tile-x0="50"
@@ -431,7 +431,7 @@
        height="40"
        width="150"
        id="rect982"
-       style="fill:#808080;fill-opacity:1;stroke-width:0.82903504" />
+       style="fill:#808080;stroke-width:0.82903504" />
     <rect
        inkscape:tile-y0="678"
        inkscape:tile-x0="50"
@@ -440,7 +440,7 @@
        height="40"
        width="150"
        id="rect984"
-       style="fill:#808080;fill-opacity:1;stroke-width:0.82903504" />
+       style="fill:#808080;stroke-width:0.82903504" />
     <rect
        inkscape:tile-y0="678"
        inkscape:tile-x0="50"
@@ -449,7 +449,7 @@
        height="40"
        width="150"
        id="rect986"
-       style="fill:#808080;fill-opacity:1;stroke-width:0.82903504" />
+       style="fill:#808080;stroke-width:0.82903504" />
     <rect
        inkscape:tile-y0="678"
        inkscape:tile-x0="50"
@@ -458,9 +458,9 @@
        height="40"
        width="150"
        id="rect988"
-       style="fill:#aa40bf;fill-opacity:1;stroke-width:0.829038" />
+       style="fill:#aa40bf;stroke-width:0.829038" />
     <rect
-       style="fill:#1a7ee5;fill-opacity:1;stroke-width:0.82903504"
+       style="fill:#1a7ee5;stroke-width:0.82903504"
        id="rect990"
        width="150"
        height="40"
@@ -469,7 +469,7 @@
        inkscape:tile-x0="50"
        inkscape:tile-y0="678" />
     <rect
-       style="fill:#f08437;fill-opacity:1;stroke-width:0.82903504"
+       style="fill:#f08437;stroke-width:0.82903504"
        id="rect1008"
        width="150"
        height="40"
@@ -493,6 +493,6 @@
        height="40"
        width="150"
        id="rect1010"
-       style="fill:#ff780a;fill-opacity:1;stroke-width:0.82903504" />
+       style="fill:#ff780a;stroke-width:0.82903504" />
   </g>
 </svg>
