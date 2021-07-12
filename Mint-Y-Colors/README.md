@@ -1,3 +1,5 @@
+![Mint-Y-Variations-compare-OLDvsNEW](Mint-Y-Variations-compare-OLD.png)
+
 ### A new approach to please everyone
 There are 16.7 million color possibilities. We can't make them all. We want to offer 11 or 12 of them. With the dark and darker variants, that makes 33 or 36.
 
@@ -7,9 +9,9 @@ This translates into having some dull colors taken from the old Mint-Y. Those ol
 
 ### The files
 * **Mint-Y-Variations SVG and PNG files:** This is where the colors were selected and adjusted. View them all there, grouped into one picture, one vision. (Mint-Y-Variations-src.svg linked)
-* **constants.py:** All the #HEX values from Mint-Y-Variations.svg are there. This new file should replace the old https://github.com/linuxmint/mint-themes/blob/master/constants.py.
+* **constants.py:** All the #HEX values from Mint-Y-Variations.svg are there. This new file should replace the old https://github.com/linuxmint/mint-themes/blob/master/constants.py. (Don't forget to keep Mint-X !)
 
-### message-colors.svg
+### message-colors.svg and _colors.scss
 Copy-Paste those lines from the message-colors.svg file:
 
     $link_color: #(LATESTCOLOR);
