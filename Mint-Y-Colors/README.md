@@ -15,13 +15,10 @@ All those colors are displayed in **Mint-Y-Colors/Mint-Y-Variations.svg** and th
 
 Take a look at this `constants.py` file:
 
-1. `colors1` is the base color
-1. `colors2` is for the dark variants
-1. `colors3` and `colors4` are just for those tiny `titlebutton-close-hover` and `titlebutton-close-active`, respectively.
-
-* I recommend setting `colors2` 5% darker, unless this color is already dark.
-* `colors3` should be 20% lighter. (Based on the old Mint-Y colors analysis)
-* `colors4` should be 30% darker. (Based on the old Mint-Y colors analysis)
+* `colors1` is the base color.
+* `colors2` = 5% darker, for the dark variants.
+* `colors3` = 20% lighter. This `colors3` is only for those tiny `titlebutton-close-hover`...
+* `colors4` = 30% darker. This `colors4` is only for those tiny `titlebutton-close-active`...
 
 OPTIONAL: I made a simple trick to quickly get those values and copy them into the `constants.py` file. Open the `Mint-Y-Colors/Mint-Y-Variations-NEW.svg` file into Inkscape. Check the different layers. There are layers named `colors2`, `colors3` and `colors4`. By making them visible only one layer at a time, i used a color picker to quickly "pick and paste" all the 11 colors for all those colors 1, 2, 3 and 4. But feel free to get those values any way you want.
 
