@@ -3056,13 +3056,13 @@ button.circular-button,
 // Window Decorations
 //
 decoration {
-  border-radius: if($darker=='false' and $variant=='light', 4px 4px 0 0, 3px 3px 0 0);
+  border-radius: 4px 4px 0 0;
   border-width: 0px;
 
-  $_wm_border: if($variant=='light', transparentize(black, 0.85), transparentize(black, 0.45));
+  $_wm_border: transparentize(black, 0.85);
 
-  box-shadow: 0 0 1px 1px if($darker=='true' or $variant == 'dark', darken($header_bg, 7%), $_wm_border),
-              0 8px 8px 0 if($variant == 'light', opacify($_wm_border, 0.1), transparentize($_wm_border, 0.2));
+  box-shadow: 0 0 1px 1px transparent,
+              0 2px 6px 0 opacify($_wm_border, 0.85);
 
   // this is used for the resize cursor area
   margin: 10px;
@@ -3070,12 +3070,13 @@ decoration {
   &:backdrop {
     // the transparent shadow here is to enforce that the shadow extents don't
     // change when we go to backdrop, to prevent jumping windows
-    box-shadow: 0 0 0 1px if($darker=='true' or $variant == 'dark', transparentize(darken($header_bg, 7%), 0.1), $_wm_border),
-                0 8px 8px 0 transparent,
-                0 5px 5px 0 if($variant == 'light', opacify($_wm_border, 0.1), transparentize($_wm_border, 0.2));
+    box-shadow: 0 0 0 1px transparent,
+                0 2px 6px 0 transparent,
+                0 3px 4px 0 opacify($_wm_border, 0.4);
   }
   .fullscreen &,
-  .tiled & {
+  .tiled &,
+  .tiled &:backdrop {
     border-radius: 0;
   }
   .popup & {

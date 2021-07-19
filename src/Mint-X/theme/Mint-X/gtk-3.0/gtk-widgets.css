@@ -447,17 +447,17 @@ combobox arrow {
  decoration {
     border-width: 0;
     border-radius: 6px 6px 0 0;
-    box-shadow: 0 2px 8px 3px alpha(black, 0.5),
-                0 0 0 1px darker(@theme_bg_color);
+    box-shadow: 0 0 1px 1px transparent,
+                0 2px 6px 0 alpha(black, 0.8);
 
     /* this is used for the resize cursor area */
     margin: 10px;
  }
 
  decoration:backdrop {
-    box-shadow: 0 2px 8px 3px transparent,
-                0 2px 5px 3px alpha(black, 0.3),
-                0 0 0 1px darker(@theme_bg_color);
+    box-shadow: 0 0 0 1px transparent,
+                0 2px 6px 0 transparent,
+                0 3px 4px 0 alpha(black, 0.4);
  }
 
  .maximized decoration,
