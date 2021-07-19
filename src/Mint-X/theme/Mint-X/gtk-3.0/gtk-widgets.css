@@ -49,6 +49,25 @@ actionbar {
     background-image: none;
 }
 
+/********************
+ * app-notification *
+ ********************/
+
+.app-notification {
+    padding: 10px;
+    border-style: solid;
+    border-width: 0 1px 1px 1px;
+    border-color: @border;
+    border-radius: 0 0 2px 2px;
+    padding: 10px;
+    background-color: @toolbar_bg_b;
+    color: @theme_fg_color;
+}
+
+.app-notification border {
+    border: none;
+}
+
 /*************
  * assistant *
  *************/
