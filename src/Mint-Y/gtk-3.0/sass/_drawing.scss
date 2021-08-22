@@ -210,7 +210,7 @@
   //
     color: $selected_fg_color;
     outline-color: transparentize($selected_fg_color, 0.7);
-    border-color: if($darker=='false' and $variant=='light', $header_button_border, transparent);
+    border-color: if($variant=='light', $header_button_border, transparent);
     background-color: $selected_bg_color;
   }
 

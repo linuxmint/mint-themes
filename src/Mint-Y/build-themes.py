@@ -3,7 +3,6 @@
 import os
 
 VARIATIONS = ["Mint-Y",
-              "Mint-Y-Darker",
               "Mint-Y-Dark"]
 
 DEST = '../../usr/share/themes'
@@ -14,7 +13,6 @@ print("Updating Gtk3 assets")
 os.chdir("gtk-3.0/")
 os.system("sassc ./sass/gtk.scss gtk.css")
 os.system("sassc ./sass/gtk-dark.scss gtk-dark.css")
-os.system("sassc ./sass/gtk-darker.scss gtk-darker.css")
 os.system("./render-assets.sh")
 print("Gtk3 assets updated")
 
@@ -69,24 +67,6 @@ if __name__ == '__main__':
             os.system("cp cinnamon/cinnamon.css %s" % version_folder)
             # XFWM
             os.system("cp -R xfwm4 %s" % dest_folder)
-
-        elif variation == "Mint-Y-Darker":
-            print("    Building Mint-Y-Darker")
-            os.system("cp index.theme-darker %s" % os.path.join(dest_folder, "index.theme"))
-            # Gtk2
-            version_folder = os.path.join(dest_folder, "gtk-2.0")
-            os.system("mkdir -p %s" % version_folder)
-            os.system("cp -R gtk-2.0/assets %s" % version_folder)
-            os.system("cp -R gtk-2.0/menubar-toolbar %s" % version_folder)
-            os.system("cp gtk-2.0/*.rc %s" % version_folder)
-            os.system("cp gtk-2.0/gtkrc-darker %s" % os.path.join(version_folder, "gtkrc"))
-            # Gtk3
-            version_folder = os.path.join(dest_folder, "gtk-3.0")
-            os.system("mkdir -p %s" % version_folder)
-            os.system("cp -R gtk-3.0/assets %s" % version_folder)
-            os.system("cp gtk-3.0/gtk-darker.css %s" % os.path.join(version_folder, "gtk.css"))
-            os.system("cp gtk-3.0/gtk-dark.css %s" % version_folder)
-            os.system("cp gtk-3.0/thumbnail.png %s" % version_folder)
 
         elif variation == "Mint-Y-Dark":
             print("    Building Mint-Y-Dark")

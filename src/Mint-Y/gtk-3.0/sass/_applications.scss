@@ -1012,7 +1012,7 @@ EvWindow .content-view .view:focus:selected {
     -gtk-icon-transform: scale(0.9);
   }
 
-  @if $variant=='light' and $darker=='false' {
+  @if $variant=='light' {
       toolbar {
         color: $header_fg;
         background-color: $header_bg;
