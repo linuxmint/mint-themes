@@ -1,24 +1,23 @@
 <?xml version="1.0"?>
 <metacity_theme>
 <info>
-	<name>Arc</name>
-	<author>horst3180</author>
-	<copyright>horst3180</copyright>
-	<date>2015</date>
-	<description>Arc Metacity theme</description>
+	<name>Mint-Y</name>
+	<author>Linux Mint</author>
+	<copyright>Linux Mint</copyright>
+	<date>2021</date>
+	<description>Metacity theme based on Arc by horst3180</description>
 </info>
 
 <!-- meaningfull constants -->
 
-<constant name="C_title_focused" value="rgba(64,64,64,1.0)" />
-<constant name="C_title_unfocused" value="rgba(157,157,157,1.0)" />
+<constant name="C_title_focused" value="gtk:custom(wm_title,#404040)" />
+<constant name="C_title_unfocused" value="gtk:custom(wm_title_unfocused,#9d9d9d)" />
 
-<constant name="C_wm_bg_focused" value="rgba(217,217,217,1.0)" />
-<constant name="C_wm_bg_unfocused" value="rgba(217,217,217,1.0)" />
+<constant name="C_wm_bg" value="gtk:custom(wm_bg,#d9d9d9)" />
+<constant name="C_wm_bg_unfocused" value="gtk:custom(wm_bg_unfocused,#d9d9d9)" />
 
-<constant name="C_wm_border" value="rgba(208,208,208,1.0)" />
-
-<constant name="C_wm_highlight" value="rgba(238,238,238,1.0)" />
+<constant name="C_wm_border" value="gtk:custom(wm_border,#bababa)" />
+<constant name="C_wm_highlight" value="gtk:custom(wm_highlight,#eeeeee)" />
 
 <!-- window button colors -->
 
@@ -27,18 +26,18 @@
 <constant name="C_button_close_bg_hover" value="shade/gtk:custom(selected_bg_color,#92b372)/1.14" />
 <constant name="C_button_close_bg_active" value="shade/gtk:custom(selected_bg_color,#92b372)/0.8" />
 
-<constant name="C_icon_close_bg" value="#F8F8F8" />
+<constant name="C_icon_close_bg" value="gtk:custom(wm_icon_close_bg,#F8F8F8)" />
 
 <!-- minimize, maximize -->
-<constant name="C_button_bg_hover" value="#ffffff" />
-<constant name="C_button_bg_active" value="#909090" />
+<constant name="C_button_bg_hover" value="gtk:custom(wm_button_hover_bg,#fdfdfd)" />
+<constant name="C_button_bg_active" value="gtk:custom(wm_button_active_bg,#909090)" />
 
-<constant name="C_button_border_hover" value="#D1D1D1" />
+<constant name="C_button_border_hover" value="gtk:custom(wm_button_hover_border,#d1d1d1)" />
 
-<constant name="C_icon_bg_focused" value="#404040" />
-<constant name="C_icon_bg_unfocused" value="#B6B6B6" />
-<constant name="C_icon_bg_hover" value="#404040" />
-<constant name="C_icon_bg_active" value="#ffffff" />
+<constant name="C_icon_bg_focused" value="gtk:custom(wm_icon_bg,#404040)" />
+<constant name="C_icon_bg_unfocused" value="gtk:custom(wm_icon_unfocused_bg,#b6b6b6)" />
+<constant name="C_icon_bg_hover" value="gtk:custom(wm_icon_hover_bg,#404040)" />
+<constant name="C_icon_bg_active" value="gtk:custom(wm_icon_active_bg,#ffffff)" />
 
 <!-- geometries -->
 
@@ -148,7 +147,7 @@
 	<!-- window decorations -->
 
 <draw_ops name="entire_background_focused">
-	<rectangle color="C_wm_bg_focused" x="0" y="0" width="width" height="height" filled="true" />
+	<rectangle color="C_wm_bg" x="0" y="0" width="width" height="height" filled="true" />
 </draw_ops>
 
 <draw_ops name="entire_background_unfocused">
@@ -156,12 +155,12 @@
 </draw_ops>
 
 <draw_ops name="titlebar_focused">
-	<rectangle color="C_wm_bg_focused" x="0" y="0" width="width" height="height" filled="true" />
+	<rectangle color="C_wm_bg" x="0" y="0" width="width" height="height" filled="true" />
 	<rectangle color="C_wm_highlight" x="0" y="0" width="width" height="1" filled="true" />
 </draw_ops>
 
 <draw_ops name="titlebar_unfocused">
-	<rectangle color="C_wm_bg_unfocused" x="0" y="0" width="width" height="height" filled="true" />
+	<rectangle color="C_wm_bg" x="0" y="0" width="width" height="height" filled="true" />
 	<rectangle color="C_wm_highlight" x="0" y="0" width="width" height="1" filled="true" />
 </draw_ops>
 
@@ -178,7 +177,7 @@
 </draw_ops>
 
 <draw_ops name="border_focused">
-	<rectangle color="C_wm_bg_focused" x="0" y="0" width="width" height="height" filled="false" />
+	<rectangle color="C_wm_bg" x="0" y="0" width="width" height="height" filled="false" />
 </draw_ops>
 
 <draw_ops name="border_unfocused">

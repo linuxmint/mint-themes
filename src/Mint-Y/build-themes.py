@@ -54,6 +54,7 @@ if __name__ == '__main__':
             os.system("mkdir -p %s" % version_folder)
             os.system("cp -R gtk-3.0/assets %s" % version_folder)
             os.system("cp gtk-3.0/gtk.css %s" % version_folder)
+            os.system("cp gtk-3.0/gtk-dark.css %s" % version_folder)
             os.system("cp gtk-3.0/thumbnail.png %s" % version_folder)
             # Metacity
             os.system("cp -R metacity-1 %s" % dest_folder)

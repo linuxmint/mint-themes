@@ -4028,21 +4028,22 @@ window.background.lightdm .lightdm-combo {
 @define-color placeholder_text_color #A8A8A8;
 @define-color content_view_bg #ffffff;
 @define-color wm_title #404040;
-@define-color wm_unfocused_title alpha(#404040, 0.5);
+@define-color wm_title_unfocused #9d9d9d;
 @define-color wm_bg #d9d9d9;
 @define-color wm_bg_unfocused #e1e1e1;
-@define-color wm_highlight #e1e1e1;
+@define-color wm_highlight #EEEEEE;
+@define-color wm_border #BDBDBD;
 @define-color wm_shadow alpha(black, 0.35);
-@define-color wm_button_close_bg #f46067;
-@define-color wm_button_close_hover_bg #f68086;
-@define-color wm_button_close_active_bg #f13039;
-@define-color wm_icon_close_bg #F8F8F9;
+@define-color wm_button_close_bg #92b372;
+@define-color wm_button_close_hover_bg #b6cca0;
+@define-color wm_button_close_active_bg #5f7c43;
+@define-color wm_icon_close_bg #f8f8f8;
 @define-color wm_button_hover_bg #fdfdfd;
-@define-color wm_button_active_bg #92b372;
-@define-color wm_button_hover_border #D1D3DA;
-@define-color wm_icon_bg #90949E;
-@define-color wm_icon_unfocused_bg #B6B8C0;
-@define-color wm_icon_hover_bg #7A7F8B;
+@define-color wm_button_active_bg #909090;
+@define-color wm_button_hover_border #d1d1d1;
+@define-color wm_icon_bg #404040;
+@define-color wm_icon_unfocused_bg #b6b6b6;
+@define-color wm_icon_hover_bg #404040;
 @define-color wm_icon_active_bg #ffffff;
 /* Based on _Adwaita-base.scss from libhandy */
 popover.combo {

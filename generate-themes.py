@@ -105,7 +105,7 @@ for color in y_hex_colors1.keys():
                 os.system("cp sass/gtk-dark.scss sass/gtk.scss")
                 os.system("sassc ./sass/gtk.scss gtk.css")
             else:
-                os.system("rm sass/gtk-dark.scss")
+                os.system("sassc ./sass/gtk-dark.scss gtk-dark.css")
                 os.system("sassc ./sass/gtk.scss gtk.css")
 
             os.system("rm -rf sass .sass-cache")
