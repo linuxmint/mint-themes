@@ -9,7 +9,7 @@ $fg_color: if($variant =='light', #202020, #f0f0f0);
 $selected_fg_color: #ffffff;
 $selected_bg_color: if($variant == 'light', #92b372, #92b372);
 
-$borders_color: if($variant =='light', darken($bg_color,9%), darken($bg_color,6%));
+$borders_color: if($variant =='light', darken($bg_color, 20%), darken($bg_color, 6%));
 
 $separator_color: if($variant == 'light', #cfcfcf, darken($bg_color, 6%));
 
@@ -37,8 +37,8 @@ $osd_entry_border: transparentize(darken($osd_bg_color, 12%), 0.6);
 
 $osd_insensitive_fg_color: mix($osd_fg_color, opacify($osd_bg_color, 1), 30%);
 
-$panel_bg: #2f2f2f;
-$panel_fg: #f0f0f0;
+$panel_bg: $bg_color;
+$panel_fg: $fg_color;
 
 $entry_bg: if($variant=='light', $base_color, lighten($base_color, 0%));
 $entry_border: if($variant == 'light', #cfd6e6, darken($borders_color, 0%));
