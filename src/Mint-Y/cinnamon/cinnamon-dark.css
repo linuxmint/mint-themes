@@ -837,6 +837,7 @@ StScrollBar {
     font-size: 1em; }
   .run-dialog-entry {
     width: 21em;
+    height: 1.2em;
     padding: 7px;
     border-radius: 3px;
     caret-color: #c3c3c3;
