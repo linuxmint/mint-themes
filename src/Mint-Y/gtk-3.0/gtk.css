@@ -16,7 +16,7 @@
 
 .background {
   color: #303030;
-  background-color: rgba(240, 240, 240, 0.999); }
+  background-color: rgba(239, 239, 239, 0.999); }
 
 *:disabled {
   -gtk-icon-effect: dim; }
