@@ -3196,6 +3196,10 @@ filechooser placessidebar.sidebar list {
 filechooser.maximized placessidebar.sidebar {
   background-color: #353535; }
 
+filechooser placessidebar > viewport.frame {
+  border: 1px solid #292929;
+  border-width: 1px 0 0 0; }
+
 NautilusQueryEditor .search-bar.toolbar {
   padding: 5px;
   box-shadow: none;
@@ -3259,7 +3263,7 @@ NautilusListView .view, NautilusListView iconview {
         .nemo-window .sidebar .view.expander:hover, .nemo-window .sidebar iconview.expander:hover, .nemo-window .sidebar row.expander:hover {
           color: #dbdbdb; }
   .nemo-window grid > paned > separator {
-    background-image: linear-gradient(to bottom, #353535, #353535); }
+    background-image: linear-gradient(to bottom, #292929, #292929); }
   .nemo-window widget .toolbar .image-button, .nemo-window widget .toolbar headerbar button.titlebutton, headerbar .nemo-window widget .toolbar button.titlebutton,
   .nemo-window widget .toolbar .titlebar button.titlebutton,
   .titlebar .nemo-window widget .toolbar button.titlebutton {
