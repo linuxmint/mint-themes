@@ -296,6 +296,20 @@
 }
 
 //
+// Titlebar circular buttons
+//
+@mixin draw_circle($c, $size:18px) {
+  $button_size: $size + 2px * 2;
+  $circle_size: 20px / $button_size / 2;
+
+  background-image: -gtk-gradient(radial,
+                                  center center, 0,
+                                  center center, $circle_size,
+                                  to($c),
+                                  to(transparent));
+}
+
+//
 // Overshoot
 //
 @mixin overshoot($p, $c:$selected_bg_color) {

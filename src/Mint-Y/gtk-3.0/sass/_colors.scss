@@ -109,6 +109,6 @@ $wm_button_active_bg: if($variant == 'light', #909090, #949494);
 $wm_button_hover_border: if($variant == 'light', #d1d1d1, #262932);
 
 $wm_icon_bg: if($variant == 'light', #404040, #909090);
-$wm_icon_unfocused_bg: if($variant == 'light', #b6b6b6, #666666);
+$wm_icon_unfocused_bg: if($variant == 'light', #b6b6b6, #555555);
 $wm_icon_hover_bg: if($variant == 'light', #404040, #C4C7CC);
 $wm_icon_active_bg: #ffffff

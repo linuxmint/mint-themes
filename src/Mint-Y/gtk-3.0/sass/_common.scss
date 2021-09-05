@@ -3122,9 +3122,14 @@ headerbar,
   }
 
   button.titlebutton {
+    $_wm_backdrop_icon_color: if($variant == 'light', darken($wm_icon_unfocused_bg, 5%), lighten($wm_icon_unfocused_bg, 5%));
+
+    min-width: 18px;
+    min-height: 18px;
     @extend .image-button;
 
-    padding: 6px 1px;
+    padding: 10px 3px;
+    margin: 0;
 
     @include button(undecorated);
     background-color: transparentize($header_bg, 1);
@@ -3137,30 +3142,30 @@ headerbar,
     }
 
     &.close, &.maximize, &.minimize {
+      -gtk-icon-theme: "Mint-Y";
 
-      color: transparent;
       background-color: transparent;
+      background-size: 20px 20px;
       background-position: center;
       background-repeat: no-repeat;
       border-width: 0;
-
-      &:backdrop { opacity: 1; }
     }
 
-    &.close { background-image: -gtk-scaled(url('assets/titlebutton-close#{$asset_suffix}.png'),url('assets/titlebutton-close#{$asset_suffix}@2.png')); }
-    &.close:backdrop { background-image: -gtk-scaled(url('assets/titlebutton-close-backdrop#{$asset_suffix}.png'),url('assets/titlebutton-close-backdrop#{$asset_suffix}@2.png')); }
-    &.close:hover { background-image: -gtk-scaled(url('assets/titlebutton-close-hover#{$asset_suffix}.png'),url('assets/titlebutton-close-hover#{$asset_suffix}@2.png')); }
-    &.close:active { background-image: -gtk-scaled(url('assets/titlebutton-close-active#{$asset_suffix}.png'),url('assets/titlebutton-close-active#{$asset_suffix}@2.png')); }
+    &.close {
+      color: $selected_fg_color;
+      @include draw_circle($selected_bg_color);
 
-    &.maximize { background-image: -gtk-scaled(url('assets/titlebutton-max#{$asset_suffix}.png'),url('assets/titlebutton-max#{$asset_suffix}@2.png')); }
-    &.maximize:backdrop { background-image: -gtk-scaled(url('assets/titlebutton-max-backdrop#{$asset_suffix}.png'),url('assets/titlebutton-max-backdrop#{$asset_suffix}@2.png')); }
-    &.maximize:hover { background-image: -gtk-scaled(url('assets/titlebutton-max-hover#{$asset_suffix}.png'),url('assets/titlebutton-max-hover#{$asset_suffix}@2.png')); }
-    &.maximize:active { background-image: -gtk-scaled(url('assets/titlebutton-max-active#{$asset_suffix}.png'),url('assets/titlebutton-max-active#{$asset_suffix}@2.png')); }
+      &:hover { @include draw-circle(lighten($selected_bg_color, 5%)); }
+      &:active { @include draw-circle(darken($selected_bg_color, 5%)); }
+      &:backdrop { @include draw-circle($_wm_backdrop_icon_color); }
+    }
 
-    &.minimize { background-image: -gtk-scaled(url('assets/titlebutton-min#{$asset_suffix}.png'),url('assets/titlebutton-min#{$asset_suffix}@2.png')); }
-    &.minimize:backdrop { background-image: -gtk-scaled(url('assets/titlebutton-min-backdrop#{$asset_suffix}.png'),url('assets/titlebutton-min-backdrop#{$asset_suffix}@2.png')); }
-    &.minimize:hover { background-image: -gtk-scaled(url('assets/titlebutton-min-hover#{$asset_suffix}.png'),url('assets/titlebutton-min-hover#{$asset_suffix}@2.png')); }
-    &.minimize:active { background-image: -gtk-scaled(url('assets/titlebutton-min-active#{$asset_suffix}.png'),url('assets/titlebutton-min-active#{$asset_suffix}@2.png')); }
+    &.maximize,
+    &.minimize {
+      &:hover { @include draw-circle($wm_button_hover_bg); }
+      &:active { @include draw-circle($wm_button_active_bg); }
+      &:backdrop { color: $_wm_backdrop_icon_color; }
+    }
   }
 }
 

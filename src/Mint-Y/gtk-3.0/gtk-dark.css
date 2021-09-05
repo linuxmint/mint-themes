@@ -2898,7 +2898,10 @@ headerbar.default-decoration button.titlebutton,
 
 headerbar button.titlebutton,
 .titlebar button.titlebutton {
-  padding: 6px 1px;
+  min-width: 18px;
+  min-height: 18px;
+  padding: 10px 3px;
+  margin: 0;
   border-color: transparent;
   background-color: transparent;
   background-image: none;
@@ -2920,52 +2923,37 @@ headerbar button.titlebutton,
   .titlebar button.titlebutton.close,
   .titlebar button.titlebutton.maximize,
   .titlebar button.titlebutton.minimize {
-    color: transparent;
+    -gtk-icon-theme: "Mint-Y";
     background-color: transparent;
+    background-size: 20px 20px;
     background-position: center;
     background-repeat: no-repeat;
     border-width: 0; }
-    headerbar button.titlebutton.close:backdrop, headerbar button.titlebutton.maximize:backdrop, headerbar button.titlebutton.minimize:backdrop,
-    .titlebar button.titlebutton.close:backdrop,
-    .titlebar button.titlebutton.maximize:backdrop,
-    .titlebar button.titlebutton.minimize:backdrop {
-      opacity: 1; }
   headerbar button.titlebutton.close,
   .titlebar button.titlebutton.close {
-    background-image: -gtk-scaled(url("assets/titlebutton-close-dark.png"), url("assets/titlebutton-close-dark@2.png")); }
-  headerbar button.titlebutton.close:backdrop,
-  .titlebar button.titlebutton.close:backdrop {
-    background-image: -gtk-scaled(url("assets/titlebutton-close-backdrop-dark.png"), url("assets/titlebutton-close-backdrop-dark@2.png")); }
-  headerbar button.titlebutton.close:hover,
-  .titlebar button.titlebutton.close:hover {
-    background-image: -gtk-scaled(url("assets/titlebutton-close-hover-dark.png"), url("assets/titlebutton-close-hover-dark@2.png")); }
-  headerbar button.titlebutton.close:active,
-  .titlebar button.titlebutton.close:active {
-    background-image: -gtk-scaled(url("assets/titlebutton-close-active-dark.png"), url("assets/titlebutton-close-active-dark@2.png")); }
-  headerbar button.titlebutton.maximize,
-  .titlebar button.titlebutton.maximize {
-    background-image: -gtk-scaled(url("assets/titlebutton-max-dark.png"), url("assets/titlebutton-max-dark@2.png")); }
-  headerbar button.titlebutton.maximize:backdrop,
-  .titlebar button.titlebutton.maximize:backdrop {
-    background-image: -gtk-scaled(url("assets/titlebutton-max-backdrop-dark.png"), url("assets/titlebutton-max-backdrop-dark@2.png")); }
-  headerbar button.titlebutton.maximize:hover,
-  .titlebar button.titlebutton.maximize:hover {
-    background-image: -gtk-scaled(url("assets/titlebutton-max-hover-dark.png"), url("assets/titlebutton-max-hover-dark@2.png")); }
-  headerbar button.titlebutton.maximize:active,
-  .titlebar button.titlebutton.maximize:active {
-    background-image: -gtk-scaled(url("assets/titlebutton-max-active-dark.png"), url("assets/titlebutton-max-active-dark@2.png")); }
-  headerbar button.titlebutton.minimize,
-  .titlebar button.titlebutton.minimize {
-    background-image: -gtk-scaled(url("assets/titlebutton-min-dark.png"), url("assets/titlebutton-min-dark@2.png")); }
-  headerbar button.titlebutton.minimize:backdrop,
-  .titlebar button.titlebutton.minimize:backdrop {
-    background-image: -gtk-scaled(url("assets/titlebutton-min-backdrop-dark.png"), url("assets/titlebutton-min-backdrop-dark@2.png")); }
-  headerbar button.titlebutton.minimize:hover,
+    color: #ffffff;
+    background-image: -gtk-gradient(radial, center center, 0, center center, 0.4545454545, to(#8fa876), to(transparent)); }
+    headerbar button.titlebutton.close:hover,
+    .titlebar button.titlebutton.close:hover {
+      background-image: -gtk-gradient(radial, center center, 0, center center, 0.4545454545, to(#9cb286), to(transparent)); }
+    headerbar button.titlebutton.close:active,
+    .titlebar button.titlebutton.close:active {
+      background-image: -gtk-gradient(radial, center center, 0, center center, 0.4545454545, to(#829e66), to(transparent)); }
+    headerbar button.titlebutton.close:backdrop,
+    .titlebar button.titlebutton.close:backdrop {
+      background-image: -gtk-gradient(radial, center center, 0, center center, 0.4545454545, to(#626262), to(transparent)); }
+  headerbar button.titlebutton.maximize:hover, headerbar button.titlebutton.minimize:hover,
+  .titlebar button.titlebutton.maximize:hover,
   .titlebar button.titlebutton.minimize:hover {
-    background-image: -gtk-scaled(url("assets/titlebutton-min-hover-dark.png"), url("assets/titlebutton-min-hover-dark@2.png")); }
-  headerbar button.titlebutton.minimize:active,
+    background-image: -gtk-gradient(radial, center center, 0, center center, 0.4545454545, to(#4c4c4c), to(transparent)); }
+  headerbar button.titlebutton.maximize:active, headerbar button.titlebutton.minimize:active,
+  .titlebar button.titlebutton.maximize:active,
   .titlebar button.titlebutton.minimize:active {
-    background-image: -gtk-scaled(url("assets/titlebutton-min-active-dark.png"), url("assets/titlebutton-min-active-dark@2.png")); }
+    background-image: -gtk-gradient(radial, center center, 0, center center, 0.4545454545, to(#949494), to(transparent)); }
+  headerbar button.titlebutton.maximize:backdrop, headerbar button.titlebutton.minimize:backdrop,
+  .titlebar button.titlebutton.maximize:backdrop,
+  .titlebar button.titlebutton.minimize:backdrop {
+    color: #626262; }
 
 .caja-navigation-window .view .cell:selected, .caja-navigation-window iconview .cell:selected, .caja-navigation-window .view .cell:selected:focus, .nemo-window .nemo-inactive-pane .view:selected:focus, .nemo-window .nemo-inactive-pane iconview:selected:focus, .nemo-window .nemo-inactive-pane .view:selected, .nemo-window .nemo-inactive-pane iconview:selected, .nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected, .nautilus-window placessidebar.sidebar list row.sidebar-row:selected.has-open-popup, .nautilus-window placessidebar.sidebar list row.sidebar-row:selected, .nautilus-window placessidebar.sidebar list row.sidebar-row:selected:hover, .nautilus-window placessidebar.sidebar list row.sidebar-row:active:hover,
 filechooser placessidebar.sidebar list row.sidebar-row:selected.has-open-popup,
@@ -4025,7 +4013,7 @@ window.background.lightdm .lightdm-combo {
 @define-color wm_button_active_bg #949494;
 @define-color wm_button_hover_border #262932;
 @define-color wm_icon_bg #909090;
-@define-color wm_icon_unfocused_bg #666666;
+@define-color wm_icon_unfocused_bg #555555;
 @define-color wm_icon_hover_bg #C4C7CC;
 @define-color wm_icon_active_bg #ffffff;
 /* Based on _Adwaita-base.scss from libhandy */
