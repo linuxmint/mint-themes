@@ -53,8 +53,8 @@ $tooltip_bg_color: #fbeaa0;
 $tooltip_fg_color: #4a4a4a;
 $tooltip_border_color: #d0d0d0;
 
-$osd_fg_color: $dark_sidebar_fg;
-$osd_bg_color: $dark_sidebar_bg;
+$osd_fg_color: #dbdbdb;
+$osd_bg_color: if($variant == 'light', #404040, #353535);
 
 $osd_button_bg: transparentize(lighten($osd_bg_color, 22%), 0.6);
 $osd_button_border: transparentize(darken($osd_bg_color, 12%), 0.6);
