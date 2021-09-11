@@ -94,6 +94,7 @@ $wm_bg: $header_bg;
 $wm_bg_unfocused: $header_bg;
 $wm_highlight: $header_highlight;
 $wm_border: $header_border;
+$wm_border_unfocused: lighten($header_border, 5%);
 
 //WM Buttons
 

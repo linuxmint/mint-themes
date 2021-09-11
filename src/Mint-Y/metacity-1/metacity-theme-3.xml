@@ -17,6 +17,7 @@
 <constant name="C_wm_bg_unfocused" value="gtk:custom(wm_bg_unfocused,#d9d9d9)" />
 
 <constant name="C_wm_border" value="gtk:custom(wm_border,#bababa)" />
+<constant name="C_wm_border_unfocused" value="gtk:custom(wm_border_unfocused,#bababa)" />
 <constant name="C_wm_highlight" value="gtk:custom(wm_highlight,#eeeeee)" />
 
 <!-- window button colors -->
@@ -42,9 +43,9 @@
 <!-- ::: GEOMETRY ::: -->
 
 <frame_geometry name="normal" title_scale="medium" rounded_top_left="8" rounded_top_right="8">
-	<distance name="left_width" value="0" />
-	<distance name="right_width" value="0" />
-	<distance name="bottom_height" value="0" />
+	<distance name="left_width" value="1" />
+	<distance name="right_width" value="1" />
+	<distance name="bottom_height" value="1" />
 	<distance name="left_titlebar_edge" value="0"/>
 	<distance name="right_titlebar_edge" value="0"/>
 	<distance name="title_vertical_pad" value="0"/>
@@ -109,7 +110,7 @@
 <!-- ::: BACKGROUND ::: -->
 
 <draw_ops name="entire_background_focused">
-	<rectangle color="C_wm_bg" x="0" y="0" width="width" height="height" filled="true" />
+	<rectangle color="C_wm_border" x="0" y="0" width="width" height="height" filled="true" />
 </draw_ops>
 
 <draw_ops name="entire_background_unfocused">
@@ -123,31 +124,31 @@
 </draw_ops>
 
 <draw_ops name="border_unfocused">
-	<rectangle color="C_wm_border" x="0" y="0" width="width-1" height="height-1" filled="false" />
+	<rectangle color="C_wm_border_unfocused" x="0" y="0" width="width-1" height="height-1" filled="false" />
 </draw_ops>
 
 <draw_ops name="rounded_border_focused">
-	<line color="C_wm_bg" x1="10" y1="0" x2="width-11" y2="0" />
-	<line color="C_wm_bg" x1="0" y1="height-1" x2="width-1" y2="height-1" />
-	<line color="C_wm_bg" x1="0" y1="10" x2="0" y2="height-2" />
-	<line color="C_wm_bg" x1="width-1" y1="10" x2="width-1" y2="height-2" />
-	<arc color="C_wm_bg" x="0" y="0" width="20" height="20"  start_angle="270" extent_angle="90" />
-	<arc color="C_wm_bg" x="width-21" y="0" width="20" height="20"  start_angle="0" extent_angle="90" />
+	<line color="C_wm_border" x1="10" y1="0" x2="width-11" y2="0" />
+	<line color="C_wm_border" x1="0" y1="height-1" x2="width-1" y2="height-1" />
+	<line color="C_wm_border" x1="0" y1="10" x2="0" y2="height-2" />
+	<line color="C_wm_border" x1="width-1" y1="10" x2="width-1" y2="height-2" />
+	<arc color="C_wm_border" x="0" y="0" width="20" height="20"  start_angle="270" extent_angle="90" />
+	<arc color="C_wm_border" x="width-21" y="0" width="20" height="20"  start_angle="0" extent_angle="90" />
 	<!-- double arcs for darker borders -->
-	<arc color="C_wm_bg" x="0" y="0" width="20" height="20"  start_angle="270" extent_angle="90" />
-	<arc color="C_wm_bg" x="width-21" y="0" width="20" height="20"  start_angle="0" extent_angle="90" />
+	<arc color="C_wm_border" x="0" y="0" width="20" height="20"  start_angle="270" extent_angle="90" />
+	<arc color="C_wm_border" x="width-21" y="0" width="20" height="20"  start_angle="0" extent_angle="90" />
 </draw_ops>
 
 <draw_ops name="rounded_border_unfocused">
-	<line color="C_wm_bg" x1="10" y1="0" x2="width-11" y2="0" />
-	<line color="C_wm_bg" x1="0" y1="height-1" x2="width-1" y2="height-1" />
-	<line color="C_wm_bg" x1="0" y1="10" x2="0" y2="height-2" />
-	<line color="C_wm_bg" x1="width-1" y1="10" x2="width-1" y2="height-2" />
-	<arc color="C_wm_bg" x="0" y="0" width="20" height="20"  start_angle="270" extent_angle="90" />
-	<arc color="C_wm_bg" x="width-21" y="0" width="20" height="20"  start_angle="0" extent_angle="90" />
+	<line color="C_wm_border_unfocused" x1="10" y1="0" x2="width-11" y2="0" />
+	<line color="C_wm_border_unfocused" x1="0" y1="height-1" x2="width-1" y2="height-1" />
+	<line color="C_wm_border_unfocused" x1="0" y1="10" x2="0" y2="height-2" />
+	<line color="C_wm_border_unfocused" x1="width-1" y1="10" x2="width-1" y2="height-2" />
+	<arc color="C_wm_border_unfocused" x="0" y="0" width="20" height="20"  start_angle="270" extent_angle="90" />
+	<arc color="C_wm_border_unfocused" x="width-21" y="0" width="20" height="20"  start_angle="0" extent_angle="90" />
 	<!-- double arcs for darker borders -->
-	<arc color="C_wm_bg" x="0" y="0" width="20" height="20"  start_angle="270" extent_angle="90" />
-	<arc color="C_wm_bg" x="width-21" y="0" width="20" height="20"  start_angle="0" extent_angle="90" />
+	<arc color="C_wm_border_unfocused" x="0" y="0" width="20" height="20"  start_angle="270" extent_angle="90" />
+	<arc color="C_wm_border_unfocused" x="width-21" y="0" width="20" height="20"  start_angle="0" extent_angle="90" />
 </draw_ops>
 
 <draw_ops name="border_tiled_left_focused">
@@ -161,7 +162,7 @@
 	<line
 		x1="width-1" y1="0"
 		x2="width-1" y2="height"
-		color="C_wm_border" />
+		color="C_wm_border_unfocused" />
 </draw_ops>
 
 <draw_ops name="border_tiled_right_focused">
@@ -175,7 +176,7 @@
 	<line
 		x1="0" y1="0"
 		x2="0" y2="height"
-		color="C_wm_border" />
+		color="C_wm_border_unfocused" />
 </draw_ops>
 
 <!-- ::: TITLEBAR ::: -->
