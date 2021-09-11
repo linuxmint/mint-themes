@@ -3240,7 +3240,7 @@ NautilusListView .view, NautilusListView iconview {
     -NemoPlacesTreeView-disk-full-fg-color: #789d55;
     -GtkTreeView-vertical-separator: 7; }
     .nemo-window .places-treeview .view.cell:hover, .nemo-window .places-treeview iconview.cell:hover {
-      background-color: rgba(0, 0, 0, 0.02); }
+      background-color: rgba(0, 0, 0, 0.12); }
   .nemo-window .nemo-places-sidebar.frame {
     border-width: 0; }
   .nemo-window .sidebar {

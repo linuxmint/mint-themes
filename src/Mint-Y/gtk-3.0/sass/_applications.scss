@@ -269,7 +269,7 @@ NautilusListView .view { border-bottom: 1px solid $borders_color; }
     -NemoPlacesTreeView-disk-full-fg-color: darken($selected_bg_color, 10%);
     -GtkTreeView-vertical-separator: 7;
 
-    .view.cell:hover { background-color: transparentize($dark_sidebar_fg, 0.85); }
+    .view.cell:hover { background-color: transparentize($dark_sidebar_fg, 0.75); }
   }
 
   .nemo-places-sidebar.frame { border-width: 0; }
