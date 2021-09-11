@@ -3060,8 +3060,8 @@ decoration {
 
   $_wm_border: transparentize(black, 0.85);
 
-  box-shadow: 0 0 1px 1px transparent,
-              0 2px 6px 0 opacify($_wm_border, 0.85);
+  box-shadow: 0 3px 9px 1px transparentize(black, 0.5),
+              0 0 0 1px transparent; //doing borders with box-shadow
 
   // this is used for the resize cursor area
   margin: 10px;
@@ -3069,9 +3069,9 @@ decoration {
   &:backdrop {
     // the transparent shadow here is to enforce that the shadow extents don't
     // change when we go to backdrop, to prevent jumping windows
-    box-shadow: 0 0 0 1px transparent,
-                0 2px 6px 0 transparent,
-                0 3px 4px 0 opacify($_wm_border, 0.4);
+    box-shadow: 0 3px 9px 1px transparent,
+                0 2px 6px 2px transparentize(black, 0.8),
+                0 0 0 1px transparent;
   }
   .fullscreen &,
   .tiled &,
@@ -3091,8 +3091,8 @@ decoration {
   }
   .csd.popup & {
     border-radius: 2px;
-    box-shadow: 0 3px 6px if($variant == 'light', $_wm_border, transparentize($_wm_border, 0.1)),
-                  0 0 0 1px if($variant == 'light', $_wm_border, darken($bg_color, 10%));
+    box-shadow: 0 1px 4px transparentize(black, 0.8),
+                0 0 0 1px transparentize($_wm_border, 0.1);
   }
   tooltip.csd & {
     border-radius: 2px;
