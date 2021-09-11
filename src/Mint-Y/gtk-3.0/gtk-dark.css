@@ -904,19 +904,19 @@ headerbar,
       background-color: #2d2d2c; }
 
 .titlebar {
-  border-radius: 3px 3px 0 0; }
+  border-radius: 12px 12px 0 0; }
 
 headerbar entry, headerbar button, headerbar separator {
   margin-top: 6px;
   margin-bottom: 6px; }
 
 separator:first-child + headerbar, separator:first-child + headerbar:backdrop, headerbar:first-child, headerbar:first-child:backdrop {
-  border-top-left-radius: 3px; }
+  border-top-left-radius: 12px; }
   .maximized separator:first-child + headerbar, .tiled separator:first-child + headerbar, .maximized separator:first-child + headerbar:backdrop, .tiled separator:first-child + headerbar:backdrop, .maximized headerbar:first-child, .tiled headerbar:first-child, .maximized headerbar:first-child:backdrop, .tiled headerbar:first-child:backdrop {
     border-radius: 0; }
 
 headerbar:last-child, headerbar:last-child:backdrop {
-  border-top-right-radius: 3px; }
+  border-top-right-radius: 12px; }
   .maximized headerbar:last-child, .tiled headerbar:last-child, .maximized headerbar:last-child:backdrop, .tiled headerbar:last-child:backdrop {
     border-radius: 0; }
 
@@ -2858,7 +2858,7 @@ button.circular-button,
   box-shadow: inset 0 0 0 1px #8fa876; }
 
 decoration {
-  border-radius: 4px 4px 0 0;
+  border-radius: 12px 12px 0 0;
   border-width: 0px;
   box-shadow: 0 0 1px 1px transparent, 0 2px 6px 0 black;
   margin: 10px; }
@@ -2870,7 +2870,7 @@ decoration {
     box-shadow: none;
     border-radius: 0; }
   .ssd decoration {
-    border-radius: 3px 3px 0 0;
+    border-radius: 8px 8px 0 0;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.65); }
     .ssd decoration.maximized {
       border-radius: 0; }
