@@ -2860,10 +2860,10 @@ button.circular-button,
 decoration {
   border-radius: 12px 12px 0 0;
   border-width: 0px;
-  box-shadow: 0 3px 9px 1px rgba(0, 0, 0, 0.5), 0 0 0 1px transparent;
+  box-shadow: 0 3px 9px 1px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.35);
   margin: 10px; }
   decoration:backdrop {
-    box-shadow: 0 3px 9px 1px transparent, 0 2px 6px 2px rgba(0, 0, 0, 0.2), 0 0 0 1px transparent; }
+    box-shadow: 0 3px 9px 1px transparent, 0 2px 6px 2px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.3); }
   .fullscreen decoration, .tiled decoration, .tiled decoration:backdrop {
     border-radius: 0; }
   .popup decoration {
@@ -2876,10 +2876,10 @@ decoration {
       border-radius: 0; }
   .csd.popup decoration {
     border-radius: 2px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.05); }
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.25); }
   tooltip.csd decoration {
     border-radius: 2px;
-    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.15); }
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.35); }
   message-dialog.csd decoration {
     border-radius: 3px; }
   .solid-csd decoration {
@@ -4008,6 +4008,7 @@ window.background.lightdm .lightdm-combo {
 @define-color wm_bg_unfocused #313130;
 @define-color wm_highlight #373737;
 @define-color wm_border #232322;
+@define-color wm_border_unfocused #30302f;
 @define-color wm_shadow alpha(black, 0.35);
 @define-color wm_button_close_bg #8fa876;
 @define-color wm_button_close_hover_bg #b3c4a2;
