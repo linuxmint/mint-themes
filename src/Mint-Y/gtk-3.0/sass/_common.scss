@@ -1041,7 +1041,7 @@ headerbar,
 }
 
 .titlebar {
-  border-radius: 3px 3px 0 0;
+  border-radius: 12px 12px 0 0;
 }
 
 headerbar {
@@ -1056,7 +1056,7 @@ headerbar {
   separator:first-child + &,
   &:first-child {
     &, &:backdrop {
-      border-top-left-radius: 3px;
+      border-top-left-radius: 12px;
 
       .maximized &,
       .tiled & { border-radius: 0; }
@@ -1065,7 +1065,7 @@ headerbar {
 
   &:last-child {
     &, &:backdrop {
-      border-top-right-radius: 3px;
+      border-top-right-radius: 12px;
 
       .maximized &,
       .tiled & { border-radius: 0; }
@@ -3055,7 +3055,7 @@ button.circular-button,
 // Window Decorations
 //
 decoration {
-  border-radius: 4px 4px 0 0;
+  border-radius: 12px 12px 0 0;
   border-width: 0px;
 
   $_wm_border: transparentize(black, 0.85);
@@ -3084,7 +3084,7 @@ decoration {
   }
   // server-side decorations as used by mutter
   .ssd & {
-    border-radius: if($variant=='light', 4px 4px 0 0, 3px 3px 0 0);
+    border-radius: 8px 8px 0 0;
     box-shadow: 0 0 0 1px if($variant == 'dark', transparentize(black, 0.35), $_wm_border);
 
     &.maximized { border-radius: 0; }
