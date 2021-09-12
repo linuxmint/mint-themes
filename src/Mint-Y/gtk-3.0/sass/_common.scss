@@ -3062,7 +3062,7 @@ decoration {
   $_wm_border_backdrop: if($variant=='light', transparentize(black, 0.85), transparentize(black, 0.7));
 
   box-shadow: 0 3px 9px 1px transparentize(black, 0.5),
-              0 0 0 1px $_wm_border; //doing borders with box-shadow
+              0 0 0 1px $wm_border; //doing borders with box-shadow
 
   // this is used for the resize cursor area
   margin: 10px;
@@ -3072,7 +3072,7 @@ decoration {
     // change when we go to backdrop, to prevent jumping windows
     box-shadow: 0 3px 9px 1px transparent,
                 0 2px 6px 2px transparentize(black, 0.8),
-                0 0 0 1px $_wm_border_backdrop;
+                0 0 0 1px $wm_border_unfocused;
   }
 
   .fullscreen &,
@@ -3087,14 +3087,14 @@ decoration {
   // server-side decorations as used by mutter
   .ssd & {
     border-radius: 8px 8px 0 0;
-    box-shadow: 0 0 0 1px if($variant == 'dark', transparentize(black, 0.35), $_wm_border);
+    box-shadow: 0 0 0 1px if($variant == 'dark', transparentize(black, 0.35), $wm_border);
 
     &.maximized { border-radius: 0; }
   }
   .csd.popup & {
     border-radius: 2px;
     box-shadow: 0 1px 4px transparentize(black, 0.8),
-                0 0 0 1px transparentize($_wm_border, 0.1);
+                0 0 0 1px transparentize($wm_border, 0.1);
   }
   tooltip.csd & {
     border-radius: 2px;
