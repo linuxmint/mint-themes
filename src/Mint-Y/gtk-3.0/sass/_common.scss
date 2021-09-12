@@ -3076,9 +3076,13 @@ decoration {
   }
 
   .fullscreen &,
+  .maximized &,
   .tiled &,
   .tiled &:backdrop {
     border-radius: 0;
+    box-shadow: 0 3px 9px 1px transparent,
+                0 2px 6px 2px transparent,
+                0 0 0 1px $wm_border_unfocused;
   }
   .popup & {
     box-shadow: none;
