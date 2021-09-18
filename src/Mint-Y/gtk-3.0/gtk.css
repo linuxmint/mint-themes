@@ -3809,7 +3809,8 @@ filechooser placessidebar.sidebar list scrollbar, .nemo-window .sidebar scrollba
     background-color: #e4e7e0; }
 
 .thunar .sidebar .view, .thunar .sidebar iconview {
-  background-color: #f3f4f2; }
+  background-color: #f0f2ef;
+  color: rgba(0, 0, 0, 0.87); }
   .thunar .sidebar .view:selected, .thunar .sidebar iconview:selected, .thunar .sidebar .view:active, .thunar .sidebar iconview:active {
     background: #92b372;
     color: #ffffff; }

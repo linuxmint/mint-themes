@@ -1015,7 +1015,8 @@ EvWindow .content-view .view:focus:selected {
 //
 .thunar {
   .sidebar .view {
-    background-color: $bg_color;
+    background-color: $dark_sidebar_bg;
+    color: $dark_sidebar_fg;
 
     &:selected, &:active {
       background: $selected_bg_color;
