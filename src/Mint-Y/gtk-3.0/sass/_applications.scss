@@ -325,6 +325,8 @@ NautilusListView .view { border-bottom: 1px solid $borders_color; }
     }
   }
 
+  .frame { border-width: 1px 0 1px 0; }
+
   .caja-side-pane {
 
     .view,
@@ -332,6 +334,14 @@ NautilusListView .view { border-bottom: 1px solid $borders_color; }
     notebook {
       background-color: $dark_sidebar_bg;
       color: $dark_sidebar_fg;
+    }
+
+    .frame { border-width: 1px 0 0 0; }
+
+    .view > box,
+    viewport.frame {
+      border: 1px solid $borders_color;
+      border-width: 1px 0 0 0;
     }
   }
 }

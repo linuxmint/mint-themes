@@ -3265,11 +3265,19 @@ NautilusListView .view, NautilusListView iconview {
    */ }
   .caja-navigation-window .view .cell:selected, .caja-navigation-window iconview .cell:selected, .caja-navigation-window .view .cell:selected:focus {
     background-image: linear-gradient(to bottom, #8fa876, #8fa876); }
+  .caja-navigation-window .frame {
+    border-width: 1px 0 1px 0; }
   .caja-navigation-window .caja-side-pane .view, .caja-navigation-window .caja-side-pane iconview,
   .caja-navigation-window .caja-side-pane textview text,
   .caja-navigation-window .caja-side-pane notebook {
     background-color: #383837;
     color: rgba(255, 255, 255, 0.87); }
+  .caja-navigation-window .caja-side-pane .frame {
+    border-width: 1px 0 0 0; }
+  .caja-navigation-window .caja-side-pane .view > box, .caja-navigation-window .caja-side-pane iconview > box,
+  .caja-navigation-window .caja-side-pane viewport.frame {
+    border: 1px solid #2b2b2a;
+    border-width: 1px 0 0 0; }
 
 .gedit-headerbar-paned {
   color: #232322; }
