@@ -298,14 +298,17 @@
 //
 // Titlebar circular buttons
 //
-@mixin draw_circle($c, $size:18px) {
-  $button_size: $size + 2px * 2;
-  $circle_size: 20px / $button_size / 2;
+@mixin draw_circle($c, $bc) {
 
   background-image: -gtk-gradient(radial,
                                   center center, 0,
-                                  center center, $circle_size,
+                                  center center, 0.45,
                                   to($c),
+                                  to(transparent)),
+                    -gtk-gradient(radial,
+                                  center center, 0,
+                                  center center, 0.5,
+                                  to($bc),
                                   to(transparent));
 }
 
