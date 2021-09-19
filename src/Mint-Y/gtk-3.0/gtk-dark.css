@@ -2903,6 +2903,7 @@ headerbar button.titlebutton,
   min-height: 18px;
   padding: 10px 3px;
   margin: 0;
+  transition: none;
   border-color: transparent;
   background-color: transparent;
   background-image: none;
@@ -2933,24 +2934,28 @@ headerbar button.titlebutton,
   headerbar button.titlebutton.close,
   .titlebar button.titlebutton.close {
     color: #ffffff;
-    background-image: -gtk-gradient(radial, center center, 0, center center, 0.4545454545, to(#8fa876), to(transparent)); }
+    background-image: -gtk-gradient(radial, center center, 0, center center, 0.45, to(#8fa876), to(transparent)), -gtk-gradient(radial, center center, 0, center center, 0.5, to(#8fa876), to(transparent)); }
     headerbar button.titlebutton.close:hover,
     .titlebar button.titlebutton.close:hover {
-      background-image: -gtk-gradient(radial, center center, 0, center center, 0.4545454545, to(#9cb286), to(transparent)); }
+      background-image: -gtk-gradient(radial, center center, 0, center center, 0.45, to(#9cb286), to(transparent)), -gtk-gradient(radial, center center, 0, center center, 0.5, to(#9cb286), to(transparent)); }
     headerbar button.titlebutton.close:active,
     .titlebar button.titlebutton.close:active {
-      background-image: -gtk-gradient(radial, center center, 0, center center, 0.4545454545, to(#829e66), to(transparent)); }
+      background-image: -gtk-gradient(radial, center center, 0, center center, 0.45, to(#829e66), to(transparent)), -gtk-gradient(radial, center center, 0, center center, 0.5, to(#829e66), to(transparent)); }
     headerbar button.titlebutton.close:backdrop,
     .titlebar button.titlebutton.close:backdrop {
-      background-image: -gtk-gradient(radial, center center, 0, center center, 0.4545454545, to(#626262), to(transparent)); }
-  headerbar button.titlebutton.maximize:hover, headerbar button.titlebutton.minimize:hover,
+      background-image: -gtk-gradient(radial, center center, 0, center center, 0.45, to(#626262), to(transparent)), -gtk-gradient(radial, center center, 0, center center, 0.5, to(#626262), to(transparent)); }
+  headerbar button.titlebutton.maximize:hover, headerbar button.titlebutton.maximize:hover:backdrop, headerbar button.titlebutton.minimize:hover, headerbar button.titlebutton.minimize:hover:backdrop,
   .titlebar button.titlebutton.maximize:hover,
-  .titlebar button.titlebutton.minimize:hover {
-    background-image: -gtk-gradient(radial, center center, 0, center center, 0.4545454545, to(#4c4c4c), to(transparent)); }
-  headerbar button.titlebutton.maximize:active, headerbar button.titlebutton.minimize:active,
+  .titlebar button.titlebutton.maximize:hover:backdrop,
+  .titlebar button.titlebutton.minimize:hover,
+  .titlebar button.titlebutton.minimize:hover:backdrop {
+    background-image: -gtk-gradient(radial, center center, 0, center center, 0.45, to(#4c4c4c), to(transparent)), -gtk-gradient(radial, center center, 0, center center, 0.5, to(#2b2b2a), to(transparent)); }
+  headerbar button.titlebutton.maximize:active, headerbar button.titlebutton.maximize:active:backdrop, headerbar button.titlebutton.minimize:active, headerbar button.titlebutton.minimize:active:backdrop,
   .titlebar button.titlebutton.maximize:active,
-  .titlebar button.titlebutton.minimize:active {
-    background-image: -gtk-gradient(radial, center center, 0, center center, 0.4545454545, to(#949494), to(transparent)); }
+  .titlebar button.titlebutton.maximize:active:backdrop,
+  .titlebar button.titlebutton.minimize:active,
+  .titlebar button.titlebutton.minimize:active:backdrop {
+    background-image: -gtk-gradient(radial, center center, 0, center center, 0.45, to(#949494), to(transparent)), -gtk-gradient(radial, center center, 0, center center, 0.5, to(#2b2b2a), to(transparent)); }
   headerbar button.titlebutton.maximize:backdrop, headerbar button.titlebutton.minimize:backdrop,
   .titlebar button.titlebutton.maximize:backdrop,
   .titlebar button.titlebutton.minimize:backdrop {
@@ -4026,7 +4031,7 @@ window.background.lightdm .lightdm-combo {
 @define-color wm_icon_close_bg #f8f8f8;
 @define-color wm_button_hover_bg #4c4c4c;
 @define-color wm_button_active_bg #949494;
-@define-color wm_button_hover_border #262932;
+@define-color wm_button_hover_border #2b2b2a;
 @define-color wm_icon_bg #909090;
 @define-color wm_icon_unfocused_bg #555555;
 @define-color wm_icon_hover_bg #C4C7CC;
