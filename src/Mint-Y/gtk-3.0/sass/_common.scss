@@ -375,11 +375,6 @@ button {
     &:not(:disabled) label:disabled { color: inherit; opacity: 0.6; }
   }
 
-  //Webkitgtk workaround start
-  &:active { color: $fg_color; }
-  &:active:hover, &:checked { color: $selected_fg_color; }
-  //Webkitgtk workaround end
-
   @at-root %button_basic_flat,
   &.flat:disabled { @include button(undecorated); }
 
@@ -743,7 +738,7 @@ button:link, button:visited {
 spinbutton {
   &:drop(active) { box-shadow: none; }
 
-  button:active { color: $selected_fg_color; }
+  // button:active { color: $selected_fg_color; }
   &:disabled { color: $insensitive_fg_color; }
 
   &:not(.vertical) {
