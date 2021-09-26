@@ -46,6 +46,8 @@ $header_highlight: if($variant == 'light', #EEEEEE, #373737);
 
 $header_fg: $fg_color;
 
+$menu_selected_bg_color: if($variant == 'light', transparentize(black, 0.9), transparentize(white, 0.9));
+
 $dark_sidebar_bg: if($variant == 'light', saturate(darken($bg_color, 1%), 5%), mix($tint_color, #353535, 3%));
 $dark_sidebar_fg: $fg_color;
 $dark_sidebar_border: $borders_color;
