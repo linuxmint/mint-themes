@@ -605,7 +605,13 @@ modelbutton.flat {
   border-radius: 2px; }
   menuitem.button.flat:hover,
   modelbutton.flat:hover {
-    background-color: rgba(74, 74, 73, 0.987); }
+    background-color: rgba(255, 255, 255, 0.1); }
+  menuitem.button.flat:active, menuitem.button.flat:active arrow, menuitem.button.flat:selected, menuitem.button.flat:selected arrow,
+  modelbutton.flat:active,
+  modelbutton.flat:active arrow,
+  modelbutton.flat:selected,
+  modelbutton.flat:selected arrow {
+    background-color: rgba(255, 255, 255, 0.1); }
   menuitem.button.flat:checked,
   modelbutton.flat:checked {
     color: rgba(255, 255, 255, 0.87); }
@@ -1465,8 +1471,8 @@ menubar,
     border-width: 0; }
     menubar > menuitem:hover,
     .menubar > menuitem:hover {
-      background-color: #8fa876;
-      color: #ffffff; }
+      background-color: rgba(255, 255, 255, 0.1);
+      color: rgba(255, 255, 255, 0.87); }
     menubar > menuitem:disabled,
     .menubar > menuitem:disabled {
       color: rgba(255, 255, 255, 0.27);
@@ -1500,8 +1506,8 @@ menu,
     padding: 5px; }
     menu menuitem:hover,
     .menu menuitem:hover {
-      color: #ffffff;
-      background-color: #8fa876; }
+      color: rgba(255, 255, 255, 0.87);
+      background-color: rgba(255, 255, 255, 0.1); }
     menu menuitem:disabled,
     .menu menuitem:disabled {
       color: rgba(255, 255, 255, 0.42); }
@@ -1872,9 +1878,7 @@ treeview.check {
 .osd check {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-dark.png"), url("assets/checkbox-unchecked-dark@2.png")); }
 
-menuitem check:hover,
-.view check:selected,
-iconview check:selected,
+.view check:selected, iconview check:selected,
 treeview.check:selected,
 row:selected check,
 infobar check {
@@ -1888,9 +1892,7 @@ treeview.check:disabled {
 .osd check:disabled {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-insensitive-dark.png"), url("assets/checkbox-unchecked-insensitive-dark@2.png")); }
 
-menuitem check:disabled:hover,
-.view check:disabled:selected,
-iconview check:disabled:selected,
+.view check:disabled:selected, iconview check:disabled:selected,
 treeview.check:disabled:selected,
 row:selected check:disabled,
 infobar check:disabled {
@@ -1904,9 +1906,7 @@ treeview.check:indeterminate {
 .osd check:indeterminate {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-dark.png"), url("assets/checkbox-mixed-dark@2.png")); }
 
-menuitem check:indeterminate:hover,
-.view check:indeterminate:selected,
-iconview check:indeterminate:selected,
+.view check:indeterminate:selected, iconview check:indeterminate:selected,
 treeview.check:indeterminate:selected,
 row:selected check:indeterminate,
 infobar check:indeterminate {
@@ -1920,9 +1920,7 @@ treeview.check:indeterminate:disabled {
 .osd check:indeterminate:disabled {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-insensitive-dark.png"), url("assets/checkbox-mixed-insensitive-dark@2.png")); }
 
-menuitem check:indeterminate:disabled:hover,
-.view check:indeterminate:disabled:selected,
-iconview check:indeterminate:disabled:selected,
+.view check:indeterminate:disabled:selected, iconview check:indeterminate:disabled:selected,
 treeview.check:indeterminate:disabled:selected,
 row:selected check:indeterminate:disabled,
 infobar check:indeterminate:disabled {
@@ -1936,9 +1934,7 @@ treeview.check:checked {
 .osd check:checked {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-dark.png"), url("assets/checkbox-checked-dark@2.png")); }
 
-menuitem check:checked:hover,
-.view check:checked:selected,
-iconview check:checked:selected,
+.view check:checked:selected, iconview check:checked:selected,
 treeview.check:checked:selected,
 row:selected check:checked,
 infobar check:checked {
@@ -1952,9 +1948,7 @@ treeview.check:checked:disabled {
 .osd check:checked:disabled {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-insensitive-dark.png"), url("assets/checkbox-checked-insensitive-dark@2.png")); }
 
-menuitem check:checked:disabled:hover,
-.view check:checked:disabled:selected,
-iconview check:checked:disabled:selected,
+.view check:checked:disabled:selected, iconview check:checked:disabled:selected,
 treeview.check:checked:disabled:selected,
 row:selected check:checked:disabled,
 infobar check:checked:disabled {
@@ -1968,9 +1962,7 @@ treeview.radio {
 .osd radio {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-dark.png"), url("assets/radio-unchecked-dark@2.png")); }
 
-menuitem radio:hover,
-.view radio:selected,
-iconview radio:selected,
+.view radio:selected, iconview radio:selected,
 treeview.radio:selected,
 row:selected radio,
 infobar radio {
@@ -1984,9 +1976,7 @@ treeview.radio:disabled {
 .osd radio:disabled {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-insensitive-dark.png"), url("assets/radio-unchecked-insensitive-dark@2.png")); }
 
-menuitem radio:disabled:hover,
-.view radio:disabled:selected,
-iconview radio:disabled:selected,
+.view radio:disabled:selected, iconview radio:disabled:selected,
 treeview.radio:disabled:selected,
 row:selected radio:disabled,
 infobar radio:disabled {
@@ -2000,9 +1990,7 @@ treeview.radio:indeterminate {
 .osd radio:indeterminate {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-dark.png"), url("assets/radio-mixed-dark@2.png")); }
 
-menuitem radio:indeterminate:hover,
-.view radio:indeterminate:selected,
-iconview radio:indeterminate:selected,
+.view radio:indeterminate:selected, iconview radio:indeterminate:selected,
 treeview.radio:indeterminate:selected,
 row:selected radio:indeterminate,
 infobar radio:indeterminate {
@@ -2016,9 +2004,7 @@ treeview.radio:indeterminate:disabled {
 .osd radio:indeterminate:disabled {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-insensitive-dark.png"), url("assets/radio-mixed-insensitive-dark@2.png")); }
 
-menuitem radio:indeterminate:disabled:hover,
-.view radio:indeterminate:disabled:selected,
-iconview radio:indeterminate:disabled:selected,
+.view radio:indeterminate:disabled:selected, iconview radio:indeterminate:disabled:selected,
 treeview.radio:indeterminate:disabled:selected,
 row:selected radio:indeterminate:disabled,
 infobar radio:indeterminate:disabled {
@@ -2032,9 +2018,7 @@ treeview.radio:checked {
 .osd radio:checked {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-dark.png"), url("assets/radio-checked-dark@2.png")); }
 
-menuitem radio:checked:hover,
-.view radio:checked:selected,
-iconview radio:checked:selected,
+.view radio:checked:selected, iconview radio:checked:selected,
 treeview.radio:checked:selected,
 row:selected radio:checked,
 infobar radio:checked {
@@ -2048,9 +2032,7 @@ treeview.radio:checked:disabled {
 .osd radio:checked:disabled {
   -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-insensitive-dark.png"), url("assets/radio-checked-insensitive-dark@2.png")); }
 
-menuitem radio:checked:disabled:hover,
-.view radio:checked:disabled:selected,
-iconview radio:checked:disabled:selected,
+.view radio:checked:disabled:selected, iconview radio:checked:disabled:selected,
 treeview.radio:checked:disabled:selected,
 row:selected radio:checked:disabled,
 infobar radio:checked:disabled {
@@ -2964,11 +2946,7 @@ textview text:selected,
 .view text:selected:focus,
 textview text:selected:focus, .view text selection:focus, .view text selection,
 textview text selection:focus,
-textview text selection, iconview:selected, iconview:selected:focus, iconview text selection:focus, .view text selection, iconview text selection, flowbox flowboxchild:selected, entry selection:focus, entry selection, menuitem.button.flat:active, menuitem.button.flat:active arrow, menuitem.button.flat:selected, menuitem.button.flat:selected arrow,
-modelbutton.flat:active,
-modelbutton.flat:active arrow,
-modelbutton.flat:selected,
-modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:focus, row:selected {
+textview text selection, iconview:selected, iconview:selected:focus, iconview text selection:focus, .view text selection, iconview text selection, flowbox flowboxchild:selected, entry selection:focus, entry selection, treeview.view:selected, treeview.view:selected:focus, row:selected {
   background-color: #8fa876; }
   row:selected label, label:selected, .caja-navigation-window .view .cell:selected, .caja-navigation-window iconview .cell:selected, .caja-navigation-window .view .cell:selected:focus, .nemo-window .nemo-inactive-pane .view:selected:focus, .nemo-window .nemo-inactive-pane iconview:selected:focus, .nemo-window .nemo-inactive-pane .view:selected, .nemo-window .nemo-inactive-pane iconview:selected, .nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected, .nautilus-window placessidebar.sidebar list row.sidebar-row:selected.has-open-popup, .nautilus-window placessidebar.sidebar list row.sidebar-row:selected, .nautilus-window placessidebar.sidebar list row.sidebar-row:selected:hover, .nautilus-window placessidebar.sidebar list row.sidebar-row:active:hover,
   filechooser placessidebar.sidebar list row.sidebar-row:selected.has-open-popup,
@@ -2980,11 +2958,7 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
   .view text:selected:focus,
   textview text:selected:focus, .view text selection:focus, .view text selection,
   textview text selection:focus,
-  textview text selection, iconview:selected, iconview:selected:focus, iconview text selection:focus, .view text selection, iconview text selection, flowbox flowboxchild:selected, entry selection:focus, entry selection, menuitem.button.flat:active, menuitem.button.flat:active arrow, menuitem.button.flat:selected, menuitem.button.flat:selected arrow,
-  modelbutton.flat:active,
-  modelbutton.flat:active arrow,
-  modelbutton.flat:selected,
-  modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:focus, row:selected {
+  textview text selection, iconview:selected, iconview:selected:focus, iconview text selection:focus, .view text selection, iconview text selection, flowbox flowboxchild:selected, entry selection:focus, entry selection, treeview.view:selected, treeview.view:selected:focus, row:selected {
     color: #ffffff; }
     label:disabled selection, row:selected label:disabled, label:disabled:selected, .caja-navigation-window .view .cell:disabled:selected, .caja-navigation-window iconview .cell:disabled:selected, .nemo-window .nemo-inactive-pane .view:disabled:selected:focus, .nemo-window .nemo-inactive-pane iconview:disabled:selected:focus, .nemo-window .nemo-inactive-pane .view:disabled:selected, .nemo-window .nemo-inactive-pane iconview:disabled:selected, .nemo-window .nemo-window-pane widget.entry:disabled:selected, .nautilus-window placessidebar.sidebar list row.sidebar-row:disabled:selected, .nautilus-window placessidebar.sidebar list row.sidebar-row:disabled:active:hover,
     filechooser placessidebar.sidebar list row.sidebar-row.has-open-popup:disabled:selected,
@@ -2995,11 +2969,7 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
     textview text:disabled:selected,
     textview text:disabled:selected:focus, .view text selection:disabled,
     textview text selection:disabled:focus,
-    textview text selection:disabled, iconview:disabled:selected, iconview:disabled:selected:focus, iconview text selection:disabled:focus, iconview text selection:disabled, flowbox flowboxchild:disabled:selected, entry selection:disabled, menuitem.button.flat:disabled:active, menuitem.button.flat:active arrow:disabled, menuitem.button.flat:disabled:selected, menuitem.button.flat:selected arrow:disabled,
-    modelbutton.flat:disabled:active,
-    modelbutton.flat:active arrow:disabled,
-    modelbutton.flat:disabled:selected,
-    modelbutton.flat:selected arrow:disabled, row:disabled:selected {
+    textview text selection:disabled, iconview:disabled:selected, iconview:disabled:selected:focus, iconview text selection:disabled:focus, iconview text selection:disabled, flowbox flowboxchild:disabled:selected, entry selection:disabled, row:disabled:selected {
       color: #c7d4bb; }
 
 GeditNotebook.notebook tab.reorderable-page.top:active, GeditNotebook.notebook tab.reorderable-page.top.active-page, GeditNotebook.notebook tab.reorderable-page.top.active-page:hover, GeditNotebook.notebook tab.top:active, GeditNotebook.notebook tab.top.active-page, GeditNotebook.notebook tab.top.active-page:hover,
