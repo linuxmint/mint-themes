@@ -273,7 +273,7 @@ button {
     -gtk-icon-effect: highlight; }
   button:active, button:checked {
     color: rgba(255, 255, 255, 0.87);
-    outline-color: rgba(255, 255, 255, 0.3);
+    outline-color: rgba(255, 255, 255, 0.17);
     border-color: #111111;
     background-color: rgba(0, 0, 0, 0.15);
     background-clip: padding-box;
@@ -509,7 +509,7 @@ button {
     background-color: #545453; }
   .inline-toolbar toolbutton > button:active, .inline-toolbar toolbutton > button:checked {
     color: rgba(255, 255, 255, 0.87);
-    outline-color: rgba(255, 255, 255, 0.3);
+    outline-color: rgba(255, 255, 255, 0.17);
     border-color: #111111;
     background-color: rgba(0, 0, 0, 0.15); }
   .inline-toolbar toolbutton > button:disabled {
@@ -1012,7 +1012,7 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
   .primary-toolbar button:active, headerbar button:active,
   .primary-toolbar button:checked, headerbar button:checked {
     color: rgba(255, 255, 255, 0.87);
-    outline-color: rgba(255, 255, 255, 0.3);
+    outline-color: rgba(255, 255, 255, 0.17);
     border-color: rgba(14, 14, 14, 0.4);
     background-color: rgba(0, 0, 0, 0.15);
     background-clip: padding-box; }
@@ -1089,7 +1089,7 @@ headerbar .linked:not(.vertical).path-bar > button {
   .primary-toolbar .inline-toolbar .linked:not(.vertical).path-bar > button:checked,
   headerbar .linked:not(.vertical).path-bar > button:checked {
     color: rgba(255, 255, 255, 0.87);
-    outline-color: rgba(255, 255, 255, 0.3);
+    outline-color: rgba(255, 255, 255, 0.17);
     border-color: rgba(14, 14, 14, 0.4);
     background-color: rgba(0, 0, 0, 0.15); }
   .primary-toolbar toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:disabled,
@@ -1125,7 +1125,7 @@ headerbar .linked:not(.vertical).path-bar > button {
     .primary-toolbar .linked:not(.vertical) entry + button:last-child:active, headerbar .linked:not(.vertical) entry + button:last-child:active,
     .primary-toolbar .linked:not(.vertical) entry + button:last-child:checked, headerbar .linked:not(.vertical) entry + button:last-child:checked {
       color: rgba(255, 255, 255, 0.87);
-      outline-color: rgba(255, 255, 255, 0.3);
+      outline-color: rgba(255, 255, 255, 0.17);
       border-color: rgba(14, 14, 14, 0.4);
       background-color: rgba(0, 0, 0, 0.15); }
     
@@ -2911,7 +2911,7 @@ headerbar button.titlebutton,
   .titlebar button.titlebutton:active,
   .titlebar button.titlebutton:checked {
     color: rgba(255, 255, 255, 0.87);
-    outline-color: rgba(255, 255, 255, 0.3);
+    outline-color: rgba(255, 255, 255, 0.17);
     border-color: rgba(14, 14, 14, 0.4);
     background-color: rgba(0, 0, 0, 0.15); }
   headerbar button.titlebutton.close, headerbar button.titlebutton.maximize, headerbar button.titlebutton.minimize,
@@ -3150,7 +3150,7 @@ filechooser placessidebar.sidebar list {
       .nautilus-window placessidebar.sidebar list row.sidebar-row:not(:selected) button.sidebar-button:active,
       filechooser placessidebar.sidebar list row.sidebar-row:not(:selected) button.sidebar-button:active {
         color: rgba(255, 255, 255, 0.87);
-        outline-color: rgba(255, 255, 255, 0.3);
+        outline-color: rgba(255, 255, 255, 0.17);
         border-color: #111111;
         background-color: rgba(0, 0, 0, 0.15); }
       .nautilus-window placessidebar.sidebar list row.sidebar-row:not(:selected) button.sidebar-button:not(:hover):not(:active) > image,
@@ -3852,7 +3852,7 @@ filechooser placessidebar.sidebar list scrollbar, .nemo-window .sidebar scrollba
     background-color: #545453; }
   #content_frame button:active, #content_frame button:checked {
     color: rgba(255, 255, 255, 0.87);
-    outline-color: rgba(255, 255, 255, 0.3);
+    outline-color: rgba(255, 255, 255, 0.17);
     border-color: #111111;
     background-color: rgba(0, 0, 0, 0.15); }
   #content_frame button:disabled {
