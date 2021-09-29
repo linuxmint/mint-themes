@@ -3744,29 +3744,6 @@ EvWindow .content-view .view:focus:selected {
   background-color: #8fa876;
   color: #ffffff; }
 
-.nautilus-window placessidebar.sidebar list scrollbar,
-filechooser placessidebar.sidebar list scrollbar, .nemo-window .sidebar scrollbar {
-  border-color: #2b2b2a; }
-  .nautilus-window placessidebar.sidebar list scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider,
-  filechooser placessidebar.sidebar list scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider, .nemo-window .sidebar scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider {
-    background-color: rgba(255, 255, 255, 0.87);
-    border: 1px solid rgba(0, 0, 0, 0.3); }
-  .nautilus-window placessidebar.sidebar list scrollbar slider,
-  filechooser placessidebar.sidebar list scrollbar slider, .nemo-window .sidebar scrollbar slider {
-    background-color: rgba(255, 255, 255, 0.57); }
-    .nautilus-window placessidebar.sidebar list scrollbar slider:hover,
-    filechooser placessidebar.sidebar list scrollbar slider:hover, .nemo-window .sidebar scrollbar slider:hover {
-      background-color: rgba(255, 255, 255, 0.87); }
-    .nautilus-window placessidebar.sidebar list scrollbar slider:hover:active,
-    filechooser placessidebar.sidebar list scrollbar slider:hover:active, .nemo-window .sidebar scrollbar slider:hover:active {
-      background-color: #8fa876; }
-    .nautilus-window placessidebar.sidebar list scrollbar slider:disabled,
-    filechooser placessidebar.sidebar list scrollbar slider:disabled, .nemo-window .sidebar scrollbar slider:disabled {
-      background-color: transparent; }
-  .nautilus-window placessidebar.sidebar list scrollbar trough,
-  filechooser placessidebar.sidebar list scrollbar trough, .nemo-window .sidebar scrollbar trough {
-    background-color: #2b2b2a; }
-
 .thunar .sidebar .view, .thunar .sidebar iconview {
   background-color: #383837;
   color: rgba(255, 255, 255, 0.87); }
