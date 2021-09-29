@@ -298,17 +298,11 @@
 //
 // Titlebar circular buttons
 //
-@mixin draw_circle($c, $bc) {
-
+@mixin draw_circle($c) {
   background-image: -gtk-gradient(radial,
                                   center center, 0,
-                                  center center, 0.45,
-                                  to($c),
-                                  to(transparent)),
-                    -gtk-gradient(radial,
-                                  center center, 0,
                                   center center, 0.5,
-                                  to($bc),
+                                  to($c),
                                   to(transparent));
 }
 
