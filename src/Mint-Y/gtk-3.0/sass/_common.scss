@@ -3154,22 +3154,22 @@ headerbar,
 
     &.close {
       color: $selected_fg_color;
-      @include draw_circle($selected_bg_color, $selected_bg_color);
+      @include draw_circle($selected_bg_color);
 
-      &:hover { @include draw-circle(lighten($selected_bg_color, 5%), lighten($selected_bg_color, 5%)); }
-      &:active { @include draw-circle(darken($selected_bg_color, 5%), darken($selected_bg_color, 5%)); }
-      &:backdrop { @include draw-circle($_wm_backdrop_icon_color, $_wm_backdrop_icon_color); }
+      &:hover { @include draw-circle(lighten($selected_bg_color, 5%)); }
+      &:active { @include draw-circle(darken($selected_bg_color, 5%)); }
+      &:backdrop { @include draw-circle($_wm_backdrop_icon_color); }
     }
 
     &.maximize,
     &.minimize {
       &:hover,
       &:hover:backdrop {
-        @include draw-circle($wm_button_hover_bg, $borders_color);
+        @include draw-circle($wm_button_hover_bg);
       }
       &:active,
       &:active:backdrop {
-        @include draw-circle($wm_button_active_bg, $borders_color);
+        @include draw-circle($wm_button_active_bg);
       }
       &:backdrop {
         color: $_wm_backdrop_icon_color;
