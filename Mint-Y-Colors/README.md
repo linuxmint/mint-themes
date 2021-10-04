@@ -1,4 +1,4 @@
-![Mint-Y-Variations-compare-OLDvsNEW](Mint-Y-Variations-compare-OLD.png)
+![Mint-Y-Variations](Mint-Y-Variations.png)
 
 ### A new approach to please everyone
 There are 16.7 million color possibilities. We can't make them all. We want to offer 11 or 12 of them. With the dark and darker variants, that makes 33 or 36.
