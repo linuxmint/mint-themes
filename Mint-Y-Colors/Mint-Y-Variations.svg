@@ -5,9 +5,9 @@
    viewBox="0 0 1920 1080"
    version="1.1"
    id="svg8"
-   inkscape:version="1.1 (1:1.1+202105261517+ce6663b3b7)"
-   sodipodi:docname="Mint-Y-Variations.svg"
-   inkscape:export-filename="/home/sebastien/mint-yz-theme/Mint-Y-Colors/Mint-Y-Variations.png"
+   inkscape:version="1.1.1 (1:1.1+202109281949+c3084ef5ed)"
+   sodipodi:docname="Mint-Y-Variations-2.svg"
+   inkscape:export-filename="/home/sebastien/mint-yz-theme/Mint-Y-Colors/Mint-Y-Variations-2.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -27,9 +27,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.6875"
-     inkscape:cx="960"
-     inkscape:cy="540.36364"
+     inkscape:zoom="0.80833333"
+     inkscape:cx="692.16495"
+     inkscape:cy="540"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -73,7 +73,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -619,20 +618,22 @@
        preserveAspectRatio="none"
        inkscape:svg-dpi="96"
        width="780"
-       height="580"
-       xlink:href="Mint-Y-Variations-src.svg"
+       height="690"
+       xlink:href="Mint-Y-Variations-src-2.svg"
        id="image1316"
        x="90"
-       y="291.79999" />
+       y="236.79999"
+       style="stroke-width:0.916831" />
     <image
        preserveAspectRatio="none"
        inkscape:svg-dpi="96"
        width="780"
-       height="580"
-       xlink:href="Mint-Y-Variations-src.svg"
+       height="690"
+       xlink:href="Mint-Y-Variations-src-2.svg"
        id="image1804"
        x="1050"
-       y="291.79999" />
+       y="236.79999"
+       style="stroke-width:0.916831" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -644,9 +645,9 @@
        style="fill:#000000;fill-opacity:0.05;stroke-width:0"
        id="rect920"
        width="780"
-       height="580"
+       height="690"
        x="1050"
-       y="200" />
+       y="145" />
   </g>
   <g
      inkscape:groupmode="layer"
