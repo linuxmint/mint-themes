@@ -6,7 +6,7 @@
    viewBox="0 0 780 640"
    height="640"
    width="780"
-   sodipodi:docname="Mint-Y-Variations-src.svg"
+   sodipodi:docname="Mint-Y-Variations-src-2.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -343,7 +343,7 @@
          height="180"
          width="180"
          id="rect8429"
-         style="fill:#f92031;fill-opacity:1;stroke-width:0" />
+         style="fill:#ff1a2c;fill-opacity:1;stroke-width:0" />
       <text
          id="text8435"
          y="556.51202"
@@ -359,7 +359,7 @@
            y="581.51202"
            x="19.352005"
            sodipodi:role="line"
-           id="tspan8433">355,95,55 4.0/4.3</tspan></text>
+           id="tspan8433">355,100,55 3.9/4.3</tspan></text>
     </g>
     <g
        id="g962">
