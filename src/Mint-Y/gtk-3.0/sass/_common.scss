@@ -1036,7 +1036,7 @@ headerbar,
 }
 
 .titlebar {
-  border-radius: 12px 12px 0 0;
+  border-radius: 8px 8px 0 0;
 }
 
 headerbar {
@@ -1051,7 +1051,7 @@ headerbar {
   separator:first-child + &,
   &:first-child {
     &, &:backdrop {
-      border-top-left-radius: 12px;
+      border-top-left-radius: 8px;
 
       .maximized &,
       .tiled & { border-radius: 0; }
@@ -1060,7 +1060,7 @@ headerbar {
 
   &:last-child {
     &, &:backdrop {
-      border-top-right-radius: 12px;
+      border-top-right-radius: 8px;
 
       .maximized &,
       .tiled & { border-radius: 0; }
@@ -3049,7 +3049,7 @@ button.circular-button,
 // Window Decorations
 //
 decoration {
-  border-radius: 12px 12px 0 0;
+  border-radius: 8px 8px 0 0;
   border-width: 0px;
 
   $_wm_border: if($variant=='light', transparentize(black, 0.80), transparentize(black, 0.65));
