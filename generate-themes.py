@@ -76,7 +76,7 @@ os.chdir(curdir)
 
 # Mint-Y color variations
 for color in y_hex_colors1.keys():
-    for variant in ["", "-Dark", "-Darker"]:
+    for variant in ["", "-Dark"]:
         original_name = "Mint-Y%s" % variant
         path = os.path.join("src/Mint-Y/variations/%s" % color)
         if os.path.isdir(path):
@@ -92,11 +92,7 @@ for color in y_hex_colors1.keys():
                 change_value(key, "%s-%s" % (original_name, color), theme_index)
 
             for key in ["IconTheme"]:
-                change_value(key, "Mint-Y-%s" % color, theme_index)
-
-            for key in ["MetacityTheme"]:
-                metacity_variant = original_name.replace("Darker", "Dark")
-                change_value(key, "%s-%s" % (metacity_variant, color), theme_index)
+                change_value(key, "%s-%s" % (original_name, color), theme_index)
 
             # Regenerate GTK3 sass
             os.system("cp -R src/Mint-Y/gtk-3.0/sass %s/gtk-3.0/" % theme)
@@ -105,28 +101,22 @@ for color in y_hex_colors1.keys():
             if (variant == "-Dark"):
                 os.system("cp sass/gtk-dark.scss sass/gtk.scss")
                 os.system("sassc ./sass/gtk.scss gtk.css")
-            elif (variant == "-Darker"):
-                os.system("cp sass/gtk-darker.scss sass/gtk.scss")
-                os.system("sassc ./sass/gtk.scss gtk.css")
-                os.system("sassc ./sass/gtk-dark.scss gtk-dark.css")
             else:
-                os.system("rm sass/gtk-dark.scss sass/gtk-darker.scss")
+                os.system("sassc ./sass/gtk-dark.scss gtk-dark.css")
                 os.system("sassc ./sass/gtk.scss gtk.css")
 
             os.system("rm -rf sass .sass-cache")
             os.chdir(curdir)
 
             # Regenerate Cinnamon sass
-            if (variant != "-Darker"):
-                # Darker variants have no cinnamon style
-                os.system("cp -R src/Mint-Y/cinnamon/sass %s/cinnamon/" % theme)
-                y_colorize_directory("%s/cinnamon/sass" % theme, color)
-                os.chdir("%s/cinnamon" % theme)
-                if (variant == "-Dark"):
-                    os.system("cp sass/cinnamon-dark.scss sass/cinnamon.scss")
-                os.system("sassc ./sass/cinnamon.scss cinnamon.css")
-                os.system("rm -rf sass .sass-cache")
-                os.chdir(curdir)
+            os.system("cp -R src/Mint-Y/cinnamon/sass %s/cinnamon/" % theme)
+            y_colorize_directory("%s/cinnamon/sass" % theme, color)
+            os.chdir("%s/cinnamon" % theme)
+            if (variant == "-Dark"):
+                os.system("cp sass/cinnamon-dark.scss sass/cinnamon.scss")
+            os.system("sassc ./sass/cinnamon.scss cinnamon.css")
+            os.system("rm -rf sass .sass-cache")
+            os.chdir(curdir)
 
             # Accent color
             files = []
@@ -135,8 +125,6 @@ for color in y_hex_colors1.keys():
             files.append(os.path.join(theme, "gtk-2.0", "panel.rc"))
             files.append(os.path.join(theme, "gtk-2.0", "apps.rc"))
             files.append(os.path.join(theme, "gtk-2.0", "menubar-toolbar", "gtkrc"))
-            files.append(os.path.join(theme, "metacity-1", "metacity-theme-2.xml"))
-            files.append(os.path.join(theme, "metacity-1", "metacity-theme-3.xml"))
             for file in files:
                 if os.path.exists(file):
                     for accent in Y_HEX_ACCENT1:

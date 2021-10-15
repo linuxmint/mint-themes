@@ -532,19 +532,19 @@ StScrollBar {
   }
 
   &-top {
-    box-shadow: 0 1px darken($panel_bg, 6%);
+    box-shadow: 0 1px $borders_color;
   }
 
   &-bottom {
-    box-shadow: 0 -1px darken($panel_bg, 6%);
+    box-shadow: 0 -1px $borders_color;
   }
 
   &-left {
-    box-shadow: 1px 0 darken($panel_bg, 6%);
+    box-shadow: 1px 0 $borders_color;
   }
 
   &-right {
-    box-shadow: -1px 0 darken($panel_bg, 6%);
+    box-shadow: -1px 0 $borders_color;
   }
 
   &-dummy {
@@ -558,7 +558,7 @@ StScrollBar {
     -natural-hpadding: 3px;
     -minimum-hpadding: 3px;
     font-weight: bold;
-    color: white;
+    color: $panel_fg;
 
     &:hover {}
   }
@@ -1050,6 +1050,7 @@ StScrollBar {
   }
   &-entry {
     width: 21em;
+    height: 1.2em;
     padding: 7px;
     border-radius: 3px;
     caret-color: $osd_fg_color;
@@ -1388,7 +1389,7 @@ StScrollBar {
     padding-left: 8px;
     padding-right: 8px;
     transition-duration: 100;
-    color: transparentize($selected_fg_color, 0.4);
+    color: transparentize($panel_fg, 0.2);
 
     &.top,
     &.bottom {
@@ -1415,16 +1416,17 @@ StScrollBar {
 
     &:hover,
     &:groupFocus {
-      color: $selected_fg_color;
-      background-color: transparentize($selected_fg_color, 0.9);
+      color: $panel_fg;
+      background-color: transparentize($panel_fg, 0.8);
     }
 
     &:active,
     &:checked,
     &:focus,
     &:running {
-      color: $selected_fg_color;
+      color: $panel_fg;
       border-color: $selected_bg_color;
+      background-color: transparentize($panel_fg, 0.8);
     }
 
     & .progress {
@@ -1469,7 +1471,7 @@ StScrollBar {
     padding-left: 8px;
     padding-right: 8px;
     transition-duration: 100;
-    color: transparentize($selected_fg_color, 0.4);
+    color: transparentize($panel_fg, 0.2);
 
     &.top,
     &.bottom {
@@ -1496,13 +1498,13 @@ StScrollBar {
 
     &:hover,
     &:focus {
-      color: $selected_fg_color;
-      background-color: transparentize(white, 0.7);
+      color: $panel_fg;
+      background-color: transparentize($panel_fg, 0.7);
     }
 
     &:active,
     &:checked {
-      color: $selected_fg_color;
+      color: $panel_fg;
       border-color: $selected_bg_color;
     }
 
@@ -1867,8 +1869,6 @@ StScrollBar {
     &:checked {
       color: $selected_fg_color;
       background-color: $selected_bg_color;
-
-      &-label { color: $selected_fg_color; }
     }
 
     &:highlight {
@@ -1884,8 +1884,8 @@ StScrollBar {
 
     &:hover,
     &:checked,
-    .applet-box:hover > &,
-    .applet-box:checked > & {
+    .applet-box:hover &,
+    .applet-box:checked & {
       color: $selected_fg_color;
       text-shadow: none;
     }

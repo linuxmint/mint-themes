@@ -1,3 +1,10 @@
+mint-themes (1.8.8) uma; urgency=medium
+
+  [ Archisman Panigrahi ]
+  * use _libhandy.scss from Arc theme (#316)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 03 Jun 2021 14:25:57 +0100
+
 mint-themes (1.8.7) ulyssa; urgency=medium
 
   [ steve ]

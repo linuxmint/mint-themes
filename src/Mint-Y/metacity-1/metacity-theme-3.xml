@@ -1,24 +1,23 @@
 <?xml version="1.0"?>
 <metacity_theme>
 <info>
-	<name>Arc</name>
-	<author>horst3180</author>
-	<copyright>horst3180</copyright>
-	<date>2015</date>
-	<description>Arc Metacity theme</description>
+	<name>Mint-Y</name>
+	<author>Linux Mint</author>
+	<copyright>Linux Mint</copyright>
+	<date>2021</date>
+	<description>Metacity theme based on Arc by horst3180</description>
 </info>
 
 <!-- meaningfull constants -->
 
-<constant name="C_title_focused" value="rgba(64,64,64,1.0)" />
-<constant name="C_title_unfocused" value="rgba(157,157,157,1.0)" />
+<constant name="C_title_focused" value="gtk:custom(wm_title,#404040)" />
+<constant name="C_title_unfocused" value="gtk:custom(wm_title_unfocused,#9d9d9d)" />
 
-<constant name="C_wm_bg_focused" value="rgba(217,217,217,1.0)" />
-<constant name="C_wm_bg_unfocused" value="rgba(217,217,217,1.0)" />
+<constant name="C_wm_bg" value="gtk:custom(wm_bg,#d9d9d9)" />
+<constant name="C_wm_bg_unfocused" value="gtk:custom(wm_bg_unfocused,#d9d9d9)" />
 
-<constant name="C_wm_border" value="rgba(208,208,208,1.0)" />
-
-<constant name="C_wm_highlight" value="rgba(238,238,238,1.0)" />
+<constant name="C_wm_border" value="gtk:custom(wm_border,#bababa)" />
+<constant name="C_wm_highlight" value="gtk:custom(wm_highlight,#eeeeee)" />
 
 <!-- window button colors -->
 
@@ -27,18 +26,18 @@
 <constant name="C_button_close_bg_hover" value="shade/gtk:custom(selected_bg_color,#92b372)/1.14" />
 <constant name="C_button_close_bg_active" value="shade/gtk:custom(selected_bg_color,#92b372)/0.8" />
 
-<constant name="C_icon_close_bg" value="#F8F8F8" />
+<constant name="C_icon_close_bg" value="gtk:custom(wm_icon_close_bg,#F8F8F8)" />
 
 <!-- minimize, maximize -->
-<constant name="C_button_bg_hover" value="#ffffff" />
-<constant name="C_button_bg_active" value="#909090" />
+<constant name="C_button_bg_hover" value="gtk:custom(wm_button_hover_bg,#fdfdfd)" />
+<constant name="C_button_bg_active" value="gtk:custom(wm_button_active_bg,#909090)" />
 
-<constant name="C_button_border_hover" value="#D1D1D1" />
+<constant name="C_button_border_hover" value="gtk:custom(wm_button_hover_border,#d1d1d1)" />
 
-<constant name="C_icon_bg_focused" value="#404040" />
-<constant name="C_icon_bg_unfocused" value="#B6B6B6" />
-<constant name="C_icon_bg_hover" value="#404040" />
-<constant name="C_icon_bg_active" value="#ffffff" />
+<constant name="C_icon_bg_focused" value="gtk:custom(wm_icon_bg,#404040)" />
+<constant name="C_icon_bg_unfocused" value="gtk:custom(wm_icon_unfocused_bg,#b6b6b6)" />
+<constant name="C_icon_bg_hover" value="gtk:custom(wm_icon_hover_bg,#404040)" />
+<constant name="C_icon_bg_active" value="gtk:custom(wm_icon_active_bg,#ffffff)" />
 
 <!-- geometries -->
 
@@ -52,7 +51,7 @@
 	<border name="title_border" left="10" right="10" top="3" bottom="3"/>
 	<border name="button_border" left="0" right="0" top="0" bottom="0"/>
   <distance name="button_width" value="30"/>
-  <distance name="button_height" value="24"/>
+  <distance name="button_height" value="28"/>
 </frame_geometry>
 
 <frame_geometry name="normal_unfocused" title_scale="medium" rounded_top_left="1" rounded_top_right="1" parent="normal">
@@ -148,7 +147,7 @@
 	<!-- window decorations -->
 
 <draw_ops name="entire_background_focused">
-	<rectangle color="C_wm_bg_focused" x="0" y="0" width="width" height="height" filled="true" />
+	<rectangle color="C_wm_bg" x="0" y="0" width="width" height="height" filled="true" />
 </draw_ops>
 
 <draw_ops name="entire_background_unfocused">
@@ -156,12 +155,12 @@
 </draw_ops>
 
 <draw_ops name="titlebar_focused">
-	<rectangle color="C_wm_bg_focused" x="0" y="0" width="width" height="height" filled="true" />
+	<rectangle color="C_wm_bg" x="0" y="0" width="width" height="height" filled="true" />
 	<rectangle color="C_wm_highlight" x="0" y="0" width="width" height="1" filled="true" />
 </draw_ops>
 
 <draw_ops name="titlebar_unfocused">
-	<rectangle color="C_wm_bg_unfocused" x="0" y="0" width="width" height="height" filled="true" />
+	<rectangle color="C_wm_bg" x="0" y="0" width="width" height="height" filled="true" />
 	<rectangle color="C_wm_highlight" x="0" y="0" width="width" height="1" filled="true" />
 </draw_ops>
 
@@ -178,7 +177,7 @@
 </draw_ops>
 
 <draw_ops name="border_focused">
-	<rectangle color="C_wm_bg_focused" x="0" y="0" width="width" height="height" filled="false" />
+	<rectangle color="C_wm_bg" x="0" y="0" width="width" height="height" filled="false" />
 </draw_ops>
 
 <draw_ops name="border_unfocused">
@@ -243,7 +242,6 @@
 
 <draw_ops name="maximize_focused_prelight">
 	<image filename="button-bg.svg" colorize="C_button_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
-	<image filename="button-border.svg" colorize="C_button_border_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
 	<image filename="max-icon.svg" colorize="C_icon_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
 </draw_ops>
 
@@ -253,13 +251,40 @@
 
 <draw_ops name="maximize_unfocused_prelight">
 	<image filename="button-bg.svg" colorize="C_button_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
-	<image filename="button-border.svg" colorize="C_button_border_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
 	<image filename="max-icon.svg" colorize="C_icon_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
 </draw_ops>
 
 <draw_ops name="maximize_unfocused_pressed">
 	<image filename="button-bg.svg" colorize="C_button_bg_active" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
 	<image filename="max-icon.svg" colorize="C_icon_bg_active" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+</draw_ops>
+
+<!--unmaximize-->
+<draw_ops name="unmaximize_focused">
+    <image filename="restore-icon.svg" colorize="C_icon_bg_focused" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+</draw_ops>
+
+<draw_ops name="unmaximize_focused_pressed">
+    <image filename="button-bg.svg" colorize="C_button_bg_active" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+    <image filename="restore-icon.svg" colorize="C_icon_bg_active" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+</draw_ops>
+
+<draw_ops name="unmaximize_focused_prelight">
+    <image filename="button-bg.svg" colorize="C_button_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+    <image filename="restore-icon.svg" colorize="C_icon_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+</draw_ops>
+
+<draw_ops name="unmaximize_unfocused">
+    <image filename="restore-icon.svg" colorize="C_icon_bg_unfocused" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+</draw_ops>
+
+<draw_ops name="unmaximize_unfocused_prelight">
+    <image filename="button-bg.svg" colorize="C_button_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+    <image filename="restore-icon.svg" colorize="C_icon_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
+</draw_ops>
+
+<draw_ops name="unmaximize_unfocused_pressed">
+    <image filename="restore-icon.svg" colorize="C_icon_bg_active" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
 </draw_ops>
 
 <!--minimize-->
@@ -274,7 +299,6 @@
 
 <draw_ops name="minimize_focused_prelight">
 	<image filename="button-bg.svg" colorize="C_button_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
-	<image filename="button-border.svg" colorize="C_button_border_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
 	<image filename="min-icon.svg" colorize="C_icon_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
 </draw_ops>
 
@@ -284,7 +308,6 @@
 
 <draw_ops name="minimize_unfocused_prelight">
 	<image filename="button-bg.svg" colorize="C_button_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
-	<image filename="button-border.svg" colorize="C_button_border_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
 	<image filename="min-icon.svg" colorize="C_icon_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
 </draw_ops>
 
@@ -305,7 +328,6 @@
 
 <draw_ops name="stick_focused_prelight">
 	<image filename="button-bg.svg" colorize="C_button_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
-	<image filename="button-border.svg" colorize="C_button_border_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
 	<image filename="stick-icon.svg" colorize="C_icon_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
 </draw_ops>
 
@@ -315,7 +337,6 @@
 
 <draw_ops name="stick_unfocused_prelight">
 	<image filename="button-bg.svg" colorize="C_button_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
-	<image filename="button-border.svg" colorize="C_button_border_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
 	<image filename="stick-icon.svg" colorize="C_icon_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
 </draw_ops>
 
@@ -336,7 +357,6 @@
 
 <draw_ops name="unstick_focused_prelight">
 	<image filename="button-bg.svg" colorize="C_button_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
-	<image filename="button-border.svg" colorize="C_button_border_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
 	<image filename="unstick-icon.svg" colorize="C_icon_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
 </draw_ops>
 
@@ -346,7 +366,6 @@
 
 <draw_ops name="unstick_unfocused_prelight">
 	<image filename="button-bg.svg" colorize="C_button_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
-	<image filename="button-border.svg" colorize="C_button_border_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
 	<image filename="unstick-icon.svg" colorize="C_icon_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
 </draw_ops>
 
@@ -367,7 +386,6 @@
 
 <draw_ops name="shade_focused_prelight">
 	<image filename="button-bg.svg" colorize="C_button_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
-	<image filename="button-border.svg" colorize="C_button_border_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
 	<image filename="shade-icon.svg" colorize="C_icon_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
 </draw_ops>
 
@@ -377,7 +395,6 @@
 
 <draw_ops name="shade_unfocused_prelight">
 	<image filename="button-bg.svg" colorize="C_button_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
-	<image filename="button-border.svg" colorize="C_button_border_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
 	<image filename="shade-icon.svg" colorize="C_icon_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
 </draw_ops>
 
@@ -398,7 +415,6 @@
 
 <draw_ops name="unshade_focused_prelight">
 	<image filename="button-bg.svg" colorize="C_button_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
-	<image filename="button-border.svg" colorize="C_button_border_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
 	<image filename="unshade-icon.svg" colorize="C_icon_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
 </draw_ops>
 
@@ -408,7 +424,6 @@
 
 <draw_ops name="unshade_unfocused_prelight">
 	<image filename="button-bg.svg" colorize="C_button_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
-	<image filename="button-border.svg" colorize="C_button_border_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
 	<image filename="unshade-icon.svg" colorize="C_icon_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
 </draw_ops>
 
@@ -429,7 +444,6 @@
 
 <draw_ops name="menu_focused_prelight">
 	<image filename="button-bg.svg" colorize="C_button_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
-	<image filename="button-border.svg" colorize="C_button_border_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
 	<image filename="menu-icon.svg" colorize="C_icon_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
 </draw_ops>
 
@@ -439,7 +453,6 @@
 
 <draw_ops name="menu_unfocused_prelight">
 	<image filename="button-bg.svg" colorize="C_button_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
-	<image filename="button-border.svg" colorize="C_button_border_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
 	<image filename="menu-icon.svg" colorize="C_icon_bg_hover" x="(width-object_width)/2" y="(height-object_height)/2" width="object_width" height="object_height"/>
 </draw_ops>
 
@@ -527,9 +540,9 @@
 	<button function="close" state="normal" draw_ops="close_focused" />
 	<button function="close" state="pressed" draw_ops="close_focused_pressed" />
 	<button function="close" state="prelight" draw_ops="close_focused_prelight" />
-	<button function="maximize" state="normal" draw_ops="maximize_focused" />
-	<button function="maximize" state="pressed" draw_ops="maximize_focused_pressed" />
-	<button function="maximize" state="prelight" draw_ops="maximize_focused_prelight" />
+	<button function="maximize" state="normal" draw_ops="unmaximize_focused" />
+    <button function="maximize" state="pressed" draw_ops="unmaximize_focused_pressed" />
+    <button function="maximize" state="prelight" draw_ops="unmaximize_focused_prelight" />
 	<button function="minimize" state="normal" draw_ops="minimize_focused" />
 	<button function="minimize" state="pressed" draw_ops="minimize_focused_pressed" />
 	<button function="minimize" state="prelight" draw_ops="minimize_focused_prelight" />
@@ -562,9 +575,9 @@
 	<button function="close" state="normal" draw_ops="close_unfocused"/>
 	<button function="close" state="prelight" draw_ops="close_unfocused_prelight"/>
 	<button function="close" state="pressed" draw_ops="close_unfocused_pressed"/>
-	<button function="maximize" state="normal" draw_ops="maximize_unfocused"/>
-	<button function="maximize" state="prelight" draw_ops="maximize_unfocused_prelight"/>
-	<button function="maximize" state="pressed" draw_ops="maximize_unfocused_pressed"/>
+	<button function="maximize" state="normal" draw_ops="unmaximize_unfocused"/>
+	<button function="maximize" state="prelight" draw_ops="unmaximize_unfocused_prelight"/>
+	<button function="maximize" state="pressed" draw_ops="unmaximize_unfocused_pressed"/>
 	<button function="minimize" state="normal" draw_ops="minimize_unfocused"/>
 	<button function="minimize" state="prelight" draw_ops="minimize_unfocused_prelight"/>
 	<button function="minimize" state="pressed" draw_ops="minimize_unfocused_pressed"/>
@@ -596,9 +609,9 @@
 	<button function="close" state="normal" draw_ops="close_focused" />
 	<button function="close" state="pressed" draw_ops="close_focused_pressed" />
 	<button function="close" state="prelight" draw_ops="close_focused_prelight" />
-	<button function="maximize" state="normal" draw_ops="maximize_focused" />
-	<button function="maximize" state="pressed" draw_ops="maximize_focused_pressed" />
-	<button function="maximize" state="prelight" draw_ops="maximize_focused_prelight" />
+	<button function="maximize" state="normal" draw_ops="unmaximize_focused" />
+	<button function="maximize" state="pressed" draw_ops="unmaximize_focused_pressed" />
+	<button function="maximize" state="prelight" draw_ops="unmaximize_focused_prelight" />
 	<button function="minimize" state="normal" draw_ops="minimize_focused" />
 	<button function="minimize" state="pressed" draw_ops="minimize_focused_pressed" />
 	<button function="minimize" state="prelight" draw_ops="minimize_focused_prelight" />
@@ -630,9 +643,9 @@
 	<button function="close" state="normal" draw_ops="close_unfocused"/>
 	<button function="close" state="prelight" draw_ops="close_unfocused_prelight"/>
 	<button function="close" state="pressed" draw_ops="close_unfocused_pressed"/>
-	<button function="maximize" state="normal" draw_ops="maximize_unfocused"/>
-	<button function="maximize" state="prelight" draw_ops="maximize_unfocused_prelight"/>
-	<button function="maximize" state="pressed" draw_ops="maximize_unfocused_pressed"/>
+	<button function="maximize" state="normal" draw_ops="unmaximize_unfocused"/>
+	<button function="maximize" state="prelight" draw_ops="unmaximize_unfocused_prelight"/>
+	<button function="maximize" state="pressed" draw_ops="unmaximize_unfocused_pressed"/>
 	<button function="minimize" state="normal" draw_ops="minimize_unfocused"/>
 	<button function="minimize" state="prelight" draw_ops="minimize_unfocused_prelight"/>
 	<button function="minimize" state="pressed" draw_ops="minimize_unfocused_pressed"/>

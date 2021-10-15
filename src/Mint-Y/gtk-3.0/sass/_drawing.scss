@@ -210,7 +210,7 @@
   //
     color: $selected_fg_color;
     outline-color: transparentize($selected_fg_color, 0.7);
-    border-color: if($darker=='false' and $variant=='light', $header_button_border, transparent);
+    border-color: if($variant=='light', $header_button_border, transparent);
     background-color: $selected_bg_color;
   }
 
@@ -293,6 +293,20 @@
     background-color: transparent;
     background-image: none;
   }
+}
+
+//
+// Titlebar circular buttons
+//
+@mixin draw_circle($c, $size:18px) {
+  $button_size: $size + 2px * 2;
+  $circle_size: 20px / $button_size / 2;
+
+  background-image: -gtk-gradient(radial,
+                                  center center, 0,
+                                  center center, $circle_size,
+                                  to($c),
+                                  to(transparent));
 }
 
 //
