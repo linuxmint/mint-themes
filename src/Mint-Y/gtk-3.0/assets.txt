@@ -60,3 +60,5 @@ switch-header-dark
 switch-active-header-dark
 switch-insensitive-header-dark
 switch-active-insensitive-header-dark
+thumbnail
+thumbnail-dark
