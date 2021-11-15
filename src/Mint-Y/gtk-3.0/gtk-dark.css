@@ -3489,6 +3489,12 @@ EphyWindow .floating-bar {
   .xreader-window .primary-toolbar .button.the-button-in-the-combobox:disabled {
     color: rgba(255, 255, 255, 0.47); }
 
+calendar-view event.color-light label {
+  color: black; }
+
+calendar-view event.color-dark label {
+  color: rgba(255, 255, 255, 0.87); }
+
 .documents-scrolledwin.frame {
   border-width: 0; }
 

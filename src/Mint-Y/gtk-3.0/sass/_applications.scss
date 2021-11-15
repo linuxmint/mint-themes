@@ -644,6 +644,12 @@ EphyWindow .floating-bar { // Epiphany overrides the floating-bar style, so rese
 }
 
 //
+// Gnome Calendar
+//
+calendar-view event.color-light label { color: black; }
+calendar-view event.color-dark label { color: $fg_color; }
+
+//
 // Gnome Documents
 //
 .documents-scrolledwin.frame { border-width: 0; }
