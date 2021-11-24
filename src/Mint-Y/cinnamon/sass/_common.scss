@@ -720,6 +720,77 @@ StScrollBar {
 //
 // Calendar
 //
+.calendar-main-box {
+  padding: 0 1.0em;
+  max-height: 450px;
+}
+
+.calendar-events-main-box {
+  margin-right: .5em;
+  padding: .75em;
+  min-width: 350px;
+  border: 1px solid $borders_color;
+  background-color: $base_color;
+}
+
+.calendar-events-no-events-label {
+  color: $insensitive_fg_color;
+  text-align: center;
+}
+
+.calendar-events-date-label {
+  padding: .1em .1em .5em .1em;
+  color: $fg_color;
+  font-weight: bold;
+  text-align: center;
+}
+
+.calendar-events-event-container {
+  padding: 0;
+}
+
+.calendar-event-button {
+  margin: 0;
+
+  &:hover {
+    background-color: transparentize($fg_color, 0.7);
+  }
+}
+
+.calendar-event-row-content {
+  margin: 0 7px;
+}
+
+.calendar-event-time {
+  color: $fg_color;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: .2em;
+  padding-top: 4px;
+}
+
+.calendar-event-summary {
+  color: $fg_color;
+  text-align: left;
+  width: 200px;
+  padding-bottom: 4px;
+}
+
+.calendar-today-day-label {
+  font-size: 1.75em;
+  color: $fg_color;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: .1em;
+}
+
+.calendar-today-date-label {
+  font-size: 1.1em;
+  color: $fg_color;
+  font-weight: bold;
+  text-align: center;
+}
+
 .calendar {
   padding: .4em 1.75em;
   spacing-rows: 0px;
@@ -772,13 +843,16 @@ StScrollBar {
   }
 }
 
-.datemenu-date-label {
-  padding: .4em 1.75em;
-  font-weight: bold;
-  font-size: 1.15em;
-  text-align: center;
-  color: $fg_color;
+.calendar-day-event-dot-box {
+  margin-top: 24px;
+  max-rows: 2;
+}
+
+.calendar-day-event-dot {
+  margin: 1px;
   border-radius: 2px;
+  width: 4px;
+  height: 4px;
 }
 
 .calendar-day-base {
@@ -815,14 +889,23 @@ StScrollBar {
   font-weight: bold;
 }
 
-.calendar-today,
-.calendar-today:active,
-.calendar-today:focus,
-.calendar-today:hover {
+.calendar-today {
   font-weight: bold;
-  color: $selected_fg_color;
-  background-color: $selected_bg_color;
+  color: $fg_color;
+  background-color: darken($bg_color, 10%);
   border-width: 0;
+
+  &:selected {
+    background-color: if($variant == 'light', transparentize($fg_color, 0.7), transparentize($fg_color, 0.6));
+  }
+}
+
+.calendar-not-today {
+  color: $fg_color;
+
+  &:selected {
+    background-color: if($variant == 'light', transparentize($fg_color, 0.7), transparentize($fg_color, 0.6));
+  }
 }
 
 .calendar-other-month-day {
