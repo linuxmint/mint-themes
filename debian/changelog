@@ -1,3 +1,56 @@
+mint-themes (1.8.9) una; urgency=medium
+
+  [ JosephMcc ]
+  * Mint-Y-Gtk2: Put separators in menus
+  * Gtk3: Better match csd and ssd window shadows
+  * Mint-X-Gtk3: Add styling for app-notification
+  * test-mint-y: Add a couple more things
+  * Mint-Y: Remove the -darker variation
+  * Mint-Y: Add a dark variant to the light theme
+  * Mint-Y: Only ship a single metacity theme
+  * Mint-Y: Force the metacity theme to update on gtk theme changes
+  * Mint-Y-Cinnamon: Set a height for the run dialog entry
+  * Mint-Y: Use a light sidebar in file managers
+  * Mint-Y-Cinnamon: Give the light theme a light panel
+  * Mint-Y: Restyle the window decorations
+  * Mint-Y: Missed including a new icon for metacity
+  * Mint-Y-Gtk3: Fix osd colors
+  * Mint-Y: Tint the entire theme with the selected_bg_color
+  * Mint-Y: Add rounded corners to the window borders
+  * Mint-Y: Adjust csd window shadows again
+  * Mint-Y-Gtk3: Fix the hover color in the Nemo sidebar
+  * Mint-Y: Add a light 1px border around window frames
+  * Mint-Y: Bump up the color mix a bit
+  * Mint-Y: Match up csd and non-csd window borders a bit better
+  * Mint-Y: Hide shadows on tiled csd windows
+  * Mint-Y: Improve the styling of the Caja filemanager
+  * Mint-Y: Update the styling of the Thunar sidebar
+  * Mint-Y: Fix the color of the Mate panel
+  * Mint-Y: Clean up the titlebar styling some more
+  * Mint-Y: Fix the size of csd titlebuttons
+  * Mint-Y-Cinnamon: Adapt to the Cinnamon modal dialog theming changes
+  * Mint-Y: Don't use the accent color in active buttons
+  * Mint-Y: Fix the color of focus outline on active buttons
+  * Mint-Y: Don't use the accent color for active menuitems
+
+  [ Clement Lefebvre ]
+  * Fix test script
+  * Mint-Y: Metacity, fix artefacts in close button.
+
+  [ JosephMcc ]
+  * Mint-Y: Don't special case sidebar scrollbars
+  * Mint-Y: Readapt the csd titlebuttons to match metacity
+  * Mint-Y: Fix corner radius of ssd window decorations
+
+  [ Clement Lefebvre ]
+  * Remove tint on green theme and base color
+
+  [ JosephMcc ]
+  * Mint-Y-Dark: Fix the label color of events in gnome calendar
+  * Mint-Y-Cinnamon: Add initial support for the reworked calendar applet
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 26 Nov 2021 14:29:02 +0000
+
 mint-themes (1.8.8) uma; urgency=medium
 
   [ Archisman Panigrahi ]
