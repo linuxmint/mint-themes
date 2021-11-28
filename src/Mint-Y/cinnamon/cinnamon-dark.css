@@ -593,10 +593,10 @@ StScrollBar {
   width: 400px; }
 
 .calendar-main-box {
-  padding: 0 1.0em;
-  max-height: 450px; }
+  padding: 0 1.0em; }
 
 .calendar-events-main-box {
+  height: 300px;
   margin-right: .5em;
   padding: .75em;
   min-width: 350px;
