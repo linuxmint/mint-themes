@@ -1,6 +1,6 @@
 style "menubar" {
 
-  bg[NORMAL] = "#d9d9d9"
+  bg[NORMAL] = "#e8e8e8"
   fg[NORMAL] = "#404040"
   fg[PRELIGHT] = "#404040"
   fg[ACTIVE] = "#404040"
@@ -23,7 +23,7 @@ style "menubar" {
 
 style "menubar-borderless" {
 
-  bg[NORMAL] = "#d9d9d9"
+  bg[NORMAL] = "#e8e8e8"
   fg[NORMAL] = "#404040"
   fg[SELECTED] = @fg_color
   fg[INSENSITIVE] = shade(1.3, "#404040")
@@ -132,8 +132,8 @@ style "toolbar_entry" {
 #Chromium
 style "chrome-gtk-frame" {
 
-  ChromeGtkFrame::frame-color = "#d9d9d9"
-  ChromeGtkFrame::inactive-frame-color = "#d9d9d9"
+  ChromeGtkFrame::frame-color = "#e8e8e8"
+  ChromeGtkFrame::inactive-frame-color = "#e8e8e8"
 
   ChromeGtkFrame::frame-gradient-size = 0
   ChromeGtkFrame::frame-gradient-color = shade(0.5, @bg_color)
