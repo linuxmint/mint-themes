@@ -46,7 +46,6 @@ if __name__ == '__main__':
             version_folder = os.path.join(dest_folder, "gtk-2.0")
             os.system("mkdir -p %s" % version_folder)
             os.system("cp -R gtk-2.0/assets %s" % version_folder)
-            os.system("cp -R gtk-2.0/menubar-toolbar %s" % version_folder)
             os.system("cp gtk-2.0/*.rc %s" % version_folder)
             os.system("cp gtk-2.0/gtkrc %s" % version_folder)
             # Gtk3
@@ -77,9 +76,9 @@ if __name__ == '__main__':
             os.system("cp -R gtk-2.0/assets-dark %s" % version_folder)
             os.system("rm -rf %s" % os.path.join(version_folder, "assets"))
             os.system("mv %s %s" % (os.path.join(version_folder, "assets-dark"), os.path.join(version_folder, "assets")))
-            os.system("cp -R gtk-2.0/menubar-toolbar %s" % version_folder)
             os.system("cp gtk-2.0/*.rc %s" % version_folder)
             os.system("cp gtk-2.0/gtkrc-dark %s" % os.path.join(version_folder, "gtkrc"))
+            os.system("cp gtk-2.0/menubar-toolbar-dark.rc %s" % os.path.join(version_folder, "menubar-toolbar.rc"))
             # Gtk3
             version_folder = os.path.join(dest_folder, "gtk-3.0")
             os.system("mkdir -p %s" % version_folder)

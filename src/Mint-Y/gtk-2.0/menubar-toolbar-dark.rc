@@ -14,7 +14,7 @@ style "menubar" {
 
     image {
       function = BOX
-      file  = "menubar-toolbar/menubar-dark.png"
+      file  = "assets/menubar.png"
       stretch  = TRUE
       border = { 1, 1, 1, 1 }
     }
@@ -54,7 +54,7 @@ style "menubar_item" {
     image {
       function = BOX
       state = PRELIGHT
-      file = "menubar-toolbar/menubar_button-dark.png"
+      file = "assets/menubar_button.png"
       border = { 2, 2, 2, 2 }
       stretch = TRUE
     }
@@ -94,7 +94,7 @@ style "toolbar_button" {
     image {
       function = BOX
       state = NORMAL
-      file = "menubar-toolbar/button.png"
+      file = "assets/button.png"
       border = { 4, 4, 4, 4 }
       stretch = TRUE
     }
@@ -102,7 +102,7 @@ style "toolbar_button" {
     image {
       function = BOX
       state = PRELIGHT
-      file = "menubar-toolbar/button-hover.png"
+      file = "assets/button-hover.png"
       border = { 4, 4, 4, 4 }
       stretch = TRUE
     }
@@ -110,7 +110,7 @@ style "toolbar_button" {
     image {
       function = BOX
       state = ACTIVE
-      file = "menubar-toolbar/button-active.png"
+      file = "assets/button-active.png"
       border = { 4, 4, 4, 4 }
       stretch = TRUE
     }
@@ -118,7 +118,7 @@ style "toolbar_button" {
     image {
       function = BOX
       state = INSENSITIVE
-      file = "menubar-toolbar/button-insensitive.png"
+      file = "assets/button-insensitive.png"
       border = { 4, 4, 4, 4 }
       stretch = TRUE
     }
@@ -140,7 +140,7 @@ style "toolbar_entry" {
       detail = "entry"
       state = NORMAL
       shadow = IN
-      file = "menubar-toolbar/toolbar-entry-border-bg-dark.png"
+      file = "assets/toolbar-entry-border-bg.png"
       border = { 12, 12, 12, 12 }
       stretch = TRUE
     }
@@ -150,7 +150,7 @@ style "toolbar_entry" {
       detail = "entry"
       state = INSENSITIVE
       shadow = IN
-      file = "menubar-toolbar/toolbar-entry-border-disabled-bg-dark.png"
+      file = "assets/toolbar-entry-border-disabled-bg.png"
       border = { 12, 12, 12, 12 }
       stretch = TRUE
     }
@@ -159,7 +159,7 @@ style "toolbar_entry" {
       function = SHADOW
       detail = "entry"
       state = ACTIVE
-      file = "menubar-toolbar/toolbar-entry-border-active-bg-dark.png"
+      file = "assets/toolbar-entry-border-active-bg.png"
       border = { 12, 12, 12, 12 }
       stretch = TRUE
     }

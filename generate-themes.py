@@ -126,7 +126,7 @@ for color in y_hex_colors1.keys():
             files.append(os.path.join(theme, "gtk-2.0", "main.rc"))
             files.append(os.path.join(theme, "gtk-2.0", "panel.rc"))
             files.append(os.path.join(theme, "gtk-2.0", "apps.rc"))
-            files.append(os.path.join(theme, "gtk-2.0", "menubar-toolbar", "gtkrc"))
+            files.append(os.path.join(theme, "gtk-2.0", "menubar-toolbar.rc"))
             for file in files:
                 if os.path.exists(file):
                     for accent in Y_HEX_ACCENT1:
