@@ -98,8 +98,8 @@ for color in y_hex_colors1.keys():
             os.system("cp -R src/Mint-Y/gtk-3.0/sass %s/gtk-3.0/" % theme)
             y_colorize_directory("%s/gtk-3.0/sass" % theme, color)
             os.chdir("%s/gtk-3.0" % theme)
-            os.system("sed -i 's/no-tint/tint/gI' ./sass/gtk.scss")
-            os.system("sed -i 's/no-tint/tint/gI' ./sass/gtk-dark.scss")
+            # os.system("sed -i 's/no-tint/tint/gI' ./sass/gtk.scss")
+            # os.system("sed -i 's/no-tint/tint/gI' ./sass/gtk-dark.scss")
             if (variant == "-Dark"):
                 os.system("cp sass/gtk-dark.scss sass/gtk.scss")
                 os.system("sassc ./sass/gtk.scss gtk.css")
