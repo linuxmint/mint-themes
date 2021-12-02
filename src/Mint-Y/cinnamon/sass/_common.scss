@@ -750,30 +750,96 @@ StScrollBar {
 }
 
 .calendar-event-button {
-  margin: 0;
+  border: 1px solid rgba(0,0,0,0);
+
+  .calendar-event-time-past {
+    color: transparentize($fg_color, 0.6);
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: .2em;
+  }
+  .calendar-event-time-present {
+    color: $fg_color;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: .2em;
+
+    &:all-day {
+      color: $selected_bg_color;
+    }
+  }
+  .calendar-event-time-future {
+    color: $fg_color;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: .2em;
+  }
+
+  .calendar-event-summary {
+    color: $fg_color;
+    text-align: left;
+    width: 200px;
+  }
+
+  .calendar-event-countdown {
+    text-align: right;
+    margin-bottom: .6em;
+    color: $fg_color;
+
+    &:soon {
+      font-weight: bold;
+    }
+    &:imminent {
+      font-weight: bold;
+      color: $warning_color;
+    }
+    &:current {
+      font-weight: bold;
+      color: $selected_bg_color;
+    }
+  }
 
   &:hover {
-    background-color: transparentize($fg_color, 0.7);
+    background-color: $selected_bg_color;
+    border: 1px solid $borders_color;
+    .calendar-event-time-past,
+    .calendar-event-time-present,
+    .calendar-event-time-future,
+    .calendar-event-summary {
+        color: $selected_fg_color
+    }
+
+    .calendar-event-countdown {
+      text-align: right;
+      margin-bottom: .6em;
+      color: $selected_fg_color;
+
+      &:soon {
+          font-weight: bold;
+      }
+      &:imminent {
+          font-weight: bold;
+      }
+      &:current {
+          font-weight: bold;
+      }
+    }
   }
 }
 
 .calendar-event-row-content {
-  margin: 0 7px;
 }
 
-.calendar-event-time {
-  color: $fg_color;
-  font-weight: bold;
-  text-align: left;
-  margin-bottom: .2em;
-  padding-top: 4px;
+.calendar-event-color-strip {
+    width: 2px;
 }
 
-.calendar-event-summary {
-  color: $fg_color;
-  text-align: left;
-  width: 200px;
-  padding-bottom: 4px;
+.calendar-today-home-button {
+  padding: 6px;
+
+  &:hover {
+      background-color: transparentize($selected_bg_color, .4);
+  }
 }
 
 .calendar-today-day-label {
@@ -844,8 +910,8 @@ StScrollBar {
 }
 
 .calendar-day-event-dot-box {
-  margin-top: 24px;
-  max-rows: 2;
+  margin-top: 22px;
+  max-rows: 1;
 }
 
 .calendar-day-event-dot {
@@ -861,7 +927,10 @@ StScrollBar {
   width: 2.2em;
   height: 2.2em;
   padding: 0.1em;
-  border-radius: 999px;
+
+  &:hover {
+    background-color: $selected_bg_color;
+  }
 }
 
 .calendar-day-heading {
@@ -892,12 +961,8 @@ StScrollBar {
 .calendar-today {
   font-weight: bold;
   color: $fg_color;
-  background-color: darken($bg_color, 10%);
+  background-color: if($variant == 'light', transparentize($selected_bg_color, 0.6), transparentize($selected_bg_color, 0.6));
   border-width: 0;
-
-  &:selected {
-    background-color: if($variant == 'light', transparentize($fg_color, 0.7), transparentize($fg_color, 0.6));
-  }
 }
 
 .calendar-not-today {
@@ -910,6 +975,11 @@ StScrollBar {
 
 .calendar-other-month-day {
   color: transparentize($fg_color, 0.7);
+  opacity: 1;
+}
+
+.calendar-other-month-day:hover {
+  color: $selected_fg_color;
   opacity: 1;
 }
 

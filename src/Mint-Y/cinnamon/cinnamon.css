@@ -617,25 +617,66 @@ StScrollBar {
   padding: 0; }
 
 .calendar-event-button {
-  margin: 0; }
+  border: 1px solid rgba(0, 0, 0, 0); }
+  .calendar-event-button .calendar-event-time-past {
+    color: rgba(0, 0, 0, 0.27);
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: .2em; }
+  .calendar-event-button .calendar-event-time-present {
+    color: rgba(0, 0, 0, 0.87);
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: .2em; }
+    .calendar-event-button .calendar-event-time-present:all-day {
+      color: #92b372; }
+  .calendar-event-button .calendar-event-time-future {
+    color: rgba(0, 0, 0, 0.87);
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: .2em; }
+  .calendar-event-button .calendar-event-summary {
+    color: rgba(0, 0, 0, 0.87);
+    text-align: left;
+    width: 200px; }
+  .calendar-event-button .calendar-event-countdown {
+    text-align: right;
+    margin-bottom: .6em;
+    color: rgba(0, 0, 0, 0.87); }
+    .calendar-event-button .calendar-event-countdown:soon {
+      font-weight: bold; }
+    .calendar-event-button .calendar-event-countdown:imminent {
+      font-weight: bold;
+      color: #F27835; }
+    .calendar-event-button .calendar-event-countdown:current {
+      font-weight: bold;
+      color: #92b372; }
   .calendar-event-button:hover {
-    background-color: rgba(0, 0, 0, 0.17); }
+    background-color: #92b372;
+    border: 1px solid #c0c5bb; }
+    .calendar-event-button:hover .calendar-event-time-past,
+    .calendar-event-button:hover .calendar-event-time-present,
+    .calendar-event-button:hover .calendar-event-time-future,
+    .calendar-event-button:hover .calendar-event-summary {
+      color: #ffffff; }
+    .calendar-event-button:hover .calendar-event-countdown {
+      text-align: right;
+      margin-bottom: .6em;
+      color: #ffffff; }
+      .calendar-event-button:hover .calendar-event-countdown:soon {
+        font-weight: bold; }
+      .calendar-event-button:hover .calendar-event-countdown:imminent {
+        font-weight: bold; }
+      .calendar-event-button:hover .calendar-event-countdown:current {
+        font-weight: bold; }
 
-.calendar-event-row-content {
-  margin: 0 7px; }
+.calendar-event-color-strip {
+  width: 2px; }
 
-.calendar-event-time {
-  color: rgba(0, 0, 0, 0.87);
-  font-weight: bold;
-  text-align: left;
-  margin-bottom: .2em;
-  padding-top: 4px; }
-
-.calendar-event-summary {
-  color: rgba(0, 0, 0, 0.87);
-  text-align: left;
-  width: 200px;
-  padding-bottom: 4px; }
+.calendar-today-home-button {
+  padding: 6px; }
+  .calendar-today-home-button:hover {
+    background-color: rgba(146, 179, 114, 0.6); }
 
 .calendar-today-day-label {
   font-size: 1.75em;
@@ -692,8 +733,8 @@ StScrollBar {
       background-image: url("common-assets/misc/calendar-arrow-left.svg"); }
 
 .calendar-day-event-dot-box {
-  margin-top: 24px;
-  max-rows: 2; }
+  margin-top: 22px;
+  max-rows: 1; }
 
 .calendar-day-event-dot {
   margin: 1px;
@@ -706,8 +747,9 @@ StScrollBar {
   text-align: center;
   width: 2.2em;
   height: 2.2em;
-  padding: 0.1em;
-  border-radius: 999px; }
+  padding: 0.1em; }
+  .calendar-day-base:hover {
+    background-color: #92b372; }
 
 .calendar-day-heading {
   color: rgba(0, 0, 0, 0.72);
@@ -732,10 +774,8 @@ StScrollBar {
 .calendar-today {
   font-weight: bold;
   color: rgba(0, 0, 0, 0.87);
-  background-color: #daddd6;
+  background-color: rgba(146, 179, 114, 0.4);
   border-width: 0; }
-  .calendar-today:selected {
-    background-color: rgba(0, 0, 0, 0.17); }
 
 .calendar-not-today {
   color: rgba(0, 0, 0, 0.87); }
@@ -744,6 +784,10 @@ StScrollBar {
 
 .calendar-other-month-day {
   color: rgba(0, 0, 0, 0.17);
+  opacity: 1; }
+
+.calendar-other-month-day:hover {
+  color: #ffffff;
   opacity: 1; }
 
 .calendar-week-number {
