@@ -41,8 +41,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="6.8327174"
-     inkscape:cx="113.4061"
-     inkscape:cy="408.04865"
+     inkscape:cx="69.635404"
+     inkscape:cy="447.84559"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -130,7 +130,7 @@
            cy="14.728411"
            r="9.9999313"
            id="circle4626-2"
-           style="fill:#7ba056;fill-opacity:1;stroke-width:2.49915004" />
+           style="fill:#779559;fill-opacity:1;stroke-width:2.49915004" />
         <g
            transform="matrix(2.6164455,-2.6164302,2.6164455,2.6164302,-760.92209,-747.12902)"
            id="g4632-3"
@@ -396,8 +396,8 @@
          sodipodi:nodetypes="ccccccccc"
          inkscape:connector-curvature="0"
          id="path1468"
-         d="m 91,919.36235 -1,-10e-5 v 9.0001 h 1 v 1 l 9,-10e-5 v -0.9999 h -9 z"
-         style="fill-opacity:1;stroke:none;stroke-width:0.666667;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;fill:#2e2e2e" />
+         d="m 91,919.36235 -1,-10e-5 v 9.0001 h 1 v 1 l 9,-10e-5 v -0.9999 l -9,0.9998 z"
+         style="fill:#2e2e2e;fill-opacity:1;stroke:none;stroke-width:0.66666698;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     </g>
     <g
        id="bottom-active"
