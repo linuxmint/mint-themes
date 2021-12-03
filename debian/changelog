@@ -1,3 +1,17 @@
+mint-themes (1.9.0) una; urgency=medium
+
+  [ Michael Webster ]
+  * Mint-Y-Cinnamon: Don't allow the number of calendar events to affect the popup's height.
+
+  [ Clement Lefebvre ]
+  * Gtk2: Use generated assets
+  * Remove tint on all variations
+  * Regenerate assets
+  * Update Xfwm4 theme
+  * Update variations
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 03 Dec 2021 11:48:12 +0000
+
 mint-themes (1.8.9) una; urgency=medium
 
   [ JosephMcc ]
