@@ -1,3 +1,11 @@
+mint-themes (1.9.2) una; urgency=medium
+
+  * Xfwm4: titlebar color fixes
+  * Xfwm4: Make bottom corners completely square
+  * Generate asssets
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 03 Dec 2021 15:31:31 +0000
+
 mint-themes (1.9.1) una; urgency=medium
 
   [ Michael Webster ]
