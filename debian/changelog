@@ -1,3 +1,15 @@
+mint-themes (1.9.1) una; urgency=medium
+
+  [ Michael Webster ]
+  * Add additional calendar/event support to Cinnamon themes.
+
+  [ Clement Lefebvre ]
+  * xfwm4: Don't hardcode the button layout
+  * Xfwm4: Use circle for shade and rivet for menu
+  * Update assets
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 03 Dec 2021 14:35:49 +0000
+
 mint-themes (1.9.0) una; urgency=medium
 
   [ Michael Webster ]
