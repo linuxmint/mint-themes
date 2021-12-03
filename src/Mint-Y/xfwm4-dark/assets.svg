@@ -42,9 +42,9 @@
      inkscape:pageshadow="2"
      inkscape:zoom="4.8314608"
      inkscape:cx="128.55815"
-     inkscape:cy="267.18579"
+     inkscape:cy="192.67417"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="shade-inactive"
      showgrid="true"
      units="px"
      inkscape:snap-bbox="true"
@@ -2348,6 +2348,12 @@
              id="g4575-28" />
         </g>
       </g>
+      <circle
+         cx="160.00002"
+         cy="772.36212"
+         id="circle5255-3-85-4-1-1"
+         style="display:inline;fill:#525252;fill-opacity:1;stroke-width:0.99966598"
+         r="3.9999998" />
     </g>
     <g
        id="shade-toggled-inactive"
@@ -2474,11 +2480,5 @@
         </g>
       </g>
     </g>
-    <circle
-       cx="160.00002"
-       cy="772.36212"
-       id="circle5255-3-85-4-1-1"
-       style="display:inline;fill:#525252;fill-opacity:1;stroke-width:0.99966598"
-       r="3.9999998" />
   </g>
 </svg>
