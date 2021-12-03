@@ -590,7 +590,8 @@ StScrollBar StButton#vhandle:hover {
  * Date applet (calendar@cinnamon.org/calendar.js)
  * ===================================================================*/
 .calendar {
-    padding: .4em 1.75em .8em 1.75em;
+    /*margin-bottom: .5em;*/
+    /*margin: 0 1.0em 0 0.5em;*/
     spacing-rows: 0;
     spacing-columns: 0;
 }
@@ -604,7 +605,10 @@ StScrollBar StButton#vhandle:hover {
   background-color: rgb(236, 236, 236);
   border: 1px solid rgb(192, 192, 192);
   border-radius: 4px;
-  padding: 0.5em;
+    margin-bottom: .5em;
+  /*margin: 0 0.5em .5em 1.0em;*/
+  margin-right: 0.75em;
+  padding: .5em;
 }
 
 .calendar-events-no-events-label {
@@ -625,7 +629,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .calendar-event-button {
-    margin:  7px;
+    margin: 7px;
     border: 1px solid rgba(0, 0, 0, 0);
 }
 
@@ -700,6 +704,7 @@ StScrollBar StButton#vhandle:hover {
 
 .calendar-event-color-strip {
   width: 4px;
+  border-width: 1px;
   border-radius: 2px 0 0 2px;
 }
 

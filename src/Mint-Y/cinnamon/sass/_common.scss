@@ -720,14 +720,19 @@ StScrollBar {
 //
 // Calendar
 //
+.calendar {
+    spacing-rows: 0;
+    spacing-columns: 0;
+}
+
 .calendar-main-box {
-  padding: 0 1.0em;
+  margin: 0 .8em .5em .8em;
 }
 
 .calendar-events-main-box {
   height: 300px;
   margin-right: .5em;
-  padding: .75em;
+  padding: .5em;
   min-width: 350px;
   border: 1px solid $borders_color;
   background-color: $base_color;
@@ -855,12 +860,6 @@ StScrollBar {
   color: $fg_color;
   font-weight: bold;
   text-align: center;
-}
-
-.calendar {
-  padding: .4em 1.75em;
-  spacing-rows: 0px;
-  spacing-columns: 0px;
 }
 
 .calendar-month-label {
