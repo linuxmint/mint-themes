@@ -753,6 +753,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .calendar-today-home-button:hover {
+    color: #fff;
     border-image: url("misc-assets/hover-2.png") 6;
 }
 
@@ -788,6 +789,7 @@ StScrollBar StButton#vhandle:hover {
 
 .calendar-day-base:hover {
     color: rgba(0, 0, 0, 0.7);
+    background: rgba(172, 205, 138, 0.3);
     font-weight: bold;
 }
 
@@ -837,7 +839,7 @@ StScrollBar StButton#vhandle:hover {
 
 .calendar-not-today:selected {
     font-weight: bold;
-    background: rgba(172, 205, 138, 0.6);
+    background-color: rgba(128, 128, 128, 0.3);
 }
 .calendar-not-today:selected:hover {
     color: rgba(0, 0, 0, 0.7);
