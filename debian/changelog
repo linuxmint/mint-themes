@@ -1,3 +1,10 @@
+mint-themes (1.9.3) una; urgency=medium
+
+  [ Michael Webster ]
+  * Mint-X cinnamon: Fix hover style of 'home date' button, change color used for calendar day hover.
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 09 Dec 2021 11:27:44 +0000
+
 mint-themes (1.9.2) una; urgency=medium
 
   * Xfwm4: titlebar color fixes
