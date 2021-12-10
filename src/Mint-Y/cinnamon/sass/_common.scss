@@ -738,8 +738,27 @@ StScrollBar {
   background-color: $base_color;
 }
 
+.calendar-events-no-events-box {
+}
+
+.calendar-events-no-events-button {
+  margin: 6px 0 6px 0;
+  padding: 6px;
+
+  &:hover {
+    background-color: $selected_bg_color;
+
+    .calendar-events-no-events-icon,
+    .calendar-events-no-events-label {
+      color: $selected_fg_color;
+    }
+  }
+}
+
+.calendar-events-no-events-icon,
 .calendar-events-no-events-label {
-  color: $insensitive_fg_color;
+  font-weight: bold;
+  color: $fg_color;
   text-align: center;
 }
 
@@ -811,7 +830,7 @@ StScrollBar {
     .calendar-event-time-present,
     .calendar-event-time-future,
     .calendar-event-summary {
-        color: $selected_fg_color
+      color: $selected_fg_color
     }
 
     .calendar-event-countdown {
@@ -820,13 +839,13 @@ StScrollBar {
       color: $selected_fg_color;
 
       &:soon {
-          font-weight: bold;
+        font-weight: bold;
       }
       &:imminent {
-          font-weight: bold;
+        font-weight: bold;
       }
       &:current {
-          font-weight: bold;
+        font-weight: bold;
       }
     }
   }
@@ -841,10 +860,6 @@ StScrollBar {
 
 .calendar-today-home-button {
   padding: 6px;
-
-  &:hover {
-      background-color: transparentize($selected_bg_color, .4);
-  }
 }
 
 .calendar-today-day-label {
@@ -860,6 +875,21 @@ StScrollBar {
   color: $fg_color;
   font-weight: bold;
   text-align: center;
+}
+
+.calendar-today-home-button-enabled {
+  padding: 6px;
+
+  &:hover {
+    background-color: $selected_bg_color;
+
+    .calendar-today-day-label {
+      color: $selected_fg_color
+    }
+    .calendar-today-date-label {
+      color: $selected-fg-color
+    }
+  }
 }
 
 .calendar-month-label {
