@@ -610,20 +610,13 @@ StScrollBar StButton#vhandle:hover {
   padding: .5em;
 }
 
-.calendar-events-no-events-label {
-  text-align: center;
-}
-
 .calendar-events-no-events-box {
 }
 
 .calendar-events-no-events-button {
     border-image: url("button-assets/button.png") 4;
-    /*border: 1px solid rgb(192, 192, 192);*/
-    /*box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.2);*/
     margin: 6px 0 6px 0;
     padding: 6px;
-    /*border-radius: 4px;*/
 }
 
 .calendar-events-no-events-button:hover:active {
