@@ -614,6 +614,34 @@ StScrollBar StButton#vhandle:hover {
   text-align: center;
 }
 
+.calendar-events-no-events-box {
+}
+
+.calendar-events-no-events-button {
+    border-image: url("button-assets/button.png") 4;
+    /*border: 1px solid rgb(192, 192, 192);*/
+    /*box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.2);*/
+    margin: 6px 0 6px 0;
+    padding: 6px;
+    /*border-radius: 4px;*/
+}
+
+.calendar-events-no-events-button:hover:active {
+    border-image: url("button-assets/button-pressed.png") 4;
+}
+
+.calendar-events-no-events-button:hover {
+    border-image: url("button-assets/button-hover.png") 4;
+}
+
+.calendar-events-no-events-icon {
+}
+
+.calendar-events-no-events-label {
+    font-weight: bold;
+    text-align: center;
+}
+
 .calendar-events-date-label {
   padding: .1em .1em .5em .1em;
   font-weight: bold;
@@ -752,9 +780,13 @@ StScrollBar StButton#vhandle:hover {
     padding: 7px;
 }
 
-.calendar-today-home-button:hover {
-    color: #fff;
-    border-image: url("misc-assets/hover-2.png") 6;
+.calendar-today-home-button-enabled {
+    border-image: url("button-assets/button.png") 4;
+    padding: 7px;
+}
+
+.calendar-today-home-button-enabled:hover {
+    border-image: url("button-assets/button-hover.png") 4;
 }
 
 .calendar-today-day-label {
