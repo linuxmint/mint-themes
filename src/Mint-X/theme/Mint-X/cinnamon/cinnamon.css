@@ -628,6 +628,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .calendar-events-no-events-icon {
+    color: rgba(0, 0, 0, 0.7);
 }
 
 .calendar-events-no-events-label {
