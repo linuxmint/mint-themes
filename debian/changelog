@@ -1,3 +1,14 @@
+mint-themes (1.9.4) una; urgency=medium
+
+  [ Michael Webster ]
+  * Mint-X cinnamon: Add support for the no-events 'button' and improve the go-home button's appearance when enabled.
+  * mint-x cinnamon: Some cleanup.
+  * Mint-Y cinnamon: Add support for the 'no events' button.
+  * Mint-X cinnamon: Fix color of no-events calendar icon.
+  * Update the 'Linux Mint' cinnamon theme for calendar changes.
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 16 Dec 2021 10:19:29 +0000
+
 mint-themes (1.9.3) una; urgency=medium
 
   [ Michael Webster ]
