@@ -1,3 +1,13 @@
+mint-themes (1.9.5) una; urgency=medium
+
+  [ Michael Webster ]
+  * Mint-Y: Fix top and bottom clipping of the window close button in client-decorated firefox.
+
+  [ Clement Lefebvre ]
+  * Mint-Y: Update metacity thumbnail
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 17 Dec 2021 16:06:35 +0000
+
 mint-themes (1.9.4) una; urgency=medium
 
   [ Michael Webster ]
