@@ -2874,7 +2874,7 @@ headerbar.default-decoration button.titlebutton,
   padding-top: 0px;
   padding-bottom: 0px;
   min-width: 22px;
-  min-height: 0;
+  min-height: 22px;
   margin: 0; }
 
 headerbar button.titlebutton,
