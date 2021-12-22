@@ -236,3 +236,12 @@ window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):
     margin: 0;
   }
 }
+
+hdyleaflet {
+  &:last-child headerbar {
+    border-top-right-radius: 8px;
+  }
+  &:first-child headerbar {
+    border-top-left-radius: 8px;
+  }
+}

@@ -4086,3 +4086,9 @@ window.csd.unified:not(.solid-csd):not(.fullscreen):not(.tiled):not(.tiled-top):
 .windowhandle separator.sidebar:dir(ltr), .windowhandle separator.sidebar.left, .windowhandle separator.sidebar.left:dir(rtl), .windowhandle separator.sidebar:dir(rtl), .windowhandle separator.sidebar.right {
   background-color: #212121;
   margin: 0; }
+
+hdyleaflet:last-child headerbar {
+  border-top-right-radius: 8px; }
+
+hdyleaflet:first-child headerbar {
+  border-top-left-radius: 8px; }
