@@ -3615,7 +3615,7 @@ SynapseGuiViewVirgilio *:selected {
         color: white; }
   .gnome-panel-menu-bar PanelSeparator,
   .mate-panel-menu-bar PanelSeparator {
-    color: rgba(0, 0, 0, 0.2);
+    color: rgba(255, 255, 255, 0.12);
     padding-top: 4px;
     padding-bottom: 4px; }
   .gnome-panel-menu-bar na-tray-applet,

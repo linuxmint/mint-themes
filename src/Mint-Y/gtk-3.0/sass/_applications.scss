@@ -790,7 +790,7 @@ SynapseGuiViewVirgilio *:selected { background-color: $selected_bg_color; }
   }
 
   PanelSeparator {
-    color: transparentize(darken($panel_bg, 20%), 0.8);
+    color: rgba(255,255,255, 0.12);
     padding-top: 4px;
     padding-bottom: 4px;
   }
