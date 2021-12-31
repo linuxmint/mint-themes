@@ -1,3 +1,13 @@
+mint-themes (1.9.6) una; urgency=medium
+
+  [ Michael Webster ]
+  * Mint-Y: compile sass to reflect 08ac147633d436c92d412
+  * Update Mint-Y cinnamon thumbnails.
+  * Mint-Y: Fix seahorse/libhandy headerbars when multiple are used.
+  * Mint-Y: Make the mate panel separator the same color as cinnamon's.
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 31 Dec 2021 11:13:35 +0000
+
 mint-themes (1.9.5) una; urgency=medium
 
   [ Michael Webster ]
