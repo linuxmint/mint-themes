@@ -790,7 +790,7 @@ SynapseGuiViewVirgilio *:selected { background-color: $selected_bg_color; }
   }
 
   PanelSeparator {
-    color: rgba(255,255,255, 0.12);
+    color: rgba(255,255,255, 0);
     padding-top: 4px;
     padding-bottom: 4px;
   }
@@ -798,6 +798,13 @@ SynapseGuiViewVirgilio *:selected { background-color: $selected_bg_color; }
   na-tray-applet {
     -NaTrayApplet-icon-padding: 1px;
   }
+}
+
+MatePanelAppletFrameDBus > MatePanelAppletFrameDBus {
+    background-image: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: left;
 }
 
 .mintmenu:hover { background-color: lighten($panel_bg, 5%); }

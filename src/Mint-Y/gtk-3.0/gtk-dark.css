@@ -3606,12 +3606,18 @@ SynapseGuiViewVirgilio *:selected {
         color: white; }
   .gnome-panel-menu-bar PanelSeparator,
   .mate-panel-menu-bar PanelSeparator {
-    color: rgba(255, 255, 255, 0.12);
+    color: rgba(255, 255, 255, 0);
     padding-top: 4px;
     padding-bottom: 4px; }
   .gnome-panel-menu-bar na-tray-applet,
   .mate-panel-menu-bar na-tray-applet {
     -NaTrayApplet-icon-padding: 1px; }
+
+MatePanelAppletFrameDBus > MatePanelAppletFrameDBus {
+  background-image: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: left; }
 
 .mintmenu:hover {
   background-color: #3c3c3c; }
