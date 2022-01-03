@@ -1,3 +1,9 @@
+mint-themes (1.9.7) una; urgency=medium
+
+  * Mint-Y: Remove mate panel separators
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 03 Jan 2022 14:41:53 +0000
+
 mint-themes (1.9.6) una; urgency=medium
 
   [ Michael Webster ]
