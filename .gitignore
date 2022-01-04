@@ -3,3 +3,5 @@ src/Mint-Y/cinnamon/sass-cache
 
 # SASS cache files
 *.scssc
+
+out/

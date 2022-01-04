@@ -2,10 +2,9 @@
 
 import os
 
-VARIATIONS = ["Mint-Y",
-              "Mint-Y-Dark"]
+VARIATIONS = ["Mint-Y-Dark"]
 
-DEST = '../../usr/share/themes'
+DEST = '../../out/share/themes'
 
 curdir = os.getcwd()
 
