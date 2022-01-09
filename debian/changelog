@@ -1,3 +1,11 @@
+mint-themes (1.9.8) una; urgency=medium
+
+  [ JosephMcc ]
+  * Cinnamon: Use em for spacing of the calendar dots
+  * Mint-Y-Gtk3: Fix hover color on Mate menus
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sun, 09 Jan 2022 16:17:30 +0000
+
 mint-themes (1.9.7) una; urgency=medium
 
   * Mint-Y: Remove mate panel separators
