@@ -803,7 +803,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .calendar-day-event-dot-box {
-  margin-top: 22px;
+  margin-top: 1.7em;
   max-rows: 1;
 }
 
