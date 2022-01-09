@@ -3575,9 +3575,6 @@ SynapseGuiViewVirgilio *:selected {
   .gnome-panel-menu-bar menu > menuitem,
   .mate-panel-menu-bar menu > menuitem {
     color: rgba(255, 255, 255, 0.87); }
-    .gnome-panel-menu-bar menu > menuitem:hover,
-    .mate-panel-menu-bar menu > menuitem:hover {
-      color: #ffffff; }
   .gnome-panel-menu-bar button label, .gnome-panel-menu-bar button image,
   .gnome-panel-menu-bar #tasklist-button label,
   .gnome-panel-menu-bar #tasklist-button image,

@@ -761,8 +761,6 @@ SynapseGuiViewVirgilio *:selected { background-color: $selected_bg_color; }
 
   menu > menuitem {
     color: $fg_color;
-
-    &:hover { color: $selected_fg_color; }
   }
 
   button:not(#tasklist-button) { @extend %panelbutton; }
