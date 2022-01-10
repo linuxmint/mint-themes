@@ -714,10 +714,10 @@ style "menu_item"
   bg[SELECTED] = @selected_fg_color
 
 	fg[NORMAL] = @fg_color
-	fg[SELECTED] = @selected_fg_color
-  fg[PRELIGHT] = @selected_fg_color
+	fg[SELECTED] = @fg_color
+  fg[PRELIGHT] = @fg_color
 
-  text[PRELIGHT] = @selected_fg_color
+  text[PRELIGHT] = @fg_color
 
   engine "pixmap" {
 
@@ -890,7 +890,7 @@ style "menu_item"
     image {
       function = ARROW
       state = PRELIGHT
-      overlay_file = "assets/menu-arrow-prelight.png"
+      overlay_file = "assets/menu-arrow.png"
       overlay_border = { 0, 0, 0, 0 }
       overlay_stretch = FALSE
       arrow_direction = RIGHT
@@ -2037,7 +2037,7 @@ style "separator_menu_item" {
   GtkWidget::separator-height = 7
     
   xthickness = 1
-  ythickness = 0
+  ythickness = 1
     
   bg[NORMAL] = @menu_separator_color
     

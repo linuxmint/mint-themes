@@ -4,7 +4,7 @@ style "menubar" {
   fg[NORMAL] = "#dadada"
   fg[PRELIGHT] = "#dadada"
   fg[ACTIVE] = "#dadada"
-  fg[SELECTED] = @selected_fg_color
+  fg[SELECTED] = @fg_color
   fg[INSENSITIVE] = shade(0.7, "#dadada")
 
   xthickness = 0
@@ -25,7 +25,7 @@ style "menubar-borderless" {
 
   bg[NORMAL] = "#2b2b2b"
   fg[NORMAL] = "#dadada"
-  fg[SELECTED] = @selected_fg_color
+  fg[SELECTED] = @fg_color
   fg[INSENSITIVE] = shade(0.7, "#dadada")
 
   xthickness = 0
@@ -47,7 +47,7 @@ style "menubar_item" {
   xthickness = 2
   ythickness = 4
 
-  fg[PRELIGHT] = @selected_fg_color
+  fg[PRELIGHT] = @fg_color
 
   engine "pixmap" {
 
