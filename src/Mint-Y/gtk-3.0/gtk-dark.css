@@ -3492,7 +3492,13 @@ EphyWindow .floating-bar {
 calendar-view event.color-light label {
   color: black; }
 
+calendar-view event.color-light.timed label {
+  color: rgba(255, 255, 255, 0.87); }
+
 calendar-view event.color-dark label {
+  color: white; }
+
+calendar-view event.color-dark.timed label {
   color: rgba(255, 255, 255, 0.87); }
 
 .documents-scrolledwin.frame {
