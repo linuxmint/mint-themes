@@ -1,4 +1,48 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="16" height="16" version="1.1" xmlns="http://www.w3.org/2000/svg">
-  <rect x="4.5" y="4.5" width="7" height="7" fill="none" stroke="#808080"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="16"
+   height="16"
+   version="1.1"
+   id="svg892"
+   sodipodi:docname="max-icon.svg"
+   inkscape:version="1.1.1 (1:1.1+202109281949+c3084ef5ed)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs896" />
+  <sodipodi:namedview
+     id="namedview894"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="46.4375"
+     inkscape:cx="3.2193809"
+     inkscape:cy="8"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg892" />
+  <rect
+     style="fill:none;stroke:none;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none"
+     id="rect1438"
+     width="16"
+     height="16"
+     x="0"
+     y="0" />
+  <rect
+     x="4.5"
+     y="4.5"
+     width="7"
+     height="7"
+     fill="none"
+     stroke="#808080"
+     id="rect890" />
 </svg>
