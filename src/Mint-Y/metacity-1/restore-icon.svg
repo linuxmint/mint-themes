@@ -1,53 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   width="16"
-   height="16"
-   version="1.1"
-   id="svg1089"
-   sodipodi:docname="restore-icon.svg"
-   inkscape:version="1.1.1 (1:1.1+202109281949+c3084ef5ed)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <defs
-     id="defs1093" />
-  <sodipodi:namedview
-     id="namedview1091"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     showgrid="false"
-     inkscape:zoom="46.4375"
-     inkscape:cx="3.2193809"
-     inkscape:cy="8"
-     inkscape:window-width="1920"
-     inkscape:window-height="1017"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg1089" />
-  <rect
-     style="fill:none;stroke:none;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none"
-     id="rect1438"
-     width="16"
-     height="16"
-     x="0"
-     y="0" />
-  <rect
-     x="3.5"
-     y="5.5"
-     width="7"
-     height="7"
-     fill="none"
-     stroke="#808080"
-     id="rect1085" />
-  <path
-     d="m5 3.5h7.5v7.5"
-     fill="none"
-     stroke="#bfbfbf"
-     id="path1087" />
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16" height="16" version="1.1" xmlns="http://www.w3.org/2000/svg">
+ <g fill="none">
+  <rect width="16" height="16"/>
+  <rect x="3.5" y="5.5" width="7" height="7" stroke="#808080"/>
+  <path d="m5 3.5h7.5v7.5" stroke="#bfbfbf"/>
+ </g>
 </svg>
