@@ -5,3 +5,6 @@ src/Mint-Y/cinnamon/sass-cache
 *.scssc
 
 out/
+usr/
+
+__pycache__/

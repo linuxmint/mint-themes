@@ -5,6 +5,15 @@ import sys
 from constants import Y_HEX_ACCENT1, Y_HEX_ACCENT2, Y_HEX_ACCENT3, Y_HEX_ACCENT4
 from constants import y_hex_colors1, y_hex_colors2, y_hex_colors3, y_hex_colors4
 
+variation_list = [str(color) for color in y_hex_colors1.keys()]  # must be converted to string for later use
+
+
+def usage ():
+    print ("Usage: update-variations.py color")
+    print ("color can be " + ", ".join(variation_list) + " or 'All'.")
+    sys.exit(1)
+
+
 def change_value (key, value, file):
     if value is not None:
         command = "sed -i '/%(key)s=/c\%(key)s=%(value)s' %(file)s" % {'key':key, 'value':value, 'file':file}
@@ -12,10 +21,6 @@ def change_value (key, value, file):
         command = "sed -i '/%(key)s=/d' %(file)s" % {'key':key, 'file':file}
     os.system(command)
 
-def usage ():
-    print ("Usage: update-variations.py color")
-    print ("color can be 'Aqua', 'Blue', 'Brown', 'Grey', 'Orange', 'Pink', 'Purple', 'Red', 'Sand', 'Teal' or 'All'.")
-    sys.exit(1)
 
 def update_color (color):
     variation = "src/Mint-Y/variations/%s" % color
@@ -83,18 +88,17 @@ def update_color (color):
     os.system("./render-assets.sh")
     os.chdir(curdir)
 
+
 if len(sys.argv) < 2:
     usage()
-else:
-    color_variation = sys.argv[1]
-    if not color_variation in ["Aqua", "Blue", "Brown", "Grey", "Orange", "Pink", "Purple", "Red", "Sand", "Teal", "All"]:
-        usage()
 
-# Mint-Y variations
 curdir = os.getcwd()
+color_variation = sys.argv[1]
 
-if color_variation == "All":
-    for color in y_hex_colors1.keys():
+if color_variation in variation_list:
+    update_color(color_variation)
+elif color_variation == "All":
+    for color in variation_list:
         update_color(color)
 else:
-    update_color(color_variation)
+    usage()
