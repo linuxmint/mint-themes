@@ -89,11 +89,8 @@ def update_color (color):
     os.chdir(curdir)
 
 
-if len(sys.argv) < 2:
-    usage()
-
 curdir = os.getcwd()
-color_variation = sys.argv[1]
+color_variation = sys.argv[1] if len(sys.argv) > 1 else None
 
 if color_variation in variation_list:
     update_color(color_variation)
