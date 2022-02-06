@@ -7,12 +7,9 @@ from constants import y_hex_colors1, y_hex_colors2, y_hex_colors3, y_hex_colors4
 
 variation_list = [str(color) for color in y_hex_colors1.keys()]  # must be converted to string for later use
 
-
 def usage ():
     print ("Usage: update-variations.py color")
     print ("color can be " + ", ".join(variation_list) + " or 'All'.")
-    sys.exit(1)
-
 
 def change_value (key, value, file):
     if value is not None:
@@ -20,7 +17,6 @@ def change_value (key, value, file):
     else:
         command = "sed -i '/%(key)s=/d' %(file)s" % {'key':key, 'file':file}
     os.system(command)
-
 
 def update_color (color):
     variation = "src/Mint-Y/variations/%s" % color
@@ -88,7 +84,7 @@ def update_color (color):
     os.system("./render-assets.sh")
     os.chdir(curdir)
 
-
+ # Mint-Y variations
 curdir = os.getcwd()
 color_variation = sys.argv[1] if len(sys.argv) > 1 else None
 
