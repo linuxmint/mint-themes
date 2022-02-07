@@ -3,6 +3,6 @@
  <g fill="none">
   <rect width="16" height="16"/>
   <rect x="3.5" y="5.5" width="7" height="7" stroke="#808080"/>
-  <path d="m5 3.5h7.5v7.5" stroke="#bfbfbf"/>
+  <path d="m5 3.5h7.5v7.5" opacity=".5" stroke="#808080"/>
  </g>
 </svg>
