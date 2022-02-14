@@ -499,18 +499,30 @@
 
 <frame_style name="tiled_left_focused" geometry="tiled_left" parent="maximized_focused">
 	<piece position="overlay" draw_ops="border_tiled_left_focused"/>
+    <button function="maximize" state="normal" draw_ops="maximize_focused"/>
+    <button function="maximize" state="prelight" draw_ops="maximize_focused_prelight"/>
+    <button function="maximize" state="pressed" draw_ops="maximize_focused_pressed"/>
 </frame_style >
 
 <frame_style name="tiled_left_unfocused" geometry="tiled_left" parent="maximized_unfocused">
 	<piece position="overlay" draw_ops="border_tiled_left_unfocused"/>
+    <button function="maximize" state="normal" draw_ops="maximize_unfocused"/>
+    <button function="maximize" state="prelight" draw_ops="maximize_focused_prelight"/>
+    <button function="maximize" state="pressed" draw_ops="maximize_focused_pressed"/>
 </frame_style >
 
 <frame_style name="tiled_right_focused" geometry="tiled_right" parent="maximized_focused">
 	<piece position="overlay" draw_ops="border_tiled_right_focused"/>
+    <button function="maximize" state="normal" draw_ops="maximize_focused"/>
+    <button function="maximize" state="prelight" draw_ops="maximize_focused_prelight"/>
+    <button function="maximize" state="pressed" draw_ops="maximize_focused_pressed"/>
 </frame_style >
 
 <frame_style name="tiled_right_unfocused" geometry="tiled_right" parent="maximized_unfocused">
 	<piece position="overlay" draw_ops="border_tiled_right_unfocused"/>
+    <button function="maximize" state="normal" draw_ops="maximize_unfocused"/>
+    <button function="maximize" state="prelight" draw_ops="maximize_focused_prelight"/>
+    <button function="maximize" state="pressed" draw_ops="maximize_focused_pressed"/>
 </frame_style >
 
 <frame_style name="utility_focused" geometry="utility" parent="normal_focused">
