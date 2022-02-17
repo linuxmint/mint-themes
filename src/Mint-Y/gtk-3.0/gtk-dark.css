@@ -3052,7 +3052,7 @@ TerminalWindow .notebook .active-page .button:active, TerminalWindow .notebook .
   color: #8fa876; }
 
 vte-terminal {
-  -TerminalScreen-background-darkness: 0.97;
+  -TerminalScreen-background-darkness: 1.0;
   background-color: #3f3f3f;
   color: #fff; }
 
