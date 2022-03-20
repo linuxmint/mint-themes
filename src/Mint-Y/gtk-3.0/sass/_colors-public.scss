@@ -42,6 +42,7 @@ $wm_bg_unfocused: opacify($header_bg_backdrop, 1);
 
 @define-color wm_highlight #{"" + $wm_highlight};
 @define-color wm_border #{"" + $wm_border};
+@define-color wm_border_unfocused #{"" + $wm_border_unfocused};
 @define-color wm_shadow alpha(#{"" + black}, 0.35);
 
 //WM Buttons
@@ -56,8 +57,6 @@ $wm_bg_unfocused: opacify($header_bg_backdrop, 1);
 // Minimize, Maximize
 @define-color wm_button_hover_bg #{"" + $wm_button_hover_bg};
 @define-color wm_button_active_bg #{"" + $wm_button_active_bg};
-
-@define-color wm_button_hover_border #{"" + $wm_button_hover_border};
 
 @define-color wm_icon_bg #{"" + $wm_icon_bg};
 @define-color wm_icon_unfocused_bg #{"" + $wm_icon_unfocused_bg};
