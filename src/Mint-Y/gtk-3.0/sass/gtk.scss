@@ -1,5 +1,5 @@
 $variant: 'light';
-$darker: 'false';
+$tint: 'no-tint';
 
 @import 'colors';
 @import 'drawing';
@@ -8,3 +8,4 @@ $darker: 'false';
 @import 'lightdm';
 @import 'ubiquity';
 @import 'colors-public';
+@import 'libhandy';

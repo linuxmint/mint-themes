@@ -49,6 +49,25 @@ actionbar {
     background-image: none;
 }
 
+/********************
+ * app-notification *
+ ********************/
+
+.app-notification {
+    padding: 10px;
+    border-style: solid;
+    border-width: 0 1px 1px 1px;
+    border-color: @border;
+    border-radius: 0 0 2px 2px;
+    padding: 10px;
+    background-color: @toolbar_bg_b;
+    color: @theme_fg_color;
+}
+
+.app-notification border {
+    border: none;
+}
+
 /*************
  * assistant *
  *************/
@@ -447,17 +466,17 @@ combobox arrow {
  decoration {
     border-width: 0;
     border-radius: 6px 6px 0 0;
-    box-shadow: 0 2px 8px 3px alpha(black, 0.5),
-                0 0 0 1px darker(@theme_bg_color);
+    box-shadow: 0 0 1px 1px transparent,
+                0 2px 6px 0 alpha(black, 0.8);
 
     /* this is used for the resize cursor area */
     margin: 10px;
  }
 
  decoration:backdrop {
-    box-shadow: 0 2px 8px 3px transparent,
-                0 2px 5px 3px alpha(black, 0.3),
-                0 0 0 1px darker(@theme_bg_color);
+    box-shadow: 0 0 0 1px transparent,
+                0 2px 6px 0 transparent,
+                0 3px 4px 0 alpha(black, 0.4);
  }
 
  .maximized decoration,

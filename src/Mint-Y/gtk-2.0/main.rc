@@ -2031,14 +2031,19 @@ style "progressbar" {
 
 style "separator_menu_item" {
 
-  engine "pixmap" {
-
-    image {
-      function = BOX
-      file = "assets/null.png"
-      border = { 0, 0, 1, 0 }
-      stretch = TRUE
-    }
+  GtkSeparatorMenuItem::horizontal-padding = 0
+  GtkWidget::wide-separators = 1
+  GtkWidget::separator-width = 1
+  GtkWidget::separator-height = 7
+    
+  xthickness = 1
+  ythickness = 0
+    
+  bg[NORMAL] = @menu_separator_color
+    
+  engine "murrine" 
+  {
+      separatorstyle = 0
   }
 }
 
@@ -2372,6 +2377,7 @@ class "*HandleBox"                                                  style "toolb
 
 widget_class "*<GtkMenu>*"                                          style "menu"
 widget_class "*<GtkMenuItem>*"                                      style "menu_item"
+widget_class "*<GtkSeparatorMenuItem>*"                             style "separator_menu_item"
 widget_class "*<GtkCheckButton>*"                                   style "checkbutton"
 widget_class "*<GtkComboBox>"                                       style "combobox"
 widget_class "*<GtkComboBox>*<GtkButton>"                           style "combobox_button"

@@ -193,11 +193,14 @@ filechooser {
     }
 
     separator { background-color: transparent; }
-
-    scrollbar { @extend %dark_sidebar_scrollbar }
   }
 
   &.maximized placessidebar.sidebar { background-color: opacify($dark_sidebar_bg, 1); }
+}
+
+filechooser placessidebar > viewport.frame {
+  border: 1px solid $borders_color;
+  border-width: 1px 0 0 0;
 }
 
 NautilusQueryEditor .search-bar.toolbar {
@@ -260,11 +263,11 @@ NautilusListView .view { border-bottom: 1px solid $borders_color; }
   }
 
   .places-treeview {
-    -NemoPlacesTreeView-disk-full-bg-color: $dark_sidebar_fg;
+    -NemoPlacesTreeView-disk-full-bg-color: if($variant == 'light', #aaaaaa, $dark_sidebar_fg);
     -NemoPlacesTreeView-disk-full-fg-color: darken($selected_bg_color, 10%);
     -GtkTreeView-vertical-separator: 7;
 
-    .view.cell:hover { background-color: transparentize($dark_sidebar_fg, 0.85); }
+    .view.cell:hover { background-color: transparentize($dark_sidebar_fg, 0.75); }
   }
 
   .nemo-places-sidebar.frame { border-width: 0; }
@@ -290,13 +293,11 @@ NautilusListView .view { border-bottom: 1px solid $borders_color; }
         &:hover { color: $dark_sidebar_fg; }
       }
     }
-
-    scrollbar { @extend %dark_sidebar_scrollbar }
   }
 
   /* This is to keep the separator next to the sidebar dark so we don't see a gap
      between it and the trash bar */
-  grid > paned > separator { background-image: _solid($dark_sidebar_bg); }
+  grid > paned > separator { background-image: _solid($borders_color); }
 
   // Fix padding of the statusbar buttons
   & widget .toolbar .image-button { padding: 0; }
@@ -320,6 +321,8 @@ NautilusListView .view { border-bottom: 1px solid $borders_color; }
     }
   }
 
+  .frame { border-width: 1px 0 1px 0; }
+
   .caja-side-pane {
 
     .view,
@@ -327,6 +330,14 @@ NautilusListView .view { border-bottom: 1px solid $borders_color; }
     notebook {
       background-color: $dark_sidebar_bg;
       color: $dark_sidebar_fg;
+    }
+
+    .frame { border-width: 1px 0 0 0; }
+
+    .view > box,
+    viewport.frame {
+      border: 1px solid $borders_color;
+      border-width: 1px 0 0 0;
     }
   }
 }
@@ -633,6 +644,12 @@ EphyWindow .floating-bar { // Epiphany overrides the floating-bar style, so rese
 }
 
 //
+// Gnome Calendar
+//
+calendar-view event.color-light label { color: black; }
+calendar-view event.color-dark label { color: $fg_color; }
+
+//
 // Gnome Documents
 //
 .documents-scrolledwin.frame { border-width: 0; }
@@ -744,8 +761,6 @@ SynapseGuiViewVirgilio *:selected { background-color: $selected_bg_color; }
 
   menu > menuitem {
     color: $fg_color;
-
-    &:hover { color: $selected_fg_color; }
   }
 
   button:not(#tasklist-button) { @extend %panelbutton; }
@@ -773,7 +788,7 @@ SynapseGuiViewVirgilio *:selected { background-color: $selected_bg_color; }
   }
 
   PanelSeparator {
-    color: transparentize(darken($panel_bg, 20%), 0.8);
+    color: rgba(255,255,255, 0);
     padding-top: 4px;
     padding-bottom: 4px;
   }
@@ -781,6 +796,13 @@ SynapseGuiViewVirgilio *:selected { background-color: $selected_bg_color; }
   na-tray-applet {
     -NaTrayApplet-icon-padding: 1px;
   }
+}
+
+MatePanelAppletFrameDBus > MatePanelAppletFrameDBus {
+    background-image: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: left;
 }
 
 .mintmenu:hover { background-color: lighten($panel_bg, 5%); }
@@ -971,36 +993,13 @@ EvWindow .content-view .view:focus:selected {
   &:disabled { @include button(osd-insensitive); }
 }
 
-%dark_sidebar_scrollbar {
-
-  border-color: darken($dark_sidebar_bg, 5%);
-
-  &.overlay-indicator:not(.dragging):not(.hovering) slider {
-    background-color: lighten($dark_sidebar_fg, 15%);
-    border: 1px solid transparentize(black, 0.7);
-  }
-  slider {
-    background-color: transparentize(lighten($dark_sidebar_fg, 15%), 0.3);
-
-    &:hover { background-color: lighten($dark_sidebar_fg, 20%); }
-
-    &:hover:active { background-color: $selected_bg_color; }
-
-    &:disabled {
-      background-color: transparent;
-    }
-  }
-  trough {
-    background-color: darken($dark_sidebar_bg, 5%);
-  }
-}
-
 //
 // Thunar
 //
 .thunar {
   .sidebar .view {
-    background-color: $bg_color;
+    background-color: $dark_sidebar_bg;
+    color: $dark_sidebar_fg;
 
     &:selected, &:active {
       background: $selected_bg_color;
@@ -1012,7 +1011,7 @@ EvWindow .content-view .view:focus:selected {
     -gtk-icon-transform: scale(0.9);
   }
 
-  @if $variant=='light' and $darker=='false' {
+  @if $variant=='light' {
       toolbar {
         color: $header_fg;
         background-color: $header_bg;

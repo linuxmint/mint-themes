@@ -1,5 +1,5 @@
 $variant: 'dark';
-$darker: 'false';
+$tint: 'no-tint';
 
 @import 'colors';
 @import 'drawing';
@@ -7,3 +7,4 @@ $darker: 'false';
 @import 'applications';
 @import 'lightdm';
 @import 'colors-public';
+@import 'libhandy';

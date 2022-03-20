@@ -1,3 +1,149 @@
+mint-themes (1.9.8) una; urgency=medium
+
+  [ JosephMcc ]
+  * Cinnamon: Use em for spacing of the calendar dots
+  * Mint-Y-Gtk3: Fix hover color on Mate menus
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sun, 09 Jan 2022 16:17:30 +0000
+
+mint-themes (1.9.7) una; urgency=medium
+
+  * Mint-Y: Remove mate panel separators
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 03 Jan 2022 14:41:53 +0000
+
+mint-themes (1.9.6) una; urgency=medium
+
+  [ Michael Webster ]
+  * Mint-Y: compile sass to reflect 08ac147633d436c92d412
+  * Update Mint-Y cinnamon thumbnails.
+  * Mint-Y: Fix seahorse/libhandy headerbars when multiple are used.
+  * Mint-Y: Make the mate panel separator the same color as cinnamon's.
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 31 Dec 2021 11:13:35 +0000
+
+mint-themes (1.9.5) una; urgency=medium
+
+  [ Michael Webster ]
+  * Mint-Y: Fix top and bottom clipping of the window close button in client-decorated firefox.
+
+  [ Clement Lefebvre ]
+  * Mint-Y: Update metacity thumbnail
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 17 Dec 2021 16:06:35 +0000
+
+mint-themes (1.9.4) una; urgency=medium
+
+  [ Michael Webster ]
+  * Mint-X cinnamon: Add support for the no-events 'button' and improve the go-home button's appearance when enabled.
+  * mint-x cinnamon: Some cleanup.
+  * Mint-Y cinnamon: Add support for the 'no events' button.
+  * Mint-X cinnamon: Fix color of no-events calendar icon.
+  * Update the 'Linux Mint' cinnamon theme for calendar changes.
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 16 Dec 2021 10:19:29 +0000
+
+mint-themes (1.9.3) una; urgency=medium
+
+  [ Michael Webster ]
+  * Mint-X cinnamon: Fix hover style of 'home date' button, change color used for calendar day hover.
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 09 Dec 2021 11:27:44 +0000
+
+mint-themes (1.9.2) una; urgency=medium
+
+  * Xfwm4: titlebar color fixes
+  * Xfwm4: Make bottom corners completely square
+  * Generate asssets
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 03 Dec 2021 15:31:31 +0000
+
+mint-themes (1.9.1) una; urgency=medium
+
+  [ Michael Webster ]
+  * Add additional calendar/event support to Cinnamon themes.
+
+  [ Clement Lefebvre ]
+  * xfwm4: Don't hardcode the button layout
+  * Xfwm4: Use circle for shade and rivet for menu
+  * Update assets
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 03 Dec 2021 14:35:49 +0000
+
+mint-themes (1.9.0) una; urgency=medium
+
+  [ Michael Webster ]
+  * Mint-Y-Cinnamon: Don't allow the number of calendar events to affect the popup's height.
+
+  [ Clement Lefebvre ]
+  * Gtk2: Use generated assets
+  * Remove tint on all variations
+  * Regenerate assets
+  * Update Xfwm4 theme
+  * Update variations
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 03 Dec 2021 11:48:12 +0000
+
+mint-themes (1.8.9) una; urgency=medium
+
+  [ JosephMcc ]
+  * Mint-Y-Gtk2: Put separators in menus
+  * Gtk3: Better match csd and ssd window shadows
+  * Mint-X-Gtk3: Add styling for app-notification
+  * test-mint-y: Add a couple more things
+  * Mint-Y: Remove the -darker variation
+  * Mint-Y: Add a dark variant to the light theme
+  * Mint-Y: Only ship a single metacity theme
+  * Mint-Y: Force the metacity theme to update on gtk theme changes
+  * Mint-Y-Cinnamon: Set a height for the run dialog entry
+  * Mint-Y: Use a light sidebar in file managers
+  * Mint-Y-Cinnamon: Give the light theme a light panel
+  * Mint-Y: Restyle the window decorations
+  * Mint-Y: Missed including a new icon for metacity
+  * Mint-Y-Gtk3: Fix osd colors
+  * Mint-Y: Tint the entire theme with the selected_bg_color
+  * Mint-Y: Add rounded corners to the window borders
+  * Mint-Y: Adjust csd window shadows again
+  * Mint-Y-Gtk3: Fix the hover color in the Nemo sidebar
+  * Mint-Y: Add a light 1px border around window frames
+  * Mint-Y: Bump up the color mix a bit
+  * Mint-Y: Match up csd and non-csd window borders a bit better
+  * Mint-Y: Hide shadows on tiled csd windows
+  * Mint-Y: Improve the styling of the Caja filemanager
+  * Mint-Y: Update the styling of the Thunar sidebar
+  * Mint-Y: Fix the color of the Mate panel
+  * Mint-Y: Clean up the titlebar styling some more
+  * Mint-Y: Fix the size of csd titlebuttons
+  * Mint-Y-Cinnamon: Adapt to the Cinnamon modal dialog theming changes
+  * Mint-Y: Don't use the accent color in active buttons
+  * Mint-Y: Fix the color of focus outline on active buttons
+  * Mint-Y: Don't use the accent color for active menuitems
+
+  [ Clement Lefebvre ]
+  * Fix test script
+  * Mint-Y: Metacity, fix artefacts in close button.
+
+  [ JosephMcc ]
+  * Mint-Y: Don't special case sidebar scrollbars
+  * Mint-Y: Readapt the csd titlebuttons to match metacity
+  * Mint-Y: Fix corner radius of ssd window decorations
+
+  [ Clement Lefebvre ]
+  * Remove tint on green theme and base color
+
+  [ JosephMcc ]
+  * Mint-Y-Dark: Fix the label color of events in gnome calendar
+  * Mint-Y-Cinnamon: Add initial support for the reworked calendar applet
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 26 Nov 2021 14:29:02 +0000
+
+mint-themes (1.8.8) uma; urgency=medium
+
+  [ Archisman Panigrahi ]
+  * use _libhandy.scss from Arc theme (#316)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 03 Jun 2021 14:25:57 +0100
+
 mint-themes (1.8.7) ulyssa; urgency=medium
 
   [ steve ]
