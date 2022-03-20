@@ -8,7 +8,7 @@ ASSETS_DIR="."
 
 INDEX="assets.txt"
 
-# check command avalibility
+# check command availability
 has_command() {
   "$1" -v $1 > /dev/null 2>&1
 }
@@ -22,7 +22,7 @@ if ! [ -f $ASSETS_DIR/$i.png ]; then
 
     $INKSCAPE --export-id=$i \
               --export-id-only \
-              --export-png=$ASSETS_DIR/$i.png $SRC_FILE >/dev/null
+              --export-filename=$ASSETS_DIR/$i.png $SRC_FILE >/dev/null
     $OPTIPNG -o7 --quiet $ASSETS_DIR/$i.png
 fi
 done
