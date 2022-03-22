@@ -6,6 +6,8 @@
 * Open the doors to some small application that would empower people to create their own color variations.
 * Make things much easier for all those people making forks or clones from mint-themes.
 
+NOTE : Updated for Inkscape version 1.1 and up. Not retro-compatible with the old Inkscape version 0.x. Please check the troubleshooting section for this retro-compatibility issue.
+
 | path                                      | thumbnails for all color variations (light)                      | thumbnails for all color variations (dark)                            |
 | ----------------------------------------- |:----------------------------------------------------------------:|:---------------------------------------------------------------------:|
 | src/Mint-Y/variations/\<color\>/gtk-3.0/  | <img src="src/Mint-Y/gtk-3.0/thumbnail@2.png" height="35">       | <img src="src/Mint-Y/gtk-3.0/thumbnail-dark@2.png" height="35">       |
@@ -36,7 +38,7 @@ Later, you could re-edit those colors one-by-one with some `./update-variations.
 
 ## Troubleshooting
 
-**Inkscape version >= 1.1 versus this old version 0.x**  
+**Inkscape version >= 1.1 versus the old version 0.x**  
 Many files got updated for Inkscape version 1.1 and up. I strongly recommend you get the latest Inkscape from PPA:
 
 ```
@@ -49,4 +51,4 @@ The Inkscape version found in the official repository is many years old and neve
 
 `export-filename` -> `export-png`
 
-for compatibility with this old Inkscape version 0.x...
+for compatibility with the old Inkscape version 0.x...
