@@ -34,7 +34,7 @@ $asset_suffix: if($variant=='dark', '-dark', ''); // use dark assets in dark var
 //
 .background {
   color: $fg_color;
-  background-color: transparentize(mix($selected_bg_color, $bg_color, 1%), 0.001);
+  background-color: transparentize($bg_color, 0.001);
 }
 
 *:disabled { -gtk-icon-effect: dim; }
@@ -375,11 +375,6 @@ button {
     &:not(:disabled) label:disabled { color: inherit; opacity: 0.6; }
   }
 
-  //Webkitgtk workaround start
-  &:active { color: $fg_color; }
-  &:active:hover, &:checked { color: $selected_fg_color; }
-  //Webkitgtk workaround end
-
   @at-root %button_basic_flat,
   &.flat:disabled { @include button(undecorated); }
 
@@ -683,8 +678,8 @@ modelbutton.flat {
 
   @extend %undecorated_button;
 
-  &:hover { background-color: if($variant=='light', mix($fg_color,$bg_color,5%), mix($fg_color,$bg_color,10%)); }
-  &:active, &:selected { &, arrow { @extend %selected_items; } }
+  &:hover { background-color: $menu_selected_bg_color; }
+  &:active, &:selected { &, arrow { background-color: $menu_selected_bg_color; } }
   &:checked { color: $fg_color; }
 
   // FIXME: temporary workaround
@@ -743,7 +738,7 @@ button:link, button:visited {
 spinbutton {
   &:drop(active) { box-shadow: none; }
 
-  button:active { color: $selected_fg_color; }
+  // button:active { color: $selected_fg_color; }
   &:disabled { color: $insensitive_fg_color; }
 
   &:not(.vertical) {
@@ -1041,7 +1036,7 @@ headerbar,
 }
 
 .titlebar {
-  border-radius: 3px 3px 0 0;
+  border-radius: 8px 8px 0 0;
 }
 
 headerbar {
@@ -1056,7 +1051,7 @@ headerbar {
   separator:first-child + &,
   &:first-child {
     &, &:backdrop {
-      border-top-left-radius: 3px;
+      border-top-left-radius: 8px;
 
       .maximized &,
       .tiled & { border-radius: 0; }
@@ -1065,7 +1060,7 @@ headerbar {
 
   &:last-child {
     &, &:backdrop {
-      border-top-right-radius: 3px;
+      border-top-right-radius: 8px;
 
       .maximized &,
       .tiled & { border-radius: 0; }
@@ -1561,8 +1556,8 @@ menubar,
     border-width: 0;
 
     &:hover { //Seems like it :hover even with keyboard focus
-      background-color: $selected_bg_color;
-      color: $selected_fg_color;
+      background-color: $menu_selected_bg_color;
+      color: $fg_color;
     }
     &:disabled {
       color: transparentize($header_fg, 0.6);
@@ -1605,8 +1600,8 @@ menu,
     padding: 5px;
 
     &:hover {
-      color: $selected_fg_color;
-      background-color: $selected_bg_color;
+      color: $fg_color;
+      background-color: $menu_selected_bg_color;
     }
     &:disabled {
       color: $insensitive_fg_color;
@@ -2015,7 +2010,6 @@ switch {
     // the borders of checks and radios are
     // too similar in luminosity to the selected background color, hence
     // we need special casing.
-    menuitem #{$w}#{$s}:hover,
     .view #{$w}#{$s}:selected,
     treeview.#{$w}#{$s}:selected,
     row:selected #{$w}#{$s},
@@ -3055,13 +3049,14 @@ button.circular-button,
 // Window Decorations
 //
 decoration {
-  border-radius: 4px 4px 0 0;
+  border-radius: 8px 8px 0 0;
   border-width: 0px;
 
-  $_wm_border: transparentize(black, 0.85);
+  $_wm_border: if($variant=='light', transparentize(black, 0.80), transparentize(black, 0.65));
+  $_wm_border_backdrop: if($variant=='light', transparentize(black, 0.85), transparentize(black, 0.7));
 
-  box-shadow: 0 0 1px 1px transparent,
-              0 2px 6px 0 opacify($_wm_border, 0.85);
+  box-shadow: 0 3px 9px 1px transparentize(black, 0.5),
+              0 0 0 1px $wm_border; //doing borders with box-shadow
 
   // this is used for the resize cursor area
   margin: 10px;
@@ -3069,14 +3064,19 @@ decoration {
   &:backdrop {
     // the transparent shadow here is to enforce that the shadow extents don't
     // change when we go to backdrop, to prevent jumping windows
-    box-shadow: 0 0 0 1px transparent,
-                0 2px 6px 0 transparent,
-                0 3px 4px 0 opacify($_wm_border, 0.4);
+    box-shadow: 0 3px 9px 1px transparent,
+                0 2px 6px 2px transparentize(black, 0.8),
+                0 0 0 1px $wm_border_unfocused;
   }
+
   .fullscreen &,
+  .maximized &,
   .tiled &,
   .tiled &:backdrop {
     border-radius: 0;
+    box-shadow: 0 3px 9px 1px transparent,
+                0 2px 6px 2px transparent,
+                0 0 0 1px $wm_border_unfocused;
   }
   .popup & {
     box-shadow: none;
@@ -3084,15 +3084,15 @@ decoration {
   }
   // server-side decorations as used by mutter
   .ssd & {
-    border-radius: if($variant=='light', 4px 4px 0 0, 3px 3px 0 0);
-    box-shadow: 0 0 0 1px if($variant == 'dark', transparentize(black, 0.35), $_wm_border);
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0 0 0 1px if($variant == 'dark', transparentize(black, 0.35), $wm_border);
 
     &.maximized { border-radius: 0; }
   }
   .csd.popup & {
     border-radius: 2px;
-    box-shadow: 0 3px 6px if($variant == 'light', $_wm_border, transparentize($_wm_border, 0.1)),
-                  0 0 0 1px if($variant == 'light', $_wm_border, darken($bg_color, 10%));
+    box-shadow: 0 1px 4px transparentize(black, 0.8),
+                0 0 0 1px transparentize($wm_border, 0.1);
   }
   tooltip.csd & {
     border-radius: 2px;
@@ -3117,7 +3117,7 @@ headerbar,
     padding-top: 0px;                       // already handled by the titlebar-padding
     padding-bottom: 0px;
     min-width: 22px;
-    min-height: 0;
+    min-height: 22px;
     margin: 0;
   }
 
@@ -3130,6 +3130,7 @@ headerbar,
 
     padding: 10px 3px;
     margin: 0;
+    transition: none;
 
     @include button(undecorated);
     background-color: transparentize($header_bg, 1);
@@ -3145,7 +3146,7 @@ headerbar,
       -gtk-icon-theme: "Mint-Y";
 
       background-color: transparent;
-      background-size: 20px 20px;
+      background-size: 18px 18px;
       background-position: center;
       background-repeat: no-repeat;
       border-width: 0;
@@ -3162,9 +3163,17 @@ headerbar,
 
     &.maximize,
     &.minimize {
-      &:hover { @include draw-circle($wm_button_hover_bg); }
-      &:active { @include draw-circle($wm_button_active_bg); }
-      &:backdrop { color: $_wm_backdrop_icon_color; }
+      &:hover,
+      &:hover:backdrop {
+        @include draw-circle($wm_button_hover_bg);
+      }
+      &:active,
+      &:active:backdrop {
+        @include draw-circle($wm_button_active_bg);
+      }
+      &:backdrop {
+        color: $_wm_backdrop_icon_color;
+      }
     }
   }
 }

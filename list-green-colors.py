@@ -61,13 +61,14 @@ if len(sys.argv) < 2:
     parse_dir("src/Mint-Y/cinnamon/light-assets")
 
     # GTK2
-    parse_dir("src/Mint-Y/gtk-2.0/menubar-toolbar")
     parse_file("src/Mint-Y/gtk-2.0/apps.rc")
     parse_file("src/Mint-Y/gtk-2.0/gtkrc")
     parse_file("src/Mint-Y/gtk-2.0/gtkrc-dark")
     parse_file("src/Mint-Y/gtk-2.0/gtkrc-darker")
     parse_file("src/Mint-Y/gtk-2.0/main.rc")
     parse_file("src/Mint-Y/gtk-2.0/panel.rc")
+    parse_file("src/Mint-Y/gtk-2.0/menubar-toolbar.rc")
+    parse_file("src/Mint-Y/gtk-2.0/menubar-toolbar-dark.rc")
     parse_file("src/Mint-Y/gtk-2.0/assets.svg")
     parse_file("src/Mint-Y/gtk-2.0/assets-dark.svg")
 

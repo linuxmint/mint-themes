@@ -98,6 +98,8 @@ for color in y_hex_colors1.keys():
             os.system("cp -R src/Mint-Y/gtk-3.0/sass %s/gtk-3.0/" % theme)
             y_colorize_directory("%s/gtk-3.0/sass" % theme, color)
             os.chdir("%s/gtk-3.0" % theme)
+            # os.system("sed -i 's/no-tint/tint/gI' ./sass/gtk.scss")
+            # os.system("sed -i 's/no-tint/tint/gI' ./sass/gtk-dark.scss")
             if (variant == "-Dark"):
                 os.system("cp sass/gtk-dark.scss sass/gtk.scss")
                 os.system("sassc ./sass/gtk.scss gtk.css")
@@ -124,7 +126,7 @@ for color in y_hex_colors1.keys():
             files.append(os.path.join(theme, "gtk-2.0", "main.rc"))
             files.append(os.path.join(theme, "gtk-2.0", "panel.rc"))
             files.append(os.path.join(theme, "gtk-2.0", "apps.rc"))
-            files.append(os.path.join(theme, "gtk-2.0", "menubar-toolbar", "gtkrc"))
+            files.append(os.path.join(theme, "gtk-2.0", "menubar-toolbar.rc"))
             for file in files:
                 if os.path.exists(file):
                     for accent in Y_HEX_ACCENT1:
@@ -152,8 +154,10 @@ for color in y_hex_colors1.keys():
             os.system("rm -rf %s/gtk-2.0/assets" % theme)
             if variant == "-Dark":
                 os.system("cp -R %s/gtk-2.0/assets-dark %s/gtk-2.0/assets" % (path, theme))
+                os.system("cp -R %s/xfwm4-dark/*.png %s/xfwm4/" % (path, theme))
             else:
                 os.system("cp -R %s/gtk-2.0/assets %s/gtk-2.0/assets" % (path, theme))
+                os.system("cp -R %s/xfwm4/*.png %s/xfwm4/" % (path, theme))
             os.system("cp -R %s/gtk-3.0/assets %s/gtk-3.0/assets" % (path, theme))
 
 

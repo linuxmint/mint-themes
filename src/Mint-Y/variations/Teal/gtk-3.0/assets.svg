@@ -13,7 +13,7 @@
    height="276"
    id="svg9892"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
    sodipodi:docname="assets.svg">
   <defs
      id="defs9894" />
@@ -24,18 +24,18 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.828427"
-     inkscape:cx="281.95765"
-     inkscape:cy="175.60493"
+     inkscape:zoom="3.9999998"
+     inkscape:cx="246.32371"
+     inkscape:cy="205.70159"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
      showborder="false"
-     inkscape:window-width="1383"
-     inkscape:window-height="930"
-     inkscape:window-x="1998"
-     inkscape:window-y="33"
-     inkscape:window-maximized="0"
+     inkscape:window-width="2560"
+     inkscape:window-height="1415"
+     inkscape:window-x="2560"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
      inkscape:snap-nodes="true"
      inkscape:snap-bbox="true"
      inkscape:bbox-paths="true"
@@ -2245,22 +2245,22 @@
        style="opacity:0.8">
       <g
          id="g7138"
-         style="display:inline;opacity:1"
+         style="display:inline;opacity:1;fill:#454545;fill-opacity:1"
          transform="translate(-781,-432.63782)">
         <g
            transform="translate(-58,0)"
-           style="display:inline;opacity:1"
+           style="display:inline;opacity:1;fill:#454545;fill-opacity:1"
            id="g4490-3-75">
           <g
              id="g4092-0-7-0"
-             style="display:inline"
+             style="display:inline;fill:#454545;fill-opacity:1"
              transform="translate(58,0)" />
         </g>
         <path
            inkscape:connector-curvature="0"
            d="m 1373,254 0,2 6,0 0,-2 z"
            id="rect9057-4-3"
-           style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:Sans;-inkscape-font-specification:Sans;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;display:inline;overflow:visible;visibility:visible;opacity:0.99999999;fill:#7a7f8b;fill-opacity:1;stroke:none;stroke-width:2;marker:none;enable-background:accumulate"
+           style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:Sans;-inkscape-font-specification:Sans;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;display:inline;overflow:visible;visibility:visible;opacity:0.99999999;fill:#454545;fill-opacity:1;stroke:none;stroke-width:2;marker:none;enable-background:accumulate"
            sodipodi:nodetypes="ccccc" />
       </g>
       <rect
@@ -2658,20 +2658,20 @@
        style="opacity:0.8">
       <g
          id="g7146"
-         style="display:inline;opacity:1"
+         style="display:inline;opacity:1;fill:#454545;fill-opacity:1"
          transform="translate(-781,-432.63782)">
         <g
            transform="translate(-29,0)"
-           style="display:inline;opacity:1"
+           style="display:inline;opacity:1;fill:#454545;fill-opacity:1"
            id="g4490-2-96">
           <g
              id="g4092-0-6-83"
-             style="display:inline"
+             style="display:inline;fill:#454545;fill-opacity:1"
              transform="translate(58,0)" />
         </g>
         <path
            id="path4293-5-95"
-           style="display:inline;opacity:0.99999999;fill:#7a7f8b;fill-opacity:1;fill-rule:evenodd;stroke:none"
+           style="display:inline;opacity:0.99999999;fill:#454545;fill-opacity:1;fill-rule:evenodd;stroke:none"
            d="m 1403.7995,252 3.3818,0 c 0.4503,0 0.8162,0.36847 0.8187,0.8188 l 0,3.3817 z m 2.4074,6.00692 -3.395,0 c -0.4504,0 -0.8188,-0.36842 -0.8188,-0.81875 l 0,-3.39509 4.2138,4.21384"
            inkscape:connector-curvature="0"
            sodipodi:nodetypes="csscccsscc" />
