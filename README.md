@@ -33,3 +33,20 @@ Later, you could re-edit those colors one-by-one with some `./update-variations.
 1. Run `./generate-themes.py`.
 1. `cd ~/mint-themes` and then `sudo cp -rf usr/share/themes/* /usr/share/themes`.
 1. Force refresh your Menu > Preferences > Themes.
+
+## Troubleshooting
+
+**Inkscape version >= 1.1 versus this old version 0.x**  
+Many files got updated for Inkscape version 1.1 and up. I strongly recommend you get the latest Inkscape from PPA:
+
+```
+sudo add-apt-repository ppa:inkscape.dev/stable
+sudo apt update
+sudo apt install inkscape
+```
+
+The Inkscape version found in the official repository is many years old and never gets updated. You are missing many great improvements. However, if you don't want to upgrade your Inkscape, then you will need to search through all files in `src/Mint-Y` and replace all:
+
+`export-filename` -> `export-png`
+
+for compatibility with this old Inkscape version 0.x...
