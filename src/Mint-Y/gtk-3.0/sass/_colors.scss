@@ -100,8 +100,10 @@ $wm_title_unfocused: if($variant == 'light', #9d9d9d, #a7a7a7);
 $wm_bg: $header_bg;
 $wm_bg_unfocused: $header_bg;
 $wm_highlight: $header_highlight;
-$wm_border: $header_border;
-$wm_border_unfocused: lighten($header_border, 5%);
+
+
+$wm_border: if($variant=='light', transparentize(black, 0.80), transparentize(black, 0.65));
+$wm_border_backdrop: if($variant=='light', transparentize(black, 0.85), transparentize(black, 0.7));
 
 //WM Buttons
 
