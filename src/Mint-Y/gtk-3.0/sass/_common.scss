@@ -1012,31 +1012,43 @@ headerbar,
     .maximized & { background-color: opacify($selection_mode_bg, 1); }
   }
 
-  .tiled &, .tiled &:backdrop,
-  .maximized &, .maximized &:backdrop {
-    border-radius: 0; // squared corners when the window is max'd or tiled
+  .tiled &,
+  .tiled-top &,
+  .tiled-right &,
+  .tiled-bottom &,
+  .tiled-left &,
+  .maximized &,
+  .fullscreen & {
+    &:backdrop, & {
+      border-radius: 0; // squared corners when the window is max'd or tiled
+    }
   }
 
-  .maximized & {
-    background-color: opacify($header_bg, 1);
-    border-color: opacify($header_border, 1);
-  }
-
-  &.default-decoration,
-  .csd &.default-decoration,             // needed under wayland, since all gtk3 windows are csd windows
-  &.default-decoration:backdrop,
-  .csd &.default-decoration:backdrop {
+  &.default-decoration {
     min-height: 28px;
     padding: 0 7px;
-    background-color: opacify($header_bg, 1);
     border-bottom-width: 0;
-
-    .maximized & { background-color: opacify($header_bg, 1); }
   }
 }
 
-.titlebar {
-  border-radius: 8px 8px 0 0;
+.background .titlebar {
+  &:backdrop, & {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+}
+
+.background.tiled .titlebar,
+.background.tiled-top .titlebar,
+.background.tiled-right .titlebar,
+.background.tiled-bottom .titlebar,
+.background.tiled-left .titlebar,
+.background.maximized .titlebar,
+.background.solid-csd .titlebar {
+  &:backdrop, & {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
 }
 
 headerbar {
@@ -3070,38 +3082,50 @@ decoration {
   }
 
   .fullscreen &,
-  .maximized &,
-  .tiled &,
-  .tiled &:backdrop {
+  .maximized & {
     border-radius: 0;
-    box-shadow: 0 3px 9px 1px transparent,
-                0 2px 6px 2px transparent,
-                0 0 0 1px $wm_border_unfocused;
+    box-shadow: none;
   }
+
+  .tiled &,
+  .tiled-top &,
+  .tiled-right &,
+  .tiled-bottom &,
+  .tiled-left & {
+    border-radius: 0px;
+    box-shadow: 0 0 0 1px $wm_border,
+                0 0 0 20px transparent; //transparent control workaround -- #3670
+
+    &:backdrop { box-shadow: 0 0 0 1px $wm_border_unfocused,
+                             0 0 0 20px transparent; // #3670
+    }
+  }
+
   .popup & {
     box-shadow: none;
     border-radius: 0;
   }
-  // server-side decorations as used by mutter
-  .ssd & {
-    border-radius: 8px 8px 0 0;
-    box-shadow: 0 0 0 1px if($variant == 'dark', transparentize(black, 0.35), $wm_border);
 
-    &.maximized { border-radius: 0; }
-  }
+  // server-side decorations as used by mutter
+  .ssd & { box-shadow: 0 0 0 1px $wm_border; }
+  .ssd &:backdrop { box-shadow: 0 0 0 1px $wm_border_unfocused; }
+
   .csd.popup & {
     border-radius: 2px;
     box-shadow: 0 1px 4px transparentize(black, 0.8),
                 0 0 0 1px transparentize($wm_border, 0.1);
   }
+
   tooltip.csd & {
     border-radius: 2px;
     box-shadow: 0 1px 3px 1px $_wm_border;
   }
-  message-dialog.csd & { border-radius: 3px; }
+
+  message-dialog.csd & { border-radius: 8px; }
+
   .solid-csd & {
     border-radius: 0;
-    margin: 1px;
+    margin: 0;
     background-color: $header_bg;
     box-shadow: none;
   }
