@@ -935,7 +935,7 @@ headerbar,
 
   &:backdrop {
     color: transparentize($header_fg, 0.4);
-    box-shadow: none;
+    // box-shadow: none;
   }
 
   .title {
