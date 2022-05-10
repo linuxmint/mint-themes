@@ -1,0 +1,129 @@
+$greeter_dark_color: #383838;
+
+/*****************
+ * Unity Greeter *
+ *****************/
+
+@keyframes dashentry_spinner {
+  to { -gtk-icon-transform: rotate(1turn); }
+}
+
+window.background {
+  &.lightdm {
+    menubar {
+      background-image: none;
+      background-color: transparentize(black, 0.5);
+
+      > menuitem { padding: 0 5px 0 5px; }
+    }
+
+    menu {
+      background-image: none;
+      background-color: transparentize(black, 0.4);
+      border-color: transparentize(white, 0.8);
+      padding: 1px;
+      color: white;
+
+      menuitem {
+        *, &.check:active, &.radio:active {
+          color: white;
+        }
+      }
+    }
+
+    button {
+      border: 1px solid;
+      background-image: none;
+      background-color: transparentize(black, 0.7);
+      border-color: transparentize(white, 0.4);
+      border-radius: 5px;
+      padding: 7px;
+      color: white;
+      text-shadow: none;
+
+      &:hover, &:active, &:active:focus {
+        background-image: none;
+        border-image: none;
+      }
+
+      &:focus{
+        border: 1px solid transparentize(white, 0.1);
+        color: white;
+      }
+
+      &.flat.option-button {
+        padding: 2px;
+        background: none;
+        border-color: transparent;
+      }
+
+      &.toggle-button {
+        background: none;
+        border-color: transparent;
+
+        &.selected {
+          background-color: transparentize(black, 0.7);
+          border-width: 1px;
+        }
+      }
+    }
+
+    entry {
+      background-image: none;
+      border-image: none;
+      background-color: transparentize(black, 0.7);
+      border-color: transparentize(white, 0.4);
+      border-radius: 5px;
+      padding: 7px;
+      color: white;
+      text-shadow: none;
+      caret-color: white;
+
+      &:focus {
+        border-color: transparentize(white, 0.1);
+        border-width: 1px;
+        border-style: solid;
+        color: white;
+      }
+
+      &:selected {background-color: transparentize(white, 0.8); }
+
+      &:active {
+        -gtk-icon-source: -gtk-icontheme('process-working-symbolic');
+        animation: dashentry_spinner 1s infinite linear;
+      }
+
+      image { color: white; }
+    }
+  }
+
+  .lightdm-combo {
+    menu {
+      background-color: $greeter_dark_color;
+      border-radius: 0;
+      padding: 0;
+      color: white;
+    }
+
+    &.combobox-entry button,
+    .cell, button {
+      background-image: none;
+      background-color: transparentize(black, 0.7);
+      border-color: transparentize(white, 0.4);
+      border-radius: 5px;
+      padding: 7px;
+      color: white;
+      text-shadow: none;
+    }
+  }
+}
+
+/***************
+ * Gtk Greeter *
+ ***************/
+
+#login_window,
+#shutdown_dialog,
+#restart_dialog {
+  border-radius: 5px;
+}
