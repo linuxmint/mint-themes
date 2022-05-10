@@ -1,0 +1,152 @@
+/*******************
+ * HdyViewSwitcher *
+ *******************/
+
+viewswitcher {
+  &, & button {
+    margin: 0;
+    padding: 0;
+  }
+
+  button {
+    border-radius: 0;
+    border-top: 0;
+    border-bottom: 0;
+    box-shadow: none;
+    font-size: 1rem;
+    border-width: 0;
+
+    &:not(:checked):not(:hover) {
+      background: transparent;
+    }
+
+    &:not(:only-child):not(:last-child) {
+      border-right-width: 0px;
+    }
+
+    &:not(only-child):first-child:not(:checked):not(:hover),
+    &:not(:checked):not(:hover) + button:not(:checked):not(:hover) {
+      border-left-color: transparent;
+    }
+
+    &:not(only-child):last-child:not(:checked):not(:hover) {
+      border-right-color: transparent;
+    }
+
+    // &:not(:checked):hover:not(:backdrop) {
+    //   background-image: image(lighter($bg_color));
+    // }
+
+    &:not(only-child):first-child:not(:checked):hover,
+    &:not(:checked):hover + button:not(:checked):not(:hover),
+    &:not(:checked):not(:hover) + button:not(:checked):hover {
+      border-left-color: shade($borders_color, 1.15);
+    }
+
+    &:not(only-child):last-child:not(:checked):hover {
+      border-right-color: shade($borders_color, 1.15);
+    }
+
+    // View switcher in a header bar
+    headerbar &:not(:checked) {
+
+      &:not(only-child):first-child:hover,
+      &:hover + button:not(:checked):not(:hover),
+      &:not(:hover) + button:not(:checked):hover {
+        border-left-color: $borders_color;
+      }
+
+      &:not(only-child):last-child:hover {
+        border-right-color: $borders_color;
+      }
+    }
+
+    // View switcher button
+    > stack > box {
+      &.narrow {
+        font-size: 0.75rem;
+        padding-top: 7px;
+        padding-bottom: 5px;
+
+        image,
+        label {
+          padding-left: 8px;
+          padding-right: 8px;
+        }
+      }
+
+      &.wide {
+        padding: 8px 12px;
+
+        image {
+          &:dir(ltr) {
+            padding-left: 7px;
+          }
+
+          &:dir(rtl) {
+            padding-right: 7px;
+          }
+        }
+
+        label {
+          &:dir(ltr) {
+            padding-right: 7px;
+          }
+
+          &:dir(rtl) {
+            padding-left: 7px;
+          }
+        }
+      }
+
+      label.active {
+        font-weight: bold;
+      }
+    }
+
+    &.needs-attention {
+      &:active > stack > box label,
+      &:checked > stack > box label {
+        animation: none;
+        background-image: none;
+      }
+
+      > stack > box label {
+        background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to($selected_bg_color), to(transparent));
+        background-size: 6px 6px, 6px 6px;
+        background-repeat: no-repeat;
+        background-position: right 0px, right 1px;
+
+        &:dir(rtl) {
+          background-position: left 0px, left 1px;
+        }
+      }
+    }
+  }
+}
+
+/**********************
+ * HdyViewSwitcherBar *
+ **********************/
+
+viewswitcherbar actionbar > revealer > box {
+  padding: 0;
+}
+
+/******************
+ * Unified Window *
+ ******************/
+
+window.csd.unified:not(.solid-csd):not(.fullscreen) {
+  headerbar {}
+
+  > decoration-overaly {}
+
+  &:not(.tiled):not(.tiled-top):not(.tiled-bottom):not(.tiled-left):not(.tiled-right):not(.maximized) {
+    &,
+    > decoration,
+    > decoration-overlay {
+      border-radius: 6px 6px 0 0;
+    }
+  }
+}

@@ -1,0 +1,321 @@
+$dark_sidebar_bg: #505050;
+$dark_sidebar_fg: #dadada;
+
+/********
+ * Caja *
+ ********/
+
+.caja-canvas-item { border-radius: 3px; }
+
+.caja-desktop {
+  &.caja-canvas-item {
+    color: #eeeeee;
+    text-shadow: 1px 1px transparent(black, 0.2);
+
+    &:selected {
+      background-color: transparentize($selected_fg_color, 0.2);
+      color: $selected_fg_color;
+      box-shadow: none;
+    }
+  }
+}
+
+.caja-side-pane {
+  notebook {
+    treeview.view,
+    textview.view text,
+    viewport.frame,
+    widget .vertical {
+      background-color: $dark_sidebar_bg;
+      color: $dark_sidebar_fg;
+    }
+  }
+}
+
+.caja-navigation-window {
+  notebook {
+    > header {
+      padding: 0;
+      margin-right: -2px;
+      margin-bottom: -1px;
+
+      > tabs > tab:checked { margin-bottom: -1px; }
+    }
+  }
+}
+
+/************************
+ * Gnome System Monitor *
+ ************************/
+#gnome-system-monitor.background:not(csd) headerbar {
+  &:backdrop, & {
+    @include headerbar_fill($bg_color);
+    box-shadow: none;
+  }
+}
+
+/********
+ * Nemo *
+ ********/
+
+.nemo-window {
+  .sidebar {
+    .view {
+      background-color: $dark_sidebar_bg;
+      color: $dark_sidebar_fg;
+      text-shadow: none;
+      -gtk-icon-shadow: none;
+
+      &:selected {
+        border-color: $dark_sidebar_bg;
+        color: $selected_fg_color;
+
+      }
+    }
+
+    .expander:hover { color: $dark_sidebar_fg; }
+
+    .scrollbar {
+      min-width: 10px;
+
+      &.overlay-indicator:not(.dragging):not(.hovering) slider { background-color: $bg_color; }
+    }
+
+    .frame, separator { border: none; }
+  }
+
+  .places-treeview {
+    -NemoPlacesTreeView-disk-full-bg-color: darken($base_color, 15%);
+    -NemoPlacesTreeView-disk-full-fg-color: darken($selected_bg_color, 10%);
+    -NemoPlacesTreeView-disk-full-bar-width: 2px;
+    -NemoPlacesTreeView-disk-full-bar-radius: 1px;
+    -NemoPlacesTreeView-disk-full-bottom-padding: 2px;
+
+    &:selected {
+      -NemoPlacesTreeView-disk-full-bg-color: lighten($selected_fg_color, 10%);
+      -NemoPlacesTreeView-disk-full-fg-color: $selected_bg_color; 
+    }
+  }
+
+  widget .toolbar { /* Statusbar styling */
+    padding: 0 6px 0 6px;
+
+    button { padding: 0 5px; }
+  }
+
+  .nemo-inactive-pane {
+    .view {
+      background-color: darken($base_color, 7%);
+      color: lighten($fg_color, 20%);
+
+      &:selected {
+        background-color: transparentize($selected_bg_color, 0.15);
+        color: $selected_fg_color;
+      }
+    }
+  }
+
+  .nemo-window-pane {
+    widget.entry {
+      background-clip: padding-box;
+      min-height: 28px;
+      padding-left: 4px;
+      padding-right: 4px;
+      color: $text_color;
+      border: 1px solid $borders_color;
+      border-radius: 3px;
+      box-shadow: inset 0 1px transparentize(black, 0.9),
+                  inset 1px 0 transparentize(black, 0.96),
+                  inset -1px 0 transparentize(black, 0.96),
+                  inset 0 -1px transparentize(black, 0.98),
+                  0 1px transparentize(white, 0.6);
+
+      &:selected {
+        background-color: $selected_bg_color;
+        color: $selected_fg_color;
+      }
+    }
+  }
+}
+
+.nemo-canvas-item {
+  border-radius: 3px;
+}
+
+.nemo-desktop {
+  .nemo-canvas-item {
+    color: #eeeeee;
+    text-shadow: 1px 1px transparent(black, 0.2);
+
+    &:selected {
+      background-color: transparentize($selected_fg_color, 0.2);
+      color: $selected_fg_color;
+      box-shadow: none;
+    }
+  }
+}
+
+/**********
+ * Panels *
+ **********/
+
+.mate-panel-menu-bar,
+.gnome-panel-menu-bar,
+.mate-panel-menu-bar .menubar,
+.gnome-panel-menu-bar .menubar,
+.mate-panel-menu-bar > .menuitem,
+.gnome-panel-menu-bar > .menuitem,
+#PanelPlug,
+#PanelApplet .button,
+#PanelApplet-window-menu-applet-button {
+  color: $fg_color;
+  background-color: $bg_color;
+  background-image: none;
+  border-image: none;
+}
+
+#PanelApplet {
+  button {
+    padding: 3px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 3px;
+    background-color: $bg_color;
+    background-image: none;
+  }
+
+  wnck-tasklist button.flat {
+    padding: 0px 3px 0px 3px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 3px;
+    border-color: transparent;
+    border-image: -gtk-scaled(url("assets/button.png"), url("assets/button@2.png")) 4 / 4px stretch;
+    box-shadow: inset 0 1px transparentize(white, 0.5),
+                inset 1px 0 transparentize(white, 0.7),
+                inset -1px 0 transparentize(white, 0.7),
+                inset 0 -1px transparentize(white, 0.95);
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                                      transparentize(white, 0.5),
+                                      transparentize(white, 0.99));
+  }
+
+  wnck-tasklist button.flat:hover,
+  button:hover {
+    padding: 0px 3px 0px 3px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 3px;
+    border-color: transparent;
+    border-image: -gtk-scaled(url("assets/button.png"), url("assets/button@2.png")) 4 / 4px stretch;
+    box-shadow: inset 0 1px transparentize(white, 0.5),
+                inset 1px 0 transparentize(white, 0.7),
+                inset -1px 0 transparentize(white, 0.7),
+                inset 0 -1px transparentize(white, 0.95);
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                                      transparentize(white, 0.3),
+                                      transparentize(white, 0.9));
+  }
+
+  wnck-tasklist button.flat:checked:hover,
+  wnck-tasklist button.flat:checked,
+  wnck-tasklist button.flat:active:hover,
+  wnck-tasklist button.flat:active,
+  button:checked,
+  button:checked:hover,
+  button:active,
+  button:active:hover {
+    padding: 0px 3px 0px 3px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 3px;
+    border-color: transparent;
+    border-image: -gtk-scaled(url("assets/button-active.png"), url("assets/button-active@2.png")) 4 / 4px stretch;
+    box-shadow: inset 0 1px transparentize(black, 0.9),
+                inset 1px 0 transparentize(black, 0.92),
+                inset -1px 0 transparentize(black, 0.92),
+                inset 0 -1px transparentize(black, 0.94);
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                                      transparentize(black, 0.8),
+                                      transparentize(black, 0.8));
+  }
+
+  box.mintmenu:selected { background-color: $selected_bg_color; }
+}
+
+MatePanelAppletFrameDBus PanelSeparator,
+PanelSeparator {
+  border-width: 0;
+  background-image: url("assets/separator-vertical.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  color: transparent;
+  text-shadow: none;
+}
+
+.xfce4-panel {
+  &.panel {
+    frame > border { border: none; }
+
+    label { font-weight: normal; }
+
+    button {
+      border-radius: 0;
+      border: none;
+
+      &:active, &:checked { border: none; }
+
+      label, image { border: none; }
+    }
+  }
+}
+
+/************
+ * Terminal *
+ ************/
+
+@if $variant == 'light' {
+  vte-terminal.terminal-screen {
+    -TerminalScreen-background-darkness: 1.0;
+    background-color: #3f3f3f;
+    color: #fff;
+  }
+}
+
+.mate-terminal {
+  vte-terminal {
+    -TerminalScreen-background-darkness: 1.0;
+    background-color: #3f3f3f;
+    color: #ffffff;
+  }
+}
+
+/************
+ * Ubiquity *
+ ************/
+
+.ubiquity-menubar {
+  background-color: #3F3F3F;
+  color: #EEEEEE;
+}
+
+/*******
+ * Xed *
+ *******/
+
+.xed-window {
+  .xed-searchbar { border-top: 1px solid $borders_color; }
+
+  statusbar button { padding: 1px 3px; }
+
+  .xed-goto-line-box {
+    background-color: lighten($bg_color, 2%);
+    padding: 6px;
+    border-radius: 0 0 2px 2px;
+    border-width: 0 1px 1px 1px;
+    border-style: solid;
+  }
+}
