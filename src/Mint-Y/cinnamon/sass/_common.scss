@@ -1735,13 +1735,15 @@ StScrollBar {
   }
 
   &-number-label {
+    font-size: 0.8em;
     z-index: 99;
     color: $tooltip_border_color;
   }
 
   &-badge {
-    border-radius: 256px;
+    border-radius: 9999px;
     background-color: $tooltip_fg_color;
+    margin: 0;
   }
 
   &-button-label {

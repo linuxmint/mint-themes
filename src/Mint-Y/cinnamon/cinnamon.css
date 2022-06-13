@@ -1345,12 +1345,14 @@ StScrollBar {
   padding-left: 4px; }
 
 .grouped-window-list-number-label {
+  font-size: 0.8em;
   z-index: 99;
   color: #d0d0d0; }
 
 .grouped-window-list-badge {
-  border-radius: 256px;
-  background-color: #4a4a4a; }
+  border-radius: 9999px;
+  background-color: #4a4a4a;
+  margin: 0; }
 
 .grouped-window-list-button-label {
   padding-left: 4px; }
