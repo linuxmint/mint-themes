@@ -815,8 +815,7 @@ headerbar,
     border-color: #BDBDBD; }
   headerbar:backdrop,
   .titlebar:backdrop:not(headerbar) {
-    color: rgba(0, 0, 0, 0.47);
-    box-shadow: none; }
+    color: rgba(0, 0, 0, 0.47); }
   headerbar .title,
   .titlebar:not(headerbar) .title {
     font-weight: bold;
@@ -887,22 +886,41 @@ headerbar,
         -gtk-icon-source: -gtk-icontheme("pan-down-symbolic"); }
     .maximized headerbar.selection-mode, .maximized .selection-mode.titlebar:not(headerbar) {
       background-color: #92b372; }
-  .tiled headerbar, .tiled headerbar:backdrop, .maximized headerbar, .maximized headerbar:backdrop, .tiled .titlebar:not(headerbar), .maximized .titlebar:not(headerbar) {
+  .tiled headerbar:backdrop, .tiled headerbar, .tiled-top headerbar:backdrop, .tiled-top headerbar, .tiled-right headerbar:backdrop, .tiled-right headerbar, .tiled-bottom headerbar:backdrop, .tiled-bottom headerbar, .tiled-left headerbar:backdrop, .tiled-left headerbar, .maximized headerbar:backdrop, .maximized headerbar, .fullscreen headerbar:backdrop, .fullscreen headerbar, .tiled .titlebar:not(headerbar), .tiled-top .titlebar:not(headerbar), .tiled-right .titlebar:not(headerbar), .tiled-bottom .titlebar:not(headerbar), .tiled-left .titlebar:not(headerbar), .maximized .titlebar:not(headerbar), .fullscreen .titlebar:not(headerbar) {
     border-radius: 0; }
-  .maximized headerbar, .maximized .titlebar:not(headerbar) {
-    background-color: #e8e8e8;
-    border-color: #bdbdbd; }
-  headerbar.default-decoration, .csd headerbar.default-decoration, headerbar.default-decoration:backdrop, .csd headerbar.default-decoration:backdrop,
+  headerbar.default-decoration,
   .default-decoration.titlebar:not(headerbar) {
     min-height: 28px;
     padding: 0 7px;
-    background-color: #e8e8e8;
     border-bottom-width: 0; }
-    .maximized headerbar.default-decoration, .maximized .csd headerbar.default-decoration, .maximized headerbar.default-decoration:backdrop, .maximized .csd headerbar.default-decoration:backdrop, .maximized .default-decoration.titlebar:not(headerbar) {
+    .maximized headerbar.default-decoration, .maximized .default-decoration.titlebar:not(headerbar) {
       background-color: #e8e8e8; }
+  .solid-csd headerbar:backdrop:dir(rtl), .solid-csd headerbar:backdrop:dir(ltr), .solid-csd headerbar:dir(rtl), .solid-csd headerbar:dir(ltr), .solid-csd .titlebar:dir(rtl):not(headerbar), .solid-csd .titlebar:dir(ltr):not(headerbar) {
+    margin-left: -1px;
+    margin-right: -1px;
+    margin-top: -1px;
+    border-radius: 0;
+    box-shadow: none; }
 
-.titlebar {
-  border-radius: 8px 8px 0 0; }
+.background .titlebar:backdrop, .background .titlebar {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px; }
+
+.background.tiled .titlebar:backdrop, .background.tiled .titlebar,
+.background.tiled-top .titlebar:backdrop,
+.background.tiled-top .titlebar,
+.background.tiled-right .titlebar:backdrop,
+.background.tiled-right .titlebar,
+.background.tiled-bottom .titlebar:backdrop,
+.background.tiled-bottom .titlebar,
+.background.tiled-left .titlebar:backdrop,
+.background.tiled-left .titlebar,
+.background.maximized .titlebar:backdrop,
+.background.maximized .titlebar,
+.background.solid-csd .titlebar:backdrop,
+.background.solid-csd .titlebar {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0; }
 
 headerbar entry, headerbar button, headerbar separator {
   margin-top: 6px;
@@ -2840,32 +2858,36 @@ button.circular-button,
 decoration {
   border-radius: 8px 8px 0 0;
   border-width: 0px;
-  box-shadow: 0 3px 9px 1px rgba(0, 0, 0, 0.5), 0 0 0 1px #BDBDBD;
+  box-shadow: 0 3px 9px 1px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.23);
   margin: 10px; }
   decoration:backdrop {
-    box-shadow: 0 3px 9px 1px transparent, 0 2px 6px 2px rgba(0, 0, 0, 0.2), 0 0 0 1px #cacaca; }
-  .fullscreen decoration, .maximized decoration, .tiled decoration, .tiled decoration:backdrop {
+    box-shadow: 0 3px 9px 1px transparent, 0 2px 6px 2px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.18); }
+  .fullscreen decoration, .maximized decoration {
     border-radius: 0;
-    box-shadow: 0 3px 9px 1px transparent, 0 2px 6px 2px transparent, 0 0 0 1px #cacaca; }
+    box-shadow: none; }
+  .tiled decoration, .tiled-top decoration, .tiled-right decoration, .tiled-bottom decoration, .tiled-left decoration {
+    border-radius: 0;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.23), 0 0 0 20px transparent; }
+    .tiled decoration:backdrop, .tiled-top decoration:backdrop, .tiled-right decoration:backdrop, .tiled-bottom decoration:backdrop, .tiled-left decoration:backdrop {
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.18), 0 0 0 20px transparent; }
   .popup decoration {
     box-shadow: none;
     border-radius: 0; }
   .ssd decoration {
-    border-radius: 8px 8px 0 0;
-    box-shadow: 0 0 0 1px #BDBDBD; }
-    .ssd decoration.maximized {
-      border-radius: 0; }
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.23); }
+  .ssd decoration:backdrop {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.18); }
   .csd.popup decoration {
     border-radius: 2px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(189, 189, 189, 0.9); }
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.13); }
   tooltip.csd decoration {
     border-radius: 2px;
-    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.2); }
-  message-dialog.csd decoration {
-    border-radius: 3px; }
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.23); }
+  messagedialog.csd decoration {
+    border-radius: 8px; }
   .solid-csd decoration {
     border-radius: 0;
-    margin: 1px;
+    margin: 0;
     background-color: #e8e8e8;
     box-shadow: none; }
 
