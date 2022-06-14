@@ -1,3 +1,27 @@
+mint-themes (1.9.9) vanessa; urgency=medium
+
+  [ JosephMcc ]
+  * Linux Mint: Use em's for all font sizing
+  * Linux Mint: Use em's to space the dots in the calendar applet
+  * Mint-Y-Gtk2: Better match the menu to the gtk3 changes
+  * Mint-Y-Gtk3: Few more tweaks for gnome-calendar events
+  * Mint-Y-Metacity: Don't show the unmaximize icon when tiled
+  * Mint-Y: Set the correct icon theme in index.theme
+  * Mint-Y: Match the mate-terminal background to gnome-terminal
+
+  [ Michael Webster ]
+  * Mint-Y Cinnamon: add a fg color to the panel style, it's needed for setting up the symbolic system tray icon colors.
+
+  [ SebastJava ]
+  * modified:   src/Mint-Y/cinnamon/sass/_colors.scss
+
+  [ JosephMcc ]
+  * Update built file from previous commit
+  * Mint-Y-Gtk3: Fix some issues with gtk3 window borders
+  * Mint-Y-Cinnamon: Fix styling of the gwl number badge
+
+ -- Clement Lefebvre <clem@macbook>  Tue, 14 Jun 2022 14:21:54 +0200
+
 mint-themes (1.9.8) una; urgency=medium
 
   [ JosephMcc ]
