@@ -189,14 +189,14 @@ StScrollBar {
   StBin {
     width: 16px;
     height: 16px;
-    background-image: url("#{$asset_path}/checkbox/checkbox-unchecked.svg");
+    background-image: url("#{$asset_path}/checkbox/radio-unchecked.svg");
   }
 
-  &:focus StBin { background-image: url("#{$asset_path}/checkbox/checkbox-unchecked-focused.svg"); }
+  &:focus StBin { background-image: url("#{$asset_path}/checkbox/radio-unchecked.svg"); }
 
-  &:checked StBin { background-image: url("#{$asset_path}/checkbox/checkbox-checked.svg"); }
+  &:checked StBin { background-image: url("#{$asset_path}/checkbox/radio-checked.svg"); }
 
-  &:focus:checked StBin { background-image: url("#{$asset_path}/checkbox/checkbox-checked-focused.svg"); }
+  &:focus:checked StBin { background-image: url("#{$asset_path}/checkbox/radio-checked.svg"); }
 }
 
 //
