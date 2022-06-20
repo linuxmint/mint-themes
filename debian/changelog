@@ -1,3 +1,10 @@
+mint-themes (2.0.0) vanessa; urgency=medium
+
+  [ JosephMcc ]
+  * Mint-Y-Cinnamon: Add radio button assets
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 20 Jun 2022 10:27:29 +0200
+
 mint-themes (1.9.9) vanessa; urgency=medium
 
   [ JosephMcc ]
