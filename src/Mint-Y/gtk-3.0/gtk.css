@@ -526,12 +526,12 @@ button {
       color: inherit; }
 
 .linked:not(.vertical) > combobox > box > button.combo:dir(ltr), .linked:not(.vertical) > combobox > box > button.combo:dir(rtl),
-.primary-toolbar .linked:not(.vertical) entry + button:last-child, headerbar .linked:not(.vertical) entry + button:last-child, .primary-toolbar toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button,
-.primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button, .primary-toolbar .inline-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button,
-.primary-toolbar toolbar .linked:not(.vertical).path-bar > button,
-.primary-toolbar .linked:not(.vertical).path-bar > button,
-.primary-toolbar .inline-toolbar .linked:not(.vertical).path-bar > button,
-headerbar .linked:not(.vertical).path-bar > button, spinbutton:not(.vertical) button, spinbutton:not(.vertical) entry, .linked:not(.vertical) > entry, .linked:not(.vertical) > entry:focus, .inline-toolbar button, .inline-toolbar button:backdrop, .linked:not(.vertical) > button, .linked:not(.vertical) > button:hover, .linked:not(.vertical) > button:active, .linked:not(.vertical) > button:checked, toolbar.inline-toolbar toolbutton > button.flat, .inline-toolbar toolbutton > button.flat {
+.primary-toolbar .linked:not(.vertical) entry + button:last-child, headerbar .linked:not(.vertical) entry + button:last-child, .primary-toolbar toolbar .linked.stack-switcher:not(.vertical):not(.path-bar) > button,
+.primary-toolbar .linked.stack-switcher:not(.vertical):not(.path-bar) > button, .primary-toolbar .inline-toolbar .linked.stack-switcher:not(.vertical):not(.path-bar) > button, headerbar .linked.stack-switcher:not(.vertical):not(.path-bar) > button,
+.primary-toolbar toolbar .linked.path-bar:not(.vertical) > button,
+.primary-toolbar .linked.path-bar:not(.vertical) > button,
+.primary-toolbar .inline-toolbar .linked.path-bar:not(.vertical) > button,
+headerbar .linked.path-bar:not(.vertical) > button, spinbutton:not(.vertical) button, spinbutton:not(.vertical) entry, .linked:not(.vertical) > entry, .linked:not(.vertical) > entry:focus, .inline-toolbar button, .inline-toolbar button:backdrop, .linked:not(.vertical) > button, .linked:not(.vertical) > button:hover, .linked:not(.vertical) > button:active, .linked:not(.vertical) > button:checked, toolbar.inline-toolbar toolbutton > button.flat, .inline-toolbar toolbutton > button.flat {
   border-radius: 0;
   border-right-style: none; }
 
@@ -578,7 +578,7 @@ list.content > row:first-child, list.content > row.expander:first-child row.head
   border-top-left-radius: 3px;
   border-top-right-radius: 3px; }
 
-list.content > row:last-child, list.content > row.checked-expander-row-previous-sibling, list.content > row.expander:checked, list.content > row.expander:not(:checked):last-child row.header, list.content > row.expander:not(:checked).checked-expander-row-previous-sibling row.header, list.content > row.expander.empty:checked row.header, list.content > row.expander list.nested > row:last-child, popover.combo overshoot.bottom, popover.combo list > row:last-child, .linked.vertical > combobox:last-child > box > button.combo, spinbutton.vertical button:last-child, spinbutton.vertical entry:last-child, .linked.vertical > entry:last-child, .linked.vertical > button:last-child {
+list.content > row:last-child, list.content > row.checked-expander-row-previous-sibling, list.content > row.expander:checked, list.content > row.expander:not(:checked):last-child row.header, list.content > row.expander.checked-expander-row-previous-sibling:not(:checked) row.header, list.content > row.expander.empty:checked row.header, list.content > row.expander list.nested > row:last-child, popover.combo overshoot.bottom, popover.combo list > row:last-child, .linked.vertical > combobox:last-child > box > button.combo, spinbutton.vertical button:last-child, spinbutton.vertical entry:last-child, .linked.vertical > entry:last-child, .linked.vertical > button:last-child {
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border-bottom-style: solid; }
@@ -2877,6 +2877,8 @@ decoration {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.23); }
   .ssd decoration:backdrop {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.18); }
+  .ssd.maximized decoration, .ssd.maximized decoration:backdrop {
+    box-shadow: none; }
   .csd.popup decoration {
     border-radius: 2px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.13); }
@@ -2963,8 +2965,8 @@ headerbar button.titlebutton,
   .titlebar button.titlebutton.minimize:backdrop {
     color: darkgray; }
 
-.caja-navigation-window .view .cell:selected, .caja-navigation-window iconview .cell:selected, .caja-navigation-window .view .cell:selected:focus, .nemo-window .nemo-inactive-pane .view:selected:focus, .nemo-window .nemo-inactive-pane iconview:selected:focus, .nemo-window .nemo-inactive-pane .view:selected, .nemo-window .nemo-inactive-pane iconview:selected, .nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected, .nautilus-window placessidebar.sidebar list row.sidebar-row:selected.has-open-popup, .nautilus-window placessidebar.sidebar list row.sidebar-row:selected, .nautilus-window placessidebar.sidebar list row.sidebar-row:selected:hover, .nautilus-window placessidebar.sidebar list row.sidebar-row:active:hover,
-filechooser placessidebar.sidebar list row.sidebar-row:selected.has-open-popup,
+.caja-navigation-window .view .cell:selected, .caja-navigation-window iconview .cell:selected, .caja-navigation-window .view .cell:selected:focus, .nemo-window .nemo-inactive-pane .view:selected:focus, .nemo-window .nemo-inactive-pane iconview:selected:focus, .nemo-window .nemo-inactive-pane .view:selected, .nemo-window .nemo-inactive-pane iconview:selected, .nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected, .nautilus-window placessidebar.sidebar list row.sidebar-row.has-open-popup:selected, .nautilus-window placessidebar.sidebar list row.sidebar-row:selected, .nautilus-window placessidebar.sidebar list row.sidebar-row:selected:hover, .nautilus-window placessidebar.sidebar list row.sidebar-row:active:hover,
+filechooser placessidebar.sidebar list row.sidebar-row.has-open-popup:selected,
 filechooser placessidebar.sidebar list row.sidebar-row:selected,
 filechooser placessidebar.sidebar list row.sidebar-row:selected:hover,
 filechooser placessidebar.sidebar list row.sidebar-row:active:hover, .view:selected, .view:selected:focus,
@@ -2973,10 +2975,10 @@ textview text:selected,
 .view text:selected:focus,
 textview text:selected:focus, .view text selection:focus, .view text selection,
 textview text selection:focus,
-textview text selection, iconview:selected, iconview:selected:focus, iconview text selection:focus, .view text selection, iconview text selection, flowbox flowboxchild:selected, entry selection:focus, entry selection, treeview.view:selected, treeview.view:selected:focus, row:selected {
+textview text selection, iconview:selected, iconview:selected:focus, iconview text selection:focus, iconview text selection, flowbox flowboxchild:selected, entry selection:focus, entry selection, treeview.view:selected, treeview.view:selected:focus, row:selected {
   background-color: #92b372; }
-  row:selected label, label:selected, .caja-navigation-window .view .cell:selected, .caja-navigation-window iconview .cell:selected, .caja-navigation-window .view .cell:selected:focus, .nemo-window .nemo-inactive-pane .view:selected:focus, .nemo-window .nemo-inactive-pane iconview:selected:focus, .nemo-window .nemo-inactive-pane .view:selected, .nemo-window .nemo-inactive-pane iconview:selected, .nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected, .nautilus-window placessidebar.sidebar list row.sidebar-row:selected.has-open-popup, .nautilus-window placessidebar.sidebar list row.sidebar-row:selected, .nautilus-window placessidebar.sidebar list row.sidebar-row:selected:hover, .nautilus-window placessidebar.sidebar list row.sidebar-row:active:hover,
-  filechooser placessidebar.sidebar list row.sidebar-row:selected.has-open-popup,
+  row:selected label, label:selected, .caja-navigation-window .view .cell:selected, .caja-navigation-window iconview .cell:selected, .caja-navigation-window .view .cell:selected:focus, .nemo-window .nemo-inactive-pane .view:selected:focus, .nemo-window .nemo-inactive-pane iconview:selected:focus, .nemo-window .nemo-inactive-pane .view:selected, .nemo-window .nemo-inactive-pane iconview:selected, .nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected, .nautilus-window placessidebar.sidebar list row.sidebar-row.has-open-popup:selected, .nautilus-window placessidebar.sidebar list row.sidebar-row:selected, .nautilus-window placessidebar.sidebar list row.sidebar-row:selected:hover, .nautilus-window placessidebar.sidebar list row.sidebar-row:active:hover,
+  filechooser placessidebar.sidebar list row.sidebar-row.has-open-popup:selected,
   filechooser placessidebar.sidebar list row.sidebar-row:selected,
   filechooser placessidebar.sidebar list row.sidebar-row:selected:hover,
   filechooser placessidebar.sidebar list row.sidebar-row:active:hover, .view:selected, .view:selected:focus,
@@ -2985,7 +2987,7 @@ textview text selection, iconview:selected, iconview:selected:focus, iconview te
   .view text:selected:focus,
   textview text:selected:focus, .view text selection:focus, .view text selection,
   textview text selection:focus,
-  textview text selection, iconview:selected, iconview:selected:focus, iconview text selection:focus, .view text selection, iconview text selection, flowbox flowboxchild:selected, entry selection:focus, entry selection, treeview.view:selected, treeview.view:selected:focus, row:selected {
+  textview text selection, iconview:selected, iconview:selected:focus, iconview text selection:focus, iconview text selection, flowbox flowboxchild:selected, entry selection:focus, entry selection, treeview.view:selected, treeview.view:selected:focus, row:selected {
     color: #ffffff; }
     label:disabled selection, row:selected label:disabled, label:disabled:selected, .caja-navigation-window .view .cell:disabled:selected, .caja-navigation-window iconview .cell:disabled:selected, .nemo-window .nemo-inactive-pane .view:disabled:selected:focus, .nemo-window .nemo-inactive-pane iconview:disabled:selected:focus, .nemo-window .nemo-inactive-pane .view:disabled:selected, .nemo-window .nemo-inactive-pane iconview:disabled:selected, .nemo-window .nemo-window-pane widget.entry:disabled:selected, .nautilus-window placessidebar.sidebar list row.sidebar-row:disabled:selected, .nautilus-window placessidebar.sidebar list row.sidebar-row:disabled:active:hover,
     filechooser placessidebar.sidebar list row.sidebar-row.has-open-popup:disabled:selected,

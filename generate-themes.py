@@ -94,6 +94,21 @@ for color in y_hex_colors1.keys():
             for key in ["IconTheme"]:
                 change_value(key, "%s-%s" % (original_name, color), theme_index)
 
+            # Regenerate GTK4 sass
+            os.system("cp -R src/Mint-Y/gtk-4.0/sass %s/gtk-4.0/" % theme)
+            y_colorize_directory("%s/gtk-4.0/sass" % theme, color)
+            os.chdir("%s/gtk-4.0" % theme)
+
+            if (variant == "-Dark"):
+                os.system("cp sass/gtk-dark.scss sass/gtk.scss")
+                os.system("sassc ./sass/gtk.scss gtk.css")
+            else:
+                os.system("sassc ./sass/gtk-dark.scss gtk-dark.css")
+                os.system("sassc ./sass/gtk.scss gtk.css")
+
+            os.system("rm -rf sass .sass-cache")
+            os.chdir(curdir)
+
             # Regenerate GTK3 sass
             os.system("cp -R src/Mint-Y/gtk-3.0/sass %s/gtk-3.0/" % theme)
             y_colorize_directory("%s/gtk-3.0/sass" % theme, color)
@@ -150,6 +165,7 @@ for color in y_hex_colors1.keys():
                     y_colorize_directory(directory, color)
 
             # Assets
+            os.system("rm -rf %s/gtk-4.0/assets" % theme)
             os.system("rm -rf %s/gtk-3.0/assets" % theme)
             os.system("rm -rf %s/gtk-2.0/assets" % theme)
             if variant == "-Dark":
@@ -159,6 +175,7 @@ for color in y_hex_colors1.keys():
                 os.system("cp -R %s/gtk-2.0/assets %s/gtk-2.0/assets" % (path, theme))
                 os.system("cp -R %s/xfwm4/*.png %s/xfwm4/" % (path, theme))
             os.system("cp -R %s/gtk-3.0/assets %s/gtk-3.0/assets" % (path, theme))
+            os.system("cp -R %s/gtk-4.0/assets %s/gtk-4.0/assets" % (path, theme))
 
 
 # Files

@@ -1,0 +1,342 @@
+// Drawing mixins
+
+// generic drawing of more complex things
+
+// Solid color image
+@function _solid($c) {
+  @return linear-gradient(to bottom, $c, $c);
+}
+
+@mixin _shadows($shadow1, $shadow2:none, $shadow3:none, $shadow4:none) {
+//
+// Helper function to stack up to 4 box-shadows;
+//
+
+  @if $shadow4!=none { box-shadow: $shadow1, $shadow2, $shadow3, $shadow4; }
+  @else if $shadow3!=none { box-shadow: $shadow1, $shadow2, $shadow3; }
+  @else if $shadow2!=none { box-shadow: $shadow1, $shadow2; }
+  @else { box-shadow: $shadow1; }
+}
+
+//
+// Helper mixin for drawing visible focus rings
+//
+// If $target is specified, the focus ring is applied to the specified child element.
+// If $outer is true, the focus ring extends outward. Otherwise, it extends inward.
+//
+@mixin focus-ring($target: null, $outer: false, $focus-state: 'focus:focus-visible') {
+  & #{$target} {
+    outline-color: gtkalpha(currentColor, 0.3);
+    outline-style: dashed;
+    outline-offset: if($outer, 0, -3px);
+  }
+
+  &:#{$focus-state} #{$target} {
+    outline-width: 1px;
+  }
+}
+
+// Entries
+
+@mixin entry($t) {
+//
+// Entries drawing function
+//
+// $t: entry type
+//
+
+  @if $t==normal {
+  //
+  // normal entry
+  //
+    color: $text_color;
+    border-color: $entry_border;
+    background-color: $entry_bg;
+  }
+
+  @if $t==focus {
+  //
+  // focused entry
+  //
+    color: $text_color;
+    border-color: if($variant=='light', $selected_bg_color, $button_border);
+    background-color: $entry_bg;
+
+    @if $variant == 'dark' {
+      box-shadow: inset 1px 0 $selected_bg_color,
+                  inset -1px 0 $selected_bg_color,
+                  inset 0 1px $selected_bg_color,
+                  inset 0 -1px $selected_bg_color;
+    }
+  }
+
+  @if $t==insensitive {
+  //
+  // insensitive entry
+  //
+    color: $insensitive_fg_color;
+    border-color: transparentize($entry_border, 0.45);
+    background-color: transparentize($entry_bg, 0.45);
+  }
+
+  @if $t==header-normal {
+  //
+  // normal header-bar entry
+  //
+
+    color: $header_fg;
+    border-color: $header_entry_border;
+    background-color: $header_entry_bg;
+
+    image, image:hover { color: inherit; }
+  }
+
+  @if $t==header-focus {
+  //
+  // focused header-bar entry
+  //
+    color: $header_fg;
+    border-color: $selected_bg_color;
+    background-color: $header_entry_bg;
+  }
+
+  @if $t==header-insensitive {
+  //
+  // insensitive header-bar entry
+  //
+    color: transparentize($header_fg, 0.45);
+    background-color: transparentize($header_entry_bg, 0.15);
+  }
+
+  @else if $t==osd {
+  //
+  // normal osd entry
+  //
+    color: $osd_fg_color;
+    border-color: $osd_entry_border;
+    background-color: $osd_entry_bg;
+
+    image, image:hover { color: inherit; }
+  }
+
+  @else if $t==osd-focus {
+  //
+  // active osd entry
+  //
+    color: $selected_fg_color;
+    border-color: $osd_entry_border;
+    background-color: $selected_bg_color;
+  }
+
+  @else if $t==osd-insensitive {
+  //
+  // insensitive osd entry
+  //
+    color: transparentize($osd_fg_color, 0.45);
+    background-color: transparentize($osd_entry_bg, 0.15);
+  }
+
+  @if $t==block_cursor {
+    color: $entry_bg;
+    background-color: $text_color;
+  }
+}
+
+// Buttons
+
+@mixin button($t, $actionb_color:red) {
+//
+// Button drawing function
+//
+// $t:    button type,
+// $actionb_color: used for destructive and suggested action buttons
+
+  @if $t==normal {
+  //
+  // normal button
+  //
+    color: $fg_color;
+    border-color: $button_border;
+    background-color: $button_bg;
+  }
+
+  @else if $t==hover {
+  //
+  // hovered button
+  //
+    color: $fg_color;
+    border-color: $button_border;
+    background-color: lighten($button_bg, 5%);
+  }
+
+  @else if $t==active {
+  //
+  // pushed button
+  //
+    color: $fg_color;
+    border-color: $button_active_border;
+    background-color: $button_active_bg;
+  }
+
+  @else if $t==insensitive {
+  //
+  // insensitive button
+  //
+    color: $insensitive_fg_color;
+    border-color: transparentize($button_border, 0.45);
+    background-color: transparentize($button_bg, 0.45);
+
+    label { color: inherit; }
+  }
+
+  @else if $t==insensitive-active {
+  //
+  // insensitive pushed button
+  //
+    color: transparentize($fg_color, 0.2);
+    border-color: transparentize($button_active_border, 0.15);
+    background-color: transparentize($button_active_bg, 0.05);
+
+    opacity: 0.6;
+
+    label { color: inherit; }
+  }
+
+  @if $t==header-normal {
+  //
+  // normal header-bar button
+  //
+    color: $header_fg;
+    background-color: transparentize($header_bg, 1);
+    border-color: transparentize($header_bg, 1);
+  }
+
+  @else if $t==header-hover {
+  //
+  // hovered header-bar button
+  //
+    color: $header_fg;
+    border-color: $header_button_border;
+    background-color: $header_button_bg;
+  }
+
+  @else if $t==header-active {
+  //
+  // pushed header-bar button
+  //
+    color: $header_fg;
+    border-color: if($variant=='light', $header_button_border, $header_button_border);
+    background-color: $button_active_bg;
+  }
+
+  @else if $t==header-insensitive {
+  //
+  // insensitive header-bar button
+  //
+    color: transparentize($header_fg, 0.45);
+    background-color: transparentize($header_bg, 1);
+    border-color: transparentize($header_bg, 1);
+
+    label { color: inherit; }
+  }
+
+  @else if $t==header-insensitive-active {
+  //
+  // header-bar insensitive pushed button
+  //
+    color: transparentize($fg_color, 0.2);
+    border-color: transparentize($button_active_border, 0.15);
+    background-color: transparentize($button_active_bg, 0.05);
+  }
+
+  @else if $t==osd {
+  //
+  // normal osd button
+  //
+    color: $osd_fg_color;
+    border-color: $osd_button_border;
+    background-color: $osd_button_bg;
+  }
+
+  @else if $t==osd-hover {
+  //
+  // active osd button
+  //
+    color: $osd_fg_color;
+    border-color: $osd_button_border;
+    background-color: opacify(lighten($osd_button_bg, 7%), 0.1);
+  }
+
+  @else if $t==osd-active {
+  //
+  // active osd button
+  //
+    color: $osd_fg_color;
+    border-color: $osd_button_border;
+    background-color: transparentize(black, 0.85);
+  }
+
+  @else if $t==osd-insensitive {
+  //
+  // insensitive osd button
+  //
+    color: $osd_insensitive_fg_color;
+    border-color: $osd_button_border;
+    background-color: transparentize($osd_button_bg, 0.15);
+  }
+
+  @else if $t==suggested_destructive {
+  //
+  // suggested or destructive action buttons
+  //
+    background-clip: border-box;
+
+    color: $selected_fg_color;
+    background-color: $actionb_color;
+    border-color: $actionb_color;
+  }
+
+  @else if $t==undecorated {
+  //
+  // reset
+  //
+    border-color: transparent;
+    background-color: transparent;
+    background-image: none;
+  }
+}
+
+//
+// Titlebar circular buttons
+//
+@mixin draw_circle($c) {
+  background-image: radial-gradient(circle at 50%, $c, $c 65%, $header_bg 65%);
+}
+
+//
+// Overshoot
+//
+@mixin overshoot($p, $c:$selected_bg_color) {
+// $p: position
+// $c: base color
+//
+// possible $p values:
+// top, bottom, right, left
+//
+
+  $_big_gradient_length: 60%;
+
+  $_big_gradient_size: 100% $_big_gradient_length;
+
+  background-image: radial-gradient(farthest-side at $p,
+                                transparentize($c, 0.8),
+                                transparentize($c, 1));
+
+  background-size: $_big_gradient_size;
+  background-repeat: no-repeat;
+  background-position: $p;
+
+  background-color: transparent; // reset some properties to be sure to not inherit them somehow
+  border: none;                  //
+  box-shadow: none;              //
+}
