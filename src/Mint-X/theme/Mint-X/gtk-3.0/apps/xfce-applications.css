@@ -25,7 +25,6 @@
 .xfce4-panel.panel button {
   border-radius: 0;
   border: none;
-  margin-left: 1px;
 }
 
 .xfce4-panel.panel button:hover {
