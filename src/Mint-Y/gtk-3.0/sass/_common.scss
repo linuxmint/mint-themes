@@ -2532,9 +2532,9 @@ calendar {
       background-image: none;
     }
   }
-  &:indeterminate { color: gtkalpha(currentColor,0.55); }
+  &:indeterminate { color: gtkalpha(currentColor,0.35); }
   &.highlight {
-    color: $fg_color;
+    color: gtkalpha(currentColor,0.65);
   }
 }
 
