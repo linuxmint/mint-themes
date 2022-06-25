@@ -657,66 +657,52 @@ button:link, button:visited,
 button:link > label, button:visited > label {
   text-decoration-line: underline; }
 
-spinbutton:drop(active) {
-  box-shadow: none; }
-
-spinbutton:disabled {
-  color: rgba(0, 0, 0, 0.42); }
-
-spinbutton:not(.vertical) entry {
-  min-width: 28px; }
-
-spinbutton:not(.vertical):dir(ltr) entry, spinbutton:not(.vertical):dir(rtl) button.up {
-  border-radius: 3px 0 0 3px; }
-
-spinbutton:not(.vertical) > button + button {
-  border-left-style: none; }
-
-spinbutton:not(.vertical) > button + button,
-spinbutton:not(.vertical) > button:hover:not(:active),
-spinbutton:not(.vertical) > button:hover + button {
-  box-shadow: inset 1px 0 #c7c7c7; }
-
-spinbutton:not(.vertical) > button:disabled + button:not(:disabled):not(:active):not(:checked):not(:hover),
-spinbutton:not(.vertical) > button:not(:disabled):not(:active):not(:checked):not(:hover) + button:disabled {
-  box-shadow: inset 1px 0 rgba(199, 199, 199, 0.5); }
-
-spinbutton:not(.vertical) > button:first-child:hover:not(:active),
-spinbutton:not(.vertical) > button.up:dir(rtl):hover:not(:active),
-spinbutton:not(.vertical) > entry + button:not(:active):hover {
-  box-shadow: none; }
-
-spinbutton:not(.vertical) > entry:focus + button {
-  border-left-color: #92b372; }
-
-spinbutton:not(.vertical) > entry:drop(active) + button {
-  border-left-color: #92b372; }
-
-.osd spinbutton:not(.vertical) > button:hover:not(:active),
-.osd spinbutton:not(.vertical) > button:hover + button {
-  box-shadow: inset 1px 0 rgba(33, 33, 33, 0.4); }
-
-.osd spinbutton:not(.vertical) > button:first-child:hover:not(:active),
-.osd spinbutton:not(.vertical) > button.up:dir(rtl):hover:not(:active),
-.osd spinbutton:not(.vertical) > entry + button:not(:active):hover {
-  box-shadow: none; }
-
-.osd spinbutton:not(.vertical) > entry:focus + button {
-  border-left-color: rgba(33, 33, 33, 0.4); }
-
-spinbutton.vertical button, spinbutton.vertical entry {
-  padding-left: 4px;
-  padding-right: 4px;
-  min-width: 0; }
-
-spinbutton.vertical button.up {
-  border-radius: 3px 3px 0 0; }
-
-spinbutton.vertical > entry:focus + button {
-  border-top-color: #92b372; }
-
-spinbutton.vertical > entry:drop(active) + button {
-  border-top-color: #92b372; }
+spinbutton {
+  color: rgba(0, 0, 0, 0.87); }
+  spinbutton:drop(active) {
+    box-shadow: none; }
+  spinbutton:disabled {
+    color: rgba(0, 0, 0, 0.42); }
+  spinbutton:not(.vertical) entry {
+    min-width: 28px; }
+  spinbutton:not(.vertical):dir(ltr) entry, spinbutton:not(.vertical):dir(rtl) button.up {
+    border-radius: 3px 0 0 3px; }
+  spinbutton:not(.vertical) > button + button {
+    border-left-style: none; }
+  spinbutton:not(.vertical) > button + button,
+  spinbutton:not(.vertical) > button:hover:not(:active),
+  spinbutton:not(.vertical) > button:hover + button {
+    box-shadow: inset 1px 0 #c7c7c7; }
+  spinbutton:not(.vertical) > button:disabled + button:not(:disabled):not(:active):not(:checked):not(:hover),
+  spinbutton:not(.vertical) > button:not(:disabled):not(:active):not(:checked):not(:hover) + button:disabled {
+    box-shadow: inset 1px 0 rgba(199, 199, 199, 0.5); }
+  spinbutton:not(.vertical) > button:first-child:hover:not(:active),
+  spinbutton:not(.vertical) > button.up:dir(rtl):hover:not(:active),
+  spinbutton:not(.vertical) > entry + button:not(:active):hover {
+    box-shadow: none; }
+  spinbutton:not(.vertical) > entry:focus + button {
+    border-left-color: #92b372; }
+  spinbutton:not(.vertical) > entry:drop(active) + button {
+    border-left-color: #92b372; }
+  .osd spinbutton:not(.vertical) > button:hover:not(:active),
+  .osd spinbutton:not(.vertical) > button:hover + button {
+    box-shadow: inset 1px 0 rgba(33, 33, 33, 0.4); }
+  .osd spinbutton:not(.vertical) > button:first-child:hover:not(:active),
+  .osd spinbutton:not(.vertical) > button.up:dir(rtl):hover:not(:active),
+  .osd spinbutton:not(.vertical) > entry + button:not(:active):hover {
+    box-shadow: none; }
+  .osd spinbutton:not(.vertical) > entry:focus + button {
+    border-left-color: rgba(33, 33, 33, 0.4); }
+  spinbutton.vertical button, spinbutton.vertical entry {
+    padding-left: 4px;
+    padding-right: 4px;
+    min-width: 0; }
+  spinbutton.vertical button.up {
+    border-radius: 3px 3px 0 0; }
+  spinbutton.vertical > entry:focus + button {
+    border-top-color: #92b372; }
+  spinbutton.vertical > entry:drop(active) + button {
+    border-top-color: #92b372; }
 
 combobox button.combo {
   padding-top: 3px;

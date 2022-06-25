@@ -736,9 +736,10 @@ button:link, button:visited {
 // Spinbuttons
 //
 spinbutton {
+  color: $fg_color;
+
   &:drop(active) { box-shadow: none; }
 
-  // button:active { color: $selected_fg_color; }
   &:disabled { color: $insensitive_fg_color; }
 
   &:not(.vertical) {
