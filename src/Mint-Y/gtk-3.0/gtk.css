@@ -1557,6 +1557,10 @@ menu,
       menuitem check:dir(rtl), menuitem radio:dir(rtl) {
         margin-left: 6px;
         margin-right: 2px; }
+    menu menuitem label:dir(rtl), menu menuitem label:dir(ltr),
+    .menu menuitem label:dir(rtl),
+    .menu menuitem label:dir(ltr) {
+      color: inherit; }
   menu > arrow,
   .menu > arrow {
     border-color: transparent;

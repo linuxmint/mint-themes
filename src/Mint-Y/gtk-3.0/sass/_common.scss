@@ -1656,6 +1656,10 @@ menu,
         &:dir(rtl) { margin-left: 6px; margin-right: 2px; }
       }
     }
+
+    // avoids labels color being overridden, see
+    // https://bugzilla.gnome.org/show_bug.cgi?id=767058
+    label { &:dir(rtl), &:dir(ltr) { color: inherit; }}
   }
 
   // overflow buttons
