@@ -1371,8 +1371,8 @@ headerbar .linked:not(.vertical).path-bar > button {
   padding-right: 4px; }
 
 treeview.view {
-  border-left-color: rgba(255, 255, 255, 0.02);
-  border-top-color: rgba(0, 0, 0, 0.1); }
+  border-left-color: rgba(255, 255, 255, 0.22);
+  border-top-color: rgba(255, 255, 255, 0.22); }
   * {
     -GtkTreeView-horizontal-separator: 4;
     -GtkTreeView-grid-line-width: 1;
