@@ -37,7 +37,13 @@ os.system("mkdir -p usr/share/themes")
 
 # Mint-X ##################################################################
 
-# First build then copy the main gtk3 theme
+# First build the Gtk4 css
+os.chdir("src/Mint-X/theme/Mint-X/gtk-4.0/")
+os.system("sassc ./sass/gtk.scss gtk.css")
+os.system("sassc ./sass/gtk-dark.scss gtk-dark.css")
+os.chdir(start_dir)
+
+# Then the Gtk3 css
 os.chdir("src/Mint-X/theme/Mint-X/gtk-3.0/")
 os.system("sassc ./sass/gtk.scss gtk.css")
 os.system("sassc ./sass/gtk-dark.scss gtk-dark.css")
@@ -61,12 +67,20 @@ for color in os.listdir("src/Mint-X/variations"):
         # Accent color
         gtkrc = os.path.join(theme, "gtk-2.0", "gtkrc")
         settings_ini = os.path.join(theme, "gtk-3.0", "settings.ini")
-        sass_colors = os.path.join(theme, "gtk-3.0", "sass", "_colors.scss")
-        for file in [gtkrc, settings_ini, sass_colors]:
+        gtk3_colors = os.path.join(theme, "gtk-3.0", "sass", "_colors.scss")
+        gtk4_colors = os.path.join(theme, "gtk-4.0", "sass", "_colors.scss")
+        for file in [gtkrc, settings_ini, gtk3_colors, gtk4_colors]:
             for accent in X_HEX_ACCENTS:
                 os.system("sed -i s'/%(accent)s/%(color_accent)s/' %(file)s" % {'accent': accent, 'color_accent': x_hex_colors[color], 'file': file})
 
         # Build sass
+        sass_dir = os.path.join(theme, "gtk-4.0")
+        os.chdir(sass_dir)
+        os.system("sassc ./sass/gtk.scss gtk.css")
+        os.system("sassc ./sass/gtk-dark.scss gtk-dark.css")
+        os.system("rm -rf sass parse-sass.sh")
+        os.chdir(start_dir)
+
         sass_dir = os.path.join(theme, "gtk-3.0")
         os.chdir(sass_dir)
         os.system("sassc ./sass/gtk.scss gtk.css")
@@ -88,6 +102,7 @@ for color in os.listdir("src/Mint-X/variations"):
                 os.system("sed -i s'/%(accent)s/%(color_accent)s/' %(file)s" % {'accent': accent, 'color_accent': x_rgb_colors[color], 'file': file})
 
 os.system("rm -rf usr/share/themes/Mint-X/gtk-3.0/sass usr/share/themes/Mint-X/gtk-3.0/parse-sass.sh")
+os.system("rm -rf usr/share/themes/Mint-X/gtk-4.0/sass usr/share/themes/Mint-X/gtk-4.0/parse-sass.sh")
 
 # Mint-Y #################################################################
 
