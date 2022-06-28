@@ -547,19 +547,19 @@ button {
     }
 
     &.image-button {
-      padding: 4px;
+      padding: 6px;
     }
 
     &.text-button {
-      padding: 4px 16px;
+      padding: 6px 16px;
     }
 
     &.text-button.image-button {
-      padding: 4px 7px;
+      padding: 6px 7px;
     }
 
     &.text-button.image-button {
-      padding: 4px 7px;
+      padding: 6px 7px;
 
       label {
         padding-left: 8px;
@@ -1333,10 +1333,6 @@ combobox {
     border-width: 0 0 1px 0;
     border-color: $borders_color;
     box-shadow: none;
-
-     button { padding: 6px; }
-     button.image-button { padding: 6px; }
-     button.text-button { padding: 6px 16px; }
   }
 }
 
