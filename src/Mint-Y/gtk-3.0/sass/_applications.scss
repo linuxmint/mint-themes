@@ -342,6 +342,12 @@ NautilusListView .view { border-bottom: 1px solid $borders_color; }
   }
 }
 
+// need so you can see the caret when renaming
+.caja-desktop,
+.caja-navigation-window {
+  .entry { caret-color: black; }
+}
+
 //
 // Gedit
 //
