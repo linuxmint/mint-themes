@@ -474,16 +474,16 @@ button {
       box-shadow: inset 0 1px rgba(0, 0, 0, 0.1), inset 1px 0 rgba(0, 0, 0, 0.08), inset -1px 0 rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.06); }
   notebook > header > tabs > arrow.image-button,
   button.image-button {
-    padding: 4px; }
+    padding: 6px; }
   notebook > header > tabs > arrow.text-button,
   button.text-button {
-    padding: 4px 16px; }
+    padding: 6px 16px; }
   notebook > header > tabs > arrow.text-button.image-button,
   button.text-button.image-button {
-    padding: 4px 7px; }
+    padding: 6px 7px; }
   notebook > header > tabs > arrow.text-button.image-button,
   button.text-button.image-button {
-    padding: 4px 7px; }
+    padding: 6px 7px; }
     notebook > header > tabs > arrow.text-button.image-button label,
     button.text-button.image-button label {
       padding-left: 8px;
@@ -1263,12 +1263,6 @@ searchbar > revealer > box,
   border-width: 0 0 1px 0;
   border-color: #1f1f1f;
   box-shadow: none; }
-  .primary-toolbar.toolbar button, .primary-toolbar button {
-    padding: 6px; }
-  .primary-toolbar.toolbar button.image-button, .primary-toolbar button.image-button {
-    padding: 6px; }
-  .primary-toolbar.toolbar button.text-button, .primary-toolbar button.text-button {
-    padding: 6px 16px; }
 
 toolbar {
   padding: 4px 3px 3px 4px; }
