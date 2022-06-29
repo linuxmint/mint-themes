@@ -319,3 +319,21 @@ PanelSeparator {
     border-style: solid;
   }
 }
+
+/**********
+ * Thunar *
+ **********/
+
+.thunar {
+  .sidebar {
+    .view,
+    iconview {
+      background-color: if($variant == 'light', #ececec, #383838);
+    }
+  }
+
+  toolbar.horizontal button image,
+  .horizontal.inline-toolbar button image {
+    -gtk-icon-transform: scale(0.9);
+  }
+}
