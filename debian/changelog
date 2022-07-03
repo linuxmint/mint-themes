@@ -1,3 +1,26 @@
+mint-themes (2.0.1) vanessa; urgency=medium
+
+  [ JosephMcc ]
+  * Mint-Y: Add initial support for Gtk4
+  * Mint-Y-Gtk3: Improve the styling of GtkCalendar
+  * Mint-Y-Xfwm: Better match csd and non-csd titlebar font colors
+  * Mint-X-Gtk3: Remove the 1px margin on xfce panel buttons
+  * Mint-Y-Gtk3: Fix context menu label colors in Seahorse
+  * Mint-Y-Gtk3: Set a color for spinbuttons
+  * Mint-Y-Gtk3: Fix the color of treeview grid and tree lines
+  * Mint-Y-Gtk2: Clean up an issue in Qt entries
+  * Mint-X-Gtk3: Port the gtk3 theme to sass
+  * Mint-X: Add initial support for Gtk4
+  * Mint-Y: Remove deprecated block-progression property from assets
+  * Mint-Y: Fix build with Inkscape 1.0
+  * Mint-X-Gtk3: Fix up button padding a bit
+  * Mint-Y-Gtk3: Fix the caret color of caja entries in the dark theme
+  * Gtk3: Fix rounding of libhandy window borders
+  * Mint-X-Gtk3: A couple Thunar improvements
+  * Mint-X-Xfwm: Better match headerbar and xfwm title colors
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sun, 03 Jul 2022 10:11:43 +0200
+
 mint-themes (2.0.0) vanessa; urgency=medium
 
   [ JosephMcc ]
