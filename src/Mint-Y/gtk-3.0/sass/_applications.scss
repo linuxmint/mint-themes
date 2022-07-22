@@ -279,7 +279,7 @@ NautilusListView .view { border-bottom: 1px solid $borders_color; }
     .frame { border: none; }
 
     .view, row {
-      background-color: transparent;
+      background-color: $dark_sidebar_bg;
       color: $dark_sidebar_fg;
 
       &.cell:selected {
