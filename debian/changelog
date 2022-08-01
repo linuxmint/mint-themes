@@ -1,3 +1,10 @@
+mint-themes (2.0.4) vanessa; urgency=medium
+
+  [ JosephMcc ]
+  * Mint-Y-Gtk3: Fix dragging in the Nemo sidebar
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 01 Aug 2022 16:09:55 +0200
+
 mint-themes (2.0.3) vanessa; urgency=medium
 
   [ JosephMcc ]
