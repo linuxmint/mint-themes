@@ -23,7 +23,7 @@ $info_color: #9ab87c;
 $question_color: #55c1ec;
 $warning_color: #f27e3f;
 $error_color: #e35d4f;
-$success_color: if($variant == 'light', #33d17a, darken(#33d17a, 10%));
+$success_color: if($variant == 'light', #3abc75, darken(#3abc75, 10%));
 $destructive_color: if($variant == 'light', #e01b24, darken(#e01b24, 10%));
 
 $osd_fg_color: #eeeeec;
@@ -55,3 +55,5 @@ $backdrop_borders_color: mix($borders_color, $bg_color, 80%);
 //special cased widget colors
 $suggested_bg_color: $selected_bg_color;
 $suggested_border_color: $selected_borders_color;
+$suggested_action_bg_color: $success_color;
+$suggested_action_border_color: if($variant== 'light', darken($success_color, 15%), darken($success_color, 30%));

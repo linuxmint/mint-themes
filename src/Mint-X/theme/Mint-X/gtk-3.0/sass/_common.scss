@@ -661,7 +661,7 @@ button {
   }
 
   // Suggested and Destructive Action buttons
-  @each $b_type, $b_color in (suggested-action, $suggested_bg_color),
+  @each $b_type, $b_color in (suggested-action, $suggested_action_bg_color),
                              (destructive-action, $destructive_color) {
     &.#{$b_type} {
       @include button(normal-colored, $b_color, white);
