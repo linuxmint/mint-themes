@@ -2873,6 +2873,29 @@ calendar {
 //
 // Dialogs
 //
+.dialog-action-area {
+  margin: 6px;
+
+  button.text-button {
+    padding: 6px 16px;
+  }
+
+  button {
+    border-radius: 0;
+    border-right-style: none;
+
+    &:first-child {
+      border-radius: 3px 0 0 3px;
+      border-right-style: none;
+    }
+
+    &:last-child {
+      border-radius: 0 3px 3px 0;
+      border-style: solid;
+    }
+  }
+}
+
 window.dialog.message { // Message Dialog styling
   .titlebar {
     min-height: 20px;
@@ -2904,12 +2927,14 @@ window.dialog.message { // Message Dialog styling
 
     // .dialog-action-area { @include linking_rules(); }
 
+    // }
+
     .dialog-action-area button {
       border-radius: 0;
       border-bottom-style: none;
       border-right-style: none;
 
-      &:first-child{
+      &:first-child {
         border-bottom-left-radius: 2px;
         border-left-style: none;
       }
