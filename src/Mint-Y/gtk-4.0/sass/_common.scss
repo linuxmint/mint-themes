@@ -1578,8 +1578,8 @@ pathbar  > button {
 //
 columnview.view,
 treeview.view {
-  border-left-color: transparentize($fg_color, 0.85);   // this is actually the tree lines color,
-  border-top-color: transparentize(black, 0.9);         // while this is the grid lines color, better then nothing
+  border-left-color: transparentize($fg_color, 0.65);   // this is actually the tree lines color,
+  border-top-color: transparentize($fg_color, 0.65);    // while this is the grid lines color, better then nothing
 
   > rubberband { @extend rubberband; }                 // to avoid borders being overridden by the previously set props
 
