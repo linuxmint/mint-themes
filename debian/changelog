@@ -1,3 +1,15 @@
+mint-themes (2.0.5) vanessa; urgency=medium
+
+  [ JosephMcc ]
+  * Cinnamon: Add support for the cinnamon locate pointer
+  * Mint-X: Always use green for suggested-action buttons
+  * Mint-Y-Gtk4: Fix rounded corners on maximized windows
+  * Mint-X-Gtk4: Fix the suggested_bg_color variable
+  * Mint-Y-Gtk4: Fix treeview line colors
+  * Mint-Y-Gtk4: Improve dialog button styling
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sun, 21 Aug 2022 21:10:06 +0200
+
 mint-themes (2.0.4) vanessa; urgency=medium
 
   [ JosephMcc ]
