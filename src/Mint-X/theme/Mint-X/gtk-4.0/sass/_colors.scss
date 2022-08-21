@@ -53,5 +53,5 @@ $backdrop_selected_fg_color: if($variant == 'light', $backdrop_base_color, $back
 $backdrop_borders_color: mix($borders_color, $bg_color, 80%);
 
 //special cased widget colors
-$suggested_bg_color: $suggested_color;
-$suggested_border_color: if($variant== 'light', darken($suggested_color, 15%), darken($suggested_color, 30%));
+$suggested_bg_color: $success_color;
+$suggested_border_color: if($variant== 'light', darken($success_color, 15%), darken($success_color, 30%));
