@@ -3465,17 +3465,17 @@ window {
     }
   }
 
-  .fullscreen &,
-  .maximized & {
+  &.fullscreen,
+  &.maximized {
     border-radius: 0;
     box-shadow: none;
   }
 
-  .tiled &,
-  .tiled-top &,
-  .tiled-right &,
-  .tiled-bottom &,
-  .tiled-left & {
+  &.tiled,
+  &.tiled-top,
+  &.tiled-right,
+  &.tiled-bottom,
+  &.tiled-left {
     border-radius: 0;
     box-shadow: 0 0 0 1px $_wm_border,
                 0 0 0 20px transparent; //transparent control workaround -- #3670
