@@ -18,8 +18,9 @@ def usage ():
     sys.exit(1)
 
 def update_color (color):
-    variation = "src/Mint-Y/variations/%s" % color
-    print("updating %s" % variation)
+    variation = curdir+"/src/Mint-Y/variations/%s" % color
+    rendering_script = curdir+"/src/Mint-Y/render-assets.sh"
+    print("updating %s" % color)
     os.system("rm -rf %s" % variation)
     os.system("mkdir -p %s/gtk-2.0" % variation)
     os.system("mkdir -p %s/gtk-3.0" % variation)
@@ -38,14 +39,9 @@ def update_color (color):
     files.append("gtk-2.0/assets")
     files.append("gtk-2.0/assets-dark")
     files.append("gtk-2.0/assets.txt")
-    files.append("gtk-2.0/render-assets.sh")
-    files.append("gtk-2.0/render-dark-assets.sh")
     files.append("gtk-3.0/assets")
     files.append("gtk-3.0/assets.txt")
-    files.append("gtk-3.0/render-assets.sh")
-    files.append("xfwm4/render-assets.sh")
     files.append("xfwm4/assets.txt")
-    files.append("xfwm4-dark/render-assets.sh")
     files.append("xfwm4-dark/assets.txt")
 
     for file in files:
@@ -66,21 +62,38 @@ def update_color (color):
             os.system("sed -i s'/%(accent)s/%(color_accent)s/gI' %(file)s" % {'accent': accent, 'color_accent': y_hex_colors4[color], 'file': asset_path})
 
     # Render assets
+    # TODO: need better idea to do '-dark'
+    # and '@2' arguments
     os.chdir(variation)
-    os.chdir("gtk-2.0")
+    os.chdir(variation+"/gtk-2.0")
+    print("**Rendering gtk-2.0 assets...")
     os.system("rm -rf assets/*")
+    os.system(rendering_script)
+    
+    print("**Rendering gtk-2.0 dark assets...")
     os.system("rm -rf assets-dark/*")
-    os.system("./render-assets.sh")
-    os.system("./render-dark-assets.sh")
-    os.chdir("../gtk-3.0/")
+    os.system(rendering_script+" -dark")
+    # os.system("rm -rf assets/*@2.png")
+    
+    print("**Rendering gtk-3.0 assets...")
+    os.chdir(variation+"/gtk-3.0/")
     os.system("rm -rf assets/*")
-    os.system("./render-assets.sh")
-    os.chdir("../xfwm4/")
+    os.system(rendering_script+" s2")
+    
+    print("**Rendering xfwm4 assets...")
+    os.chdir(variation+"/xfwm4/")
     os.system("rm -rf *.png")
-    os.system("./render-assets.sh")
-    os.chdir("../xfwm4-dark/")
+    os.system(rendering_script)
+    # os.system("rm -rf assets/*@2.png")
+    os.system("mv assets/*.png ./ && rm -rf assets/")
+    
+    print("**Rendering xfwm4 dark assets...")
+    os.chdir(variation+"/xfwm4-dark/")
     os.system("rm -rf *.png")
-    os.system("./render-assets.sh")
+    os.system(rendering_script)
+    # os.system("rm -rf assets/*@2.png")
+    os.system("mv assets/*.png ./ && rm -rf assets/")
+    print("")
     os.chdir(curdir)
 
 if len(sys.argv) < 2:
@@ -92,6 +105,9 @@ else:
 
 # Mint-Y variations
 curdir = os.getcwd()
+# override for inkscape. when ulimit is set to "unlimited"
+# inkscape fails with segfault
+os.system("ulimit -s 1024")
 
 if color_variation == "All":
     for color in y_hex_colors1.keys():
