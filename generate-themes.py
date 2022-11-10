@@ -2,8 +2,8 @@
 import os
 
 from constants import X_HEX_ACCENTS, X_RGB_ACCENTS, x_hex_colors, x_rgb_colors
-from constants import Y_HEX_ACCENT1, Y_HEX_ACCENT2, Y_HEX_ACCENT3, Y_HEX_ACCENT4
-from constants import y_hex_colors1, y_hex_colors2, y_hex_colors3, y_hex_colors4
+from constants import Y_HEX_ACCENT1, Y_HEX_ACCENT2
+from constants import y_hex_colors1, y_hex_colors2
 
 def change_value (key, value, file):
     if value is not None:
@@ -23,10 +23,6 @@ def y_colorize_directory (path, variation):
         os.system("find %s -name '*.*' -type f -exec sed -i 's/%s/%s/gI' {}  \\;" % (path, accent, y_hex_colors1[variation]))
     for accent in Y_HEX_ACCENT2:
         os.system("find %s -name '*.*' -type f -exec sed -i 's/%s/%s/gI' {}  \\;" % (path, accent, y_hex_colors2[variation]))
-    for accent in Y_HEX_ACCENT3:
-        os.system("find %s -name '*.*' -type f -exec sed -i 's/%s/%s/gI' {}  \\;" % (path, accent, y_hex_colors3[variation]))
-    for accent in Y_HEX_ACCENT4:
-        os.system("find %s -name '*.*' -type f -exec sed -i 's/%s/%s/gI' {}  \\;" % (path, accent, y_hex_colors4[variation]))
 
 if os.path.exists("usr"):
     os.system("rm -rf usr/")
@@ -186,10 +182,6 @@ for color in y_hex_colors1.keys():
                         os.system("sed -i s'/%(accent)s/%(color_accent)s/gI' %(file)s" % {'accent': accent, 'color_accent': y_hex_colors1[color], 'file': file})
                     for accent in Y_HEX_ACCENT2:
                         os.system("sed -i s'/%(accent)s/%(color_accent)s/gI' %(file)s" % {'accent': accent, 'color_accent': y_hex_colors2[color], 'file': file})
-                    for accent in Y_HEX_ACCENT3:
-                        os.system("sed -i s'/%(accent)s/%(color_accent)s/gI' %(file)s" % {'accent': accent, 'color_accent': y_hex_colors3[color], 'file': file})
-                    for accent in Y_HEX_ACCENT4:
-                        os.system("sed -i s'/%(accent)s/%(color_accent)s/gI' %(file)s" % {'accent': accent, 'color_accent': y_hex_colors4[color], 'file': file})
 
             # Remove metacity-theme-3.xml (it doesn't need to be derived since it's using GTK colors, and Cinnamon doesn't want to list it)
             os.system("rm -f %s" % os.path.join(theme, "metacity-1", "metacity-theme-3.xml"))
