@@ -2882,6 +2882,8 @@ headerbar.default-decoration button.titlebutton,
 .titlebar.default-decoration button.titlebutton {
   padding-top: 0px;
   padding-bottom: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
   min-width: 22px;
   min-height: 22px;
   margin: 0; }
@@ -3224,7 +3226,7 @@ NautilusListView .view, NautilusListView iconview {
     .nemo-window .sidebar .frame {
       border: none; }
     .nemo-window .sidebar .view, .nemo-window .sidebar iconview, .nemo-window .sidebar row {
-      background-color: transparent;
+      background-color: #353535;
       color: rgba(255, 255, 255, 0.87); }
       .nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar row.cell:selected {
         background-color: #8fa876;

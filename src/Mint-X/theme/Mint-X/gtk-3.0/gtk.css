@@ -638,10 +638,10 @@ button.osd {
 
 button.suggested-action {
   color: white;
-  border-color: #749651;
-  border-bottom-color: #678648;
-  background-image: linear-gradient(to bottom, #aec696, #90b16f);
-  box-shadow: inset 0 1px #c0d3ae, inset 1px 0 #acc593, inset -1px 0 #acc593, 1px 0 rgba(0, 0, 0, 0.05), -1px 0 rgba(0, 0, 0, 0.05), 0 1px rgba(0, 0, 0, 0.1);
+  border-color: #288251;
+  border-bottom-color: #226e44;
+  background-image: linear-gradient(to bottom, #54ca8a, #35ac6b);
+  box-shadow: inset 0 1px #70d39d, inset 1px 0 #51c987, inset -1px 0 #51c987, 1px 0 rgba(0, 0, 0, 0.05), -1px 0 rgba(0, 0, 0, 0.05), 0 1px rgba(0, 0, 0, 0.1);
   text-shadow: none; }
   
   button.suggested-action.flat {
@@ -651,21 +651,21 @@ button.suggested-action {
     box-shadow: none;
     text-shadow: none;
     -gtk-icon-shadow: none;
-    color: #9ab87c; }
+    color: #3abc75; }
   
   button.suggested-action:hover {
     color: white;
-    border-color: #678648;
-    border-bottom-color: #5a753f;
-    background-image: linear-gradient(to bottom, #a2bd86, #83a85e);
-    box-shadow: inset 0 1px #b4ca9d, inset 1px 0 #9fbc83, inset -1px 0 #9fbc83, 1px 0 rgba(0, 0, 0, 0.05), -1px 0 rgba(0, 0, 0, 0.05), 0 1px rgba(0, 0, 0, 0.1);
+    border-color: #226e44;
+    border-bottom-color: #1c5b38;
+    background-image: linear-gradient(to bottom, #41c47d, #2f995f);
+    box-shadow: inset 0 1px #5ccd8f, inset 1px 0 #3dc37a, inset -1px 0 #3dc37a, 1px 0 rgba(0, 0, 0, 0.05), -1px 0 rgba(0, 0, 0, 0.05), 0 1px rgba(0, 0, 0, 0.1);
     text-shadow: none; }
   
   button.suggested-action:active,
   button.suggested-action:checked {
     color: white;
-    border-color: #749651;
-    background-image: linear-gradient(to bottom, #627f45, #749651 30%, #749651);
+    border-color: #288251;
+    background-image: linear-gradient(to bottom, #206640, #288251 30%, #288251);
     box-shadow: inset 0 1px rgba(0, 0, 0, 0.1), inset 1px 0 rgba(0, 0, 0, 0.08), inset -1px 0 rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.06);
     text-shadow: none;
     -gtk-icon-shadow: none; }
@@ -677,7 +677,7 @@ button.suggested-action {
     box-shadow: none;
     text-shadow: none;
     -gtk-icon-shadow: none;
-    color: rgba(154, 184, 124, 0.8); }
+    color: rgba(58, 188, 117, 0.8); }
   
   button.suggested-action:disabled {
     color: #7c7c7c;
@@ -689,15 +689,15 @@ button.suggested-action {
     
     button.suggested-action:disabled:active,
     button.suggested-action:disabled:checked {
-      color: #d4e0c7;
-      border-color: #749651;
+      color: #b2e1c8;
+      border-color: #288251;
       background-image: linear-gradient(to bottom, #9e9e9e, #bdbdbd);
       box-shadow: inset 0 1px rgba(0, 0, 0, 0.1), inset 1px 0 rgba(0, 0, 0, 0.08), inset -1px 0 rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.06); }
   .osd button.suggested-action {
     color: #eeeeec;
     border-color: rgba(0, 0, 0, 0.7);
     background-color: transparent;
-    background-image: image(rgba(154, 184, 124, 0.5));
+    background-image: image(rgba(58, 188, 117, 0.5));
     background-clip: padding-box;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
     text-shadow: 0 1px black;
@@ -706,7 +706,7 @@ button.suggested-action {
       color: white;
       border-color: rgba(0, 0, 0, 0.7);
       background-color: transparent;
-      background-image: image(rgba(154, 184, 124, 0.7));
+      background-image: image(rgba(58, 188, 117, 0.7));
       background-clip: padding-box;
       box-shadow: inset 0 1px rgba(255, 255, 255, 0.1);
       text-shadow: 0 1px black;
@@ -715,7 +715,7 @@ button.suggested-action {
       color: white;
       border-color: rgba(0, 0, 0, 0.7);
       background-color: transparent;
-      background-image: image(#9ab87c);
+      background-image: image(#3abc75);
       background-clip: padding-box;
       box-shadow: none;
       text-shadow: none;
@@ -2668,8 +2668,8 @@ levelbar block {
     border-color: #9ab87c;
     background-color: #9ab87c; }
   levelbar block.full {
-    border-color: #33d17a;
-    background-color: #33d17a; }
+    border-color: #3abc75;
+    background-color: #3abc75; }
   levelbar block.empty {
     background-color: transparent;
     border-color: rgba(33, 33, 33, 0.2); }
@@ -3913,7 +3913,7 @@ widgets main borders color on backdrop windows */
 these are pretty self explicative */
 @define-color warning_color #f27e3f;
 @define-color error_color #e35d4f;
-@define-color success_color #33d17a;
+@define-color success_color #3abc75;
 /*
 these colors are exported for the window manager and shouldn't be used in applications,
 read if you used those and something break with a version upgrade you're on your own... */

@@ -1448,8 +1448,8 @@ pathbar > button image {
 
 columnview.view,
 treeview.view {
-  border-left-color: rgba(255, 255, 255, 0.02);
-  border-top-color: rgba(0, 0, 0, 0.1); }
+  border-left-color: rgba(255, 255, 255, 0.22);
+  border-top-color: rgba(255, 255, 255, 0.22); }
   columnview.view:selected, columnview.view:selected:focus,
   treeview.view:selected,
   treeview.view:selected:focus {
@@ -2589,6 +2589,20 @@ calendar {
   calendar > grid > label.day-number.other-month {
     color: alpha(currentColor,0.3); }
 
+.dialog-action-area {
+  margin: 6px; }
+  .dialog-action-area button.text-button {
+    padding: 6px 16px; }
+  .dialog-action-area button {
+    border-radius: 0;
+    border-right-style: none; }
+    .dialog-action-area button:first-child {
+      border-radius: 3px 0 0 3px;
+      border-right-style: none; }
+    .dialog-action-area button:last-child {
+      border-radius: 0 3px 3px 0;
+      border-style: solid; }
+
 window.dialog.message .titlebar {
   min-height: 20px;
   background-image: none;
@@ -2985,13 +2999,13 @@ window {
       box-shadow: 0 3px 9px 1px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.75); }
     window.csd.dialog.message {
       border-radius: 8px 8px 0 0; }
-  .fullscreen window, .maximized window {
+  window.fullscreen, window.maximized {
     border-radius: 0;
     box-shadow: none; }
-  .tiled window, .tiled-top window, .tiled-right window, .tiled-bottom window, .tiled-left window {
+  window.tiled, window.tiled-top, window.tiled-right, window.tiled-bottom, window.tiled-left {
     border-radius: 0;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.75), 0 0 0 20px transparent; }
-    .tiled window:backdrop, .tiled-top window:backdrop, .tiled-right window:backdrop, .tiled-bottom window:backdrop, .tiled-left window:backdrop {
+    window.tiled:backdrop, window.tiled-top:backdrop, window.tiled-right:backdrop, window.tiled-bottom:backdrop, window.tiled-left:backdrop {
       box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.75), 0 0 0 20px transparent; }
   window.popup {
     box-shadow: none;
