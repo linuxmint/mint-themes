@@ -31,8 +31,8 @@ x_rgb_colors["Teal"] = "90, 170, 154"
 
 
 # Mint-Y
-Y_HEX_ACCENT1 = ["#92b372"]  # BASE
-Y_HEX_ACCENT2 = ["#8fa876"]  # DARK
+Y_HEX_ACCENT1 = ["#35a854"]  # BASE
+Y_HEX_ACCENT2 = ["#35a854"]  # DARK
 
 y_hex_colors1 = {}
 y_hex_colors2 = {}

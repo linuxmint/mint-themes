@@ -3,7 +3,7 @@
 
 // We need to set this first because we use it to tint many
 // of the remaining colors
-$selected_bg_color: if($variant == 'light', #92b372, #8fa876);
+$selected_bg_color: if($variant == 'light', #35a854, #35a854);
 
 $base_color: if($variant =='light', mix($selected_bg_color, #f4f4f4, 0%), mix($selected_bg_color, #404040, 0%));
 $text_color: if($variant == 'light', #303030, #D3D3D3);

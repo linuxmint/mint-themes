@@ -4,15 +4,15 @@
 // We need to set this first because we use it to tint many
 // of the remaining colors
 
-$light_tint: if($tint == 'tint', mix(#92b372, #f5f5f5, 2%), #f5f5f5);
-$dark_tint: if($tint == 'tint', mix(#8fa876, #383838, 2%), #383838);
+$light_tint: if($tint == 'tint', mix(#35a854, #f5f5f5, 2%), #f5f5f5);
+$dark_tint: if($tint == 'tint', mix(#35a854, #383838, 2%), #383838);
 
 $base_color: if($variant == 'light', #ffffff, #404040);
 $text_color: if($variant == 'light', #303030, #DADADA);
 $bg_color: if($variant == 'light', $light_tint, $dark_tint);
 $fg_color: if($variant =='light', transparentize(black, 0.13), transparentize(white, 0.13));
 
-$selected_bg_color: if($variant == 'light', #92b372, #8fa876);
+$selected_bg_color: if($variant == 'light', #35a854, #35a854);
 $selected_fg_color: #ffffff;
 $selected_borders_color: darken($selected_bg_color, 15%);
 $borders_color: if($variant =='light', darken($bg_color, 18%), darken($bg_color,6%));
