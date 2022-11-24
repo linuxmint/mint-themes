@@ -1,3 +1,29 @@
+mint-themes (2.0.6) vera; urgency=medium
+
+  [ Sébastien Bouchard ]
+  * GTK-4 directory and assets added in update-variations.py script (#401)
+
+  [ Clement Lefebvre ]
+  * Remove Mint-Y-Colors directory
+  * Remove hardcoded hover and pressed colors
+  * Rebuild generated files
+  * Soften light Cinnamon colors
+  * Remove accents in parts of the Cinnamon theme
+  * Generate CSS
+  * Update Pink
+  * Update Aqua, Orange, Purple, Red, Sand, Teal
+  * Update Blue and Grey
+  * Update Green
+  * Update Gtk3 thumbnails
+  * Update dark Gtk3 thumbnails
+  * Gtk2: Remove menubar-toolbar asset overrides
+  * Update Cinnamon thumbnails
+  * Mint-X: Update Cinnamon thumbnails
+  * Linux Mint: Update cinnamon thumbnail
+  * Update Gtk3 thumbnails
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 24 Nov 2022 22:43:50 +0000
+
 mint-themes (2.0.5) vanessa; urgency=medium
 
   [ JosephMcc ]
