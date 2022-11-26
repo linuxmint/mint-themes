@@ -2149,6 +2149,26 @@ StScrollBar {
 }
 
 //
+// Cornerbar Applet
+//
+.applet-cornerbar {
+  width: 8px;
+  background-color: transparentize(black, 0.8);
+
+  &-box {
+    padding: 4px 4px;
+
+    &:hover {
+      background-color: $noaccent_selected_bg_color;
+    }
+  }
+
+  &.vertical {
+    height: 8px;
+  }
+}
+
+//
 // Desklets (desklet.js)
 //
 .desklet {

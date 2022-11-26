@@ -524,6 +524,23 @@ StScrollBar StButton#vhandle:hover {
     border-image: url("misc-assets/workspace-shadow.png") 14;
 }
 
+.applet-cornerbar {
+  width: 8px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.applet-cornerbar-box {
+  padding: 4px 4px;
+}
+
+.applet-cornerbar-box:hover {
+  background-color: #c0c0c0;
+}
+
+.applet-cornerbar.vertical {
+  height: 8px;
+}
+
 /* ===================================================================
 * Desklets (desklet.js)
 * ===================================================================*/

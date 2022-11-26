@@ -1649,6 +1649,16 @@ StScrollBar {
   font-weight: bold;
   margin: 0px; }
 
+.applet-cornerbar {
+  width: 8px;
+  background-color: rgba(0, 0, 0, 0.2); }
+  .applet-cornerbar-box {
+    padding: 4px 4px; }
+    .applet-cornerbar-box:hover {
+      background-color: #525352; }
+  .applet-cornerbar.vertical {
+    height: 8px; }
+
 .desklet {
   color: rgba(255, 255, 255, 0.87); }
   .desklet:highlight {
