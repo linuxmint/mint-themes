@@ -1133,7 +1133,7 @@ windowcontrols {
       }
       &:hover,
       &:hover:backdrop {
-        color: $selected_fg_color;
+        color: $fg_color;
         @include draw-circle($wm_button_hover_bg);
       }
       &:active,
