@@ -787,7 +787,7 @@ actionbar {
 
 headerbar,
 .titlebar:not(headerbar) {
-  min-height: 42px;
+  min-height: 46px;
   padding: 0 7px;
   border-width: 0 0 1px;
   border-style: solid;
