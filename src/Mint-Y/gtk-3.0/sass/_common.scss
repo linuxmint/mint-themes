@@ -2087,8 +2087,9 @@ radio {
 // GtkScale
 //
 scale {
-  $_marks_length: 3px;
+  $_marks_length: 7px;
   $_marks_distance: 1px;
+  $_value_distance: 3px;
 
   min-height: 15px;
   min-width: 15px;
@@ -2232,7 +2233,18 @@ scale {
     &:disabled { background-color: transparent; }
   }
 
-  value { color: gtkalpha(currentColor, 0.4); }
+  value {
+    color: gtkalpha(currentColor, 0.4);
+
+    @each $value_class, $value_margin in (top, bottom),
+                                         (bottom, top),
+                                         (left, right),
+                                         (right, left) {
+      &.#{$value_class} {
+        margin-#{$value_margin}: $_value_distance;
+      }
+    }
+  }
 
   marks {
     color: gtkalpha(currentColor, 0.4);

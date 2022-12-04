@@ -2160,42 +2160,50 @@ scale {
       background-color: transparent; }
   scale value {
     color: alpha(currentColor,0.4); }
+    scale value.top {
+      margin-bottom: 3px; }
+    scale value.bottom {
+      margin-top: 3px; }
+    scale value.left {
+      margin-right: 3px; }
+    scale value.right {
+      margin-left: 3px; }
   scale marks {
     color: alpha(currentColor,0.4); }
     scale marks.top {
       margin-bottom: 1px;
-      margin-top: -4px; }
+      margin-top: -8px; }
     scale marks.bottom {
       margin-top: 1px;
-      margin-bottom: -4px; }
+      margin-bottom: -8px; }
     scale marks.top {
       margin-right: 1px;
-      margin-left: -4px; }
+      margin-left: -8px; }
     scale marks.bottom {
       margin-left: 1px;
-      margin-right: -4px; }
+      margin-right: -8px; }
   scale.fine-tune marks.top {
     margin-bottom: 0px;
-    margin-top: -2px; }
+    margin-top: -6px; }
   scale.fine-tune marks.bottom {
     margin-top: 0px;
-    margin-bottom: -2px; }
+    margin-bottom: -6px; }
   scale.fine-tune marks.top {
     margin-right: 0px;
-    margin-left: -2px; }
+    margin-left: -6px; }
   scale.fine-tune marks.bottom {
     margin-left: 0px;
-    margin-right: -2px; }
+    margin-right: -6px; }
   scale.horizontal indicator {
-    min-height: 3px;
+    min-height: 7px;
     min-width: 1px; }
   scale.horizontal.fine-tune indicator {
-    min-height: 2px; }
+    min-height: 6px; }
   scale.vertical indicator {
     min-height: 1px;
-    min-width: 3px; }
+    min-width: 7px; }
   scale.vertical.fine-tune indicator {
-    min-width: 2px; }
+    min-width: 6px; }
 
 progressbar {
   padding: 0;
