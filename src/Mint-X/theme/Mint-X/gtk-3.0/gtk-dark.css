@@ -3018,6 +3018,18 @@ infobar {
         box-shadow: inset 0 1px rgba(0, 0, 0, 0.1), inset 1px 0 rgba(0, 0, 0, 0.08), inset -1px 0 rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.06);
         text-shadow: none;
         -gtk-icon-shadow: none; }
+      infobar.info button:disabled {
+        color: #939393;
+        border-color: #749651;
+        background-image: image(#8da673);
+        text-shadow: none;
+        -gtk-icon-shadow: none;
+        box-shadow: inset 0 1px rgba(255, 255, 255, 0.05), inset 1px 0 rgba(255, 255, 255, 0.02), inset -1px 0 rgba(255, 255, 255, 0.02); }
+        infobar.info button:disabled:active, infobar.info button:disabled:checked {
+          color: #c1ccb6;
+          border-color: #749651;
+          background-image: linear-gradient(to bottom, black, #1f1f1f);
+          box-shadow: inset 0 1px rgba(0, 0, 0, 0.1), inset 1px 0 rgba(0, 0, 0, 0.08), inset -1px 0 rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.06); }
       infobar.info button.flat {
         border-color: transparent;
         background-color: transparent;
@@ -3050,6 +3062,18 @@ infobar {
         box-shadow: inset 0 1px rgba(0, 0, 0, 0.1), inset 1px 0 rgba(0, 0, 0, 0.08), inset -1px 0 rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.06);
         text-shadow: none;
         -gtk-icon-shadow: none; }
+      infobar.question button:disabled {
+        color: #939393;
+        border-color: #19a4dc;
+        background-image: image(#52aed2);
+        text-shadow: none;
+        -gtk-icon-shadow: none;
+        box-shadow: inset 0 1px rgba(255, 255, 255, 0.05), inset 1px 0 rgba(255, 255, 255, 0.02), inset -1px 0 rgba(255, 255, 255, 0.02); }
+        infobar.question button:disabled:active, infobar.question button:disabled:checked {
+          color: #a6d0e0;
+          border-color: #19a4dc;
+          background-image: linear-gradient(to bottom, black, #1f1f1f);
+          box-shadow: inset 0 1px rgba(0, 0, 0, 0.1), inset 1px 0 rgba(0, 0, 0, 0.08), inset -1px 0 rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.06); }
       infobar.question button.flat {
         border-color: transparent;
         background-color: transparent;
@@ -3083,6 +3107,18 @@ infobar {
         box-shadow: inset 0 1px rgba(0, 0, 0, 0.1), inset 1px 0 rgba(0, 0, 0, 0.08), inset -1px 0 rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.06);
         text-shadow: none;
         -gtk-icon-shadow: none; }
+      infobar.warning button:disabled {
+        color: #939393;
+        border-color: #d6550e;
+        background-image: image(#d7753f);
+        text-shadow: none;
+        -gtk-icon-shadow: none;
+        box-shadow: inset 0 1px rgba(255, 255, 255, 0.05), inset 1px 0 rgba(255, 255, 255, 0.02), inset -1px 0 rgba(255, 255, 255, 0.02); }
+        infobar.warning button:disabled:active, infobar.warning button:disabled:checked {
+          color: #e1b7a0;
+          border-color: #d6550e;
+          background-image: linear-gradient(to bottom, black, #1f1f1f);
+          box-shadow: inset 0 1px rgba(0, 0, 0, 0.1), inset 1px 0 rgba(0, 0, 0, 0.08), inset -1px 0 rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.06); }
       infobar.warning button.flat {
         border-color: transparent;
         background-color: transparent;
@@ -3116,6 +3152,18 @@ infobar {
         box-shadow: inset 0 1px rgba(0, 0, 0, 0.1), inset 1px 0 rgba(0, 0, 0, 0.08), inset -1px 0 rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.06);
         text-shadow: none;
         -gtk-icon-shadow: none; }
+      infobar.error button:disabled {
+        color: #939393;
+        border-color: #c62f20;
+        background-image: image(#cb594d);
+        text-shadow: none;
+        -gtk-icon-shadow: none;
+        box-shadow: inset 0 1px rgba(255, 255, 255, 0.05), inset 1px 0 rgba(255, 255, 255, 0.02), inset -1px 0 rgba(255, 255, 255, 0.02); }
+        infobar.error button:disabled:active, infobar.error button:disabled:checked {
+          color: #dcaba5;
+          border-color: #c62f20;
+          background-image: linear-gradient(to bottom, black, #1f1f1f);
+          box-shadow: inset 0 1px rgba(0, 0, 0, 0.1), inset 1px 0 rgba(0, 0, 0, 0.08), inset -1px 0 rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.06); }
       infobar.error button.flat {
         border-color: transparent;
         background-color: transparent;

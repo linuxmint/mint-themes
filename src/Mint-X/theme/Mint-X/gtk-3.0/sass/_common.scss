@@ -3520,6 +3520,13 @@ infobar {
       &:active,
       &:checked { @include button(active, $info_color, $fg_color, none); }
 
+      &:disabled {
+        @include button(insensitive, $info_color, $fg_color, none);
+
+        &:active,
+        &:checked { @include button(insensitive-active, $info_color, $fg_color, none); }
+      }
+
       &.flat { @include button(undecorated); }
     }
   }
@@ -3538,6 +3545,13 @@ infobar {
       &.flat:active,
       &:active,
       &:checked { @include button(active, $question_color, $fg_color, none); }
+
+      &:disabled {
+        @include button(insensitive, $question_color, $fg_color, none);
+
+        &:active,
+        &:checked { @include button(insensitive-active, $question_color, $fg_color, none); }
+      }
 
       &.flat { @include button(undecorated); }
     }
@@ -3559,6 +3573,13 @@ infobar {
       &:active,
       &:checked { @include button(active, $warning_color, $selected_fg_color, none); }
 
+      &:disabled {
+        @include button(insensitive, $warning_color, $fg_color, none);
+
+        &:active,
+        &:checked { @include button(insensitive-active, $warning_color, $fg_color, none); }
+      }
+
       &.flat { @include button(undecorated); }
     }
   }
@@ -3578,6 +3599,13 @@ infobar {
       &.flat:active,
       &:active,
       &:checked { @include button(active, $error_color, $selected_fg_color, none); }
+
+      &:disabled {
+        @include button(insensitive, $error_color, $fg_color, none);
+
+        &:active,
+        &:checked { @include button(insensitive-active, $error_color, $fg_color, none); }
+      }
 
       &.flat { @include button(undecorated); }
     }
