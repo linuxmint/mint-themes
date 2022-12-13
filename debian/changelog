@@ -1,3 +1,15 @@
+mint-themes (2.0.8) vera; urgency=medium
+
+  [ Georg ]
+  * fix header bar size, e.g. for disk tool (#411)
+
+  [ Michael Webster ]
+  * Fix corner bar - only highlight the bar, not the applet, give it its own colors, fix the separator applet under the light theme.
+  * Fix GtkScale value position and mark length.
+  * Mint-X - gtk3: Restore :disabled state to infobar buttons.
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 13 Dec 2022 11:30:34 +0000
+
 mint-themes (2.0.7) vera; urgency=medium
 
   [ Michael Webster ]
