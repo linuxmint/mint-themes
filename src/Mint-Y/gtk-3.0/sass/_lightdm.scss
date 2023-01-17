@@ -155,15 +155,32 @@ window.background.lightdm {
     }
   }
 
-  entry,
-  .lightdm-combo entry {
-    background: transparentize(black, 0.5);
+ entry {
+    background-image: none;
+    border-image: none;
+    background-color: transparentize(black, 0.7);
+    border-color: transparentize(white, 0.4);
+    border-radius: 5px;
+    padding: 7px;
     color: white;
-  }
+    text-shadow: none;
+    caret-color: white;
 
-  entry:active { // for spinner
-    -gtk-icon-source: -gtk-icontheme('process-working-symbolic');
-    animation: spinner 1s linear infinite;
+    &:focus {
+      border-color: transparentize(white, 0.1);
+      border-width: 1px;
+      border-style: solid;
+      color: white;
+    }
+
+    &:selected {background-color: transparentize(white, 0.8); }
+
+    &:active {
+      -gtk-icon-source: -gtk-icontheme('process-working-symbolic');
+      animation: dashentry_spinner 1s infinite linear;
+    }
+
+    image { color: white; }
   }
 
   .lightdm-combo {

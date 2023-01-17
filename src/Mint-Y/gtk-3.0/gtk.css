@@ -3974,14 +3974,28 @@ window.background.lightdm button, window.background.lightdm button.toggle-button
     background-color: #35a854;
     color: #ffffff; }
 
-window.background.lightdm entry,
-window.background.lightdm .lightdm-combo entry {
-  background: rgba(0, 0, 0, 0.5);
-  color: white; }
-
-window.background.lightdm entry:active {
-  -gtk-icon-source: -gtk-icontheme("process-working-symbolic");
-  animation: spinner 1s linear infinite; }
+window.background.lightdm entry {
+  background-image: none;
+  border-image: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-color: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  padding: 7px;
+  color: white;
+  text-shadow: none;
+  caret-color: white; }
+  window.background.lightdm entry:focus {
+    border-color: rgba(255, 255, 255, 0.9);
+    border-width: 1px;
+    border-style: solid;
+    color: white; }
+  window.background.lightdm entry:selected {
+    background-color: rgba(255, 255, 255, 0.2); }
+  window.background.lightdm entry:active {
+    -gtk-icon-source: -gtk-icontheme("process-working-symbolic");
+    animation: dashentry_spinner 1s infinite linear; }
+  window.background.lightdm entry image {
+    color: white; }
 
 window.background.lightdm .lightdm-combo {
   border-radius: 0;
