@@ -1110,15 +1110,15 @@ StScrollBar {
 .menu-favorites-box {
   padding: 10px;
   transition-duration: 300;
-  background-color: #333333;
-  border: 1px solid #202020; }
+  background-color: #242424;
+  border: 1px solid #191919; }
 
 .menu-favorites-button {
   padding: .9em 1em;
   border: 1px solid rgba(0, 0, 0, 0);
   border-radius: 2px; }
   .menu-favorites-button:hover {
-    background-color: #525352; }
+    background-color: #313131; }
 
 .menu-places-box {
   padding: 10px;
