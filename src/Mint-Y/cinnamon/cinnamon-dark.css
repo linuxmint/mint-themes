@@ -1616,7 +1616,7 @@ StScrollBar {
     padding-bottom: 3px; }
   .applet-box:hover, .applet-box:checked {
     color: #ffffff;
-    background-color: #525352; }
+    background-color: #292929; }
   .applet-box:highlight {
     background-image: none;
     border-image: none;
