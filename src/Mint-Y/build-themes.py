@@ -62,7 +62,6 @@ if __name__ == '__main__':
         os.system("mkdir -p %s" % dest_folder)
         if variation == "Mint-Y":
             print("    Building Mint-Y")
-            os.system("cp index.theme %s/" % dest_folder)
             # Gtk2
             version_folder = os.path.join(dest_folder, "gtk-2.0")
             os.system("mkdir -p %s" % version_folder)
@@ -99,7 +98,6 @@ if __name__ == '__main__':
 
         elif variation == "Mint-Y-Dark":
             print("    Building Mint-Y-Dark")
-            os.system("cp index.theme-dark %s" % os.path.join(dest_folder, "index.theme"))
             # Gtk2
             version_folder = os.path.join(dest_folder, "gtk-2.0")
             os.system("mkdir -p %s" % version_folder)
