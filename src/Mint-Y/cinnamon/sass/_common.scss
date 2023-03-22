@@ -1473,9 +1473,10 @@ StScrollBar {
       background-color: $noaccent_selected_bg_color;
       border: 1px solid $borders_color;
     }
-    &-hover {
-      background-color: red;
-      border-radius: 2px;
+    &:hover {
+      background-color: rgba(128,128,128,0.19);
+      border: 1px solid if($variant=='light', rgba(128,128,128,0.1), $bg_color);
+      border-radius: 0px;
     }
     &-greyed {
       padding: 7px;
