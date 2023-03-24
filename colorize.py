@@ -7,7 +7,6 @@ import numpy as np
 HUE = {}
 HUE["Aqua"] = 201
 HUE["Blue"] = 226
-HUE["Brown"] = 27
 HUE["Grey"] = 0
 HUE["Orange"] = 30
 HUE["Pink"] = 327

@@ -14,7 +14,7 @@ def change_value (key, value, file):
 
 def usage ():
     print ("Usage: update-variations.py color")
-    print ("color can be 'Aqua', 'Blue', 'Brown', 'Grey', 'Orange', 'Pink', 'Purple', 'Red', 'Sand', 'Teal' or 'All'.")
+    print ("color can be 'Aqua', 'Blue', 'Grey', 'Orange', 'Pink', 'Purple', 'Red', 'Sand', 'Teal' or 'All'.")
     sys.exit(1)
 
 def update_color (color):
@@ -91,7 +91,7 @@ if len(sys.argv) < 2:
     usage()
 else:
     color_variation = sys.argv[1]
-    if not color_variation in ["Aqua", "Blue", "Brown", "Grey", "Orange", "Pink", "Purple", "Red", "Sand", "Teal", "All"]:
+    if not color_variation in ["Aqua", "Blue", "Grey", "Orange", "Pink", "Purple", "Red", "Sand", "Teal", "All"]:
         usage()
 
 # Mint-Y variations

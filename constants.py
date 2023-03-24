@@ -43,9 +43,6 @@ y_hex_colors2["Aqua"] = "#1f9ede"
 y_hex_colors1["Blue"] = "#0c75de"
 y_hex_colors2["Blue"] = "#0c75de"
 
-y_hex_colors1["Brown"] = "#aa876a"
-y_hex_colors2["Brown"] = "#9c7e65"
-
 y_hex_colors1["Grey"] = "#70737a"
 y_hex_colors2["Grey"] = "#70737a"
 
