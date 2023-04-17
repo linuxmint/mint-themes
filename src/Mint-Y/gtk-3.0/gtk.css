@@ -2939,20 +2939,25 @@ headerbar button.titlebutton,
   .titlebar button.titlebutton.close {
     color: #ffffff;
     background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to(#35a854), to(transparent)); }
+    headerbar button.titlebutton.close:backdrop,
+    .titlebar button.titlebutton.close:backdrop {
+      background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to(darkgray), to(transparent)); }
     headerbar button.titlebutton.close:hover,
     .titlebar button.titlebutton.close:hover {
       background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to(#3bbb5e), to(transparent)); }
     headerbar button.titlebutton.close:active,
     .titlebar button.titlebutton.close:active {
       background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to(#2f954a), to(transparent)); }
-    headerbar button.titlebutton.close:backdrop,
-    .titlebar button.titlebutton.close:backdrop {
-      background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to(darkgray), to(transparent)); }
+  headerbar button.titlebutton.maximize:backdrop, headerbar button.titlebutton.minimize:backdrop,
+  .titlebar button.titlebutton.maximize:backdrop,
+  .titlebar button.titlebutton.minimize:backdrop {
+    color: darkgray; }
   headerbar button.titlebutton.maximize:hover, headerbar button.titlebutton.maximize:hover:backdrop, headerbar button.titlebutton.minimize:hover, headerbar button.titlebutton.minimize:hover:backdrop,
   .titlebar button.titlebutton.maximize:hover,
   .titlebar button.titlebutton.maximize:hover:backdrop,
   .titlebar button.titlebutton.minimize:hover,
   .titlebar button.titlebutton.minimize:hover:backdrop {
+    color: rgba(0, 0, 0, 0.87);
     background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to(#fdfdfd), to(transparent)); }
   headerbar button.titlebutton.maximize:active, headerbar button.titlebutton.maximize:active:backdrop, headerbar button.titlebutton.minimize:active, headerbar button.titlebutton.minimize:active:backdrop,
   .titlebar button.titlebutton.maximize:active,
@@ -2960,10 +2965,6 @@ headerbar button.titlebutton,
   .titlebar button.titlebutton.minimize:active,
   .titlebar button.titlebutton.minimize:active:backdrop {
     background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to(#909090), to(transparent)); }
-  headerbar button.titlebutton.maximize:backdrop, headerbar button.titlebutton.minimize:backdrop,
-  .titlebar button.titlebutton.maximize:backdrop,
-  .titlebar button.titlebutton.minimize:backdrop {
-    color: darkgray; }
 
 .caja-navigation-window .view .cell:selected, .caja-navigation-window iconview .cell:selected, .caja-navigation-window .view .cell:selected:focus, .nemo-window .nemo-inactive-pane .view:selected:focus, .nemo-window .nemo-inactive-pane iconview:selected:focus, .nemo-window .nemo-inactive-pane .view:selected, .nemo-window .nemo-inactive-pane iconview:selected, .nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected, .nautilus-window placessidebar.sidebar list row.sidebar-row.has-open-popup:selected, .nautilus-window placessidebar.sidebar list row.sidebar-row:selected, .nautilus-window placessidebar.sidebar list row.sidebar-row:selected:hover, .nautilus-window placessidebar.sidebar list row.sidebar-row:active:hover,
 filechooser placessidebar.sidebar list row.sidebar-row.has-open-popup:selected,

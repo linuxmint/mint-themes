@@ -1062,18 +1062,19 @@ windowcontrols {
       background-image: radial-gradient(circle at 50%, #35a854, #35a854 65%, #2b2b2b 65%); }
       windowcontrols button.close, windowcontrols button.close:hover, windowcontrols button.close:active, windowcontrols button.close:backdrop {
         color: #ffffff; }
+      windowcontrols button.close:backdrop {
+        background-image: radial-gradient(circle at 50%, #626262, #626262 65%, #2b2b2b 65%); }
       windowcontrols button.close:hover {
         background-image: radial-gradient(circle at 50%, #3bbb5e, #3bbb5e 65%, #2b2b2b 65%); }
       windowcontrols button.close:active {
         background-image: radial-gradient(circle at 50%, #2f954a, #2f954a 65%, #2b2b2b 65%); }
-      windowcontrols button.close:backdrop {
-        background-image: radial-gradient(circle at 50%, #626262, #626262 65%, #2b2b2b 65%); }
+    windowcontrols button.maximize:backdrop, windowcontrols button.minimize:backdrop {
+      color: #626262; }
     windowcontrols button.maximize:hover, windowcontrols button.maximize:hover:backdrop, windowcontrols button.minimize:hover, windowcontrols button.minimize:hover:backdrop {
+      color: rgba(255, 255, 255, 0.87);
       background-image: radial-gradient(circle at 50%, #4c4c4c, #4c4c4c 65%, #2b2b2b 65%); }
     windowcontrols button.maximize:active, windowcontrols button.maximize:active:backdrop, windowcontrols button.minimize:active, windowcontrols button.minimize:active:backdrop {
       background-image: radial-gradient(circle at 50%, #949494, #949494 65%, #2b2b2b 65%); }
-    windowcontrols button.maximize:backdrop, windowcontrols button.minimize:backdrop {
-      color: #626262; }
 
 headerbar,
 .titlebar:not(headerbar) {
