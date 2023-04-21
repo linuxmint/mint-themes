@@ -2819,32 +2819,30 @@ paned {
 //
 infobar {
   border-style: none;
-
-  &.info,
-  &.question,
-  &.warning,
-  &.error {
-    background-color: $selected_bg_color;
-    color: $selected_fg_color;
-    caret-color: currentColor;
+  @each $type_name, $type_bg_color, $type_fg_color in ('.warning',  $warning_color,     $selected_fg_color),
+                                                      ('.error',    $error_color,       $selected_fg_color),
+                                                      ('.question', $question_color,    $selected_fg_color),
+                                                      ('.info',     $selected_bg_color, $selected_fg_color){
+                                                      // ('',          inherit,            $fg_color) {
+    &:backdrop#{$type_name} > revealer > box, &#{$type_name} > revealer > box {
+      background-color: $type_bg_color;
+      color: $type_fg_color;
+      caret-color: currentColor;
+    }
 
     button { @extend %selected_button }
-
-    selection {
-      color: $selected_bg_color;
-      background-color: $selected_fg_color;
-    }
-
-    *:link { @extend %link_selected; }
-
-    &:disabled {
-      label, image { color: transparentize($selected_fg_color, 0.5); }
-    }
   }
 
-  &.warning { background-color: $warning_color; }
-  &.error { background-color: $destructive_color; }
-  &.question { background-color: $question_color; }
+  selection {
+    color: $selected_bg_color;
+    background-color: $selected_fg_color;
+  }
+
+  *:link { @extend %link_selected; }
+
+  &:disabled {
+    label, image { color: transparentize($selected_fg_color, 0.5); }
+  }
 }
 
 //

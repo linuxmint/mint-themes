@@ -650,7 +650,7 @@ button:link, button:visited,
     color: #5294E2; }
     *:selected button:active:link, *:selected button:active:visited, *:selected *:link:active {
       color: #d7eedd; }
-  infobar.info *:link, infobar.question *:link, infobar.warning *:link, infobar.error *:link, headerbar.selection-mode .subtitle:link,
+  infobar *:link, headerbar.selection-mode .subtitle:link,
   .selection-mode.titlebar:not(headerbar) .subtitle:link, button:selected:link, button:selected:visited, *:selected button:link, *:selected button:visited,
   *:link:selected, *:selected *:link {
     color: #d7eedd; }
@@ -2644,29 +2644,35 @@ paned.vertical > separator {
 
 infobar {
   border-style: none; }
-  infobar.info, infobar.question, infobar.warning, infobar.error {
+  infobar:backdrop.warning > revealer > box, infobar.warning > revealer > box {
+    background-color: #f27835;
+    color: #ffffff;
+    caret-color: currentColor; }
+  infobar:backdrop.error > revealer > box, infobar.error > revealer > box {
+    background-color: #FC4138;
+    color: #ffffff;
+    caret-color: currentColor; }
+  infobar:backdrop.question > revealer > box, infobar.question > revealer > box {
+    background-color: #55c1ec;
+    color: #ffffff;
+    caret-color: currentColor; }
+  infobar:backdrop.info > revealer > box, infobar.info > revealer > box {
     background-color: #35a854;
     color: #ffffff;
     caret-color: currentColor; }
-    infobar.info selection, infobar.question selection, infobar.warning selection, infobar.error selection {
-      color: #35a854;
-      background-color: #ffffff; }
-    infobar.info:disabled label, infobar.info:disabled image, infobar.question:disabled label, infobar.question:disabled image, infobar.warning:disabled label, infobar.warning:disabled image, infobar.error:disabled label, infobar.error:disabled image {
-      color: rgba(255, 255, 255, 0.5); }
-  infobar.warning {
-    background-color: #f27835; }
-  infobar.error {
-    background-color: #F04A50; }
-  infobar.question {
-    background-color: #55c1ec; }
+  infobar selection {
+    color: #35a854;
+    background-color: #ffffff; }
+  infobar:disabled label, infobar:disabled image {
+    color: rgba(255, 255, 255, 0.5); }
 
 .primary-toolbar toolbar.selection-mode button:hover,
-.selection-mode.primary-toolbar button:hover, .primary-toolbar .selection-mode.inline-toolbar button:hover, headerbar.selection-mode button:hover, row:selected button, infobar.info button, infobar.question button, infobar.warning button, infobar.error button {
+.selection-mode.primary-toolbar button:hover, .primary-toolbar .selection-mode.inline-toolbar button:hover, headerbar.selection-mode button:hover, row:selected button, infobar button {
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0);
   border-color: rgba(255, 255, 255, 0.5); }
 
-row:selected button.flat, infobar.info button.flat, infobar.question button.flat, infobar.warning button.flat, infobar.error button.flat {
+row:selected button.flat, infobar button.flat {
   border-color: transparent;
   background-color: transparent;
   background-image: none;
@@ -2674,29 +2680,29 @@ row:selected button.flat, infobar.info button.flat, infobar.question button.flat
   background-color: rgba(255, 255, 255, 0); }
   .primary-toolbar toolbar.selection-mode button:disabled,
   .selection-mode.primary-toolbar button:disabled, .primary-toolbar .selection-mode.inline-toolbar button:disabled, headerbar.selection-mode button:disabled, .primary-toolbar toolbar.selection-mode button:disabled label,
-  .selection-mode.primary-toolbar button:disabled label, .primary-toolbar .selection-mode.inline-toolbar button:disabled label, headerbar.selection-mode button:disabled label, row:selected button.flat:disabled, infobar.info button.flat:disabled, infobar.question button.flat:disabled, infobar.warning button.flat:disabled, infobar.error button.flat:disabled, row:selected button.flat:disabled label, infobar.info button.flat:disabled label, infobar.question button.flat:disabled label, infobar.warning button.flat:disabled label, infobar.error button.flat:disabled label {
+  .selection-mode.primary-toolbar button:disabled label, .primary-toolbar .selection-mode.inline-toolbar button:disabled label, headerbar.selection-mode button:disabled label, row:selected button.flat:disabled, infobar button.flat:disabled, row:selected button.flat:disabled label, infobar button.flat:disabled label {
     color: rgba(255, 255, 255, 0.4); }
 
-row:selected button:hover, infobar.info button:hover, infobar.question button:hover, infobar.warning button:hover, infobar.error button:hover {
+row:selected button:hover, infobar button:hover {
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.2);
   border-color: rgba(255, 255, 255, 0.8); }
 
 .primary-toolbar toolbar.selection-mode button:active,
 .selection-mode.primary-toolbar button:active, .primary-toolbar .selection-mode.inline-toolbar button:active, headerbar.selection-mode button:active, .primary-toolbar toolbar.selection-mode button:checked,
-.selection-mode.primary-toolbar button:checked, .primary-toolbar .selection-mode.inline-toolbar button:checked, headerbar.selection-mode button:checked, row:selected button:active, infobar.info button:active, infobar.question button:active, infobar.warning button:active, infobar.error button:active, row:selected button:checked, infobar.info button:checked, infobar.question button:checked, infobar.warning button:checked, infobar.error button:checked {
+.selection-mode.primary-toolbar button:checked, .primary-toolbar .selection-mode.inline-toolbar button:checked, headerbar.selection-mode button:checked, row:selected button:active, infobar button:active, row:selected button:checked, infobar button:checked {
   color: #35a854;
   background-color: #ffffff;
   border-color: #ffffff; }
 
-row:selected button:disabled, infobar.info button:disabled, infobar.question button:disabled, infobar.warning button:disabled, infobar.error button:disabled {
+row:selected button:disabled, infobar button:disabled {
   background-color: rgba(255, 255, 255, 0);
   border-color: rgba(255, 255, 255, 0.4); }
-  row:selected button:disabled, infobar.info button:disabled, infobar.question button:disabled, infobar.warning button:disabled, infobar.error button:disabled, row:selected button:disabled label, infobar.info button:disabled label, infobar.question button:disabled label, infobar.warning button:disabled label, infobar.error button:disabled label {
+  row:selected button:disabled, infobar button:disabled, row:selected button:disabled label, infobar button:disabled label {
     color: rgba(255, 255, 255, 0.5); }
   .primary-toolbar toolbar.selection-mode button:disabled:checked,
   .selection-mode.primary-toolbar button:disabled:checked, .primary-toolbar .selection-mode.inline-toolbar button:disabled:checked, headerbar.selection-mode button:disabled:checked, .primary-toolbar toolbar.selection-mode button:disabled:active,
-  .selection-mode.primary-toolbar button:disabled:active, .primary-toolbar .selection-mode.inline-toolbar button:disabled:active, headerbar.selection-mode button:disabled:active, row:selected button:disabled:active, infobar.info button:disabled:active, infobar.question button:disabled:active, infobar.warning button:disabled:active, infobar.error button:disabled:active, row:selected button:disabled:checked, infobar.info button:disabled:checked, infobar.question button:disabled:checked, infobar.warning button:disabled:checked, infobar.error button:disabled:checked {
+  .selection-mode.primary-toolbar button:disabled:active, .primary-toolbar .selection-mode.inline-toolbar button:disabled:active, headerbar.selection-mode button:disabled:active, row:selected button:disabled:active, infobar button:disabled:active, row:selected button:disabled:checked, infobar button:disabled:checked {
     color: #35a854;
     background-color: rgba(255, 255, 255, 0.5);
     border-color: rgba(255, 255, 255, 0.4); }
