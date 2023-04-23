@@ -3002,178 +3002,178 @@ paned.vertical > separator {
  **************/
 infobar {
   border-style: none; }
-  infobar.info {
+  infobar.info > revealer > box {
     background-color: #9ab87c; }
-    infobar.info.action:hover > revealer > box {
+    infobar.info > revealer > box.action:hover > revealer > box {
       background-color: #8daf6b; }
-    infobar.info button {
+    infobar.info > revealer > box button {
       color: #212121;
       border-color: #749651;
       border-bottom-color: #678648;
       background-image: linear-gradient(to bottom, #aec696, #90b16f);
       box-shadow: inset 0 1px #c0d3ae, inset 1px 0 #acc593, inset -1px 0 #acc593, 1px 0 rgba(0, 0, 0, 0.05), -1px 0 rgba(0, 0, 0, 0.05), 0 1px rgba(0, 0, 0, 0.1);
       text-shadow: none; }
-      infobar.info button.flat:hover, infobar.info button:hover {
+      infobar.info > revealer > box button.flat:hover, infobar.info > revealer > box button:hover {
         color: #212121;
         border-color: #7ba057;
         border-bottom-color: #6f904e;
         background-image: linear-gradient(to bottom, #b6cca0, #97b679);
         box-shadow: inset 0 1px #c8d8b8, inset 1px 0 #b4ca9d, inset -1px 0 #b4ca9d, 1px 0 rgba(0, 0, 0, 0.05), -1px 0 rgba(0, 0, 0, 0.05), 0 1px rgba(0, 0, 0, 0.1);
         text-shadow: none; }
-      infobar.info button.flat:active, infobar.info button:active, infobar.info button:checked {
+      infobar.info > revealer > box button.flat:active, infobar.info > revealer > box button:active, infobar.info > revealer > box button:checked {
         color: #212121;
         border-color: #749651;
         background-image: linear-gradient(to bottom, #627f45, #749651 30%, #749651);
         box-shadow: inset 0 1px rgba(0, 0, 0, 0.1), inset 1px 0 rgba(0, 0, 0, 0.08), inset -1px 0 rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.06);
         text-shadow: none;
         -gtk-icon-shadow: none; }
-      infobar.info button:disabled {
+      infobar.info > revealer > box button:disabled {
         color: #7c7c7c;
         border-color: #749651;
         background-image: image(#a8c18e);
         text-shadow: none;
         -gtk-icon-shadow: none;
         box-shadow: inset 0 1px rgba(255, 255, 255, 0.05), inset 1px 0 rgba(255, 255, 255, 0.02), inset -1px 0 rgba(255, 255, 255, 0.02); }
-        infobar.info button:disabled:active, infobar.info button:disabled:checked {
+        infobar.info > revealer > box button:disabled:active, infobar.info > revealer > box button:disabled:checked {
           color: #4f5b42;
           border-color: #749651;
           background-image: linear-gradient(to bottom, #9e9e9e, #bdbdbd);
           box-shadow: inset 0 1px rgba(0, 0, 0, 0.1), inset 1px 0 rgba(0, 0, 0, 0.08), inset -1px 0 rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.06); }
-      infobar.info button.flat {
+      infobar.info > revealer > box button.flat {
         border-color: transparent;
         background-color: transparent;
         background-image: none;
         box-shadow: none;
         text-shadow: none;
         -gtk-icon-shadow: none; }
-  infobar.question {
+  infobar.question > revealer > box {
     background-color: #55c1ec; }
-    infobar.question.action:hover > revealer > box {
+    infobar.question > revealer > box.action:hover > revealer > box {
       background-color: #3eb9e9; }
-    infobar.question button {
+    infobar.question > revealer > box button {
       color: #212121;
       border-color: #19a4dc;
       border-bottom-color: #1693c5;
       background-image: linear-gradient(to bottom, #7acef0, #43baea);
       box-shadow: inset 0 1px #9adaf4, inset 1px 0 #75cdf0, inset -1px 0 #75cdf0, 1px 0 rgba(0, 0, 0, 0.05), -1px 0 rgba(0, 0, 0, 0.05), 0 1px rgba(0, 0, 0, 0.1);
       text-shadow: none; }
-      infobar.question button.flat:hover, infobar.question button:hover {
+      infobar.question > revealer > box button.flat:hover, infobar.question > revealer > box button:hover {
         color: #212121;
         border-color: #1eade6;
         border-bottom-color: #189dd3;
         background-image: linear-gradient(to bottom, #87d3f2, #50bfeb);
         box-shadow: inset 0 1px #a8dff5, inset 1px 0 #83d2f1, inset -1px 0 #83d2f1, 1px 0 rgba(0, 0, 0, 0.05), -1px 0 rgba(0, 0, 0, 0.05), 0 1px rgba(0, 0, 0, 0.1);
         text-shadow: none; }
-      infobar.question button.flat:active, infobar.question button:active, infobar.question button:checked {
+      infobar.question > revealer > box button.flat:active, infobar.question > revealer > box button:active, infobar.question > revealer > box button:checked {
         color: #212121;
         border-color: #19a4dc;
         background-image: linear-gradient(to bottom, #158cbc, #19a4dc 30%, #19a4dc);
         box-shadow: inset 0 1px rgba(0, 0, 0, 0.1), inset 1px 0 rgba(0, 0, 0, 0.08), inset -1px 0 rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.06);
         text-shadow: none;
         -gtk-icon-shadow: none; }
-      infobar.question button:disabled {
+      infobar.question > revealer > box button:disabled {
         color: #7c7c7c;
         border-color: #19a4dc;
         background-image: image(#6dc9ee);
         text-shadow: none;
         -gtk-icon-shadow: none;
         box-shadow: inset 0 1px rgba(255, 255, 255, 0.05), inset 1px 0 rgba(255, 255, 255, 0.02), inset -1px 0 rgba(255, 255, 255, 0.02); }
-        infobar.question button:disabled:active, infobar.question button:disabled:checked {
+        infobar.question > revealer > box button:disabled:active, infobar.question > revealer > box button:disabled:checked {
           color: #315f71;
           border-color: #19a4dc;
           background-image: linear-gradient(to bottom, #9e9e9e, #bdbdbd);
           box-shadow: inset 0 1px rgba(0, 0, 0, 0.1), inset 1px 0 rgba(0, 0, 0, 0.08), inset -1px 0 rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.06); }
-      infobar.question button.flat {
+      infobar.question > revealer > box button.flat {
         border-color: transparent;
         background-color: transparent;
         background-image: none;
         box-shadow: none;
         text-shadow: none;
         -gtk-icon-shadow: none; }
-  infobar.warning {
+  infobar.warning > revealer > box {
     background-color: #f27e3f;
     color: #ffffff; }
-    infobar.warning.action:hover > revealer > box {
+    infobar.warning > revealer > box.action:hover > revealer > box {
       background-color: #f06e27; }
-    infobar.warning button {
+    infobar.warning > revealer > box button {
       color: #ffffff;
       border-color: #d6550e;
       border-bottom-color: #be4b0d;
       background-image: linear-gradient(to bottom, #f59865, #f1712c);
       box-shadow: inset 0 1px #f7ae87, inset 1px 0 #f49460, inset -1px 0 #f49460, 1px 0 rgba(0, 0, 0, 0.05), -1px 0 rgba(0, 0, 0, 0.05), 0 1px rgba(0, 0, 0, 0.1);
       text-shadow: none; }
-      infobar.warning button.flat:hover, infobar.warning button:hover {
+      infobar.warning > revealer > box button.flat:hover, infobar.warning > revealer > box button:hover {
         color: #ffffff;
         border-color: #e45a0f;
         border-bottom-color: #cc510e;
         background-image: linear-gradient(to bottom, #f6a174, #f27b3a);
         box-shadow: inset 0 1px #f8b895, inset 1px 0 #f59e6f, inset -1px 0 #f59e6f, 1px 0 rgba(0, 0, 0, 0.05), -1px 0 rgba(0, 0, 0, 0.05), 0 1px rgba(0, 0, 0, 0.1);
         text-shadow: none; }
-      infobar.warning button.flat:active, infobar.warning button:active, infobar.warning button:checked {
+      infobar.warning > revealer > box button.flat:active, infobar.warning > revealer > box button:active, infobar.warning > revealer > box button:checked {
         color: #ffffff;
         border-color: #d6550e;
         background-image: linear-gradient(to bottom, #b5470c, #d6550e 30%, #d6550e);
         box-shadow: inset 0 1px rgba(0, 0, 0, 0.1), inset 1px 0 rgba(0, 0, 0, 0.08), inset -1px 0 rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.06);
         text-shadow: none;
         -gtk-icon-shadow: none; }
-      infobar.warning button:disabled {
+      infobar.warning > revealer > box button:disabled {
         color: #7c7c7c;
         border-color: #d6550e;
         background-image: image(#f3905b);
         text-shadow: none;
         -gtk-icon-shadow: none;
         box-shadow: inset 0 1px rgba(255, 255, 255, 0.05), inset 1px 0 rgba(255, 255, 255, 0.02), inset -1px 0 rgba(255, 255, 255, 0.02); }
-        infobar.warning button:disabled:active, infobar.warning button:disabled:checked {
+        infobar.warning > revealer > box button:disabled:active, infobar.warning > revealer > box button:disabled:checked {
           color: #744329;
           border-color: #d6550e;
           background-image: linear-gradient(to bottom, #9e9e9e, #bdbdbd);
           box-shadow: inset 0 1px rgba(0, 0, 0, 0.1), inset 1px 0 rgba(0, 0, 0, 0.08), inset -1px 0 rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.06); }
-      infobar.warning button.flat {
+      infobar.warning > revealer > box button.flat {
         border-color: transparent;
         background-color: transparent;
         background-image: none;
         box-shadow: none;
         text-shadow: none;
         -gtk-icon-shadow: none; }
-  infobar.error {
+  infobar.error > revealer > box {
     background-color: #e35d4f;
     color: #ffffff; }
-    infobar.error.action:hover > revealer > box {
+    infobar.error > revealer > box.action:hover > revealer > box {
       background-color: #e04939; }
-    infobar.error button {
+    infobar.error > revealer > box button {
       color: #ffffff;
       border-color: #c62f20;
       border-bottom-color: #b02a1c;
       background-image: linear-gradient(to bottom, #e97d72, #e04d3d);
       box-shadow: inset 0 1px #ee9a91, inset 1px 0 #e8796e, inset -1px 0 #e8796e, 1px 0 rgba(0, 0, 0, 0.05), -1px 0 rgba(0, 0, 0, 0.05), 0 1px rgba(0, 0, 0, 0.1);
       text-shadow: none; }
-      infobar.error button.flat:hover, infobar.error button:hover {
+      infobar.error > revealer > box button.flat:hover, infobar.error > revealer > box button:hover {
         color: #ffffff;
         border-color: #d33222;
         border-bottom-color: #bd2d1e;
         background-image: linear-gradient(to bottom, #eb8a7f, #e2594b);
         box-shadow: inset 0 1px #f0a69e, inset 1px 0 #ea867b, inset -1px 0 #ea867b, 1px 0 rgba(0, 0, 0, 0.05), -1px 0 rgba(0, 0, 0, 0.05), 0 1px rgba(0, 0, 0, 0.1);
         text-shadow: none; }
-      infobar.error button.flat:active, infobar.error button:active, infobar.error button:checked {
+      infobar.error > revealer > box button.flat:active, infobar.error > revealer > box button:active, infobar.error > revealer > box button:checked {
         color: #ffffff;
         border-color: #c62f20;
         background-image: linear-gradient(to bottom, #a7281b, #c62f20 30%, #c62f20);
         box-shadow: inset 0 1px rgba(0, 0, 0, 0.1), inset 1px 0 rgba(0, 0, 0, 0.08), inset -1px 0 rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.06);
         text-shadow: none;
         -gtk-icon-shadow: none; }
-      infobar.error button:disabled {
+      infobar.error > revealer > box button:disabled {
         color: #7c7c7c;
         border-color: #c62f20;
         background-image: image(#e67468);
         text-shadow: none;
         -gtk-icon-shadow: none;
         box-shadow: inset 0 1px rgba(255, 255, 255, 0.05), inset 1px 0 rgba(255, 255, 255, 0.02), inset -1px 0 rgba(255, 255, 255, 0.02); }
-        infobar.error button:disabled:active, infobar.error button:disabled:checked {
+        infobar.error > revealer > box button:disabled:active, infobar.error > revealer > box button:disabled:checked {
           color: #6d352f;
           border-color: #c62f20;
           background-image: linear-gradient(to bottom, #9e9e9e, #bdbdbd);
           box-shadow: inset 0 1px rgba(0, 0, 0, 0.1), inset 1px 0 rgba(0, 0, 0, 0.08), inset -1px 0 rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.06); }
-      infobar.error button.flat {
+      infobar.error > revealer > box button.flat {
         border-color: transparent;
         background-color: transparent;
         background-image: none;
