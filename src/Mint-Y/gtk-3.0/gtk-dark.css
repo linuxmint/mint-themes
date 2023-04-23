@@ -2644,20 +2644,20 @@ paned.vertical > separator {
 
 infobar {
   border-style: none; }
-  infobar.info, infobar.question, infobar.warning, infobar.error {
+  infobar.info > revealer > box, infobar.question > revealer > box, infobar.warning > revealer > box, infobar.error > revealer > box {
     background-color: #35a854;
     color: #ffffff;
     caret-color: currentColor; }
-    infobar.info selection, infobar.question selection, infobar.warning selection, infobar.error selection {
-      color: #35a854;
-      background-color: #ffffff; }
-    infobar.info:disabled label, infobar.info:disabled image, infobar.question:disabled label, infobar.question:disabled image, infobar.warning:disabled label, infobar.warning:disabled image, infobar.error:disabled label, infobar.error:disabled image {
-      color: rgba(255, 255, 255, 0.5); }
-  infobar.warning {
+  infobar.info selection, infobar.question selection, infobar.warning selection, infobar.error selection {
+    color: #35a854;
+    background-color: #ffffff; }
+  infobar.info:disabled label, infobar.info:disabled image, infobar.question:disabled label, infobar.question:disabled image, infobar.warning:disabled label, infobar.warning:disabled image, infobar.error:disabled label, infobar.error:disabled image {
+    color: rgba(255, 255, 255, 0.5); }
+  infobar.warning > revealer > box {
     background-color: #f27835; }
-  infobar.error {
+  infobar.error > revealer > box {
     background-color: #F04A50; }
-  infobar.question {
+  infobar.question > revealer > box {
     background-color: #55c1ec; }
 
 .primary-toolbar toolbar.selection-mode button:hover,

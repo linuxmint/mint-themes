@@ -3505,7 +3505,7 @@ paned {
 infobar {
   border-style: none;
 
-  &.info {
+  &.info > revealer > box {
     background-color: $info_color;
 
     &.action:hover > revealer > box { background-color: darken($info_color, 5%); }
@@ -3531,7 +3531,7 @@ infobar {
     }
   }
 
-  &.question {
+  &.question > revealer > box {
     background-color: $question_color;
 
     &.action:hover > revealer > box { background-color: darken($question_color, 5%); }
@@ -3557,7 +3557,7 @@ infobar {
     }
   }
 
-  &.warning {
+  &.warning > revealer > box {
     background-color: $warning_color;
     color: $selected_fg_color;
 
@@ -3584,7 +3584,7 @@ infobar {
     }
   }
 
-  &.error {
+  &.error > revealer > box {
     background-color: $error_color;
     color: $selected_fg_color;
 
