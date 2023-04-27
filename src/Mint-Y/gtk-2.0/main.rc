@@ -11,7 +11,7 @@ style "default" {
   GtkToolbar::internal-padding = 4
   GtkToolButton::icon-spacing = 4
 
-  GtkWidget::tooltip-radius = 2
+  GtkWidget::tooltip-radius = 5
   GtkWidget::tooltip-alpha = 235
   GtkWidget::new-tooltip-style = 1 #for compatibility
 
@@ -2242,9 +2242,9 @@ style "eclipse-tooltips" {
   xthickness = 8
   ythickness = 4
 
-  bg[NORMAL] = shade(1.05, @bg_color)
-  fg[NORMAL] = @text_color
-  bg[SELECTED] = shade(1.05, @bg_color)
+  bg[NORMAL] = @tooltip_bg_color
+  fg[NORMAL] = @tooltip_fg_color
+  bg[SELECTED] = @tooltip_bg_color
 
 }
 
