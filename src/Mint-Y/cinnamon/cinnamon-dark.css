@@ -211,7 +211,8 @@ StScrollBar {
   color: #ffffff;
   font-size: 1em;
   font-weight: normal;
-  text-align: center; }
+  text-align: center;
+  margin: 3px; }
 
 #LookingGlassDialog {
   color: rgba(255, 255, 255, 0.87);
