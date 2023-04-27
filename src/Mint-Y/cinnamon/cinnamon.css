@@ -829,15 +829,15 @@ StScrollBar {
   margin-top: 0.8em; }
 
 #notification {
-  border: 1px solid #b5b5b5;
-  border-radius: 3px;
-  background-color: #e8e8e8;
+  border: none;
+  border-radius: 5px;
+  background-color: #35a854;
   padding: 13px;
   spacing-rows: 10px;
   spacing-columns: 10px;
   margin-from-right-edge-of-screen: 20px;
   width: 34em;
-  color: #303030; }
+  color: #ffffff; }
   .popup-menu #notification {
     color: #303030;
     border-image: url("light-assets/misc/message.svg") 9 9 9 9; }
@@ -845,7 +845,7 @@ StScrollBar {
       padding: 5px; }
   #notification.multi-line-notification {
     padding-bottom: 13px;
-    color: #303030; }
+    color: #ffffff; }
   #notification-scrollview {
     max-height: 10em; }
     #notification-scrollview > .top-shadow, #notification-scrollview > .bottom-shadow {

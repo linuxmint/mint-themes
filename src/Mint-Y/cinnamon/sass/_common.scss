@@ -1046,15 +1046,15 @@ StScrollBar {
 // Notifications
 //
 #notification {
-  border: 1px solid $borders_color;
-  border-radius: 3px;
-  background-color: $bg_color;
+  border: none;
+  border-radius: 5px;
+  background-color: $selected_bg_color;
   padding: 13px;
   spacing-rows: 10px;
   spacing-columns: 10px;
   margin-from-right-edge-of-screen: 20px;
   width: 34em;
-  color: $fg_color;
+  color: $selected_fg_color;
 
   .popup-menu & {
     color: $fg_color;
@@ -1070,7 +1070,7 @@ StScrollBar {
 
   &.multi-line-notification {
     padding-bottom: 13px;
-    color: $fg_color;
+    color: $selected_fg_color;
   }
 
   &-scrollview {
