@@ -2706,25 +2706,20 @@ row:selected button:disabled, infobar.info button:disabled, infobar.question but
     background-color: rgba(255, 255, 255, 0.5);
     border-color: rgba(255, 255, 255, 0.4); }
 
-tooltip,
-.tooltip {
-  color: #4a4a4a;
-  border-radius: 2px;
-  border: 1px solid #d0d0d0; }
-  tooltip.background,
-  .tooltip.background {
-    background-color: #fbeaa0;
+tooltip {
+  color: #ffffff;
+  border-radius: 5px;
+  border: none; }
+  tooltip.background {
+    background-color: rgba(50, 160, 80, 0.95);
     background-clip: padding-box; }
-    tooltip.background label,
-    .tooltip.background label {
-      padding: 4px; }
-  tooltip decoration,
-  .tooltip decoration {
+    tooltip.background label {
+      padding: 6px 10px; }
+  tooltip decoration {
     background-color: transparent; }
-  tooltip *,
-  .tooltip * {
+  tooltip * {
     background-color: transparent;
-    color: #4a4a4a; }
+    color: #ffffff; }
 
 colorswatch, colorswatch:drop(active) {
   border-style: none; }
@@ -2881,8 +2876,8 @@ decoration {
     border-radius: 2px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.13); }
   tooltip.csd decoration {
-    border-radius: 2px;
-    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.23); }
+    border-radius: 5px;
+    box-shadow: none; }
   messagedialog.csd decoration {
     border-radius: 8px; }
   .solid-csd decoration {
