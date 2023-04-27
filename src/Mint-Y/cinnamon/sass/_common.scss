@@ -239,9 +239,9 @@ StScrollBar {
 // Tooltip
 //
 #Tooltip {
-  border: 1px solid $tooltip_border_color;
-  border-radius: 3px;
-  padding: 5px 12px;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 12px;
   background-color: $tooltip_bg_color;
   color: $tooltip_fg_color;
   font-size: 1em;
@@ -1749,12 +1749,12 @@ StScrollBar {
   &-number-label {
     font-size: 0.8em;
     z-index: 99;
-    color: $tooltip_border_color;
+    color: $selected_fg_color;
   }
 
   &-badge {
     border-radius: 9999px;
-    background-color: $tooltip_fg_color;
+    background-color: $selected_bg_color;
     margin: 0;
   }
 
