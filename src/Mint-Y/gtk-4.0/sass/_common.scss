@@ -3315,13 +3315,13 @@ tooltip {
     // see https://bugzilla.gnome.org/show_bug.cgi?id=736155 for details.
     background-color: $tooltip_bg_color;
     background-clip: padding-box;
-
+    color: $tooltip_fg_color;
+    padding: 6px 10px;
     label { padding: 4px; }
   }
 
-  color: $tooltip_fg_color;
-  border-radius: 2px;
-  border: 1px solid $tooltip_border_color;
+  border-radius: 5px;
+  border: none;
 }
 
 //
@@ -3530,8 +3530,8 @@ window {
 }
 
 tooltip.csd {
-    border-radius: 2px;
-    box-shadow: 0 1px 3px 1px if($variant=='light', transparentize(black, 0.77), transparentize(black, 0.25));
+    border-radius: 5px;
+    box-shadow: none;
   }
 
 // catch all extend

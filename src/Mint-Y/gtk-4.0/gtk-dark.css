@@ -2875,12 +2875,13 @@ row:selected button:disabled, infobar.info button:disabled, infobar.question but
     border-color: rgba(255, 255, 255, 0.4); }
 
 tooltip {
-  color: #4a4a4a;
-  border-radius: 2px;
-  border: 1px solid #d0d0d0; }
+  border-radius: 5px;
+  border: none; }
   tooltip.background {
-    background-color: #fbeaa0;
-    background-clip: padding-box; }
+    background-color: rgba(50, 160, 80, 0.95);
+    background-clip: padding-box;
+    color: #ffffff;
+    padding: 6px 10px; }
     tooltip.background label {
       padding: 4px; }
 
@@ -3024,8 +3025,8 @@ window {
     box-shadow: none; }
 
 tooltip.csd {
-  border-radius: 2px;
-  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.75); }
+  border-radius: 5px;
+  box-shadow: none; }
 
 .view:selected, .view:selected:focus,
 textview > text:selected,
