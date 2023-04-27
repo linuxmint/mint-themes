@@ -829,15 +829,15 @@ StScrollBar {
   margin-top: 0.8em; }
 
 #notification {
-  border: 1px solid #202020;
-  border-radius: 3px;
-  background-color: #2f2f2f;
+  border: none;
+  border-radius: 5px;
+  background-color: #35a854;
   padding: 13px;
   spacing-rows: 10px;
   spacing-columns: 10px;
   margin-from-right-edge-of-screen: 20px;
   width: 34em;
-  color: rgba(255, 255, 255, 0.87); }
+  color: #ffffff; }
   .popup-menu #notification {
     color: rgba(255, 255, 255, 0.87);
     border-image: url("dark-assets/misc/message.svg") 9 9 9 9; }
@@ -845,7 +845,7 @@ StScrollBar {
       padding: 5px; }
   #notification.multi-line-notification {
     padding-bottom: 13px;
-    color: rgba(255, 255, 255, 0.87); }
+    color: #ffffff; }
   #notification-scrollview {
     max-height: 10em; }
     #notification-scrollview > .top-shadow, #notification-scrollview > .bottom-shadow {
