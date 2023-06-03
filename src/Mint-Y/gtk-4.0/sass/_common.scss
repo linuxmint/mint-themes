@@ -1150,7 +1150,7 @@ windowcontrols {
 headerbar,
 %titlebar {
   min-height: 46px;
-  padding: 0 2px;
+  padding: 0 7px;
 
   border-width: 0 0 1px;
   border-style: solid;
@@ -1196,13 +1196,10 @@ headerbar,
 
   &.default-decoration {
     min-height: 28px;
+    padding: 0 2px;
     border-bottom-width: 0;
 
     .maximized & { background-color: opacify($header_bg, 1); }
-  }
-
-  .csd & {  // bigger padding only in csd windows
-    padding: 0 7px;
   }
 
   .solid-csd & {
