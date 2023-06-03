@@ -1026,7 +1026,7 @@ headerbar,
 
   &.default-decoration {
     min-height: 28px;
-    padding: 0 2px;
+    padding: 0 4px;
     border-bottom-width: 0;
 
     .maximized & { background-color: opacify($header_bg, 1); }
@@ -3174,8 +3174,8 @@ headerbar,
     padding-bottom: 0px;
     padding-right: 0px;
     padding-left: 0px;
-    min-width: 22px;
-    min-height: 22px;
+    min-width: 18px;
+    min-height: 18px;
     margin: 0;
   }
 
@@ -3186,7 +3186,7 @@ headerbar,
     min-height: 18px;
     @extend .image-button;
 
-    padding: 10px 3px;
+    padding: 10px 1px;
     margin: 0;
     transition: none;
 

@@ -1196,7 +1196,7 @@ headerbar,
 
   &.default-decoration {
     min-height: 28px;
-    padding: 0 2px;
+    padding: 0 4px;
     border-bottom-width: 0;
 
     .maximized & { background-color: opacify($header_bg, 1); }
