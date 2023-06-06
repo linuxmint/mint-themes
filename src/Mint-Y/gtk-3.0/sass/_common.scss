@@ -918,7 +918,7 @@ actionbar {
 headerbar,
 %titlebar {
   min-height: 46px;
-  padding: 0 7px;
+  padding: 0 6px;
 
   border-width: 0 0 1px;
   border-style: solid;
@@ -1026,7 +1026,7 @@ headerbar,
 
   &.default-decoration {
     min-height: 28px;
-    padding: 0 7px;
+    padding: 2px 6px;
     border-bottom-width: 0;
 
     .maximized & { background-color: opacify($header_bg, 1); }
@@ -3173,19 +3173,17 @@ headerbar,
     padding-bottom: 0px;
     padding-right: 0px;
     padding-left: 0px;
-    min-width: 22px;
-    min-height: 22px;
     margin: 0;
   }
 
   button.titlebutton {
     $_wm_backdrop_icon_color: if($variant == 'light', darken($wm_icon_unfocused_bg, 5%), lighten($wm_icon_unfocused_bg, 5%));
 
-    min-width: 18px;
-    min-height: 18px;
+    min-width: 20px;
+    min-height: 20px;
     @extend .image-button;
 
-    padding: 10px 3px;
+    padding: 10px 1px;
     margin: 0;
     transition: none;
 
