@@ -1089,8 +1089,8 @@ windowcontrols {
   }
 
   button {
-    min-width: 22px;
-    min-height: 22px;
+    min-width: 20px;
+    min-height: 20px;
     @extend .image-button;
 
     padding: 5px 2px;
@@ -1150,7 +1150,7 @@ windowcontrols {
 headerbar,
 %titlebar {
   min-height: 46px;
-  padding: 0 7px;
+  padding: 0 6px;
 
   border-width: 0 0 1px;
   border-style: solid;
@@ -1196,7 +1196,7 @@ headerbar,
 
   &.default-decoration {
     min-height: 28px;
-    padding: 0 4px;
+    padding: 2px 6px;
     border-bottom-width: 0;
 
     .maximized & { background-color: opacify($header_bg, 1); }
