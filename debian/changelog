@@ -1,3 +1,43 @@
+mint-themes (2.1.0) victoria; urgency=medium
+
+  [ Georg ]
+  * Fix for title bar buttons on unfocused windows (#410)
+
+  [ Clement Lefebvre ]
+  * Mint-Y: Don't generate index.theme files
+
+  [ Michael Webster ]
+  * Commit some compiled changes.
+
+  [ Rick Calixte ]
+  * .gitignore: Ignore build and cache files (#437)
+
+  [ fredcw ]
+  * Mint-Y Cinnamon theme - sound applet - use ems instead of px for overlay. (#434)
+  * Mint-X cinnamon theme - sound applet. Use ems instead of px for overlay height. (#435)
+  * Mint-Y cinnamon - Add support for .menu-category-button:hover (#433)
+
+  [ JosephMcc ]
+  * Gtk3: Fix setting the infobar background color (#440)
+
+  [ Clement Lefebvre ]
+  * Mint-Y: Remove brown theme
+  * GTK3: Use accent color for tooltips
+  * Cinnamon: Use accent color for notifications
+  * Cinnamon: Use accent colors for tooltips/badge
+  * Cinnamon tooltips: add margins
+  * GTK4: Use accent color for tooltips
+  * GTK2: Use accent color for tooltips
+
+  [ Georg Sieber ]
+  * fix selection on unfocused windows (#445)
+  * Adjust Title Bar Padding (#444)
+
+  [ Clement Lefebvre ]
+  * Generate CSS files
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 06 Jun 2023 13:10:30 +0100
+
 mint-themes (2.0.9) vera; urgency=medium
 
   * slick-greeter: Set the entry white
