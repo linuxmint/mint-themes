@@ -788,7 +788,7 @@ actionbar {
 headerbar,
 .titlebar:not(headerbar) {
   min-height: 46px;
-  padding: 0 7px;
+  padding: 0 6px;
   border-width: 0 0 1px;
   border-style: solid;
   border-radius: 0;
@@ -877,7 +877,7 @@ headerbar,
   headerbar.default-decoration,
   .default-decoration.titlebar:not(headerbar) {
     min-height: 28px;
-    padding: 0 7px;
+    padding: 2px 6px;
     border-bottom-width: 0; }
     .maximized headerbar.default-decoration, .maximized .default-decoration.titlebar:not(headerbar) {
       background-color: #e8e8e8; }
@@ -2892,15 +2892,13 @@ headerbar.default-decoration button.titlebutton,
   padding-bottom: 0px;
   padding-right: 0px;
   padding-left: 0px;
-  min-width: 22px;
-  min-height: 22px;
   margin: 0; }
 
 headerbar button.titlebutton,
 .titlebar button.titlebutton {
-  min-width: 18px;
-  min-height: 18px;
-  padding: 10px 3px;
+  min-width: 20px;
+  min-height: 20px;
+  padding: 10px 1px;
   margin: 0;
   transition: none;
   border-color: transparent;
