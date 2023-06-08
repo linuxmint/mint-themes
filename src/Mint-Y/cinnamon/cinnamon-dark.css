@@ -4,7 +4,7 @@ stage {
 .label-shadow {
   color: rgba(0, 0, 0, 0); }
 
-.sound-button, .modal-dialog-button-box .modal-dialog-button, .notification-button, .notification-icon-button, .popup-menu #notification .notification-button, .popup-menu #notification .notification-icon-button {
+.sound-button, .modal-dialog-button-box .modal-dialog-button, .popup-menu #notification .notification-button, .popup-menu #notification .notification-icon-button {
   min-height: 20px;
   padding: 5px 32px;
   transition-duration: 0;
@@ -12,29 +12,29 @@ stage {
   background-color: #454545;
   border: 1px solid #202020;
   box-shadow: inset 0 2px 4px rgba(69, 69, 69, 0.05); }
-  .sound-button, .modal-dialog-button-box .modal-dialog-button, .notification-button, .notification-icon-button, .popup-menu #notification .notification-button, .popup-menu #notification .notification-icon-button {
+  .sound-button, .modal-dialog-button-box .modal-dialog-button, .popup-menu #notification .notification-button, .popup-menu #notification .notification-icon-button {
     border-radius: 2px; }
-  .sound-button:focus, .modal-dialog-button-box .modal-dialog-button:focus, .notification-button:focus, .notification-icon-button:focus, .popup-menu #notification .notification-button:focus, .popup-menu #notification .notification-icon-button:focus {
+  .sound-button:focus, .modal-dialog-button-box .modal-dialog-button:focus, .popup-menu #notification .notification-button:focus, .popup-menu #notification .notification-icon-button:focus {
     color: rgba(255, 255, 255, 0.87);
     background-color: #454545;
     border: 1px solid #35a854;
     box-shadow: inset 0 2px 4px rgba(69, 69, 69, 0.05); }
-  .sound-button:hover, .modal-dialog-button-box .modal-dialog-button:hover, .notification-button:hover, .notification-icon-button:hover, .popup-menu #notification .notification-button:hover, .popup-menu #notification .notification-icon-button:hover {
+  .sound-button:hover, .modal-dialog-button-box .modal-dialog-button:hover, .popup-menu #notification .notification-button:hover, .popup-menu #notification .notification-icon-button:hover {
     color: rgba(255, 255, 255, 0.87);
     background-color: #525252;
     border: 1px solid #202020;
     box-shadow: inset 0 2px 4px rgba(82, 82, 82, 0.05); }
-  .sound-button:hover:focus, .modal-dialog-button-box .modal-dialog-button:hover:focus, .notification-button:hover:focus, .notification-icon-button:hover:focus, .popup-menu #notification .notification-button:hover:focus, .popup-menu #notification .notification-icon-button:hover:focus {
+  .sound-button:hover:focus, .modal-dialog-button-box .modal-dialog-button:hover:focus, .popup-menu #notification .notification-button:hover:focus, .popup-menu #notification .notification-icon-button:hover:focus {
     color: rgba(255, 255, 255, 0.87);
     background-color: #525252;
     border: 1px solid #35a854;
     box-shadow: inset 0 2px 4px rgba(69, 69, 69, 0.05); }
-  .sound-button:active, .modal-dialog-button-box .modal-dialog-button:active, .notification-button:active, .notification-icon-button:active, .popup-menu #notification .notification-button:active, .popup-menu #notification .notification-icon-button:active {
+  .sound-button:active, .modal-dialog-button-box .modal-dialog-button:active, .popup-menu #notification .notification-button:active, .popup-menu #notification .notification-icon-button:active {
     color: #ffffff;
     background-color: #35a854;
     border: 1px solid #35a854;
     box-shadow: inset 0 2px 4px #35a854; }
-  .sound-button:insensitive, .modal-dialog-button-box .modal-dialog-button:insensitive, .notification-button:insensitive, .notification-icon-button:insensitive, .popup-menu #notification .notification-button:insensitive, .popup-menu #notification .notification-icon-button:insensitive {
+  .sound-button:insensitive, .modal-dialog-button-box .modal-dialog-button:insensitive, .popup-menu #notification .notification-button:insensitive, .popup-menu #notification .notification-icon-button:insensitive {
     color: rgba(255, 255, 255, 0.32);
     border: 1px solid rgba(32, 32, 32, 0.55);
     background-color: rgba(69, 69, 69, 0.55);
@@ -865,7 +865,11 @@ StScrollBar {
   color: rgba(255, 255, 255, 0.87); }
 
 .notification-button, .notification-icon-button {
-  padding: 5px; }
+  background-color: #26793d;
+  border-radius: 5px;
+  padding: 7px; }
+  .notification-button:hover, .notification-icon-button:hover {
+    background-color: #1d5a2d; }
 
 .notification-icon-button > StIcon {
   icon-size: 32px; }

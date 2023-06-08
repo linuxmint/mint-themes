@@ -1095,8 +1095,12 @@ StScrollBar {
   }
 
   &-button, &-icon-button {
-    @extend %button;
-    padding: 5px;
+    background-color: darken($selected_bg_color, 12%);
+    border-radius: 5px;
+    padding: 7px;
+    &:hover {
+      background-color: darken($selected_bg_color, 20%);
+    }
   }
 
   &-icon-button > StIcon { icon-size: 32px; }
