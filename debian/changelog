@@ -1,3 +1,9 @@
+mint-themes (2.1.1) victoria; urgency=medium
+
+  * cinnamon: Use accent colors for buttons inside notifications
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 08 Jun 2023 13:59:39 +0100
+
 mint-themes (2.1.0) victoria; urgency=medium
 
   [ Georg ]
