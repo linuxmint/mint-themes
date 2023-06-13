@@ -1047,15 +1047,15 @@ StScrollBar {
 // Notifications
 //
 #notification {
-  border: none;
-  border-radius: 5px;
-  background-color: $selected_bg_color;
+  border: 1px solid $borders_color;
+  border-radius: 3px;
+  background-color: $bg_color;
   padding: 13px;
   spacing-rows: 10px;
   spacing-columns: 10px;
   margin-from-right-edge-of-screen: 20px;
   width: 34em;
-  color: $selected_fg_color;
+  color: $fg_color;
 
   .popup-menu & {
     color: $fg_color;
@@ -1071,7 +1071,7 @@ StScrollBar {
 
   &.multi-line-notification {
     padding-bottom: 13px;
-    color: $selected_fg_color;
+    color: $fg_color;
   }
 
   &-scrollview {
@@ -1095,12 +1095,8 @@ StScrollBar {
   }
 
   &-button, &-icon-button {
-    background-color: darken($selected_bg_color, 12%);
-    border-radius: 5px;
-    padding: 7px;
-    &:hover {
-      background-color: darken($selected_bg_color, 20%);
-    }
+    @extend %button;
+    padding: 5px;
   }
 
   &-icon-button > StIcon { icon-size: 32px; }
