@@ -1,3 +1,10 @@
+mint-themes (2.1.2) victoria; urgency=medium
+
+  * Revert accent notifications
+  * Give notifications an accent top border
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 14 Jun 2023 09:12:18 +0200
+
 mint-themes (2.1.1) victoria; urgency=medium
 
   * cinnamon: Use accent colors for buttons inside notifications
