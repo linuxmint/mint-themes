@@ -112,12 +112,14 @@ if __name__ == '__main__':
             os.system("mkdir -p %s" % version_folder)
             os.system("cp -R gtk-3.0/assets %s" % version_folder)
             os.system("cp gtk-3.0/gtk-dark.css %s" % os.path.join(version_folder, "gtk.css"))
+            os.system("cp gtk-3.0/gtk-dark.css %s" % os.path.join(version_folder, "gtk-dark.css"))
             os.system("cp gtk-3.0/thumbnail-dark.png %s" % os.path.join(version_folder, "thumbnail.png"))
             # Gtk4
             version_folder = os.path.join(dest_folder, "gtk-4.0")
             os.system("mkdir -p %s" % version_folder)
             os.system("cp -R gtk-4.0/assets %s" % version_folder)
             os.system("cp gtk-4.0/gtk-dark.css %s" % os.path.join(version_folder, "gtk.css"))
+            os.system("cp gtk-4.0/gtk-dark.css %s" % os.path.join(version_folder, "gtk-dark.css"))
             # Cinnamon
             version_folder = os.path.join(dest_folder, "cinnamon")
             os.system("mkdir -p %s" % version_folder)

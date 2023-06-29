@@ -116,6 +116,8 @@ for color in y_hex_colors1.keys():
             if (variant == "-Dark"):
                 os.system("cp sass/gtk-dark.scss sass/gtk.scss")
                 os.system("sassc ./sass/gtk.scss gtk.css")
+                # Add a gtk-dark.css (this is needed by libhandy/libadwaita apps when prefer-dark is on)
+                os.system("sassc ./sass/gtk-dark.scss gtk-dark.css")
             else:
                 os.system("sassc ./sass/gtk-dark.scss gtk-dark.css")
                 os.system("sassc ./sass/gtk.scss gtk.css")
@@ -132,6 +134,8 @@ for color in y_hex_colors1.keys():
             if (variant == "-Dark"):
                 os.system("cp sass/gtk-dark.scss sass/gtk.scss")
                 os.system("sassc ./sass/gtk.scss gtk.css")
+                # Add a gtk-dark.css (this is needed by libhandy/libadwaita apps when prefer-dark is on)
+                os.system("sassc ./sass/gtk-dark.scss gtk-dark.css")
             else:
                 os.system("sassc ./sass/gtk-dark.scss gtk-dark.css")
                 os.system("sassc ./sass/gtk.scss gtk.css")
