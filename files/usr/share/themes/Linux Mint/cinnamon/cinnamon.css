@@ -213,7 +213,7 @@ StScrollBar StButton#vhandle:hover {
 
 .popup-slider-menu-item {
     height: 1em;
-    min-width: 6em;
+    min-width: 15em;
     color: white;
     -slider-height: 0.3em;
     -slider-background-color: rgba(35, 35, 35, 1);

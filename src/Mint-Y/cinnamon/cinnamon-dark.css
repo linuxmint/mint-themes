@@ -137,7 +137,7 @@ StScrollBar {
   -slider-border-width: 1px;
   -slider-handle-radius: 0.5em;
   height: 1em;
-  min-width: 6em;
+  min-width: 15em;
   border: 0 solid transparent;
   border-right-width: 1px;
   border-left-width: 5px; }
