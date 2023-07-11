@@ -1,0 +1,25 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+  workflow_dispatch:
+    inputs:
+      debug_enabled:
+        type: boolean
+        description: 'Start an SSH server on failure.'
+        required: false
+        default: false
+
+jobs:
+  build:
+    uses: linuxmint/github-actions/.github/workflows/do-builds.yml@master
+    with:
+      commit_id: master
+      ############################## Comma separated list - like 'linuxmint/xapp, linuxmint/cinnamon-desktop'
+      dependencies:
+      ##############################
