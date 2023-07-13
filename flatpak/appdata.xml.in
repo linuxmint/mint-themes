@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="runtime">
+    <id>org.gtk.Gtk3theme.${name}</id>
+    <metadata_license>CC0-1.0</metadata_license>
+    <name>${name} Gtk Theme</name>
+    <summary>${name} theme</summary>
+    <description>
+        <p>${name} theme</p>
+    </description>
+    <url type="homepage">https://github.com/linuxmint/mint-themes</url>
+</component>

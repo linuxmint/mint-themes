@@ -1,0 +1,111 @@
+#!/usr/bin/python3
+
+import os
+import string
+import shutil
+import subprocess
+from subprocess import CalledProcessError
+import sys
+from pathlib import Path
+
+if shutil.which("flatpak-builder") is None:
+    print("You need to install flatpak-builder first")
+    quit()
+
+TEST = input("Build and install to test? y/n: ") == "y"
+
+# clean existing dirs
+os.system("rm -rf org.gtk.Gtk3theme*")
+CWD = Path(os.getcwd())
+
+THEMES = [
+    "Mint-Y",
+    "Mint-Y-Aqua",
+    "Mint-Y-Blue",
+    "Mint-Y-Dark-Aqua",
+    "Mint-Y-Dark-Blue",
+    "Mint-Y-Dark-Grey",
+    "Mint-Y-Dark-Orange",
+    "Mint-Y-Dark-Pink",
+    "Mint-Y-Dark-Purple",
+    "Mint-Y-Dark-Red",
+    "Mint-Y-Dark-Sand",
+    "Mint-Y-Dark-Teal",
+    "Mint-Y-Grey",
+    "Mint-Y-Orange",
+    "Mint-Y-Pink",
+    "Mint-Y-Purple",
+    "Mint-Y-Red",
+    "Mint-Y-Sand",
+    "Mint-Y-Teal"
+]
+
+# gather values
+
+VERSION = subprocess.run(["dpkg-parsechangelog", "--file", "../debian/changelog", "--show-field", "Version"], capture_output=True, text=True).stdout.strip("\n ")
+
+# we don't always 'git tag', search the commit message for the matching version
+escaped_ver = VERSION.replace(".", "\.")
+COMMIT_HASH = subprocess.run(["git", "log", "--grep", escaped_ver, "--pretty=oneline"], capture_output=True, text=True).stdout.split()[0]
+
+with open("build.json.in") as f:
+    build_template = string.Template(f.read())
+with open("appdata.xml.in") as f:
+    appdata_template = string.Template(f.read())
+
+print("\nGenerating version %s (%s)\n\n" % (VERSION, COMMIT_HASH))
+
+for theme in THEMES:
+    git_name = "org.gtk.Gtk3theme.%s" % theme
+
+    try:
+        subprocess.run(["git", "clone", "git@github.com:flathub/%s.git" % git_name])
+    except CalledProcessError as e:
+        print("Couldn't clone %s flathub repo: %s" % (theme, str(e)))
+        quit()
+
+    build_out = build_template.safe_substitute(name=theme, version=VERSION, commit_hash=COMMIT_HASH)
+    appdata_out = appdata_template.safe_substitute(name=theme, version=VERSION, commit_hash=COMMIT_HASH)
+
+    with open(os.path.join(git_name, "org.gtk.Gtk3theme.%s.json" % theme), "w", encoding="utf-8") as f:
+        f.write(build_out)
+
+    with open(os.path.join(git_name, "org.gtk.Gtk3theme.%s.appdata.xml" % theme), "w", encoding="utf-8") as f:
+        f.write(appdata_out)
+
+    os.chdir(CWD.joinpath(git_name))
+
+    if TEST:
+        try:
+            build_str = ["flatpak-builder", "builddir", "--install", "--user", "org.gtk.Gtk3theme.%s.json" % theme]
+            print("\n\nBuilding:", build_str)
+            print("\n")
+            subprocess.run(build_str)
+        except CalledProcessError as e:
+            print("Build error for %s: %s" % (theme, str(e)))
+            quit()
+
+    os.chdir(CWD)
+
+COMMIT = input("\n\nPush to flathub? y/n: ") == "y"
+print("\n")
+
+if not COMMIT:
+    quit()
+
+for theme in THEMES:
+    git_name = "org.gtk.Gtk3theme.%s" % theme
+    os.chdir(CWD.joinpath(git_name))
+
+    try:
+        subprocess.run(["git", "commit", "-a", "-m", "%s\n\nlinuxmint/mint-themes@%s" % (VERSION, COMMIT_HASH)])
+        subprocess.run(["git", "push", "origin", "master"])
+    except CalledProcessError as e:
+        print("Couldn't commit and push %s to flathub: %s" % (theme, str(e)))
+        quit()
+
+    os.chdir(CWD)
+
+print("\n\nSuccess!\n")
+
+quit()
