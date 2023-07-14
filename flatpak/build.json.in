@@ -9,7 +9,6 @@
   "separate-locales": false,
   "build-options":
   {
-    "prefix": "/usr/share/runtime/share/themes/${name}/gtk-3.0",
     "append-path": "/usr/share/runtime/share/themes/${name}/gtk-3.0/bin"
   },
   "modules": [
@@ -31,47 +30,21 @@
       ],
       "modules": [
         {
-          "name": "sassc",
-          "config-opts": [
-            "--with-libsass=/usr/share/runtime/share/themes/${name}/gtk-3.0"
-          ],
+          "name": "sass",
+          "buildsystem": "simple",
           "cleanup": [
             "*"
+          ],
+          "build-commands": [
+            "install -D -m755 sass ${FLATPAK_DEST}/bin/sassc",
+            "install -D -m755 src/dart ${FLATPAK_DEST}/bin/src/dart",
+            "install -D -m755 src/sass.snapshot ${FLATPAK_DEST}/bin/src/sass.snapshot"
           ],
           "sources": [
             {
               "type": "archive",
-              "url": "https://github.com/sass/sassc/archive/3.6.2.tar.gz",
-              "sha256": "608dc9002b45a91d11ed59e352469ecc05e4f58fc1259fc9a9f5b8f0f8348a03"
-            },
-            {
-              "type": "script",
-              "dest-filename": "autogen.sh",
-              "commands": [
-                "autoreconf -si"
-              ]
-            }
-          ],
-          "modules": [
-            {
-              "name": "libsass",
-              "cleanup": [
-                "*"
-              ],
-              "sources": [
-                {
-                  "type": "archive",
-                  "url": "https://github.com/sass/libsass/archive/3.6.5.tar.gz",
-                  "sha256": "89d8f2c46ae2b1b826b58ce7dde966a176bac41975b82e84ad46b01a55080582"
-                },
-                {
-                  "type": "script",
-                  "dest-filename": "autogen.sh",
-                  "commands": [
-                    "autoreconf -si"
-                  ]
-                }
-              ]
+              "url": "https://github.com/sass/dart-sass/releases/download/1.63.6/dart-sass-1.63.6-linux-x64.tar.gz",
+              "sha256": "de6cbea03b18c921c5829030c777321d6c38144035ebccd2ee4deaff9c333ded"
             }
           ]
         }
