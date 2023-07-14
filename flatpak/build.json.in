@@ -19,7 +19,7 @@
       "build-commands": [
         "./generate-themes.py",
         "install -Dm644 usr/share/themes/${name}/index.theme /usr/share/runtime/share/themes/${name}/index.theme",
-        "install -Dm644 usr/share/themes/${name}/gtk-3.0/gtk.css /usr/share/runtime/share/themes/${name}/gtk-3.0",
+        "install -Dm644 usr/share/themes/${name}/gtk-3.0/gtk*.css /usr/share/runtime/share/themes/${name}/gtk-3.0",
         "install -Dm644 --target-directory=/usr/share/runtime/share/themes/${name}/gtk-3.0/assets usr/share/themes/${name}/gtk-3.0/assets/*"
       ],
       "sources": [
