@@ -11,4 +11,4 @@ debian/*.substvars
 debian/.debhelper/
 debian/files
 debian/mint-themes/
-usr/
+/usr/
