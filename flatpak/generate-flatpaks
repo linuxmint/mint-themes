@@ -5,6 +5,7 @@ import string
 import shutil
 import subprocess
 from subprocess import CalledProcessError
+import webbrowser
 import sys
 from pathlib import Path
 
@@ -13,6 +14,7 @@ if shutil.which("flatpak-builder") is None:
     quit()
 
 TEST = input("Build and install to test? y/n: ") == "y"
+FORK_USERNAME = input("Enter the username where your forks are (probably your own)? ")
 
 # clean existing dirs
 os.system("rm -rf org.gtk.Gtk3theme*")
@@ -61,7 +63,7 @@ for theme in THEMES:
     git_name = "org.gtk.Gtk3theme.%s" % theme
 
     try:
-        subprocess.run(["git", "clone", "git@github.com:flathub/%s.git" % git_name])
+        subprocess.run(["git", "clone", "git@github.com:%s/%s.git" % (FORK_USERNAME, git_name)])
     except CalledProcessError as e:
         print("Couldn't clone %s flathub repo: %s" % (theme, str(e)))
         quit()
@@ -76,6 +78,9 @@ for theme in THEMES:
         f.write(appdata_out)
 
     os.chdir(CWD.joinpath(git_name))
+    subprocess.run(["git", "remote", "add", "flathub", "git@github.com:flathub/%s.git" % git_name])
+    subprocess.run(["git", "pull", "--rebase", "flathub", "master"])
+    subprocess.run(["git", "checkout", "-b", "%s-%s" % (theme, VERSION)])
 
     if TEST:
         try:
@@ -89,10 +94,10 @@ for theme in THEMES:
 
     os.chdir(CWD)
 
-COMMIT = input("\n\nPush to flathub? y/n: ") == "y"
+MAKE_PR = input("\n\nOpen pull requests? y/n: ") == "y"
 print("\n")
 
-if not COMMIT:
+if not MAKE_PR:
     quit()
 
 for theme in THEMES:
@@ -101,7 +106,9 @@ for theme in THEMES:
 
     try:
         subprocess.run(["git", "commit", "-a", "-m", "%s\n\nlinuxmint/mint-themes@%s" % (VERSION, COMMIT_HASH)])
-        subprocess.run(["git", "push", "origin", "master"])
+        subprocess.run(["git", "push", "origin", "--delete", "%s-%s" % (theme, VERSION)])
+        subprocess.run(["git", "push", "origin", "%s-%s" % (theme, VERSION)])
+        webbrowser.open("github.com/%s/org.gtk.Gtk3theme.%s/pull/new/%s-%s" % (FORK_USERNAME, theme, theme, VERSION))
     except CalledProcessError as e:
         print("Couldn't commit and push %s to flathub: %s" % (theme, str(e)))
         quit()
