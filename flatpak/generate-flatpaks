@@ -68,19 +68,19 @@ for theme in THEMES:
         print("Couldn't clone %s flathub repo: %s" % (theme, str(e)))
         quit()
 
-    build_out = build_template.safe_substitute(name=theme, version=VERSION, commit_hash=COMMIT_HASH)
-    appdata_out = appdata_template.safe_substitute(name=theme, version=VERSION, commit_hash=COMMIT_HASH)
-
-    with open(os.path.join(git_name, "org.gtk.Gtk3theme.%s.json" % theme), "w", encoding="utf-8") as f:
-        f.write(build_out)
-
-    with open(os.path.join(git_name, "org.gtk.Gtk3theme.%s.appdata.xml" % theme), "w", encoding="utf-8") as f:
-        f.write(appdata_out)
-
     os.chdir(CWD.joinpath(git_name))
     subprocess.run(["git", "remote", "add", "flathub", "git@github.com:flathub/%s.git" % git_name])
     subprocess.run(["git", "pull", "--rebase", "flathub", "master"])
     subprocess.run(["git", "checkout", "-b", "%s-%s" % (theme, VERSION)])
+
+    build_out = build_template.safe_substitute(name=theme, version=VERSION, commit_hash=COMMIT_HASH)
+    appdata_out = appdata_template.safe_substitute(name=theme, version=VERSION, commit_hash=COMMIT_HASH)
+
+    with open("org.gtk.Gtk3theme.%s.json" % theme, "w", encoding="utf-8") as f:
+        f.write(build_out)
+
+    with open("org.gtk.Gtk3theme.%s.appdata.xml" % theme, "w", encoding="utf-8") as f:
+        f.write(appdata_out)
 
     if TEST:
         try:
