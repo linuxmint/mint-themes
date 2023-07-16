@@ -2029,6 +2029,7 @@ StScrollBar StButton#vhandle:hover {
     color: #ccc;
     spacing: 3px;
     text-shadow: black 0px 0px 2px;
+    text-align: center;
 }
 
 .applet-box.vertical {
