@@ -1869,7 +1869,6 @@ StScrollBar StButton#vhandle:hover {
 .sound-player-overlay {
     border-top: 1px solid #c2c2c2;
     width: 300px;
-    height: 5.25em;
     padding: 16px;
     spacing: 0.5em;
     color: #464646;
