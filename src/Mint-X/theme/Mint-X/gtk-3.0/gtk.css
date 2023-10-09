@@ -3771,6 +3771,11 @@ vte-terminal.terminal-screen {
   background-color: #3f3f3f;
   color: #ffffff; }
 
+.terminator-terminal-window > paned {
+  background-color: #d6d6d6; }
+  .terminator-terminal-window > paned.wide {
+    background-color: #d6d6d6; }
+
 /************
  * Ubiquity *
  ************/

@@ -3757,6 +3757,11 @@ PanelSeparator {
   background-color: #3f3f3f;
   color: #ffffff; }
 
+.terminator-terminal-window > paned {
+  background-color: #383838; }
+  .terminator-terminal-window > paned.wide {
+    background-color: #383838; }
+
 /************
  * Ubiquity *
  ************/

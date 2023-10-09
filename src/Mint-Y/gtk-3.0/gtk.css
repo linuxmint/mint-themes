@@ -3079,6 +3079,11 @@ vte-terminal {
   background-color: #3f3f3f;
   color: #fff; }
 
+.terminator-terminal-window > paned {
+  background-color: #f5f5f5; }
+  .terminator-terminal-window > paned.wide {
+    background-color: #f5f5f5; }
+
 .nautilus-canvas-item {
   border-radius: 2px; }
 

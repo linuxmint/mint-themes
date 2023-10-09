@@ -109,6 +109,17 @@ vte-terminal {
 }
 
 //
+// Terminator
+//
+.terminator-terminal-window > paned {
+  background-color: $bg_color;
+
+  &.wide {
+    background-color: $bg_color;
+  }
+}
+
+//
 // Nautilus
 //
 .nautilus-canvas-item {
