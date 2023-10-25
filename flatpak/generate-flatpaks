@@ -32,16 +32,16 @@ THEMES = [
     "Mint-Y-Sand",
     "Mint-Y-Teal",
 
-    "Mint-Y-Dark",
-    "Mint-Y-Dark-Aqua",
-    "Mint-Y-Dark-Blue",
-    "Mint-Y-Dark-Grey",
-    "Mint-Y-Dark-Orange",
-    "Mint-Y-Dark-Pink",
-    "Mint-Y-Dark-Purple",
-    "Mint-Y-Dark-Red",
-    "Mint-Y-Dark-Sand",
-    "Mint-Y-Dark-Teal",
+    "Mint-Y-dark",
+    "Mint-Y-Aqua-dark",
+    "Mint-Y-Blue-dark",
+    "Mint-Y-Grey-dark",
+    "Mint-Y-Orange-dark",
+    "Mint-Y-Pink-dark",
+    "Mint-Y-Purple-dark",
+    "Mint-Y-Red-dark",
+    "Mint-Y-Sand-dark",
+    "Mint-Y-Teal-dark",
 ]
 
 # gather values

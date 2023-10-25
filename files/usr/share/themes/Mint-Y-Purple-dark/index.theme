@@ -1,12 +1,12 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
-Name=Mint-Y-Dark-Pink
+Name=Mint-Y-Purple-dark
 Comment=A dark flat theme with transparent elements
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=Mint-Y-Dark-Pink
+GtkTheme=Mint-Y-Purple-dark
 MetacityTheme=Mint-Y
-IconTheme=Mint-Y-Pink
+IconTheme=Mint-Y-Purple
 CursorTheme=Bibata-Modern-Classic
 ButtonLayout=:minimize,maximize,close

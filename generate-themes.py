@@ -98,22 +98,23 @@ os.chdir(curdir)
 
 # Mint-Y color variations
 for color in y_hex_colors1.keys():
-    for variant in ["", "-Dark"]:
+    for variant in ["", "-dark"]:
         original_name = "Mint-Y%s" % variant
         path = os.path.join("src/Mint-Y/variations/%s" % color)
         if os.path.isdir(path):
-            print("Derivating %s-%s" % (original_name, color))
+            color_name = "Mint-Y-%s%s" % (color, variant)
+            print("Derivating %s" % (color_name))
 
             # Copy theme
-            theme = "usr/share/themes/%s-%s" % (original_name, color)
-            os.system("cp -R usr/share/themes/%s %s" % (original_name, theme))
+            theme = "usr/share/themes/%s-%s" % (color_name)
+            os.system("cp -R usr/share/themes/%s %s" % (color_name, theme))
 
             # Regenerate GTK4 sass
             os.system("cp -R src/Mint-Y/gtk-4.0/sass %s/gtk-4.0/" % theme)
             y_colorize_directory("%s/gtk-4.0/sass" % theme, color)
             os.chdir("%s/gtk-4.0" % theme)
 
-            if (variant == "-Dark"):
+            if (variant == "-dark"):
                 os.system("cp sass/gtk-dark.scss sass/gtk.scss")
                 os.system("sassc ./sass/gtk.scss gtk.css")
                 # Add a gtk-dark.css (this is needed by libhandy/libadwaita apps when prefer-dark is on)
@@ -131,7 +132,7 @@ for color in y_hex_colors1.keys():
             os.chdir("%s/gtk-3.0" % theme)
             # os.system("sed -i 's/no-tint/tint/gI' ./sass/gtk.scss")
             # os.system("sed -i 's/no-tint/tint/gI' ./sass/gtk-dark.scss")
-            if (variant == "-Dark"):
+            if (variant == "-dark"):
                 os.system("cp sass/gtk-dark.scss sass/gtk.scss")
                 os.system("sassc ./sass/gtk.scss gtk.css")
                 # Add a gtk-dark.css (this is needed by libhandy/libadwaita apps when prefer-dark is on)
@@ -147,7 +148,7 @@ for color in y_hex_colors1.keys():
             os.system("cp -R src/Mint-Y/cinnamon/sass %s/cinnamon/" % theme)
             y_colorize_directory("%s/cinnamon/sass" % theme, color)
             os.chdir("%s/cinnamon" % theme)
-            if (variant == "-Dark"):
+            if (variant == "-dark"):
                 os.system("cp sass/cinnamon-dark.scss sass/cinnamon.scss")
             os.system("sassc ./sass/cinnamon.scss cinnamon.css")
             os.system("rm -rf sass .sass-cache")
@@ -182,7 +183,7 @@ for color in y_hex_colors1.keys():
             os.system("rm -rf %s/gtk-4.0/assets" % theme)
             os.system("rm -rf %s/gtk-3.0/assets" % theme)
             os.system("rm -rf %s/gtk-2.0/assets" % theme)
-            if variant == "-Dark":
+            if variant == "-dark":
                 os.system("cp -R %s/gtk-2.0/assets-dark %s/gtk-2.0/assets" % (path, theme))
                 os.system("cp -R %s/xfwm4-dark/*.png %s/xfwm4/" % (path, theme))
             else:
