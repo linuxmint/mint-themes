@@ -1,3 +1,23 @@
+mint-themes (2.1.6) virginia; urgency=medium
+
+  [ Michael Webster ]
+  * Add github workflow.
+  * Add flatpak generation script.
+  * generate-flatpaks: Copy gtk-dark.css also.
+  * flatpak: Use Dart Sass instead of sassc.
+  * Generate pull requests, not direct commits.
+  * flatpaks: Rebase and setup a new branch before modifying content.
+
+  [ Rick Calixte ]
+  * Linux Mint/cinnamon.css: Center text in .applet-box
+  * Remove height from sound-player-overlay so that text can wrap cleanly (#453)
+  * .gitignore: Fix usr/ path to exclude files/usr (#451)
+
+  [ Michael Webster ]
+  * Mint-X/Y: Fix pane separators in Terminator.
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 27 Nov 2023 13:43:12 +0000
+
 mint-themes (2.1.5) victoria; urgency=medium
 
   [ Michael Webster ]
