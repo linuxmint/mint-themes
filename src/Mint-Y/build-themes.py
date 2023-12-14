@@ -11,8 +11,8 @@ curdir = os.getcwd()
 
 print("Updating Gtk4 assets")
 os.chdir("gtk-4.0/")
-os.system("sassc ./sass/gtk.scss gtk.css")
-os.system("sassc ./sass/gtk-dark.scss gtk-dark.css")
+os.system("pysassc ./sass/gtk.scss gtk.css")
+os.system("pysassc ./sass/gtk-dark.scss gtk-dark.css")
 os.system("./render-assets.sh")
 print("Gtk4 assets updated")
 
@@ -20,8 +20,8 @@ os.chdir(curdir)
 
 print("Updating Gtk3 assets")
 os.chdir("gtk-3.0/")
-os.system("sassc ./sass/gtk.scss gtk.css")
-os.system("sassc ./sass/gtk-dark.scss gtk-dark.css")
+os.system("pysassc ./sass/gtk.scss gtk.css")
+os.system("pysassc ./sass/gtk-dark.scss gtk-dark.css")
 os.system("./render-assets.sh")
 print("Gtk3 assets updated")
 
@@ -37,8 +37,8 @@ os.chdir(curdir)
 
 print("Updating Cinnamon assets")
 os.chdir("cinnamon/")
-os.system("sassc ./sass/cinnamon.scss cinnamon.css")
-os.system("sassc ./sass/cinnamon-dark.scss cinnamon-dark.css")
+os.system("pysassc ./sass/cinnamon.scss cinnamon.css")
+os.system("pysassc ./sass/cinnamon-dark.scss cinnamon-dark.css")
 print("Cinnamon assets updated")
 
 os.chdir(curdir)
