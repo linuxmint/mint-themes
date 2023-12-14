@@ -28,14 +28,14 @@ os.system("mkdir -p usr/share/themes")
 
 # First build the Gtk4 css
 os.chdir("src/Mint-X/theme/Mint-X/gtk-4.0/")
-os.system("sassc ./sass/gtk.scss gtk.css")
-os.system("sassc ./sass/gtk-dark.scss gtk-dark.css")
+os.system("pysassc ./sass/gtk.scss gtk.css")
+os.system("pysassc ./sass/gtk-dark.scss gtk-dark.css")
 os.chdir(start_dir)
 
 # Then the Gtk3 css
 os.chdir("src/Mint-X/theme/Mint-X/gtk-3.0/")
-os.system("sassc ./sass/gtk.scss gtk.css")
-os.system("sassc ./sass/gtk-dark.scss gtk-dark.css")
+os.system("pysassc ./sass/gtk.scss gtk.css")
+os.system("pysassc ./sass/gtk-dark.scss gtk-dark.css")
 os.chdir(start_dir)
 
 os.system("cp -R src/Mint-X/theme/* usr/share/themes/")
@@ -60,15 +60,15 @@ for color in os.listdir("src/Mint-X/variations"):
         # Build sass
         sass_dir = os.path.join(theme, "gtk-4.0")
         os.chdir(sass_dir)
-        os.system("sassc ./sass/gtk.scss gtk.css")
-        os.system("sassc ./sass/gtk-dark.scss gtk-dark.css")
+        os.system("pysassc ./sass/gtk.scss gtk.css")
+        os.system("pysassc ./sass/gtk-dark.scss gtk-dark.css")
         os.system("rm -rf sass parse-sass.sh")
         os.chdir(start_dir)
 
         sass_dir = os.path.join(theme, "gtk-3.0")
         os.chdir(sass_dir)
-        os.system("sassc ./sass/gtk.scss gtk.css")
-        os.system("sassc ./sass/gtk-dark.scss gtk-dark.css")
+        os.system("pysassc ./sass/gtk.scss gtk.css")
+        os.system("pysassc ./sass/gtk-dark.scss gtk-dark.css")
         os.system("rm -rf sass parse-sass.sh")
         os.chdir(start_dir)
 
@@ -115,12 +115,12 @@ for color in y_hex_colors1.keys():
 
             if (variant == "-Dark"):
                 os.system("cp sass/gtk-dark.scss sass/gtk.scss")
-                os.system("sassc ./sass/gtk.scss gtk.css")
+                os.system("pysassc ./sass/gtk.scss gtk.css")
                 # Add a gtk-dark.css (this is needed by libhandy/libadwaita apps when prefer-dark is on)
-                os.system("sassc ./sass/gtk-dark.scss gtk-dark.css")
+                os.system("pysassc ./sass/gtk-dark.scss gtk-dark.css")
             else:
-                os.system("sassc ./sass/gtk-dark.scss gtk-dark.css")
-                os.system("sassc ./sass/gtk.scss gtk.css")
+                os.system("pysassc ./sass/gtk-dark.scss gtk-dark.css")
+                os.system("pysassc ./sass/gtk.scss gtk.css")
 
             os.system("rm -rf sass .sass-cache")
             os.chdir(curdir)
@@ -133,12 +133,12 @@ for color in y_hex_colors1.keys():
             # os.system("sed -i 's/no-tint/tint/gI' ./sass/gtk-dark.scss")
             if (variant == "-Dark"):
                 os.system("cp sass/gtk-dark.scss sass/gtk.scss")
-                os.system("sassc ./sass/gtk.scss gtk.css")
+                os.system("pysassc ./sass/gtk.scss gtk.css")
                 # Add a gtk-dark.css (this is needed by libhandy/libadwaita apps when prefer-dark is on)
-                os.system("sassc ./sass/gtk-dark.scss gtk-dark.css")
+                os.system("pysassc ./sass/gtk-dark.scss gtk-dark.css")
             else:
-                os.system("sassc ./sass/gtk-dark.scss gtk-dark.css")
-                os.system("sassc ./sass/gtk.scss gtk.css")
+                os.system("pysassc ./sass/gtk-dark.scss gtk-dark.css")
+                os.system("pysassc ./sass/gtk.scss gtk.css")
 
             os.system("rm -rf sass .sass-cache")
             os.chdir(curdir)
@@ -149,7 +149,7 @@ for color in y_hex_colors1.keys():
             os.chdir("%s/cinnamon" % theme)
             if (variant == "-Dark"):
                 os.system("cp sass/cinnamon-dark.scss sass/cinnamon.scss")
-            os.system("sassc ./sass/cinnamon.scss cinnamon.css")
+            os.system("pysassc ./sass/cinnamon.scss cinnamon.css")
             os.system("rm -rf sass .sass-cache")
             os.chdir(curdir)
 
