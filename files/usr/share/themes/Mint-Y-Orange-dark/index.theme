@@ -1,11 +1,11 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
-Name=Mint-Y-Dark-Orange
+Name=Mint-Y-Orange-dark
 Comment=A dark flat theme with transparent elements
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=Mint-Y-Dark-Orange
+GtkTheme=Mint-Y-Orange-dark
 MetacityTheme=Mint-Y
 IconTheme=Mint-Y-Orange
 CursorTheme=Bibata-Modern-Classic

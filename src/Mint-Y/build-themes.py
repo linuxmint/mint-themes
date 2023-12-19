@@ -3,7 +3,7 @@
 import os
 
 VARIATIONS = ["Mint-Y",
-              "Mint-Y-Dark"]
+              "Mint-Y-dark"]
 
 DEST = '../../usr/share/themes'
 
@@ -96,8 +96,8 @@ if __name__ == '__main__':
             os.system("cp -R xfwm4/*.png %s" % version_folder)
             os.system("cp -R xfwm4/themerc %s" % version_folder)
 
-        elif variation == "Mint-Y-Dark":
-            print("    Building Mint-Y-Dark")
+        elif variation == "Mint-Y-dark":
+            print("    Building Mint-Y-dark")
             # Gtk2
             version_folder = os.path.join(dest_folder, "gtk-2.0")
             os.system("mkdir -p %s" % version_folder)
