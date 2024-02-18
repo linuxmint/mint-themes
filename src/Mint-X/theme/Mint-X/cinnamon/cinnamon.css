@@ -1366,6 +1366,97 @@ StScrollBar StButton#vhandle:hover {
     -boxpointer-gap: 2px;
 }
 
+/* ===================================================================
+ * Policykit authentication dialog
+ * ===================================================================*/
+
+.polkit-dialog {
+    /* this is the width of the entire modal popup */
+    width: 500px;
+}
+
+.polkit-dialog-main-layout {
+    spacing: 10px;
+}
+
+.polkit-dialog-headline {
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: rgb(70, 70, 70);
+}
+
+.polkit-dialog-description {
+    text-align: center;
+    font-size: 1em;
+    color: rgb(70, 70, 70);
+}
+
+.polkit-dialog-user-layout {
+    spacing: 10px;
+}
+
+.polkit-dialog-user-layout:rtl {
+    padding-right: 10px;
+}
+
+.polkit-dialog-user-root-label {
+    color: #ff0000;
+}
+
+.polkit-dialog-password-label:ltr {
+    padding-top: 0.5em;
+    padding-right: 0.5em;
+}
+
+.polkit-dialog-password-label:rtl {
+    padding-left: 0.5em;
+}
+
+.polkit-dialog-password-entry {
+    padding: 4px 12px;
+    color: #2b2b2b;
+    border-image: url("misc-assets/entry.png") 6;
+    border-radius: 4px;
+    caret-color: #2b2b2b;
+    caret-size: 1px;
+    width: 250px;
+    height: 16px;
+    transition-duration: 300;
+    selected-color: #fff;
+    selection-background-color: #accd8a;
+}
+
+.polkit-dialog-password-entry:focus {
+    padding: 4px 12px;
+    color: #2b2b2b;
+    border-image: url("misc-assets/entry-focus.png") 6;
+    border-radius: 4px;
+    width: 250px;
+    height: 16px;
+    selected-color: #fff;
+    caret-color: #2b2b2b;
+    caret-size: 1px;
+    selection-background-color: #accd8a;
+    transition-duration: 150;
+}
+
+.polkit-dialog-password-entry .capslock-warning {
+    icon-size: 16px;
+    warning-color: rgb(64, 64, 64);
+    padding: 0 4px;
+}
+
+.polkit-dialog-error-label {
+    text-align: center;
+    font-size: 1em;
+    color: #ff0000;
+}
+
+.polkit-dialog-info-label {
+    font-size: 1em;
+}
+
 /* ###################################################################
  * Cinnamon Specific Section
  * ###################################################################*/
