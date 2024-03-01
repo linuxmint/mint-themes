@@ -129,8 +129,9 @@ vte-terminal {
 %nautilus_canvas_item,
 .nautilus-desktop.nautilus-canvas-item {
   color: $selected_fg_color;
-  text-shadow: 1px 1px 0px transparentize(black, 0.2),
-               0px 0px 1.5px black;
+  text-shadow: 1px 1px 0px black,
+               0px 0px 1.5px transparentize(black, 0.2),
+               0px 0px 3px transparentize(black, 0.4);
   &:hover { text-shadow: none; }
   &:active { color: $fg_color; }
   &:selected {

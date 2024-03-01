@@ -3085,7 +3085,7 @@ vte-terminal {
 .nemo-desktop.nemo-canvas-item,
 .nautilus-desktop.nautilus-canvas-item {
   color: #ffffff;
-  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.8), 0px 0px 1.5px black; }
+  text-shadow: 1px 1px 0px black, 0px 0px 1.5px rgba(0, 0, 0, 0.8), 0px 0px 3px rgba(0, 0, 0, 0.6); }
   .nemo-desktop.nemo-canvas-item:hover,
   .nautilus-desktop.nautilus-canvas-item:hover {
     text-shadow: none; }
@@ -3094,7 +3094,8 @@ vte-terminal {
     color: rgba(255, 255, 255, 0.87); }
   .nemo-desktop.nemo-canvas-item:selected,
   .nautilus-desktop.nautilus-canvas-item:selected {
-    color: #ffffff; }
+    color: #ffffff;
+    text-shadow: none; }
 
 .nautilus-canvas-item.dim-label, label.nautilus-canvas-item.separator,
 .nautilus-list-dim-label {

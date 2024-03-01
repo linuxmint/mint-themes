@@ -3559,7 +3559,7 @@ popover.emoji-completion .emoji:hover {
 
 .caja-desktop.caja-canvas-item {
   color: #eeeeee;
-  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.8), 0px 0px 1.5px black; }
+  text-shadow: 1px 1px 0px black, 0px 0px 1.5px rgba(0, 0, 0, 0.8), 0px 0px 3px rgba(0, 0, 0, 0.6); }
   .caja-desktop.caja-canvas-item:selected {
     background-color: rgba(255, 255, 255, 0.8);
     color: #ffffff;
@@ -3652,7 +3652,7 @@ popover.emoji-completion .emoji:hover {
 
 .nemo-desktop .nemo-canvas-item {
   color: #eeeeee;
-  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.8), 0px 0px 1.5px black; }
+  text-shadow: 1px 1px 0px black, 0px 0px 1.5px rgba(0, 0, 0, 0.8), 0px 0px 3px rgba(0, 0, 0, 0.6); }
   .nemo-desktop .nemo-canvas-item:selected {
     background-color: rgba(255, 255, 255, 0.8);
     color: #ffffff;

@@ -10,8 +10,9 @@ $dark_sidebar_fg: #dadada;
 .caja-desktop {
   &.caja-canvas-item {
     color: #eeeeee;
-    text-shadow: 1px 1px 0px transparentize(black, 0.2),
-                 0px 0px 1.5px black;
+    text-shadow: 1px 1px 0px black,
+                 0px 0px 1.5px transparentize(black, 0.2),
+                 0px 0px 3px transparentize(black, 0.4);
 
     &:selected {
       background-color: transparentize($selected_fg_color, 0.2);
@@ -147,8 +148,9 @@ $dark_sidebar_fg: #dadada;
 .nemo-desktop {
   .nemo-canvas-item {
     color: #eeeeee;
-    text-shadow: 1px 1px 0px transparentize(black, 0.2),
-                 0px 0px 1.5px black;
+    text-shadow: 1px 1px 0px black,
+                 0px 0px 1.5px transparentize(black, 0.2),
+                 0px 0px 3px transparentize(black, 0.4);
 
     &:selected {
       background-color: transparentize($selected_fg_color, 0.2);
