@@ -2200,11 +2200,8 @@ StScrollBar {
 // User Applet
 //
 .user-icon {
-    width: 32px;
-    height: 32px;
-    background-color: transparent;
-    border: none;
-    border-radius: 0;
+    border: 1px solid transparentize($fg_color, 0.5);
+    border-radius: 99px;
 }
 
 .user-label {
