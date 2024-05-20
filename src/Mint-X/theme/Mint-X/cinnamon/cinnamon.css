@@ -2274,10 +2274,8 @@ StScrollBar StButton#vhandle:hover {
  * User applet (user@cinnamon.org/applet.js)
  * ===================================================================*/
 .user-icon {
-    background-color: rgb(236, 236, 236);
     border: 1px solid rgb(192, 192, 192);
-    border-radius: 4px;
-    padding: 0.2em;
+    border-radius: 99px;
 }
 
 .user-label {

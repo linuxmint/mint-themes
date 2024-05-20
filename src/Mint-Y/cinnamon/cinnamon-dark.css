@@ -1692,11 +1692,8 @@ StScrollBar {
     text-shadow: none; }
 
 .user-icon {
-  width: 32px;
-  height: 32px;
-  background-color: transparent;
-  border: none;
-  border-radius: 0; }
+  border: 1px solid rgba(255, 255, 255, 0.37);
+  border-radius: 99px; }
 
 .user-label {
   color: rgba(255, 255, 255, 0.87);
