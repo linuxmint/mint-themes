@@ -1823,6 +1823,7 @@ StScrollBar {
     border-radius: 9999px;
     background-color: $selected_bg_color;
     margin: 0;
+    padding: 2px 2px 2px -1px;
   }
 
   &-button-label {
