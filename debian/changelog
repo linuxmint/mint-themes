@@ -1,3 +1,19 @@
+mint-themes (2.1.7) wilma; urgency=medium
+
+  [ Leigh Scott ]
+  * Switch to pysassc
+
+  [ JosephMcc ]
+  * Cinnamon: Add support for the new polkit dialog (#468)
+
+  [ fredcw ]
+  * Linux Mint theme fix expo-workspaces-name-entry (#473)
+
+  [ JosephMcc ]
+  * cinnamon: Add support for the new rounded userWidget
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sun, 16 Jun 2024 12:19:16 +0100
+
 mint-themes (2.1.6) virginia; urgency=medium
 
   [ Michael Webster ]
