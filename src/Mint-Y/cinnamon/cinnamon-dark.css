@@ -48,12 +48,12 @@ stage {
   transition-duration: 300ms;
   border-radius: 3px;
   color: #D3D3D3;
-  background-color: #404040;
+  background-color: #202020;
   border: 1px solid #202020;
   box-shadow: inset 0 2px 4px rgba(64, 64, 64, 0.05); }
   #menu-search-entry:focus, .popup-menu #notification StEntry:focus, #menu-search-entry:hover, .popup-menu #notification StEntry:hover {
     color: rgba(255, 255, 255, 0.87);
-    background-color: #404040;
+    background-color: #202020;
     border: 1px solid #35a854;
     box-shadow: inset 0 2px 4px rgba(64, 64, 64, 0.05); }
   #menu-search-entry:insensitive, .popup-menu #notification StEntry:insensitive {
@@ -226,7 +226,7 @@ StScrollBar {
   color: rgba(255, 255, 255, 0.87);
   border: 1px solid #202020;
   border-radius: 3px;
-  background-color: rgba(47, 47, 47, 0.99); }
+  background-color: #1C1C1C; }
   .menu.top {
     border-radius: 0 0 3px 3px; }
   .menu.bottom {
@@ -258,7 +258,7 @@ StScrollBar {
   border-right-width: 0; }
   .popup-menu-item:active {
     color: #ffffff;
-    background-color: #525352; }
+    background-color: #292929; }
   .popup-menu-item:insensitive {
     color: rgba(255, 255, 255, 0.37);
     background: none; }
@@ -453,7 +453,7 @@ StScrollBar {
 .panel-top, .panel-bottom, .panel-left, .panel-right {
   color: #ffffff;
   border: none;
-  background-color: rgba(47, 47, 47, 0.99);
+  background-color: #1C1C1C;
   font-size: 1em;
   padding: 0px; }
 
@@ -615,7 +615,7 @@ StScrollBar {
   padding: .5em;
   min-width: 350px;
   border: 1px solid #202020;
-  background-color: #404040; }
+  background-color: #242424; }
 
 .calendar-events-no-events-button {
   margin: 6px 0 6px 0;
@@ -1165,15 +1165,15 @@ StScrollBar {
 .menu-favorites-box {
   padding: 10px;
   transition-duration: 300;
-  background-color: #333333;
-  border: 1px solid #202020; }
+  background-color: #242424;
+  border: 1px solid #191919; }
 
 .menu-favorites-button {
   padding: .9em 1em;
   border: 1px solid rgba(0, 0, 0, 0);
   border-radius: 2px; }
   .menu-favorites-button:hover {
-    background-color: #525352; }
+    background-color: #313131; }
 
 .menu-places-box {
   padding: 10px;
@@ -1196,7 +1196,7 @@ StScrollBar {
   .menu-application-button-selected {
     padding: 7px;
     color: #ffffff;
-    background-color: #525352;
+    background-color: #292929;
     border: 1px solid #202020; }
     .menu-application-button-selected:highlighted {
       font-weight: bold; }
@@ -1211,7 +1211,7 @@ StScrollBar {
   .menu-category-button-selected {
     padding: 7px;
     color: #ffffff;
-    background-color: #525352;
+    background-color: #292929;
     border: 1px solid #202020; }
   .menu-category-button:hover {
     background-color: #3d3d3d;
@@ -1392,7 +1392,7 @@ StScrollBar {
       padding-left: 1px; }
   .grouped-window-list-item-box:hover, .grouped-window-list-item-box:focus {
     color: rgba(255, 255, 255, 0.87);
-    background-color: rgba(255, 255, 255, 0.17); }
+    background-color: rgba(255, 255, 255, 0.1); }
   .grouped-window-list-item-box:active, .grouped-window-list-item-box:checked {
     color: rgba(255, 255, 255, 0.87);
     border-color: #35a854; }
@@ -1426,7 +1426,7 @@ StScrollBar {
 .grouped-window-list-thumbnail-menu {
   color: rgba(255, 255, 255, 0.87);
   border: 1px solid #202020;
-  background-color: #2f2f2f;
+  background-color: #242424;
   border-radius: 3px;
   padding: 0px; }
   .grouped-window-list-thumbnail-menu > StBoxLayout {
@@ -1671,7 +1671,7 @@ StScrollBar {
     padding-bottom: 3px; }
   .applet-box:hover, .applet-box:checked {
     color: #ffffff;
-    background-color: #525352; }
+    background-color: #292929; }
   .applet-box:highlight {
     background-image: none;
     border-image: none;
@@ -1703,11 +1703,11 @@ StScrollBar {
 
 .applet-cornerbar {
   width: 8px;
-  background-color: rgba(255, 255, 255, 0.12); }
+  background-color: rgba(255, 255, 255, 0.1); }
   .applet-cornerbar-box {
     padding: 4px 4px; }
     .applet-cornerbar-box:hover > .applet-cornerbar {
-      background-color: rgba(255, 255, 255, 0.22); }
+      background-color: rgba(255, 255, 255, 0.17); }
   .applet-cornerbar.vertical {
     height: 8px; }
 
