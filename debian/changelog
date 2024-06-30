@@ -1,3 +1,10 @@
+mint-themes (2.1.8) wilma; urgency=medium
+
+  [ Michael Webster ]
+  * Remove extra height on all Cinnamon thumbnails.
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sun, 30 Jun 2024 11:42:14 +0100
+
 mint-themes (2.1.7) wilma; urgency=medium
 
   [ Leigh Scott ]
