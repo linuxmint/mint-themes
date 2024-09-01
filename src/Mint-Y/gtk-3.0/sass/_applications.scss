@@ -129,10 +129,14 @@ vte-terminal {
 %nautilus_canvas_item,
 .nautilus-desktop.nautilus-canvas-item {
   color: $selected_fg_color;
-  text-shadow: 1px 1px transparentize(black, 0.4);
-
+  text-shadow: 1px 1px 0px transparentize(black, 0.05),
+               0px 0px 2px transparentize(black, 0.20);
+  &:hover { text-shadow: 1px 1px 0px transparentize(black, 0.15); }
   &:active { color: $fg_color; }
-  &:selected { color: $selected_fg_color; }
+  &:selected {
+    color: $selected_fg_color;
+    text-shadow: 1px 1px 0px transparentize(black, 0.15);
+  }
 }
 
 .nautilus-canvas-item.dim-label,

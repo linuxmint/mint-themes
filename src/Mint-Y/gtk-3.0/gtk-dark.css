@@ -3085,13 +3085,17 @@ vte-terminal {
 .nemo-desktop.nemo-canvas-item,
 .nautilus-desktop.nautilus-canvas-item {
   color: #ffffff;
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.6); }
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.95), 0px 0px 2px rgba(0, 0, 0, 0.8); }
+  .nemo-desktop.nemo-canvas-item:hover,
+  .nautilus-desktop.nautilus-canvas-item:hover {
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.85); }
   .nemo-desktop.nemo-canvas-item:active,
   .nautilus-desktop.nautilus-canvas-item:active {
     color: rgba(255, 255, 255, 0.87); }
   .nemo-desktop.nemo-canvas-item:selected,
   .nautilus-desktop.nautilus-canvas-item:selected {
-    color: #ffffff; }
+    color: #ffffff;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.85); }
 
 .nautilus-canvas-item.dim-label, label.nautilus-canvas-item.separator,
 .nautilus-list-dim-label {
