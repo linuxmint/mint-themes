@@ -5,9 +5,9 @@
 // of the remaining colors
 $selected_bg_color: if($variant == 'light', #35a854, #35a854);
 
-$base_color: if($variant =='light', mix($selected_bg_color, #f4f4f4, 0%), mix($selected_bg_color, #404040, 0%));
+$base_color: if($variant =='light', #f4f4f4, #404040);
 $text_color: if($variant == 'light', #303030, #D3D3D3);
-$bg_color: if($variant == 'light', mix($selected_bg_color, #e8e8e8, 0%), mix($selected_bg_color, #2f2f2f, 0%));
+$bg_color: if($variant == 'light', #e8e8e8, #2f2f2f);
 $fg_color: if($variant =='light', #303030, transparentize(white, 0.13));
 
 $selected_fg_color: #ffffff;
