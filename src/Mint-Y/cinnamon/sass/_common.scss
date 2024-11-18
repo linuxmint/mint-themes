@@ -326,65 +326,6 @@ StScrollBar {
   &:insensitive { color: $insensitive_fg_color; }
 }
 
-
-/* This is for popup menus in Cinnamon versions < 3.2 */
-.popup-menu {
-  color: white;
-  color: $fg_color;
-
-  &-arrow { icon-size: 16px; }
-
-  .popup-sub-menu {
-    background-color: $base_color;
-    box-shadow: none;
-
-    .popup-menu-item:ltr { padding-right: 1.75em; }
-    .popup-menu-item:rtl { padding-left: 1.75em; }
-
-    StScrollBar {
-      padding: 4px;
-      StBin#trough, StBin#vhandle { border-width: 0; }
-    }
-  }
-
-  .popup-menu-content { padding: 1em 0em 1em 0em; }
-  .popup-menu-item {
-    padding: .4em 1.75em;
-    spacing: 1em;
-    border: 1px solid transparent;
-    border-left-width: 0;
-    border-right-width: 0;
-
-    &:active {
-      color: $fg_color;
-      border-color: transparentize($fg_color, 0.89);
-      background-color: transparentize($fg_color, 0.92);
-    }
-    &:insensitive {
-      color: transparentize($fg_color, 0.5);
-      background: none;
-    }
-  }
-
-  .popup-inactive-menu-item { //all icons and other graphical elements
-    color: $fg_color;
-
-    &:insensitive { color: $insensitive_fg_color; }
-  }
-
-  &-icon { icon-size: 16px; }
-}
-
-.popup-menu-boxpointer {
-  -arrow-border-radius: 3px;
-  -arrow-background-color:  $bg_color;
-  -arrow-border-width: 1px;
-  -arrow-border-color: $borders_color;
-  -arrow-base: 21px;
-  -arrow-rise: 9px;
-  -boxpointer-gap: 2px;
-}
-
 /*Scale view context menu*/
 .popup-combo-menu {
   color: $fg_color;
