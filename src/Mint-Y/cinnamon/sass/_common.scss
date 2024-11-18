@@ -266,9 +266,9 @@ StScrollBar {
 // Popovers/Menus
 //
 .menu {
+  border: 1px solid $menus_border_color;
   color: $fg_color;
-  border: 1px solid $borders_color;
-  background-color: transparentize($bg_color, 0.01);
+  background-color: $bg_color;
 
   &-top {
     border-radius: 0 0 3px 3px;
@@ -328,7 +328,7 @@ StScrollBar {
   color: $fg_color;
   border: 1px solid $borders_color;
   border-radius: 3px;
-  background-color: $base_color;
+  background-color: $bg_color2;
   box-shadow: none;
   padding: 1em 0em 1em 0em;
 }
@@ -484,19 +484,19 @@ StScrollBar {
   }
 
   &-top {
-    box-shadow: 0 1px $borders_color;
+    box-shadow: 0 1px $bg_color;
   }
 
   &-bottom {
-    box-shadow: 0 -1px $borders_color;
+    box-shadow: 0 -1px $bg_color;
   }
 
   &-left {
-    box-shadow: 1px 0 $borders_color;
+    box-shadow: 1px 0 $bg_color;
   }
 
   &-right {
-    box-shadow: -1px 0 $borders_color;
+    box-shadow: -1px 0 $bg_color;
   }
 
   &-dummy {
@@ -686,8 +686,8 @@ StScrollBar {
   margin-right: .5em;
   padding: .5em;
   min-width: 350px;
-  border: 1px solid $borders_color;
-  background-color: $base_color;
+  border: 1px solid $menus_border_color;
+  background-color: $bg_color2;
 }
 
 .calendar-events-no-events-box {
@@ -1420,7 +1420,7 @@ StScrollBar {
     padding: 10px;
     transition-duration: 300;
     background-color: $bg_color2;
-    border: 1px solid $borders_color;
+    border: 1px solid $menus_border_color;
   }
 
   &-favorites-button {
@@ -1459,7 +1459,7 @@ StScrollBar {
       padding: 7px;
       color: $noaccent_selected_fg_color;
       background-color: $bg_color2;
-      border: 1px solid $borders_color;
+      border: 1px solid $menus_border_color;
 
       &:highlighted { font-weight: bold; }
     }
@@ -1476,7 +1476,7 @@ StScrollBar {
       padding: 7px;
       color: $noaccent_selected_fg_color;
       background-color: $bg_color2;
-      border: 1px solid $borders_color;
+      border: 1px solid $menus_border_color;
       border-radius: 0px;
     }
     &-greyed {
@@ -1667,7 +1667,7 @@ StScrollBar {
   &-preview {
     spacing: 6px;
     color: $fg_color;
-    border: 1px solid $borders_color;
+    border: 1px solid $menus_border_color;
     background-color: $bg_color;
     border-radius: 3px;
     padding: 6px 12px 12px 12px;
@@ -1769,7 +1769,7 @@ StScrollBar {
 
   &-thumbnail-menu {
     color: $fg_color;
-    border: 1px solid $borders_color;
+    border: 1px solid $menus_border_color;
     background-color: $bg_color;
     border-radius: 3px;
     padding: 0px;
