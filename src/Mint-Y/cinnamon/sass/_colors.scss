@@ -10,6 +10,9 @@ $text_color: if($variant == 'light', #303030, #D3D3D3);
 $bg_color: if($variant == 'light', #e8e8e8, #2f2f2f);
 $fg_color: if($variant =='light', #303030, transparentize(white, 0.13));
 
+$panel_bg: if($variant == 'light', #e8e8e8, #2f2f2f);
+$panel_fg: if($variant =='light', #303030, transparentize(white, 0.13));
+
 $selected_fg_color: #ffffff;
 
 $borders_color: if($variant =='light', darken($bg_color, 20%), darken($bg_color, 6%));
@@ -39,9 +42,6 @@ $osd_entry_bg: transparentize(lighten($osd_bg_color, 22%), 0.6);
 $osd_entry_border: transparentize(darken($osd_bg_color, 12%), 0.6);
 
 $osd_insensitive_fg_color: mix($osd_fg_color, opacify($osd_bg_color, 1), 30%);
-
-$panel_bg: $bg_color;
-$panel_fg: $fg_color;
 
 $entry_bg: if($variant=='light', $base_color, lighten($base_color, 0%));
 $entry_border: if($variant == 'light', #cfd6e6, darken($borders_color, 0%));
