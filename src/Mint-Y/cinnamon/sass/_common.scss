@@ -100,17 +100,17 @@ StScrollBar {
   }
 
   StBin#trough {
-    background-color: transparentize($base_color, 0.9);
+    background-color: transparentize($bg_color2, 0.9);
     border-radius: 8px;
   }
 
   StButton#vhandle, StButton#hhandle {
     border-radius: 2px;
-    background-color: mix($fg_color, $bg_color, 40%);
+    background-color: $bg_color2;
     border: 0px solid;
     margin: 0px;
 
-    &:hover { background-color: mix($fg_color, $bg_color, 30%); }
+    &:hover { background-color: $bg_color3; }
 
     &:active { background-color: $accent_color; }
   }
@@ -263,33 +263,32 @@ StScrollBar {
 }
 
 //
-// Popvers/Menus
+// Popovers/Menus
 //
 .menu {
   color: $fg_color;
   border: 1px solid $borders_color;
-  border-radius: 3px;
-	background-color: transparentize($bg_color, 0.01);
+  background-color: transparentize($bg_color, 0.01);
 
-  &.top {
+  &-top {
     border-radius: 0 0 3px 3px;
   }
 
-  &.bottom {
+  &-bottom {
     border-radius: 3px 3px 0 0;
   }
 
-  &.left {
+  &-left {
     border-radius: 0 3px 3px 0;
   }
 
-  &.right {
+  &-right {
     border-radius: 3px 0 0 3px;
   }
 }
 
 .popup-sub-menu {
-  background-color: $base_color;
+  background-color: $bg_color2;
   box-shadow: none;
 
   .popup-menu-item:ltr { padding-right: 1.75em; }
@@ -305,14 +304,12 @@ StScrollBar {
 .popup-menu-item {
   padding: .4em 1.75em;
   spacing: 1em;
-  // border: 1px solid transparent;
   border-left-width: 0;
   border-right-width: 0;
 
   &:active {
     color: $noaccent_selected_fg_color;
-    // border-color: transparentize($fg_color, 0.89);
-    background-color: $noaccent_selected_bg_color;
+    background-color: $bg_color2;
   }
   &:insensitive {
     color: transparentize($fg_color, 0.5);
@@ -1422,7 +1419,7 @@ StScrollBar {
   &-favorites-box {
     padding: 10px;
     transition-duration: 300;
-    background-color: darken($base_color, 5%);
+    background-color: $bg_color2;
     border: 1px solid $borders_color;
   }
 
@@ -1432,7 +1429,7 @@ StScrollBar {
     border-radius: 2px;
 
     &:hover {
-      background-color: $noaccent_selected_bg_color;
+      background-color: $bg_color3;
     }
   }
 
@@ -1461,7 +1458,7 @@ StScrollBar {
     &-selected {
       padding: 7px;
       color: $noaccent_selected_fg_color;
-      background-color: $noaccent_selected_bg_color;
+      background-color: $bg_color2;
       border: 1px solid $borders_color;
 
       &:highlighted { font-weight: bold; }
@@ -1478,12 +1475,8 @@ StScrollBar {
     &-selected {
       padding: 7px;
       color: $noaccent_selected_fg_color;
-      background-color: $noaccent_selected_bg_color;
+      background-color: $bg_color2;
       border: 1px solid $borders_color;
-    }
-    &:hover {
-      background-color: mix($noaccent_selected_bg_color, $bg_color, 40%);
-      border: 1px solid mix($borders_color, $bg_color, 40%);
       border-radius: 0px;
     }
     &-greyed {
@@ -2034,7 +2027,9 @@ StScrollBar {
     padding-bottom: 2px;
     // border-bottom-width: 1px;
     transition-duration: 200;
-    &:hover { background-color: $noaccent_selected_bg_color; }
+    &:hover { 
+      background-color: $bg_color2;
+    }
   }
 
   &.vertical {
@@ -2099,7 +2094,7 @@ StScrollBar {
     &:hover,
     &:checked {
       color: $noaccent_selected_fg_color;
-      background-color: $noaccent_selected_bg_color;
+      background-color: $bg_color2;
     }
 
     &:highlight {
