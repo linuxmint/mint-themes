@@ -39,7 +39,7 @@ stage {
   @include button(osd);
 
   &:hover { @include button(osd-hover); }
-  &:focus { color: $selected_bg_color; }
+  &:focus { color: $accent_color; }
   &:active { @include button(osd-active); }
   &:insensitive { @include button(osd-insensitive); }
 }
@@ -50,7 +50,7 @@ stage {
 %entry {
   padding: 7px;
   caret-size: 1px;
-  selection-background-color: $selected_bg_color;
+  selection-background-color: $accent_color;
   selected-color: $selected_fg_color;
   transition-duration: 300ms;
   border-radius: 3px;
@@ -71,7 +71,7 @@ stage {
   padding: 7px;
   caret-size: 1px;
   caret-color: $osd_fg_color;
-  selection-background-color: $selected_bg_color;
+  selection-background-color: $accent_color;
   selected-color: $selected_fg_color;
   transition-duration: 300ms;
   border-radius: 3px;
@@ -112,7 +112,7 @@ StScrollBar {
 
     &:hover { background-color: mix($fg_color, $bg_color, 30%); }
 
-    &:active { background-color: $selected_bg_color; }
+    &:active { background-color: $accent_color; }
   }
 }
 
@@ -131,8 +131,8 @@ StScrollBar {
   width: 50px;
   height: 50px;
   border-radius: 25px;
-  background-color: transparentize($selected_bg_color, 0.7);
-  box-shadow: 0 0 2px 2px $selected_bg_color;
+  background-color: transparentize($accent_color, 0.7);
+  box-shadow: 0 0 2px 2px $accent_color;
 }
 
 //
@@ -143,7 +143,7 @@ StScrollBar {
   -slider-height: 0.3em;
   -slider-background-color: $button_border;                         //background of the trough
   -slider-border-color: transparentize($bg_color, 0.7);             //trough border color
-  -slider-active-background-color: $selected_bg_color;              //active trough fill
+  -slider-active-background-color: $accent_color;                   //active trough fill
   -slider-active-border-color: transparentize($bg_color, 0.7);      //active trough border
   -slider-border-width: 1px;
   -slider-handle-radius: 0.5em;
@@ -612,18 +612,18 @@ StScrollBar {
   -cinnamon-caption-spacing: 8px;
 
   &:focus {
-    background-color: $selected_bg_color;
+    background-color: $accent_color;
     color: $selected_fg_color;
-    border: 1px solid $selected_bg_color;
+    border: 1px solid $accent_color;
   }
 }
 
 .window-border {
-  border: 3px $selected_bg_color;
+  border: 3px $accent_color;
   border-radius: 2px;
   background-color: rgba(255,255,255,.05);
   /* Cover rounded corners and some bad adjustment gaps */
-  box-shadow: 0 0 0 1px $selected_bg_color inset;
+  box-shadow: 0 0 0 1px $accent_color inset;
 }
 
 .overview-empty-placeholder {
@@ -641,13 +641,13 @@ StScrollBar {
   @include entry(osd);
 
   &:focus {
-    border: 1px solid $selected_bg_color;
-    background-color: $selected_bg_color;
+    border: 1px solid $accent_color;
+    background-color: $accent_color;
     color: $selected_fg_color;
     font-style: italic;
     transition-duration: 300;
     selection-background-color: $selected_fg_color;
-    selected-color: $selected_bg_color;
+    selected-color: $accent_color;
   }
 }
 
@@ -657,7 +657,7 @@ StScrollBar {
   border-radius: 2px;
 
   &#active {
-    border: 4px solid $selected_bg_color;
+    border: 4px solid $accent_color;
     background-color: black;
     border-radius: 2px;
   }
@@ -760,7 +760,7 @@ StScrollBar {
   padding: 6px;
 
   &:hover {
-    background-color: $selected_bg_color;
+    background-color: $accent_color;
 
     .calendar-events-no-events-icon,
     .calendar-events-no-events-label {
@@ -803,7 +803,7 @@ StScrollBar {
     margin-bottom: .2em;
 
     &:all-day {
-      color: $selected_bg_color;
+      color: $accent_color;
     }
   }
   .calendar-event-time-future {
@@ -833,12 +833,12 @@ StScrollBar {
     }
     &:current {
       font-weight: bold;
-      color: $selected_bg_color;
+      color: $accent_color;
     }
   }
 
   &:hover {
-    background-color: $selected_bg_color;
+    background-color: $accent_color;
     border: 1px solid $borders_color;
     .calendar-event-time-past,
     .calendar-event-time-present,
@@ -895,7 +895,7 @@ StScrollBar {
   padding: 6px;
 
   &:hover {
-    background-color: $selected_bg_color;
+    background-color: $accent_color;
 
     .calendar-today-day-label {
       color: $selected_fg_color
@@ -974,7 +974,7 @@ StScrollBar {
   &:hover {
     font-weight: bold;
     color: $selected_fg_color;
-    background-color: $selected_bg_color;
+    background-color: $accent_color;
   }
 }
 
@@ -1005,7 +1005,7 @@ StScrollBar {
 
 .calendar-today {
   color: $fg_color;
-  background-color: if($variant == 'light', transparentize($selected_bg_color, 0.6), transparentize($selected_bg_color, 0.6));
+  background-color: if($variant == 'light', transparentize($accent_color, 0.6), transparentize($accent_color, 0.6));
   border-width: 0;
 
   &:selected {
@@ -1048,7 +1048,7 @@ StScrollBar {
 //
 #notification {
   box-shadow: 0 1px 15px 4px $borders_color;
-  border-top-color: $selected_bg_color;
+  border-top-color: $accent_color;
   border-top: 4px;
   border-radius: 5px;
   background-color: $bg_color;
@@ -1133,13 +1133,13 @@ StScrollBar {
 
     &:outlined {
       padding: 8px;
-      border: 1px solid $selected_bg_color;
+      border: 1px solid $accent_color;
     }
 
     &:selected {
       color: $selected_fg_color;
-      background-color: $selected_bg_color;
-      border: 0px solid $selected_bg_color;
+      background-color: $accent_color;
+      border: 0px solid $accent_color;
     }
   }
 
@@ -1280,7 +1280,7 @@ StScrollBar {
     border-radius: 3px;
     caret-color: $osd_fg_color;
     selected-color: $selected_fg_color;
-    selection-background-color: $selected_bg_color;
+    selection-background-color: $accent_color;
 
     @include entry(osd);
 
@@ -1335,7 +1335,7 @@ StScrollBar {
     border-radius: 3px;
     caret-color: $osd_fg_color;
     selected-color: $selected_fg_color;
-    selection-background-color: $selected_bg_color;
+    selection-background-color: $accent_color;
 
     @include entry(osd);
 
@@ -1639,7 +1639,7 @@ StScrollBar {
 
   .level-bar {
     border-radius: 2px;
-    background-color: $selected_bg_color;
+    background-color: $accent_color;
   }
 }
 
@@ -1715,12 +1715,12 @@ StScrollBar {
     &:focus,
     &:running {
       color: $panel_fg;
-      border-color: $selected_bg_color;
+      border-color: $accent_color;
       background-color: transparentize($panel_fg, 0.8);
     }
 
     & .progress {
-      background-color: transparentize($selected_bg_color, 0.2);
+      background-color: transparentize($accent_color, 0.2);
     }
   }
 
@@ -1795,11 +1795,11 @@ StScrollBar {
     &:active,
     &:checked {
       color: $panel_fg;
-      border-color: $selected_bg_color;
+      border-color: $accent_color;
     }
 
     & .progress {
-      background-color: transparentize($selected_bg_color, 0.2);
+      background-color: transparentize($accent_color, 0.2);
     }
   }
 
@@ -1821,7 +1821,7 @@ StScrollBar {
 
   &-badge {
     border-radius: 9999px;
-    background-color: $selected_bg_color;
+    background-color: $accent_color;
     margin: 0;
   }
 
@@ -1851,11 +1851,11 @@ StScrollBar {
 
       &:outlined {
         padding: 8px;
-        border: 1px solid $selected_bg_color;
+        border: 1px solid $accent_color;
       }
 
       &:selected {
-        border: 1px solid $selected_bg_color;
+        border: 1px solid $accent_color;
       }
     }
 
@@ -1991,7 +1991,7 @@ StScrollBar {
     -slider-height: 0.5em;
     -slider-background-color: if($variant == 'light', $button_border, darken($bg_color, 5%));
     -slider-border-color: rgba(0,0,0,0);
-    -slider-active-background-color: $selected_bg_color;
+    -slider-active-background-color: $accent_color;
     -slider-active-border-color: rgba(0,0,0,0);
     -slider-border-width: 0px;
     -slider-handle-radius: 0px;
@@ -2036,11 +2036,11 @@ StScrollBar {
   }
 
   &:outlined {
-    background-color: $selected_bg_color;
+    background-color: $accent_color;
     color: $selected_fg_color;
 
     &:hover {
-      background-color: transparentize($selected_bg_color, 0.3);
+      background-color: transparentize($accent_color, 0.3);
       color: $selected_fg_color;
     }
   }
@@ -2063,7 +2063,7 @@ StScrollBar {
 }
 
 .workspace-graph .workspace:active {
-  border: 1px solid $selected_bg_color;
+  border: 1px solid $accent_color;
 }
 
 .workspace-graph .workspace .windows {
@@ -2282,8 +2282,8 @@ StScrollBar {
   }
 
   &-drag-placeholder {
-    border: 2px solid $selected_bg_color;
-    background-color: transparentize($selected_bg_color, 0.7);
+    border: 2px solid $accent_color;
+    background-color: transparentize($accent_color, 0.7);
   }
 }
 
@@ -2307,17 +2307,17 @@ StScrollBar {
 // Tile Preview
 //
 .tile-preview {
-  background-color: transparentize($selected_bg_color, 0.7);
-  border: 1px solid $selected_bg_color;
+  background-color: transparentize($accent_color, 0.7);
+  border: 1px solid $accent_color;
 
-  &.snap { background-color: transparentize($selected_bg_color, 0.4); }
+  &.snap { background-color: transparentize($accent_color, 0.4); }
 }
 
 .tile-hud {
-  background-color: transparentize($selected_bg_color, 0.7);
-  border: 1px solid $selected_bg_color;
+  background-color: transparentize($accent_color, 0.7);
+  border: 1px solid $accent_color;
 
-  &.snap { background-color: transparentize($selected_bg_color, 0.4); }
+  &.snap { background-color: transparentize($accent_color, 0.4); }
 
   &:top { border-top-width: 0px; }
   &:bottom { border-bottom-width: 0px; }

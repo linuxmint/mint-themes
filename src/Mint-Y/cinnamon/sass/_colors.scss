@@ -3,7 +3,7 @@
 
 // We need to set this first because we use it to tint many
 // of the remaining colors
-$selected_bg_color: if($variant == 'light', #35a854, #35a854);
+$accent_color: if($variant == 'light', #35a854, #35a854);
 
 $base_color: if($variant =='light', #f4f4f4, #404040);
 $text_color: if($variant == 'light', #303030, #D3D3D3);
@@ -19,8 +19,8 @@ $borders_color: if($variant =='light', darken($bg_color, 20%), darken($bg_color,
 
 $separator_color: if($variant == 'light', darken($bg_color, 15%), darken($bg_color, 6%));
 
-$link_color: if($variant == 'light', darken($selected_bg_color,10%),
-                                     lighten($selected_bg_color,20%));
+$link_color: if($variant == 'light', darken($accent_color,10%),
+                                     lighten($accent_color,20%));
 
 $warning_color: #F27835;
 $error_color: #FC4138;
@@ -28,7 +28,7 @@ $destructive_color: #F04A50;
 
 $insensitive_fg_color: if($variant == 'light', transparentize($fg_color, 0.45), transparentize($fg_color, 0.55));
 
-$tooltip_bg_color: transparentize(mix($selected_bg_color, black, 95%), 0.05);
+$tooltip_bg_color: transparentize(mix($accent_color, black, 95%), 0.05);
 $tooltip_fg_color: $selected_fg_color;
 $tooltip_border_color: #d0d0d0;
 
