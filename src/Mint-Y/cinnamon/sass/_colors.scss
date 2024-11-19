@@ -1,6 +1,7 @@
 
-// Accent color
+// General
 $accent_color: if($variant == 'light', #35a854, #35a854);
+$radius: 6px;
 
 // Panel
 $panel_bg: if($variant == 'light', #e8e8e8, #1a1a1a);
@@ -14,7 +15,7 @@ $bg_color3: if($variant == 'light', #e8e8e8, #656565);
 // Borders and separators
 $borders_color: if($variant =='light', darken($bg_color, 20%), $bg_color2);
 $menus_border_color: transparentize(black, 1.0);
-$separator_color: if($variant == 'light', darken($bg_color, 15%), $bg_color2);
+$separator_color: if($variant == 'light', darken($bg_color, 15%), lighten($bg_color, 2%));
 
 // Text
 $text_color: if($variant == 'light', #303030, #D3D3D3);
