@@ -969,6 +969,7 @@ StScrollBar {
 
 .calendar-not-today {
   color: $fg_color;
+  border-radius: $radius;
 
   &:selected {
     font-weight: bold;
