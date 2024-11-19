@@ -1072,8 +1072,8 @@ StScrollBar {
 .switcher-list {
   color: $fg_color;
   border: 1px solid $borders_color;
-  background-color: $bg_color;
-  border-radius: 3px;
+  background-color: $panel_bg;
+  border-radius: $radius;
   padding: 20px;
 
   > StBoxLayout {
@@ -1084,7 +1084,7 @@ StScrollBar {
 
   .item-box {
     padding: 8px;
-    border-radius: 2px;
+    border-radius: $radius;
 
     &:outlined {
       padding: 8px;
@@ -1092,8 +1092,7 @@ StScrollBar {
     }
 
     &:selected {
-      color: $selected_fg_color;
-      background-color: $accent_color;
+      background-color: $bg_color4;
       border: 0px solid $accent_color;
     }
   }
@@ -1148,225 +1147,6 @@ StScrollBar {
   background-size: contain;
 
   &:rtl { background-image: url("common-assets/misc/corner-ripple.svg"); }
-}
-
-//
-// Modal dialogs
-//
-.lightbox { background-color: rgba(0, 0, 0, 0.4); }
-.flashspot { background-color: white; }
-
-.modal-dialog {
-  background-color: $bg_color;
-  border: 1px solid $borders_color;
-  border-radius: 3px;
-  padding: 5px 10px;
-
-  > StBoxLayout:first-child {
-    padding: 10px;
-  }
-
-  &-button-box {
-    spacing: 0;
-    margin: 0px;
-    padding: 10px;
-    border: none;
-    background-color: $bg_color;
-
-    .modal-dialog-button {
-      padding-top: 0;
-      padding-bottom: 0;
-      height: 30px;
-
-      @extend %button;
-    }
-  }
-
-  .confirm-dialog-title {
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.3em;
-    padding-bottom: 12px;
-  }
-}
-
-//
-// Run dialog
-//
-.run-dialog {
-  padding: 10px 15px 10px 15px;
-  border: 1px solid $borders_color;
-  border-radius: 3px;
-  background-color: $bg_color;
-
-  > * { padding: 0; }
-
-  &-label {
-    font-size: 1.3em;
-    font-weight: bold;
-    color: $fg_color;
-    padding-bottom: 15px;
-    text-align: center;
-  }
-
-  &-description {
-    color: $fg_color;
-    padding-top: 15px;
-    text-align: center;
-
-    &.error { color: $error_color; }
-  }
-
-  // &-error-label { color: $error_color; }
-
-  // &-error-box {
-  //   padding-top: 15px;
-  //   spacing: 5px;
-  // }
-  &-completion-box {
-    padding-top: 5px;
-    padding-left: 15px;
-    font-size: 1em;
-  }
-  &-entry {
-    width: 21em;
-    height: 1.2em;
-    padding: 7px;
-    border-radius: 3px;
-    caret-color: $osd_fg_color;
-    selected-color: $selected_fg_color;
-    selection-background-color: $accent_color;
-
-    @include entry(osd);
-
-    &:focus { @include entry(focus); }
-  }
-  .modal-dialog-button-box {
-    border: none;
-    box-shadow: none;
-    background: none;
-  }
-}
-
-//
-// Polkit Dialog
-//
-.polkit-dialog {
-  width: 500px;
-
-  &-main-layout { spacing: 10px; }
-
-  &-headline {
-    color: $fg_color;
-    text-align: center;
-    font-size: 1.3em;
-    font-weight: bold;
-  }
-
-  &-description {
-    color: $fg_color;
-    text-align: center;
-    font-size: 1em;
-  }
-
-  &-user-layout { spacing: 10px; }
-  &-user-layout:rtl { padding-right: 10px; }
-
-  &-user-root-label { color: $error_color; }
-
-  &-password-label:ltr {
-    padding-top: 0.5em;
-    padding-right: 0.5em;
-  }
-
-  &-password-label:rtl {
-    padding-left: 0.5em;
-  }
-
-  &-password-entry {
-    width: 21em;
-    height: 1.2em;
-    padding: 7px;
-    border-radius: 3px;
-    caret-color: $osd_fg_color;
-    selected-color: $selected_fg_color;
-    selection-background-color: $accent_color;
-
-    @include entry(osd);
-
-    &:focus { @include entry(focus); }
-
-    .caplocks-warning {
-      icon-size: 16px;
-      warning-color: $warning_color;
-      padding: 0 4px;
-    }
-  }
-
-  &-error-label {
-    color: $error_color;
-    text-align: center;
-    font-size: 1em;
-  }
-
-  &-info-label { font-size: 1em; }
-}
-
-/* CinnamonMountOperation Dialogs */
-.cinnamon-mount-operation-icon {
-  icon-size: 48px;
-}
-
-.mount-password-reask {
-  color: $warning_color;
-}
-
-.show-processes-dialog,
-.mount-question-dialog {
-  spacing: 24px;
-
-  &-subject {
-    padding-top: 10px;
-    padding-left: 17px;
-    padding-bottom: 6px;
-
-    &:rtl {
-      padding-left: 0px;
-      padding-right: 17px;
-    }
-  }
-  &-description {
-    padding-left: 17px;
-    width: 28em;
-
-    &:rtl { padding-right: 17px; }
-  }
-}
-
-.show-processes-dialog-app-list {
-  max-height: 200px;
-  padding-top: 24px;
-  padding-left: 49px;
-  padding-right: 32px;
-
-  &:rtl {
-    padding-right: 49px;
-    padding-left: 32px;
-  }
-
-  &-item {
-    color: #ccc;
-
-    &:hover { color: white }
-
-    &:ltr { padding-right: 1em; }
-    &:rtl { padding-left: 1em; }
-
-    &-icon:ltr { padding-right: 17px; }
-    &-icon:rtl { padding-left: 17px; }
-
-    &-name { font-size: 1.1em; }
-  }
 }
 
 //
@@ -1547,54 +1327,6 @@ StScrollBar {
 
 /* Context menu (at the moment only for favorites) */
 .menu-context-menu {
-}
-
-//
-// OSD
-//
-.info-osd {
-  text-align: center;
-  font-weight: bold;
-  spacing: 1em;
-  padding: 16px;
-  color: $fg_color;
-  border: 1px solid $borders_color;
-  border-radius: 5px;
-  background-color: $bg_color;
-}
-
-.restart-osd {
-  font-size: 1.6em;
-}
-
-.workspace-osd {
-  font-size: 4em;
-}
-
-.osd-window {
-  text-align: center;
-  font-weight: bold;
-  spacing: 1em;
-  padding: 20px;
-
-  color: $fg_color;
-  background-color: $bg_color;
-  border: 1px solid $borders_color;
-  border-radius: 5px;
-
-  .osd-monitor-label { font-size: 3em; }
-
-  .level {
-    padding: 0;
-    height: 0.7em;
-    background-color: transparentize(black, 0.5);
-    border-radius: 2px;
-  }
-
-  .level-bar {
-    border-radius: 2px;
-    background-color: $accent_color;
-  }
 }
 
 //
