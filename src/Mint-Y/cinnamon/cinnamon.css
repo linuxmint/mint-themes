@@ -1560,8 +1560,7 @@ StScrollBar {
 /* Controls the style when using the "Visual representation" option */
 .workspace-graph {
   padding: 3px;
-  spacing: 6px;
-  border-radius: 6px; }
+  spacing: 6px; }
 
 .workspace-graph .workspace {
   border: 1px solid #b5b5b5; }
@@ -1613,10 +1612,10 @@ StScrollBar {
 
 .applet-separator-line {
   width: 1px;
-  background: #c2c2c2; }
+  background: #b5b5b5; }
   .applet-separator-line-vertical {
     height: 1px;
-    background: #c2c2c2; }
+    background: #b5b5b5; }
 
 .applet-box {
   padding-left: 4px;
@@ -1665,11 +1664,11 @@ StScrollBar {
 
 .applet-cornerbar {
   width: 8px;
-  background-color: #c2c2c2; }
+  background-color: #b5b5b5; }
   .applet-cornerbar-box {
     padding: 4px 4px; }
     .applet-cornerbar-box:hover > .applet-cornerbar {
-      background-color: #a8a8a8; }
+      background-color: #9c9c9c; }
   .applet-cornerbar.vertical {
     height: 8px; }
 

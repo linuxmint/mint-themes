@@ -5,7 +5,7 @@ $radius: 6px;
 
 // Panel
 $panel_bg: if($variant == 'light', #e8e8e8, #1a1a1a);
-$panel_fg: if($variant =='light', #303030, transparentize(white, 0.13));
+$panel_fg: if($variant =='light', #303030, #e1e1e1);
 
 // Clutter background colors
 $bg_color: if($variant == 'light', #e8e8e8, #222222);
@@ -19,7 +19,7 @@ $separator_color: if($variant == 'light', darken($bg_color, 15%), lighten($bg_co
 
 // Text
 $text_color: if($variant == 'light', #303030, #D3D3D3);
-$fg_color: if($variant =='light', #303030, transparentize(white, 0.13));
+$fg_color: if($variant =='light', #303030, #e1e1e1);
 $noaccent_selected_fg_color: if($variant=='light', $text_color, #ffffff);
 $selected_fg_color: #ffffff;
 
@@ -54,7 +54,7 @@ $entry_border: if($variant == 'light', #cfd6e6, $borders_color);
 $button_bg: if($variant == 'light', $bg_color2, $bg_color2);
 $button_border: $entry_border;
 
-$applet_separator_color: if($variant == 'light', darken($bg_color, 15%), rgba(255,255,255, 0.12));
+$applet_separator_color: $borders_color;
 
 $corner_bar_unhighlighted: $applet_separator_color;
 $corner_bar_highlighted: if($variant == 'light', darken($applet_separator_color, 10%), opacify($applet_separator_color, .1));
