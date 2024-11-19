@@ -1971,7 +1971,6 @@ StScrollBar {
 }
 
 .workspace-button {
-  border: 1px solid transparentize(black, 0.6);
   background-color: transparentize(black, 0.8);
   width: 20px;
   height: 14px;
@@ -2011,8 +2010,7 @@ StScrollBar {
 }
 
 .workspace-graph .workspace {
-  border: 1px solid transparentize(black, 0.6);
-  background-color: transparentize(black, 0.8);
+  border: 1px solid $borders_color;
 }
 
 .workspace-graph .workspace:active {

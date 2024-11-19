@@ -294,7 +294,15 @@ StScrollBar {
   font-weight: normal; }
 
 .popup-device-menu-item {
-  spacing: .5em; }
+  spacing: .5em;
+  font-weight: bold;
+  color: #303030; }
+  .popup-device-menu-item:insensitive {
+    color: #303030;
+    spacing: 1em; }
+  .popup-device-menu-item .popup-inactive-menu-item {
+    font-weight: normal;
+    color: #303030; }
 
 .popup-subtitle-menu-item {
   font-weight: normal; }
@@ -566,7 +574,8 @@ StScrollBar {
   padding: .5em;
   min-width: 350px;
   border: 1px solid rgba(0, 0, 0, 0);
-  background-color: #c0c0c0; }
+  background-color: #c0c0c0;
+  border-radius: 6px; }
 
 .calendar-events-no-events-button {
   margin: 6px 0 6px 0;
@@ -1525,7 +1534,6 @@ StScrollBar {
     padding: 0; }
 
 .workspace-button {
-  border: 1px solid rgba(0, 0, 0, 0.4);
   background-color: rgba(0, 0, 0, 0.2);
   width: 20px;
   height: 14px;
@@ -1552,11 +1560,11 @@ StScrollBar {
 /* Controls the style when using the "Visual representation" option */
 .workspace-graph {
   padding: 3px;
-  spacing: 6px; }
+  spacing: 6px;
+  border-radius: 6px; }
 
 .workspace-graph .workspace {
-  border: 1px solid rgba(0, 0, 0, 0.4);
-  background-color: rgba(0, 0, 0, 0.2); }
+  border: 1px solid #b5b5b5; }
 
 .workspace-graph .workspace:active {
   border: 1px solid #35a854; }
