@@ -4,7 +4,7 @@ $accent_color: if($variant == 'light', #35a854, #35a854);
 $radius: 6px;
 
 // Panel
-$panel_bg: if($variant == 'light', #e8e8e8, #1a1a1a);
+$panel_bg: if($variant == 'light', #f0f0f0, #1a1a1a);
 $panel_fg: if($variant =='light', #303030, #e1e1e1);
 
 // Clutter background colors

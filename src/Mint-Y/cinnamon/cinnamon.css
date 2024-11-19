@@ -412,7 +412,7 @@ StScrollBar {
 .panel-top, .panel-bottom, .panel-left, .panel-right {
   color: #ffffff;
   border: none;
-  background-color: rgba(232, 232, 232, 0.99);
+  background-color: rgba(240, 240, 240, 0.99);
   font-size: 1em;
   padding: 0px; }
 
@@ -1577,7 +1577,7 @@ StScrollBar {
 .workspace-graph .workspace:active .windows {
   -active-window-background: white;
   -active-window-border: rgba(0, 0, 0, 0.8);
-  -inactive-window-background: whitesmoke;
+  -inactive-window-background: #fdfdfd;
   -inactive-window-border: rgba(0, 0, 0, 0.8); }
 
 .panel-launchers {
