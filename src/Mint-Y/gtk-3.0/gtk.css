@@ -3053,7 +3053,7 @@ SushiFontWidget {
 
 vte-terminal.terminal-screen {
   -TerminalScreen-background-darkness: 1.0;
-  background-color: #3f3f3f;
+  background-color: #2b2b2b;
   color: #fff; }
 
 terminal-screen-container,
@@ -3076,7 +3076,7 @@ TerminalWindow .notebook .active-page .button:active, TerminalWindow .notebook .
 
 vte-terminal {
   -TerminalScreen-background-darkness: 1.0;
-  background-color: #3f3f3f;
+  background-color: #2b2b2b;
   color: #fff; }
 
 .terminator-terminal-window > paned {

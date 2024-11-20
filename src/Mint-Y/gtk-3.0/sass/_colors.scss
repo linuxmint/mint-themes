@@ -118,4 +118,7 @@ $wm_button_active_bg: if($variant == 'light', #909090, #949494);
 $wm_icon_bg: if($variant == 'light', #404040, #909090);
 $wm_icon_unfocused_bg: if($variant == 'light', #b6b6b6, #555555);
 $wm_icon_hover_bg: if($variant == 'light', #404040, #C4C7CC);
-$wm_icon_active_bg: #ffffff
+$wm_icon_active_bg: #ffffff;
+
+// Terminal color
+$terminal_bg: #2b2b2b;
