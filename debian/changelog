@@ -1,3 +1,28 @@
+mint-themes (2.1.9) xia; urgency=medium
+
+  [ Clement Lefebvre ]
+  * Remove "Linux Mint" Cinnamon theme
+  * cinnamon: Remove 0% mix calls
+  * cinnamon: Let the panel get its own color
+  * cinnamon: rename sass variable
+  * cinnamon: remove obsolete section
+  * cinnamon: Darken theme
+  * cinnamon: Remove borders on popovers
+  * cinnamon: Introduce radius, subtle separators, indented submenus
+  * cinnamon: Fix wifi/battery titles
+  * cinnamon: Apply radius to calendar box
+  * cinnamon: Fix workspace switcher
+  * cinnamon: Define fg_color, simplify applet borders
+  * cinnamon: Lighten up the light panel
+  * cinnamon: Apply radius to calendar
+  * cinnamon: Adapt to new 6.4 dialogs/osd
+  * gtk3: Darken terminal to blend with the titlebar
+
+  [ Double-A-92 ]
+  * Create README.md and describe how to add a new theme (#442)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 26 Nov 2024 12:08:33 +0000
+
 mint-themes (2.1.8) wilma; urgency=medium
 
   [ Michael Webster ]
