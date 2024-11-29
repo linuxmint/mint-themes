@@ -1,3 +1,10 @@
+mint-themes (2.2.0) xia; urgency=medium
+
+  * cinnamon: Darken switch widget
+  * cinnamon: Update thumbnails
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 29 Nov 2024 15:22:18 +0000
+
 mint-themes (2.1.9) xia; urgency=medium
 
   [ Clement Lefebvre ]
