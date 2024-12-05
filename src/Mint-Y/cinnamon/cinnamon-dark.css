@@ -223,9 +223,9 @@ StScrollBar {
   padding: 8px; }
 
 .menu {
-  border: 1px solid rgba(0, 0, 0, 0);
   color: #e1e1e1;
-  background-color: #222222; }
+  background-color: #222222;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5); }
   .menu-top {
     border-radius: 0 0 6px 6px; }
   .menu-bottom {
@@ -961,7 +961,8 @@ StScrollBar {
   border: 1px solid rgba(0, 0, 0, 0);
   border-radius: 6px; }
   .menu-favorites-button:hover {
-    background-color: #454545; }
+    background-color: #454545;
+    border: 1px solid rgba(0, 0, 0, 0); }
 
 .menu-places-box {
   padding: 10px;

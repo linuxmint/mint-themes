@@ -266,9 +266,9 @@ StScrollBar {
 // Popovers/Menus
 //
 .menu {
-  border: 1px solid $menus_border_color;
   color: $fg_color;
   background-color: $bg_color;
+  box-shadow: 0 0 6px $shadow_color;
 
   &-top {
     border-radius: 0 0 $radius $radius;
@@ -1228,6 +1228,7 @@ StScrollBar {
 
     &:hover {
       background-color: $bg_color3;
+      border: 1px solid $menus_border_color;
     }
   }
 

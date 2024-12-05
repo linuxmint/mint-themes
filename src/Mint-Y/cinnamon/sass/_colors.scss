@@ -16,6 +16,7 @@ $bg_color4: if($variant == 'light', #c0c0c0, #393939);
 // Borders and separators
 $borders_color: if($variant =='light', darken($bg_color, 20%), $bg_color2);
 $menus_border_color: transparentize(black, 1.0);
+$shadow_color: rgba(0, 0, 0, 0.5);
 $separator_color: if($variant == 'light', darken($bg_color, 15%), lighten($bg_color, 2%));
 
 // Text
