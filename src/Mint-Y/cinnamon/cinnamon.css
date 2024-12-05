@@ -1571,7 +1571,7 @@ StScrollBar {
     border: 1px solid #e8e8e8;
     color: #303030;
     background-color: #e8e8e8;
-    border: 1px solid #303030; }
+    border: 1px solid #9c9c9c; }
   .audio-device-selection-dialog .audio-selection-box .audio-selection-device:hover {
     border: 1px solid #e8e8e8;
     color: #303030;
@@ -1600,7 +1600,7 @@ StScrollBar {
     border: 1px solid #b0b0b0;
     color: #303030;
     background-color: #b0b0b0;
-    border: 1px solid #303030; }
+    border: 1px solid #646464; }
   .dialog .dialog-button:hover {
     border: 1px solid #b0b0b0;
     color: #303030;
@@ -1622,6 +1622,11 @@ StScrollBar {
   border: 1px solid #35a854;
   color: #303030;
   background-color: #35a854; }
+  .dialog .dialog-button:focus:default {
+    border: 1px solid #35a854;
+    color: #303030;
+    background-color: #35a854;
+    border: 1px solid #10341a; }
   .dialog .dialog-button:hover:default {
     border: 1px solid #35a854;
     color: #303030;
@@ -1644,15 +1649,15 @@ StScrollBar {
   border: 1px solid #F04A50;
   color: #303030;
   background-color: #F04A50; }
-  .dialog .dialog-button:hover:destructive-action {
-    border: 1px solid #F04A50;
-    color: #303030;
-    background-color: #f4797e; }
   .dialog .dialog-button:focus:destructive-action {
     border: 1px solid #F04A50;
     color: #303030;
     background-color: #F04A50;
-    border: 1px solid #303030; }
+    border: 1px solid #950c11; }
+  .dialog .dialog-button:hover:destructive-action {
+    border: 1px solid #F04A50;
+    color: #303030;
+    background-color: #f4797e; }
   .dialog .dialog-button:active:destructive-action {
     border: 1px solid #F04A50;
     color: #303030;
@@ -1671,6 +1676,7 @@ StScrollBar {
   background-color: #e8e8e8;
   border-radius: 18px;
   border: 1px solid #b5b5b5;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
   padding: 18px; }
   .dialog .dialog-content-box {
     margin-top: 8px;

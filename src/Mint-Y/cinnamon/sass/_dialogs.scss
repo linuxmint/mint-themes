@@ -36,6 +36,7 @@ $osd_radius: 20px;
   $active_button_bg_color: darken($hover_button_bg_color, 5%);
   $checked_button_bg_color: darken($hover_button_bg_color, 5%);
   $insensitive_button_bg_color: darken($button_bg_color,  3%);
+  $focus_button_bg_border_color: if($variant =='light', darken($button_bg_color, 30%), lighten($button_bg_color, 30%)); 
 
   border: 1px solid $button_bg_color;
 
@@ -53,7 +54,7 @@ $osd_radius: 20px;
   @if $type == 'focus' {
     color: $tc;
     background-color: $button_bg_color;
-    border: 1px solid $fg_color;
+    border: 1px solid $focus_button_bg_border_color;
   }
 
   // hover button
@@ -140,6 +141,7 @@ $osd_radius: 20px;
   @extend %dialog_button;
 
   @include styled_button(normal, $c: $accent_color, $style: default);
+  &:focus { @include styled_button(focus, $c: $accent_color, $style: default); }
   &:hover { @include styled_button(hover, $c: $accent_color, $style: default); }
   &:active { @include styled_button(active, $c: $accent_color, $style: default); }
   &:checked { @include styled_button(checked, $c: $accent_color, $style: default); }
@@ -154,8 +156,8 @@ $osd_radius: 20px;
   @extend %dialog_button;
 
   @include styled_button(normal, $c: $osd_destructive_color, $style: default);
-  &:hover { @include styled_button(hover, $c: $osd_destructive_color, $style: default); }
   &:focus { @include styled_button(focus, $c: $osd_destructive_color, $style: default); }
+  &:hover { @include styled_button(hover, $c: $osd_destructive_color, $style: default); }
   &:active { @include styled_button(active, $c: $osd_destructive_color, $style: default); }
   &:checked { @include styled_button(checked, $c: $osd_destructive_color, $style: default); }
   &:insensitive {
