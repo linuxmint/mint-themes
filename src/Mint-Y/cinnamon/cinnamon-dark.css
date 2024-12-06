@@ -1556,7 +1556,7 @@ StScrollBar {
   background-color: rgba(0, 0, 0, 0);
   border-radius: 0px; }
 
-.prompt-dialog-error-label, .prompt-dialog-info-label, .prompt-dialog-null-label, .run-dialog-description, .message-dialog-content .message-dialog-caption {
+.prompt-dialog-error-label, .prompt-dialog-info-label, .prompt-dialog-null-label, .run-dialog-description, .message-dialog-content .message-dialog-caption, .dialog-list .dialog-list-box .dialog-list-item .dialog-list-item-description {
   font-weight: 400;
   font-size: 0.818em; }
 
@@ -1567,6 +1567,10 @@ StScrollBar {
 .workspace-switch-osd, .media-keys-osd, .message-dialog-content .message-dialog-title.leightweight {
   font-weight: 700;
   font-size: 1.182em; }
+
+.dialog-list .dialog-list-title {
+  font-weight: 700;
+  font-size: 1em; }
 
 .audio-device-selection-dialog .audio-selection-box .audio-selection-device {
   border: 1px solid #222222;
@@ -1689,6 +1693,34 @@ StScrollBar {
     max-width: 28em; }
   .dialog .confirm-dialog-title {
     text-align: center; }
+
+.dialog-list {
+  spacing: 18px; }
+  .dialog-list .dialog-list-title {
+    text-align: center; }
+  .dialog-list .dialog-list-scrollview {
+    max-height: 200px; }
+  .dialog-list .dialog-list-box {
+    spacing: 1em; }
+    .dialog-list .dialog-list-box .dialog-list-item {
+      spacing: 1em; }
+      .dialog-list .dialog-list-box .dialog-list-item .dialog-list-item-title {
+        font-weight: bold; }
+      .dialog-list .dialog-list-box .dialog-list-item .dialog-list-item-description {
+        color: #d4d4d4; }
+
+.end-session-dialog {
+  width: 40em; }
+  .end-session-dialog .dialog-content-box {
+    spacing: 0; }
+  .end-session-dialog .dialog-list {
+    spacing: 0; }
+    .end-session-dialog .dialog-list .dialog-list-title {
+      color: #F27835;
+      background-color: tranparentize(#F27835, 0.9);
+      padding: 9px;
+      border-radius: 20px;
+      margin: 4px 0; }
 
 .message-dialog-content {
   spacing: 18px; }

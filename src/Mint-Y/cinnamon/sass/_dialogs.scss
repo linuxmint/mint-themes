@@ -114,6 +114,11 @@ $osd_radius: 20px;
   @include fontsize(13pt);
 }
 
+%heading {
+  font-weight: 700;
+  @include fontsize(11pt);
+}
+
 %flat_styled_button {
   @include styled_button(normal, $style: flat);
   &:focus { @include styled_button(focus, $style: flat); }
@@ -190,6 +195,52 @@ $osd_radius: 20px;
   .confirm-dialog-title {
     @extend %title_2;
     text-align: center;
+  }
+}
+
+// Lists in dialogs
+
+.dialog-list {
+  spacing: $base_padding * 3;
+
+  .dialog-list-title {
+    @extend %heading;
+    text-align: center;
+  }
+
+  .dialog-list-scrollview { max-height: 200px; }
+  .dialog-list-box {
+    spacing: 1em;
+
+    .dialog-list-item {
+      spacing: 1em;
+
+      .dialog-list-item-title { font-weight: bold; }
+      .dialog-list-item-description {
+        @extend %caption;
+        color: darken($fg_color, 5%);
+      }
+    }
+  }
+}
+
+// End session dialog
+
+.end-session-dialog {
+  width: 40em;
+
+  .dialog-content-box { spacing: 0; }
+
+  .dialog-list {
+    spacing: 0;
+
+    .dialog-list-title {
+      color: $warning_color;
+      background-color: tranparentize($warning_color, 0.9);
+      padding: $base_padding * 1.5;
+      border-radius: $osd_radius;
+      margin: $base_margin 0;
+    }
   }
 }
 
