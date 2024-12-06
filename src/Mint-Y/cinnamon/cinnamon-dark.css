@@ -65,6 +65,11 @@ stage {
     icon-size: 16px;
     warning-color: #F27835;
     padding: 0 4px; }
+  .prompt-dialog-password-entry StLabel.hint-text, .run-dialog-entry StLabel.hint-text, #menu-search-entry StLabel.hint-text, .popup-menu #notification StEntry StLabel.hint-text {
+    color: rgba(225, 225, 225, 0.3); }
+  .prompt-dialog-password-entry StIcon.peek-password, .run-dialog-entry StIcon.peek-password, #menu-search-entry StIcon.peek-password, .popup-menu #notification StEntry StIcon.peek-password {
+    icon-size: 16px;
+    color: #e1e1e1; }
 
 .notification StEntry {
   padding: 7px;
@@ -1676,7 +1681,6 @@ StScrollBar {
   background-color: #222222;
   border-radius: 18px;
   border: 1px solid #303030;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
   padding: 18px; }
   .dialog .dialog-content-box {
     margin-top: 8px;
