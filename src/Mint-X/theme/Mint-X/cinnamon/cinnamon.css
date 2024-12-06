@@ -1159,67 +1159,6 @@ StScrollBar StButton#vhandle:hover {
     color: #a6a6a6;
 }
 
-/* ===================================================================
- * Run dialog (runDialog.js)
- * ===================================================================*/
-.run-dialog-label {
-    font-size: 0em;
-    padding-bottom: 0px;
-    color: rgba(0, 0, 0, 0);
-    font-weight: bold;
-}
-
-.run-dialog-error-label {
-}
-
-.run-dialog-error-box {
-    padding-top: 15px;
-    spacing: 5px;
-}
-
-.run-dialog-entry {
-    padding: 4px 12px;
-    color: #2b2b2b;
-    border-image: url("misc-assets/entry.png") 6;
-    border-radius: 4px;
-    caret-color: #2b2b2b;
-    caret-size: 1px;
-    width: 250px;
-    height: 16px;
-    transition-duration: 300;
-    selected-color: #fff;
-    selection-background-color: #accd8a;
-}
-
-.run-dialog-entry:focus {
-    padding: 4px 12px;
-    color: #2b2b2b;
-    border-image: url("misc-assets/entry-focus.png") 6;
-    border-radius: 4px;
-    width: 250px;
-    height: 16px;
-    selected-color: #fff;
-    caret-color: #2b2b2b;
-    caret-size: 1px;
-    selection-background-color: #accd8a;
-    transition-duration: 150;
-}
-
-.run-dialog-completion-box {
-    padding-left: 15px;
-}
-
-.run-dialog {
-    padding-right: 12px;
-    padding-left: 12px;
-    padding-bottom: 0;
-    padding-top: 20px;
-}
-
-.lightbox {
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
 /* =============================================================================
  * CinnamonMountOperation Dialogs (cinnamonMountOperation.js)
  * ============================================================================= */
