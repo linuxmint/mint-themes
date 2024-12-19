@@ -32,11 +32,11 @@ $osd_radius: 20px;
   @if $style == 'default' { $button_bg_color: $c;}
 
   // button base state background colors
-  $hover_button_bg_color: lighten($button_bg_color, 10%);
-  $active_button_bg_color: darken($hover_button_bg_color, 5%);
-  $checked_button_bg_color: darken($hover_button_bg_color, 5%);
-  $insensitive_button_bg_color: darken($button_bg_color,  3%);
-  $focus_button_bg_border_color: if($variant =='light', darken($button_bg_color, 30%), lighten($button_bg_color, 30%)); 
+  $hover_button_bg_color: if($variant =='light', darken($button_bg_color, 10%), lighten($button_bg_color, 10%));
+  $active_button_bg_color: if($variant =='light', lighten($hover_button_bg_color, 5%), darken($hover_button_bg_color, 5%));
+  $checked_button_bg_color: if($variant =='light', lighten($hover_button_bg_color, 5%), darken($hover_button_bg_color, 5%));
+  $insensitive_button_bg_color: if($variant =='light', lighten($button_bg_color,  3%), darken($button_bg_color,  3%));
+  $focus_button_bg_border_color: if($variant =='light', darken($button_bg_color, 30%), lighten($button_bg_color, 30%));
 
   border: 1px solid $button_bg_color;
 
@@ -319,6 +319,29 @@ $osd_radius: 20px;
   }
 
   &-error-label { color: $error_color; }
+}
+
+// polkit dialog
+
+.polkit-dialog {
+
+  &-user-layout {
+    text-align: center;
+    spacing: 2px;
+  }
+
+  &-user-combo {
+    @extend %flat_styled_button;
+    @extend %heading;
+
+    border-radius: $radius;
+    padding: $base_padding $base_padding * 6;
+
+    // special case the :insensitive button sinc we want
+    // the label to be the normal color when there are
+    // not multiple users
+    &:insensitive { color: $fg_color; }
+  }
 }
 
 // Audio selection dialog

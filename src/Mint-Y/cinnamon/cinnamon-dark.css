@@ -1551,32 +1551,32 @@ StScrollBar {
   font-weight: 700;
   font-size: 1.182em; }
 
-.dialog-list .dialog-list-title {
+.polkit-dialog-user-combo, .dialog-list .dialog-list-title {
   font-weight: 700;
   font-size: 1em; }
 
-.audio-device-selection-dialog .audio-selection-box .audio-selection-device {
+.audio-device-selection-dialog .audio-selection-box .audio-selection-device, .polkit-dialog-user-combo {
   border: 1px solid #222222;
   color: #e1e1e1;
   background-color: #222222; }
-  .audio-device-selection-dialog .audio-selection-box .audio-selection-device:focus {
+  .audio-device-selection-dialog .audio-selection-box .audio-selection-device:focus, .polkit-dialog-user-combo:focus {
     border: 1px solid #222222;
     color: #e1e1e1;
     background-color: #222222;
     border: 1px solid #6f6f6f; }
-  .audio-device-selection-dialog .audio-selection-box .audio-selection-device:hover {
+  .audio-device-selection-dialog .audio-selection-box .audio-selection-device:hover, .polkit-dialog-user-combo:hover {
     border: 1px solid #222222;
     color: #e1e1e1;
     background-color: #3c3c3c; }
-  .audio-device-selection-dialog .audio-selection-box .audio-selection-device:insensitive {
+  .audio-device-selection-dialog .audio-selection-box .audio-selection-device:insensitive, .polkit-dialog-user-combo:insensitive {
     border: 1px solid #222222;
     color: rgba(225, 225, 225, 0.5);
     background-color: #222222; }
-  .audio-device-selection-dialog .audio-selection-box .audio-selection-device:selected, .audio-device-selection-dialog .audio-selection-box .audio-selection-device:active {
+  .audio-device-selection-dialog .audio-selection-box .audio-selection-device:selected, .polkit-dialog-user-combo:selected, .audio-device-selection-dialog .audio-selection-box .audio-selection-device:active, .polkit-dialog-user-combo:active {
     border: 1px solid #222222;
     color: #e1e1e1;
     background-color: #2f2f2f; }
-  .audio-device-selection-dialog .audio-selection-box .audio-selection-device:checked {
+  .audio-device-selection-dialog .audio-selection-box .audio-selection-device:checked, .polkit-dialog-user-combo:checked {
     border: 1px solid #222222;
     color: #e1e1e1;
     background-color: #2f2f2f; }
@@ -1744,6 +1744,16 @@ StScrollBar {
     text-align: center; }
   .prompt-dialog-error-label {
     color: #FC4138; }
+
+.polkit-dialog-user-layout {
+  text-align: center;
+  spacing: 2px; }
+
+.polkit-dialog-user-combo {
+  border-radius: 6px;
+  padding: 6px 36px; }
+  .polkit-dialog-user-combo:insensitive {
+    color: #e1e1e1; }
 
 .audio-device-selection-dialog {
   min-width: 24em; }
