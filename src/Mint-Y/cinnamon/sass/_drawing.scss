@@ -9,14 +9,14 @@
 
   @if $t==normal {
     color: $text_color;
-    background-color: $bg_color2;
+    background-color: $entry_bg;
     border: 1px solid $entry_border;
     box-shadow: inset 0 2px 4px transparentize($entry_bg, 0.95);
   }
 
   @if $t==focus {
     color: $fg_color;
-    background-color: $bg_color2;
+    background-color: $entry_bg;
     border: 1px solid $accent_color;
     box-shadow: inset 0 2px 4px transparentize($entry_bg, 0.95);
   }
