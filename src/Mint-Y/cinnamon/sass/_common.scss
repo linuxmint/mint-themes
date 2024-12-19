@@ -1695,84 +1695,64 @@ StScrollBar {
   }
 }
 
-//
-// Workspace Switcher applet (workspaceSwitcher.js)
-//
-#workspaceSwitcher {
-  spacing: 0px;
-  padding: 3px;
-}
+// workspace switcher applet
 
-/* Controls the styling when using the "Simple buttons" option */
-.workspace-switcher {
-  padding-left: 3px;
-  padding-right: 3px;
+.panel-top,
+.panel-bottom {
 
-  .panel-left &,
-  .panel-right & {
-    padding: 0;
-  }
+  .workspace-switcher { padding: 0 4px;}
 }
 
 .workspace-button {
-  background-color: transparentize(black, 0.8);
-  width: 20px;
-  height: 14px;
-  color: transparentize($selected_fg_color, 0.55);
-  padding: 3px;
-  padding-top: 4px;
-  transition-duration: 200;
+  border: 1px solid $borders_color;
+  width: 2em;
+  color: $insensitive_fg_color;
+  background-color: transparentize($fg_color, 0.95);
 
-  &.vertical {
-    height: 1.5em;
-    width: 24px;
-    padding: 0;
-    padding-top: 3px;
-    padding-bottom: 3px;
-  }
+  &.vertical { height: 2em; }
 
   &:outlined {
-    background-color: $accent_color;
-    color: $selected_fg_color;
+    background-color: $bg_color2;
+    color: $fg_color;
 
-    &:hover {
-      background-color: transparentize($accent_color, 0.3);
-      color: $selected_fg_color;
+    &:hover { background-color: $bg_color3; }
+  }
+
+  &:hover { background-color: $bg_color2; }
+
+  &:shaded { // this is a workspace with no open windows
+    background-color: darken($bg_color, 5%);
+  }
+}
+
+$workspace_window_color: if($variant == 'light', black, white);
+
+.workspace-graph {
+  padding: 4px;
+  spacing: 4px;
+
+  .workspace {
+    border: 1px solid transparentize($fg_color, 0.8);
+    background-color: $bg_color;
+
+    &:active {
+      border-color: $accent_color;
+
+      .windows {
+        -active-window-background: transparentize($workspace_window_color, 0.7);
+        -active-window-border: transparentize($workspace_window_color, 0.65);
+        -inactive-window-background: transparentize($workspace_window_color, 0.9);
+        -inactive-window-border: transparentize($workspace_window_color, 0.85);
+      }
+    }
+
+    .windows {
+      -active-window-background: transparentize($workspace_window_color, 0.7);
+      -active-window-border: transparentize($workspace_window_color, 0.65);
+      -inactive-window-background: transparentize($workspace_window_color, 0.9);
+      -inactive-window-border: transparentize($workspace_window_color, 0.85);
     }
   }
-
-  &:hover {
-    background-color: transparentize($fg_color, 0.8);
-    color: $selected_fg_color;
-  }
-}
-
-/* Controls the style when using the "Visual representation" option */
-.workspace-graph {
-  padding: 3px;
-  spacing: 6px;
-}
-
-.workspace-graph .workspace {
-  border: 1px solid $borders_color;
-}
-
-.workspace-graph .workspace:active {
-  border: 1px solid $accent_color;
-}
-
-.workspace-graph .workspace .windows {
-  -active-window-background: lighten($panel_bg, 15%);
-  -active-window-border: rgba(0, 0, 0, 0.8);
-  -inactive-window-background: lighten($panel_bg, 15%);
-  -inactive-window-border: rgba(0, 0, 0, 0.8);
-}
-
-.workspace-graph .workspace:active .windows {
-  -active-window-background: lighten($panel_bg, 25%);
-  -active-window-border: rgba(0, 0, 0, 0.8);
-  -inactive-window-background: lighten($panel_bg, 5%);
-  -inactive-window-border: rgba(0, 0, 0, 0.8);
 }
 
 //
