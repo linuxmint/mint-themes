@@ -1415,18 +1415,14 @@ StScrollBar {
     background: #b5b5b5; }
 
 .applet-box {
-  padding-left: 4px;
-  padding-right: 4px;
-  spacing: 4px;
+  padding: 0 5px;
+  spacing: 5px;
   color: #303030;
   text-shadow: none;
   transition-duration: 100;
   text-align: center; }
   .applet-box.vertical {
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 3px;
-    padding-bottom: 3px; }
+    padding: 5px 0; }
   .applet-box:hover, .applet-box:checked {
     color: #303030;
     background-color: #c0c0c0; }
