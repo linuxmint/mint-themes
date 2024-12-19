@@ -1461,13 +1461,15 @@ StScrollBar {
 
 .applet-cornerbar {
   width: 8px;
-  background-color: #303030; }
-  .applet-cornerbar-box {
-    padding: 4px 4px; }
-    .applet-cornerbar-box:hover > .applet-cornerbar {
-      background-color: #303030; }
+  background-color: #303030;
+  border: 1px solid #303030; }
   .applet-cornerbar.vertical {
     height: 8px; }
+  .applet-cornerbar-box {
+    background: none; }
+
+.applet-cornerbar-box:hover > .applet-cornerbar {
+  background-color: #4a4a4a; }
 
 .desklet {
   color: #e1e1e1; }

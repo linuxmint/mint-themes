@@ -60,4 +60,4 @@ $button_border: $entry_border;
 $applet_separator_color: $borders_color;
 
 $corner_bar_unhighlighted: $applet_separator_color;
-$corner_bar_highlighted: if($variant == 'light', darken($applet_separator_color, 10%), opacify($applet_separator_color, .1));
+$corner_bar_highlighted: if($variant == 'light', darken($applet_separator_color, 10%), lighten($applet_separator_color, 10%));

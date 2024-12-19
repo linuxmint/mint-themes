@@ -1908,25 +1908,21 @@ StScrollBar {
     margin: 0px;
 }
 
-//
-// Cornerbar Applet
-//
+// cornerbar applet
+
 .applet-cornerbar {
   width: 8px;
   background-color: $corner_bar_unhighlighted;
+  border: 1px solid $borders_color;
+
+  &.vertical { height: 8px; }
 
   &-box {
-    padding: 4px 4px;
-
-    &:hover > .applet-cornerbar {
-      background-color: $corner_bar_highlighted;
-    }
-  }
-
-  &.vertical {
-    height: 8px;
+    background: none;
   }
 }
+
+.applet-cornerbar-box:hover > .applet-cornerbar { background-color: $corner_bar_highlighted; }
 
 //
 // Desklets (desklet.js)
