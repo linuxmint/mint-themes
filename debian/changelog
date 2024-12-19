@@ -1,3 +1,14 @@
+mint-themes (2.2.2) xia; urgency=medium
+
+  * cinnamon: Add rounded corners in calendar event and today buttons
+  * cinnamon: Fix cornerbar styling
+  * cinnamon: Increase applet spacing
+  * cinnamon: Fix workspace switcher
+  * cinnamon: Lighten bg_color2 in light theme
+  * cinnamon: Fix flat buttons in light theme
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 19 Dec 2024 11:50:45 +0000
+
 mint-themes (2.2.1) xia; urgency=medium
 
   * cinnamon: Add shadows around popupmenus
