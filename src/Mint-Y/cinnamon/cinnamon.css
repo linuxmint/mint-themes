@@ -608,7 +608,9 @@ StScrollBar {
   padding: 0; }
 
 .calendar-event-button {
-  border: 1px solid rgba(0, 0, 0, 0); }
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius-topright: 6px;
+  border-radius-bottomright: 6px; }
   .calendar-event-button .calendar-event-time-past {
     color: rgba(48, 48, 48, 0.4);
     font-weight: bold;
@@ -662,7 +664,7 @@ StScrollBar {
         font-weight: bold; }
 
 .calendar-event-color-strip {
-  width: 2px; }
+  width: 3px; }
 
 .calendar-today-home-button {
   padding: 6px; }
@@ -681,7 +683,8 @@ StScrollBar {
   text-align: center; }
 
 .calendar-today-home-button-enabled {
-  padding: 6px; }
+  padding: 6px;
+  border-radius: 6px; }
   .calendar-today-home-button-enabled:hover {
     background-color: #35a854; }
     .calendar-today-home-button-enabled:hover .calendar-today-day-label {

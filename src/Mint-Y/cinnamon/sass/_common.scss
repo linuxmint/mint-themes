@@ -748,6 +748,8 @@ StScrollBar {
 
 .calendar-event-button {
   border: 1px solid rgba(0,0,0,0);
+  border-radius-topright: $radius;
+  border-radius-bottomright: $radius;
 
   .calendar-event-time-past {
     color: transparentize($fg_color, 0.6);
@@ -828,7 +830,7 @@ StScrollBar {
 }
 
 .calendar-event-color-strip {
-    width: 2px;
+    width: 3px;
 }
 
 .calendar-today-home-button {
@@ -852,6 +854,7 @@ StScrollBar {
 
 .calendar-today-home-button-enabled {
   padding: 6px;
+  border-radius: $radius;
 
   &:hover {
     background-color: $accent_color;
