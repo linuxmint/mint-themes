@@ -131,7 +131,7 @@ $osd_radius: 20px;
 
 %dialog_button {
   font-weight: bold;
-  padding: $base_padding * 2;
+  padding: $base_padding * 2 - 1;
   border-radius: $dialog_radius;
 
   @include styled_button(normal);
