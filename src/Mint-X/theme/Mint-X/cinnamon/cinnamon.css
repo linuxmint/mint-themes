@@ -1445,6 +1445,29 @@ StScrollBar StButton#vhandle:hover {
 }
 
 /* ###################################################################
+ * Audio device selection dialog
+ * ###################################################################*/
+
+.audio-device-selection-dialog .audio-selection-box .audio-selection-device {
+    border-image: url("button-assets/button.png") 4;
+    color: rgb(70, 70, 70);
+}
+.audio-device-selection-dialog .audio-selection-box .audio-selection-device:focus {
+    border-image: url("button-assets/button-focus.png") 4;
+}
+.audio-device-selection-dialog .audio-selection-box .audio-selection-device:hover {
+    border-image: url("button-assets/button-hover.png") 4;
+}
+.audio-device-selection-dialog .audio-selection-box .audio-selection-device:insensitive, .polkit-dialog-user-combo:insensitive, .sound-player StButton:insensitive:small {
+    color: #a6a6a6
+}
+.audio-device-selection-dialog .audio-selection-box .audio-selection-device:selected,
+.audio-device-selection-dialog .audio-selection-box .audio-selection-device:active,
+.audio-device-selection-dialog .audio-selection-box .audio-selection-device:checked {
+    border-image: url("button-assets/button-pressed.png") 4;
+}
+
+/* ###################################################################
  * Cinnamon Specific Section
  * ###################################################################*/
 
