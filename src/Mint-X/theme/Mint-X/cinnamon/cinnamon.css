@@ -1458,7 +1458,7 @@ StScrollBar StButton#vhandle:hover {
 .audio-device-selection-dialog .audio-selection-box .audio-selection-device:hover {
     border-image: url("button-assets/button-hover.png") 4;
 }
-.audio-device-selection-dialog .audio-selection-box .audio-selection-device:insensitive, .polkit-dialog-user-combo:insensitive, .sound-player StButton:insensitive:small {
+.audio-device-selection-dialog .audio-selection-box .audio-selection-device:insensitive {
     color: #a6a6a6
 }
 .audio-device-selection-dialog .audio-selection-box .audio-selection-device:selected,
