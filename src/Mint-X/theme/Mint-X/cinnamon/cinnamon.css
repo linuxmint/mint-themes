@@ -123,7 +123,7 @@ StScrollBar StButton#vhandle:hover {
 
 .notification-button:focus:hover,
 .notification-icon-button:focus:hover,
-.modal-dialog-button:focus:hover {
+.dialog-button:focus:hover {
     border-image: url("button-assets/button-focus-hover.png") 4;
 }
 
@@ -1111,53 +1111,62 @@ StScrollBar StButton#vhandle:hover {
 }
 
 /* ===================================================================
- * Modal dialogs (modalDialog.js)
+ * dialogs (dialog.js)
  * ===================================================================*/
-.modal-dialog {
+.dialog {
     border-image: url("background-assets/bg-1.png") 6;
     color: rgb(70, 70, 70);
     padding: 20px;
 }
 
-.modal-dialog-button-box {
-    spacing: 110px;
-    padding-top: 20px;
+.dialog-button-box {
 }
 
-.modal-dialog-button {
+.dialog-button {
     height: 22px;
     color: rgb(70, 70, 70);
     border-image: url("button-assets/button.png") 4;
     padding: 3px 31px 4px;
 }
 
-.modal-dialog-button:hover {
+.dialog-button:hover {
     border-image: url("button-assets/button-hover.png") 4;
 }
 
-.modal-dialog-button:focus {
+.dialog-button:focus {
     border-image: url("button-assets/button-focus.png") 4;
     padding: 3px 31px 4px;
 }
 
-.modal-dialog-button:active,
-.modal-dialog-button:checked {
+.dialog-button:active,
+.dialog-button:checked {
     border-image: url("button-assets/button-pressed.png") 4;
 }
 
-.modal-dialog-button:focus:hover {
+.dialog-button:focus:hover {
     border-image: url("button-assets/button-focus-hover.png") 4;
     padding: 3px 31px 4px;
 }
 
-.modal-dialog-button:focus:checked,
-.modal-dialog-button:focus:active {
+.dialog-button:focus:checked,
+.dialog-button:focus:active {
     border-image: url("button-assets/button-pressed.png") 4;
 }
 
-.modal-dialog-button:disabled {
+.dialog-button:disabled {
     color: #a6a6a6;
 }
+
+.dialog-list .dialog-list-title {
+    padding: 1.3em;
+    text-align: center;
+    color: rgb(70, 70, 70);
+}
+
+.dialog-list-item .dialog-list-item-description {
+    color: rgb(70, 70, 70);
+}
+
 
 /* =============================================================================
  * CinnamonMountOperation Dialogs (cinnamonMountOperation.js)
@@ -1309,26 +1318,9 @@ StScrollBar StButton#vhandle:hover {
  * Policykit authentication dialog
  * ===================================================================*/
 
-.polkit-dialog {
+.prompt-dialog {
     /* this is the width of the entire modal popup */
     width: 500px;
-}
-
-.polkit-dialog-main-layout {
-    spacing: 10px;
-}
-
-.polkit-dialog-headline {
-    text-align: center;
-    font-size: 1.3em;
-    font-weight: bold;
-    color: rgb(70, 70, 70);
-}
-
-.polkit-dialog-description {
-    text-align: center;
-    font-size: 1em;
-    color: rgb(70, 70, 70);
 }
 
 .polkit-dialog-user-layout {
@@ -1339,20 +1331,41 @@ StScrollBar StButton#vhandle:hover {
     padding-right: 10px;
 }
 
-.polkit-dialog-user-root-label {
-    color: #ff0000;
+.polkit-dialog-user-combo {
+    border-image: url("button-assets/button.png") 4;
+    padding: 0.5em 2em;
+    color: rgb(70, 70, 70);
 }
 
-.polkit-dialog-password-label:ltr {
-    padding-top: 0.5em;
-    padding-right: 0.5em;
+.polkit-dialog-user-combo:hover {
+    border-image: url("button-assets/button-hover.png") 4;
 }
 
-.polkit-dialog-password-label:rtl {
-    padding-left: 0.5em;
+.polkit-dialog-user-combo:focus {
+    border-image: url("button-assets/button-focus.png") 4;
 }
 
-.polkit-dialog-password-entry {
+.polkit-dialog-user-combo:active,
+.polkit-dialog-user-combo:checked {
+    border-image: url("button-assets/button-pressed.png") 4;
+}
+
+.polkit-dialog-user-combo:focus:hover {
+    border-image: url("button-assets/button-focus-hover.png") 4;
+    padding: 3px 31px 4px;
+}
+
+.polkit-dialog-user-combo:focus:checked,
+.polkit-dialog-user-combo:active {
+    border-image: url("button-assets/button-pressed.png") 4;
+}
+
+.polkit-dialog-user-combo:disabled,
+.polkit-dialog-user-combo:insensitive {
+    color: #a6a6a6;
+}
+
+.prompt-dialog-password-entry {
     padding: 4px 12px;
     color: #2b2b2b;
     border-image: url("misc-assets/entry.png") 6;
@@ -1360,19 +1373,17 @@ StScrollBar StButton#vhandle:hover {
     caret-color: #2b2b2b;
     caret-size: 1px;
     width: 250px;
-    height: 16px;
     transition-duration: 300;
     selected-color: #fff;
     selection-background-color: #accd8a;
 }
 
-.polkit-dialog-password-entry:focus {
+.prompt-dialog-password-entry:focus {
     padding: 4px 12px;
     color: #2b2b2b;
     border-image: url("misc-assets/entry-focus.png") 6;
     border-radius: 4px;
     width: 250px;
-    height: 16px;
     selected-color: #fff;
     caret-color: #2b2b2b;
     caret-size: 1px;
@@ -1380,20 +1391,57 @@ StScrollBar StButton#vhandle:hover {
     transition-duration: 150;
 }
 
-.polkit-dialog-password-entry .capslock-warning {
+.prompt-dialog-password-entry .capslock-warning {
     icon-size: 16px;
     warning-color: rgb(64, 64, 64);
     padding: 0 4px;
 }
 
-.polkit-dialog-error-label {
+.prompt-dialog-error-label {
     text-align: center;
     font-size: 1em;
     color: #ff0000;
 }
 
-.polkit-dialog-info-label {
+.prompt-dialog-info-label {
     font-size: 1em;
+}
+
+/* ===================================================================
+ * Run dialog
+ * ===================================================================*/
+
+.run-dialog-description {
+    text-align: center;
+    color: rgb(70, 70, 70);
+}
+ 
+.run-dialog-entry {
+    padding: 4px 12px;
+    color: #2b2b2b;
+    border-image: url("misc-assets/entry.png") 6;
+    border-radius: 4px;
+    width: 250px;
+    min-height: 16px;
+    selected-color: #fff;
+    caret-color: #2b2b2b;
+    caret-size: 1px;
+    selection-background-color: #accd8a;
+    transition-duration: 150;
+}
+
+.run-dialog-entry:focus {
+    padding: 4px 12px;
+    color: #2b2b2b;
+    border-image: url("misc-assets/entry-focus.png") 6;
+    border-radius: 4px;
+    width: 250px;
+    min-height: 16px;
+    selected-color: #fff;
+    caret-color: #2b2b2b;
+    caret-size: 1px;
+    selection-background-color: #accd8a;
+    transition-duration: 150;
 }
 
 /* ###################################################################
@@ -2246,20 +2294,24 @@ StScrollBar StButton#vhandle:hover {
     font-size: 4em;
 }
 
-.osd-window {
+.media-keys-osd {
     border-image: url("background-assets/bg-1.png") 6;
     color: rgb(70, 70, 70);
+    margin-bottom: 1em;
     padding: 20px;
     spacing: 1em;
 }
 
-.osd-window .level {
-    height: 0.7em;
+.media-keys-osd .level {
+    min-width: 160px;
+    -barlevel-height: 0.7em;
+    -barlevel-background-color: rgba(70, 70, 70, 0.4);
+    -barlevel-active-background-color: rgb(172, 205, 138);
+    -barlevel-amplify-color: rgb(172, 205, 138);
     border-radius: 0.3em;
-    background-color: rgba(70, 70, 70, 0.4);
 }
 
-.osd-window .level-bar {
+.media-keys-osd .level-bar {
     border-radius: 0.3em;
     background-color: rgb(172, 205, 138);
 }
