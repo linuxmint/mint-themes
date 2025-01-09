@@ -1157,6 +1157,10 @@ StScrollBar StButton#vhandle:hover {
     color: #a6a6a6;
 }
 
+.dialog-button:destructive-action {
+    color: #c21616;
+}
+
 .dialog-list .dialog-list-title {
     padding: 1.3em;
     text-align: center;
