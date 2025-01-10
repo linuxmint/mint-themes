@@ -1693,7 +1693,7 @@ StScrollBar {
         color: #232323; }
 
 .end-session-dialog {
-  width: 40em; }
+  min-width: 40em; }
   .end-session-dialog .dialog-content-box {
     spacing: 0; }
   .end-session-dialog .dialog-list {

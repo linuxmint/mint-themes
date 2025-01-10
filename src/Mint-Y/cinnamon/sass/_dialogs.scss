@@ -227,7 +227,7 @@ $osd_radius: 20px;
 // End session dialog
 
 .end-session-dialog {
-  width: 40em;
+  min-width: 40em;
 
   .dialog-content-box { spacing: 0; }
 
