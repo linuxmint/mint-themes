@@ -1583,7 +1583,7 @@ StScrollBar {
 
 .dialog .dialog-button, .dialog .dialog-button:destructive-action, .dialog .dialog-button:default {
   font-weight: bold;
-  padding: 11px;
+  padding: 12px;
   border-radius: 18px;
   border: 1px solid #303030;
   color: #e1e1e1;
@@ -1693,7 +1693,7 @@ StScrollBar {
         color: #d4d4d4; }
 
 .end-session-dialog {
-  width: 40em; }
+  min-width: 40em; }
   .end-session-dialog .dialog-content-box {
     spacing: 0; }
   .end-session-dialog .dialog-list {

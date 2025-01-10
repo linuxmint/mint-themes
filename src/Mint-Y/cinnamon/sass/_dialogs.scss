@@ -131,7 +131,7 @@ $osd_radius: 20px;
 
 %dialog_button {
   font-weight: bold;
-  padding: $base_padding * 2 - 1;
+  padding: $base_padding * 2;
   border-radius: $dialog_radius;
 
   @include styled_button(normal);
@@ -227,7 +227,7 @@ $osd_radius: 20px;
 // End session dialog
 
 .end-session-dialog {
-  width: 40em;
+  min-width: 40em;
 
   .dialog-content-box { spacing: 0; }
 
