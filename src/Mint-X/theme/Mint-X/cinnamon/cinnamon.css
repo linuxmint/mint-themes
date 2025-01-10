@@ -1411,6 +1411,15 @@ StScrollBar StButton#vhandle:hover {
     font-size: 1em;
 }
 
+.prompt-dialog-password-entry StLabel.hint-text {
+    color: rgba(70, 70, 70, 0.4);
+}
+
+.prompt-dialog-password-entry StIcon.peek-password {
+    icon-size: 16px;
+    color: rgb(70, 70, 70);
+}
+
 /* ===================================================================
  * Run dialog
  * ===================================================================*/
@@ -1613,6 +1622,9 @@ StScrollBar StButton#vhandle:hover {
 .menu-context-menu {
 }
 
+#menu-search-entry StLabel.hint-text {
+    color: rgba(70, 70, 70, 0.3);
+}
 /* ===================================================================
  * Window list applet (window-list@cinnamon.org/applet.js)
  * ===================================================================*/
