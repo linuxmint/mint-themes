@@ -2253,14 +2253,18 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .check-box StBin,
-.check-box:focus StBin {
+.check-box:focus StBin,
+.check-box-2 StBin,
+.check-box-2:focus StBin {
     width: 16px;
     height: 16px;
     background-image: url("control-assets/checkbox-unchecked.png");
 }
 
 .check-box:checked StBin,
-.check-box:focus:checked StBin {
+.check-box:focus:checked StBin,
+.check-box-2:checked StBin,
+.check-box-2:focus:checked StBin {
     background-image: url("control-assets/checkbox-checked.png");
 }
 
