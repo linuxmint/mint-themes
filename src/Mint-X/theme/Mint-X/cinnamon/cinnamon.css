@@ -146,19 +146,19 @@ StScrollBar StButton#vhandle:hover {
     min-width: 100px;
 }
 
-.menu.top {
+.menu.menu-top {
     border-radius: 0 0 4px 4px;
 }
 
-.menu.bottom {
+.menu.menu-bottom {
     border-radius: 4px 4px 0 0;
 }
 
-.menu.left {
+.menu.menu-left {
     border-radius: 0 4px 4px 0;
 }
 
-.menu.right {
+.menu.menu-right {
     border-radius: 4px 0 0 4px;
 }
 
