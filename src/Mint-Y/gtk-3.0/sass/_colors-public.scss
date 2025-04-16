@@ -34,15 +34,15 @@
 //WM
 $wm_bg_unfocused: opacify($header_bg_backdrop, 1);
 
-@define-color wm_title #{"" + $wm_title};
+@define-color wm_title #{"" + $fg_color};
 @define-color wm_title_unfocused #{"" + $wm_title_unfocused};
 
-@define-color wm_bg #{"" + $wm_bg};
+@define-color wm_bg #{"" + $header_bg};
 @define-color wm_bg_unfocused #{"" + $wm_bg_unfocused};
 
-@define-color wm_highlight #{"" + $wm_highlight};
-@define-color wm_border #{"" + $wm_border};
-@define-color wm_border_unfocused #{"" + $wm_border_unfocused};
+@define-color wm_highlight #{"" + $header_highlight};
+@define-color wm_border #{"" + $header_border};
+@define-color wm_border_unfocused #{"" + $header_border_unfocused};
 @define-color wm_shadow alpha(#{"" + black}, 0.35);
 
 //WM Buttons
