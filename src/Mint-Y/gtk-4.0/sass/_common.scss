@@ -1335,8 +1335,8 @@ window.devel {
 
     &, &.flat {
       @include button(undecorated);
-      color: $selection_mode_fg;
-      background-color: transparentize($selection_mode_fg, 1);
+      color: $selected_bg_color;
+      background-color: transparentize($selected_bg_color, 1);
     }
     &:hover { @extend %selected_button_normal; }
     &:active, &:checked { @extend %selected_button_active; }
