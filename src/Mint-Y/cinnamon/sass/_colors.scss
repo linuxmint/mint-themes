@@ -39,11 +39,11 @@ $corner_bar_highlighted: null;
     $corner_bar_highlighted: darken($borders_color, 10%);
 } @else {
     // Dark Variant Colors
-    $bg_color: #222222;
+    $bg_color: #222226;
     $bg_color2: lighten($bg_color, 6%);
     $bg_color3: lighten($bg_color, 14%);
     $bg_color4: lighten($bg_color, 9%);
-    $panel_bg: darken($bg_color, 3%);
+    $panel_bg: darken($bg_color, 2%);
     $borders_color: $bg_color2;
     $separator_color: lighten($bg_color, 2%);
     $panel_fg: #e1e1e1;
