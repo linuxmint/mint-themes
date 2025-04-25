@@ -1486,7 +1486,7 @@ StScrollBar {
     &:hover,
     &:focus {
       color: $panel_fg;
-      background-color: transparentize($panel_fg, 0.7);
+      background-color: $bg_color2;
     }
 
     &:active,
