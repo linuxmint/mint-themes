@@ -58,9 +58,9 @@ $wm_icon_hover_bg:      null;
 } @else {
     // Dark Variant Colors
     $opposite:              WHITE;
-    $base_color:            #404040;
+    $base_color:            #2E2E33;
     $text_color:            #DADADA;
-    $header_bg:             #2B2B2B;
+    $header_bg:             #222226;
     $bg_color:              lighten($header_bg, 5%);
     $borders_color:         darken($bg_color,6%);
     $separator_color:       darken($bg_color, 6%);
@@ -143,4 +143,4 @@ $panel_bg: #2F2F2F;
 $panel_fg: #DADADA;
 
 // Apps
-$terminal_bg: #2B2B2B;
+$terminal_bg: #222226;
