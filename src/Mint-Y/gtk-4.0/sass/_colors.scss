@@ -49,11 +49,11 @@ $wm_icon_hover_bg:      null;
     $header_button_border:  transparentize($fg_color, 0.7);
     $trough_color_treeview: #D9D9D9;
     $trough_color:          #FFFFFF;
-    $wm_title_unfocused:    #9D9D9D;
-    $wm_button_hover_bg:    #FDFDFD;
-    $wm_button_active_bg:   #909090;
+    $wm_title_unfocused:    #9D9D9F;
+    $wm_button_hover_bg:    #FDFDFF;
+    $wm_button_active_bg:   #909092;
     $wm_icon_bg:            #404040;
-    $wm_icon_unfocused_bg:  #B6B6B6;
+    $wm_icon_unfocused_bg:  #B6B6B8;
     $wm_icon_hover_bg:      #404040;
 } @else {
     // Dark Variant Colors
