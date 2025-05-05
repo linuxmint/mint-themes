@@ -9,8 +9,8 @@ import webbrowser
 import sys
 from pathlib import Path
 
-if shutil.which("flatpak-builder") is None:
-    print("You need to install flatpak-builder first")
+if shutil.which("flatpak-builder") is None or shutil.which("appstream-compose") is None:
+    print("You need to install flatpak-builder and appstream-util first")
     quit()
 
 TEST = input("Build and install to test? y/n: ") == "y"
@@ -49,7 +49,7 @@ THEMES = [
 VERSION = subprocess.run(["dpkg-parsechangelog", "--file", "../debian/changelog", "--show-field", "Version"], capture_output=True, text=True).stdout.strip("\n ")
 
 # we don't always 'git tag', search the commit message for the matching version
-escaped_ver = VERSION.replace(".", "\.")
+escaped_ver = VERSION.replace(r".", r"\.")
 COMMIT_HASH = subprocess.run(["git", "log", "--grep", escaped_ver, "--pretty=oneline"], capture_output=True, text=True).stdout.split()[0]
 
 with open("build.json.in") as f:
@@ -87,7 +87,10 @@ for theme in THEMES:
             build_str = ["flatpak-builder", "builddir", "--install", "--user", "org.gtk.Gtk3theme.%s.json" % theme]
             print("\n\nBuilding:", build_str)
             print("\n")
-            subprocess.run(build_str)
+            cp = subprocess.run(build_str, text=True, capture_output=True)
+            if cp.returncode != 0:
+                print("Command returned non-0 for %s: %s" % (theme, str(cp.stderr)))
+                quit()
         except CalledProcessError as e:
             print("Build error for %s: %s" % (theme, str(e)))
             quit()
