@@ -116,7 +116,8 @@ $button_active_border: darken($button_border, 10%);
 $header_border_unfocused: lighten($header_border, 5%);
 
 // Accents
-$selected_bg_color: #35A854;
+$accent_color: #35A854;
+$selected_bg_color: $accent_color;
 $selected_fg_color: #FFFFFF;
 $selected_borders_color: darken($selected_bg_color, 15%);
 $wm_button_close_bg: $selected_bg_color;

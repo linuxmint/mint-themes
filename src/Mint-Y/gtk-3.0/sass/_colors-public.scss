@@ -2,6 +2,7 @@
 
 // Sass thinks we're using the colors in the variables as strings and may shoot
 // warning, it's innocuous and can be defeated by using "" + $var
+@define-color accent_color #{"" + $accent_color};
 @define-color theme_fg_color #{"" + $fg_color};
 @define-color theme_text_color #{"" + $text_color};
 @define-color theme_bg_color #{"" + $bg_color};
