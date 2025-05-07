@@ -1,7 +1,7 @@
 /* GTK NAMED COLORS ---------------- use responsibly! */
-@define-color accent_bg_color @blue_3;
+@define-color accent_bg_color #9ab87c;
 @define-color accent_fg_color white;
-@define-color accent_color #78aeed;
+@define-color accent_color #9ab87c;
 @define-color destructive_bg_color @red_4;
 @define-color destructive_fg_color white;
 @define-color destructive_color #ff7b63;
