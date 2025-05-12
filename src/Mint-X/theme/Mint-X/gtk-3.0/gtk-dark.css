@@ -3895,6 +3895,9 @@ window.background .lightdm-combo .cell, window.background .lightdm-combo button 
    ----------------
    use responsibly! */
 /*
+accent color, used by XDG-DESKTOP-PORTAL-XAPP */
+@define-color accent_color #9ab87c;
+/*
 widget text/foreground color */
 @define-color theme_fg_color #eeeeee;
 /*

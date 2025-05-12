@@ -1486,7 +1486,7 @@ StScrollBar {
     &:hover,
     &:focus {
       color: $panel_fg;
-      background-color: transparentize($panel_fg, 0.7);
+      background-color: $bg_color2;
     }
 
     &:active,
@@ -1812,11 +1812,11 @@ $applet_padding: 5px;
 
   &-separator-line {
     width: 1px;
-    background: $applet_separator_color;
+    background: $borders_color;
 
     &-vertical {
       height: 1px;
-      background: $applet_separator_color;
+      background: $borders_color;
     }
   }
 

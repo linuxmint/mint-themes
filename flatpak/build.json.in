@@ -2,7 +2,7 @@
   "id": "org.gtk.Gtk3theme.${name}",
   "branch": "3.22",
   "runtime": "org.freedesktop.Platform",
-  "runtime-version": "22.08",
+  "runtime-version": "23.08",
   "sdk": "org.freedesktop.Sdk",
   "build-extension": true,
   "appstream-compose": false,
@@ -36,7 +36,7 @@
             "*"
           ],
           "build-commands": [
-            "install -D -m755 sass ${FLATPAK_DEST}/bin/sassc",
+            "install -D -m755 sass ${FLATPAK_DEST}/bin/pysassc",
             "install -D -m755 src/dart ${FLATPAK_DEST}/bin/src/dart",
             "install -D -m755 src/sass.snapshot ${FLATPAK_DEST}/bin/src/sass.snapshot"
           ],
