@@ -1,21 +1,21 @@
-window.active.title.bg.color: #2b2b2b
-window.inactive.title.bg.color: #2b2b2b
-window.active.label.text.color: #dadada
-window.inactive.label.text.color: #a7a7a7
-window.active.border.color: #212121
-window.inactive.border.color: #2e2e2e
+window.active.title.bg.color: #222226
+window.inactive.title.bg.color: #222226
+window.active.label.text.color: #ffffff 087
+window.inactive.label.text.color: #a7a7ab
+window.active.border.color: #18181b
+window.inactive.border.color: #242429
 window.active.button.unpressed.image.color: #f8f8f8
-window.inactive.button.unpressed.image.color: #a7a7a7
+window.inactive.button.unpressed.image.color: #a7a7ab
 
-menu.items.bg.color: #383838
-menu.items.text.color: #dadada
-menu.items.active.bg.color: #35a854
-menu.items.active.text.color: #ffffff
+menu.items.bg.color: #2e2e33
+menu.items.text.color: #ffffff
+menu.items.active.bg.color: #434347
+menu.items.active.text.color: #e4e4e4
 
-osd.bg.color: 383838
-osd.border.color: #2e2e2e
-osd.label.text.color: #dadada
-osd.window-switcher.preview.border.color: #8c5dd9
+osd.bg.color: #222226
+osd.border.width: 0
+osd.label.text.color: #ffffff 087
+osd.window-switcher.preview.border.color: #35a854
 
 snapping.overlay.region.bg.color: #35a85480
 snapping.overlay.edge.bg.color: #35a85480
