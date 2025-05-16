@@ -96,9 +96,9 @@ if __name__ == '__main__':
             os.system("cp -R xfwm4/*.png %s" % version_folder)
             os.system("cp -R xfwm4/themerc %s" % version_folder)
             # LibAdwaita
-            version_folder = os.path.join(dest_folder, "libadwaita")
+            version_folder = os.path.join(dest_folder, "libadwaita-1.0")
             os.system("mkdir -p %s" % version_folder)
-            os.system("cp -R libadwaita/* %s" % version_folder)
+            os.system("cp -R libadwaita-1.0/* %s" % version_folder)
 
         elif variation == "Mint-Y-Dark":
             print("    Building Mint-Y-Dark")
@@ -137,6 +137,6 @@ if __name__ == '__main__':
             os.system("cp -R xfwm4-dark/*.png %s" % version_folder)
             os.system("cp -R xfwm4-dark/themerc %s" % version_folder)
             # LibAdwaita
-            version_folder = os.path.join(dest_folder, "libadwaita")
+            version_folder = os.path.join(dest_folder, "libadwaita-1.0")
             os.system("mkdir -p %s" % version_folder)
-            os.system("cp -R libadwaita/* %s" % version_folder)
+            os.system("cp -R libadwaita-1.0/* %s" % version_folder)
