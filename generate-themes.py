@@ -88,6 +88,15 @@ for color in os.listdir("src/Mint-X/variations"):
             for accent in X_RGB_ACCENTS:
                 os.system("sed -i s'/%(accent)s/%(color_accent)s/' %(file)s" % {'accent': accent, 'color_accent': x_rgb_colors[color], 'file': file})
 
+        # Openbox colors
+        file = os.path.join(theme, "openbox-3", 'themerc')
+        if os.path.exists(file):
+            for accent in X_HEX_ACCENTS:
+                os.system("sed -i s'/%(accent)s/%(color_accent)s/' %(file)s" % {'accent': accent, 'color_accent': x_hex_colors[color], 'file': file})
+
+
+
+
 os.system("rm -rf usr/share/themes/Mint-X/gtk-3.0/sass usr/share/themes/Mint-X/gtk-3.0/parse-sass.sh")
 os.system("rm -rf usr/share/themes/Mint-X/gtk-4.0/sass usr/share/themes/Mint-X/gtk-4.0/parse-sass.sh")
 
@@ -196,6 +205,12 @@ for color in y_hex_colors1.keys():
             os.system("cp -R %s/gtk-3.0/assets %s/gtk-3.0/assets" % (path, theme))
             os.system("cp -R %s/gtk-4.0/assets %s/gtk-4.0/assets" % (path, theme))
 
+            # Openbox theme
+            os.chdir(curdir)
+            for accent in Y_HEX_ACCENT1:
+                os.system("sed -i s'/%(accent)s/%(color_accent)s/gI' %(file)s" % {'accent': accent, 'color_accent': y_hex_colors1[color], 'file': file})
+            for accent in Y_HEX_ACCENT2:
+                os.system("sed -i s'/%(accent)s/%(color_accent)s/gI' %(file)s" % {'accent': accent, 'color_accent': y_hex_colors2[color], 'file': os.path.join (theme, "openbox-3", "themerc")})
 
 # Files
 os.system("cp -R files/* ./")

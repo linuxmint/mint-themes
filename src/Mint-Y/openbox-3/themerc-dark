@@ -1,0 +1,21 @@
+window.active.title.bg.color: #222226
+window.inactive.title.bg.color: #222226
+window.active.label.text.color: #ffffff 087
+window.inactive.label.text.color: #a7a7ab
+window.active.border.color: #18181b
+window.inactive.border.color: #242429
+window.active.button.unpressed.image.color: #f8f8f8
+window.inactive.button.unpressed.image.color: #a7a7ab
+
+menu.items.bg.color: #2e2e33
+menu.items.text.color: #ffffff
+menu.items.active.bg.color: #434347
+menu.items.active.text.color: #e4e4e4
+
+osd.bg.color: #222226
+osd.border.width: 0
+osd.label.text.color: #ffffff 087
+osd.window-switcher.preview.border.color: #35a854
+
+snapping.overlay.region.bg.color: #35a85480
+snapping.overlay.edge.bg.color: #35a85480
