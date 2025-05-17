@@ -49,11 +49,14 @@ for color in os.listdir("src/Mint-X/variations"):
         os.system("cp -R src/Mint-X/variations/%s/* %s/" % (color, theme))
 
         # Accent color
-        gtkrc = os.path.join(theme, "gtk-2.0", "gtkrc")
-        settings_ini = os.path.join(theme, "gtk-3.0", "settings.ini")
-        gtk3_colors = os.path.join(theme, "gtk-3.0", "sass", "_colors.scss")
-        gtk4_colors = os.path.join(theme, "gtk-4.0", "sass", "_colors.scss")
-        for file in [gtkrc, settings_ini, gtk3_colors, gtk4_colors]:
+        accent_files = []
+        accent_files.append(os.path.join(theme, "gtk-2.0", "gtkrc"))
+        accent_files.append(os.path.join(theme, "gtk-3.0", "settings.ini"))
+        accent_files.append(os.path.join(theme, "gtk-3.0", "sass", "_colors.scss"))
+        accent_files.append(os.path.join(theme, "gtk-4.0", "sass", "_colors.scss"))
+        accent_files.append(os.path.join(theme, "libadwaita-1.0", "defaults-light.css"))
+        accent_files.append(os.path.join(theme, "libadwaita-1.0", "defaults-dark.css"))
+        for file in accent_files:
             for accent in X_HEX_ACCENTS:
                 os.system("sed -i s'/%(accent)s/%(color_accent)s/' %(file)s" % {'accent': accent, 'color_accent': x_hex_colors[color], 'file': file})
 
@@ -169,6 +172,8 @@ for color in y_hex_colors1.keys():
             files.append(os.path.join(theme, "gtk-2.0", "panel.rc"))
             files.append(os.path.join(theme, "gtk-2.0", "apps.rc"))
             files.append(os.path.join(theme, "gtk-2.0", "menubar-toolbar.rc"))
+            files.append(os.path.join(theme, "libadwaita-1.0", "defaults-light.css"))
+            files.append(os.path.join(theme, "libadwaita-1.0", "defaults-dark.css"))
             for file in files:
                 if os.path.exists(file):
                     for accent in Y_HEX_ACCENT1:
