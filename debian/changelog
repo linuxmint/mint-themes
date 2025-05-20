@@ -1,3 +1,13 @@
+mint-themes (2.2.5) zara; urgency=medium
+
+  [ fredcw ]
+  * Mint-X: Add support for cinnamon 6.4 (#487)
+
+  [ Clement Lefebvre ]
+  * Xfwm4: Add missing files
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 20 May 2025 16:45:45 +0100
+
 mint-themes (2.2.4) zara; urgency=medium
 
   [ Clement Lefebvre ]
