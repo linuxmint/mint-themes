@@ -1,3 +1,38 @@
+mint-themes (2.2.4) zara; urgency=medium
+
+  [ Clement Lefebvre ]
+  * Gtk: Remove tint
+  * Gtk: Simplify variant differences and switch to EBEBED
+  * Xfwm: Switch to EBEBED
+  * Gtk2: Switch to EBEBED
+  * Cinnamon: Simplify SASS
+  * Adapt dark variant
+  * Cinnamon: Fix GWL selected bg
+  * Dark: Adapt wm buttons/titles
+  * Light: Adapt wm buttons/titles
+  * Xfwm: Adapt dark and buttons
+  * GTK2: Adapt dark variant
+  * Regenerate CSS
+
+  [ Michael Webster ]
+  * Update flatpak script and runtime.
+
+  [ Clement Lefebvre ]
+  * Define accent-color (#497)
+  * Add libadwaita stylesheet
+  * libAdwaita: Apply theme colors
+  * libAdwaita: Override window controls styling
+  * libAdwaita: Fine tune colors
+  * Move libAdwaita to versioned directory
+
+  [ Elliot ]
+  * Openbox Themes (#502)
+
+  [ Clement Lefebvre ]
+  * Bump version to matching lib version
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 20 May 2025 12:09:23 +0100
+
 mint-themes (2.2.3) xia; urgency=medium
 
   [ fredcw ]
