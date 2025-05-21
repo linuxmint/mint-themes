@@ -214,3 +214,15 @@ for color in y_hex_colors1.keys():
 
 # Files
 os.system("cp -R files/* ./")
+
+# Fixes for accent-color
+
+# The green in it is too close to yellow, so libAdwaita uses yellow instead of green.
+for file in ["gtk-3.0/gtk.css", "gtk-3.0/gtk-dark.css", "gtk-4.0/gtk.css", "gtk-4.0/gtk-dark.css"]:
+    os.system(f"sed -i '/define-color accent_color/ s/9ab87c/90b967/' usr/share/themes/Mint-X/{file}")
+
+# The brown/sand is too orange so libAdwaita uses orange instead of sand.
+for file in ["gtk-3.0/gtk.css", "gtk-3.0/gtk-dark.css", "gtk-4.0/gtk.css", "gtk-4.0/gtk-dark.css"]:
+    os.system(f"sed -i '/define-color accent_color/ s/aa876a/c8ac69/' usr/share/themes/Mint-X-Brown/{file}")
+    os.system(f"sed -i '/define-color accent_color/ s/c5a07c/c8ac69/' usr/share/themes/Mint-Y-Sand/{file}")
+    os.system(f"sed -i '/define-color accent_color/ s/c5a07c/c8ac69/' usr/share/themes/Mint-Y-Dark-Sand/{file}")
