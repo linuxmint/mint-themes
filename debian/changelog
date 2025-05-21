@@ -1,3 +1,9 @@
+mint-themes (2.2.6) zara; urgency=medium
+
+  * Fix libAdw accent colors for Mint-X, Mint-X-Brown and Mint-Y-Sand.
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 21 May 2025 14:40:13 +0100
+
 mint-themes (2.2.5) zara; urgency=medium
 
   [ fredcw ]
