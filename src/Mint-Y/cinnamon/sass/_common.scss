@@ -1294,6 +1294,13 @@ StScrollBar {
       color: $insensitive_fg_color;
       border: 1px solid rgba(0,0,0,0);
     }
+    &:hover {
+      padding: 7px;
+      color: $noaccent_selected_fg_color;
+      background-color: $bg_color2;
+      border: 1px solid $menus_border_color;;
+      border-radius: $radius;
+    }
 
     &-label:ltr { padding-left: 5px; }
     &-label:rtl { padding-right: 5px; }

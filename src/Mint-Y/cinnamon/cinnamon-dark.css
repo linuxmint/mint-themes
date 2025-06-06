@@ -1016,6 +1016,12 @@ StScrollBar {
     padding: 7px;
     color: rgba(225, 225, 225, 0.45);
     border: 1px solid rgba(0, 0, 0, 0); }
+  .menu-category-button:hover {
+    padding: 7px;
+    color: #ffffff;
+    background-color: #303036;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 6px; }
   .menu-category-button-label:ltr {
     padding-left: 5px; }
   .menu-category-button-label:rtl {
