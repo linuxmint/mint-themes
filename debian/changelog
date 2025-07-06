@@ -1,3 +1,9 @@
+mint-themes (2.2.7) zara; urgency=medium
+
+  * Adjust MATE/Xfce panel colors
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sun, 06 Jul 2025 16:41:40 +0200
+
 mint-themes (2.2.6) zara; urgency=medium
 
   * Fix libAdw accent colors for Mint-X, Mint-X-Brown and Mint-Y-Sand.
