@@ -842,7 +842,7 @@ MatePanelAppletFrameDBus > MatePanelAppletFrameDBus {
 
 // Xfce Panel
 .xfce4-panel.panel {
-  background-color: #393939;
+  background-color: $panel_bg;
   color: $panel_fg;
 
   button {
