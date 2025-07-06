@@ -842,7 +842,7 @@ MatePanelAppletFrameDBus > MatePanelAppletFrameDBus {
 
 // Xfce Panel
 .xfce4-panel.panel {
-  background-color: $panel_bg;
+  background-color: $xfce_panel_bg;
   color: $panel_fg;
 
   button {
@@ -857,11 +857,11 @@ MatePanelAppletFrameDBus > MatePanelAppletFrameDBus {
   color: $panel_fg;
   border-radius: 0;
   border: none;
-  background-color: transparentize($panel_bg, 1);
+  background-color: transparentize($xfce_panel_bg, 1);
 
   &:hover {
     border: none;
-    background-color: lighten($panel_bg, 10%);
+    background-color: lighten($xfce_panel_bg, 10%);
   }
 
   &:active, &:checked {
