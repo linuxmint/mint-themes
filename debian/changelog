@@ -1,3 +1,9 @@
+mint-themes (2.2.9) zara; urgency=medium
+
+  * Xfwm4: Update variations
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 12 Jul 2025 15:46:01 +0200
+
 mint-themes (2.2.8) zara; urgency=medium
 
   * Adjust MATE/Xfce panel colors
