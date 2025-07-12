@@ -1,3 +1,10 @@
+mint-themes (2.3.0) zara; urgency=medium
+
+  [ fredcw ]
+  * Mint-Y cinnamon: add style for category button hover (#505)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 12 Jul 2025 15:58:02 +0200
+
 mint-themes (2.2.9) zara; urgency=medium
 
   * Xfwm4: Update variations
