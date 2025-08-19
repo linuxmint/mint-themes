@@ -1158,7 +1158,54 @@ StScrollBar StButton#vhandle:hover {
 }
 
 .dialog-button:destructive-action {
-    color: #c21616;
+    color: white;
+    border-width: 1px;
+    border-color: rgba(40, 40, 40, 0.4);
+    border-image: none;
+    border-radius: 4px;
+    padding: 2px 31px 5px;
+    background-gradient-direction: vertical;
+	background-gradient-start: #e83c44;
+	background-gradient-end: #ce1921;
+}
+
+.dialog-button:focus:destructive-action {
+    color: white;
+    border-width: 1px;
+    border-color: rgba(172, 205, 138, 0.4);
+    border-image: none;
+    border-radius: 4px;
+    padding: 2px 31px 5px;
+    background-gradient-direction: vertical;
+	background-gradient-start: #e83c44;
+	background-gradient-end: #ce1921;
+}
+
+.dialog-button:hover:destructive-action {
+    background-gradient-direction: vertical;
+	background-gradient-start: #ee4a52;
+	background-gradient-end: #e22831;
+}
+
+.dialog-button:focus:hover:destructive-action {
+    color: white;
+    border-width: 1px;
+    border-color: rgba(172, 205, 138, 0.4);
+    border-image: none;
+    border-radius: 4px;
+    padding: 2px 31px 5px;
+    background-gradient-direction: vertical;
+	background-gradient-start: #ee4a52;
+	background-gradient-end: #e22831;
+}
+
+.dialog-button:active:destructive-action,
+.dialog-button:checked:destructive-action,
+.dialog-button:focus:checked:destructive-action,
+.dialog-button:focus:active:destructive-action {
+    background-gradient-direction: vertical;
+	background-gradient-start: #b21811;
+	background-gradient-end: #be2a32;
 }
 
 .dialog-list .dialog-list-title {
