@@ -1371,15 +1371,11 @@ StScrollBar StButton#vhandle:hover {
 
 .prompt-dialog {
     /* this is the width of the entire modal popup */
-    width: 500px;
+    width: 400px;
 }
 
 .polkit-dialog-user-layout {
     spacing: 10px;
-}
-
-.polkit-dialog-user-layout:rtl {
-    padding-right: 10px;
 }
 
 .polkit-dialog-user-combo {
@@ -1403,7 +1399,6 @@ StScrollBar StButton#vhandle:hover {
 
 .polkit-dialog-user-combo:focus:hover {
     border-image: url("button-assets/button-focus-hover.png") 4;
-    padding: 3px 31px 4px;
 }
 
 .polkit-dialog-user-combo:focus:checked,
