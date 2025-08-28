@@ -1,3 +1,10 @@
+mint-themes (2.3.2) zara; urgency=medium
+
+  [ Michael Webster ]
+  * Mint-Y: Improve dark checkbox and radio borders and regen assets.
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 28 Aug 2025 10:10:39 +0200
+
 mint-themes (2.3.1) zara; urgency=medium
 
   * ubiquity: Adapt grey bars to blueish hue
