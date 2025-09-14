@@ -1,3 +1,6 @@
+@define-color mint_header #d6d6d6;
+@define-color mint_button_hover #454545;
+
 /* GTK NAMED COLORS ---------------- use responsibly! */
 @define-color destructive_bg_color @red_4;
 @define-color destructive_fg_color white;
@@ -7,7 +10,7 @@
 @define-color warning_fg_color RGB(0 0 0 / 80%);
 @define-color error_bg_color @red_4;
 @define-color error_fg_color white;
-@define-color accent_color oklab(from @accent_bg_color max(l, 0.85) a b);
+@define-color accent_color @accent_bg_color;
 @define-color destructive_color oklab(from @destructive_bg_color max(l, 0.85) a b);
 @define-color success_color oklab(from @success_bg_color max(l, 0.85) a b);
 @define-color warning_color oklab(from @warning_bg_color max(l, 0.85) a b);
