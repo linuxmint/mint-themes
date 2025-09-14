@@ -100,9 +100,7 @@ if __name__ == '__main__':
             os.system ("mkdir -p %s" % version_folder)
             os.system("cp openbox-3/themerc %s/themerc" % (version_folder))
             # LibAdwaita
-            version_folder = os.path.join(dest_folder, "libadwaita-1.5")
-            os.system("mkdir -p %s" % version_folder)
-            os.system("cp -R libadwaita-1.5/* %s" % version_folder)
+            os.system("cp -R libadwaita-* %s/" % dest_folder)
         elif variation == "Mint-Y-Dark":
             print("    Building Mint-Y-Dark")
             # Gtk2
@@ -144,6 +142,4 @@ if __name__ == '__main__':
             os.system ("mkdir -p %s" % version_folder)
             os.system("cp openbox-3/themerc-dark %s/themerc" % (version_folder))
             # LibAdwaita
-            version_folder = os.path.join(dest_folder, "libadwaita-1.5")
-            os.system("mkdir -p %s" % version_folder)
-            os.system("cp -R libadwaita-1.5/* %s" % version_folder)
+            os.system("cp -R libadwaita-* %s/" % dest_folder)
