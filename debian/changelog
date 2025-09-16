@@ -1,3 +1,20 @@
+mint-themes (2.3.3) gigi; urgency=medium
+
+  [ Michael Webster ]
+  * Run update-variations, was missed in 6c4a01bd7e1.
+
+  [ Clement Lefebvre ]
+  * libadwaita 1.7: Update build
+  * libadwaita-1.7: Add library stylesheet to Mint-Y
+  * libadwaita 1.7: Override Mint-Y window controls
+  * libadwaita 1.7: Update Mint-Y colors
+  * libadwaita-1.7: Add library stylesheet to Mint-X
+  * libadwaita 1.7: Override Mint-X window controls
+  * libadwaita 1.7: Update Mint-X colors
+  * Revert "Fix libAdw accent colors for Mint-X, Mint-X-Brown and Mint-Y-Sand."
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 15 Sep 2025 09:07:24 +0100
+
 mint-themes (2.3.2) zara; urgency=medium
 
   [ Michael Webster ]

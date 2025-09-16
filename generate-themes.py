@@ -56,6 +56,8 @@ for color in os.listdir("src/Mint-X/variations"):
         accent_files.append(os.path.join(theme, "gtk-4.0", "sass", "_colors.scss"))
         accent_files.append(os.path.join(theme, "libadwaita-1.5", "defaults-light.css"))
         accent_files.append(os.path.join(theme, "libadwaita-1.5", "defaults-dark.css"))
+        accent_files.append(os.path.join(theme, "libadwaita-1.7", "defaults-light.css"))
+        accent_files.append(os.path.join(theme, "libadwaita-1.7", "defaults-dark.css"))
         for file in accent_files:
             for accent in X_HEX_ACCENTS:
                 os.system("sed -i s'/%(accent)s/%(color_accent)s/' %(file)s" % {'accent': accent, 'color_accent': x_hex_colors[color], 'file': file})
@@ -174,6 +176,8 @@ for color in y_hex_colors1.keys():
             files.append(os.path.join(theme, "gtk-2.0", "menubar-toolbar.rc"))
             files.append(os.path.join(theme, "libadwaita-1.5", "defaults-light.css"))
             files.append(os.path.join(theme, "libadwaita-1.5", "defaults-dark.css"))
+            files.append(os.path.join(theme, "libadwaita-1.7", "defaults-light.css"))
+            files.append(os.path.join(theme, "libadwaita-1.7", "defaults-dark.css"))
             for file in files:
                 if os.path.exists(file):
                     for accent in Y_HEX_ACCENT1:
@@ -214,15 +218,3 @@ for color in y_hex_colors1.keys():
 
 # Files
 os.system("cp -R files/* ./")
-
-# Fixes for accent-color
-
-# The green in it is too close to yellow, so libAdwaita uses yellow instead of green.
-for file in ["gtk-3.0/gtk.css", "gtk-3.0/gtk-dark.css", "gtk-4.0/gtk.css", "gtk-4.0/gtk-dark.css"]:
-    os.system(f"sed -i '/define-color accent_color/ s/9ab87c/90b967/' usr/share/themes/Mint-X/{file}")
-
-# The brown/sand is too orange so libAdwaita uses orange instead of sand.
-for file in ["gtk-3.0/gtk.css", "gtk-3.0/gtk-dark.css", "gtk-4.0/gtk.css", "gtk-4.0/gtk-dark.css"]:
-    os.system(f"sed -i '/define-color accent_color/ s/aa876a/c8ac69/' usr/share/themes/Mint-X-Brown/{file}")
-    os.system(f"sed -i '/define-color accent_color/ s/c5a07c/c8ac69/' usr/share/themes/Mint-Y-Sand/{file}")
-    os.system(f"sed -i '/define-color accent_color/ s/c5a07c/c8ac69/' usr/share/themes/Mint-Y-Dark-Sand/{file}")
