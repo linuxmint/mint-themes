@@ -1,0 +1,9 @@
+#!/bin/bash
+
+sudo cp src/Mint-X/theme/Mint-X/cinnamon/cinnamon.css /usr/share/themes/Mint-X/cinnamon/cinnamon.css
+
+gsettings set org.cinnamon.desktop.interface gtk-theme 'Mint-X-Blue'
+gsettings set org.cinnamon.desktop.interface gtk-theme 'Mint-X'
+
+gsettings set org.cinnamon.theme name 'Mint-X-Blue'
+gsettings set org.cinnamon.theme name 'Mint-X'
