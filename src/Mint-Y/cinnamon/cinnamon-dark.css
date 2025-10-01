@@ -910,53 +910,6 @@ StScrollBar {
   .magnifier-zoom-region .full-screen {
     border-width: 0px; }
 
-#keyboard {
-  background-color: #303030;
-  border-width: 0;
-  border-top-width: 1px;
-  border-color: rgba(0, 0, 0, 0.4); }
-
-.keyboard-layout {
-  spacing: 10px;
-  padding: 10px; }
-
-.keyboard-row {
-  spacing: 15px; }
-
-.keyboard-key {
-  min-height: 2em;
-  min-width: 2em;
-  font-size: 1.4em;
-  font-weight: bold;
-  border-radius: 3px;
-  box-shadow: none;
-  color: #c3c3c3;
-  border: 1px solid #303036;
-  background-color: rgba(104, 104, 104, 0.4); }
-  .keyboard-key:hover {
-    color: #c3c3c3;
-    border: 1px solid rgba(0, 0, 0, 0.4);
-    background-color: rgba(122, 122, 122, 0.5); }
-  .keyboard-key:active, .keyboard-key:checked {
-    color: #ffffff;
-    border: 1px solid #35a854;
-    background-color: #35a854; }
-  .keyboard-key:grayed {
-    color: #5c5c5c;
-    border: 1px solid rgba(0, 0, 0, 0.4);
-    background-color: rgba(104, 104, 104, 0.25); }
-
-.keyboard-subkeys {
-  color: #c3c3c3;
-  padding: 5px;
-  -arrow-border-radius: 2px;
-  -arrow-background-color: #303030;
-  -arrow-border-width: 1px;
-  -arrow-border-color: rgba(0, 0, 0, 0.4);
-  -arrow-base: 20px;
-  -arrow-rise: 10px;
-  -boxpointer-gap: 5px; }
-
 .menu-favorites-box {
   padding: 10px;
   transition-duration: 300;
@@ -1956,3 +1909,132 @@ StScrollBar {
   background-color: #222226;
   border-radius: 6px;
   padding: 12px; }
+
+/*
+On-Screen Keyboard (>= Cinnamon 6.6)
+*/
+#virtual-keyboard {
+  background-color: #1d1d21;
+  box-shadow: inset 0 1px 0 0 #303036; }
+
+.vkeyboard-key-container {
+  padding: 4px;
+  spacing: 4px; }
+
+.vkeyboard-key {
+  color: #e1e1e1;
+  background-color: #303036;
+  border: 1px solid #303036;
+  box-shadow: inset 0 2px 4px rgba(48, 48, 54, 0.05);
+  font-size: 1.364em;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 6px;
+  background-color: #303036; }
+  .vkeyboard-key:focus {
+    color: #e1e1e1;
+    background-color: #303036;
+    border: 1px solid #35a854;
+    box-shadow: inset 0 2px 4px rgba(48, 48, 54, 0.05); }
+  .vkeyboard-key:hover, .vkeyboard-key:checked {
+    color: #e1e1e1;
+    background-color: #3c3c44;
+    border: 1px solid #303036;
+    box-shadow: inset 0 2px 4px rgba(60, 60, 68, 0.05); }
+  .vkeyboard-key:active {
+    color: #ffffff;
+    background-color: #35a854;
+    border: 1px solid #35a854;
+    box-shadow: inset 0 2px 4px #35a854; }
+  .vkeyboard-key.shift-key-uppercase {
+    background-color: #5e5e69; }
+  .vkeyboard-key.enter-key {
+    background-color: #35a854; }
+  .vkeyboard-key.shift-key-lowercase, .vkeyboard-key.escape-key, .vkeyboard-key.hide-key, .vkeyboard-key.non-alpha-key {
+    background-color: #38383e; }
+    .vkeyboard-key.shift-key-lowercase:focus, .vkeyboard-key.escape-key:focus, .vkeyboard-key.hide-key:focus, .vkeyboard-key.non-alpha-key:focus {
+      color: #e1e1e1;
+      background-color: #303036;
+      border: 1px solid #35a854;
+      box-shadow: inset 0 2px 4px rgba(48, 48, 54, 0.05); }
+    .vkeyboard-key.shift-key-lowercase:hover, .vkeyboard-key.shift-key-lowercase:checked, .vkeyboard-key.escape-key:hover, .vkeyboard-key.escape-key:checked, .vkeyboard-key.hide-key:hover, .vkeyboard-key.hide-key:checked, .vkeyboard-key.non-alpha-key:hover, .vkeyboard-key.non-alpha-key:checked {
+      color: #e1e1e1;
+      background-color: #3c3c44;
+      border: 1px solid #303036;
+      box-shadow: inset 0 2px 4px rgba(60, 60, 68, 0.05); }
+    .vkeyboard-key.shift-key-lowercase:active, .vkeyboard-key.escape-key:active, .vkeyboard-key.hide-key:active, .vkeyboard-key.non-alpha-key:active {
+      color: #ffffff;
+      background-color: #35a854;
+      border: 1px solid #35a854;
+      box-shadow: inset 0 2px 4px #35a854; }
+  .vkeyboard-key StIcon {
+    icon-size: 1.125em; }
+
+.vkeyboard-subkeys {
+  color: #e1e1e1;
+  -arrow-border-radius: 8px;
+  -arrow-background-color: #222226;
+  -arrow-border-width: 1px;
+  -arrow-border-color: #38383e;
+  -arrow-base: 20px;
+  -arrow-rise: 10px;
+  -boxpointer-gap: 6px; }
+
+.word-suggestions {
+  font-size: 1.227em;
+  spacing: 20px;
+  min-height: 20pt; }
+
+/*
+****** DEPRECATED
+
+On-Screen Keyboard (<= Cinnamon 6.4)
+*/
+#keyboard {
+  background-color: #303030;
+  border-width: 0;
+  border-top-width: 1px;
+  border-color: rgba(0, 0, 0, 0.4); }
+
+.keyboard-layout {
+  spacing: 10px;
+  padding: 10px; }
+
+.keyboard-row {
+  spacing: 15px; }
+
+.keyboard-key {
+  min-height: 2em;
+  min-width: 2em;
+  font-size: 1.4em;
+  font-weight: bold;
+  border-radius: 3px;
+  box-shadow: none;
+  color: #c3c3c3;
+  border: 1px solid #303036;
+  background-color: rgba(104, 104, 104, 0.4); }
+  .keyboard-key:hover {
+    color: #c3c3c3;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    background-color: rgba(122, 122, 122, 0.5); }
+  .keyboard-key:active, .keyboard-key:checked {
+    color: #ffffff;
+    border: 1px solid #35a854;
+    background-color: #35a854; }
+  .keyboard-key:grayed {
+    color: #5c5c5c;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    background-color: rgba(104, 104, 104, 0.25); }
+
+.keyboard-subkeys {
+  color: #c3c3c3;
+  padding: 5px;
+  -arrow-border-radius: 2px;
+  -arrow-background-color: #303030;
+  -arrow-border-width: 1px;
+  -arrow-border-color: rgba(0, 0, 0, 0.4);
+  -arrow-base: 20px;
+  -arrow-rise: 10px;
+  -boxpointer-gap: 5px; }
+
+/* ****** DEPRECATED */
