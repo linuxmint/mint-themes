@@ -1169,58 +1169,12 @@ StScrollBar {
 }
 
 //
-// On-Screen Keyboard
-//
-#keyboard {
-  background-color: $osd_bg_color;
-  border-width: 0;
-  border-top-width: 1px;
-  border-color: transparentize(black, 0.6);
-}
-
-.keyboard-layout {
-  spacing: 10px;
-  padding: 10px;
-}
-
-.keyboard-row {
-  spacing: 15px;
-}
-
-.keyboard-key {
-  min-height: 2em;
-  min-width: 2em;
-  font-size: 1.4em;
-  font-weight: bold;
-  border-radius: 3px;
-  box-shadow: none;
-
-  @include button(osd);
-
-  &:hover { @include button(osd-hover); }
-  &:active, &:checked { @include button(osd-active); }
-
-  &:grayed { @include button(osd-insensitive); }
-}
-
-.keyboard-subkeys { //long press on a key popup
-  color: $osd_fg_color;
-  padding: 5px;
-  -arrow-border-radius: 2px;
-  -arrow-background-color: $osd_bg_color;
-  -arrow-border-width: 1px;
-  -arrow-border-color: transparentize(black, 0.6);;
-  -arrow-base: 20px;
-  -arrow-rise: 10px;
-  -boxpointer-gap: 5px;
-}
-
-//
 // Cinnamon Specific Section
 //
 
 //
-// Menu (menu.js)
+// Old Menu applet (deprecated since Cinnamon 6.6). Kept here temporarily
+// to support spices and old Cinnamon versions
 //
 .menu {
   &-favorites-box {
@@ -1346,6 +1300,138 @@ StScrollBar {
 /* Context menu (at the moment only for favorites) */
 .menu-context-menu {
 }
+
+//
+// New Menu applet (Cinnamon 6.6)
+//
+
+$appmenu_outer_padding: 9px;
+$appmenu_outer_border_radius: $radius * 1.25;
+$base_padding: 7px;
+
+%appmenu_button {
+  padding: $base_padding;
+  spacing: 5px;
+  border-radius: $radius;
+}
+
+.appmenu {
+
+  // this can be used to color the entire menu background but we aren't using it here
+  &-background {
+    // using this to override the default padding on menus so widgets can span edge
+    // to edge. The side effect is that some of our internal container widgets
+    // will need to have a border-radius added to them or the corners will poke out
+    // the edges of the menu.
+    .popup-menu-content { padding: 0; }
+  }
+
+  &-sidebar {
+    background-color: $bg_color2;
+    border-radius: $appmenu_outer_border_radius 0 0 $appmenu_outer_border_radius;
+    border-right-width: 1px;
+    border-color: $borders_color;
+
+    &-user-box {
+      padding-top: $appmenu_outer_padding;
+      padding-bottom: $appmenu_outer_padding / 2;
+    }
+  }
+
+  &-system-box {
+    spacing: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+
+  &-categories-box { padding: $appmenu_outer_padding $base_padding * 3; }
+  &-applications-box { padding: $appmenu_outer_padding; }
+  // This small amount of padding is needed to be able
+  // to resize the menu with the mouse
+  &-applications-scrollbox { padding-right: 3px; }
+
+  &-sidebar-button {
+    @extend %appmenu_button;
+
+    padding: 3px $base_padding 3px $base_padding;
+    margin: 0 $appmenu_outer_padding 0 $appmenu_outer_padding;
+
+    &:hover {
+      background-color: $bg_color3;
+      border-color: $borders_color;
+    }
+  }
+
+  &-system-button {
+    padding: $base_padding * 1.2;
+    border: 1px solid $borders_color;
+    border-radius: 9999px;
+    background-color: $bg_color2;
+    &-lock:hover { background-color: $bg_color3; }
+    &-logout:hover { background-color: $bg_color3; }
+    &-shutdown:hover { background-color: $osd_destructive_color; }
+  }
+
+  &-application-button {
+    @extend %appmenu_button;
+
+    &-label { padding: 0; }
+    &-description {
+      color: $dim_color;
+      font-weight: 400;
+      font-size: 0.818em;
+    }
+
+    &:highlighted { font-weight: bold; }
+
+    &-selected {
+      @extend %appmenu_button;
+      background-color: $bg_color2;
+
+      &:highlighted { font-weight: bold; }
+    }
+  }
+
+  &-category-button {
+    @extend %appmenu_button;
+
+    &-label { padding: 0; }
+
+    &:hover { background-color: $bg_color3; }
+
+    &-selected {
+      @extend %appmenu_button;
+
+      background-color: $bg_color2;
+    }
+
+    &-greyed {
+      @extend %appmenu_button;
+      color: $insensitive_fg_color;
+      font-style: italic;
+
+      StIcon { opacity: 0.5; }
+    }
+  }
+
+  &-context-menu {}
+
+  &-search-box {
+    padding: $base_padding $base_padding $base_padding $appmenu_outer_padding;
+    border-bottom-width: 1px;
+    border-color: $borders_color;
+  }
+
+  &-search-entry-icon {
+    icon-size: 1em;
+  }
+}
+
+#appmenu-search-entry {
+  @extend %entry;
+  margin: $appmenu_outer_padding;
+}
+
 
 //
 // Window list (windowList.js)
@@ -1884,8 +1970,27 @@ $applet_padding: 5px;
 // User Applet
 //
 .user-icon {
-    border: 1px solid transparentize($fg_color, 0.5);
+  background-size: contain;
+  border-radius: 99px;
+  color: $fg_color;
+  border-color: transparent;
+
+  & StIcon {
+    border: 1px solid transparent;
     border-radius: 99px;
+    padding: 14px;
+  }
+
+  & StIcon.highlighted {
+    border: 1px solid $fg_color;
+    border-radius: 99px;
+    padding: 14px;
+  }
+
+  &.user-avatar {
+    border: 1px solid transparent;
+    border-radius: 99px;
+  }
 }
 
 .user-label {
@@ -1893,6 +1998,17 @@ $applet_padding: 5px;
     font-size: 1em;
     font-weight: bold;
     margin: 0px;
+}
+
+.user-widget-label {}
+
+.user-widget.horizontal { spacing: 7px; }
+
+.user-widget.vertical .user-widget-label {
+  @extend %title_4;
+  color: $fg_color;
+  padding-top: 10px;
+  text-align: center;
 }
 
 // cornerbar applet

@@ -40,7 +40,7 @@ stage {
     background-color: rgba(176, 176, 184, 0.55);
     box-shadow: inset 0 2px 4px rgba(176, 176, 184, 0.05); }
 
-.prompt-dialog-password-entry, .run-dialog-entry, #menu-search-entry, .popup-menu #notification StEntry {
+.prompt-dialog-password-entry, .run-dialog-entry, #appmenu-search-entry, #menu-search-entry, .popup-menu #notification StEntry {
   padding: 7px;
   caret-size: 1px;
   selection-background-color: #35a854;
@@ -51,23 +51,23 @@ stage {
   background-color: #d3d3d7;
   border: 1px solid #cfd6e6;
   box-shadow: inset 0 2px 4px rgba(211, 211, 215, 0.05); }
-  .prompt-dialog-password-entry:focus, .run-dialog-entry:focus, #menu-search-entry:focus, .popup-menu #notification StEntry:focus, .prompt-dialog-password-entry:hover, .run-dialog-entry:hover, #menu-search-entry:hover, .popup-menu #notification StEntry:hover {
+  .prompt-dialog-password-entry:focus, .run-dialog-entry:focus, #appmenu-search-entry:focus, #menu-search-entry:focus, .popup-menu #notification StEntry:focus, .prompt-dialog-password-entry:hover, .run-dialog-entry:hover, #appmenu-search-entry:hover, #menu-search-entry:hover, .popup-menu #notification StEntry:hover {
     color: #303030;
     background-color: #d3d3d7;
     border: 1px solid #35a854;
     box-shadow: inset 0 2px 4px rgba(211, 211, 215, 0.05); }
-  .prompt-dialog-password-entry:insensitive, .run-dialog-entry:insensitive, #menu-search-entry:insensitive, .popup-menu #notification StEntry:insensitive {
+  .prompt-dialog-password-entry:insensitive, .run-dialog-entry:insensitive, #appmenu-search-entry:insensitive, #menu-search-entry:insensitive, .popup-menu #notification StEntry:insensitive {
     color: rgba(48, 48, 48, 0.55);
     background-color: #dedee1;
     border-color: 1px solid #dcdfe9;
     box-shadow: inset 0 2px 4px rgba(222, 222, 225, 0.05); }
-  .prompt-dialog-password-entry StIcon.capslock-warning, .run-dialog-entry StIcon.capslock-warning, #menu-search-entry StIcon.capslock-warning, .popup-menu #notification StEntry StIcon.capslock-warning {
+  .prompt-dialog-password-entry StIcon.capslock-warning, .run-dialog-entry StIcon.capslock-warning, #appmenu-search-entry StIcon.capslock-warning, #menu-search-entry StIcon.capslock-warning, .popup-menu #notification StEntry StIcon.capslock-warning {
     icon-size: 16px;
     warning-color: #F27835;
     padding: 0 4px; }
-  .prompt-dialog-password-entry StLabel.hint-text, .run-dialog-entry StLabel.hint-text, #menu-search-entry StLabel.hint-text, .popup-menu #notification StEntry StLabel.hint-text {
+  .prompt-dialog-password-entry StLabel.hint-text, .run-dialog-entry StLabel.hint-text, #appmenu-search-entry StLabel.hint-text, #menu-search-entry StLabel.hint-text, .popup-menu #notification StEntry StLabel.hint-text {
     color: rgba(48, 48, 48, 0.3); }
-  .prompt-dialog-password-entry StIcon.peek-password, .run-dialog-entry StIcon.peek-password, #menu-search-entry StIcon.peek-password, .popup-menu #notification StEntry StIcon.peek-password {
+  .prompt-dialog-password-entry StIcon.peek-password, .run-dialog-entry StIcon.peek-password, #appmenu-search-entry StIcon.peek-password, #menu-search-entry StIcon.peek-password, .popup-menu #notification StEntry StIcon.peek-password {
     icon-size: 16px;
     color: #303030; }
 
@@ -910,53 +910,6 @@ StScrollBar {
   .magnifier-zoom-region .full-screen {
     border-width: 0px; }
 
-#keyboard {
-  background-color: #303030;
-  border-width: 0;
-  border-top-width: 1px;
-  border-color: rgba(0, 0, 0, 0.4); }
-
-.keyboard-layout {
-  spacing: 10px;
-  padding: 10px; }
-
-.keyboard-row {
-  spacing: 15px; }
-
-.keyboard-key {
-  min-height: 2em;
-  min-width: 2em;
-  font-size: 1.4em;
-  font-weight: bold;
-  border-radius: 3px;
-  box-shadow: none;
-  color: #c3c3c3;
-  border: 1px solid #b5b5bd;
-  background-color: rgba(104, 104, 104, 0.4); }
-  .keyboard-key:hover {
-    color: #c3c3c3;
-    border: 1px solid rgba(0, 0, 0, 0.4);
-    background-color: rgba(122, 122, 122, 0.5); }
-  .keyboard-key:active, .keyboard-key:checked {
-    color: #ffffff;
-    border: 1px solid #35a854;
-    background-color: #35a854; }
-  .keyboard-key:grayed {
-    color: #5c5c5c;
-    border: 1px solid rgba(0, 0, 0, 0.4);
-    background-color: rgba(104, 104, 104, 0.25); }
-
-.keyboard-subkeys {
-  color: #c3c3c3;
-  padding: 5px;
-  -arrow-border-radius: 2px;
-  -arrow-background-color: #303030;
-  -arrow-border-width: 1px;
-  -arrow-border-color: rgba(0, 0, 0, 0.4);
-  -arrow-base: 20px;
-  -arrow-rise: 10px;
-  -boxpointer-gap: 5px; }
-
 .menu-favorites-box {
   padding: 10px;
   transition-duration: 300;
@@ -1060,6 +1013,98 @@ StScrollBar {
   color: #303030; }
 
 /* Context menu (at the moment only for favorites) */
+.appmenu-category-button-greyed, .appmenu-category-button-selected, .appmenu-category-button, .appmenu-application-button-selected, .appmenu-application-button, .appmenu-sidebar-button {
+  padding: 7px;
+  spacing: 5px;
+  border-radius: 6px; }
+
+.appmenu-background .popup-menu-content {
+  padding: 0; }
+
+.appmenu-sidebar {
+  background-color: #d3d3d7;
+  border-radius: 7.5px 0 0 7.5px;
+  border-right-width: 1px;
+  border-color: #b5b5bd; }
+  .appmenu-sidebar-user-box {
+    padding-top: 9px;
+    padding-bottom: 4.5px; }
+
+.appmenu-system-box {
+  spacing: 6px;
+  padding-left: 6px;
+  padding-right: 6px; }
+
+.appmenu-categories-box {
+  padding: 9px 21px; }
+
+.appmenu-applications-box {
+  padding: 9px; }
+
+.appmenu-applications-scrollbox {
+  padding-right: 3px; }
+
+.appmenu-sidebar-button {
+  padding: 3px 7px 3px 7px;
+  margin: 0 9px 0 9px; }
+  .appmenu-sidebar-button:hover {
+    background-color: #b0b0b8;
+    border-color: #b5b5bd; }
+
+.appmenu-system-button {
+  padding: 8.4px;
+  border: 1px solid #b5b5bd;
+  border-radius: 9999px;
+  background-color: #d3d3d7; }
+  .appmenu-system-button-lock:hover {
+    background-color: #b0b0b8; }
+  .appmenu-system-button-logout:hover {
+    background-color: #b0b0b8; }
+  .appmenu-system-button-shutdown:hover {
+    background-color: #F04A50; }
+
+.appmenu-application-button-label {
+  padding: 0; }
+
+.appmenu-application-button-description {
+  color: #636363;
+  font-weight: 400;
+  font-size: 0.818em; }
+
+.appmenu-application-button:highlighted {
+  font-weight: bold; }
+
+.appmenu-application-button-selected {
+  background-color: #d3d3d7; }
+  .appmenu-application-button-selected:highlighted {
+    font-weight: bold; }
+
+.appmenu-category-button-label {
+  padding: 0; }
+
+.appmenu-category-button:hover {
+  background-color: #b0b0b8; }
+
+.appmenu-category-button-selected {
+  background-color: #d3d3d7; }
+
+.appmenu-category-button-greyed {
+  color: rgba(48, 48, 48, 0.55);
+  font-style: italic; }
+  .appmenu-category-button-greyed StIcon {
+    opacity: 0.5; }
+
+.appmenu-search-box {
+  padding: 7px 7px 7px 9px;
+  border-bottom-width: 1px;
+  border-color: #b5b5bd; }
+
+.appmenu-search-entry-icon {
+  icon-size: 1em; }
+
+#appmenu-search-entry {
+  margin: 9px; }
+
 .window-list-box {
   spacing: 6px;
   padding-left: 10px;
@@ -1434,14 +1479,35 @@ StScrollBar {
     text-shadow: none; }
 
 .user-icon {
-  border: 1px solid rgba(48, 48, 48, 0.5);
-  border-radius: 99px; }
+  background-size: contain;
+  border-radius: 99px;
+  color: #303030;
+  border-color: transparent; }
+  .user-icon StIcon {
+    border: 1px solid transparent;
+    border-radius: 99px;
+    padding: 14px; }
+  .user-icon StIcon.highlighted {
+    border: 1px solid #303030;
+    border-radius: 99px;
+    padding: 14px; }
+  .user-icon.user-avatar {
+    border: 1px solid transparent;
+    border-radius: 99px; }
 
 .user-label {
   color: #303030;
   font-size: 1em;
   font-weight: bold;
   margin: 0px; }
+
+.user-widget.horizontal {
+  spacing: 7px; }
+
+.user-widget.vertical .user-widget-label {
+  color: #303030;
+  padding-top: 10px;
+  text-align: center; }
 
 .applet-cornerbar {
   width: 8px;
@@ -1553,7 +1619,7 @@ StScrollBar {
   font-weight: 800;
   font-size: 1.364em; }
 
-.workspace-switch-osd, .media-keys-osd, .message-dialog-content .message-dialog-title.lightweight {
+.workspace-switch-osd, .media-keys-osd, .message-dialog-content .message-dialog-title.lightweight, .user-widget.vertical .user-widget-label {
   font-weight: 700;
   font-size: 1.182em; }
 
@@ -1843,3 +1909,178 @@ StScrollBar {
   background-color: #ebebed;
   border-radius: 6px;
   padding: 12px; }
+
+/*
+On-Screen Keyboard (>= Cinnamon 6.6)
+*/
+#virtual-keyboard {
+  background-color: #f3f3f4;
+  box-shadow: inset 0 1px 0 0 #b5b5bd; }
+
+.vkeyboard-key-container {
+  padding: 4px;
+  spacing: 4px; }
+
+.vkeyboard-key {
+  color: #303030;
+  background-color: #b0b0b8;
+  border: 1px solid #b5b5bd;
+  box-shadow: inset 0 2px 4px rgba(176, 176, 184, 0.05);
+  font-size: 1.364em;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 6px;
+  background-color: #d3d3d7; }
+  .vkeyboard-key:focus {
+    color: #303030;
+    background-color: #b0b0b8;
+    border: 1px solid #35a854;
+    box-shadow: inset 0 2px 4px rgba(176, 176, 184, 0.05); }
+  .vkeyboard-key:hover, .vkeyboard-key:checked {
+    color: #303030;
+    background-color: #bdbdc4;
+    border: 1px solid #b5b5bd;
+    box-shadow: inset 0 2px 4px rgba(189, 189, 196, 0.05); }
+  .vkeyboard-key:active {
+    color: #ffffff;
+    background-color: #35a854;
+    border: 1px solid #35a854;
+    box-shadow: inset 0 2px 4px #35a854; }
+  .vkeyboard-key.shift-key-uppercase {
+    background-color: #9a9aa5; }
+  .vkeyboard-key.enter-key {
+    border-color: #35a854;
+    border-width: 3px; }
+  .vkeyboard-key.shift-key-lowercase, .vkeyboard-key.escape-key, .vkeyboard-key.hide-key, .vkeyboard-key.non-alpha-key {
+    background-color: #c0c0c6; }
+    .vkeyboard-key.shift-key-lowercase:focus, .vkeyboard-key.escape-key:focus, .vkeyboard-key.hide-key:focus, .vkeyboard-key.non-alpha-key:focus {
+      color: #303030;
+      background-color: #b0b0b8;
+      border: 1px solid #35a854;
+      box-shadow: inset 0 2px 4px rgba(176, 176, 184, 0.05); }
+    .vkeyboard-key.shift-key-lowercase:hover, .vkeyboard-key.shift-key-lowercase:checked, .vkeyboard-key.escape-key:hover, .vkeyboard-key.escape-key:checked, .vkeyboard-key.hide-key:hover, .vkeyboard-key.hide-key:checked, .vkeyboard-key.non-alpha-key:hover, .vkeyboard-key.non-alpha-key:checked {
+      color: #303030;
+      background-color: #bdbdc4;
+      border: 1px solid #b5b5bd;
+      box-shadow: inset 0 2px 4px rgba(189, 189, 196, 0.05); }
+    .vkeyboard-key.shift-key-lowercase:active, .vkeyboard-key.escape-key:active, .vkeyboard-key.hide-key:active, .vkeyboard-key.non-alpha-key:active {
+      color: #ffffff;
+      background-color: #35a854;
+      border: 1px solid #35a854;
+      box-shadow: inset 0 2px 4px #35a854; }
+  .vkeyboard-key StIcon {
+    icon-size: 1.125em; }
+
+.vkeyboard-subkeys {
+  color: #303030;
+  -arrow-border-radius: 8px;
+  -arrow-background-color: #ebebed;
+  -arrow-border-width: 1px;
+  -arrow-border-color: white;
+  -arrow-base: 20px;
+  -arrow-rise: 10px;
+  -boxpointer-gap: 6px; }
+
+.word-suggestions {
+  font-size: 1.227em;
+  spacing: 20px;
+  min-height: 20pt; }
+
+.candidate-popup-boxpointer {
+  -arrow-border-radius: 8px;
+  -arrow-background-color: #ebebed;
+  -arrow-border-width: 1px;
+  -arrow-border-color: #b5b5bd;
+  -arrow-base: 12px;
+  -arrow-rise: 6px;
+  -arrow-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+.candidate-popup-content {
+  padding: 0.5em;
+  spacing: 0.3em; }
+
+.candidate-index {
+  padding: 0 0.5em 0 0;
+  color: #171717; }
+
+.candidate-box {
+  padding: 0.3em 0.5em 0.3em 0.5em;
+  border-radius: 6px;
+  color: black; }
+  .candidate-box:selected, .candidate-box:hover {
+    background-color: #c0c0c6;
+    color: #303030; }
+
+.candidate-page-button-box {
+  height: 2em; }
+  .vertical .candidate-page-button-box {
+    padding-top: 0.5em; }
+  .horizontal .candidate-page-button-box {
+    padding-left: 0.5em; }
+
+.candidate-page-button {
+  padding: 4px; }
+
+.candidate-page-button-previous {
+  border-radius: 6px 0px 0px 6px;
+  border-right-width: 0; }
+
+.candidate-page-button-next {
+  border-radius: 0px 6px 6px 0px; }
+
+.candidate-page-button-icon {
+  icon-size: 1em; }
+
+/*
+****** DEPRECATED
+
+On-Screen Keyboard (<= Cinnamon 6.4)
+*/
+#keyboard {
+  background-color: #303030;
+  border-width: 0;
+  border-top-width: 1px;
+  border-color: rgba(0, 0, 0, 0.4); }
+
+.keyboard-layout {
+  spacing: 10px;
+  padding: 10px; }
+
+.keyboard-row {
+  spacing: 15px; }
+
+.keyboard-key {
+  min-height: 2em;
+  min-width: 2em;
+  font-size: 1.4em;
+  font-weight: bold;
+  border-radius: 3px;
+  box-shadow: none;
+  color: #c3c3c3;
+  border: 1px solid #b5b5bd;
+  background-color: rgba(104, 104, 104, 0.4); }
+  .keyboard-key:hover {
+    color: #c3c3c3;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    background-color: rgba(122, 122, 122, 0.5); }
+  .keyboard-key:active, .keyboard-key:checked {
+    color: #ffffff;
+    border: 1px solid #35a854;
+    background-color: #35a854; }
+  .keyboard-key:grayed {
+    color: #5c5c5c;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    background-color: rgba(104, 104, 104, 0.25); }
+
+.keyboard-subkeys {
+  color: #c3c3c3;
+  padding: 5px;
+  -arrow-border-radius: 2px;
+  -arrow-background-color: #303030;
+  -arrow-border-width: 1px;
+  -arrow-border-color: rgba(0, 0, 0, 0.4);
+  -arrow-base: 20px;
+  -arrow-rise: 10px;
+  -boxpointer-gap: 5px; }
+
+/* ****** DEPRECATED */
