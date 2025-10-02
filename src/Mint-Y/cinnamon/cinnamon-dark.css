@@ -1985,6 +1985,51 @@ On-Screen Keyboard (>= Cinnamon 6.6)
   spacing: 20px;
   min-height: 20pt; }
 
+.candidate-popup-boxpointer {
+  -arrow-border-radius: 8px;
+  -arrow-background-color: #222226;
+  -arrow-border-width: 1px;
+  -arrow-border-color: #303036;
+  -arrow-base: 12px;
+  -arrow-rise: 6px;
+  -arrow-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+.candidate-popup-content {
+  padding: 0.5em;
+  spacing: 0.3em; }
+
+.candidate-index {
+  padding: 0 0.5em 0 0;
+  color: #c8c8c8; }
+
+.candidate-box {
+  padding: 0.3em 0.5em 0.3em 0.5em;
+  border-radius: 6px;
+  color: #626262; }
+  .candidate-box:selected, .candidate-box:hover {
+    background-color: #38383e;
+    color: #e1e1e1; }
+
+.candidate-page-button-box {
+  height: 2em; }
+  .vertical .candidate-page-button-box {
+    padding-top: 0.5em; }
+  .horizontal .candidate-page-button-box {
+    padding-left: 0.5em; }
+
+.candidate-page-button {
+  padding: 4px; }
+
+.candidate-page-button-previous {
+  border-radius: 6px 0px 0px 6px;
+  border-right-width: 0; }
+
+.candidate-page-button-next {
+  border-radius: 0px 6px 6px 0px; }
+
+.candidate-page-button-icon {
+  icon-size: 1em; }
+
 /*
 ****** DEPRECATED
 
