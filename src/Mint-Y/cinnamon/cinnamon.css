@@ -1950,6 +1950,7 @@ On-Screen Keyboard (>= Cinnamon 6.6)
     background-color: #9a9aa5; }
   .vkeyboard-key.enter-key {
     border-color: #35a854;
+    background-color: #c0c0c6;
     border-width: 3px; }
   .vkeyboard-key.shift-key-lowercase, .vkeyboard-key.escape-key, .vkeyboard-key.hide-key, .vkeyboard-key.non-alpha-key {
     background-color: #c0c0c6; }
