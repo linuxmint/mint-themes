@@ -38,6 +38,7 @@ $shifted_key_color: if($variant == 'light', darken($bg_color, 30%), lighten($bg_
   &.enter-key {
     @if $variant == 'light' {
       border-color: $accent_color;
+      background-color: $non_alpha_key_color;
       border-width: 3px;
     } @else {
       background-color: $accent_color;

@@ -1267,7 +1267,7 @@ StScrollBar StButton#vhandle:hover {
 }
 
 /* ===================================================================
- * On screen keyboard (keyboard.js)
+ * On screen keyboard (keyboard.js) ********** DEPRECATED 6.6
  * ===================================================================*/
 #keyboard {
     border-image: url("background-assets/keyboard-bg.png") 4;
@@ -1317,6 +1317,146 @@ StScrollBar StButton#vhandle:hover {
     -st-shadow: 0px -1px 2px 0px rgba(255, 255, 255, 0.9);
     -boxpointer-gap: 2px;
 }
+
+/* ======================================
+ * On-Screen Keyboard (>= Cinnamon 6.6)
+ * ======================================*/
+/*
+On-Screen Keyboard (>= Cinnamon 6.6)
+*/
+#virtual-keyboard {
+  border-image: url("background-assets/keyboard-bg.png") 4;
+}
+
+.vkeyboard-key-container {
+  padding: 3px;
+  spacing: 3px; }
+
+.vkeyboard-key {
+    border-image: url("button-assets/button.png") 4;
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 4px 4px 4px;
+    color: rgb(70, 70, 70);
+}
+
+.vkeyboard-key StIcon {
+    icon-size: 1.125em;
+}
+
+.vkeyboard-key:checked,
+.vkeyboard-key:hover {
+    border-image: url("button-assets/button-hover.png") 4;
+}
+
+.vkeyboard-key:active,
+.vkeyboard-key.shift-key-uppercase {
+    border-image: url("button-assets/button-pressed.png") 4;
+}
+
+.vkeyboard-key.shift-key-lowercase,
+.vkeyboard-key.escape-key,
+.vkeyboard-key.hide-key,
+.vkeyboard-key.enter-key,
+.vkeyboard-key.non-alpha-key {
+    border-image: url("button-assets/button-darker.png") 4;
+}
+
+.vkeyboard-key.enter-key:hover,
+.vkeyboard-key.enter-key:checked,
+.vkeyboard-key.shift-key-lowercase:hover,
+.vkeyboard-key.shift-key-lowercase:checked,
+.vkeyboard-key.escape-key:hover,
+.vkeyboard-key.escape-key:checked,
+.vkeyboard-key.hide-key:hover,
+.vkeyboard-key.hide-key:checked,
+.vkeyboard-key.non-alpha-key:hover,
+.vkeyboard-key.non-alpha-key:checked {
+    border-image: url("button-assets/button-hover.png") 4;
+}
+
+.vkeyboard-key.enter-key:active,
+.vkeyboard-key.shift-key-lowercase:active,
+.vkeyboard-key.escape-key:active,
+.vkeyboard-key.hide-key:active,
+.vkeyboard-key.non-alpha-key:active {
+    border-image: url("button-assets/button-pressed.png") 4;
+}
+
+.vkeyboard-subkeys {
+    color: rgb(70, 70, 70);
+    padding: 7px;
+    -arrow-border-radius: 4px;
+    -arrow-background-color: rgb(225, 225, 225);
+    -arrow-border-width: 1px;
+    -arrow-border-color: rgba(40, 40, 40, 0.4);
+    -arrow-base: 18px;
+    -arrow-rise: 10px;
+    -st-shadow: 0px -1px 2px 0px rgba(255, 255, 255, 0.9);
+    -boxpointer-gap: 2px;
+}
+
+.word-suggestions {
+  font-size: 1.227em;
+  spacing: 20px;
+  min-height: 20pt; }
+
+.candidate-popup-boxpointer {
+  -arrow-border-radius: 4px;
+  -arrow-background-color: #ebebed;
+  -arrow-border-color: rgba(40, 40, 40, 0.4);
+  -arrow-border-width: 1px;
+  -arrow-base: 12px;
+  -arrow-rise: 4px;
+  -arrow-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+.candidate-popup-content {
+  border-image: url("background-assets/bg-1.png") 4;
+  padding: 0.5em;
+  spacing: 0.6em; }
+
+.candidate-index {
+  padding: 0 0.5em 0 0;
+  color: #171717; }
+
+.candidate-box {
+    padding: 4px;
+
+    border-radius: 4px;
+    color: black;
+}
+.candidate-box:selected, .candidate-box:hover {
+    border-image: url("button-assets/button-hover.png") 4;
+}
+
+.candidate-page-button-box {
+  height: 2em;
+  spacing: .6em;
+}
+
+.vertical .candidate-page-button-box {
+    padding-top: 0.5em;
+}
+
+.horizontal .candidate-page-button-box {
+    padding-left: 0.5em;
+}
+
+.candidate-page-button {
+  border-image: url("button-assets/button-hover.png") 4;
+  padding: 4px 8px;
+}
+
+.candidate-page-button-previous {
+  border-radius: 6px 0px 0px 6px;
+  border-right-width: 0; }
+
+.candidate-page-button-next {
+  border-radius: 0px 6px 6px 0px; }
+
+.candidate-page-button-icon {
+  icon-size: 1em; }
+
 
 /* ===================================================================
  * Policykit authentication dialog
