@@ -1815,7 +1815,7 @@ On-Screen Keyboard (>= Cinnamon 6.6)
     padding-right: 5px;
 }
 
-.appmenu-application-button-description:ltr {
+.appmenu-application-button-description {
     font-size: 0.9em;
     color: rgb(110, 110, 110);
 }
@@ -1874,6 +1874,7 @@ On-Screen Keyboard (>= Cinnamon 6.6)
     padding-right: 7px;
     padding-bottom: 7px;
     border-radius: 4px;
+    max-width: 10px;
     background-color: #dadada;
 }
 
