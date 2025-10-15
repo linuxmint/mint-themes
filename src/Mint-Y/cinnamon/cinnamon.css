@@ -1021,32 +1021,50 @@ StScrollBar {
 .appmenu-background .popup-menu-content {
   padding: 0; }
 
+.appmenu-main-box {
+  spacing: 10px; }
+
+.appmenu-right-box {
+  spacing: 5px;
+  padding: 10px 10px; }
+
+.appmenu-categories-applications-box {
+  spacing: 15px; }
+  .appmenu-categories-applications-box:top {
+    padding-top: 5px; }
+
+.appmenu-applications-box {
+  padding-right: 5px; }
+
+.appmenu-search-box {
+  spacing: 10px; }
+
 .appmenu-sidebar {
+  padding: 15px 0px;
   background-color: #d3d3d7;
   border-radius: 7.5px 0 0 7.5px;
   border-right-width: 1px;
-  border-color: #b5b5bd; }
-  .appmenu-sidebar-user-box {
-    padding-top: 9px;
-    padding-bottom: 4.5px; }
+  border-color: #b5b5bd;
+  spacing: 5px; }
+  .appmenu-sidebar .appmenu-system-button {
+    background-color: #eeeeef; }
+    .appmenu-sidebar .appmenu-system-button-lock:hover {
+      background-color: #fbfbfb; }
+    .appmenu-sidebar .appmenu-system-button-logout:hover {
+      background-color: #fbfbfb; }
+    .appmenu-sidebar .appmenu-system-button-shutdown {
+      color: white;
+      background-color: #F04A50; }
+    .appmenu-sidebar .appmenu-system-button-shutdown:hover {
+      color: white;
+      background-color: #f26267; }
 
 .appmenu-system-box {
-  spacing: 6px;
-  padding-left: 6px;
-  padding-right: 6px; }
-
-.appmenu-categories-box {
-  padding: 9px 21px; }
-
-.appmenu-applications-box {
-  padding: 9px; }
-
-.appmenu-applications-scrollbox {
-  padding-right: 3px; }
+  spacing: 10px; }
 
 .appmenu-sidebar-button {
   padding: 3px 7px 3px 7px;
-  margin: 0 9px 0 9px; }
+  margin: 0 10px 0 10px; }
   .appmenu-sidebar-button:hover {
     background-color: #b0b0b8;
     border-color: #b5b5bd; }
@@ -1055,21 +1073,23 @@ StScrollBar {
   padding: 8.4px;
   border: 1px solid #b5b5bd;
   border-radius: 9999px;
-  background-color: #d3d3d7; }
-  .appmenu-system-button-lock:hover {
-    background-color: #b0b0b8; }
-  .appmenu-system-button-logout:hover {
-    background-color: #b0b0b8; }
-  .appmenu-system-button-shutdown:hover {
+  background-color: #e0e0e3; }
+  .appmenu-system-button-shutdown {
+    color: white;
     background-color: #F04A50; }
+  .appmenu-system-button-lock:hover {
+    background-color: #eeeeef; }
+  .appmenu-system-button-logout:hover {
+    background-color: #eeeeef; }
+  .appmenu-system-button-shutdown:hover {
+    color: white;
+    background-color: #f26267; }
 
 .appmenu-application-button-label {
   padding: 0; }
 
 .appmenu-application-button-description {
-  color: #636363;
-  font-weight: 400;
-  font-size: 0.818em; }
+  color: #636363; }
 
 .appmenu-application-button:highlighted {
   font-weight: bold; }
@@ -1094,16 +1114,8 @@ StScrollBar {
   .appmenu-category-button-greyed StIcon {
     opacity: 0.5; }
 
-.appmenu-search-box {
-  padding: 7px 7px 7px 9px;
-  border-bottom-width: 1px;
-  border-color: #b5b5bd; }
-
 .appmenu-search-entry-icon {
   icon-size: 1em; }
-
-#appmenu-search-entry {
-  margin: 9px; }
 
 .window-list-box {
   spacing: 6px;
@@ -1504,9 +1516,11 @@ StScrollBar {
 .user-widget.horizontal {
   spacing: 7px; }
 
+.user-widget.vertical {
+  spacing: 10px; }
+
 .user-widget.vertical .user-widget-label {
   color: #303030;
-  padding-top: 10px;
   text-align: center; }
 
 .applet-cornerbar {
@@ -1611,7 +1625,7 @@ StScrollBar {
   background-color: rgba(0, 0, 0, 0);
   border-radius: 0px; }
 
-.prompt-dialog-error-label, .prompt-dialog-info-label, .prompt-dialog-null-label, .run-dialog-description, .message-dialog-content .message-dialog-caption, .dialog-list .dialog-list-box .dialog-list-item .dialog-list-item-description {
+.prompt-dialog-error-label, .prompt-dialog-info-label, .prompt-dialog-null-label, .run-dialog-description, .message-dialog-content .message-dialog-caption, .dialog-list .dialog-list-box .dialog-list-item .dialog-list-item-description, .appmenu-application-button-description {
   font-weight: 400;
   font-size: 0.818em; }
 

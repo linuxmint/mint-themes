@@ -1777,34 +1777,56 @@ On-Screen Keyboard (>= Cinnamon 6.6)
   padding: 0;
 }
 
-.appmenu-system-box {
-  spacing: 6px;
-  padding-left: 9px;
-  padding-right: 9px;
+.appmenu-main-box {
+  spacing: 10px;
 }
 
-.appmenu-categories-box {
-    padding-top: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 10px;
+.appmenu-right-box {
+  spacing: 5px;
+  padding: 10px 10px;
+}
+
+.appmenu-search-box {
+    spacing: 10px;
+}
+
+.appmenu-categories-applications-box {
+  spacing: 15px;
+  padding: 10px 10px;
+}
+
+.appmenu-categories-applications-box:top {
+  /* Extra padding at the top of the categories/apps
+   when the search box is at the bottom */
+  padding-top: 5px;
+}
+
+.appmenu-applications-box {
+  /* Extra gap between the highlighted app and the scroll handle */
+  padding-right: 5px;
+}
+
+.appmenu-system-box {
+  spacing: 10px;
 }
 
 .appmenu-sidebar {
+    padding: 10px 0px;
+    spacing: 5px;
     background-color: #dadada;
     border: 1px solid rgb(192, 192, 192);
     border-radius: 4px 0 0 4px;
-    padding: 0.5em;
     border-right-width: 1px;
 }
 
-.appmenu-sidebar-user-box {
-  padding-top: 5px;
-  padding-bottom: 5px;
+.appmenu-sidebar .appmenu-system-button-lock:hover {
+  background-color: #444444;
+  color: white;
 }
 
-.appmenu-applications-scrollbox {
-  padding-right: 3px;
+.appmenu-sidebar .appmenu-system-button-logout:hover {
+  background-color: #444444;
+  color: white;
 }
 
 .appmenu-application-button-label:ltr {
@@ -1843,11 +1865,13 @@ On-Screen Keyboard (>= Cinnamon 6.6)
 }
 
 .appmenu-system-button-lock:hover {
-  background-color: #dadada;
+  background-color: #444444;
+  color: white;
 }
 
 .appmenu-system-button-logout:hover {
-  background-color: #dadada;
+  background-color: #444444;
+  color: white;
 }
 
 .appmenu-system-button-shutdown:hover {
@@ -1914,14 +1938,6 @@ On-Screen Keyboard (>= Cinnamon 6.6)
 
 .appmenu-category-button-label:rtl {
     padding-right: 5px;
-}
-
-.appmenu-context-menu {
-}
-
-.appmenu-search-box {
-    padding: 12px 6px 6px 36px;
-    border-color: rgba(200, 200, 200, 1);;
 }
 
 .appmenu-search-entry-icon {
@@ -2622,9 +2638,12 @@ On-Screen Keyboard (>= Cinnamon 6.6)
     margin: 6px;
 }
 
+.user-widget.vertical {
+  spacing: 10px;
+}
+
 .user-widget.vertical .user-widget-label {
   color: rgb(70, 70, 70);
-  padding-top: 10px;
   text-align: center;
   font-size: 1.2em;
 }
