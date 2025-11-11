@@ -2021,10 +2021,9 @@ On-Screen Keyboard (>= Cinnamon 6.6)
 .candidate-box {
   padding: 0.3em 0.5em 0.3em 0.5em;
   border-radius: 6px;
-  color: black; }
+  color: #303030; }
   .candidate-box:selected, .candidate-box:hover {
-    background-color: #c0c0c6;
-    color: #303030; }
+    background-color: #c0c0c6; }
 
 .candidate-page-button-box {
   height: 2em; }

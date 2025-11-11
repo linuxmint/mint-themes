@@ -2019,10 +2019,9 @@ On-Screen Keyboard (>= Cinnamon 6.6)
 .candidate-box {
   padding: 0.3em 0.5em 0.3em 0.5em;
   border-radius: 6px;
-  color: #626262; }
+  color: #e1e1e1; }
   .candidate-box:selected, .candidate-box:hover {
-    background-color: #38383e;
-    color: #e1e1e1; }
+    background-color: #38383e; }
 
 .candidate-page-button-box {
   height: 2em; }
