@@ -41,6 +41,7 @@ stage {
     box-shadow: inset 0 2px 4px rgba(176, 176, 184, 0.05); }
 
 .prompt-dialog-password-entry, .run-dialog-entry, #appmenu-search-entry, #menu-search-entry, .popup-menu #notification StEntry {
+  min-height: 22px;
   padding: 7px;
   caret-size: 1px;
   selection-background-color: #35a854;
