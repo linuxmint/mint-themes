@@ -229,7 +229,8 @@ StScrollBar {
 
 .menu {
   color: #303030;
-  background-color: #ebebed; }
+  background-color: #ebebed;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5); }
   .menu-top {
     border-radius: 0 0 6px 6px; }
   .menu-bottom {
