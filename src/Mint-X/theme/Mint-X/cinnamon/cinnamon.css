@@ -2139,6 +2139,7 @@ On-Screen Keyboard (>= Cinnamon 6.6)
     padding-left: 4px;
 }
 .grouped-window-list-number-label {
+    font-size: 11px;
     z-index: 99;
     color: rgb(70, 70, 70);
 }
