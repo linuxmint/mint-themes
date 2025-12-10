@@ -1590,8 +1590,6 @@ $base_padding: 7px;
     &.top,
     &.bottom {
       border-bottom-width: 2px;
-
-      & StLabel { padding-left: 2px; }
     }
 
     &.right {
@@ -1638,13 +1636,12 @@ $base_padding: 7px;
   }
 
   &-number-label {
-    font-size: 10px;
-    z-index: 99;
+    font-size: 12px;
     color: $selected_fg_color;
   }
 
   &-badge {
-    border-radius: 9999px;
+    border-radius: 99px;
     background-color: $accent_color;
     margin: 0;
   }

@@ -1198,8 +1198,6 @@ StScrollBar {
   color: rgba(48, 48, 48, 0.8); }
   .grouped-window-list-item-box.top, .grouped-window-list-item-box.bottom {
     border-bottom-width: 2px; }
-    .grouped-window-list-item-box.top StLabel, .grouped-window-list-item-box.bottom StLabel {
-      padding-left: 2px; }
   .grouped-window-list-item-box.right {
     padding-left: 0px;
     padding-right: 0px;
@@ -1230,12 +1228,11 @@ StScrollBar {
   padding-left: 4px; }
 
 .grouped-window-list-number-label {
-  font-size: 10px;
-  z-index: 99;
+  font-size: 12px;
   color: #ffffff; }
 
 .grouped-window-list-badge {
-  border-radius: 9999px;
+  border-radius: 99px;
   background-color: #35a854;
   margin: 0; }
 
