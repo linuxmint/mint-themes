@@ -1,3 +1,38 @@
+mint-themes (2.3.4) zena; urgency=medium
+
+  [ Clement Lefebvre ]
+  * Add a test-mint-x script for Cinnamon
+  * Add support for the new Cinnamon 6.6 menu
+
+  [ Michael Webster ]
+  * Mint-Y: Add support for Cinnamon 6.6 on-screen keyboard.
+  * Mint-Y: Add support for ibus popups.
+  * Mint-X: Add support for new keyboard and ibus popup.
+  * Mint-Y: small fix for cinnamon keyboard.
+  * Mint-X: Fix jumpiness when browsing applications in the new menu.
+
+  [ Clement Lefebvre ]
+  * Adapt to new menu improvements
+
+  [ Michael Webster ]
+  * Mint-Y - Don't darken unselected ibus candidates.
+
+  [ fredcw ]
+  * Mint-X cinnamon: colour destructive button background instead of text. (#509)
+  * Mint-Y cinnamon: GWL: use fixed size font for window count badge (#524)
+  * Mint-X cinnamon: GWL use fixed font size for window count badge (#525)
+
+  [ Senior Matthew ]
+  * Fixed app menu openning animation lag (#523)
+
+  [ Michael Webster ]
+  * Mint-Y: Run parse-sass for e2dc72c07b.
+
+  [ Clement Lefebvre ]
+  * Tune Cinnamon window badges
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 10 Dec 2025 15:29:58 +0000
+
 mint-themes (2.3.3) gigi; urgency=medium
 
   [ Michael Webster ]
