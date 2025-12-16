@@ -275,6 +275,7 @@ StScrollBar {
 .menu {
   color: $fg_color;
   background-color: $bg_color;
+  box-shadow: 0 0 6px $shadow_color;
 
   &-top {
     border-radius: 0 0 $radius $radius;
