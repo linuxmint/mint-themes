@@ -1398,8 +1398,8 @@ $base_padding: 7px;
   &-sidebar-button {
     @extend %appmenu_button;
 
-    padding: 3px $base_padding 3px $base_padding;
-    margin: 0 $appmenu_padding 0 $appmenu_padding;
+    padding: 4px $base_padding;
+    margin: 0 $appmenu_padding;
 
     &:hover {
       background-color: $bg_color3;
