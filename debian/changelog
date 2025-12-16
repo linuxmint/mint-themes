@@ -1,3 +1,10 @@
+mint-themes (2.3.5) zena; urgency=medium
+
+  * Revert "Fixed app menu openning animation lag (#523)"
+  * cinnamon: Add a bit of padding in menu sidebar buttons
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 16 Dec 2025 10:10:10 +0000
+
 mint-themes (2.3.4) zena; urgency=medium
 
   [ Clement Lefebvre ]
