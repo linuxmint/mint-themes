@@ -1240,6 +1240,9 @@ StScrollBar {
   background-color: #35a854;
   margin: 0; }
 
+.grouped-window-list-notifications-badge-label {
+  font-size: 12px; }
+
 .grouped-window-list-button-label {
   padding-left: 4px; }
 
