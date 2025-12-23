@@ -1,3 +1,9 @@
+mint-themes (2.3.6) zena; urgency=medium
+
+  * cinnamon: Fix mint-y border-radius in menu sidebar
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 23 Dec 2025 12:45:39 +0000
+
 mint-themes (2.3.5) zena; urgency=medium
 
   * Revert "Fixed app menu openning animation lag (#523)"
