@@ -1042,10 +1042,18 @@ StScrollBar {
 .appmenu-sidebar {
   padding: 15px 0px;
   background-color: #d3d3d7;
-  border-radius: 7.5px 0 0 7.5px;
+  border-radius: 6px 0 0 0;
   border-right-width: 1px;
   border-color: #b5b5bd;
   spacing: 5px; }
+  .menu-top .appmenu-sidebar {
+    border-radius: 0 0 0 6px; }
+  .menu-bottom .appmenu-sidebar {
+    border-radius: 6px 0 0 0; }
+  .menu-left .appmenu-sidebar {
+    border-radius: 0; }
+  .menu-right .appmenu-sidebar {
+    border-radius: 0; }
   .appmenu-sidebar .appmenu-system-button {
     background-color: #eeeeef; }
     .appmenu-sidebar .appmenu-system-button-lock:hover {

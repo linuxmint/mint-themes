@@ -1325,7 +1325,6 @@ StScrollBar {
 $appmenu_small_padding: 5px;
 $appmenu_padding: 10px;
 $appmenu_large_padding: 15px;
-$appmenu_radius: $radius * 1.25;
 $base_padding: 7px;
 
 %appmenu_button {
@@ -1375,7 +1374,11 @@ $base_padding: 7px;
   &-sidebar {
     padding: $appmenu_large_padding 0px;
     background-color: $bg_color2;
-    border-radius: $appmenu_radius 0 0 $appmenu_radius;
+    border-radius: $radius 0 0 0;
+    @at-root .menu-top #{&}    { border-radius: 0 0 0 $radius; }
+    @at-root .menu-bottom #{&} { border-radius: $radius 0 0 0; }
+    @at-root .menu-left #{&}   { border-radius: 0; }
+    @at-root .menu-right #{&}  { border-radius: 0; }
     border-right-width: 1px;
     border-color: $borders_color;
     spacing: 5px;
