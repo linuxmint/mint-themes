@@ -1,3 +1,10 @@
+mint-themes (2.3.7) zena; urgency=medium
+
+  [ fredcw ]
+  * Mint-Y cinnamon: window-list applet set fixed notification badge font size (#527)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 07 Jan 2026 12:28:16 +0000
+
 mint-themes (2.3.6) zena; urgency=medium
 
   * cinnamon: Fix mint-y border-radius in menu sidebar
