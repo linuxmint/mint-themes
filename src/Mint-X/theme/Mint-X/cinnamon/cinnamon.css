@@ -1397,6 +1397,8 @@ On-Screen Keyboard (>= Cinnamon 6.6)
 }
 
 .vkeyboard-key:active,
+.vkeyboard-key.modifier-key:latched,
+.vkeyboard-key.modifier-key:latched:hover,
 .vkeyboard-key.shift-key-uppercase {
     border-image: url("button-assets/button-pressed.png") 4;
 }
@@ -1405,6 +1407,7 @@ On-Screen Keyboard (>= Cinnamon 6.6)
 .vkeyboard-key.escape-key,
 .vkeyboard-key.hide-key,
 .vkeyboard-key.enter-key,
+.vkeyboard-key.modifier-key,
 .vkeyboard-key.non-alpha-key {
     border-image: url("button-assets/button-darker.png") 4;
 }
@@ -1417,6 +1420,8 @@ On-Screen Keyboard (>= Cinnamon 6.6)
 .vkeyboard-key.escape-key:checked,
 .vkeyboard-key.hide-key:hover,
 .vkeyboard-key.hide-key:checked,
+.vkeyboard-key.modifier-key:hover,
+.vkeyboard-key.modifier-key:checked,
 .vkeyboard-key.non-alpha-key:hover,
 .vkeyboard-key.non-alpha-key:checked {
     border-image: url("button-assets/button-hover.png") 4;
@@ -1426,6 +1431,7 @@ On-Screen Keyboard (>= Cinnamon 6.6)
 .vkeyboard-key.shift-key-lowercase:active,
 .vkeyboard-key.escape-key:active,
 .vkeyboard-key.hide-key:active,
+.vkeyboard-key.modifier-key:active,
 .vkeyboard-key.non-alpha-key:active {
     border-image: url("button-assets/button-pressed.png") 4;
 }
