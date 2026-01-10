@@ -1991,6 +1991,15 @@ On-Screen Keyboard (>= Cinnamon 6.6)
       background-color: #35a854;
       border: 1px solid #35a854;
       box-shadow: inset 0 2px 4px #35a854; }
+  .vkeyboard-key.modifier-key {
+    background-color: #c0c0c6; }
+    .vkeyboard-key.modifier-key:hover, .vkeyboard-key.modifier-key:checked {
+      color: #303030;
+      background-color: #bdbdc4;
+      border: 1px solid #b5b5bd;
+      box-shadow: inset 0 2px 4px rgba(189, 189, 196, 0.05); }
+    .vkeyboard-key.modifier-key:latched {
+      background-color: #9a9aa5; }
   .vkeyboard-key StIcon {
     icon-size: 1.125em; }
 
