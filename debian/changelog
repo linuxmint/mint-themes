@@ -1,3 +1,10 @@
+mint-themes (2.3.8) zena; urgency=medium
+
+  [ Michael Webster ]
+  * Cinnamon: Fix support for ctrl and alt OSK modifiers. (#529)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 16 Jan 2026 11:58:49 +0000
+
 mint-themes (2.3.7) zena; urgency=medium
 
   [ fredcw ]
