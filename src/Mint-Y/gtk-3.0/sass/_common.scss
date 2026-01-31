@@ -2624,6 +2624,18 @@ filechooserbutton:drop(active) {
 }
 
 //
+// PrintDialog
+//
+printdialog {
+  paper {
+    background-color: white;
+    color: $fg_color;
+    border: 1px solid $borders_color;
+    padding: 0;
+  }
+}
+
+//
 // Sidebar
 //
 .sidebar {
