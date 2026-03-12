@@ -58,7 +58,7 @@ $wm_icon_hover_bg:      null;
 } @else {
     // Dark Variant Colors
     $opposite:              WHITE;
-    $base_color:            #2E2E33;
+    $base_color:            #333339;
     $text_color:            #DADADA;
     $header_bg:             #222226;
     $bg_color:              lighten($header_bg, 5%);
