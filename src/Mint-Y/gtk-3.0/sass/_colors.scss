@@ -127,6 +127,12 @@ $tooltip_bg_color: transparentize(mix($selected_bg_color, black, 95%), 0.05);
 $tooltip_fg_color: #FFFFFF;
 $drop_target_color: $selected_bg_color;
 
+@if $variant == 'light' {
+    $button_active_bg: transparentize(black, 0.85);
+} @else {
+    $button_active_bg: transparentize(white, 0.85);
+}
+
 // Links and status
 $link_color: #5294E2;
 $link_visited_color: #5294E2;
