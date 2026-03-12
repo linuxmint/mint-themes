@@ -1221,7 +1221,7 @@ StScrollBar {
       padding-left: 1px; }
   .grouped-window-list-item-box:hover, .grouped-window-list-item-box:focus {
     color: #e1e1e1;
-    background-color: #303036; }
+    background-color: #41584d; }
   .grouped-window-list-item-box:active, .grouped-window-list-item-box:checked {
     color: #e1e1e1;
     border-color: #35a854; }
@@ -1478,7 +1478,7 @@ StScrollBar {
     padding: 5px 0; }
   .applet-box:hover, .applet-box:checked {
     color: #ffffff;
-    background-color: #303036; }
+    background-color: #41584d; }
   .applet-box:highlight {
     background-image: none;
     border-image: none;
