@@ -932,7 +932,9 @@ StScrollBar StButton#vhandle:hover {
 }
 
 #notification-scrollview {
-    max-height: 100em;
+    max-height: 10em;
+    min-height: 3em;
+
 }
 
 #notification-scrollview > .top-shadow,
