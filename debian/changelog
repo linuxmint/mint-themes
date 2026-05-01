@@ -1,3 +1,25 @@
+mint-themes (2.3.9) alfa; urgency=medium
+
+  [ JosephMcc ]
+  * Mint-Y: Add support for gtk3 print dialog
+
+  [ Michael Webster ]
+  * .github/workflows: Add generate-test-packages trigger.
+
+  [ Clement Lefebvre ]
+  * Mint-Y-Dark: Lighten up base color
+  * Mint-Y-Dark: Lighten up pressed buttons
+  * Mint-Y-Dark: Update gtk2 theme and assets
+  * Mint-Y-Dark: Lighten up active applet bg in panel
+
+  [ Huỳnh Thiện Lộc ]
+  * fix(libadwaita): view background darker than sidebar (This solved #519) (#536)
+
+  [ Michael Webster ]
+  * Mint-X/Y: Add libadwaita 1.9 support.
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 01 May 2026 10:59:38 +0100
+
 mint-themes (2.3.8) zena; urgency=medium
 
   [ Michael Webster ]
