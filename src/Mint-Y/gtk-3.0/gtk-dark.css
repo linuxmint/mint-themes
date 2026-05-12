@@ -772,7 +772,12 @@ toolbar, .inline-toolbar {
   border-color: #202023;
   border-width: 0 1px 1px;
   padding: 3px;
-  border-radius: 0  0 3px 3px; }
+  border-radius: 0 0 3px 3px; }
+
+.frame + .inline-toolbar,
+frame + .inline-toolbar {
+  margin-top: -3px;
+  padding-top: 6px; }
 
 searchbar {
   background-color: #2e2e33;
@@ -2277,17 +2282,40 @@ levelbar block.empty {
   background-color: #333339;
   border-color: #333339; }
 
+frame {
+  border-radius: 3px;
+  background-color: #2e2e33; }
+
 frame > border,
 .frame {
   margin: 0;
   padding: 0;
-  border-radius: 0;
+  border-radius: 3px;
   border: 1px solid #202023; }
 
 frame.flat > border,
 frame > border.flat,
 .frame.flat {
   border-style: none; }
+
+frame list,
+frame listbox,
+frame treeview,
+frame scrolledwindow,
+frame viewport,
+.frame list,
+.frame listbox,
+.frame treeview,
+.frame viewport {
+  border-radius: 3px; }
+
+frame treeview.view header button:first-child,
+.frame treeview.view header button:first-child {
+  border-top-left-radius: 3px; }
+
+frame treeview.view header button:last-child,
+.frame treeview.view header button:last-child {
+  border-top-right-radius: 3px; }
 
 scrolledwindow viewport.frame {
   border-style: none; }

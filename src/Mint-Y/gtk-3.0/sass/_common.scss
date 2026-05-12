@@ -894,7 +894,13 @@ toolbar {
   border-color: $borders_color;
   border-width: 0 1px 1px;
   padding: 3px;
-  border-radius: 0  0 3px 3px;
+  border-radius: 0 0 3px 3px;
+}
+
+.frame + .inline-toolbar,
+frame + .inline-toolbar {
+  margin-top: -3px;
+  padding-top: 6px;
 }
 
 searchbar {
@@ -2382,11 +2388,16 @@ levelbar {
   }
 }
 
+frame {
+  border-radius: 3px;
+  background-color: $bg_color;
+}
+
 frame > border,
 .frame {
   margin: 0;
   padding: 0;
-  border-radius: 0;
+  border-radius: 3px;
   border: 1px solid $borders_color;
 }
 
@@ -2395,6 +2406,30 @@ frame > border.flat,
 .frame.flat {
   border-style: none;
 }
+
+frame list,
+frame listbox,
+frame treeview,
+frame scrolledwindow,
+frame viewport,
+.frame list,
+.frame listbox,
+.frame treeview,
+.frame viewport {
+  border-radius: 3px;
+}
+
+
+frame treeview.view header button:first-child,
+.frame treeview.view header button:first-child {
+  border-top-left-radius: 3px;
+}
+
+frame treeview.view header button:last-child,
+.frame treeview.view header button:last-child {
+  border-top-right-radius: 3px;
+}
+
 
 scrolledwindow {
   viewport.frame { // avoid double borders when viewport inside scrolled window
