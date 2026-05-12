@@ -1621,23 +1621,50 @@ cursor-handle {
 notebook {
   padding: 0; }
   notebook.frame {
-    border: 1px solid #202023; }
+    border: 1px solid #202023;
+    border-radius: 3px;
+    background-color: #2e2e33; }
     notebook.frame > header {
       margin: -1px; }
       notebook.frame > header.top {
-        margin-bottom: 0; }
+        margin-bottom: 0;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px; }
+        notebook.frame > header.top > tabs {
+          border-top-left-radius: 3px;
+          border-top-right-radius: 3px; }
+        notebook.frame > header.top > tabs > tab:first-child {
+          border-top-left-radius: 3px; }
+        notebook.frame > header.top > tabs > tab:last-child {
+          border-top-right-radius: 3px; }
       notebook.frame > header.bottom {
-        margin-top: 0; }
+        margin-top: 0;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px; }
+        notebook.frame > header.bottom > tabs {
+          border-bottom-left-radius: 3px;
+          border-bottom-right-radius: 3px; }
+        notebook.frame > header.bottom > tabs > tab:first-child {
+          border-bottom-left-radius: 3px; }
+        notebook.frame > header.bottom > tabs > tab:last-child {
+          border-bottom-right-radius: 3px; }
       notebook.frame > header.left {
-        margin-right: 0; }
+        margin-right: 0;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px; }
       notebook.frame > header.right {
-        margin-left: 0; }
+        margin-left: 0;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px; }
       notebook.frame > header.top, notebook.frame > header.bottom {
         padding-left: 0;
         padding-right: 0; }
       notebook.frame > header.left, notebook.frame > header.right {
         padding-top: 0;
         padding-bottom: 0; }
+    notebook.frame > stack:not(:only-child):last-child {
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px; }
   notebook > stack:not(:only-child) {
     background-color: #333339; }
   notebook > header {

@@ -1755,17 +1755,45 @@ notebook {
 
   &.frame {
     border: 1px solid $borders_color;
+    border-radius: 3px;
+    background-color: $bg_color;
 
     > header {
       // ugly hack to hide the borders around the header
       margin: -1px;
-      &.top { margin-bottom: 0; }
-      &.bottom { margin-top: 0; }
-      &.left { margin-right: 0; }
-      &.right { margin-left: 0; }
+      &.top {
+        margin-bottom: 0;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        > tabs { border-top-left-radius: 3px; border-top-right-radius: 3px; }
+        > tabs > tab:first-child { border-top-left-radius: 3px; }
+        > tabs > tab:last-child  { border-top-right-radius: 3px; }
+      }
+      &.bottom {
+        margin-top: 0;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+        > tabs { border-bottom-left-radius: 3px; border-bottom-right-radius: 3px; }
+        > tabs > tab:first-child { border-bottom-left-radius: 3px; }
+        > tabs > tab:last-child  { border-bottom-right-radius: 3px; }
+      }
+      &.left {
+        margin-right: 0;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+      }
+      &.right {
+        margin-left: 0;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+      }
 
       &.top, &.bottom { padding-left: 0; padding-right: 0; }
       &.left, &.right { padding-top: 0; padding-bottom: 0; }
+    }
+
+    > stack:not(:only-child) {
+      &:last-child { border-bottom-left-radius: 3px; border-bottom-right-radius: 3px; }
     }
   }
 
