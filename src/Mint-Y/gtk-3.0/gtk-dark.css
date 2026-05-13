@@ -2298,6 +2298,23 @@ frame > border.flat,
 .frame.flat {
   border-style: none; }
 
+.sidebar.frame,
+.sidebar .frame,
+.sidebar frame,
+.sidebar frame > border,
+.sidebar scrolledwindow,
+.sidebar viewport,
+.sidebar .frame list,
+.sidebar .frame listbox,
+.sidebar .frame treeview,
+.sidebar .frame viewport,
+.sidebar frame list,
+.sidebar frame listbox,
+.sidebar frame treeview,
+.sidebar frame viewport {
+  border-radius: 0;
+  border: none; }
+
 frame list,
 frame listbox,
 frame treeview,
