@@ -1,3 +1,11 @@
+mint-themes (2.4.0) alfa; urgency=medium
+
+  * Round frames and containers
+  * Don't round the frame of the sidebar
+  * Round notebooks and notebook tabs
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 18 May 2026 13:22:08 +0100
+
 mint-themes (2.3.9) alfa; urgency=medium
 
   [ JosephMcc ]
