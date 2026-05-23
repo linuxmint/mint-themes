@@ -1788,6 +1788,8 @@ scrollbar {
   * {
     -GtkScrollbar-has-backward-stepper: false;
     -GtkScrollbar-has-forward-stepper: false; }
+  terminal-screen-container scrollbar {
+    border: 1px solid transparent; }
   scrollbar.top {
     border-bottom: 1px solid #202023; }
   scrollbar.bottom {
