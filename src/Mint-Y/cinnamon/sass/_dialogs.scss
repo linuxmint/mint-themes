@@ -465,3 +465,10 @@ $osd_radius: 20px;
   border-radius: $radius;
   padding: $base_padding * 2;
 }
+
+// Popup dialog (non-modal, draggable)
+.popup-dialog {
+  .dialog {
+    box-shadow: 0 -2px $accent_color;
+  }
+}

@@ -2814,3 +2814,8 @@ On-Screen Keyboard (>= Cinnamon 6.6)
     border-right-width: 0px;
     border-radius: 8px 0px 0px 0px;
 }
+
+/* Popup dialog (non-modal, draggable) */
+.popup-dialog .dialog {
+    box-shadow: 0 -2px #accd8a;
+}

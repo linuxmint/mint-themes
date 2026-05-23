@@ -1932,6 +1932,9 @@ StScrollBar {
   border-radius: 6px;
   padding: 12px; }
 
+.popup-dialog .dialog {
+  box-shadow: 0 -2px #35a854; }
+
 /*
 On-Screen Keyboard (>= Cinnamon 6.6)
 */
