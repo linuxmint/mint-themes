@@ -1169,11 +1169,11 @@ StScrollBar {
       padding-left: 1px; }
   .window-list-item-box:hover, .window-list-item-box:groupFocus {
     color: #303030;
-    background-color: rgba(48, 48, 48, 0.2); }
+    background-color: #d3d3d7; }
   .window-list-item-box:active, .window-list-item-box:checked, .window-list-item-box:focus, .window-list-item-box:running {
     color: #303030;
     border-color: #35a854;
-    background-color: rgba(48, 48, 48, 0.2); }
+    background-color: #d3d3d7; }
   .window-list-item-box .progress {
     background-color: rgba(53, 168, 84, 0.8); }
 
