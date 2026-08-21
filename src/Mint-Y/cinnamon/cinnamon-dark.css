@@ -1277,6 +1277,37 @@ StScrollBar {
     width: 1px;
     background: rgba(255, 255, 255, 0.2); }
 
+.grouped-window-list-scrollbox-scrollview.vfade {
+  -st-vfade-offset: 68px;
+  -st-hfade-offset: 0; }
+
+.grouped-window-list-scrollbox-scrollview.hfade {
+  -st-hfade-offset: 68px;
+  -st-vfade-offset: 0; }
+
+.grouped-window-list-scrollbox-button {
+  transition-duration: 100ms;
+  color: rgba(225, 225, 225, 0.8); }
+  .grouped-window-list-scrollbox-button-icon {
+    icon-size: to_em(16px);
+    color: inherit; }
+  .grouped-window-list-scrollbox-button-start {
+    margin-right: 1px; }
+    .grouped-window-list-scrollbox-button-start.vertical {
+      margin-right: 0;
+      margin-bottom: 1px; }
+  .grouped-window-list-scrollbox-button-end {
+    margin-left: 1px; }
+    .grouped-window-list-scrollbox-button-end.vertical {
+      margin-left: 0;
+      margin-top: 1px; }
+  .grouped-window-list-scrollbox-button:hover {
+    background-color: #41584d;
+    color: #e1e1e1; }
+  .grouped-window-list-scrollbox-button:active {
+    background-color: #44444c;
+    color: #e1e1e1; }
+
 .sound-button {
   width: 22px;
   height: 13px;
