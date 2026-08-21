@@ -2866,3 +2866,229 @@ On-Screen Keyboard (>= Cinnamon 6.6)
 /* Popup dialog (non-modal, draggable). */
 .popup-dialog {
 }
+
+/* ===================================================================
+ * Screensaver / Lock screen (screensaver/*.js)
+ * The shield background is always black, so widget colors are fixed
+ * light-on-dark.
+ * ===================================================================*/
+
+.screen-shield {
+    background-color: black;
+    color: white;
+}
+
+.screen-shield .screen-shield-background {
+    background-color: black;
+}
+
+.screen-shield .icon-button {
+    border-radius: 9999px;
+    min-height: 16px;
+    padding: 1.091em;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.15);
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.screen-shield .icon-button StIcon {
+    icon-size: 16px;
+}
+
+.screen-shield .icon-button:hover,
+.screen-shield .icon-button:focus {
+    background-color: rgba(255, 255, 255, 0.22);
+}
+
+.screen-shield .icon-button:active {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.screen-shield .prompt-dialog {
+    width: 34em;
+    background-color: transparent;
+    background-image: none;
+    border-image: none;
+    border: none;
+    color: white;
+    padding: 0;
+    spacing: 24px;
+}
+
+.screen-shield .prompt-dialog .user-widget-label {
+    font-weight: 400;
+    font-size: 1.818em;
+    margin-bottom: .75em;
+    color: white;
+}
+
+.screen-shield .prompt-dialog .user-icon {
+    icon-size: 128px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.screen-shield .prompt-dialog .user-icon StIcon {
+    padding: 30px;
+}
+
+.screen-shield .prompt-dialog-password-entry {
+    width: 20em;
+    padding: 7px;
+    border-radius: 3px;
+    caret-size: 1px;
+    caret-color: white;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-image: none;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    selection-background-color: #9ab87c;
+    selected-color: #ffffff;
+    transition-duration: 300;
+}
+
+.screen-shield .prompt-dialog-password-entry:focus {
+    width: 20em;
+    padding: 7px;
+    border-radius: 3px;
+    caret-size: 1px;
+    caret-color: white;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-image: none;
+    border: 1px solid #9ab87c;
+    selected-color: #ffffff;
+}
+
+.screen-shield .prompt-dialog-password-entry StIcon.capslock-warning {
+    icon-size: 16px;
+    warning-color: #F27835;
+    padding: 0 4px;
+}
+
+.screen-shield .prompt-dialog-password-entry StLabel.hint-text {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.screen-shield .prompt-dialog-password-entry StIcon.peek-password {
+    icon-size: 16px;
+    color: white;
+}
+
+.screen-shield .clock-widget {
+    padding: 6px;
+    spacing: 6px;
+}
+
+.screen-shield .clock-widget .clock-time-label {
+    font-size: 6.546em;
+    color: white;
+}
+
+.screen-shield .clock-widget .clock-date-label {
+    font-weight: 800;
+    font-size: 1.818em;
+    color: white;
+}
+
+.screen-shield .clock-widget .clock-message-label {
+    font-size: 14pt;
+    color: #cccccc;
+    margin-top: 4px;
+}
+
+.screen-shield .clock-widget .clock-message-author {
+    font-size: 12pt;
+    color: #acacac;
+    text-align: center;
+}
+
+.screen-shield .albumart-widget {
+    padding: 12px;
+    spacing: 12px;
+    min-width: 400px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 18px;
+}
+
+.screen-shield .albumart-widget .albumart-track-info-box {
+    spacing: 3px;
+    max-width: 300px;
+}
+
+.screen-shield .albumart-widget .albumart-track-info-box .albumart-title {
+    font-weight: bold;
+    font-size: 1.364em;
+}
+
+.screen-shield .albumart-widget .albumart-track-info-box .albumart-artist {
+    font-weight: 700;
+    font-size: 1.182em;
+}
+
+.screen-shield .albumart-widget .albumart-track-info-box .albumart-album {
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.screen-shield .albumart-widget .albumart-track-info-box .albumart-controls {
+    spacing: 6px;
+    padding-top: 6px;
+}
+
+.screen-shield .albumart-widget .albumart-track-info-box .albumart-controls .icon-button {
+    padding: 0.546em;
+}
+
+.screen-shield .albumart-widget .albumart-track-info-box .albumart-volume-box {
+    spacing: 6px;
+}
+
+.screen-shield .albumart-widget .albumart-track-info-box .albumart-volume-box .albumart-volume-icon {
+    icon-size: 16px;
+}
+
+.screen-shield .albumart-widget .albumart-track-info-box .albumart-volume-box .albumart-volume-slider {
+    height: 20px;
+    min-width: 280px;
+    -slider-height: 4px;
+    -slider-background-color: rgba(255, 255, 255, 0.2);
+    -slider-border-color: transparent;
+    -slider-active-background-color: #9ab87c;
+    -slider-active-border-color: transparent;
+    -slider-border-width: 0;
+    -slider-handle-radius: 8px;
+}
+
+.screen-shield .info-panel {
+    padding: 8px;
+    spacing: 12px;
+}
+
+.screen-shield .info-panel .notification-widget {
+    spacing: 4px;
+}
+
+.screen-shield .info-panel .notification-widget .notification-widget-label {
+    color: white;
+    font-size: 12pt;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.screen-shield .info-panel .notification-widget .notification-widget-icon {
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.screen-shield .info-panel .power-widget-icon {
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.screen-shield .info-panel .power-widget-icon-critical {
+    color: #FC4138;
+}
