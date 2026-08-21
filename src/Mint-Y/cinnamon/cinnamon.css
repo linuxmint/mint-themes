@@ -1289,7 +1289,7 @@ StScrollBar {
   transition-duration: 100ms;
   color: rgba(48, 48, 48, 0.8); }
   .grouped-window-list-scrollbox-button-icon {
-    icon-size: to_em(16px);
+    icon-size: 1.091em;
     color: inherit; }
   .grouped-window-list-scrollbox-button-start {
     margin-right: 1px; }
@@ -2097,7 +2097,7 @@ On-Screen Keyboard (>= Cinnamon 6.6)
   .screen-shield .icon-button {
     border-radius: 9999px;
     min-height: 16px;
-    padding: to_em(16px);
+    padding: 1.091em;
     color: white;
     border: 1px solid rgba(255, 255, 255, 0.1);
     background-color: rgba(255, 255, 255, 0.15);
@@ -2181,7 +2181,7 @@ On-Screen Keyboard (>= Cinnamon 6.6)
         spacing: 6px;
         padding-top: 6px; }
         .screen-shield .albumart-widget .albumart-track-info-box .albumart-controls .icon-button {
-          padding: to_em(8px); }
+          padding: 0.546em; }
       .screen-shield .albumart-widget .albumart-track-info-box .albumart-volume-box {
         spacing: 6px; }
         .screen-shield .albumart-widget .albumart-track-info-box .albumart-volume-box .albumart-volume-icon {
