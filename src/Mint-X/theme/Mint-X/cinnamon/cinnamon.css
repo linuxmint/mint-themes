@@ -2274,6 +2274,77 @@ On-Screen Keyboard (>= Cinnamon 6.6)
     background: rgba(255, 255, 255, 0.33);
 }
 
+.grouped-window-list-scrollbox-scrollview.vfade {
+    -st-vfade-offset: 68px;
+    -st-hfade-offset: 0;
+}
+
+.grouped-window-list-scrollbox-scrollview.hfade {
+    -st-hfade-offset: 68px;
+    -st-vfade-offset: 0;
+}
+
+.grouped-window-list-scrollbox-button {
+    transition-duration: 100;
+    color: rgb(62, 62, 62);
+}
+
+.grouped-window-list-scrollbox-button-icon {
+    icon-size: 16px;
+    color: inherit;
+}
+
+.grouped-window-list-scrollbox-button-start {
+    margin-right: 1px;
+}
+
+.grouped-window-list-scrollbox-button-start.vertical {
+    margin-right: 0px;
+    margin-bottom: 1px;
+}
+
+.grouped-window-list-scrollbox-button-end {
+    margin-left: 1px;
+}
+
+.grouped-window-list-scrollbox-button-end.vertical {
+    margin-left: 0px;
+    margin-top: 1px;
+}
+
+.grouped-window-list-scrollbox-button:hover {
+    border-image: url("panel-assets/hover-1.svg") 6;
+}
+
+.panel-top .grouped-window-list-scrollbox-button:hover {
+    border-image: url("panel-assets/hover-1-top.svg") 6;
+}
+
+.panel-left .grouped-window-list-scrollbox-button:hover {
+    border-image: url("panel-assets/hover-1-left.svg") 6;
+}
+
+.panel-right .grouped-window-list-scrollbox-button:hover {
+    border-image: url("panel-assets/hover-1-right.svg") 6;
+}
+
+.grouped-window-list-scrollbox-button:active {
+    color: #fff;
+    border-image: url("panel-assets/pressed.svg") 6;
+}
+
+.panel-top .grouped-window-list-scrollbox-button:active {
+    border-image: url("panel-assets/pressed-top.svg") 6;
+}
+
+.panel-left .grouped-window-list-scrollbox-button:active {
+    border-image: url("panel-assets/pressed-left.svg") 6;
+}
+
+.panel-right .grouped-window-list-scrollbox-button:active {
+    border-image: url("panel-assets/pressed-right.svg") 6;
+}
+
 /* ===================================================================
  * Sound applet (sound@cinnamon.org/applet.js)
  * ===================================================================*/
