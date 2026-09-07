@@ -1,3 +1,18 @@
+mint-themes (2.4.1) alfa; urgency=medium
+
+  [ Michael Webster ]
+  * cinnamon: Add support for PopupDialog.
+  * cinnamon: Get rid of popup-dialog's shadow.
+  * cinnamon: Remove audio-device-selection-dialog.
+  * Mint-Y/cinnamon: add tinting to window-list and panel-launchers.
+  * Mint-Y/cinnamon: Add support for grouped-window-list scroll buttons.
+  * Mint-Y/cinnamon: Add support for screensaver.
+  * Mint-X/cinnamon: Add support for grouped-window-list scroll-buttons.
+  * Mint-X/cinnamon: Add support for screensaver.
+  * Mint-Y: Fix previous commit.
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 07 Sep 2026 16:04:22 +0100
+
 mint-themes (2.4.0) alfa; urgency=medium
 
   * Round frames and containers
