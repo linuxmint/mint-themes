@@ -1891,7 +1891,6 @@ scrollbar {
 
   $_slider_min_length: 40px;
 
-  terminal-screen-container & { border: 1px solid transparent; }
   background-color: $_scrollbar_bg_color;
   transition: 300ms $ease-out-quad;
 

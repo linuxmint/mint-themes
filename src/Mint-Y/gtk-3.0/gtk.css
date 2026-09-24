@@ -1761,8 +1761,6 @@ scrollbar {
   * {
     -GtkScrollbar-has-backward-stepper: false;
     -GtkScrollbar-has-forward-stepper: false; }
-  terminal-screen-container scrollbar {
-    border: 1px solid transparent; }
   scrollbar.top {
     border-bottom: 1px solid #c8c8ce; }
   scrollbar.bottom {
@@ -3068,6 +3066,15 @@ terminal-screen-container,
 terminal-screen-container scrollbar:not(slider) {
   border-color: transparent;
   background-color: transparent; }
+
+.csd terminal-screen-container scrollbar {
+  border-style: solid;
+  border-color: transparent;
+  border-bottom-width: 1px; }
+  .csd terminal-screen-container scrollbar:dir(ltr) {
+    border-right-width: 1px; }
+  .csd terminal-screen-container scrollbar:dir(rtl) {
+    border-left-width: 1px; }
 
 TerminalWindow .notebook tab .button {
   color: rgba(102, 102, 103, 0.9155); }
