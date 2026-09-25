@@ -78,6 +78,14 @@ terminal-screen-container scrollbar:not(slider) {
   background-color: transparent;
 }
 
+.csd terminal-screen-container scrollbar {
+  border-style: solid;
+  border-color: transparent;
+  border-bottom-width: 1px;
+  &:dir(ltr) { border-right-width: 1px }
+  &:dir(rtl) { border-left-width:  1px }
+}
+
 TerminalWindow {
   .notebook {
     tab .button {
