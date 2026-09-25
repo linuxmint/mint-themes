@@ -3134,6 +3134,15 @@ terminal-screen-container scrollbar:not(slider) {
   border-color: transparent;
   background-color: transparent; }
 
+.csd terminal-screen-container scrollbar {
+  border-style: solid;
+  border-color: transparent;
+  border-bottom-width: 1px; }
+  .csd terminal-screen-container scrollbar:dir(ltr) {
+    border-right-width: 1px; }
+  .csd terminal-screen-container scrollbar:dir(rtl) {
+    border-left-width: 1px; }
+
 TerminalWindow .notebook tab .button {
   color: rgba(169, 169, 171, 0.9155); }
   TerminalWindow .notebook tab .button:hover {
