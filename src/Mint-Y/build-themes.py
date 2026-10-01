@@ -1,59 +1,30 @@
 #!/usr/bin/env python3
 
 import os
+import subprocess
 
 VARIATIONS = ["Mint-Y",
               "Mint-Y-Dark"]
 
+dirs = ["cinnamon",
+        "gtk-2.0",
+        "gtk-3.0",
+        "gtk-4.0",
+        "xfwm4",
+        "xfwm4-dark"]
+
 DEST = '../../usr/share/themes'
 
-curdir = os.getcwd()
+curDir = os.getcwd()
 
-print("Updating Gtk4 assets")
-os.chdir("gtk-4.0/")
-os.system("pysassc ./sass/gtk.scss gtk.css")
-os.system("pysassc ./sass/gtk-dark.scss gtk-dark.css")
-os.system("./render-assets.sh")
-print("Gtk4 assets updated")
+def updateTheme(themeDir:str) -> None:
+    print(f"Updating {themeDir} assets")
+    os.chdir(themeDir)
+    os.system("./*.sh")
+    os.chdir(curDir)
 
-os.chdir(curdir)
-
-print("Updating Gtk3 assets")
-os.chdir("gtk-3.0/")
-os.system("pysassc ./sass/gtk.scss gtk.css")
-os.system("pysassc ./sass/gtk-dark.scss gtk-dark.css")
-os.system("./render-assets.sh")
-print("Gtk3 assets updated")
-
-os.chdir(curdir)
-
-print("Updating Gtk2 assets")
-os.chdir("gtk-2.0/")
-os.system("./render-assets.sh")
-os.system("./render-dark-assets.sh")
-print("Gtk2 assets updated")
-
-os.chdir(curdir)
-
-print("Updating Cinnamon assets")
-os.chdir("cinnamon/")
-os.system("pysassc ./sass/cinnamon.scss cinnamon.css")
-os.system("pysassc ./sass/cinnamon-dark.scss cinnamon-dark.css")
-print("Cinnamon assets updated")
-
-os.chdir(curdir)
-
-print("Updating Xfwm4 assets")
-os.chdir("xfwm4/")
-os.system("./render-assets.sh")
-
-os.chdir(curdir)
-
-print("Updating Xfwm4 dark assets")
-os.chdir("xfwm4-dark/")
-os.system("./render-assets.sh")
-
-os.chdir(curdir)
+for theme in dirs:
+    updateTheme(theme)
 
 if __name__ == '__main__':
     print("Building themes")
