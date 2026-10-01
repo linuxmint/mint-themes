@@ -24,32 +24,45 @@ start_dir = os.getcwd()
 os.system("mkdir -p usr/share/themes")
 
 # Mint-X ##################################################################
+def xBuildGtk(gtk:str) -> None:
+    os.chdir(f"src/Mint-X/theme/Mint-X/{gtk}/")
+    os.system("pysassc ./sass/gtk.scss gtk.css")
+    os.system("pysassc ./sass/gtk-dark.scss gtk-dark.css")
+    os.chdir(start_dir)
 
-# First build the Gtk4 css
-os.chdir("src/Mint-X/theme/Mint-X/gtk-4.0/")
-os.system("pysassc ./sass/gtk.scss gtk.css")
-os.system("pysassc ./sass/gtk-dark.scss gtk-dark.css")
-os.chdir(start_dir)
-
-# Then the Gtk3 css
-os.chdir("src/Mint-X/theme/Mint-X/gtk-3.0/")
-os.system("pysassc ./sass/gtk.scss gtk.css")
-os.system("pysassc ./sass/gtk-dark.scss gtk-dark.css")
-os.chdir(start_dir)
+xBuildGtk("gtk-4.0")
+xBuildGtk("gtk-3.0")
 
 os.system("cp -R src/Mint-X/theme/* usr/share/themes/")
 
-# Now do the other themes and color variations
-for color in os.listdir("src/Mint-X/variations"):
-    path = os.path.join("src/Mint-X/variations", color)
-    if not os.path.isdir(path):
-        exit()
+def xDerivateGtk(theme:str, gtk:str) -> None:
+    sass_dir = os.path.join(theme, gtk)
+    os.chdir(sass_dir)
+    os.system("pysassc ./sass/gtk.scss gtk.css")
+    os.system("pysassc ./sass/gtk-dark.scss gtk-dark.css")
+    os.system("rm -rf sass parse-sass.sh")
+    os.chdir(start_dir)
 
-    theme = "usr/share/themes/Mint-X-%s" % color
-    os.system("cp -R usr/share/themes/Mint-X %s" % theme)
-    os.system("cp -R src/Mint-X/variations/%s/* %s/" % (color, theme))
+def xDerivateCinnamon(color:str, theme:str) -> None:
+    file = os.path.join(theme, "cinnamon", "theme.json")
+    if os.path.exists(file):
+        os.system(f"sed -i s'/Mint-X/Mint-X-{color}/' {file}")
 
-    # Accent color
+    # Cinnamon colors
+    file = os.path.join(theme, "cinnamon", "cinnamon.css")
+    if os.path.exists(file):
+        for accent in X_HEX_ACCENTS:
+            os.system(f"sed -i s'/{accent}/{x_hex_colors[color]}/' {file}")
+        for accent in X_RGB_ACCENTS:
+            os.system(f"sed -i s'/{accent}/{x_rgb_colors[color]}/' {file}")
+
+def xDerivateOpenbox() -> None:
+    file = os.path.join(theme, "openbox-3", 'themerc')
+    if os.path.exists(file):
+        for accent in X_HEX_ACCENTS:
+            os.system(f"sed -i s'/{accent}/{x_hex_colors[color]}/' {file}")
+
+def xAccentRecolorFile() -> None:
     accent_files = []
     accent_files.append(os.path.join(theme, "gtk-2.0", "gtkrc"))
     accent_files.append(os.path.join(theme, "gtk-3.0", "settings.ini"))
@@ -60,45 +73,34 @@ for color in os.listdir("src/Mint-X/variations"):
     accent_files.append(os.path.join(theme, "libadwaita-1.7", "defaults-light.css"))
     accent_files.append(os.path.join(theme, "libadwaita-1.7", "defaults-dark.css"))
     for file in accent_files:
+        if not os.path.exists(file):
+            continue
+
         for accent in X_HEX_ACCENTS:
-            os.system("sed -i s'/%(accent)s/%(color_accent)s/' %(file)s" % {'accent': accent, 'color_accent': x_hex_colors[color], 'file': file})
+            os.system(f"sed -i s'/{accent}/{x_hex_colors[color]}/gI' {file}")
+
+# Now do the other themes and color variations
+for color in os.listdir("src/Mint-X/variations"):
+    path = os.path.join("src/Mint-X/variations", color)
+    if not os.path.isdir(path):
+        exit()
+
+    theme = f"usr/share/themes/Mint-X-{color}"
+    os.system(f"cp -R usr/share/themes/Mint-X {theme}")
+    os.system(f"cp -R src/Mint-X/variations/{color}/* {theme}/")
+
+    # Accent color
+    xAccentRecolorFile()
 
     # Build sass
-    sass_dir = os.path.join(theme, "gtk-4.0")
-    os.chdir(sass_dir)
-    os.system("pysassc ./sass/gtk.scss gtk.css")
-    os.system("pysassc ./sass/gtk-dark.scss gtk-dark.css")
-    os.system("rm -rf sass parse-sass.sh")
-    os.chdir(start_dir)
+    xDerivateGtk(theme, "gtk-4.0")
+    xDerivateGtk(theme, "gtk-3.0")
 
-    sass_dir = os.path.join(theme, "gtk-3.0")
-    os.chdir(sass_dir)
-    os.system("pysassc ./sass/gtk.scss gtk.css")
-    os.system("pysassc ./sass/gtk-dark.scss gtk-dark.css")
-    os.system("rm -rf sass parse-sass.sh")
-    os.chdir(start_dir)
-
-    # Cinnamon theme name
-    file = os.path.join(theme, "cinnamon", "theme.json")
-    if os.path.exists(file):
-        os.system("sed -i s'/Mint-X/Mint-X-%(color)s/' %(file)s" % {'color': color, 'file': file})
-
-    # Cinnamon colors
-    file = os.path.join(theme, "cinnamon", "cinnamon.css")
-    if os.path.exists(file):
-        for accent in X_HEX_ACCENTS:
-            os.system("sed -i s'/%(accent)s/%(color_accent)s/' %(file)s" % {'accent': accent, 'color_accent': x_hex_colors[color], 'file': file})
-        for accent in X_RGB_ACCENTS:
-            os.system("sed -i s'/%(accent)s/%(color_accent)s/' %(file)s" % {'accent': accent, 'color_accent': x_rgb_colors[color], 'file': file})
+    # Cinnamon
+    xDerivateCinnamon(color, theme)
 
     # Openbox colors
-    file = os.path.join(theme, "openbox-3", 'themerc')
-    if os.path.exists(file):
-        for accent in X_HEX_ACCENTS:
-            os.system("sed -i s'/%(accent)s/%(color_accent)s/' %(file)s" % {'accent': accent, 'color_accent': x_hex_colors[color], 'file': file})
-
-
-
+    xDerivateOpenbox()
 
 os.system("rm -rf usr/share/themes/Mint-X/gtk-3.0/sass usr/share/themes/Mint-X/gtk-3.0/parse-sass.sh")
 os.system("rm -rf usr/share/themes/Mint-X/gtk-4.0/sass usr/share/themes/Mint-X/gtk-4.0/parse-sass.sh")
@@ -112,8 +114,8 @@ os.system("./build-themes.py")
 os.chdir(curdir)
 
 # Mint-Y color variations
-def derivateGtk(color:str, lightDark:str, theme:str, gtk:str) -> None:
-    #gtk3 and 4 have the same generation process unlike in build-themes so we can use 1 function for both
+def yDerivateGtk(color:str, lightDark:str, theme:str, gtk:str) -> None:
+    # gtk3 and 4 have the same generation process unlike in build-themes so we can use 1 function for both
     os.system(f"cp -R src/Mint-Y/{gtk}/sass {theme}/{gtk}")
     y_colorize_directory(f"{theme}/{gtk}/sass", color)
     os.chdir(f"{theme}/{gtk}")
@@ -125,7 +127,7 @@ def derivateGtk(color:str, lightDark:str, theme:str, gtk:str) -> None:
     os.system("rm -rf sass .sass-cache")
     os.chdir(curdir)
 
-def derivateCinnamon(color:str, lightDark:str, theme:str) -> None:
+def yDerivateCinnamon(color:str, lightDark:str, theme:str) -> None:
     os.system(f"cp -R src/Mint-Y/cinnamon/sass {theme}/cinnamon/")
     y_colorize_directory(f"{theme}/cinnamon/sass", color)
     os.chdir(f"{theme}/cinnamon")
@@ -135,14 +137,14 @@ def derivateCinnamon(color:str, lightDark:str, theme:str) -> None:
     os.system("rm -rf sass .sass-cache")
     os.chdir(curdir)
 
-def derivateOpenbox() -> None:
+def yDerivateOpenbox() -> None:
     os.chdir(curdir)
     # for accent in Y_HEX_ACCENT1: is redundant because the command used file, that just generated the last file
     # in files (e.g. theme/libadwaita-1.7/default-dark.css) again. The output is unchanged with the line removed
     for accent in Y_HEX_ACCENT2:
         os.system(f"sed -i s'/{accent}/{y_hex_colors2[color]}/gI' {os.path.join(theme, "openbox-3", "themerc")}")
 
-def accentRecolorFile() -> None:
+def yAccentRecolorFile() -> None:
     files = []
     files.append(os.path.join(theme, "gtk-2.0", "gtkrc"))
     files.append(os.path.join(theme, "gtk-2.0", "main.rc"))
@@ -161,7 +163,6 @@ def accentRecolorFile() -> None:
             os.system(f"sed -i s'/{accent}/{y_hex_colors1[color]}/gI' {file}")
         for accent in Y_HEX_ACCENT2:
             os.system(f"sed -i s'/{accent}/{y_hex_colors2[color]}/gI' {file}")
-    return file
 
 def accentRecolorDirectory() -> None:
     directories = []
@@ -189,18 +190,18 @@ for color in y_hex_colors1.keys():
         if not os.path.isdir(path):
             exit()
 
-        print(f"Derivating {original_name}-{theme}")
+        print(f"Derivating {original_name}-{color}")
 
         # Copy theme
-        theme = f"usr/share/themes/{original_name}-{theme}"
+        theme = f"usr/share/themes/{original_name}-{color}"
         os.system(f"cp -R usr/share/themes/{original_name} {theme}")
 
-        derivateGtk(color, lightDark, theme, "gtk-4.0")
-        derivateGtk(color, lightDark, theme, "gtk-3.0")
-        derivateCinnamon(color, lightDark, theme)
+        yDerivateGtk(color, lightDark, theme, "gtk-4.0")
+        yDerivateGtk(color, lightDark, theme, "gtk-3.0")
+        yDerivateCinnamon(color, lightDark, theme)
 
         # Accent color
-        accentRecolorFile()
+        yAccentRecolorFile()
 
         # Remove metacity-theme-3.xml (it doesn't need to be derived since it's using GTK colors,
         # and Cinnamon doesn't want to list it)
@@ -212,7 +213,7 @@ for color in y_hex_colors1.keys():
         copyAssets(lightDark)
 
         # Openbox theme
-        derivateOpenbox()
+        yDerivateOpenbox()
 
 # Files
 os.system("cp -R files/* ./")
