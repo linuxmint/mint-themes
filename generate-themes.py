@@ -38,11 +38,12 @@ os.system("cp -R src/Mint-X/theme/* usr/share/themes/")
 
 def xDerivateGtk(theme:str, gtk:str) -> None:
     sass_dir = os.path.join(theme, gtk)
-    os.chdir(sass_dir)
-    os.system("pysassc ./sass/gtk.scss gtk.css")
-    os.system("pysassc ./sass/gtk-dark.scss gtk-dark.css")
-    os.system("rm -rf sass parse-sass.sh")
-    os.chdir(start_dir)
+    os.system(f"""
+        cd {sass_dir}
+        pysassc ./sass/gtk.scss gtk.css
+        pysassc ./sass/gtk-dark.scss gtk-dark.css
+        rm -rf sass parse-sass.sh
+    """)
 
 def xDerivateCinnamon(color:str, theme:str) -> None:
     file = os.path.join(theme, "cinnamon", "theme.json")
@@ -57,13 +58,13 @@ def xDerivateCinnamon(color:str, theme:str) -> None:
         for accent in X_RGB_ACCENTS:
             os.system(f"sed -i s'/{accent}/{x_rgb_colors[color]}/' {file}")
 
-def xDerivateOpenbox() -> None:
+def xDerivateOpenbox(theme:str, color:str) -> None:
     file = os.path.join(theme, "openbox-3", 'themerc')
     if os.path.exists(file):
         for accent in X_HEX_ACCENTS:
             os.system(f"sed -i s'/{accent}/{x_hex_colors[color]}/' {file}")
 
-def xAccentRecolorFile() -> None:
+def xAccentRecolorFile(theme:str, color:str) -> None:
     accent_files = []
     accent_files.append(os.path.join(theme, "gtk-2.0", "gtkrc"))
     accent_files.append(os.path.join(theme, "gtk-3.0", "settings.ini"))
@@ -81,7 +82,7 @@ def xAccentRecolorFile() -> None:
             os.system(f"sed -i s'/{accent}/{x_hex_colors[color]}/gI' {file}")
 
 # Now do the other themes and color variations
-for color in os.listdir("src/Mint-X/variations"):
+def xGenTheme(color:str):
     path = os.path.join("src/Mint-X/variations", color)
     if not os.path.isdir(path):
         exit()
@@ -91,7 +92,7 @@ for color in os.listdir("src/Mint-X/variations"):
     os.system(f"cp -R src/Mint-X/variations/{color}/* {theme}/")
 
     # Accent color
-    xAccentRecolorFile()
+    xAccentRecolorFile(theme, color)
 
     # Build sass
     xDerivateGtk(theme, "gtk-4.0")
@@ -101,10 +102,7 @@ for color in os.listdir("src/Mint-X/variations"):
     xDerivateCinnamon(color, theme)
 
     # Openbox colors
-    xDerivateOpenbox()
-
-os.system("rm -rf usr/share/themes/Mint-X/gtk-3.0/sass usr/share/themes/Mint-X/gtk-3.0/parse-sass.sh")
-os.system("rm -rf usr/share/themes/Mint-X/gtk-4.0/sass usr/share/themes/Mint-X/gtk-4.0/parse-sass.sh")
+    xDerivateOpenbox(theme, color)
 
 # Mint-Y #################################################################
 
@@ -119,7 +117,6 @@ def yDerivateGtk(curdir:str, color:str, lightDark:str, theme:str, gtk:str) -> No
     # gtk3 and 4 have the same generation process unlike in build-themes so we can use 1 function for both
     os.system(f"cp -R src/Mint-Y/{gtk}/sass {theme}/{gtk}")
     y_colorize_directory(f"{theme}/{gtk}/sass", color)
-
     os.system(f"""
         cd {theme}/{gtk}
         pysassc ./sass/gtk-dark.scss gtk-dark.css
@@ -216,6 +213,10 @@ def yGenTheme(color:str):
         yDerivateOpenbox(curdir, theme, color)
 
 threads = []
+for color in os.listdir("src/Mint-X/variations"):
+    t = threading.Thread(target=xGenTheme, args=(color,))
+    threads.append(t)
+
 for color in y_hex_colors1.keys():
     t = threading.Thread(target=yGenTheme, args=(color,))
     threads.append(t)
@@ -226,6 +227,9 @@ for t in threads:
 for t in threads:
     t.join()
 
+# execute after the threads have completed
+os.system("rm -rf usr/share/themes/Mint-X/gtk-3.0/sass usr/share/themes/Mint-X/gtk-3.0/parse-sass.sh")
+os.system("rm -rf usr/share/themes/Mint-X/gtk-4.0/sass usr/share/themes/Mint-X/gtk-4.0/parse-sass.sh")
 
 # Files
 os.system("cp -R files/* ./")
