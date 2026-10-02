@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import os
 import sys
+import threading
 
 from constants import Y_HEX_ACCENT1, Y_HEX_ACCENT2
 from constants import y_hex_colors1, y_hex_colors2
@@ -16,6 +17,29 @@ def usage ():
     print ("Usage: update-variations.py color")
     print ("color can be 'Aqua', 'Blue', 'Grey', 'Orange', 'Pink', 'Purple', 'Red', 'Sand', 'Teal' or 'All'.")
     sys.exit(1)
+
+def renderGtk2(variation:str):
+    os.system(f"""
+        cd {variation}/gtk-2.0
+        rm -rf assets/*
+        rm -rf assets-dark/*
+        ./render-assets.sh
+        ./render-dark-assets.sh
+    """)
+
+def renderGtk(variation:str, gtk:str):
+    os.system(f"""
+        cd {variation}/{gtk}
+        rm -rf assets/*
+        ./render-assets.sh
+    """)
+
+def renderXfce4(variation:str, style:str):
+    os.system(f"""
+        cd {variation}/{style}
+        rm -rf *.png
+        ./render-assets.sh
+    """)
 
 def update_color (color):
     variation = "src/Mint-Y/variations/%s" % color
@@ -67,25 +91,19 @@ def update_color (color):
             os.system("sed -i s'/%(accent)s/%(color_accent)s/gI' %(file)s" % {'accent': accent, 'color_accent': y_hex_colors2[color], 'file': asset_path})
 
     # Render assets
-    os.chdir(variation)
-    os.chdir("gtk-2.0")
-    os.system("rm -rf assets/*")
-    os.system("rm -rf assets-dark/*")
-    os.system("./render-assets.sh")
-    os.system("./render-dark-assets.sh")
-    os.chdir("../gtk-3.0/")
-    os.system("rm -rf assets/*")
-    os.system("./render-assets.sh")
-    os.chdir("../gtk-4.0/")
-    os.system("rm -rf assets/*")
-    os.system("./render-assets.sh")
-    os.chdir("../xfwm4/")
-    os.system("rm -rf *.png")
-    os.system("./render-assets.sh")
-    os.chdir("../xfwm4-dark/")
-    os.system("rm -rf *.png")
-    os.system("./render-assets.sh")
-    os.chdir(curdir)
+
+    threads = []
+    threads.append(threading.Thread(target=renderGtk2, args=(variation,)))
+    threads.append(threading.Thread(target=renderGtk, args=(variation, "gtk-3.0")))
+    threads.append(threading.Thread(target=renderGtk, args=(variation, "gtk-4.0")))
+    threads.append(threading.Thread(target=renderXfce4, args=(variation, "xfwm4")))
+    threads.append(threading.Thread(target=renderXfce4, args=(variation, "xfwm4-dark")))
+
+    for t in threads:
+        t.start()
+
+    for t in threads:
+        t.join()
 
 if len(sys.argv) < 2:
     usage()
@@ -98,7 +116,17 @@ else:
 curdir = os.getcwd()
 
 if color_variation == "All":
+    threads = []
     for color in y_hex_colors1.keys():
-        update_color(color)
+        t = threading.Thread(target=update_color, args=(color,))
+        threads.append(t)
+
+    for t in threads:
+        t.start()
+
+    for t in threads:
+        t.join()
 else:
     update_color(color_variation)
+
+os.chdir(curdir)
