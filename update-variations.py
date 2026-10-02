@@ -8,9 +8,9 @@ from constants import y_hex_colors1, y_hex_colors2
 
 def change_value (key, value, file):
     if value is not None:
-        command = "sed -i '/%(key)s=/c\%(key)s=%(value)s' %(file)s" % {'key':key, 'value':value, 'file':file}
+        command = f"sed -i '/{key}=/c\{key}={value}' {file}"
     else:
-        command = "sed -i '/%(key)s=/d' %(file)s" % {'key':key, 'file':file}
+        command = f"sed -i '/{key}=/d' {file}"
     os.system(command)
 
 def usage ():
@@ -42,14 +42,14 @@ def renderXfce4(variation:str, style:str):
     """)
 
 def update_color (color):
-    variation = "src/Mint-Y/variations/%s" % color
-    print("updating %s" % variation)
-    os.system("rm -rf %s" % variation)
-    os.system("mkdir -p %s/gtk-2.0" % variation)
-    os.system("mkdir -p %s/gtk-3.0" % variation)
-    os.system("mkdir -p %s/gtk-4.0" % variation)
-    os.system("mkdir -p %s/xfwm4" % variation)
-    os.system("mkdir -p %s/xfwm4-dark" % variation)
+    variation = f"src/Mint-Y/variations/{color}"
+    print(f"updating {variation}")
+    os.system(f"rm -rf {variation}")
+    os.system(f"mkdir -p {variation}/gtk-2.0")
+    os.system(f"mkdir -p {variation}/gtk-3.0")
+    os.system(f"mkdir -p {variation}/gtk-4.0")
+    os.system(f"mkdir -p {variation}/xfwm4")
+    os.system(f"mkdir -p {variation}/xfwm4-dark")
 
     # Copy assets files
     assets = []
@@ -78,17 +78,17 @@ def update_color (color):
     files.append("xfwm4-dark/assets.txt")
 
     for file in files:
-        os.system("cp -R src/Mint-Y/%s %s/%s" % (file, variation, file))
+        os.system(f"cp -R src/Mint-Y/{file} {variation}/{file}")
     for asset in assets:
-        os.system("cp -R src/Mint-Y/%s %s/%s" % (asset, variation, asset))
+        os.system(f"cp -R src/Mint-Y/{asset} {variation}/{asset}")
 
     # Update assets svg
     for asset in assets:
         asset_path = "%s/%s" % (variation, asset)
         for accent in Y_HEX_ACCENT1:
-            os.system("sed -i s'/%(accent)s/%(color_accent)s/gI' %(file)s" % {'accent': accent, 'color_accent': y_hex_colors1[color], 'file': asset_path})
+            os.system(f"sed -i s'/{accent}/{y_hex_colors1[color]}/gI' {asset_path}")
         for accent in Y_HEX_ACCENT2:
-            os.system("sed -i s'/%(accent)s/%(color_accent)s/gI' %(file)s" % {'accent': accent, 'color_accent': y_hex_colors2[color], 'file': asset_path})
+            os.system(f"sed -i s'/{accent}/{y_hex_colors2[color]}/gI' {asset_path}")
 
     # Render assets
 
