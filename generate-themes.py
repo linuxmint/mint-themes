@@ -193,9 +193,9 @@ def yGenTheme(color:str):
         theme = f"usr/share/themes/{original_name}-{color}"
         os.system(f"cp -R usr/share/themes/{original_name} {theme}")
 
-        yDerivateGtk(curdir, color, lightDark, theme, "gtk-4.0")
-        yDerivateGtk(curdir, color, lightDark, theme, "gtk-3.0")
-        yDerivateCinnamon(curdir, color, lightDark, theme)
+        yDerivateGtk(color, lightDark, theme, "gtk-4.0")
+        yDerivateGtk(color, lightDark, theme, "gtk-3.0")
+        yDerivateCinnamon(color, lightDark, theme)
 
         # Accent color
         yAccentRecolorFile(theme, color)
