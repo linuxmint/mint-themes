@@ -113,7 +113,7 @@ os.system("./build-themes.py")
 os.chdir(curdir)
 
 # Mint-Y color variations
-def yDerivateGtk(curdir:str, color:str, lightDark:str, theme:str, gtk:str) -> None:
+def yDerivateGtk(color:str, lightDark:str, theme:str, gtk:str) -> None:
     # gtk3 and 4 have the same generation process unlike in build-themes so we can use 1 function for both
     os.system(f"cp -R src/Mint-Y/{gtk}/sass {theme}/{gtk}")
     y_colorize_directory(f"{theme}/{gtk}/sass", color)
@@ -124,7 +124,7 @@ def yDerivateGtk(curdir:str, color:str, lightDark:str, theme:str, gtk:str) -> No
         rm -rf sass .sass-cache
     """)
 
-def yDerivateCinnamon(curdir:str, color:str, lightDark:str, theme:str) -> None:
+def yDerivateCinnamon(color:str, lightDark:str, theme:str) -> None:
     os.system(f"cp -R src/Mint-Y/cinnamon/sass {theme}/cinnamon/")
     y_colorize_directory(f"{theme}/cinnamon/sass", color)
     if lightDark == "-dark":
