@@ -55,7 +55,9 @@ for color in os.listdir("src/Mint-X/variations"):
         accent_files.append(os.path.join(theme, "gtk-3.0", "sass", "_colors.scss"))
         accent_files.append(os.path.join(theme, "gtk-4.0", "sass", "_colors.scss"))
         accent_files.append(os.path.join(theme, "libadwaita-1.5", "defaults-light.css"))
+        accent_files.append(os.path.join(theme, "libadapta-1.5", "defaults-light.css"))
         accent_files.append(os.path.join(theme, "libadwaita-1.5", "defaults-dark.css"))
+        accent_files.append(os.path.join(theme, "libadapta-1.5", "defaults-dark.css"))
         accent_files.append(os.path.join(theme, "libadwaita-1.7", "defaults-light.css"))
         accent_files.append(os.path.join(theme, "libadwaita-1.7", "defaults-dark.css"))
         for file in accent_files:
@@ -175,7 +177,9 @@ for color in y_hex_colors1.keys():
             files.append(os.path.join(theme, "gtk-2.0", "apps.rc"))
             files.append(os.path.join(theme, "gtk-2.0", "menubar-toolbar.rc"))
             files.append(os.path.join(theme, "libadwaita-1.5", "defaults-light.css"))
+            files.append(os.path.join(theme, "libadapta-1.5", "defaults-light.css"))
             files.append(os.path.join(theme, "libadwaita-1.5", "defaults-dark.css"))
+            files.append(os.path.join(theme, "libadapta-1.5", "defaults-dark.css"))
             files.append(os.path.join(theme, "libadwaita-1.7", "defaults-light.css"))
             files.append(os.path.join(theme, "libadwaita-1.7", "defaults-dark.css"))
             for file in files:
