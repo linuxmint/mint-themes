@@ -1,3 +1,10 @@
+mint-themes (2.4.2) adrien; urgency=medium
+
+  * Add support for libadapta 1.5
+  * adwaita: Fix squashed close button in about dialogs
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 03 Oct 2026 15:21:46 +0100
+
 mint-themes (2.4.1) alfa; urgency=medium
 
   [ Michael Webster ]
