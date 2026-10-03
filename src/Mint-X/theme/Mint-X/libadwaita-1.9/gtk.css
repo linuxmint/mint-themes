@@ -3079,3 +3079,6 @@ windowcontrols > button:hover > image { background-color: @mint_button_hover; bo
 
 windowcontrols { border-spacing: 3px; }
 windowcontrols button { min-width: 20px; min-height: 20px; padding: 5px 2px; }
+
+/* The close button of dialogs: the rule above squashes it to 24x20, keep it round */
+sheet windowcontrols > button { min-width: 24px; min-height: 24px; padding: 0; }

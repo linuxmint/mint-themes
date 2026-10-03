@@ -3082,3 +3082,6 @@ windowcontrols > button.close:hover > image { filter: brightness(105%); backgrou
 
 windowcontrols { border-spacing: 6px; }
 windowcontrols button { min-width: 20px; min-height: 20px; padding: 5px 2px; }
+
+/* The close button of dialogs: the rule above squashes it to 24x20, keep it round */
+sheet windowcontrols > button { min-width: 24px; min-height: 24px; padding: 0; }
