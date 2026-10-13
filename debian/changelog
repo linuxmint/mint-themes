@@ -1,3 +1,10 @@
+mint-themes (2.4.3) adrien; urgency=medium
+
+  [ Luka ]
+  * fixed scrollbar overwriting window borders on wayland (#538)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 13 Oct 2026 14:39:17 +0100
+
 mint-themes (2.4.2) adrien; urgency=medium
 
   * Add support for libadapta 1.5
