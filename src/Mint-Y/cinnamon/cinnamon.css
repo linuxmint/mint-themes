@@ -1688,28 +1688,28 @@ StScrollBar {
   font-weight: 700;
   font-size: 1em; }
 
-.polkit-dialog-user-combo {
+.hover-click-lock-button, .hover-click-button, .polkit-dialog-user-combo {
   border: 1px solid #ebebed;
   color: #303030;
   background-color: #ebebed; }
-  .polkit-dialog-user-combo:focus {
+  .hover-click-lock-button:focus, .hover-click-button:focus, .polkit-dialog-user-combo:focus {
     border: 1px solid #ebebed;
     color: #303030;
     background-color: #ebebed;
     border: 1px solid #9a9aa5; }
-  .polkit-dialog-user-combo:hover {
+  .hover-click-lock-button:hover, .hover-click-button:hover, .polkit-dialog-user-combo:hover {
     border: 1px solid #ebebed;
     color: #303030;
     background-color: #d0d0d5; }
-  .polkit-dialog-user-combo:insensitive {
+  .hover-click-lock-button:insensitive, .hover-click-button:insensitive, .polkit-dialog-user-combo:insensitive {
     border: 1px solid #ebebed;
     color: rgba(48, 48, 48, 0.5);
     background-color: #ebebed; }
-  .polkit-dialog-user-combo:selected, .polkit-dialog-user-combo:active {
+  .hover-click-lock-button:selected, .hover-click-button:selected, .polkit-dialog-user-combo:selected, .hover-click-lock-button:active, .hover-click-button:active, .polkit-dialog-user-combo:active {
     border: 1px solid #ebebed;
     color: #303030;
     background-color: #dedee1; }
-  .polkit-dialog-user-combo:checked {
+  .hover-click-lock-button:checked, .hover-click-button:checked, .polkit-dialog-user-combo:checked {
     border: 1px solid #ebebed;
     color: #303030;
     background-color: #dedee1; }
@@ -1958,6 +1958,56 @@ StScrollBar {
   background-color: #ebebed;
   border-radius: 6px;
   padding: 12px; }
+
+.hover-click-dialog {
+  padding: 6px;
+  border-radius: 12px; }
+  .hover-click-dialog .dialog-content-box {
+    margin: 0;
+    spacing: 0;
+    max-width: auto; }
+
+.hover-click-header {
+  height: 20px; }
+
+.hover-click-box,
+.hover-click-actions {
+  spacing: 4px; }
+
+.hover-click-button {
+  background-color: transparent;
+  border-radius: 6px;
+  padding: 6px; }
+  .hover-click-button:checked {
+    border: 1px solid #35a854;
+    color: #303030;
+    background-color: #35a854; }
+  .hover-click-button:checked:hover {
+    border: 1px solid #35a854;
+    color: #303030;
+    background-color: #298141; }
+
+.hover-click-button-box {
+  spacing: 4px; }
+
+.hover-click-button-label {
+  text-align: center; }
+
+.hover-click-separator {
+  background-color: #b5b5bd; }
+
+.hover-click-box.vertical .hover-click-separator {
+  height: 1px;
+  margin: 4px 0; }
+
+.hover-click-box.horizontal .hover-click-separator {
+  width: 1px;
+  margin: 0 4px; }
+
+.hover-click-lock-button {
+  background-color: transparent;
+  border-radius: 6px;
+  padding: 6px; }
 
 /*
 On-Screen Keyboard (>= Cinnamon 6.6)

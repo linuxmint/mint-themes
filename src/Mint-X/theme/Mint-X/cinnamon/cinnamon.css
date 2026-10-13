@@ -2868,6 +2868,73 @@ On-Screen Keyboard (>= Cinnamon 6.6)
 }
 
 /* ===================================================================
+ * Hover click palette (hoverClick.js)
+ * ===================================================================*/
+
+.hover-click-dialog {
+    padding: 6px;
+}
+
+.hover-click-dialog .dialog-content-box {
+    margin: 0;
+    spacing: 0;
+    max-width: auto;
+}
+
+.hover-click-header {
+    height: 20px;
+}
+
+.hover-click-box,
+.hover-click-actions {
+    spacing: 4px;
+}
+
+.hover-click-button,
+.hover-click-lock-button {
+    border-radius: 4px;
+    padding: 6px;
+}
+
+.hover-click-button:hover,
+.hover-click-lock-button:hover {
+    border-image: url("button-assets/button-hover.png") 4;
+}
+
+.hover-click-button:active,
+.hover-click-lock-button:active,
+.hover-click-lock-button:checked {
+    border-image: url("button-assets/button-pressed.png") 4;
+}
+
+.hover-click-button:checked {
+    color: #fff;
+    border-image: url("misc-assets/hover-2.png") 6;
+}
+
+.hover-click-button-box {
+    spacing: 4px;
+}
+
+.hover-click-button-label {
+    text-align: center;
+}
+
+.hover-click-separator {
+    background-color: rgb(210, 210, 210);
+}
+
+.hover-click-box.vertical .hover-click-separator {
+    height: 1px;
+    margin: 4px 0px;
+}
+
+.hover-click-box.horizontal .hover-click-separator {
+    width: 1px;
+    margin: 0px 4px;
+}
+
+/* ===================================================================
  * Screensaver / Lock screen (screensaver/*.js)
  * The shield background is always black, so widget colors are fixed
  * light-on-dark.
