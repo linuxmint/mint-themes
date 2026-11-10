@@ -18,8 +18,15 @@ def usage ():
     print ("color can be 'Aqua', 'Blue', 'Grey', 'Orange', 'Pink', 'Purple', 'Red', 'Sand', 'Teal' or 'All'.")
     sys.exit(1)
 
+# Each render runs Inkscape and optipng on many assets, so limit how many run at once
+render_slots = threading.BoundedSemaphore(os.cpu_count() or 4)
+
+def runRender(script:str):
+    with render_slots:
+        os.system(script)
+
 def renderGtk2(variation:str):
-    os.system(f"""
+    runRender(f"""
         cd {variation}/gtk-2.0
         rm -rf assets/*
         rm -rf assets-dark/*
@@ -28,14 +35,14 @@ def renderGtk2(variation:str):
     """)
 
 def renderGtk(variation:str, gtk:str):
-    os.system(f"""
+    runRender(f"""
         cd {variation}/{gtk}
         rm -rf assets/*
         ./render-assets.sh
     """)
 
 def renderXfce4(variation:str, style:str):
-    os.system(f"""
+    runRender(f"""
         cd {variation}/{style}
         rm -rf *.png
         ./render-assets.sh
