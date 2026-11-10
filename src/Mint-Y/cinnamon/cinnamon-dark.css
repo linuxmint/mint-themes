@@ -147,27 +147,36 @@ StScrollBar {
   border-right-width: 1px;
   border-left-width: 5px; }
 
-.check-box CinnamonGenericContainer {
+.check-box CinnamonGenericContainer,
+.check-box-2 CinnamonGenericContainer {
   spacing: .2em;
   min-height: 30px;
   padding-top: 2px; }
 
-.check-box StLabel {
+.check-box StLabel,
+.check-box-2 StLabel {
   font-weight: normal; }
 
-.check-box StBin {
+.check-box StBin,
+.check-box-2 StBin {
   width: 16px;
   height: 16px;
   background-image: url("dark-assets/checkbox/checkbox-unchecked.svg"); }
 
-.check-box:focus StBin {
+.check-box:focus StBin,
+.check-box-2:focus StBin {
   background-image: url("dark-assets/checkbox/checkbox-unchecked-focused.svg"); }
 
-.check-box:checked StBin {
+.check-box:checked StBin,
+.check-box-2:checked StBin {
   background-image: url("dark-assets/checkbox/checkbox-checked.svg"); }
 
-.check-box:focus:checked StBin {
+.check-box:focus:checked StBin,
+.check-box-2:focus:checked StBin {
   background-image: url("dark-assets/checkbox/checkbox-checked-focused.svg"); }
+
+.check-box-2 StBoxLayout {
+  spacing: .5em; }
 
 .radiobutton CinnamonGenericContainer {
   spacing: .2em;

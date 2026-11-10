@@ -164,7 +164,8 @@ StScrollBar {
 //
 // Check Boxes
 //
-.check-box {
+.check-box,
+.check-box-2 {
 
   CinnamonGenericContainer {
     spacing: .2em;
@@ -186,6 +187,8 @@ StScrollBar {
 
   &:focus:checked StBin { background-image: url("#{$asset_path}/checkbox/checkbox-checked-focused.svg"); }
 }
+
+.check-box-2 StBoxLayout { spacing: .5em; }
 
 //
 // Radio Buttons
