@@ -2,7 +2,7 @@ Source: mint-themes
 Section: gnome
 Priority: optional
 Maintainer: Clement Lefebvre <root@linuxmint.com>
-Build-Depends: debhelper (>= 9), pysassc
+Build-Depends: debhelper (>= 9), inkscape, optipng, pysassc, python3
 Standards-Version: 3.9.5
 
 Package: mint-themes
