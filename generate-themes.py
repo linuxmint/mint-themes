@@ -141,7 +141,7 @@ def yDerivateOpenbox(curdir:str, theme:str, color:str) -> None:
     # for accent in Y_HEX_ACCENT1: is redundant because the command used file, that just generated the last file
     # in files (e.g. theme/libadwaita-1.7/default-dark.css) again. The output is unchanged with the line removed
     for accent in Y_HEX_ACCENT2:
-        os.system(f"sed -i s'/{accent}/{y_hex_colors2[color]}/gI' {os.path.join(theme, "openbox-3", "themerc")}")
+        os.system(f"sed -i s'/{accent}/{y_hex_colors2[color]}/gI' {os.path.join(theme, 'openbox-3', 'themerc')}")
 
 def yAccentRecolorFile(theme:str, color:str) -> None:
     files = []
