@@ -1,13 +1,16 @@
 #!/usr/bin/python3
 import os
+import subprocess
 import sys
+
+from rich.progress import BarColumn, Progress, TaskProgressColumn, TextColumn, TimeElapsedColumn
 
 from constants import Y_HEX_ACCENT1, Y_HEX_ACCENT2
 from constants import y_hex_colors1, y_hex_colors2
 
 def change_value (key, value, file):
     if value is not None:
-        command = "sed -i '/%(key)s=/c\%(key)s=%(value)s' %(file)s" % {'key':key, 'value':value, 'file':file}
+        command = "sed -i '/%(key)s=/c\\%(key)s=%(value)s' %(file)s" % {'key':key, 'value':value, 'file':file}
     else:
         command = "sed -i '/%(key)s=/d' %(file)s" % {'key':key, 'file':file}
     os.system(command)
@@ -16,6 +19,25 @@ def usage ():
     print ("Usage: update-variations.py color")
     print ("color can be 'Aqua', 'Blue', 'Grey', 'Orange', 'Pink', 'Purple', 'Red', 'Sand', 'Teal' or 'All'.")
     sys.exit(1)
+
+def render (progress, name, script, assets_dir):
+    # Run a render script in the current folder, advancing a bar for each asset it renders
+    with open("assets.txt") as f:
+        names = f.read().split()
+    with open(script) as f:
+        if "@2" in f.read():
+            names = names + [asset + "@2" for asset in names]
+
+    task = progress.add_task(name, total=len(names))
+    process = subprocess.Popen(["./" + script], stdout=subprocess.PIPE, stderr=subprocess.DEVNULL, text=True)
+    for line in process.stdout:
+        if line.startswith("Rendering"):
+            progress.advance(task)
+    process.wait()
+
+    for asset in names:
+        if not os.path.exists("%s/%s.png" % (assets_dir, asset)):
+            progress.console.print("[red]Missing %s/%s.png[/red]" % (os.getcwd(), asset))
 
 def update_color (color):
     variation = "src/Mint-Y/variations/%s" % color
@@ -67,25 +89,31 @@ def update_color (color):
             os.system("sed -i s'/%(accent)s/%(color_accent)s/gI' %(file)s" % {'accent': accent, 'color_accent': y_hex_colors2[color], 'file': asset_path})
 
     # Render assets
+    bar_color = y_hex_colors1[color]
+    progress = Progress(TextColumn("{task.description}"),
+                        BarColumn(complete_style=bar_color, finished_style=bar_color),
+                        TaskProgressColumn(), TimeElapsedColumn())
+    progress.start()
     os.chdir(variation)
     os.chdir("gtk-2.0")
     os.system("rm -rf assets/*")
     os.system("rm -rf assets-dark/*")
-    os.system("./render-assets.sh")
-    os.system("./render-dark-assets.sh")
+    render(progress, "gtk-2.0", "render-assets.sh", "assets")
+    render(progress, "gtk-2.0 dark", "render-dark-assets.sh", "assets-dark")
     os.chdir("../gtk-3.0/")
     os.system("rm -rf assets/*")
-    os.system("./render-assets.sh")
+    render(progress, "gtk-3.0", "render-assets.sh", "assets")
     os.chdir("../gtk-4.0/")
     os.system("rm -rf assets/*")
-    os.system("./render-assets.sh")
+    render(progress, "gtk-4.0", "render-assets.sh", "assets")
     os.chdir("../xfwm4/")
     os.system("rm -rf *.png")
-    os.system("./render-assets.sh")
+    render(progress, "xfwm4", "render-assets.sh", ".")
     os.chdir("../xfwm4-dark/")
     os.system("rm -rf *.png")
-    os.system("./render-assets.sh")
+    render(progress, "xfwm4 dark", "render-assets.sh", ".")
     os.chdir(curdir)
+    progress.stop()
 
 if len(sys.argv) < 2:
     usage()
