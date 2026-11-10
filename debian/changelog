@@ -1,3 +1,22 @@
+mint-themes (2.4.4) adrien; urgency=medium
+
+  [ Michael Webster ]
+  * cinnamon: Add support for the hover-click popup
+
+  [ Zakk ]
+  * Mint-Y: Copy libadapta-1.5 into the built themes. (#558)
+
+  [ Oğuzhan Tutucu ]
+  * Mint-Y/cinnamon: Style CheckBox2 (.check-box-2) (#559)
+
+  [ Clement Lefebvre ]
+  * Mint-Y/build-themes.py: Use the same python shebang as the other scripts
+  * debian/control: Add mising build deps
+  * update-variations: Use python-rich to show progress
+  * Update variations
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 10 Nov 2026 11:04:15 +0000
+
 mint-themes (2.4.3) adrien; urgency=medium
 
   [ Luka ]
