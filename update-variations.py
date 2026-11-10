@@ -8,7 +8,7 @@ from constants import y_hex_colors1, y_hex_colors2
 
 def change_value (key, value, file):
     if value is not None:
-        command = f"sed -i '/{key}=/c\{key}={value}' {file}"
+        command = f"sed -i '/{key}=/c\\{key}={value}' {file}"
     else:
         command = f"sed -i '/{key}=/d' {file}"
     os.system(command)
