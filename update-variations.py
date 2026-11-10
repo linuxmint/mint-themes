@@ -113,8 +113,6 @@ else:
         usage()
 
 # Mint-Y variations
-curdir = os.getcwd()
-
 if color_variation == "All":
     threads = []
     for color in y_hex_colors1.keys():
@@ -128,5 +126,3 @@ if color_variation == "All":
         t.join()
 else:
     update_color(color_variation)
-
-os.chdir(curdir)
