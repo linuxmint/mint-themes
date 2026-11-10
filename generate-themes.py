@@ -87,7 +87,7 @@ def xAccentRecolorFile(theme:str, color:str) -> None:
 def xGenTheme(color:str):
     path = os.path.join("src/Mint-X/variations", color)
     if not os.path.isdir(path):
-        exit()
+        return
 
     theme = f"usr/share/themes/Mint-X-{color}"
     os.system(f"cp -R usr/share/themes/Mint-X {theme}")
@@ -189,7 +189,7 @@ def yGenTheme(color:str):
         path = os.path.join(f"src/Mint-Y/variations/{color}")
         lightDark = variant.lower()
         if not os.path.isdir(path):
-            exit()
+            continue
 
         print(f"Derivating {original_name}-{color}")
 
