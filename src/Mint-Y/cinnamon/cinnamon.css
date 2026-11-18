@@ -1879,7 +1879,10 @@ StScrollBar {
     spacing: 16px;
     margin-bottom: 12px; }
   .prompt-dialog-password-entry {
-    width: 20em; }
+    width: 20em;
+    min-height: 22px;
+    padding: 6px 9px;
+    -st-progress-color: #35a854; }
   .prompt-dialog-password-layout {
     spacing: 8px; }
   .prompt-dialog-error-label, .prompt-dialog-info-label, .prompt-dialog-null-label {
@@ -2185,28 +2188,24 @@ On-Screen Keyboard (>= Cinnamon 6.6)
       .screen-shield .prompt-dialog .user-icon StIcon {
         padding: 30px; }
     .screen-shield .prompt-dialog-password-entry {
-      width: 20em;
-      padding: 7px;
       border-radius: 6px;
-      caret-size: 1px;
       caret-color: white;
       color: white;
       background-color: rgba(255, 255, 255, 0.2);
-      border: 1px solid rgba(255, 255, 255, 0.4);
-      selection-background-color: #35a854;
-      selected-color: #ffffff;
-      transition-duration: 300ms; }
+      border: 1px solid rgba(255, 255, 255, 0.4); }
       .screen-shield .prompt-dialog-password-entry:focus {
         border-color: #35a854; }
-      .screen-shield .prompt-dialog-password-entry StIcon.capslock-warning {
-        icon-size: 16px;
-        warning-color: #F27835;
-        padding: 0 4px; }
       .screen-shield .prompt-dialog-password-entry StLabel.hint-text {
         color: rgba(255, 255, 255, 0.5); }
       .screen-shield .prompt-dialog-password-entry StIcon.peek-password {
-        icon-size: 16px;
         color: white; }
+    .screen-shield .prompt-dialog-error-label {
+      font-size: 1em;
+      padding: 6px 12px;
+      border-radius: 6px;
+      color: #fd7b74;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background-color: rgba(255, 255, 255, 0.15); }
   .screen-shield .clock-widget {
     padding: 6px;
     spacing: 6px; }

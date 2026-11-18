@@ -49,32 +49,26 @@
     }
 
     &-password-entry {
-      width: 20em;
-      padding: 7px;
       border-radius: $radius;
-      caret-size: 1px;
       caret-color: white;
       color: white;
       background-color: transparentize(white, 0.8);
       border: 1px solid transparentize(white, 0.6);
-      selection-background-color: $accent_color;
-      selected-color: $selected_fg_color;
-      transition-duration: 300ms;
 
       &:focus { border-color: $accent_color; }
 
-      StIcon.capslock-warning {
-        icon-size: 16px;
-        warning-color: $warning_color;
-        padding: 0 4px;
-      }
-
       StLabel.hint-text { color: transparentize(white, 0.5); }
 
-      StIcon.peek-password {
-        icon-size: 16px;
-        color: white;
-      }
+      StIcon.peek-password { color: white; }
+    }
+
+    &-error-label {
+      @include fontsize(11pt);
+      padding: 6px 12px;
+      border-radius: $radius;
+      color: lighten($error_color, 12%);
+      border: 1px solid transparentize(white, 0.9);
+      background-color: transparentize(white, 0.85);
     }
   }
 

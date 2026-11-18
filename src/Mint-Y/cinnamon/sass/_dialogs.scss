@@ -317,6 +317,9 @@ $osd_radius: 20px;
   &-password-entry {
     @extend %entry;
     width: 20em;
+    min-height: 22px;
+    padding: 6px 9px;
+    -st-progress-color: $accent_color;
   }
 
   &-password-layout { spacing: $base_margin * 2;}
